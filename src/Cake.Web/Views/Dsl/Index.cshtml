@@ -1,0 +1,56 @@
+﻿@model Cake.Web.Core.Dsl.DslModel
+@{
+    ViewBag.Title = "Reference";
+    ViewBag.Menu = "Reference";
+    Layout = "~/Views/Shared/_LayoutSidebar.cshtml";
+}
+
+@section Sidebar
+{
+    <h4><i class="fa fa-bookmark"></i> Related</h4>
+    <ul>
+        <li>@Html.ActionLink("API Reference", "Index", "Api")</li>
+    </ul>
+
+    <h4><i class="fa fa-gear"></i> Categories</h4>
+    <ul>
+        @foreach (var topicSection in Model.Categories)
+        {
+            <li><a href="@Url.Action("Index", "Dsl", new {path = topicSection.Slug})">@topicSection.Name</a></li>
+        }
+    </ul>
+}
+
+@* TITLE *@
+<div class="main-content-title">
+    <h2>Reference</h2>
+</div>
+
+<div style="margin-top: 20px">
+    <p>
+        This reference guide describes the various methods and properties which make up the Cake build language, or DSL.
+        If you're looking for other kind of information, check out the <a href="@Url.Action("Index", "Api")">API reference</a> or the <a href="@Url.Action("Index", "Docs", new {path = ""})">documentation</a>.
+    </p>
+    <p>
+        The DSL is made up of <a href="@Url.Action("Index", "Docs", new {path = "fundamentals/aliases"})">script aliases</a>, that offers specific functionality within the context of a Cake build script.
+        A script alias is an extension method for <a href="@Api.TypeUrl("T:Cake.Core.ICakeContext")">ICakeContext</a>.
+    </p>
+
+    <div id="constructors" class="panel panel-default" style="margin-top: 20px">
+        <div class="panel-heading">
+            <b>Categories</b>
+        </div>
+        <table class="table table-bordered table-striped">
+            <tbody>
+                @foreach (var topicSection in Model.Categories)
+                {
+                    <tr>
+                        <td><a href="@Url.Action("Index", "Dsl", new {path = topicSection.Slug})">@topicSection.Name</a></td>
+                        <td>@Api.Comment(@topicSection.Summary)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>

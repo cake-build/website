@@ -1,0 +1,22 @@
+﻿@model TopicSection
+@{
+    ViewBag.Title = @Model.Name;
+    ViewBag.Menu = "Documentation";
+    Layout = "~/Views/Shared/_LayoutSidebar.cshtml";
+}
+
+@section Sidebar
+{
+    <h4><i class="fa fa-bookmark"></i> Content</h4>
+    <ul>
+        @foreach (var topic in Model.Topics)
+        {
+            <li>@Html.RenderLink(topic)</li>
+        }
+    </ul>
+}
+
+@* TITLE *@
+<div class="main-content-title">
+    <h2>@Model.Name</h2>
+</div>

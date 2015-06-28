@@ -1,0 +1,16 @@
+﻿@model dynamic
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container container-sidebar">
+    <div class="row">
+        <div class="col-lg-9 col-lg-push-3 col-md-9 col-md-push-3 col-sm-9 col-sm-push-3 col-s-9 col-s-push-3 main-content full-height">
+            @RenderBody()
+        </div>
+        <div class="col-lg-3 col-lg-pull-9 col-md-3 col-md-pull-9 col-sm-3 col-sm-pull-9 col-s-3 col-s-pull-9 sidebar full-height">
+            <h2 class="visible-xs">Navigation</h2>
+            @RenderSection("Sidebar", true)
+        </div>
+    </div>
+</div>
