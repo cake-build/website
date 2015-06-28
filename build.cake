@@ -9,9 +9,18 @@ using Cake.Core.IO.Arguments;
 var target = Argument<string>("target", "Default");
 var configuration = Argument<string>("configuration", "Release");
 
+var local = BuildSystem.IsLocalBuild;
 var isRunningOnAppVeyor = AppVeyor.IsRunningOnAppVeyor;
 var branch = AppVeyor.Environment.Repository.Branch;
 var isBuildingMaster = branch != null && branch == "master";
+
+// Parse release notes.
+var releaseNotes = ParseReleaseNotes("./ReleaseNotes.md");
+
+// Get version.
+var buildNumber = AppVeyor.Environment.Build.Number;
+var version = releaseNotes.Version.ToString();
+var semVersion = local ? version : (version + string.Concat("-build-", buildNumber));
 
 var appDataLibPath = Directory("./src/Cake.Web/App_Data/libs");
 var objPath = Directory("./src/Cake.Web/obj");
@@ -47,6 +56,13 @@ Task("Build")
             .SetNodeReuse(false));
 });
 
+Task("Update-AppVeyor-Build-Number")
+    .WithCriteria(() => isRunningOnAppVeyor)
+    .Does(() =>
+{
+    AppVeyor.UpdateBuildVersion(semVersion);
+});
+
 Task("Deploy")
     .IsDependentOn("Build")
     .WithCriteria(() => isRunningOnAppVeyor && isBuildingMaster)
@@ -68,6 +84,10 @@ Task("Deploy")
     {
         throw new InvalidOperationException("Could not resolve Azure username or password.");
     }
+
+    // Adjust the username since Powershell doesn't like 
+    // the $ sign which Azure use to prefix usernames.
+    username = string.Concat("$", username);
 
     // Build the argumens to MSDeploy.
     var builder = new ProcessArgumentBuilder();
@@ -92,6 +112,7 @@ Task("Default")
     .IsDependentOn("Build");
 
 Task("AppVeyor")
+    .IsDependentOn("Update-AppVeyor-Build-Number")
     .IsDependentOn("Deploy");
 
 ///////////////////////////////////////////////////////////////////////////////
