@@ -14,4 +14,4 @@ branches:
   # Whitelist
   only:
     - develop
-    - main
+    - master
