@@ -9,11 +9,6 @@ namespace Cake.Web
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            // Robots.txt
-            routes.MapRoute("Robots",
-                "robots.txt",
-                new { controller = "Home", action = "Robots" });
-
             // Legacy routes
             LegacyRouteConfig.RegisterRoutes(routes);
 

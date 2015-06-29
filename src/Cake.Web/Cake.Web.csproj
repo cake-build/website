@@ -235,7 +235,6 @@
     <Content Include="Content\js\respond.matchmedia.addListener.min.js" />
     <Content Include="Content\js\respond.min.js" />
     <Content Include="Content\js\_references.js" />
-    <Content Include="robots.txt" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
