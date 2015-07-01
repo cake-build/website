@@ -10,7 +10,7 @@ To add a dependency on another task, use the `IsDependentOn`-method.
 	});
 
 	Task("B")
-	  .IsDependentOn("A");
+	  .IsDependentOn("A")
 	  .Does(() =>
 	{
 	});
