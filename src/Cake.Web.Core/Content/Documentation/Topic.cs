@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using Cake.Core.IO;
 
-namespace Cake.Web.Core.Documentation
+namespace Cake.Web.Core.Content.Documentation
 {
     [DebuggerDisplay("{DebuggerDisplay(),nq}")]
     public sealed class Topic

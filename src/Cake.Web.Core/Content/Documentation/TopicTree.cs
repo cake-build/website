@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Cake.Web.Core.Documentation
+namespace Cake.Web.Core.Content.Documentation
 {
     public sealed class TopicTree
     {

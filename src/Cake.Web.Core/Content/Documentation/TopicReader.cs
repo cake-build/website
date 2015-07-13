@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Xml;
 using Cake.Core.IO;
-using Cake.Web.Core.Documentation.Processing;
 using Path = System.IO.Path;
 
-namespace Cake.Web.Core.Documentation
+namespace Cake.Web.Core.Content.Documentation
 {
     internal sealed class TopicReader : ITopicReader
     {
@@ -162,10 +161,10 @@ namespace Cake.Web.Core.Documentation
             if (_fileSystem.Exist(path))
             {
                 // Parse the file and separate front matter from content.
-                var parseResult = _contentParser.Parse(path);
-                if (parseResult != null)
+                var content = _contentParser.Parse(path);
+                if (content != null)
                 {
-                    body = _contentConverter.ConvertToHtml(parseResult);
+                    body = _contentConverter.ConvertToHtml(content, content.Body);
                 }
 
                 // Process the content.

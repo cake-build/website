@@ -78,6 +78,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -146,6 +147,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="CakeWebViewPage.cs" />
     <Compile Include="Controllers\ApiController.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\DocsController.cs" />
     <Compile Include="Controllers\DslController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
@@ -163,11 +165,15 @@
     <Compile Include="Helpers\Api\PropertyHelper.cs" />
     <Compile Include="Helpers\Api\SyntaxHelper.cs" />
     <Compile Include="Helpers\Api\TypeHelper.cs" />
+    <Compile Include="Helpers\BlogHelper.cs" />
     <Compile Include="Helpers\MenuHelper.cs" />
     <Compile Include="Helpers\TopicHelper.cs" />
     <Compile Include="Helpers\LinkHelper.cs" />
     <Compile Include="Models\ApiViewModel.cs" />
     <Compile Include="Models\AssemblyViewModel.cs" />
+    <Compile Include="Models\BlogPostViewModel.cs" />
+    <Compile Include="Models\BlogPageViewModel.cs" />
+    <Compile Include="Models\BlogViewModel.cs" />
     <Compile Include="Models\MethodViewModel.cs" />
     <Compile Include="Models\NamespaceViewmodel.cs" />
     <Compile Include="Models\PropertyViewModel.cs" />
@@ -219,6 +225,10 @@
     <Content Include="App_Data\docs\introduction\about.md" />
     <Content Include="App_Data\docs\overview\features.md" />
     <Content Include="App_Data\docs\tutorials\getting-started.md" />
+    <Content Include="App_Data\blog\2015-07-05-cake-v0.4.3-released.md" />
+    <Content Include="App_Data\blog\2015-05-27-cake-v0.4.2-released.md" />
+    <Content Include="App_Data\blog\2015-05-12-cake-v0.4.0-released.md" />
+    <Content Include="App_Data\blog\2015-05-18-cake-v0.4.1-released.md" />
     <None Include="Content\js\jquery-2.1.4.intellisense.js" />
     <Content Include="Content\js\jquery-2.1.4.js" />
     <Content Include="Content\js\jquery-2.1.4.min.js" />
@@ -260,6 +270,10 @@
     <Content Include="Views\Dsl\Category.cshtml" />
     <Content Include="Views\Error\Index.cshtml" />
     <Content Include="Views\Error\NotFound.cshtml" />
+    <Content Include="Views\Blog\Index.cshtml" />
+    <Content Include="Views\Blog\Details.cshtml" />
+    <Content Include="Views\Shared\_LayoutBlog.cshtml" />
+    <Content Include="Views\Blog\Category.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Redirect\" />

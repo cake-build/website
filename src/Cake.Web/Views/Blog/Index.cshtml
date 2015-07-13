@@ -1,0 +1,59 @@
+﻿@model Cake.Web.Models.BlogPageViewModel
+@{
+    ViewBag.Title = "Blog";
+    Layout = "~/Views/Shared/_LayoutBlog.cshtml";
+}
+
+@foreach (var post in Model.Posts)
+{
+    <div class="blog-post">
+        <div class="blog-post-header">
+            <div class="blog-post-title">
+                <h2><a href="@Html.GetLink(post)">@post.Title</a></h2>
+            </div>
+            <div class="blog-post-meta">
+                <i class="fa fa-calendar"></i> @post.PostedAt.ToString("dd MMM yyyy")<br />
+                <i class="fa fa-tag"></i> @Html.RenderCategoryList(post)
+            </div>
+        </div>
+        <div class="blog-post-content">
+            @if (post.HasExcept)
+            {
+                @Html.Raw(@post.Excerpt)
+                <p>
+                    <a href="@Html.GetLink(post)">Read more...</a>
+                </p>
+            }
+            else
+            {
+                @Html.Raw(@post.Body)
+            }
+        </div>
+    </div>
+}
+
+@if (Model.HasNewerPosts || Model.HasOlderPosts)
+{
+    <nav>
+        <ul class="pager">
+            @if (Model.HasNewerPosts)
+            {
+                @* NEWER *@
+                <li class="previous">
+                    <a href="@Html.GetPreviousPageLink(Model)">
+                        <i class="fa fa-arrow-circle-left"></i> Newer
+                    </a>
+                </li>
+            }
+            @if (Model.HasOlderPosts)
+            {
+                @* OLDER *@
+                <li class="next">
+                    <a href="@Html.GetNextPageLink(Model)">
+                        Older <i class="fa fa-arrow-circle-right"></i>
+                    </a>
+                </li>
+            }
+        </ul>
+    </nav>
+}

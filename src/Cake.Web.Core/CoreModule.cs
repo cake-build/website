@@ -1,8 +1,9 @@
 ﻿using Autofac;
 using Cake.Core;
 using Cake.Core.IO;
-using Cake.Web.Core.Documentation;
-using Cake.Web.Core.Documentation.Processing;
+using Cake.Web.Core.Content;
+using Cake.Web.Core.Content.Blog;
+using Cake.Web.Core.Content.Documentation;
 
 namespace Cake.Web.Core
 {
@@ -14,10 +15,15 @@ namespace Cake.Web.Core
             builder.RegisterType<FileSystem>().As<IFileSystem>().SingleInstance();
             builder.RegisterType<CakeEnvironment>().As<ICakeEnvironment>().SingleInstance();
 
-            // Register documentation services.
+            // Register content services.
             builder.RegisterType<ContentConverter>();
             builder.RegisterType<ContentParser>();
             builder.RegisterType<ContentProcessor>();
+
+            // Register blog services.
+            builder.RegisterType<BlogReader>().As<IBlogReader>().SingleInstance();
+
+            // Register documentation services.
             builder.RegisterType<TopicReader>().As<ITopicReader>().SingleInstance();
         }
     }

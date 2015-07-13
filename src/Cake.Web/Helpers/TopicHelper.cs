@@ -2,7 +2,7 @@
 using System.Web;
 using System.Web.Mvc;
 using System.Web.UI;
-using Cake.Web.Core.Documentation;
+using Cake.Web.Core.Content.Documentation;
 
 namespace Cake.Web.Helpers
 {

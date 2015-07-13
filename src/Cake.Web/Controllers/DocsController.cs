@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net;
 using System.Web.Mvc;
-using Cake.Web.Core.Documentation;
+using Cake.Web.Core.Content.Documentation;
 
 namespace Cake.Web.Controllers
 {

@@ -48,6 +48,42 @@ namespace Cake.Web
                 new { controller = "Api", action = "member" }
             );
 
+            // Blog: Index
+            routes.MapRoute(
+                "Blog", "blog/",
+                new { controller = "Blog", action = "index" }
+            );
+
+            // Blog: Category
+            routes.MapRoute(
+                "BlogCategory", "blog/category/{category}",
+                new { controller = "Blog", action = "index" }
+            );
+
+            // Blog: Archive
+            routes.MapRoute(
+                "BlogArchive", "blog/archive/{year}/{month}",
+                new { controller = "Blog", action = "index" }
+            );
+
+            // Blog: Archive
+            routes.MapRoute(
+                "BlogArchiveYear", "blog/archive/{year}",
+                new { controller = "Blog", action = "index" }
+            );
+
+            // Blog: Post
+            routes.MapRoute(
+                "BlogPost", "blog/{year}/{month}/{slug}",
+                new { controller = "Blog", action = "Details" }
+            );
+
+            // Blog: Feed
+            routes.MapRoute(
+                "BlogFeed", "blog/feed/{format}",
+                new { controller = "Blog", action = "Feed" }
+            );
+
             // Default
             routes.MapRoute(
                 name: "Default",

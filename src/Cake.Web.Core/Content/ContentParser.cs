@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using Cake.Core.IO;
 
-namespace Cake.Web.Core.Documentation.Processing
+namespace Cake.Web.Core.Content
 {
     internal sealed class ContentParser
     {
@@ -66,7 +66,15 @@ namespace Cake.Web.Core.Documentation.Processing
                 ? string.Join(Environment.NewLine, lines.Skip(index + 1).Take(lines.Length - index))
                 : string.Empty;
 
-            return new ContentParseResult(header, body);
+            // <!--excerpt-->
+            var excerpt = string.Empty;
+            var excerptParts = body.Split(new[] { "<!--excerpt-->" }, StringSplitOptions.RemoveEmptyEntries);
+            if (excerptParts.Length > 1)
+            {
+                excerpt = excerptParts[0];
+            }
+
+            return new ContentParseResult(header, body, excerpt);
         }
 
         private static string[] SplitLines(string content)

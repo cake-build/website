@@ -8,7 +8,8 @@ using Autofac;
 using Autofac.Integration.Mvc;
 using Cake.Core.IO;
 using Cake.Web.Core;
-using Cake.Web.Core.Documentation;
+using Cake.Web.Core.Content.Blog;
+using Cake.Web.Core.Content.Documentation;
 using Cake.Web.Core.Dsl;
 using Cake.Web.Core.NuGet;
 using Cake.Web.Core.Rendering;
@@ -68,9 +69,14 @@ namespace Cake.Web
             var reader = container.Resolve<ITopicReader>();
             var topics = reader.Read(appDataPath.CombineWithFilePath("docs.xml"));
 
+            // Read all blog entries.
+            var blogReader = container.Resolve<IBlogReader>();
+            var blogIndex = blogReader.Parse(appDataPath.Combine("blog"));
+
             // Update the container.
             builder = new ContainerBuilder();
             builder.RegisterInstance(topics).As<TopicTree>().SingleInstance();
+            builder.RegisterInstance(blogIndex).As<BlogIndex>().SingleInstance();
             builder.Update(container);
 
             // Perform registrations.

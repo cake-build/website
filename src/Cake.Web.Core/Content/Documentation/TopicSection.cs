@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace Cake.Web.Core.Documentation
+namespace Cake.Web.Core.Content.Documentation
 {
     [DebuggerDisplay("{DebuggerDisplay(),nq}")]
     public sealed class TopicSection

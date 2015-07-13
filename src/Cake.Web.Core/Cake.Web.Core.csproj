@@ -100,20 +100,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApiServices.cs" />
+    <Compile Include="Content\Blog\BlogCategory.cs" />
+    <Compile Include="Content\Blog\BlogCategoryComparer.cs" />
+    <Compile Include="Content\Blog\BlogFilename.cs" />
+    <Compile Include="Content\Blog\BlogIndex.cs" />
+    <Compile Include="Content\Blog\BlogPost.cs" />
+    <Compile Include="Content\Blog\BlogReader.cs" />
+    <Compile Include="Content\Blog\IBlogReader.cs" />
     <Compile Include="Html\Breadcrumb.cs" />
     <Compile Include="Html\BreadcrumbDropdown.cs" />
     <Compile Include="Html\BreadcrumbItem.cs" />
     <Compile Include="CoreModule.cs" />
-    <Compile Include="Documentation\ITopicReader.cs" />
-    <Compile Include="Documentation\Processing\ContentConverter.cs" />
-    <Compile Include="Documentation\Processing\ContentParser.cs" />
-    <Compile Include="Documentation\Processing\ContentParseResult.cs" />
-    <Compile Include="Documentation\Processing\ContentProcessor.cs" />
-    <Compile Include="Documentation\Processing\ContentProcessorResult.cs" />
-    <Compile Include="Documentation\Topic.cs" />
-    <Compile Include="Documentation\TopicReader.cs" />
-    <Compile Include="Documentation\TopicSection.cs" />
-    <Compile Include="Documentation\TopicTree.cs" />
+    <Compile Include="Content\Documentation\ITopicReader.cs" />
+    <Compile Include="Content\ContentConverter.cs" />
+    <Compile Include="Content\ContentParser.cs" />
+    <Compile Include="Content\ContentParseResult.cs" />
+    <Compile Include="Content\ContentProcessor.cs" />
+    <Compile Include="Content\ContentProcessorResult.cs" />
+    <Compile Include="Content\Documentation\Topic.cs" />
+    <Compile Include="Content\Documentation\TopicReader.cs" />
+    <Compile Include="Content\Documentation\TopicSection.cs" />
+    <Compile Include="Content\Documentation\TopicTree.cs" />
     <Compile Include="Dsl\DslModelBuilder.cs" />
     <Compile Include="Dsl\DslSubCategory.cs" />
     <Compile Include="Dsl\DslModel.cs" />
@@ -148,6 +155,7 @@
       <Name>Cake.Web.Docs</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

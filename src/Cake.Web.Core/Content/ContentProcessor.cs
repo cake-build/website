@@ -4,7 +4,7 @@ using Cake.Web.Core.Dsl;
 using Cake.Web.Docs.Reflection;
 using HtmlAgilityPack;
 
-namespace Cake.Web.Core.Documentation.Processing
+namespace Cake.Web.Core.Content
 {
     internal sealed class ContentProcessor
     {

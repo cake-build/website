@@ -6,6 +6,10 @@
     <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
     @Styles.Render("~/Content/css/files")
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- Feed -->
+    <link rel="alternate" type="application/atom+xml" title="The Cake blog feed" href="http://cakebuild.net/blog/feed/atom">
+
 </head>
 <body>
 
@@ -28,6 +32,7 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                    <li class="@Html.ActiveMenu("Blog")"><a href="@Url.Action("Index", "Blog")">Blog</a></li>
                     <li class="@Html.ActiveMenu("Documentation")"><a href="@Url.Action("Index", "Docs", new {path = ""})">Documentation</a></li>
                     <li class="@Html.ActiveMenu("Reference")"><a href="@Url.Action("Index", "Dsl", new {path = ""})">Reference</a></li>
                     <li class=""><a href="https://github.com/cake-build/cake"><i class="fa fa-github"></i> Source Code</a></li>

@@ -21,6 +21,14 @@ namespace Cake.Web.Core
                 {
                     builder.Append('-');
                 }
+                else if (character == '.')
+                {
+                    builder.Append('-');
+                }
+                else if (character == '-')
+                {
+                    builder.Append('-');
+                }
             }
             return builder.ToString();
         }

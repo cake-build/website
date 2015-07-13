@@ -1,4 +1,4 @@
-﻿namespace Cake.Web.Core.Documentation.Processing
+﻿namespace Cake.Web.Core.Content
 {
     public sealed class ContentProcessorResult
     {

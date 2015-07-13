@@ -1,6 +1,6 @@
 ﻿using Cake.Core.IO;
 
-namespace Cake.Web.Core.Documentation
+namespace Cake.Web.Core.Content.Documentation
 {
     public interface ITopicReader
     {
