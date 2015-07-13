@@ -226,9 +226,6 @@
     <Content Include="App_Data\docs\overview\features.md" />
     <Content Include="App_Data\docs\tutorials\getting-started.md" />
     <Content Include="App_Data\blog\2015-07-05-cake-v0.4.3-released.md" />
-    <Content Include="App_Data\blog\2015-05-27-cake-v0.4.2-released.md" />
-    <Content Include="App_Data\blog\2015-05-12-cake-v0.4.0-released.md" />
-    <Content Include="App_Data\blog\2015-05-18-cake-v0.4.1-released.md" />
     <None Include="Content\js\jquery-2.1.4.intellisense.js" />
     <Content Include="Content\js\jquery-2.1.4.js" />
     <Content Include="Content\js\jquery-2.1.4.min.js" />
@@ -275,9 +272,7 @@
     <Content Include="Views\Shared\_LayoutBlog.cshtml" />
     <Content Include="Views\Blog\Category.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Redirect\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>

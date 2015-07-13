@@ -10,7 +10,7 @@
             <h2>@Model.Post.Title</h2>
         </div>
         <div class="blog-post-meta">
-            <i class="fa fa-calendar"></i> @Model.Post.PostedAt.ToString("dd MMM yyyy")<br/>
+            <i class="fa fa-calendar"></i> @Model.Post.PostedAt.ToString("dd MMM yyyy")<br />
             <i class="fa fa-tag"></i> @Html.RenderCategoryList(@Model.Post)
         </div>
     </div>
@@ -20,7 +20,7 @@
     <div class="blog-post-footer">
         <a href="https://twitter.com/share" class="twitter-share-button" data-text="@Model.Post.Title" data-via="cakebuildnet" data-dnt="true">Tweet</a>
         <script>
-            !function(d, s, id) {
+            !function (d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
                 if (!d.getElementById(id)) {
                     js = d.createElement(s);
