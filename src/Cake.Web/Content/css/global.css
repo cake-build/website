@@ -58,7 +58,7 @@ pre {
     border: none;
 }
 
-pre[class*="language-"] {
+.panel-body pre[class*="language-"] {
     margin: 0px;
     border-radius: 0em;
 }
