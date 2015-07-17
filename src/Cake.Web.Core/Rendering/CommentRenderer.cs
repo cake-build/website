@@ -20,7 +20,7 @@ namespace Cake.Web.Core.Rendering
                 code = code.UnintendCode();
 
                 context.Writer.Write("<pre>");
-                context.Writer.Write("<code>");
+                context.Writer.Write("<code class=\"language-csharp\">");
                 context.Writer.WriteEncodedText(code);
                 context.Writer.Write("</code>");
                 context.Writer.Write("</pre>");

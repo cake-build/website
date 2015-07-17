@@ -24,6 +24,7 @@ a {
 pre {
     background-color: #ffffff;
     border: 0px;
+    margin: 0px;
 }
 
 /* +++++++++++++++++++++++++++++++++ */
@@ -51,12 +52,25 @@ pre {
 /* SYNTAX */
 /* +++++++++++++++++++++++++++++++++ */
 
+.code-box {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+pre[class*="language-"] {
+    margin: 0px;
+    border-radius: 0em;
+}
+
+
+/*
 .code-box pre {
     margin: 0px;
     padding: 0px;
     border: none;
     background-color: transparent;
-}
+}*/
 
 .table > thead > tr > th, .table > tbody > tr > td {
     padding-left: 15px;
