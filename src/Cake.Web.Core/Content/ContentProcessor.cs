@@ -31,7 +31,7 @@ namespace Cake.Web.Core.Content
         private static string RewriteCodeBlock(string content)
         {
             const string pattern = @"```([a-z]*)[\s\S]([\s\S]*?\n)```";
-            const string replacement = "<pre><code class=\"$1\">$2</code></pre>";
+            const string replacement = "<pre><code class=\"language-$1\">$2</code></pre>";
             content = Regex.Replace(content, pattern, replacement, RegexOptions.Compiled | RegexOptions.Multiline);
 
             // Load the document.

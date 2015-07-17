@@ -49,8 +49,8 @@ All switches not recognized by Cake will be added to an argument list that is pa
 
 Arguments passed to Cake like this:
 
-```bat
-> Cake.exe -showstuff
+```bash
+Cake.exe -showstuff
 ```
 
 Can be accessed from the script with the `Argument` alias:
@@ -70,18 +70,18 @@ Argument<bool>("showstuff", false);
 
 To run Cake with default arguments:
 
-```bat
-> Cake.exe
+```bash
+Cake.exe
 ```
 
 To run a specific script with a specific verbosity:
 
-```bat
-> Cake.exe script.cake -verbosity=diagnostic
+```bash
+Cake.exe script.cake -verbosity=diagnostic
 ```
 
 To dry run a specific script:
 
-```bat
-> Cake.exe script.cake -dryrun
+```bash
+Cake.exe script.cake -dryrun
 ```

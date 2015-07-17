@@ -22,10 +22,16 @@ namespace Cake.Web
                       "~/Content/js/bootstrap.js",
                       "~/Content/js/respond.js"));
 
+            bundles.Add(new ScriptBundle("~/Content/js/prism").Include(
+                      "~/Content/js/prism.js"));
+
             bundles.Add(new StyleBundle("~/Content/css/files").Include(
                       "~/Content/css/bootstrap.css",
                       "~/Content/css/cake-theme.css",
                       "~/Content/css/global.css"));
+
+            bundles.Add(new StyleBundle("~/Content/css/prism").Include(
+                "~/Content/css/prism.css"));
         }
     }
 }
