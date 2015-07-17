@@ -4,16 +4,16 @@ content-type: markdown
 
 ### Usage
 
-	Cake.exe [script] [-switches]
+    Cake.exe [script] [-switches]
 
 ### Switches
 
 <table class="table table-bordered table-striped">
     <tbody>
-		<tr>
-		  <th><b>Switch</b></th>
-		  <th><b>Description</b></th>
-		</tr>
+        <tr>
+          <th><b>Switch</b></th>
+          <th><b>Description</b></th>
+        </tr>
         <tr>
             <td class="col-md-6">-verbosity=value</a></td>
             <td class="col-md-6">Specifies the amount of information to be displayed (quiet, minimal, normal, verbose, diagnostic).</td>
@@ -49,11 +49,15 @@ All switches not recognized by Cake will be added to an argument list that is pa
 
 Arguments passed to Cake like this:
 
-	> Cake.exe -showstuff
+```bat
+> Cake.exe -showstuff
+```
 
 Can be accessed from the script with the `Argument` alias:
 
-	Argument<bool>("showstuff", false);
+```csharp
+Argument<bool>("showstuff", false);
+```
 
 <div class="attention attention-note">
     <h4>Note</h4>
@@ -66,13 +70,18 @@ Can be accessed from the script with the `Argument` alias:
 
 To run Cake with default arguments:
 
-	> Cake.exe
+```bat
+> Cake.exe
+```
 
 To run a specific script with a specific verbosity:
 
-	> Cake.exe script.cake -verbosity=diagnostic
+```bat
+> Cake.exe script.cake -verbosity=diagnostic
+```
 
 To dry run a specific script:
 
-	> Cake.exe script.cake -dryrun
-
+```bat
+> Cake.exe script.cake -dryrun
+```

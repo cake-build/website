@@ -160,15 +160,18 @@ namespace Cake.Web.Core.Content.Documentation
             var path = root.CombineWithFilePath(file);
             if (_fileSystem.Exist(path))
             {
+
+
                 // Parse the file and separate front matter from content.
                 var content = _contentParser.Parse(path);
                 if (content != null)
                 {
-                    body = _contentConverter.ConvertToHtml(content, content.Body);
+                    body = _contentProcessor.PreProcess(content.Body);
+                    body = _contentConverter.ConvertToHtml(content, body);
                 }
 
                 // Process the content.
-                body = _contentProcessor.Process(body) ?? body;
+                body = _contentProcessor.PostProcess(body) ?? body;
             }
 
             return new Topic(id, title, body, file);

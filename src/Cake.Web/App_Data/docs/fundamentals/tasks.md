@@ -6,7 +6,9 @@ Tasks represent a unit of work in Cake, and you use them to perform specific wor
 
 To define a new task, use the Task-method.
 
-	Task("A")
-	  .Does(() =>
-	{
-	});
+```csharp
+Task("A")
+    .Does(() =>
+{
+});
+```

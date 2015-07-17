@@ -48,7 +48,7 @@ namespace Cake.Web.Core.Content.Blog
 
                     // Process the content.
                     var body = _converter.ConvertToHtml(content, content.Body);
-                    body = _processor.Process(body) ?? body;
+                    body = _processor.PostProcess(body) ?? body;
 
                     // Get the excerpts.
                     var excerpts = _converter.ConvertToHtml(content, content.Excerpt);

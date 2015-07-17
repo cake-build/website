@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using System.Text.RegularExpressions;
 using Cake.Web.Core.Dsl;
 using Cake.Web.Docs.Reflection;
 using HtmlAgilityPack;
@@ -17,7 +18,49 @@ namespace Cake.Web.Core.Content
             _dslModel = dslModel;
         }
 
-        public string Process(string content)
+        public string PreProcess(string content)
+        {
+            return RewriteCodeBlock(content);
+        }
+
+        public string PostProcess(string content)
+        {
+            return RewriteLinks(RewriteCodeBlock(content));
+        }
+
+        private static string RewriteCodeBlock(string content)
+        {
+            const string pattern = @"```([a-z]*)[\s\S]([\s\S]*?\n)```";
+            const string replacement = "<pre><code class=\"$1\">$2</code></pre>";
+            content = Regex.Replace(content, pattern, replacement, RegexOptions.Compiled | RegexOptions.Multiline);
+
+            // Load the document.
+            var document = new HtmlDocument();
+            document.LoadHtml(content);
+            var query = document.DocumentNode.Descendants("code");
+            foreach (var linkNode in query.ToList())
+            {
+                if (linkNode.HasAttributes)
+                {
+                    // Remove empty class attributes.
+                    var @class = linkNode.GetAttributeValue("class", null);
+                    if (@class != null)
+                    {
+                        if (string.IsNullOrWhiteSpace(@class))
+                        {
+                            linkNode.Attributes.Remove("class");
+                        }
+                    }
+                }
+
+                // Trim content of code so it doesn't start with a new line.
+                linkNode.InnerHtml = linkNode.InnerHtml.Trim('\r', '\n');
+            }
+
+            return document.DocumentNode.OuterHtml;
+        }
+
+        private string RewriteLinks(string content)
         {
             // Load the document.
             var document = new HtmlDocument();
@@ -56,6 +99,14 @@ namespace Cake.Web.Core.Content
                                     var category = _dslModel.FindCategory(data);
                                     var link = category != null ? string.Concat("/dsl/", category.Slug) : url;
                                     linkNode.SetAttributeValue("href", link);
+                                }
+                                else if (protocol.Equals("docs", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    // Resolve the documentation id.
+                                    var data = parts[1].TrimStart('/');
+
+                                    // Update the link.
+                                    linkNode.SetAttributeValue("href", string.Concat("/docs/", data));
                                 }
                             }
                         }
