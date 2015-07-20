@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using System.Web;
 using System.Web.Mvc;
 using System.Web.UI;
 using Cake.Web.Core.Services;
@@ -103,7 +104,7 @@ namespace Cake.Web.Core.Rendering
                                     parameterResult.RemoveAt(0);
                                 }
                             }
-                            writer.WriteEncodedText(string.Join(", \u200B", parameterResult));
+                            writer.Write(string.Join(", \u200B", parameterResult));
                         }
                         writer.WriteEncodedText(")\u200B");
                     }
