@@ -35,7 +35,7 @@ using Cake.Core.Annotations;
 public static class MyCakeExtension
 {
     [CakeMethodAlias]
-    public static int GetNumber(this ICakeContext context, bool value)
+    public static int GetMagicNumber(this ICakeContext context, bool value)
     {
         return value? int.MinValue : int.MaxValue;
     }
