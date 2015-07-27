@@ -50,7 +50,7 @@ All switches not recognized by Cake will be added to an argument list that is pa
 Arguments passed to Cake like this:
 
 ```bash
-Cake.exe -showstuff
+Cake.exe -showstuff=true
 ```
 
 Can be accessed from the script with the `Argument` alias:
