@@ -63,15 +63,6 @@ pre {
     border-radius: 0em;
 }
 
-
-/*
-.code-box pre {
-    margin: 0px;
-    padding: 0px;
-    border: none;
-    background-color: transparent;
-}*/
-
 .table > thead > tr > th, .table > tbody > tr > td {
     padding-left: 15px;
 }
@@ -208,6 +199,11 @@ ul li.selected a:hover {
     margin-top: 20px;
     padding-top: 20px;
     border-top: 1px #987d6b dotted;
+}
+
+.blog-post .blog-post-content pre {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* +++++++++++++++++++++++++++++++++ */
