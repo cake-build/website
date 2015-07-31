@@ -42,13 +42,12 @@ namespace Cake.Web.Core.Content
             {
                 if (linkNode.HasAttributes)
                 {
-                    // Remove empty class attributes.
                     var @class = linkNode.GetAttributeValue("class", null);
                     if (@class != null)
                     {
-                        if (string.IsNullOrWhiteSpace(@class))
+                        if (string.IsNullOrWhiteSpace(@class) || @class=="language-")
                         {
-                            linkNode.Attributes.Remove("class");
+                            linkNode.Attributes["class"].Value = "language-text";
                         }
                     }
                 }
