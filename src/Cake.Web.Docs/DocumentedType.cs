@@ -121,7 +121,7 @@ namespace Cake.Web.Docs
         /// <param name="fields">The type's fields.</param>
         /// <param name="summary">The summary.</param>
         /// <param name="remarks">The remarks.</param>
-        /// <param name="example">The example.</param>
+        /// <param name="examples">The examples.</param>
         public DocumentedType(
             ITypeInfo info,
             IEnumerable<DocumentedProperty> properties,
@@ -129,8 +129,8 @@ namespace Cake.Web.Docs
             IEnumerable<DocumentedField> fields,
             SummaryComment summary,
             RemarksComment remarks,
-            ExampleComment example)
-            : base(MemberClassification.Type, summary, remarks, example)
+            IEnumerable<ExampleComment> examples)
+            : base(MemberClassification.Type, summary, remarks, examples)
         {
             _definition = info.Definition;
             _typeClassification = info.Definition.GetTypeClassification();

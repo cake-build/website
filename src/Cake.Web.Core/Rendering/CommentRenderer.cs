@@ -11,19 +11,25 @@ namespace Cake.Web.Core.Rendering
             comment.Accept(new CommentRenderer(), context);
         }
 
+        public override void VisitExample(ExampleComment comment, CommentRendererContext context)
+        {
+            base.VisitExample(comment, context);
+        }
+
         public override void VisitCode(CodeComment comment, CommentRendererContext context)
         {
             if (!string.IsNullOrWhiteSpace(comment.Code))
             {
-                var code = comment.Code;
-                //code = code.Replace("{", "{{").Replace("}", "}}");
+                var code = comment.Code ?? string.Empty;
                 code = code.UnintendCode();
 
+                context.Writer.Write("<div class=\"panel-body comment-code-box\">");
                 context.Writer.Write("<pre>");
                 context.Writer.Write("<code class=\"language-csharp\">");
                 context.Writer.WriteEncodedText(code);
                 context.Writer.Write("</code>");
                 context.Writer.Write("</pre>");
+                context.Writer.Write("</div>");
             }
         }
 
@@ -66,6 +72,16 @@ namespace Cake.Web.Core.Rendering
         public override void VisitInlineText(InlineTextComment comment, CommentRendererContext context)
         {
             context.Writer.WriteEncodedText(comment.Text);
+        }
+
+        public override void VisitPara(ParaComment comment, CommentRendererContext context)
+        {
+            context.Writer.RenderBeginTag(HtmlTextWriterTag.P);
+            foreach (var child in comment.Children)
+            {
+                child.Accept(this, context);
+            }
+            context.Writer.RenderEndTag();
         }
     }
 }

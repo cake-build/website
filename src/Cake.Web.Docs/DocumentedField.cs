@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System.Collections.Generic;
+using System.Diagnostics;
 using Cake.Web.Docs.Comments;
 using Cake.Web.Docs.Reflection;
 using Cake.Web.Docs.Reflection.Model;
@@ -45,13 +46,13 @@ namespace Cake.Web.Docs
         /// <param name="info">The field info.</param>
         /// <param name="summary">The summary comment.</param>
         /// <param name="remarks">The remarks comment.</param>
-        /// <param name="example">The example comment.</param>
+        /// <param name="examples">The example comments.</param>
         public DocumentedField(
             IFieldInfo info,
             SummaryComment summary, 
             RemarksComment remarks,
-            ExampleComment example)
-            : base(MemberClassification.Type, summary, remarks, example)
+            IEnumerable<ExampleComment> examples)
+            : base(MemberClassification.Type, summary, remarks, examples)
         {
             _definition = info.Definition;
             _identity = info.Identity;

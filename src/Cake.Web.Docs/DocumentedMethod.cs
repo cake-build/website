@@ -79,15 +79,15 @@ namespace Cake.Web.Docs
         /// <param name="parameters">The method's parameters.</param>
         /// <param name="summary">The summary comment.</param>
         /// <param name="remarks">The remarks comment.</param>
-        /// <param name="example">The example comment.</param>
+        /// <param name="examples">The example comments.</param>
         /// <param name="returns">The return value comment.</param>
         public DocumentedMethod(
             IMethodInfo info, 
             IEnumerable<DocumentedParameter> parameters,
             SummaryComment summary, 
             RemarksComment remarks, 
-            ExampleComment example,
-            ReturnsComment returns) : base(MemberClassification.Method, summary, remarks, example)
+            IEnumerable<ExampleComment> examples,
+            ReturnsComment returns) : base(MemberClassification.Method, summary, remarks, examples)
         {
             _definition = info.Definition;
             _methodClassification = MethodClassifier.GetMethodClassification(info.Definition);

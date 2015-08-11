@@ -1,4 +1,6 @@
-﻿using Cake.Web.Docs.Comments;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Cake.Web.Docs.Comments;
 using Cake.Web.Docs.Reflection;
 
 namespace Cake.Web.Docs
@@ -10,7 +12,7 @@ namespace Cake.Web.Docs
     {
         private readonly SummaryComment _summary;
         private readonly RemarksComment _remarks;
-        private readonly ExampleComment _example;
+        private readonly List<ExampleComment> _examples;
         private readonly MemberClassification _classification;
 
         /// <summary>
@@ -35,9 +37,9 @@ namespace Cake.Web.Docs
         /// Gets the example comment.
         /// </summary>
         /// <value>The example comment.</value>
-        public ExampleComment Example
+        public IReadOnlyList<ExampleComment> Examples
         {
-            get { return _example; }
+            get { return _examples; }
         }
 
         /// <summary>
@@ -55,17 +57,17 @@ namespace Cake.Web.Docs
         /// <param name="classification">The member classification.</param>
         /// <param name="summary">The summary comment.</param>
         /// <param name="remarks">The remarks comment.</param>
-        /// <param name="example">The example comment.</param>
+        /// <param name="examples">The example comments.</param>
         protected DocumentedMember(
             MemberClassification classification, 
             SummaryComment summary, 
-            RemarksComment remarks, 
-            ExampleComment example)
+            RemarksComment remarks,
+            IEnumerable<ExampleComment> examples)
         {
             _classification = classification;
             _summary = summary;
             _remarks = remarks;
-            _example = example;
+            _examples = new List<ExampleComment>(examples ?? Enumerable.Empty<ExampleComment>());
         }
     }
 }

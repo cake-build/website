@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System.Collections.Generic;
+using System.Diagnostics;
 using Cake.Web.Docs.Comments;
 using Cake.Web.Docs.Reflection;
 using Cake.Web.Docs.Reflection.Model;
@@ -55,15 +56,15 @@ namespace Cake.Web.Docs
         /// <param name="info">The property info.</param>
         /// <param name="summary">The summary comment.</param>
         /// <param name="remarks">The remarks comment.</param>
-        /// <param name="example">The example comment.</param>
+        /// <param name="examples">The example comments.</param>
         /// <param name="value">The value comment.</param>
         public DocumentedProperty(
             IPropertyInfo info,
             SummaryComment summary,
             RemarksComment remarks,
-            ExampleComment example,
+            IEnumerable<ExampleComment> examples,
             ValueComment value)
-            : base(MemberClassification.Property, summary, remarks, example)
+            : base(MemberClassification.Property, summary, remarks, examples)
         {
             _definition = info.Definition;
             _identity = info.Identity;

@@ -58,6 +58,13 @@ pre {
     border: none;
 }
 
+.comment-code-box {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    margin-bottom: 15px;
+}
+
 .panel-body pre[class*="language-"] {
     margin: 0px;
     border-radius: 0em;

@@ -139,7 +139,7 @@ namespace Cake.Web.Docs
         {
             SummaryComment summary = null;
             RemarksComment remarks = null;
-            ExampleComment example = null;
+            IEnumerable<ExampleComment> example = null;
 
             // Get the documentation for the type.
             var member = xmlModel.Find(type.Identity);
@@ -148,7 +148,7 @@ namespace Cake.Web.Docs
                 // Get the comments for the type.
                 summary = member.Comments.OfType<SummaryComment>().SingleOrDefault();
                 remarks = member.Comments.OfType<RemarksComment>().SingleOrDefault();
-                example = member.Comments.OfType<ExampleComment>().SingleOrDefault();
+                example = member.Comments.OfType<ExampleComment>();
             }
 
             // Map the methods.
@@ -182,7 +182,7 @@ namespace Cake.Web.Docs
 
             SummaryComment summary = null;
             RemarksComment remarks = null;
-            ExampleComment example = null;
+            IEnumerable<ExampleComment> examples = null;
             ReturnsComment returns = null;
 
             // Get the documentation for the type.
@@ -192,7 +192,7 @@ namespace Cake.Web.Docs
                 // Get the comments for the type.
                 summary = member.Comments.OfType<SummaryComment>().FirstOrDefault();
                 remarks = member.Comments.OfType<RemarksComment>().FirstOrDefault();
-                example = member.Comments.OfType<ExampleComment>().FirstOrDefault();
+                examples = member.Comments.OfType<ExampleComment>();
                 returns = member.Comments.OfType<ReturnsComment>().FirstOrDefault();
             }
 
@@ -210,14 +210,14 @@ namespace Cake.Web.Docs
                 parameters.Add(parameter);
             }
 
-            return new DocumentedMethod(method, parameters, summary, remarks, example, returns);
+            return new DocumentedMethod(method, parameters, summary, remarks, examples, returns);
         }
 
         private static DocumentedProperty MapProperty(IPropertyInfo property, XmlDocumentationModel xmlModel)
         {
             SummaryComment summary = null;
             RemarksComment remarks = null;
-            ExampleComment example = null;
+            IEnumerable<ExampleComment> examples = null;
             ValueComment value = null;
 
             // Get the documentation for the type.
@@ -227,18 +227,18 @@ namespace Cake.Web.Docs
                 // Get the comments for the type.
                 summary = member.Comments.OfType<SummaryComment>().SingleOrDefault();
                 remarks = member.Comments.OfType<RemarksComment>().SingleOrDefault();
-                example = member.Comments.OfType<ExampleComment>().SingleOrDefault();
+                examples = member.Comments.OfType<ExampleComment>();
                 value = member.Comments.OfType<ValueComment>().SingleOrDefault();
             }
 
-            return new DocumentedProperty(property, summary, remarks, example, value);
+            return new DocumentedProperty(property, summary, remarks, examples, value);
         }
 
         private static DocumentedField MapField(IFieldInfo field, XmlDocumentationModel xmlModel)
         {
             SummaryComment summary = null;
             RemarksComment remarks = null;
-            ExampleComment example = null;
+            IEnumerable<ExampleComment> examples = null;
 
             // Get the documentation for the type.
             var member = xmlModel.Find(field.Identity);
@@ -247,10 +247,10 @@ namespace Cake.Web.Docs
                 // Get the comments for the type.
                 summary = member.Comments.OfType<SummaryComment>().SingleOrDefault();
                 remarks = member.Comments.OfType<RemarksComment>().SingleOrDefault();
-                example = member.Comments.OfType<ExampleComment>().SingleOrDefault();
+                examples = member.Comments.OfType<ExampleComment>();
             }
 
-            return new DocumentedField(field, summary, remarks, example);
+            return new DocumentedField(field, summary, remarks, examples);
         }
     }
 }
