@@ -50,17 +50,29 @@
         </div>
     </div>
 
-    @* EXAMPLE *@
-    @if (@Model.Data.Example != null)
+    @* -EXAMPLE- *@
+    @if (@Model.Data.Examples.Count > 0)
     {
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <b>Example</b>
+        var index = 0;
+        foreach (var example in @Model.Data.Examples)
+        {
+            index++;
+            <div id="example" class="panel panel-info">
+                <div class="panel-heading">
+                    @if (Model.Data.Examples.Count > 1)
+                    {
+                        <b>Example @index</b>
+                    }
+                    else
+                    {
+                        <b>Example</b>
+                    }
+                </div>
+                <div style="margin: 15px;">
+                    @Api.Comment(example)
+                </div>
             </div>
-            <div class="panel-body">
-                <p>@Api.Comment(@Model.Data.Example)</p>
-            </div>
-        </div>
+        }
     }
 
 </div>
