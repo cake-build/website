@@ -230,6 +230,7 @@
     <Content Include="App_Data\blog\2015-07-05-cake-v0.4.3-released.md" />
     <Content Include="App_Data\blog\2015-07-20-cake-v0.5.0-released.md" />
     <Content Include="App_Data\blog\2015-07-31-cake-on-homebrew.md" />
+    <Content Include="App_Data\blog\2015-07-27-cake-v0.5.1-released.md" />
     <None Include="Content\js\jquery-2.1.4.intellisense.js" />
     <Content Include="Content\js\jquery-2.1.4.js" />
     <Content Include="Content\js\jquery-2.1.4.min.js" />
