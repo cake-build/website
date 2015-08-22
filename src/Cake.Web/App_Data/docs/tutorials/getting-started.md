@@ -76,11 +76,11 @@ Task("Run-Unit-Tests")
     .IsDependentOn("Build")
     .Does(() =>
 {
-    XUnit2("./src/**/bin/" + configuration + "/*.Tests.dll");
+    NUnit("./src/**/bin/" + configuration + "/*.Tests.dll");
 });
 ```
 
-This is using xUnit out of the box but you have MSTest and NUnit 
+This is using NUnit out of the box but you have MSTest and NUnit 
 test helpers as well. 
 
 Adding the target doesn't necessarily run it unless another target is 
