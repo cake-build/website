@@ -281,7 +281,7 @@
     <Content Include="Views\Blog\Details.cshtml" />
     <Content Include="Views\Shared\_LayoutBlog.cshtml" />
     <Content Include="Views\Blog\Category.cshtml" />
-    <None Include="Views\Addin\Index.cshtml" />
+    <Content Include="Views\Addin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
