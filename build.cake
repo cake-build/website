@@ -51,7 +51,7 @@ Task("Build")
     MSBuild("./src/Cake.Web.sln", settings =>
         settings.SetConfiguration(configuration)
             .WithProperty("DeployOnBuild","true")
-            .UseToolVersion(MSBuildToolVersion.NET45)
+            .UseToolVersion(MSBuildToolVersion.NET46)
             .SetVerbosity(Verbosity.Minimal)
             .SetNodeReuse(false));
 });
@@ -85,7 +85,7 @@ Task("Deploy")
         throw new InvalidOperationException("Could not resolve Azure username or password.");
     }
 
-    // Adjust the username since Powershell doesn't like 
+    // Adjust the username since Powershell doesn't like
     // the $ sign which Azure use to prefix usernames.
     username = string.Concat("$", username);
 
