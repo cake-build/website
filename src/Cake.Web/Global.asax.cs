@@ -8,6 +8,7 @@ using Autofac;
 using Autofac.Integration.Mvc;
 using Cake.Core.IO;
 using Cake.Web.Core;
+using Cake.Web.Core.Content.Addins;
 using Cake.Web.Core.Content.Blog;
 using Cake.Web.Core.Content.Documentation;
 using Cake.Web.Core.Dsl;
@@ -73,10 +74,15 @@ namespace Cake.Web
             var blogReader = container.Resolve<IBlogReader>();
             var blogIndex = blogReader.Parse(appDataPath.Combine("blog"));
 
+            // Read all addins.
+            var addinReader = container.Resolve<IAddinReader>();
+            var addins = addinReader.Read(appDataPath.CombineWithFilePath("addins.xml"));
+
             // Update the container.
             builder = new ContainerBuilder();
             builder.RegisterInstance(topics).As<TopicTree>().SingleInstance();
             builder.RegisterInstance(blogIndex).As<BlogIndex>().SingleInstance();
+            builder.RegisterInstance(addins).As<AddinIndex>().SingleInstance();
             builder.Update(container);
 
             // Perform registrations.

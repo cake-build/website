@@ -84,6 +84,18 @@ namespace Cake.Web
                 new { controller = "Blog", action = "Feed" }
             );
 
+            // Addins
+            routes.MapRoute(
+                "Addins", "addins/",
+                new { controller = "Addin", action = "index" }
+            );
+
+            // Addins: Category
+            routes.MapRoute(
+                "AddinsCategory", "addins/category/{category}",
+                new { controller = "Addin", action = "index" }
+            );
+
             // Default
             routes.MapRoute(
                 name: "Default",

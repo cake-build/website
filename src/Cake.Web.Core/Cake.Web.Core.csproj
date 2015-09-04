@@ -99,7 +99,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Content\Addins\Addin.cs" />
+    <Compile Include="Content\Addins\AddinIndex.cs" />
+    <Compile Include="Content\Addins\AddinReader.cs" />
     <Compile Include="ApiServices.cs" />
+    <Compile Include="Content\Addins\IAddinReader.cs" />
     <Compile Include="Content\Blog\BlogCategory.cs" />
     <Compile Include="Content\Blog\BlogCategoryComparer.cs" />
     <Compile Include="Content\Blog\BlogFilename.cs" />

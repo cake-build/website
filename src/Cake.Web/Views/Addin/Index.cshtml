@@ -1,0 +1,78 @@
+﻿@model Cake.Web.Models.AddinViewModel
+
+@{
+    ViewBag.Title = "Addins";
+    ViewBag.Menu = "Addins";
+    Layout = "~/Views/Shared/_LayoutSidebar.cshtml";
+}
+
+@section Sidebar
+{
+    <h4><i class="fa fa-bookmark"></i> Categories</h4>
+    <ul class="api-nav">
+        @foreach (var category in Model.Categories.OrderBy(c => c))
+        {
+            if (@Model.Category != null && Model.Category.Equals(category, StringComparison.OrdinalIgnoreCase))
+            {
+                <li class="active"><i class="fa fa-caret-right"></i> @category</li>
+            }
+            else
+            {
+                <li><a href="/addins/category/@category.ToLowerInvariant()">@category</a></li>
+            }
+        }
+    </ul>
+}
+
+@* TITLE *@
+<div class="main-content-title">
+    @if (Model.Category == null)
+    {
+        <h2>Addins</h2>
+    }
+    else
+    {
+        <h2>@Model.Category</h2>
+    }
+</div>
+<p></p>
+
+<p style="margin-top: 15px;">
+    This page contain third party addins for Cake.
+    If you want to file an issue for any addin listed here,
+    contact the author of the addin.
+</p>
+
+@foreach (var addin in Model.Addins.OrderBy(a => a.Name))
+{
+    <div class="panel panel-default addin-panel">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                <i class="fa fa-puzzle-piece"></i> @addin.Name
+            </h3>
+        </div>
+        <div class="panel-body">
+            <p>@addin.Description</p>
+            <p>
+                <b>Author:</b> @addin.Author<br />
+
+                @if (!string.IsNullOrWhiteSpace(addin.PackageId))
+                {
+                    <b>NuGet:</b> <a href="https://www.nuget.org/packages/@addin.PackageId">@addin.Name</a><br />
+                }
+
+                @if (addin.Repository != null)
+                {
+                    <b>Repository:</b>
+                    <a href="@addin.Repository.ToString()">@addin.Repository.ToString()</a>
+                }
+
+                @if (addin.Website != null)
+                {
+                    <b>Website:</b>
+                    <a href="@addin.Website.ToString()">@addin.Website.ToString()</a>
+                }
+            </p>
+        </div>
+    </div>
+}

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Addins>
+  <Addin>
+    <Name>Cake.FileHelpers</Name>
+    <PackageId>Cake.FileHelpers</PackageId>
+    <Repository>https://github.com/Redth/Cake.FileHelpers</Repository>
+    <Author>Jonathan Dick</Author>
+    <Description>
+      A set of aliases for Cake to help with simple file operations 
+      such as Reading, Writing and Replacing text.
+    </Description>
+    <Categories>IO</Categories>
+  </Addin>
+  <Addin>
+    <Name>Cake.Xamarin</Name>
+    <PackageId>Cake.Xamarin</PackageId>
+    <Repository>https://github.com/Redth/Cake.Xamarin</Repository>
+    <Author>Jonathan Dick</Author>
+    <Description>
+      A set of aliases for Cake to help with Xamarin projects.
+    </Description>
+    <Categories>Mobile</Categories>
+  </Addin>
+  <Addin>
+    <Name>Cake.AliaSql</Name>
+    <PackageId>Cake.AliaSql</PackageId>
+    <Repository>https://github.com/RichiCoder1/Cake.AliaSql</Repository>
+    <Author>RichieCoder1</Author>
+    <Description>
+      AliaSql Script Alias for Cake.
+    </Description>
+    <Categories>Database</Categories>
+  </Addin>
+  <Addin>
+    <Name>Cake.Slack</Name>
+    <PackageId>Cake.Slack</PackageId>
+    <Repository>https://github.com/WCOMAB/Cake.Slack</Repository>
+    <Author>WCOMAB</Author>
+    <Description>Cake Addin that extends Cake with Slack messaging features.</Description>
+    <Categories>Communication</Categories>
+  </Addin>
+  <Addin>
+    <Name>Cake.Powershell</Name>
+    <PackageId>Cake.Powershell</PackageId>
+    <Repository>https://github.com/SharpeRAD/Cake.Powershell</Repository>
+    <Author>SharpeRAD</Author>
+    <Description>Cake addin that extends Cake with Powershell command support.</Description>
+    <Categories>Powershell</Categories>
+  </Addin>
+  <Addin>
+    <Name>Cake.IIS</Name>
+    <PackageId>Cake.IIS</PackageId>
+    <Repository>https://github.com/SharpeRAD/Cake.IIS</Repository>
+    <Author>SharpeRAD</Author>
+    <Description>Cake addin that extends Cake with IIS support.</Description>
+    <Categories>IIS</Categories>
+  </Addin>
+  <Addin>
+    <Name>Cake.WebDeploy</Name>
+    <PackageId>Cake.WebDeploy</PackageId>
+    <Repository>https://github.com/SharpeRAD/Cake.WebDeploy</Repository>
+    <Author>SharpeRAD</Author>
+    <Description>Cake addin that extends Cake with WebDeploy commands for publishing to IIS.</Description>
+    <Categories>Deployment;IIS</Categories>
+  </Addin>
+  <Addin>
+    <Name>Cake.Unity</Name>
+    <Repository>https://github.com/patriksvensson/Cake.Unity</Repository>
+    <Author>Patrik Svensson</Author>
+    <Description>Unity build support for Cake.</Description>
+    <Categories>Unity;Gaming</Categories>
+  </Addin>
+</Addins>

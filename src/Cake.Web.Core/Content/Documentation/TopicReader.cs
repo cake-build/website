@@ -50,7 +50,7 @@ namespace Cake.Web.Core.Content.Documentation
                     return FixLinks(Read(root, stream));
                 }
             }
-            var message = string.Format("Could not find toc file ({0}).", path.FullPath);
+            var message = $"Could not find toc file ({path.FullPath}).";
             throw new FileNotFoundException(message);
         }
 
@@ -160,7 +160,7 @@ namespace Cake.Web.Core.Content.Documentation
             var path = root.CombineWithFilePath(file);
             if (_fileSystem.Exist(path))
             {
-                // Parse the file and separate front matter from content.
+                // Read the file and separate front matter from content.
                 var content = _contentParser.Parse(path);
                 if (content != null)
                 {

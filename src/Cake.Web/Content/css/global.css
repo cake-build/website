@@ -379,3 +379,16 @@ body {
     padding-left: 0px;
     background-color: transparent;
 }
+
+/* +++++++++++++++++++++++++++++++++ */
+/* ADDINS */
+/* +++++++++++++++++++++++++++++++++ */
+
+.addin-panel {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+h3.panel-title {
+    margin-top: 0px;
+}

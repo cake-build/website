@@ -2,6 +2,7 @@
 using Cake.Core;
 using Cake.Core.IO;
 using Cake.Web.Core.Content;
+using Cake.Web.Core.Content.Addins;
 using Cake.Web.Core.Content.Blog;
 using Cake.Web.Core.Content.Documentation;
 
@@ -25,6 +26,9 @@ namespace Cake.Web.Core
 
             // Register documentation services.
             builder.RegisterType<TopicReader>().As<ITopicReader>().SingleInstance();
+
+            // Register addin services.
+            builder.RegisterType<AddinReader>().As<IAddinReader>().SingleInstance();
         }
     }
 }

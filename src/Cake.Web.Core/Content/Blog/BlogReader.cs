@@ -39,7 +39,7 @@ namespace Cake.Web.Core.Content.Blog
                 var filename = BlogFilename.Parse(file.Path);
                 if (filename != null)
                 {
-                    // Parse the file.
+                    // Read the file.
                     var content = _parser.Parse(file.Path);
                     if (!content.FrontMatter.ContainsKey("content-type"))
                     {

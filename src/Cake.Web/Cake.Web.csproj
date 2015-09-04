@@ -146,6 +146,7 @@
     <Compile Include="App_Start\NuGetBootstrapper.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="CakeWebViewPage.cs" />
+    <Compile Include="Controllers\AddinController.cs" />
     <Compile Include="Controllers\ApiController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\DocsController.cs" />
@@ -169,6 +170,7 @@
     <Compile Include="Helpers\MenuHelper.cs" />
     <Compile Include="Helpers\TopicHelper.cs" />
     <Compile Include="Helpers\LinkHelper.cs" />
+    <Compile Include="Models\AddinViewModel.cs" />
     <Compile Include="Models\ApiViewModel.cs" />
     <Compile Include="Models\AssemblyViewModel.cs" />
     <Compile Include="Models\BlogPostViewModel.cs" />
@@ -181,6 +183,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\addins.xml" />
     <Content Include="App_Data\blog\2015-08-16-cake-v0.5.2-released.md" />
     <Content Include="App_Data\docs.xml" />
     <Content Include="Content\css\bootstrap-theme.css" />
@@ -278,6 +281,7 @@
     <Content Include="Views\Blog\Details.cshtml" />
     <Content Include="Views\Shared\_LayoutBlog.cshtml" />
     <Content Include="Views\Blog\Category.cshtml" />
+    <None Include="Views\Addin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
