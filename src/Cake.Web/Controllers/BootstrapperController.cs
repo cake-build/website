@@ -34,7 +34,9 @@ namespace Cake.Web.Controllers
 
         public ActionResult Packages()
         {
-            return File(_content.Data, "text/plain", "packages.config");
+            var result = File(_content.Data, "text/xml", "packages.config");
+            Response.Charset = "utf-8";
+            return result;
         }
     }
 }
