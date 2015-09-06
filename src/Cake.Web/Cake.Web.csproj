@@ -149,6 +149,7 @@
     <Compile Include="Controllers\AddinController.cs" />
     <Compile Include="Controllers\ApiController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\BootstrapperController.cs" />
     <Compile Include="Controllers\DocsController.cs" />
     <Compile Include="Controllers\DslController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
@@ -285,6 +286,7 @@
     <Content Include="Views\Addin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Views\Bootstrapper\" />
     <Folder Include="Views\Script\" />
   </ItemGroup>
   <ItemGroup>
