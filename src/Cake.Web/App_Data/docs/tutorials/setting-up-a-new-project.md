@@ -6,8 +6,8 @@ This guide will show you how to setup Cake for a new project.
 
 ### 1. Install the bootstrapper
 
-The bootstrapper is used to download Cake and the tools required 
-by the build script. This is an optional step, but recommended since 
+The bootstrapper is used to download Cake and the tools required by the 
+build script. This is (kind of) an optional step, but recommended since 
 it removes the need to store binaries in the source code repository.
 
 #### Windows
@@ -15,29 +15,29 @@ it removes the need to store binaries in the source code repository.
 Open a PowerShell and run the following line.
 
 ```powershell
-PS> Invoke-WebRequest http://cakebuild.net/bootstrapper/windows -OutFile ./build.ps1
+Invoke-WebRequest http://cakebuild.net/bootstrapper/windows -OutFile build.ps1
 ```
 
 #### Linux
 
-Open a bash shell and run the following line.
+Open a shell and run the following line.
 
-```shell
-curl -Lsfo ./build.sh http://cakebuild.net/bootstrapper/linux
+```bash
+curl -Lsfo build.sh http://cakebuild.net/bootstrapper/linux
 ```
 
 #### OS X
 
-Open a bash shell and run the following line.
+Open a shell and run the following line.
 
-```shell
-curl -Lsfo ./build.sh http://cakebuild.net/bootstrapper/osx
+```bash
+curl -Lsfo build.sh http://cakebuild.net/bootstrapper/osx
 ```
 
 ### 2. Create a Cake script
 
-Add a cake script called `build.cake` where you added your Cake script 
-(preferably in the root folder of your source code repository).
+Add a cake script called `build.cake` to the same location as the 
+bootstrapper script that you downloaded.
 
 ```csharp
 var target = Argument<string>("target", "Default");
@@ -53,11 +53,30 @@ RunTarget(target);
 
 ### 3. Run the Cake script
 
+Now you should be able to run your Cake script by invoking the bootstrapper.
+
+#### Windows
+
+```powershell
+./build.ps1
+```
+
+If script execution fail due to the execution policy, you might have to 
+tell PowerShell to allow running scripts. You do this by 
+[changing the execution policy](https://technet.microsoft.com/en-us/library/ee176961.aspx).
+
+#### Linux/OS X
+
 To be able to execute the bash script on Linux or OS X you should 
 give the owner of the script permission to execute it.
 
-```shell
-chmod 100 ./build.sh
+```bash
+chmod +x build.sh
 ```
 
-Now you should be able to run your Cake script by invoking the bootstrapper.
+When this have been done, you should be able to run your Cake script 
+by invoking the bootstrapper.
+
+```bash
+./build.sh
+```
