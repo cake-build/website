@@ -30,7 +30,7 @@ namespace Cake.Web.Core.Content
         private static string GenerateBody(string version)
         {
             var builder = new StringBuilder();
-            builder.AppendLine("<?xml version=\"1.0\" encoding=\"utf - 8\"?>");
+            builder.AppendLine("<?xml version=\"1.0\" encoding=\"utf-8\"?>");
             builder.AppendLine("<packages>");
             builder.AppendLine(string.Format("\t<package id=\"Cake\" version=\"{0}\" />", version));
             builder.AppendLine("</packages>");
