@@ -287,6 +287,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Bootstrapper\" />
+    <Folder Include="Views\File\" />
     <Folder Include="Views\Script\" />
   </ItemGroup>
   <ItemGroup>

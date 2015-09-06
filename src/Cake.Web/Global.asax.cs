@@ -8,6 +8,7 @@ using Autofac;
 using Autofac.Integration.Mvc;
 using Cake.Core.IO;
 using Cake.Web.Core;
+using Cake.Web.Core.Content;
 using Cake.Web.Core.Content.Addins;
 using Cake.Web.Core.Content.Blog;
 using Cake.Web.Core.Content.Documentation;
@@ -28,6 +29,7 @@ namespace Cake.Web
             var appDataPath = new DirectoryPath(AppDomain.CurrentDomain.GetData("DataDirectory").ToString());
 
             // Create the document model by downloading the nuget package.
+            var cakeVersion = (string)null;
             var documentModel = NuGetBootstrapper.Download(appDataPath,
                 new NuGetConfiguration {
                     Packages = new List<PackageDefinition>
@@ -44,10 +46,13 @@ namespace Cake.Web
                         PackageName = "Cake"
                     }
                 }
-                });
+                }, out cakeVersion);
 
             // Build the DSL model.
             var dslModel = DslModelBuilder.Build(documentModel);
+
+            // Generate packages.config content.
+            var packagesConfig = new PackagesConfigContent(cakeVersion);
 
             // Build the container.
             var builder = new ContainerBuilder();
@@ -64,6 +69,7 @@ namespace Cake.Web
             builder.RegisterType<SyntaxRenderer>().SingleInstance();
             builder.RegisterType<SignatureRenderer>().SingleInstance();
             builder.RegisterType<ApiServices>().SingleInstance();
+            builder.RegisterInstance(packagesConfig).SingleInstance();
             var container = builder.Build();
 
             // Read the topics and register.

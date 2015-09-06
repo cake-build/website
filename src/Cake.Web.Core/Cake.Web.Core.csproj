@@ -111,6 +111,7 @@
     <Compile Include="Content\Blog\BlogPost.cs" />
     <Compile Include="Content\Blog\BlogReader.cs" />
     <Compile Include="Content\Blog\IBlogReader.cs" />
+    <Compile Include="Content\PackagesConfigContent.cs" />
     <Compile Include="Html\Breadcrumb.cs" />
     <Compile Include="Html\BreadcrumbDropdown.cs" />
     <Compile Include="Html\BreadcrumbItem.cs" />
