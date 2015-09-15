@@ -38,7 +38,10 @@
   </Addin>
   <Addin>
     <Name>Cake.Slack</Name>
-    <NuGet Id="Cake.Slack" />
+    <NuGet Id="Cake.Slack">
+      <Filter>Cake.Slack.dll</Filter>
+      <Filter>Cake.Slack.xml</Filter>
+    </NuGet>
     <Repository>https://github.com/WCOMAB/Cake.Slack</Repository>
     <Author>WCOMAB</Author>
     <Description>Cake Addin that extends Cake with Slack messaging features.</Description>

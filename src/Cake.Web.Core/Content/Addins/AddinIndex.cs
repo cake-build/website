@@ -13,9 +13,12 @@ namespace Cake.Web.Core.Content.Addins
         private readonly List<Addin> _addins;
         private readonly List<string> _categories; 
         private readonly Dictionary<string, List<Addin>> _categoryLookup;
-        private readonly List<Addin> _emptyAddinList; 
+        private readonly List<Addin> _emptyAddinList;
 
-        public int Count => _addins.Count;
+        public int Count
+        {
+            get { return _addins.Count; }
+        }
 
         public AddinIndex(IEnumerable<Addin> addins)
         {

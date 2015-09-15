@@ -28,7 +28,7 @@ namespace Cake.Web.Core.Content.Addins
                     return Read(stream);
                 }
             }
-            var message = $"Could not find toc file ({path.FullPath}).";
+            var message = string.Format("Could not find toc file ({0}).", path.FullPath);
             throw new FileNotFoundException(message);
         }
 

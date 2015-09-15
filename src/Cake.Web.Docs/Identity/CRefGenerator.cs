@@ -97,6 +97,14 @@ namespace Cake.Web.Docs.Identity
             builder.Append(property.DeclaringType.FullName);
             builder.Append(".");
             builder.Append(property.Name);
+
+            if (property.HasParameters && property.Name == "Item")
+            {
+                builder.Append("(");
+                builder.Append(property.Parameters[0].ParameterType.FullName);
+                builder.Append(")");
+            }
+
             return builder.ToString();
         }
 

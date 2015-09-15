@@ -6,8 +6,8 @@ namespace Cake.Web.Models
 {
     public class AddinViewModel
     {
-        public IReadOnlyList<Addin> Addins { get; }
-        public IReadOnlyList<string> Categories { get; }
+        public IReadOnlyList<Addin> Addins { get; private set; }
+        public IReadOnlyList<string> Categories { get; private set; }
         public string Category { get; set; }
 
         public AddinViewModel(
