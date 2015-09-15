@@ -53,7 +53,7 @@
     </div>
 
     @* -PARAMETERS- *@
-    @if (@Model.Data.Parameters.Count > 0)
+    @if (@Model.Data.Parameters.Count > 0 && !@Model.Data.Metadata.IsPropertyAlias)
     {
         <div id="parameters" class="panel panel-default">
             <div class="panel-heading">
@@ -61,10 +61,10 @@
             </div>
             <div class="panel-body">
                 <dl>
-                    @foreach (var item in @Model.Data.Parameters)
+                    @foreach (var item in @Model.Data.Parameters.Skip(@Model.Data.Metadata.IsAlias ? 1 : 0))
                     {
                         <dt><i>@item.Name</i></dt>
-                        <dd>Type: @Api.TypeLink(item.Definition.ParameterType)<br />@Api.Comment(item.Comment)</dd>
+                        <dd>Type: @Api.TypeLink(item.Definition.ParameterType)<br/>@Api.Comment(item.Comment)</dd>
                     }
                 </dl>
             </div>

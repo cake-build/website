@@ -52,7 +52,7 @@ namespace Cake.Web
                     "/**/Cake.Common.xml"
                 },
                 PackageName = "Cake",
-                Metadata = new CakeDocumentationMetadata()
+                Metadata = new CakeMetadata()
             });
 
             // Create the document model by downloading the nuget package.

@@ -9,10 +9,29 @@ namespace Cake.Web.Helpers.Api
 {
     public static class MethodHelper
     {
+        private static MethodRenderOption FixOptions(DocumentedMethod method, MethodRenderOption options)
+        {
+            if (method.Metadata.IsAlias)
+            {
+                if (method.Metadata.IsPropertyAlias)
+                {
+                    options |= MethodRenderOption.PropertyAlias;
+                }
+                else
+                {
+                    options |= MethodRenderOption.MethodAlias;
+                }
+            }
+            return options;
+        }
+
         public static IHtmlString MethodName(this ApiServices context, DocumentedMethod method)
         {
             if (method != null)
             {
+                var options = MethodRenderOption.Name | MethodRenderOption.Parameters;
+                options = FixOptions(method, options);
+
                 var signature = context.SignatureResolver.GetMethodSignature(method);
                 return context.SignatureRenderer.Render(signature, MethodRenderOption.Name | MethodRenderOption.Parameters);
             }
@@ -23,6 +42,7 @@ namespace Cake.Web.Helpers.Api
         {
             if (method != null)
             {
+                options = FixOptions(method, options);
                 var signature = context.SignatureResolver.GetMethodSignature(method);
                 return context.SignatureRenderer.Render(signature, options);
             }
@@ -38,6 +58,7 @@ namespace Cake.Web.Helpers.Api
         {
             if (method != null)
             {
+                options = FixOptions(method, options);
                 var signature = context.SignatureResolver.GetMethodSignature(method);
                 return context.SignatureRenderer.Render(signature, MethodRenderOption.Link | options);
             }
@@ -53,6 +74,15 @@ namespace Cake.Web.Helpers.Api
         {
             if (type != null)
             {
+                if (type.Metadata.IsAlias)
+                {
+                    if (type.Metadata.IsPropertyAlias)
+                    {
+                        return MvcHtmlString.Create("Cake Property Alias");
+                    }
+                    return MvcHtmlString.Create("Cake Method Alias");
+                }
+
                 switch (type.MethodClassification)
                 {
                     case MethodClassification.Constructor:

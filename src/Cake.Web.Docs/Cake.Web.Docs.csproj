@@ -62,7 +62,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CakeDocumentationMetadata.cs" />
+    <Compile Include="CakeMetadata.cs" />
     <Compile Include="DocumentedMethodComparer.cs" />
     <Compile Include="DocumentedTypeComparer.cs" />
     <Compile Include="DocumentModelResolver.cs" />

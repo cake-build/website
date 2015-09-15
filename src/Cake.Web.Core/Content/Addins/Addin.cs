@@ -26,6 +26,16 @@ namespace Cake.Web.Core.Content.Addins
             get { return true; }
         }
 
+        public bool IsAlias
+        {
+            get { return false; }
+        }
+
+        public bool IsPropertyAlias
+        {
+            get { return false; }
+        }
+
         public Addin()
         {
             Categories = new List<string>();

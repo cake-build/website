@@ -10,5 +10,7 @@ namespace Cake.Web.Docs
     {
         Uri Uri { get; }
         bool IsExternallyOwned { get; }
+        bool IsAlias { get; }
+        bool IsPropertyAlias { get; }
     }
 }

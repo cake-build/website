@@ -73,7 +73,8 @@ namespace Cake.Web.Core.Rendering
                     writer.WriteEncodedText(GetMethodName(signature));
                 }
 
-                if ((options & MethodRenderOption.Parameters) == MethodRenderOption.Parameters)
+                var isPropertyAlias = (options & MethodRenderOption.PropertyAlias) == MethodRenderOption.PropertyAlias;
+                if (!isPropertyAlias && (options & MethodRenderOption.Parameters) == MethodRenderOption.Parameters)
                 {
                     if (signature.Classification != MethodClassification.Operator)
                     {
@@ -96,7 +97,8 @@ namespace Cake.Web.Core.Rendering
                         }
                         if (parameterResult.Count > 0)
                         {
-                            if ((options & MethodRenderOption.ExtensionMethod) == MethodRenderOption.ExtensionMethod)
+                            var isMethodAlias = (options & MethodRenderOption.MethodAlias) == MethodRenderOption.MethodAlias;
+                            if (isMethodAlias || (options & MethodRenderOption.ExtensionMethod) == MethodRenderOption.ExtensionMethod)
                             {
                                 if (signature.Classification == MethodClassification.ExtensionMethod)
                                 {

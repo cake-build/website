@@ -3,6 +3,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using Cake.Web.Docs;
 using Cake.Web.Docs.Comments;
+using Cake.Web.Docs.Reflection;
 using Mono.Cecil;
 
 namespace Cake.Web.Core.Dsl
@@ -129,24 +130,8 @@ namespace Cake.Web.Core.Dsl
             var method = member as DocumentedMethod;
             if (method != null)
             {
-                if (IsCakeAlias(method.Definition, out isPropertyAlias))
+                if (method.Definition.IsCakeAlias(out isPropertyAlias))
                 {
-                    return true;
-                }
-            }
-            isPropertyAlias = false;
-            return false;
-        }
-
-        private static bool IsCakeAlias(MethodDefinition method, out bool isPropertyAlias)
-        {
-            foreach (var attribute in method.CustomAttributes)
-            {
-                if (attribute.AttributeType != null && (
-                    attribute.AttributeType.FullName == "Cake.Core.Annotations.CakeMethodAliasAttribute" ||
-                    attribute.AttributeType.FullName == "Cake.Core.Annotations.CakePropertyAliasAttribute"))
-                {
-                    isPropertyAlias = attribute.AttributeType.FullName == "Cake.Core.Annotations.CakePropertyAliasAttribute";
                     return true;
                 }
             }

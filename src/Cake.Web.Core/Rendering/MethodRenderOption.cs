@@ -49,6 +49,16 @@ namespace Cake.Web.Core.Rendering
         ExtensionMethod = 1 << 7,
 
         /// <summary>
+        /// Render like a method alias.
+        /// </summary>
+        MethodAlias = 1 << 8,
+
+        /// <summary>
+        /// Render like a property alias.
+        /// </summary>
+        PropertyAlias = 1 << 9,
+
+        /// <summary>
         /// The default rendering options.
         /// </summary>
         Default = Name | Parameters

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Cake.Web.Docs.Comments;
+using Cake.Web.Docs.Reflection;
 using Cake.Web.Docs.Reflection.Model;
 using Cake.Web.Docs.Xml.Model;
 
@@ -210,7 +211,14 @@ namespace Cake.Web.Docs
                 parameters.Add(parameter);
             }
 
-            return new DocumentedMethod(method, parameters, summary, remarks, examples, returns, method.Metadata);
+            var metadata = method.Metadata;
+            var isPropertyAlias = false;
+            if (method.Definition.IsCakeAlias(out isPropertyAlias))
+            {
+                metadata = new AliasMetadataAdapter(metadata, isPropertyAlias);
+            }
+
+            return new DocumentedMethod(method, parameters, summary, remarks, examples, returns, metadata);
         }
 
         private static DocumentedProperty MapProperty(IPropertyInfo property, XmlDocumentationModel xmlModel)

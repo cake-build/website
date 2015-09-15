@@ -282,7 +282,8 @@ namespace Cake.Web.Core.Rendering
             }
 
             // Parameters
-            if (method.Parameters.Count > 0)
+            var isPropertyAlias = method.Metadata.IsPropertyAlias;
+            if (!isPropertyAlias && method.Parameters.Count > 0)
             {
                 writer.WriteEncodedText("(");
                 writer.WriteLine();
@@ -290,6 +291,12 @@ namespace Cake.Web.Core.Rendering
                 var index = 0;
                 foreach (var parameter in method.Parameters)
                 {
+                    if(index == 0 && method.Metadata.IsAlias)
+                    {
+                        index++;
+                        continue;
+                    }
+
                     writer.WriteEncodedText("       ");
 
                     if (index == 0)
@@ -334,8 +341,11 @@ namespace Cake.Web.Core.Rendering
             }
             else
             {
-                writer.WriteEncodedText("()");
-                writer.WriteLine();
+                if (!isPropertyAlias)
+                {
+                    writer.WriteEncodedText("()");
+                    writer.WriteLine();
+                }
             }
         }
     }

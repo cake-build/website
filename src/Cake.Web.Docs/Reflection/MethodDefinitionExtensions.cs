@@ -26,5 +26,21 @@ namespace Cake.Web.Docs.Reflection
         {
             return method.Name.StartsWith("op_");
         }
+
+        public static bool IsCakeAlias(this MethodDefinition method, out bool isPropertyAlias)
+        {
+            foreach (var attribute in method.CustomAttributes)
+            {
+                if (attribute.AttributeType != null && (
+                    attribute.AttributeType.FullName == "Cake.Core.Annotations.CakeMethodAliasAttribute" ||
+                    attribute.AttributeType.FullName == "Cake.Core.Annotations.CakePropertyAliasAttribute"))
+                {
+                    isPropertyAlias = attribute.AttributeType.FullName == "Cake.Core.Annotations.CakePropertyAliasAttribute";
+                    return true;
+                }
+            }
+            isPropertyAlias = false;
+            return false;
+        }
     }
 }
