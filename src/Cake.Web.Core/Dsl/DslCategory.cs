@@ -9,6 +9,7 @@ namespace Cake.Web.Core.Dsl
     public sealed class DslCategory
     {
         private readonly string _name;
+        private readonly IDocumentationMetadata _metadata;
         private readonly SummaryComment _summary;
         private readonly string _slug;
         private readonly List<DocumentedMethod> _methods;
@@ -17,6 +18,11 @@ namespace Cake.Web.Core.Dsl
         public string Name
         {
             get { return _name; }
+        }
+
+        public IDocumentationMetadata Metadata
+        {
+            get { return _metadata; }
         }
 
         public SummaryComment Summary
@@ -43,11 +49,13 @@ namespace Cake.Web.Core.Dsl
 
         public DslCategory(
             string name,
+            IDocumentationMetadata metadata,
             SummaryComment summary,
             IEnumerable<DocumentedMethod> methods,
             IEnumerable<DslSubCategory> categories)
         {
             _name = name;
+            _metadata = metadata;
             _summary = summary;
             _slug = _name.ToSlug();
             _methods = new List<DocumentedMethod>(methods);

@@ -58,13 +58,15 @@ namespace Cake.Web.Docs
         /// <param name="remarks">The remarks comment.</param>
         /// <param name="examples">The example comments.</param>
         /// <param name="value">The value comment.</param>
+        /// <param name="metadata">The associated metadata.</param>
         public DocumentedProperty(
             IPropertyInfo info,
             SummaryComment summary,
             RemarksComment remarks,
             IEnumerable<ExampleComment> examples,
-            ValueComment value)
-            : base(MemberClassification.Property, summary, remarks, examples)
+            ValueComment value,
+            IDocumentationMetadata metadata)
+            : base(MemberClassification.Property, summary, remarks, examples, metadata)
         {
             _definition = info.Definition;
             _identity = info.Identity;

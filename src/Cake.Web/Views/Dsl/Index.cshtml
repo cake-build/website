@@ -16,9 +16,12 @@
     <ul>
         @foreach (var topicSection in Model.Categories)
         {
-            <li><a href="@Url.Action("Index", "Dsl", new {path = topicSection.Slug})">@topicSection.Name</a></li>
+            <li>
+                <a href="@Url.Action("Index", "Dsl", new {path = topicSection.Slug})">@topicSection.Name</a>
+            </li>
         }
     </ul>
+
 }
 
 @* TITLE *@
@@ -36,7 +39,7 @@
         A script alias is an extension method for <a href="@Api.TypeUrl("T:Cake.Core.ICakeContext")">ICakeContext</a>.
     </p>
 
-    <div id="constructors" class="panel panel-default" style="margin-top: 20px">
+    <div class="panel panel-default" style="margin-top: 20px">
         <div class="panel-heading">
             <b>Categories</b>
         </div>
@@ -45,7 +48,13 @@
                 @foreach (var topicSection in Model.Categories)
                 {
                     <tr>
-                        <td><a href="@Url.Action("Index", "Dsl", new {path = topicSection.Slug})">@topicSection.Name</a></td>
+                        <td>
+                            <a href="@Url.Action("Index", "Dsl", new {path = topicSection.Slug})">@topicSection.Name</a>
+                            @if (topicSection.Metadata.IsExternallyOwned)
+                            {
+                                <span class="label label-addin">addin</span>
+                            }
+                        </td>
                         <td>@Api.Comment(@topicSection.Summary)</td>
                     </tr>
                 }

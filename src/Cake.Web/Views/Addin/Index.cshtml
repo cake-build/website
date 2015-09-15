@@ -56,9 +56,12 @@
             <p>
                 <b>Author:</b> @addin.Author<br />
 
-                @if (!string.IsNullOrWhiteSpace(addin.PackageId))
+                @if (addin.PackageDefinition != null)
                 {
-                    <b>NuGet:</b> <a href="https://www.nuget.org/packages/@addin.PackageId">@addin.Name</a><br />
+                    if (!string.IsNullOrWhiteSpace(addin.PackageDefinition.PackageName))
+                    {
+                        <b>NuGet:</b> <a href="https://www.nuget.org/packages/@addin.PackageDefinition.PackageName">@addin.Name</a><br />
+                    }
                 }
 
                 @if (addin.Repository != null)

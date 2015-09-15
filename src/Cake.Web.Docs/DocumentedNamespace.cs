@@ -72,12 +72,14 @@ namespace Cake.Web.Docs
         /// <param name="name">The namespace name.</param>
         /// <param name="types">The types.</param>
         /// <param name="summaryComment">The summary comment.</param>
+        /// <param name="metadata">The associated metadata.</param>
         public DocumentedNamespace(
             string identity, 
             string name,
             IEnumerable<DocumentedType> types,
-            SummaryComment summaryComment)
-            : base(MemberClassification.Namespace, summaryComment, null, null)
+            SummaryComment summaryComment,
+            IDocumentationMetadata metadata)
+            : base(MemberClassification.Namespace, summaryComment, null, null, metadata)
         {
             _identity = identity;
             _name = name;

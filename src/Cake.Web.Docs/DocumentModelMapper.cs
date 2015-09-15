@@ -112,7 +112,7 @@ namespace Cake.Web.Docs
                 }
 
                 // Create a namespace for each grouping.
-                var @namespace = new DocumentedNamespace(namespaceGroup.Key, namespaceGroup.Key, namespaceTypes, summary);
+                var @namespace = new DocumentedNamespace(namespaceGroup.Key, namespaceGroup.Key, namespaceTypes, summary, assembly.Metadata);
                 namespaces.Add(@namespace);
 
                 // Connect the types in this namespace to the namespace.
@@ -123,7 +123,7 @@ namespace Cake.Web.Docs
             }
 
             // Create an documented assembly out of it.
-            var documentedAssembly = new DocumentedAssembly(assembly, namespaces);
+            var documentedAssembly = new DocumentedAssembly(assembly, namespaces, assembly.Metadata);
 
             // Add the documented assembly as a parent of all namespaces.
             foreach (var @namespace in namespaces)
@@ -173,7 +173,7 @@ namespace Cake.Web.Docs
             }
 
             // Return the documented type.
-            return new DocumentedType(type, properties, methods, fields, summary, remarks, example);
+            return new DocumentedType(type, properties, methods, fields, summary, remarks, example, type.Metadata);
         }
 
         private static DocumentedMethod MapMethod(IMethodInfo method, XmlDocumentationModel xmlModel)
@@ -206,11 +206,11 @@ namespace Cake.Web.Docs
                     comment = member.Comments.OfType<ParamComment>().FirstOrDefault(x => x.Name == parameterDefinition.Name);
                 }
 
-                var parameter = new DocumentedParameter(parameterDefinition, comment);
+                var parameter = new DocumentedParameter(parameterDefinition, comment, method.Metadata);
                 parameters.Add(parameter);
             }
 
-            return new DocumentedMethod(method, parameters, summary, remarks, examples, returns);
+            return new DocumentedMethod(method, parameters, summary, remarks, examples, returns, method.Metadata);
         }
 
         private static DocumentedProperty MapProperty(IPropertyInfo property, XmlDocumentationModel xmlModel)
@@ -231,7 +231,7 @@ namespace Cake.Web.Docs
                 value = member.Comments.OfType<ValueComment>().SingleOrDefault();
             }
 
-            return new DocumentedProperty(property, summary, remarks, examples, value);
+            return new DocumentedProperty(property, summary, remarks, examples, value, property.Metadata);
         }
 
         private static DocumentedField MapField(IFieldInfo field, XmlDocumentationModel xmlModel)
@@ -250,7 +250,7 @@ namespace Cake.Web.Docs
                 examples = member.Comments.OfType<ExampleComment>();
             }
 
-            return new DocumentedField(field, summary, remarks, examples);
+            return new DocumentedField(field, summary, remarks, examples, field.Metadata);
         }
     }
 }

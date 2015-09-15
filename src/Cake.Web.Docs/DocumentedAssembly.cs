@@ -65,8 +65,12 @@ namespace Cake.Web.Docs
         /// </summary>
         /// <param name="info">The assembly information.</param>
         /// <param name="namespaces">The namespaces.</param>
-        public DocumentedAssembly(IAssemblyInfo info, IEnumerable<DocumentedNamespace> namespaces)
-            : base(MemberClassification.Assembly,  null, null, null)
+        /// <param name="metadata">The associated metadata.</param>
+        public DocumentedAssembly(
+            IAssemblyInfo info, 
+            IEnumerable<DocumentedNamespace> namespaces,
+            IDocumentationMetadata metadata)
+            : base(MemberClassification.Assembly,  null, null, null, metadata)
         {
             _definition = info.Definition;
             _identity = info.Identity;

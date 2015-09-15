@@ -78,8 +78,9 @@ namespace Cake.Web.Docs
         /// </summary>
         /// <param name="definition">The parameter definition.</param>
         /// <param name="comment">The parameter comment.</param>
-        public DocumentedParameter(ParameterDefinition definition, ParamComment comment)
-            : base(MemberClassification.Parameter,  null, null, null)
+        /// <param name="metadata">The associated metadata.</param>
+        public DocumentedParameter(ParameterDefinition definition, ParamComment comment, IDocumentationMetadata metadata)
+            : base(MemberClassification.Parameter,  null, null, null, metadata)
         {
             _definition = definition;
             _comment = comment;

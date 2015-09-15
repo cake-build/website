@@ -32,6 +32,12 @@
 
 <div style="margin-top: 20px">
 
+    @* ADDIN *@
+    @if (@Model.Metadata.IsExternallyOwned)
+    {
+        @Html.Partial("_AddinWarning", Model.Metadata)
+    }
+
     @* SUMMARY *@
     @if (@Model.Summary != null)
     {

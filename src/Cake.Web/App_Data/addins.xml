@@ -2,8 +2,10 @@
 <Addins>
   <Addin>
     <Name>Cake.FileHelpers</Name>
-    <NuGet Id="Cake.FileHelpers" />
-    <Repository>https://github.com/Redth/Cake.FileHelpers</Repository>
+    <NuGet Id="Cake.FileHelpers">
+      <Filter>/**/Cake.FileHelpers.dll</Filter>
+      <Filter>/**/Cake.FileHelpers.xml</Filter>
+    </NuGet>    <Repository>https://github.com/Redth/Cake.FileHelpers</Repository>
     <Author>Jonathan Dick</Author>
     <Description>
       A set of aliases for Cake to help with simple file operations 

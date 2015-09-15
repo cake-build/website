@@ -20,5 +20,10 @@ namespace Cake.Web.Docs.Reflection.Model
         /// The field definition.
         /// </value>
         FieldDefinition Definition { get; }
+
+        /// <summary>
+        /// The associated metadata.
+        /// </summary>
+        IDocumentationMetadata Metadata { get; }
     }
 }

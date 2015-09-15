@@ -24,6 +24,12 @@
 
 <div style="margin-top: 20px">
 
+    @* ADDIN *@
+    @if (@Model.Data.Metadata.IsExternallyOwned)
+    {
+        @Html.Partial("_AddinWarning", Model.Data.Metadata)
+    }
+
     @if (@Model.Data.Summary != null)
     {
         <div id="summary" class="panel panel-default">

@@ -31,5 +31,10 @@ namespace Cake.Web.Docs.Reflection.Model
         /// </summary>
         /// <value>The types.</value>
         IReadOnlyList<ITypeInfo> Types { get; }
+
+        /// <summary>
+        /// The associated metadata.
+        /// </summary>
+        IDocumentationMetadata Metadata { get; }
     }
 }

@@ -129,8 +129,9 @@ namespace Cake.Web.Docs
             IEnumerable<DocumentedField> fields,
             SummaryComment summary,
             RemarksComment remarks,
-            IEnumerable<ExampleComment> examples)
-            : base(MemberClassification.Type, summary, remarks, examples)
+            IEnumerable<ExampleComment> examples,
+            IDocumentationMetadata metadata)
+            : base(MemberClassification.Type, summary, remarks, examples, metadata)
         {
             _definition = info.Definition;
             _typeClassification = info.Definition.GetTypeClassification();

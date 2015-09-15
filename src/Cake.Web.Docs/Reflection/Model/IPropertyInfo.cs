@@ -22,5 +22,10 @@ namespace Cake.Web.Docs.Reflection.Model
         /// The definition.
         /// </value>
         PropertyDefinition Definition { get; }
+
+        /// <summary>
+        /// The associated metadata.
+        /// </summary>
+        IDocumentationMetadata Metadata { get; }
     }
 }

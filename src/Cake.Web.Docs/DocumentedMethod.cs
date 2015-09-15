@@ -87,7 +87,9 @@ namespace Cake.Web.Docs
             SummaryComment summary, 
             RemarksComment remarks, 
             IEnumerable<ExampleComment> examples,
-            ReturnsComment returns) : base(MemberClassification.Method, summary, remarks, examples)
+            ReturnsComment returns,
+            IDocumentationMetadata metadata) 
+            : base(MemberClassification.Method, summary, remarks, examples, metadata)
         {
             _definition = info.Definition;
             _methodClassification = MethodClassifier.GetMethodClassification(info.Definition);

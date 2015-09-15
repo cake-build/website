@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using Cake.Web.Docs;
 using Cake.Web.Docs.Comments;
 using Mono.Cecil;
@@ -16,6 +17,8 @@ namespace Cake.Web.Core.Dsl
             var categories = new List<DslCategory>();
             foreach (var categoryName in data.Keys)
             {
+                var metadata = (IDocumentationMetadata)null;
+
                 var categoryMethods = new List<DocumentedMethod>();
                 var subCategories = new List<DslSubCategory>();
                 foreach (var subCategoryName in data[categoryName].Keys)
@@ -29,6 +32,11 @@ namespace Cake.Web.Core.Dsl
                     {
                         subCategories.Add(new DslSubCategory(subCategoryName, methods));
                     }
+
+                    if (metadata == null)
+                    {
+                        metadata = methods.First().Metadata;
+                    }
                 }
 
                 SummaryComment summary = null;
@@ -40,6 +48,7 @@ namespace Cake.Web.Core.Dsl
                 categories.Add(
                     new DslCategory(
                         categoryName,
+                        metadata,
                         summary,
                         categoryMethods, 
                         subCategories.OrderBy(x => x.Name)));

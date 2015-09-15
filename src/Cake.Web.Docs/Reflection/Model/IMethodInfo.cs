@@ -20,5 +20,10 @@ namespace Cake.Web.Docs.Reflection.Model
         /// The method definition.
         /// </value>
         MethodDefinition Definition { get; }
+
+        /// <summary>
+        /// The associated metadata.
+        /// </summary>
+        IDocumentationMetadata Metadata { get; }
     }
 }

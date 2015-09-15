@@ -284,6 +284,7 @@
     <Content Include="Views\Shared\_LayoutBlog.cshtml" />
     <Content Include="Views\Blog\Category.cshtml" />
     <Content Include="Views\Addin\Index.cshtml" />
+    <Content Include="Views\Shared\_AddinWarning.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Bootstrapper\" />

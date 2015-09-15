@@ -19,7 +19,9 @@
     <ul>
         @foreach (var assembly in Model.Assemblies.OrderBy(x => x.Name).DistinctBy(x => x.Name))
         {
-            <li><a href="#">@assembly.Name</a></li>
+            <li>
+                @assembly.Name
+            </li>
         }
     </ul>
 }
@@ -34,7 +36,13 @@
     @foreach (var assembly in Model.Assemblies.OrderBy(x => x.Name).DistinctBy(x => x.Name))
     {
         <div class="panel panel-default">
-            <div class="panel-heading"><b>@assembly.Name</b></div>
+            <div class="panel-heading">
+                <b>@assembly.Name</b>
+                @if (assembly.Metadata.IsExternallyOwned)
+                {
+                    <span class="label label-addin">addin</span>
+                }
+            </div>
             <table class="table table-bordered table-striped">
                 <tbody>
                     @foreach (var @namespace in assembly.Namespaces.OrderBy(x => x.Name).DistinctBy(x => x.Name))

@@ -37,5 +37,10 @@ namespace Cake.Web.Docs.Reflection.Model
         /// </summary>
         /// <value>The fields.</value>
         IReadOnlyList<IFieldInfo> Fields { get; }
+
+        /// <summary>
+        /// The associated metadata.
+        /// </summary>
+        IDocumentationMetadata Metadata { get; }
     }
 }

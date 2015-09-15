@@ -16,6 +16,11 @@ namespace Cake.Web.Core.Content.Addins
         public List<string> Categories { get; set; }
         public PackageDefinition PackageDefinition { get; set; }
 
+        public Uri Uri
+        {
+            get { return Repository ?? Website; }
+        }
+
         public bool IsExternallyOwned
         {
             get { return true; }

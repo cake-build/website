@@ -8,6 +8,7 @@ namespace Cake.Web.Docs
 {
     public interface IDocumentationMetadata
     {
+        Uri Uri { get; }
         bool IsExternallyOwned { get; }
     }
 }

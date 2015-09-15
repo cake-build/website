@@ -47,12 +47,14 @@ namespace Cake.Web.Docs
         /// <param name="summary">The summary comment.</param>
         /// <param name="remarks">The remarks comment.</param>
         /// <param name="examples">The example comments.</param>
+        /// <param name="metadata">The associated metadata.</param>
         public DocumentedField(
             IFieldInfo info,
             SummaryComment summary, 
             RemarksComment remarks,
-            IEnumerable<ExampleComment> examples)
-            : base(MemberClassification.Type, summary, remarks, examples)
+            IEnumerable<ExampleComment> examples,
+            IDocumentationMetadata metadata)
+            : base(MemberClassification.Type, summary, remarks, examples, metadata)
         {
             _definition = info.Definition;
             _identity = info.Identity;
