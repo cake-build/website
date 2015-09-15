@@ -7,17 +7,17 @@ namespace Cake.Web.Docs.Reflection
 {
     internal static class ReflectionModelBuilder
     {
-        public static ReflectionModel Build(IEnumerable<AssemblyDefinition> assemblies)
+        public static ReflectionModel Build(IDictionary<AssemblyDefinition, IDocumentationMetadata> assemblies)
         {
             var result = new List<IAssemblyInfo>();
             foreach (var assembly in assemblies)
             {
-                result.Add(Build(assembly));
+                result.Add(Build(assembly.Key, assembly.Value));
             }
             return new ReflectionModel(result);
         }
 
-        private static IAssemblyInfo Build(AssemblyDefinition assembly)
+        private static IAssemblyInfo Build(AssemblyDefinition assembly, IDocumentationMetadata metadata)
         {
             var types = new List<ITypeInfo>();
             foreach (var module in assembly.Modules)
@@ -39,13 +39,13 @@ namespace Cake.Web.Docs.Reflection
                             continue;    
                         }
                     }
-                    types.Add(Build(type));
+                    types.Add(Build(type, metadata));
                 }
             }
-            return new AssemblyInfo(assembly, types);
+            return new AssemblyInfo(assembly, types, metadata);
         }
 
-        private static ITypeInfo Build(TypeDefinition type)
+        private static ITypeInfo Build(TypeDefinition type, IDocumentationMetadata metadata)
         {
             // Add methods.
             var methods = new List<IMethodInfo>();
@@ -54,7 +54,7 @@ namespace Cake.Web.Docs.Reflection
             {
                 if (!(method.IsGetter || method.IsSetter))
                 {
-                    methods.Add(Build(method));
+                    methods.Add(Build(method, metadata));
                 }
             }
 
@@ -62,7 +62,7 @@ namespace Cake.Web.Docs.Reflection
             var properties = new List<IPropertyInfo>();
             foreach (var property in type.Properties)
             {
-                properties.Add(Build(property));
+                properties.Add(Build(property, metadata));
             }
 
             // Add fields.
@@ -70,25 +70,25 @@ namespace Cake.Web.Docs.Reflection
             var fieldDefinitions = type.Fields.Where(x => x.IsPublic || x.IsFamily || x.IsFamilyOrAssembly);
             foreach (var field in fieldDefinitions.Where(x => !x.IsSpecialName))
             {
-                fields.Add(Build(field));
+                fields.Add(Build(field, metadata));
             }
 
-            return new TypeInfo(type, methods, properties, fields);
+            return new TypeInfo(type, metadata, methods, properties, fields);
         }
 
-        private static IMethodInfo Build(MethodDefinition method)
+        private static IMethodInfo Build(MethodDefinition method, IDocumentationMetadata metadata)
         {
-            return new MethodInfo(method);
+            return new MethodInfo(method, metadata);
         }
 
-        private static IPropertyInfo Build(PropertyDefinition property)
+        private static IPropertyInfo Build(PropertyDefinition property, IDocumentationMetadata metadata)
         {
-            return new PropertyInfo(property);
+            return new PropertyInfo(property, metadata);
         }
 
-        private static IFieldInfo Build(FieldDefinition field)
+        private static IFieldInfo Build(FieldDefinition field, IDocumentationMetadata metadata)
         {
-            return new FieldInfo(field);
+            return new FieldInfo(field, metadata);
         }
     }
 }

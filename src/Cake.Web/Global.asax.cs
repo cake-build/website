@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
@@ -28,24 +29,37 @@ namespace Cake.Web
             // Get the application data path.
             var appDataPath = new DirectoryPath(AppDomain.CurrentDomain.GetData("DataDirectory").ToString());
 
+            // Read all addins.
+            // TODO: Fix this container hack.
+            var addinReader = new AddinReader(new FileSystem());
+            var addins = addinReader.Read(appDataPath.CombineWithFilePath("addins.xml"));
+
+            // Define packages.
+            var packageDefinitions = new List<PackageDefinition>();
+            packageDefinitions.AddRange(addins.GetAddins()
+                .Where(x => x.PackageDefinition != null)
+                .Where(x => x.PackageDefinition.Filters.Count > 0)
+                .Select(x => x.PackageDefinition));
+
+            // Add core packages.
+            packageDefinitions.Add(new PackageDefinition
+            {
+                Filters = new List<string>
+                {
+                    "/**/Cake.Core.dll",
+                    "/**/Cake.Common.dll",
+                    "/**/Cake.Core.xml",
+                    "/**/Cake.Common.xml"
+                },
+                PackageName = "Cake",
+                Metadata = new CakeDocumentationMetadata()
+            });
+
             // Create the document model by downloading the nuget package.
             var cakeVersion = (string)null;
             var documentModel = NuGetBootstrapper.Download(appDataPath,
                 new NuGetConfiguration {
-                    Packages = new List<PackageDefinition>
-                {
-                    new PackageDefinition
-                    {
-                        Filters = new List<string>
-                        {
-                            "/**/Cake.Core.dll",
-                            "/**/Cake.Common.dll",
-                            "/**/Cake.Core.xml",
-                            "/**/Cake.Common.xml"
-                        },
-                        PackageName = "Cake"
-                    }
-                }
+                    Packages = packageDefinitions
                 }, out cakeVersion);
 
             // Build the DSL model.
@@ -79,10 +93,6 @@ namespace Cake.Web
             // Read all blog entries.
             var blogReader = container.Resolve<IBlogReader>();
             var blogIndex = blogReader.Parse(appDataPath.Combine("blog"));
-
-            // Read all addins.
-            var addinReader = container.Resolve<IAddinReader>();
-            var addins = addinReader.Read(appDataPath.CombineWithFilePath("addins.xml"));
 
             // Update the container.
             builder = new ContainerBuilder();

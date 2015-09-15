@@ -62,11 +62,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CakeDocumentationMetadata.cs" />
     <Compile Include="DocumentedMethodComparer.cs" />
     <Compile Include="DocumentedTypeComparer.cs" />
     <Compile Include="DocumentModelResolver.cs" />
     <Compile Include="ExtensionMethodFinder.cs" />
     <Compile Include="DocumentedNamespaceTree.cs" />
+    <Compile Include="IDocumentationMetadata.cs" />
     <Compile Include="Reflection\OperatorClassificationExtensions.cs" />
     <Compile Include="Identity\CRefGenerator.cs" />
     <Compile Include="Comments\IComment.cs" />

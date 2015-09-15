@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Cake.Web.Core.Content.Addins;
+using Cake.Web.Docs;
 using Cake.Web.Models;
 
 namespace Cake.Web.Controllers

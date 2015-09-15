@@ -4,6 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Xml;
 using Cake.Core.IO;
+using Cake.Web.Core.NuGet;
+using Cake.Web.Docs;
 
 namespace Cake.Web.Core.Content.Addins
 {
@@ -45,13 +47,33 @@ namespace Cake.Web.Core.Content.Addins
                 foreach (XmlNode addinNode in addinNodes)
                 {
                     var addin = new Addin();
+
                     ReadElement(addinNode, "Name", s => addin.Name = s);
-                    ReadElement(addinNode, "PackageId", s => addin.PackageId = s);
                     ReadElement(addinNode, "Repository", s => addin.Repository = new Uri(s));
                     ReadElement(addinNode, "Website", s => addin.Website = new Uri(s));
                     ReadElement(addinNode, "Author", s => addin.Author = s);
                     ReadElement(addinNode, "Description", s => addin.Description = s);
                     ReadElement(addinNode, "Categories", s => addin.Categories.AddRange(ParseCategories(s)));
+
+                    var nugetNode = addinNode.SelectSingleNode("NuGet");
+                    if (nugetNode != null && nugetNode.Attributes != null)
+                    {
+                        var id = nugetNode.Attributes["Id"].Value;
+
+                        addin.PackageDefinition = new PackageDefinition();
+                        addin.PackageDefinition.PackageName = id;
+                        addin.PackageDefinition.Metadata = addin;
+
+                        var filters = nugetNode.SelectNodes("Filter");
+                        if (filters != null)
+                        {
+                            foreach (XmlNode filterNode in filters)
+                            {
+                                addin.PackageDefinition.Filters.Add(filterNode.InnerText);
+                            }
+                        }
+                    }
+
                     result.Add(addin);
                 }
             }

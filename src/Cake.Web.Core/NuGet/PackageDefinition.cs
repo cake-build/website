@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Cake.Web.Docs;
 
 namespace Cake.Web.Core.NuGet
 {
@@ -6,5 +7,11 @@ namespace Cake.Web.Core.NuGet
     {
         public string PackageName { get; set; }
         public List<string> Filters { get; set; }
+        public IDocumentationMetadata Metadata { get; set; }
+
+        public PackageDefinition()
+        {
+            Filters = new List<string>();
+        }
     }
 }

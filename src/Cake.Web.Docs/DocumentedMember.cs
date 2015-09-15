@@ -16,6 +16,11 @@ namespace Cake.Web.Docs
         private readonly MemberClassification _classification;
 
         /// <summary>
+        /// Gets the addin owner of this member.
+        /// </summary>
+        public IDocumentationMetadata Metadata { get; internal set; }
+
+        /// <summary>
         /// Gets the summary comment.
         /// </summary>
         /// <value>The summary comment.</value>

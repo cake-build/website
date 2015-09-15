@@ -2,7 +2,7 @@
 <Addins>
   <Addin>
     <Name>Cake.FileHelpers</Name>
-    <PackageId>Cake.FileHelpers</PackageId>
+    <NuGet Id="Cake.FileHelpers" />
     <Repository>https://github.com/Redth/Cake.FileHelpers</Repository>
     <Author>Jonathan Dick</Author>
     <Description>
@@ -13,7 +13,10 @@
   </Addin>
   <Addin>
     <Name>Cake.Xamarin</Name>
-    <PackageId>Cake.Xamarin</PackageId>
+    <NuGet Id="Cake.Xamarin">
+      <Filter>/**/Cake.Xamarin.dll</Filter>
+      <Filter>/**/Cake.Xamarin.xml</Filter>
+    </NuGet>
     <Repository>https://github.com/Redth/Cake.Xamarin</Repository>
     <Author>Jonathan Dick</Author>
     <Description>
@@ -23,7 +26,7 @@
   </Addin>
   <Addin>
     <Name>Cake.AliaSql</Name>
-    <PackageId>Cake.AliaSql</PackageId>
+    <NuGet Id="Cake.AliaSql" />
     <Repository>https://github.com/RichiCoder1/Cake.AliaSql</Repository>
     <Author>RichieCoder1</Author>
     <Description>
@@ -33,7 +36,7 @@
   </Addin>
   <Addin>
     <Name>Cake.Slack</Name>
-    <PackageId>Cake.Slack</PackageId>
+    <NuGet Id="Cake.Slack" />
     <Repository>https://github.com/WCOMAB/Cake.Slack</Repository>
     <Author>WCOMAB</Author>
     <Description>Cake Addin that extends Cake with Slack messaging features.</Description>
@@ -41,7 +44,7 @@
   </Addin>
   <Addin>
     <Name>Cake.Powershell</Name>
-    <PackageId>Cake.Powershell</PackageId>
+    <NuGet Id="Cake.Powershell" />
     <Repository>https://github.com/SharpeRAD/Cake.Powershell</Repository>
     <Author>SharpeRAD</Author>
     <Description>Cake addin that extends Cake with Powershell command support.</Description>
@@ -49,7 +52,7 @@
   </Addin>
   <Addin>
     <Name>Cake.IIS</Name>
-    <PackageId>Cake.IIS</PackageId>
+    <NuGet Id="Cake.IIS" />
     <Repository>https://github.com/SharpeRAD/Cake.IIS</Repository>
     <Author>SharpeRAD</Author>
     <Description>Cake addin that extends Cake with IIS support.</Description>
@@ -57,7 +60,7 @@
   </Addin>
   <Addin>
     <Name>Cake.WebDeploy</Name>
-    <PackageId>Cake.WebDeploy</PackageId>
+    <NuGet Id="Cake.WebDeploy" />
     <Repository>https://github.com/SharpeRAD/Cake.WebDeploy</Repository>
     <Author>SharpeRAD</Author>
     <Description>Cake addin that extends Cake with WebDeploy commands for publishing to IIS.</Description>

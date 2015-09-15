@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Cake.Web.Core.Content.Addins;
+using Cake.Web.Docs;
 
 namespace Cake.Web.Models
 {

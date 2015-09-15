@@ -20,45 +20,48 @@ namespace Cake.Web.Docs
         /// <summary>
         /// Generates a document model.
         /// </summary>
-        /// <param name="paths">The paths.</param>
+        /// <param name="paths">The items.</param>
         /// <returns>The built document model.</returns>
-        public DocumentModel BuildModel(IEnumerable<string> paths)
+        public DocumentModel BuildModel(IDictionary<string, IDocumentationMetadata> paths)
         {
-            var filePaths = paths.ToArray();
-            var reflectionModel = BuildReflectionModel(filePaths);
-            var xmlModel = BuildXmlModel(filePaths);
+            var reflectionModel = BuildReflectionModel(paths);
+            var xmlModel = BuildXmlModel(paths);
             return DocumentModelMapper.Map(reflectionModel, xmlModel);
         }
 
-        private static ReflectionModel BuildReflectionModel(IEnumerable<string> paths)
+        private static ReflectionModel BuildReflectionModel(IDictionary<string, IDocumentationMetadata> paths)
         {
-            var assemblyPaths = FilterFilesOnExtension(paths, ".dll").ToArray();
-            var definitions = new List<AssemblyDefinition>();
+            var items = FilterFilesOnExtension(paths, ".dll");
+            var definitions = new Dictionary<AssemblyDefinition, IDocumentationMetadata>();
 
             var resolver = new DefaultAssemblyResolver();
-            foreach (var assemblyPath in assemblyPaths)
+            foreach (var item in items)
             {
-                resolver.AddSearchDirectory(Path.GetDirectoryName(assemblyPath));
+                resolver.AddSearchDirectory(Path.GetDirectoryName(item.Key));
             }
-            var parameters = new ReaderParameters {
+
+            var parameters = new ReaderParameters
+            {
                 AssemblyResolver = resolver,
             };
 
-            foreach (var assemblyPath in assemblyPaths)
+            foreach (var item in items)
             {
-                definitions.Add(AssemblyDefinition.ReadAssembly(assemblyPath, parameters));
+                var definition = AssemblyDefinition.ReadAssembly(item.Key, parameters);
+                definitions.Add(definition, item.Value);
             }
+
             return ReflectionModelBuilder.Build(definitions);
         }
 
-        private static XmlDocumentationModel BuildXmlModel(IEnumerable<string> paths)
+        private static XmlDocumentationModel BuildXmlModel(IDictionary<string, IDocumentationMetadata> paths)
         {
             var parser = new XmlDocumentationParser();
             var documents = new List<XmlDocument>();
-            var xmlPaths = FilterFilesOnExtension(paths, ".xml").ToArray();
+            var xmlPaths = FilterFilesOnExtension(paths, ".xml");
             foreach (var path in xmlPaths)
             {
-                using (var stream = File.OpenRead(path))
+                using (var stream = File.OpenRead(path.Key))
                 {
                     var document = new XmlDocument { PreserveWhitespace = false };
                     document.Load(stream);
@@ -68,19 +71,22 @@ namespace Cake.Web.Docs
             return parser.Parse(documents);
         }
 
-        private static IEnumerable<string> FilterFilesOnExtension(IEnumerable<string> paths, string extension)
+        private static IDictionary<string, IDocumentationMetadata> FilterFilesOnExtension(IDictionary<string, IDocumentationMetadata> items, string extension)
         {
-            foreach (var path in paths)
+            var result = new Dictionary<string, IDocumentationMetadata>();
+            foreach (var item in items)
             {
+                var path = item.Key;
                 var pathExtension = Path.GetExtension(path);
                 if (!string.IsNullOrWhiteSpace(pathExtension))
                 {
                     if (pathExtension.Equals(extension, StringComparison.OrdinalIgnoreCase))
                     {
-                        yield return path;
+                        result.Add(item.Key, item.Value);
                     }
                 }
             }
+            return result;
         }
     }
 }
