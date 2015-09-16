@@ -78,4 +78,11 @@
     <Description>Unity build support for Cake.</Description>
     <Categories>Unity;Gaming</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.MSBuildTask</Name>
+    <Repository>https://github.com/marcosnz/Cake.MSBuildTask</Repository>
+    <Author>Mark Walker</Author>
+    <Description>Adds ability to run any MSBuild task from a Cake script.</Description>
+    <Categories>MSBuild</Categories>
+  </Addin>
 </Addins>
