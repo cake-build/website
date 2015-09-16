@@ -5,7 +5,8 @@
     <NuGet Id="Cake.FileHelpers">
       <Filter>/**/Cake.FileHelpers.dll</Filter>
       <Filter>/**/Cake.FileHelpers.xml</Filter>
-    </NuGet>    <Repository>https://github.com/Redth/Cake.FileHelpers</Repository>
+    </NuGet>
+    <Repository>https://github.com/Redth/Cake.FileHelpers</Repository>
     <Author>Jonathan Dick</Author>
     <Description>
       A set of aliases for Cake to help with simple file operations 
@@ -84,5 +85,16 @@
     <Author>Mark Walker</Author>
     <Description>Adds ability to run any MSBuild task from a Cake script.</Description>
     <Categories>MSBuild</Categories>
+  </Addin>
+  <Addin>
+    <Name>Cake.XCode</Name>
+    <NuGet Id="Cake.XCode">
+      <Filter>/**/Cake.XCode.dll</Filter>
+      <Filter>/**/Cake.XCode.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/Redth/Cake.XCode</Repository>
+    <Author>Jonathan Dick</Author>
+    <Description>A set of aliases for Cake to help with XCode and CocoaPods.</Description>
+    <Categories>XCode</Categories>
   </Addin>
 </Addins>
