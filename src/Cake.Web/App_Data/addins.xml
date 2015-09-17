@@ -81,7 +81,10 @@
   </Addin>
   <Addin>
     <Name>Cake.MSBuildTask</Name>
-    <NuGet Id="Cake.MSBuildTask" />
+    <NuGet Id="Cake.MSBuildTask">
+      <Filter>Cake.MSBuildTask.dll</Filter>
+      <Filter>Cake.MSBuildTask.xml</Filter>
+    </NuGet>
     <Repository>https://github.com/marcosnz/Cake.MSBuildTask</Repository>
     <Author>Mark Walker</Author>
     <Description>Adds ability to run any MSBuild task from a Cake script.</Description>
