@@ -101,4 +101,15 @@
     <Description>A set of aliases for Cake to help with XCode and CocoaPods.</Description>
     <Categories>XCode</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.Kudu</Name>
+    <NuGet Id="Cake.Kudu">
+      <Filter>Cake.Kudu.dll</Filter>
+      <Filter>Cake.Kudu.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/WCOMAB/Cake.Kudu</Repository>
+    <Author>WCOMAB</Author>
+    <Description>Cake addin to help with Kudu deployments.</Description>
+    <Categories>Azure;Kudu</Categories>
+  </Addin>
 </Addins>
