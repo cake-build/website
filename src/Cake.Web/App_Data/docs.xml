@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <items>
-    <section title="Introduction" description="">
-        <item title="About this user guide" file="introduction/about.md" />
-    </section>
-    <section title="Overview">
-    	<item title="Features" file="overview/features.md" />
-    </section>
-    <section title="Tutorials">
-        <item title="Getting started" file="tutorials/getting-started.md" />
-        <item title="Setting up a new project" file="tutorials/setting-up-a-new-project.md" />
-    </section>
-    <section title="Fundamentals">
-        <item title="Tasks" file="fundamentals/tasks.md" />
-        <item title="Dependencies" file="fundamentals/dependencies.md" />
-        <item title="Criterias" file="fundamentals/criterias.md" />
-        <item title="Error handling" file="fundamentals/error-handling.md" />
-        <item title="Finally block" file="fundamentals/finally-block.md" />
-        <item title="Setup and teardown" file="fundamentals/setup-and-teardown.md" />
-        <item title="Running targets" file="fundamentals/running-targets.md" />
-        <item title="Script aliases" file="fundamentals/aliases.md" />
-    </section>
-    <section id="cli" title="The command line">
-        <item title="Usage information" file="cli/usage.md" />
-    </section>
-    <section title="Contributing">
-        <item title="Contribution guidelines" file="contributing/guidelines.md" />
-    </section>
+  <section title="Introduction" description="">
+    <item title="About this user guide" file="introduction/about.md" />
+  </section>
+  <section title="Overview">
+    <item title="Features" file="overview/features.md" />
+  </section>
+  <section title="Tutorials">
+    <item title="Getting started" file="tutorials/getting-started.md" />
+    <item title="Setting up a new project" file="tutorials/setting-up-a-new-project.md" />
+  </section>
+  <section title="Fundamentals">
+    <item title="Tasks" file="fundamentals/tasks.md" />
+    <item title="Dependencies" file="fundamentals/dependencies.md" />
+    <item title="Criterias" file="fundamentals/criterias.md" />
+    <item title="Error handling" file="fundamentals/error-handling.md" />
+    <item title="Finally block" file="fundamentals/finally-block.md" />
+    <item title="Setup and teardown" file="fundamentals/setup-and-teardown.md" />
+    <item title="Running targets" file="fundamentals/running-targets.md" />
+    <item title="Script aliases" file="fundamentals/aliases.md" />
+  </section>
+  <section title="Tools">
+    <item title="Installing tools" file="tools/installing-tools.md" />
+    <item title="Tool resolution" file="tools/tool-resolution.md" />
+  </section>
+  <section id="cli" title="The command line">
+    <item title="Usage information" file="cli/usage.md" />
+  </section>
+  <section title="Contributing">
+    <item title="Contribution guidelines" file="contributing/guidelines.md" />
+  </section>
 </items>
