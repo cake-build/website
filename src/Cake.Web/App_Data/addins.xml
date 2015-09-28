@@ -38,6 +38,26 @@
     <Categories>Database</Categories>
   </Addin>
   <Addin>
+    <Name>Cake.AWS.ElasticLoadBalancing</Name>
+    <NuGet Id="Cake.AWS.ElasticLoadBalancing" />
+    <Repository>https://github.com/SharpeRAD/Cake.AWS.ElasticLoadBalancing</Repository>
+    <Author>SharpeRAD</Author>
+    <Description>
+        AWS ElasticLoadBalancing Alias for Cake
+    </Description>
+    <Categories>AWS</Categories>
+  </Addin>
+  <Addin>
+    <Name>Cake.AWS.S3</Name>
+    <NuGet Id="Cake.Cake.AWS.S3" />
+    <Repository>https://github.com/SharpeRAD/Cake.AliaSql</Repository>
+    <Author>SharpeRAD</Author>
+    <Description>
+        AWS S3 addin for Cake
+    </Description>
+    <Categories>AWS</Categories>
+  </Addin>
+  <Addin>
     <Name>Cake.Slack</Name>
     <NuGet Id="Cake.Slack">
       <Filter>Cake.Slack.dll</Filter>
@@ -71,6 +91,14 @@
     <Author>SharpeRAD</Author>
     <Description>Cake addin that extends Cake with WebDeploy commands for publishing to IIS.</Description>
     <Categories>Deployment;IIS</Categories>
+  </Addin>
+  <Addin>
+    <Name>Cake.Services</Name>
+    <NuGet Id="Cake.Services" />
+    <Repository>https://github.com/SharpeRAD/Cake.Services</Repository>
+    <Author>SharpeRAD</Author>
+    <Description>Windows Services addin for Cake.</Description>
+    <Categories>Services</Categories>
   </Addin>
   <Addin>
     <Name>Cake.Unity</Name>
