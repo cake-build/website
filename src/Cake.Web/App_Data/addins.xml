@@ -42,19 +42,15 @@
     <NuGet Id="Cake.AWS.ElasticLoadBalancing" />
     <Repository>https://github.com/SharpeRAD/Cake.AWS.ElasticLoadBalancing</Repository>
     <Author>SharpeRAD</Author>
-    <Description>
-        AWS ElasticLoadBalancing Alias for Cake
-    </Description>
+    <Description>AWS ElasticLoadBalancing addin for Cake.</Description>
     <Categories>AWS</Categories>
   </Addin>
   <Addin>
     <Name>Cake.AWS.S3</Name>
-    <NuGet Id="Cake.Cake.AWS.S3" />
-    <Repository>https://github.com/SharpeRAD/Cake.AliaSql</Repository>
+    <NuGet Id="Cake.AWS.S3" />
+    <Repository>https://github.com/SharpeRAD/Cake.AWS.S3</Repository>
     <Author>SharpeRAD</Author>
-    <Description>
-        AWS S3 addin for Cake
-    </Description>
+    <Description>AWS S3 addin for Cake.</Description>
     <Categories>AWS</Categories>
   </Addin>
   <Addin>
@@ -98,7 +94,7 @@
     <Repository>https://github.com/SharpeRAD/Cake.Services</Repository>
     <Author>SharpeRAD</Author>
     <Description>Windows Services addin for Cake.</Description>
-    <Categories>Services</Categories>
+    <Categories>Windows</Categories>
   </Addin>
   <Addin>
     <Name>Cake.Unity</Name>
