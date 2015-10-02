@@ -136,4 +136,15 @@
     <Description>Cake addin to help with Kudu deployments.</Description>
     <Categories>Azure;Kudu</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.CMake</Name>
+    <NuGet Id="Cake.CMake">
+      <Filter>/**/Cake.CMake.dll</Filter>
+      <Filter>/**/Cake.CMake.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/patriksvensson/Cake.CMake</Repository>
+    <Author>Patrik Svensson</Author>
+    <Description>Addin that extends Cake with CMake support.</Description>
+    <Categories>CMake</Categories>
+  </Addin>
 </Addins>
