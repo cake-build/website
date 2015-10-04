@@ -17,9 +17,15 @@
 
 @* TITLE *@
 <div class="main-content-title">
-    <h2>@Api.PropertyName(Model.Data) <small>Property</small></h2>
+    <h2>@Api.PropertyName(Model.Data) <small>Property</small>
+    </h2>
     @Api.BreadCrumb(@Model.Data)
 </div>
+
+@if (Model != null && Model.Data != null)
+{
+    <!-- Identity: @Model.Data.Identity -->
+}
 
 <div style="margin-top: 20px">
 

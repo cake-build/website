@@ -22,6 +22,11 @@
     @Api.BreadCrumb(@Model.Data)
 </div>
 
+@if(Model != null && Model.Data != null)
+{
+    <!-- Identity: @Model.Data.Identity -->
+}
+
 <div style="margin-top: 20px">
 
     @* ADDIN *@
@@ -64,7 +69,7 @@
                     @foreach (var item in @Model.Data.Parameters.Skip(@Model.Data.Metadata.IsAlias ? 1 : 0))
                     {
                         <dt><i>@item.Name</i></dt>
-                        <dd>Type: @Api.TypeLink(item.Definition.ParameterType)<br/>@Api.Comment(item.Comment)</dd>
+                        <dd>Type: @Api.TypeLink(item.Definition.ParameterType)<br />@Api.Comment(item.Comment)</dd>
                     }
                 </dl>
             </div>
