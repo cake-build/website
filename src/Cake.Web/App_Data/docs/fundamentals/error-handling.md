@@ -42,3 +42,19 @@ Task("A")
     // Report the error.
 });
 ```
+
+### Aborting the build
+
+If something has gone wrong that you cannot recover from, you should throw an exception to indicate it. The Cake script runner will then log the error (using the Error method) and return exit code 1 to indicate that something went wrong.
+
+```csharp
+Task("Check-ReleaseNotes")
+    .Does(() =>
+{
+    var releaseNotes = ParseReleaseNotes("./ReleaseNotes.md");
+    if(releaseNotes.Version.ToString() != nugetVersion)
+    {
+        throw new Exception(String.Format("Release notes are missing an entry for v{0}. Latest release notes are for v{1}", nugetVersion, releaseNotes.Version));   
+    }
+});
+```
