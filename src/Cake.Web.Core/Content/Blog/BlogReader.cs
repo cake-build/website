@@ -65,6 +65,14 @@ namespace Cake.Web.Core.Content.Blog
                 }
             }
 
+            // Hack. Don't judge me... :)
+            var maxDate = posts.Max(x => x.PostedAt);
+            var lastPost = posts.FirstOrDefault(x => x.PostedAt == maxDate);
+            if (lastPost != null)
+            {
+                lastPost.IsLatest = true;
+            }
+
             return new BlogIndex(posts);
         }
 

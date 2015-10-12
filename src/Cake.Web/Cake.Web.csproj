@@ -241,6 +241,7 @@
     <Content Include="App_Data\docs\tools\tool-resolution.md" />
     <Content Include="App_Data\docs\tools\installing-tools.md" />
     <Content Include="App_Data\blog\2015-09-11-cake-v0.5.4-released.md" />
+    <Content Include="App_Data\blog\2015-10-12-cake-v0.5.5-released.md" />
     <None Include="Content\js\jquery-2.1.4.intellisense.js" />
     <Content Include="Content\js\jquery-2.1.4.js" />
     <Content Include="Content\js\jquery-2.1.4.min.js" />

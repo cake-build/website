@@ -10,6 +10,7 @@ namespace Cake.Web.Core.Content.Blog
         private readonly string _title;
         private readonly string _body;
         private readonly string _feedBody;
+        private readonly bool _isLatest;
         private readonly string _excerpt;
         private readonly DateTime _postedAt;
         private readonly IReadOnlyList<BlogCategory> _categories;
@@ -49,6 +50,8 @@ namespace Cake.Web.Core.Content.Blog
             get { return _postedAt; }
         }
 
+        public bool IsLatest { get; internal set; }
+
         public bool HasExcept
         {
             get { return !string.IsNullOrWhiteSpace(Excerpt); }
@@ -59,7 +62,7 @@ namespace Cake.Web.Core.Content.Blog
             get { return _categories; }
         }
 
-        public BlogPost(string slug, string title, string body, string feedBody,
+        public BlogPost(string slug, string title, string body, string feedBody, 
             string excerpt, DateTime postedAt, IEnumerable<BlogCategory> categories)
         {
             _id = GetId(postedAt.Year, postedAt.Month, slug);

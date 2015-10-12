@@ -55,6 +55,18 @@ namespace Cake.Web
                 Metadata = new CakeMetadata()
             });
 
+            // Add testing packages.
+            packageDefinitions.Add(new PackageDefinition
+            {
+                Filters = new List<string>
+                {
+                    "/**/Cake.Testing.dll",
+                    "/**/Cake.Testing.xml",
+                },
+                PackageName = "Cake.Testing",
+                Metadata = new CakeMetadata()
+            });
+
             // Create the document model by downloading the nuget package.
             var cakeVersion = (string)null;
             var documentModel = NuGetBootstrapper.Download(appDataPath,

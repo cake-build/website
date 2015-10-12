@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="blog-post-content">
-            @if (post.HasExcept)
+            @if (post.HasExcept && !post.IsLatest)
             {
                 @Html.Raw(@post.Excerpt)
                 <p>
