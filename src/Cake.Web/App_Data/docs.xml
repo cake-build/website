@@ -30,5 +30,6 @@
   </section>
   <section title="Contributing">
     <item title="Contribution guidelines" file="contributing/guidelines.md" />
+    <item title="Documentation" file="contributing/documentation.md" />
   </section>
 </items>
