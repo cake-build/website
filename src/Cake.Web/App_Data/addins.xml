@@ -147,4 +147,15 @@
     <Description>Addin that extends Cake with CMake support.</Description>
     <Categories>CMake</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.Gitter</Name>
+    <NuGet Id="Cake.Gitter">
+      <Filter>/**/Cake.Gitter.dll</Filter>
+      <Filter>/**/Cake.Gitter.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/gep13/Cake.Gitter</Repository>
+    <Author>Gary Ewan Park</Author>
+    <Description>Cake Addin to allow message posting to Gitter Room.</Description>
+    <Categories>Communication</Categories>
+  </Addin>  
 </Addins>
