@@ -28,6 +28,10 @@
   <section id="cli" title="The command line">
     <item title="Usage information" file="cli/usage.md" />
   </section>
+  <section id="editors" title="Editors">
+    <item title="Atom" file="editors/atom.md" />
+    <item title="Visual Studio Code" file="editors/vscode.md" />
+  </section>
   <section title="Contributing">
     <item title="Contribution guidelines" file="contributing/guidelines.md" />
     <item title="Documentation" file="contributing/documentation.md" />
