@@ -218,6 +218,8 @@
     <Content Include="Content\fonts\fontawesome-webfont.ttf" />
     <Content Include="Content\fonts\fontawesome-webfont.eot" />
     <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="App_Data\docs\editors\atom.md" />
+    <Content Include="App_Data\docs\editors\vscode.md" />
     <None Include="Content\js\jquery-2.1.4.intellisense.js" />
     <Content Include="Content\js\jquery-2.1.4.js" />
     <Content Include="Content\js\jquery-2.1.4.min.js" />
