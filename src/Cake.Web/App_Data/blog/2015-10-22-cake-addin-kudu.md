@@ -85,17 +85,21 @@ The process is dependency based so if any step would fail the deployment would b
 ```csharp
 #tool "KuduSync.NET" "https://www.nuget.org/api/v2/"
 #addin "Cake.Kudu" "https://www.nuget.org/api/v2/"
+
 ///////////////////////////////////////////////////////////////////////////////
 // ARGUMENTS
 ///////////////////////////////////////////////////////////////////////////////
 
 var target          = Argument<string>("target", "Default");
 var configuration   = Argument<string>("configuration", "Release");
+
 ///////////////////////////////////////////////////////////////////////////////
 // GLOBAL VARIABLES
 ///////////////////////////////////////////////////////////////////////////////
+
 var websitePath     = MakeAbsolute(Directory("./src/TestWebSite"));
 var solutionPath    = MakeAbsolute(File("./src/TestWebSite.sln"));
+
 if (!Kudu.IsRunningOnKudu)
 {
     throw new Exception("Not running on Kudu");
@@ -111,23 +115,6 @@ if (!DirectoryExists(deploymentPath))
             )
         );
 }
-
-
-///////////////////////////////////////////////////////////////////////////////
-// SETUP / TEARDOWN
-///////////////////////////////////////////////////////////////////////////////
-
-Setup(() =>
-{
-    // Executed BEFORE the first task.
-    Information("Running tasks...");
-});
-
-Teardown(() =>
-{
-    // Executed AFTER the last task.
-    Information("Finished running tasks.");
-});
 
 ///////////////////////////////////////////////////////////////////////////////
 // TASK DEFINITIONS
@@ -163,7 +150,6 @@ Task("Build")
             .SetConfiguration(configuration));
 });
 
-
 Task("Publish")
     .IsDependentOn("Build")
     .Does(() =>
@@ -172,10 +158,8 @@ Task("Publish")
     Kudu.Sync(websitePath);
 });
 
-
 Task("Default")
     .IsDependentOn("Publish");
-
 
 ///////////////////////////////////////////////////////////////////////////////
 // EXECUTION
