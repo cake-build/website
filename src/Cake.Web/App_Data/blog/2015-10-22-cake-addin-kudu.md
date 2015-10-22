@@ -1,6 +1,6 @@
 ---
 title: Cake Kudu - Azure Web Deployment Addin
-category: Addin
+category: Addins
 ---
 
 Wouldn't it be great if you could fully control your _Azure web app deployments_, have them _configuration_ and _environment_ driven and all this orchestrated using C#? Well it turns out with Cake Kudu _you_ can!
@@ -20,6 +20,7 @@ Out of the box _Kudu_ allows you to build and deploy you web apps directly on _A
 [Cake Kudu](https://github.com/WCOMAB/Cake.Kudu) is an add-in for the Cake build system which gives to an API to the Kudu deployment environment.
 
 It gives you easy access to
+
 * [Deployment paths](http://cakebuild.net/api/cake.kudu.provider/a5ae8623)
 * [App settings](http://cakebuild.net/api/cake.kudu.provider/3d10564b/d3b19dd0)
 * [Connection strings](http://cakebuild.net/api/cake.kudu.provider/3d10564b/43c2776d)
@@ -43,6 +44,7 @@ You could even use you Azure web app as a build server posting **not** a website
 
 #### Continuous deployment
 First if you haven't already you need to enable continuous deployment on your web app, you do that via Settings->Publishing->Continuous Deployment and choose the provider that hosts your source code.
+
 ![Continuous deployment](https://cloud.githubusercontent.com/assets/1647294/10564229/cc6e3ed8-75ab-11e5-9a58-bf7de894a673.png)
 
 
@@ -169,6 +171,7 @@ RunTarget(target);
 ```
 
 #### In action
+
 ![Azure web app deployment](https://cloud.githubusercontent.com/assets/1647294/10564139/7449fb3c-75a8-11e5-82ef-b06d4da4a13b.png)
 
 
