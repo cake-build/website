@@ -180,6 +180,11 @@ ul li.selected a:hover {
     padding-bottom: 20px;
 }
 
+.blog-post img {
+    max-width:100%;
+    max-height:100%;
+}
+
 .blog-post:not(:first-of-type) {
     border-top: 1px #987d6b dotted;
 }
