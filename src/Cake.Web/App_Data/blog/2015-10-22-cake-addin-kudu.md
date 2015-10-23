@@ -17,7 +17,7 @@ Out of the box _Kudu_ allows you to build and deploy you web apps directly on _A
 
 ### Cake Kudu
 
-[Cake Kudu](https://github.com/WCOMAB/Cake.Kudu) is an add-in for the Cake build system which gives to an API to the Kudu deployment environment.
+[Cake Kudu](https://github.com/WCOMAB/Cake.Kudu) is an add-in for the Cake build system which gives you an API to the Kudu deployment environment.
 
 It gives you easy access to
 
@@ -32,18 +32,18 @@ It gives you easy access to
 
 ### Super charging Kudu
 
-So what does [Cake](http://cakebuild.net) and the [Cake Kudu](https://github.com/WCOMAB/Cake.Kudu) add-in bring to the table? It will let you do custom build, test and deploy scripts written in C# driven by convention, environment and configuration.
+So what does [Cake](http://cakebuild.net) and the [Cake Kudu](https://github.com/WCOMAB/Cake.Kudu) add-in bring to the table? It will let you do custom build, test and deploy scripts written in C#, driven by convention, environment and configuration.
 
 This enables advanced scenarios like synchronized deployment of multiple web sites (i.e. frontend, API, backoffice) from one repository, adapting build configuration depending on dev/production/geographical region/etc., basically endless possibilities for continuous deployment automation.
 
 It lets you use any of the available aliases and add-ins for Cake, you could post deployment statuses to [Slack](https://github.com/WCOMAB/Cake.Kudu) / [Gitter](https://github.com/gep13/Cake.Gitter), migrate databases using [AliaSql](https://github.com/RichiCoder1/Cake.AliaSql) and much more, all written in a rich, compiled and statically typed language like C# and with the extensive [dsl](http://cakebuild.net/dsl) the Cake builds system provides.
 
-You could even use you Azure web app as a build server posting **not** a website but i.e. a build result report to the web.
+You could even use your Azure web app as a build server posting **not** a website but i.e. a build result report to the web.
 
 ### Usage
 
 #### Continuous deployment
-First if you haven't already you need to enable continuous deployment on your web app, you do that via Settings->Publishing->Continuous Deployment and choose the provider that hosts your source code.
+First, if you haven't already, you need to enable continuous deployment on your web app, you do that via Settings->Publishing->Continuous Deployment and choose the provider that hosts your source code.
 
 ![Continuous deployment](https://cloud.githubusercontent.com/assets/1647294/10564229/cc6e3ed8-75ab-11e5-9a58-bf7de894a673.png)
 
@@ -69,17 +69,17 @@ IF NOT EXIST "Tools\Addins" (md "Tools\Addins")
 nuget install Cake -ExcludeVersion -OutputDirectory "Tools"
 Tools/Cake/Cake.exe deploy.cake -verbosity=Verbose
 ```
-The above script will create tools & addins folders, fetch Cake from NuGet(upgrade if newer version exists) and launch Cake build system with a C# script called `deploy.cake`.
+The above script will create the tools & addins folders, fetch Cake from NuGet(upgrade if newer version exists) and launch the Cake build system with a C# script called `deploy.cake`.
 
 
 #### deploy.cake
-Below is a very basic deployment Cake script, what it basically does is:
+Below is a very basic deployment Cake script.  What it basically does is:
 1. Fetches any command line tools needed from NuGet.
 2. Fetches and references any Cake add-ins needed from NuGet.
-3. Settings up global variables and validating that's running on the Kudu environment.
+3. Sets up global variables and validates that it's running on the Kudu environment.
 4. Cleans any traces of previous builds.
 5. Restores any NuGet packages used by the web app.
-6. Builds/compiles the web app
+6. Builds/compiles the web app.
 7. If all goes well published the web app.
 
 The process is dependency based so if any step would fail the deployment would be aborted and reported as failed in the Azure portal.
