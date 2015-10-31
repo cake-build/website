@@ -32,6 +32,7 @@ namespace Cake.Web.Docs.Xml
                 new ReturnsParser(),
                 new SeeAlsoParser(),
                 new SeeParser(),
+                new SeeExternalLinkParser(),
                 new SummaryParser(),
                 new TypeParamParser(),
                 new TypeParamRefParser(),

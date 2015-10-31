@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CakeMetadata.cs" />
+    <Compile Include="Comments\SeeExternalLinkComment.cs" />
     <Compile Include="DocumentedMethodComparer.cs" />
     <Compile Include="DocumentedTypeComparer.cs" />
     <Compile Include="DocumentModelResolver.cs" />

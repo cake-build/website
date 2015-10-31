@@ -62,6 +62,14 @@ namespace Cake.Web.Core.Rendering
             }
         }
 
+        public override void VisitSeeExternalLink(SeeExternalLinkComment comment, CommentRendererContext context)
+        {
+            context.Writer.AddAttribute(HtmlTextWriterAttribute.Href, comment.Url);
+            context.Writer.RenderBeginTag(HtmlTextWriterTag.A);
+            context.Writer.WriteEncodedText(comment.Text);
+            context.Writer.RenderEndTag();
+        }
+
         public override void VisitInlineCode(InlineCodeComment comment, CommentRendererContext context)
         {
             context.Writer.RenderBeginTag(HtmlTextWriterTag.I);

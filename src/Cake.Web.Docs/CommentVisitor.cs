@@ -125,11 +125,20 @@ namespace Cake.Web.Docs
         }
 
         /// <summary>
-        /// Visits a <c>see</c> comment.
+        /// Visits a <c>see</c> comment with a cref attribute.
         /// </summary>
         /// <param name="comment">The comment.</param>
         /// <param name="context">The context.</param>
         public virtual void VisitSee(SeeComment comment, TContext context)
+        {
+        }
+
+        /// <summary>
+        /// Visits a <c>see</c> comment with a href attribute.
+        /// </summary>
+        /// <param name="comment">The comment.</param>
+        /// <param name="context">The context.</param>
+        public virtual void VisitSeeExternalLink(SeeExternalLinkComment comment, TContext context)
         {
         }
 
