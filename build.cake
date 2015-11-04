@@ -13,6 +13,7 @@ var local = BuildSystem.IsLocalBuild;
 var isRunningOnAppVeyor = AppVeyor.IsRunningOnAppVeyor;
 var branch = AppVeyor.Environment.Repository.Branch;
 var isBuildingMaster = branch != null && branch == "master";
+var isPullRequest = AppVeyor.Environment.PullRequest.IsPullRequest;
 
 // Parse release notes.
 var releaseNotes = ParseReleaseNotes("./ReleaseNotes.md");
@@ -65,7 +66,7 @@ Task("Update-AppVeyor-Build-Number")
 
 Task("Deploy")
     .IsDependentOn("Build")
-    .WithCriteria(() => isRunningOnAppVeyor && isBuildingMaster)
+    .WithCriteria(() => isRunningOnAppVeyor && isBuildingMaster && !isPullRequest)
     .Does(context =>
 {
     // Get the MSDeploy path.
