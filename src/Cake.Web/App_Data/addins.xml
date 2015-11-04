@@ -157,5 +157,31 @@
     <Author>Gary Ewan Park</Author>
     <Description>Cake Addin to allow message posting to Gitter Room.</Description>
     <Categories>Communication</Categories>
-  </Addin>  
+  </Addin>
+  <Addin>
+    <Name>Cake.Yaml</Name>
+    <NuGet Id="Cake.Yaml">
+      <Filter>/**/Cake.Yaml.dll</Filter>
+      <Filter>/**/Cake.Yaml.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/Redth/Cake.Yaml</Repository>
+    <Author>Jonathan Dick</Author>
+    <Description>
+      A set of aliases to help with YAML Serialization
+    </Description>
+    <Categories>Serialization</Categories>
+  </Addin>
+  <Addin>
+    <Name>Cake.Json</Name>
+    <NuGet Id="Cake.Json">
+      <Filter>/**/Cake.Json.dll</Filter>
+      <Filter>/**/Cake.Json.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/Redth/Cake.Json</Repository>
+    <Author>Jonathan Dick</Author>
+    <Description>
+      A set of aliases to help with JSON Serialization
+    </Description>
+    <Categories>Serialization</Categories>
+  </Addin>
 </Addins>
