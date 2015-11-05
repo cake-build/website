@@ -184,4 +184,15 @@
     </Description>
     <Categories>Serialization</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.ReSharperReports</Name>
+    <NuGet Id="Cake.ReSharperReports">
+      <Filter>/**/Cake.ReSharperReports.dll</Filter>
+      <Filter>/**/Cake.ReSharperReports.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/gep13/Cake.ReSharperReports</Repository>
+    <Author>Gary Ewan Park</Author>
+    <Description>Cake AddIn that extends Cake with ability to transform ReSharper Reports into human readable format.</Description>
+    <Categories>Reports</Categories>
+  </Addin>  
 </Addins>
