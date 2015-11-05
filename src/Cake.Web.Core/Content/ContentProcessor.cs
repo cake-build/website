@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using System.Text.RegularExpressions;
+using System.Web;
 using Cake.Web.Core.Dsl;
 using Cake.Web.Docs.Reflection;
 using HtmlAgilityPack;
@@ -25,13 +26,13 @@ namespace Cake.Web.Core.Content
 
         public string PostProcess(string content)
         {
-            return RewriteLinks(RewriteCodeBlock(content));
+            return RewriteLinks(content);
         }
 
         private static string RewriteCodeBlock(string content)
         {
             const string pattern = @"```([a-z]*)[\s\S]([\s\S]*?\n)```";
-            const string replacement = "<pre><code class=\"language-$1\">$2</code></pre>";
+            const string replacement = "<pre><code class=\"$1\">$2</code></pre>";
             content = Regex.Replace(content, pattern, replacement, RegexOptions.Compiled | RegexOptions.Multiline);
 
             // Load the document.
@@ -47,13 +48,25 @@ namespace Cake.Web.Core.Content
                     {
                         if (string.IsNullOrWhiteSpace(@class) || @class=="language-")
                         {
-                            linkNode.Attributes["class"].Value = "language-text";
+                            linkNode.Attributes["class"].Value = "nohighlight";
+                        }
+                        else
+                        {
+                            if (@class == "bash")
+                            {
+                                linkNode.SetAttributeValue("class", "sh");
+                            }
+                            if (@class == "powershell")
+                            {
+                                linkNode.SetAttributeValue("class", "ps");
+                            }
                         }
                     }
                 }
 
                 // Trim content of code so it doesn't start with a new line.
                 linkNode.InnerHtml = linkNode.InnerHtml.Trim('\r', '\n');
+                linkNode.InnerHtml = HttpUtility.HtmlEncode(linkNode.InnerHtml);
             }
 
             return document.DocumentNode.OuterHtml;

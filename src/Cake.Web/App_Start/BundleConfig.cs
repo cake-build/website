@@ -25,6 +25,9 @@ namespace Cake.Web
             bundles.Add(new ScriptBundle("~/Content/js/prism").Include(
                       "~/Content/js/prism.js"));
 
+            bundles.Add(new ScriptBundle("~/Content/js/highlight").Include(
+                      "~/Content/js/highlight.pack.js"));
+
             bundles.Add(new StyleBundle("~/Content/css/files").Include(
                       "~/Content/css/bootstrap.css",
                       "~/Content/css/cake-theme.css",
@@ -32,6 +35,9 @@ namespace Cake.Web
 
             bundles.Add(new StyleBundle("~/Content/css/prism").Include(
                 "~/Content/css/prism.css"));
+
+            bundles.Add(new StyleBundle("~/Content/css/highlight").Include(
+                "~/Content/css/obsidian.css"));
         }
     }
 }

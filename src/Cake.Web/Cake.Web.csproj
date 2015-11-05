@@ -193,13 +193,13 @@
     <Content Include="Content\css\cake-theme.css" />
     <Content Include="Content\css\font-awesome.css" />
     <Content Include="Content\css\font-awesome.min.css" />
-    <Content Include="Content\css\prism.css" />
+    <Content Include="Content\css\obsidian.css" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\img\logo.png" />
     <Content Include="Content\img\logo_small.png" />
     <Content Include="Content\img\preview.gif" />
     <Content Include="Content\img\screenshot.png" />
-    <Content Include="Content\js\prism.js" />
+    <Content Include="Content\js\highlight.pack.js" />
     <Content Include="favicon.ico" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

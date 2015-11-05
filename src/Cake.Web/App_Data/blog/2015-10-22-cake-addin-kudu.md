@@ -52,7 +52,7 @@ First, if you haven't already, you need to enable continuous deployment on your 
 To change the default deployment behavior you have to add an `.deployment` file the root of to your repository, this tells Kudu what to run on deployment.
 
 Example config file:
-```
+```ini
 [config]
 command = deploy.cmd
 ```
@@ -62,7 +62,7 @@ command = deploy.cmd
 To enable Cake from the Kudu environment we need a little bootstrapper script that sets up folders and fetches Cake binaries from NuGet and then calls Cake with C# deployment script as parameter.
 
 Example deploy bootstrapper:
-```bash
+```dos
 @echo off
 IF NOT EXIST "Tools" (md "Tools")
 IF NOT EXIST "Tools\Addins" (md "Tools\Addins")
