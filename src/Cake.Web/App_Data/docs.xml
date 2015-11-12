@@ -32,6 +32,9 @@
     <item title="Atom" file="editors/atom.md" />
     <item title="Visual Studio Code" file="editors/vscode.md" />
   </section>
+  <section id="build-systems" title="Build Systems">
+    <item title="Visual Studio Online" file="build-systems/vso.md" hidden="true"/>
+  </section>
   <section title="Contributing">
     <item title="Contribution guidelines" file="contributing/guidelines.md" />
     <item title="Documentation" file="contributing/documentation.md" />

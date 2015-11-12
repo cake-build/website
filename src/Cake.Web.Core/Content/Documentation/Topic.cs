@@ -9,6 +9,7 @@ namespace Cake.Web.Core.Content.Documentation
         private readonly string _id;
         private readonly string _name;
         private readonly string _body;
+        private readonly bool _hidden;
         private readonly FilePath _path;
 
         public string Id
@@ -50,11 +51,17 @@ namespace Cake.Web.Core.Content.Documentation
             get { return _path; }
         }
 
-        public Topic(string id, string name, string body, FilePath path)
+        public bool Hidden
+        {
+            get { return _hidden; }
+        }
+
+        public Topic(string id, string name, string body, bool hidden, FilePath path)
         {
             _id = id;
             _name = name;
             _body = body;
+            _hidden = hidden;
             _path = path;
         }
 

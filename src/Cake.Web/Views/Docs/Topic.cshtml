@@ -7,11 +7,16 @@
 
 @section Sidebar
 {
-    @foreach (var topicSection in Model.Section.Tree.Sections)
+    @foreach (var topicSection in Model.Section.Tree.Sections.Where(s => !s.Hidden))
     {
+        if (!topicSection.HasVisibleTopics)
+        {
+            continue;
+        }
+
         <h4><i class="fa fa-bookmark"></i> @topicSection.Name</h4>
         <ul>
-            @foreach (var topic in topicSection.Topics)
+            @foreach (var topic in topicSection.Topics.Where(t => !t.Hidden))
             {
                 if (topic.Id == @Model.Id)
                 {

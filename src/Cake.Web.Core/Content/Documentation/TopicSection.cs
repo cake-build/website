@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 
 namespace Cake.Web.Core.Content.Documentation
 {
@@ -8,7 +9,9 @@ namespace Cake.Web.Core.Content.Documentation
     {
         private readonly string _id;
         private readonly string _name;
+        private readonly bool _hidden;
         private readonly List<Topic> _topics;
+        private bool _hasVisibleTopics;
 
         public string Id
         {
@@ -25,13 +28,25 @@ namespace Cake.Web.Core.Content.Documentation
             get { return _topics; }
         }
 
+        public bool Hidden
+        {
+            get { return _hidden; }
+        }
+
+        public bool HasVisibleTopics
+        {
+            get { return _hasVisibleTopics; }
+        }
+
         public TopicTree Tree { get; internal set; }
 
-        public TopicSection(string id, string name, IEnumerable<Topic> topics)
+        public TopicSection(string id, string name, bool hidden, IEnumerable<Topic> topics)
         {
             _id = id;
             _name = name;
+            _hidden = hidden;
             _topics = new List<Topic>(topics);
+            _hasVisibleTopics = _topics.Any(x => !x.Hidden);
         }
 
         // ReSharper disable once UnusedMethodReturnValue.Local

@@ -98,6 +98,7 @@ namespace Cake.Web.Core.Content.Documentation
         {
             var id = reader.GetAttribute("id");
             var title = reader.GetAttribute("title");
+            var hidden = string.Equals("true", reader.GetAttribute("hidden"), StringComparison.OrdinalIgnoreCase);
 
             if (string.IsNullOrWhiteSpace(id))
             {
@@ -121,7 +122,7 @@ namespace Cake.Web.Core.Content.Documentation
                 }
             }
 
-            var section = new TopicSection(id, title, topics);
+            var section = new TopicSection(id, title, hidden, topics);
             foreach (var topic in topics)
             {
                 topic.Section = section;
@@ -140,6 +141,7 @@ namespace Cake.Web.Core.Content.Documentation
             var id = reader.GetAttribute("id");
             var title = reader.GetAttribute("title");
             var body = string.Empty;
+            var hidden = string.Equals("true", reader.GetAttribute("hidden"), StringComparison.OrdinalIgnoreCase);
 
             if (string.IsNullOrWhiteSpace(id))
             {
@@ -172,7 +174,7 @@ namespace Cake.Web.Core.Content.Documentation
                 body = _contentProcessor.PostProcess(body) ?? body;
             }
 
-            return new Topic(id, title, body, file);
+            return new Topic(id, title, body, hidden, file);
         }
     }
 }
