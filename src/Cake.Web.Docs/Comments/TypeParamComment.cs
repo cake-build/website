@@ -7,26 +7,21 @@ namespace Cake.Web.Docs.Comments
     /// </summary>
     public sealed class TypeParamComment : AggregateComment
     {
-        private readonly string _name;
-
         /// <summary>
         /// Gets the name.
         /// </summary>
         /// <value>The name.</value>
-        public string Name
-        {
-            get { return _name; }
-        }
+        public string Name { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="TypeParamComment"/> class.
         /// </summary>
         /// <param name="name">The name.</param>
         /// <param name="comments">The comments.</param>
-        public TypeParamComment(string name, IEnumerable<IComment> comments) 
+        public TypeParamComment(string name, IEnumerable<IComment> comments)
             : base(comments)
         {
-            _name = name;
+            Name = name;
         }
 
         /// <summary>

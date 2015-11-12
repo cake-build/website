@@ -14,25 +14,13 @@ namespace Cake.Web.Docs
     [DebuggerDisplay("{Identity,nq}")]
     public sealed class DocumentedType : DocumentedMember
     {
-        private readonly TypeDefinition _definition;
-        private readonly TypeClassification _typeClassification;
-        private readonly string _identity;
-
-        private readonly List<DocumentedMethod> _constructors;
-        private readonly List<DocumentedMethod> _methods;
         private readonly List<DocumentedMethod> _extensionMethods;
-        private readonly List<DocumentedMethod> _operators;
-        private readonly List<DocumentedProperty> _properties;
-        private readonly List<DocumentedField> _fields;
 
         /// <summary>
         /// Gets the type's identity.
         /// </summary>
         /// <value>The type's identity.</value>
-        public string Identity
-        {
-            get { return _identity; }
-        }
+        public string Identity { get; }
 
         /// <summary>
         /// Gets the namespace.
@@ -44,73 +32,49 @@ namespace Cake.Web.Docs
         /// Gets the type definition.
         /// </summary>
         /// <value>The type definition.</value>
-        public TypeDefinition Definition
-        {
-            get { return _definition; }
-        }
+        public TypeDefinition Definition { get; }
 
         /// <summary>
         /// Gets the type's constructors.
         /// </summary>
         /// <value>The type's constructors.</value>
-        public IReadOnlyList<DocumentedMethod> Constructors
-        {
-            get { return _constructors; }
-        }
+        public IReadOnlyList<DocumentedMethod> Constructors { get; }
 
         /// <summary>
         /// Gets the type's methods.
         /// </summary>
         /// <value>The type's methods.</value>
-        public IReadOnlyList<DocumentedMethod> Methods
-        {
-            get { return _methods; }
-        }
+        public IReadOnlyList<DocumentedMethod> Methods { get; }
 
         /// <summary>
         /// Gets the type's extension methods.
         /// </summary>
         /// <value>The type's extension methods.</value>
-        public IReadOnlyList<DocumentedMethod> ExtensionMethods
-        {
-            get { return _extensionMethods; }
-        }
+        public IReadOnlyList<DocumentedMethod> ExtensionMethods => _extensionMethods;
 
         /// <summary>
         /// Gets the type's operators.
         /// </summary>
         /// <value>The type's operators.</value>
-        public IReadOnlyList<DocumentedMethod> Operators
-        {
-            get { return _operators; }
-        }
+        public IReadOnlyList<DocumentedMethod> Operators { get; }
 
         /// <summary>
         /// Gets the type's properties.
         /// </summary>
         /// <value>The type's properties.</value>
-        public IReadOnlyList<DocumentedProperty> Properties
-        {
-            get { return _properties; }
-        }
+        public IReadOnlyList<DocumentedProperty> Properties { get; }
 
         /// <summary>
         /// Gets the type's fields.
         /// </summary>
         /// <value>The type's fields.</value>
-        public IReadOnlyList<DocumentedField> Fields
-        {
-            get { return _fields; }
-        }
+        public IReadOnlyList<DocumentedField> Fields { get; }
 
         /// <summary>
         /// Gets the type classification.
         /// </summary>
         /// <value>The type classification.</value>
-        public TypeClassification TypeClassification
-        {
-            get { return _typeClassification; }
-        }
+        public TypeClassification TypeClassification { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="DocumentedType" /> class.
@@ -122,6 +86,7 @@ namespace Cake.Web.Docs
         /// <param name="summary">The summary.</param>
         /// <param name="remarks">The remarks.</param>
         /// <param name="examples">The examples.</param>
+        /// <param name="metadata">The type metadata.</param>
         public DocumentedType(
             ITypeInfo info,
             IEnumerable<DocumentedProperty> properties,
@@ -133,19 +98,20 @@ namespace Cake.Web.Docs
             IDocumentationMetadata metadata)
             : base(MemberClassification.Type, summary, remarks, examples, metadata)
         {
-            _definition = info.Definition;
-            _typeClassification = info.Definition.GetTypeClassification();
-            _identity = info.Identity;
-            _properties = new List<DocumentedProperty>(properties);
-            _fields = new List<DocumentedField>(fields);
+            Definition = info.Definition;
+            TypeClassification = info.Definition.GetTypeClassification();
+            Identity = info.Identity;
+            Properties = new List<DocumentedProperty>(properties);
+            Fields = new List<DocumentedField>(fields);
 
             // Materialize all methods.
             var documentedMethods = methods as DocumentedMethod[] ?? methods.ToArray();
 
-            _constructors = new List<DocumentedMethod>(GetConstructors(documentedMethods));
-            _methods = new List<DocumentedMethod>(GetMethods(documentedMethods));
+            Constructors = new List<DocumentedMethod>(GetConstructors(documentedMethods));
+            Methods = new List<DocumentedMethod>(GetMethods(documentedMethods));
+            Operators = new List<DocumentedMethod>(GetOperators(documentedMethods));
+
             _extensionMethods = new List<DocumentedMethod>();
-            _operators = new List<DocumentedMethod>(GetOperators(documentedMethods));
         }
 
         internal void SetExtensionMethods(IEnumerable<DocumentedMethod> methods)

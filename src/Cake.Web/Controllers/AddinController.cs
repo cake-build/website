@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using Cake.Web.Core.Content.Addins;
-using Cake.Web.Docs;
 using Cake.Web.Models;
 
 namespace Cake.Web.Controllers
@@ -20,7 +17,7 @@ namespace Cake.Web.Controllers
 
         public ActionResult Index(string category = null)
         {
-            IReadOnlyList<Addin> addins = null;
+            IReadOnlyList<Addin> addins;
 
             if (category != null)
             {

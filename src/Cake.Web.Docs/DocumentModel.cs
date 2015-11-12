@@ -7,16 +7,11 @@ namespace Cake.Web.Docs
     /// </summary>
     public sealed class DocumentModel
     {
-        private readonly List<DocumentedAssembly> _assemblies;
-
         /// <summary>
         /// Gets the assemblies.
         /// </summary>
         /// <value>The assemblies.</value>
-        public IReadOnlyList<DocumentedAssembly> Assemblies
-        {
-            get { return _assemblies; }
-        }
+        public IReadOnlyList<DocumentedAssembly> Assemblies { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="DocumentModel"/> class.
@@ -24,7 +19,7 @@ namespace Cake.Web.Docs
         /// <param name="assemblies">The assemblies.</param>
         public DocumentModel(IEnumerable<DocumentedAssembly> assemblies)
         {
-            _assemblies = new List<DocumentedAssembly>(assemblies);
+            Assemblies = new List<DocumentedAssembly>(assemblies);
         }
     }
 }

@@ -32,7 +32,7 @@ namespace Cake.Web
             foreach (var pair in lookup)
             {
                 routes.MapRoute(
-                    string.Format("Legacy{0}", index),
+                    $"Legacy{index}",
                     pair.Key,
                     new { controller = "Redirect", action = "Index", path = pair.Value});
 

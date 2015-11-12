@@ -91,17 +91,17 @@ namespace Cake.Web.Core.Services
 
         public string GetRoutePart(DocumentedType type)
         {
-            return string.Format("{0:X8}", type.Identity.GetHashCode()).ToLowerInvariant();
+            return $"{type.Identity.GetHashCode():X8}".ToLowerInvariant();
         }
 
         public string GetRoutePart(DocumentedMethod method)
         {
-            return string.Format("{0:X8}", method.Identity.GetHashCode()).ToLowerInvariant();
+            return $"{method.Identity.GetHashCode():X8}".ToLowerInvariant();
         }
 
         public string GetRoutePart(DocumentedProperty property)
         {
-            return string.Format("{0:X8}", property.Identity.GetHashCode()).ToLowerInvariant();
+            return $"{property.Identity.GetHashCode():X8}".ToLowerInvariant();
         }
     }
 }

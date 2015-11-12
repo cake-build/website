@@ -7,18 +7,8 @@ namespace Cake.Web.Core.Html
 {
     public class BreadcrumbItem : IBreadcrumbItem
     {
-        private readonly IHtmlString _text;
-        private readonly Uri _uri;
-
-        public IHtmlString Text
-        {
-            get { return _text; }
-        }
-
-        public Uri Uri
-        {
-            get { return _uri; }
-        }
+        public IHtmlString Text { get; }
+        public Uri Uri { get; }
 
         public BreadcrumbItem(IHtmlString text)
             : this(text, null)
@@ -37,8 +27,8 @@ namespace Cake.Web.Core.Html
 
         public BreadcrumbItem(IHtmlString text, Uri uri)
         {
-            _text = text;
-            _uri = uri;
+            Text = text;
+            Uri = uri;
         }
 
         public void Append(IBreadcrumbItem item)

@@ -6,69 +6,33 @@ namespace Cake.Web.Core.Content.Documentation
     [DebuggerDisplay("{DebuggerDisplay(),nq}")]
     public sealed class Topic
     {
-        private readonly string _id;
-        private readonly string _name;
-        private readonly string _body;
-        private readonly bool _hidden;
-        private readonly FilePath _path;
-
-        public string Id
-        {
-            get { return _id; }
-        }
-
-        public string Name
-        {
-            get { return _name; }
-        }
-
-        public string Body
-        {
-            get { return _body; }
-        }
+        public string Id { get; }
+        public string Name { get; }
+        public string Body { get; }
+        public FilePath Path { get; }
+        public bool Hidden { get; }
 
         public Topic Previous { get; set; }
         public Topic Next { get; set; }
         public TopicSection Section { get; internal set; }
 
-        public bool HasPrevious
-        {
-            get { return Previous != null && Previous.HasContent; }
-        }
-
-        public bool HasNext
-        {
-            get { return Next != null && Next.HasContent; }
-        }
-
-        public bool HasContent
-        {
-            get { return !string.IsNullOrWhiteSpace(Body); }
-        }
-
-        public FilePath Path
-        {
-            get { return _path; }
-        }
-
-        public bool Hidden
-        {
-            get { return _hidden; }
-        }
+        public bool HasPrevious => Previous != null && Previous.HasContent;
+        public bool HasNext => Next != null && Next.HasContent;
+        public bool HasContent => !string.IsNullOrWhiteSpace(Body);
 
         public Topic(string id, string name, string body, bool hidden, FilePath path)
         {
-            _id = id;
-            _name = name;
-            _body = body;
-            _hidden = hidden;
-            _path = path;
+            Id = id;
+            Name = name;
+            Body = body;
+            Hidden = hidden;
+            Path = path;
         }
 
         // ReSharper disable once UnusedMethodReturnValue.Local
         private string DebuggerDisplay()
         {
-            return string.Format("Topic: {0}", _name);
+            return $"Topic: {Name}";
         }
     }
 }

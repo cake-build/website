@@ -13,17 +13,11 @@ namespace Cake.Web.Docs
     [DebuggerDisplay("{Identity,nq}")]
     public sealed class DocumentedField : DocumentedMember
     {
-        private readonly FieldDefinition _definition;
-        private readonly string _identity;
-
         /// <summary>
         /// Gets the field's identity.
         /// </summary>
         /// <value>The field's identity.</value>
-        public string Identity
-        {
-            get { return _identity; }
-        }
+        public string Identity { get; }
 
         /// <summary>
         /// Gets the declaring type.
@@ -35,10 +29,7 @@ namespace Cake.Web.Docs
         /// Gets the field definition.
         /// </summary>
         /// <value>The field definition.</value>
-        public FieldDefinition Definition
-        {
-            get { return _definition; }
-        }
+        public FieldDefinition Definition { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="DocumentedField"/> class.
@@ -50,14 +41,14 @@ namespace Cake.Web.Docs
         /// <param name="metadata">The associated metadata.</param>
         public DocumentedField(
             IFieldInfo info,
-            SummaryComment summary, 
+            SummaryComment summary,
             RemarksComment remarks,
             IEnumerable<ExampleComment> examples,
             IDocumentationMetadata metadata)
             : base(MemberClassification.Type, summary, remarks, examples, metadata)
         {
-            _definition = info.Definition;
-            _identity = info.Identity;
+            Definition = info.Definition;
+            Identity = info.Identity;
         }
     }
 }

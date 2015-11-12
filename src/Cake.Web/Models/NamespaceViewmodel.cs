@@ -9,42 +9,12 @@ namespace Cake.Web.Models
 {
     public sealed class NamespaceViewModel
     {
-        private readonly string _name;
-        private readonly SummaryComment _summary;
-        private readonly DocumentedNamespace _data;
-        private readonly List<DocumentedNamespace> _namespaces;
-        private readonly List<DocumentedType> _classes;
-        private readonly List<DocumentedType> _interfaces;
-
-        public string Name
-        {
-            get { return _name; }
-        }
-
-        public DocumentedNamespace Data
-        {
-            get { return _data; }
-        }
-
-        public List<DocumentedNamespace> Namespaces
-        {
-            get { return _namespaces; }
-        }
-
-        public List<DocumentedType> Classes
-        {
-            get { return _classes; }
-        }
-
-        public List<DocumentedType> Interfaces
-        {
-            get { return _interfaces; }
-        }
-
-        public SummaryComment Summary
-        {
-            get { return _summary; }
-        }
+        public string Name { get; }
+        public DocumentedNamespace Data { get; }
+        public List<DocumentedNamespace> Namespaces { get; }
+        public List<DocumentedType> Classes { get; }
+        public List<DocumentedType> Interfaces { get; }
+        public SummaryComment Summary { get; }
 
         public NamespaceViewModel(IReadOnlyList<DocumentedNamespace> namespaces)
         {
@@ -53,32 +23,32 @@ namespace Cake.Web.Models
                 throw new ArgumentException("No namespaces in list.");
             }
 
-            _data = namespaces[0];
-            _name = _data.Name;
+            Data = namespaces[0];
+            Name = Data.Name;
 
             var namespaceWithSummary = namespaces.FirstOrDefault(x => x.Summary != null);
             if (namespaceWithSummary != null)
             {
-                _summary = namespaceWithSummary.Summary;
+                Summary = namespaceWithSummary.Summary;
             }
 
-            _classes = new List<DocumentedType>();
-            _interfaces = new List<DocumentedType>();
+            Classes = new List<DocumentedType>();
+            Interfaces = new List<DocumentedType>();
             foreach (var @namespace in namespaces)
             {
                 var classes = @namespace.Types.Where(x => x.Definition.IsClass && !IsExtensionMethodClass(x)).ToArray();
-                _classes.AddRange(classes);
+                Classes.AddRange(classes);
 
                 var interfaces = @namespace.Types.Where(x => x.Definition.IsInterface).ToArray();
-                _interfaces.AddRange(interfaces);
+                Interfaces.AddRange(interfaces);
             }
 
-            // For child namespaces, just get them from the first one 
+            // For child namespaces, just get them from the first one
             // since they're going to be the same anyway.
-            _namespaces = new List<DocumentedNamespace>();
-            foreach (var childNamespace in _data.Tree.Children)
+            Namespaces = new List<DocumentedNamespace>();
+            foreach (var childNamespace in Data.Tree.Children)
             {
-                _namespaces.Add(childNamespace.Namespace);
+                Namespaces.Add(childNamespace.Namespace);
             }
         }
 

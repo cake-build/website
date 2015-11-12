@@ -7,16 +7,11 @@ namespace Cake.Web.Docs.Comments
     /// </summary>
     public abstract class AggregateComment : Comment
     {
-        private readonly List<IComment> _children;
-
         /// <summary>
         /// Gets the children.
         /// </summary>
         /// <value>The children.</value>
-        public IReadOnlyList<IComment> Children
-        {
-            get { return _children; }
-        }
+        public IReadOnlyList<IComment> Children { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="AggregateComment"/> class.
@@ -24,7 +19,7 @@ namespace Cake.Web.Docs.Comments
         /// <param name="comments">The comments.</param>
         protected AggregateComment(IEnumerable<IComment> comments)
         {
-            _children = new List<IComment>(comments);
+            Children = new List<IComment>(comments);
         }
     }
 }

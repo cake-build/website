@@ -27,7 +27,7 @@ namespace Cake.Web.Controllers
             }
 
             // The category could not be found.
-            var message = string.Format("Could not find DSL category '{0}'.", path);
+            var message = $"Could not find DSL category '{path}'.";
             return HttpNotFound(message);
         }
     }

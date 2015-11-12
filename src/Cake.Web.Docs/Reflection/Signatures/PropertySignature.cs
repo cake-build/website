@@ -5,46 +5,29 @@
     /// </summary>
     public sealed class PropertySignature
     {
-        private readonly string _identity;
-        private readonly string _name;
-        private readonly TypeSignature _declaringType;
-        private readonly TypeSignature _propertyType;
-
         /// <summary>
         /// Gets the Identity.
         /// </summary>
         /// <value>The Identity.</value>
-        public string Identity
-        {
-            get { return _identity; }
-        }
+        public string Identity { get; }
 
         /// <summary>
         /// Gets the property name.
         /// </summary>
         /// <value>The property name.</value>
-        public string Name
-        {
-            get { return _name; }
-        }
+        public string Name { get; }
 
         /// <summary>
         /// Gets the declaring type.
         /// </summary>
         /// <value>The declaring type.</value>
-        public TypeSignature DeclaringType
-        {
-            get { return _declaringType; }
-        }
+        public TypeSignature DeclaringType { get; }
 
         /// <summary>
         /// Gets the return type.
         /// </summary>
         /// <value>The return type.</value>
-        public TypeSignature PropertyType
-        {
-            get { return _propertyType; }
-        }
+        public TypeSignature PropertyType { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="PropertySignature"/> class.
@@ -59,10 +42,10 @@
             TypeSignature declaringType,
             TypeSignature propertyType)
         {
-            _identity = identity;
-            _name = name;
-            _declaringType = declaringType;
-            _propertyType = propertyType;
+            Identity = identity;
+            Name = name;
+            DeclaringType = declaringType;
+            PropertyType = propertyType;
         }
     }
 }

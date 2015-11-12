@@ -11,43 +11,28 @@ namespace Cake.Web.Docs.Xml.Model
     [DebuggerDisplay("{DebuggerDisplay(),nq}")]
     public sealed class XmlDocumentationMember
     {
-        private readonly string _cref;
-        private readonly List<IComment> _comments;
-
         /// <summary>
         /// Gets the Identity.
         /// </summary>
         /// <value>The Identity.</value>
-        public string CRef
-        {
-            get { return _cref; }
-        }
+        public string CRef { get; }
 
         /// <summary>
         /// Gets the comments.
         /// </summary>
         /// <value>The comments.</value>
-        public IReadOnlyList<IComment> Comments
-        {
-            get { return _comments; }
-        }
+        public IReadOnlyList<IComment> Comments { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="XmlDocumentationMember"/> class.
         /// </summary>
         /// <param name="cref">The cref identity.</param>
         /// <param name="comments">The comments.</param>
-        /// <exception cref="System.ArgumentNullException">
-        /// Identity
-        /// or
-        /// comments
-        /// </exception>
-        /// <exception cref="System.InvalidOperationException">Identity cannot be empty.</exception>
         public XmlDocumentationMember(string cref, IEnumerable<IComment> comments)
         {
             if (cref == null)
             {
-                throw new ArgumentNullException("cref");
+                throw new ArgumentNullException(nameof(cref));
             }
             if (string.IsNullOrWhiteSpace(cref))
             {
@@ -55,16 +40,16 @@ namespace Cake.Web.Docs.Xml.Model
             }
             if (comments == null)
             {
-                throw new ArgumentNullException("comments");
+                throw new ArgumentNullException(nameof(comments));
             }
-            _cref = cref;
-            _comments = new List<IComment>(comments);
+            CRef = cref;
+            Comments = new List<IComment>(comments);
         }
 
         // ReSharper disable once UnusedMethodReturnValue.Local
         private string DebuggerDisplay()
         {
-            return _cref;
+            return CRef;
         }
     }
 }

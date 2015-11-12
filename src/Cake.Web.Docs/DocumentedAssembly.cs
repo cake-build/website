@@ -12,29 +12,18 @@ namespace Cake.Web.Docs
     /// </summary>
     [DebuggerDisplay("{Identity,nq}")]
     public sealed class DocumentedAssembly : DocumentedMember
-    {        
-        private readonly AssemblyDefinition _definition;
-        private readonly string _identity;
-        private readonly string _name;
-        private readonly List<DocumentedNamespace> _namespaces;
-
+    {
         /// <summary>
         /// Gets the identity.
         /// </summary>
         /// <value>The identity.</value>
-        public string Identity
-        {
-            get { return _identity; }
-        }
+        public string Identity { get; }
 
         /// <summary>
         /// Gets the name.
         /// </summary>
         /// <value>The name.</value>
-        public string Name
-        {
-            get { return _name; }
-        }
+        public string Name { get; }
 
         /// <summary>
         /// Gets the document model.
@@ -46,19 +35,13 @@ namespace Cake.Web.Docs
         /// Gets the assembly definition.
         /// </summary>
         /// <value>The assembly definition.</value>
-        public AssemblyDefinition Definition
-        {
-            get { return _definition; }
-        }
+        public AssemblyDefinition Definition { get; }
 
         /// <summary>
         /// Gets the types in this namespace.
         /// </summary>
         /// <value>The types in this namespace.</value>
-        public IReadOnlyList<DocumentedNamespace> Namespaces
-        {
-            get { return _namespaces; }
-        }
+        public IReadOnlyList<DocumentedNamespace> Namespaces { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="DocumentedAssembly"/> class.
@@ -67,15 +50,15 @@ namespace Cake.Web.Docs
         /// <param name="namespaces">The namespaces.</param>
         /// <param name="metadata">The associated metadata.</param>
         public DocumentedAssembly(
-            IAssemblyInfo info, 
+            IAssemblyInfo info,
             IEnumerable<DocumentedNamespace> namespaces,
             IDocumentationMetadata metadata)
             : base(MemberClassification.Assembly,  null, null, null, metadata)
         {
-            _definition = info.Definition;
-            _identity = info.Identity;
-            _name = GetAssemblyName(info);
-            _namespaces = new List<DocumentedNamespace>(namespaces);
+            Definition = info.Definition;
+            Identity = info.Identity;
+            Name = GetAssemblyName(info);
+            Namespaces = new List<DocumentedNamespace>(namespaces);
         }
 
         private static string GetAssemblyName(IAssemblyInfo info)

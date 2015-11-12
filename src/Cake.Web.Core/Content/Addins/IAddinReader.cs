@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using Cake.Core.IO;
 
 namespace Cake.Web.Core.Content.Addins

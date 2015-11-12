@@ -2,16 +2,11 @@
 {
     public sealed class ContentProcessorResult
     {
-        private readonly string _body;
-
-        public string Body
-        {
-            get { return _body; }
-        }
+        public string Body { get; }
 
         public ContentProcessorResult(string body)
         {
-            _body = body;
+            Body = body;
         }
     }
 }

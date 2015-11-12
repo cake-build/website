@@ -34,7 +34,7 @@ namespace Cake.Web.Core.Services
         /// <returns>An alias.</returns>
         public string GetAlias(string cref)
         {
-            return _lookup.ContainsKey(cref) 
+            return _lookup.ContainsKey(cref)
                 ? _lookup[cref] : null;
         }
     }

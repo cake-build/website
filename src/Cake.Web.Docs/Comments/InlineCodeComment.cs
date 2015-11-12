@@ -5,16 +5,11 @@
     /// </summary>
     public sealed class InlineCodeComment : Comment
     {
-        private readonly string _code;
-
         /// <summary>
         /// Gets the code.
         /// </summary>
         /// <value>The code.</value>
-        public string Code
-        {
-            get { return _code; }
-        }
+        public string Code { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="InlineCodeComment"/> class.
@@ -22,7 +17,7 @@
         /// <param name="code">The code.</param>
         public InlineCodeComment(string code)
         {
-            _code = code;
+            Code = code;
         }
 
         /// <summary>

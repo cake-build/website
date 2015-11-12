@@ -11,11 +11,6 @@ namespace Cake.Web.Docs
     [DebuggerDisplay("{Name,nq}")]
     public sealed class DocumentedParameter : DocumentedMember
     {
-        private readonly ParameterDefinition _definition;
-        private readonly ParamComment _comment;
-        private readonly bool _isOutParameter;
-        private readonly bool _isRefParameter;
-
         /// <summary>
         /// Gets the declaring method.
         /// </summary>
@@ -28,28 +23,19 @@ namespace Cake.Web.Docs
         /// <value>
         /// The parameter name.
         /// </value>
-        public string Name
-        {
-            get { return _definition.Name; }
-        }
+        public string Name => Definition.Name;
 
         /// <summary>
         /// Gets the parameter comment.
         /// </summary>
         /// <value>The parameter comment.</value>
-        public ParamComment Comment
-        {
-            get { return _comment; }
-        }
+        public ParamComment Comment { get; }
 
         /// <summary>
         /// Gets the parameter definition.
         /// </summary>
         /// <value>The parameter definition.</value>
-        public ParameterDefinition Definition
-        {
-            get { return _definition; }
-        }
+        public ParameterDefinition Definition { get; }
 
         /// <summary>
         /// Gets a value indicating whether this instance is an out parameter.
@@ -57,10 +43,7 @@ namespace Cake.Web.Docs
         /// <value>
         /// <c>true</c> if this instance is an out parameter; otherwise, <c>false</c>.
         /// </value>
-        public bool IsOutParameter
-        {
-            get { return _isOutParameter; }
-        }
+        public bool IsOutParameter { get; }
 
         /// <summary>
         /// Gets a value indicating whether this instance is a reference parameter.
@@ -68,10 +51,7 @@ namespace Cake.Web.Docs
         /// <value>
         /// <c>true</c> if this instance is a reference parameter; otherwise, <c>false</c>.
         /// </value>
-        public bool IsRefParameter
-        {
-            get { return _isRefParameter; }
-        }
+        public bool IsRefParameter { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="DocumentedParameter"/> class.
@@ -82,10 +62,10 @@ namespace Cake.Web.Docs
         public DocumentedParameter(ParameterDefinition definition, ParamComment comment, IDocumentationMetadata metadata)
             : base(MemberClassification.Parameter,  null, null, null, metadata)
         {
-            _definition = definition;
-            _comment = comment;
-            _isOutParameter = definition.IsOut;
-            _isRefParameter = definition.ParameterType is ByReferenceType;
+            Definition = definition;
+            Comment = comment;
+            IsOutParameter = definition.IsOut;
+            IsRefParameter = definition.ParameterType is ByReferenceType;
         }
     }
 }

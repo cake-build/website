@@ -61,7 +61,7 @@ namespace Cake.Web.Docs.Reflection
             }
 
             // Return the type description.
-            var url = resolver == null ? null : resolver.GetUrl(identity);
+            var url = resolver?.GetUrl(identity);
             return new TypeSignature(identity, name, url, ns, genericParameters, genericArguments);
         }
     }

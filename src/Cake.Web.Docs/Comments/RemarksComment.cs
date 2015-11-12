@@ -11,7 +11,7 @@ namespace Cake.Web.Docs.Comments
         /// Initializes a new instance of the <see cref="RemarksComment"/> class.
         /// </summary>
         /// <param name="comments">The comments.</param>
-        public RemarksComment(IEnumerable<IComment> comments) 
+        public RemarksComment(IEnumerable<IComment> comments)
             : base(comments)
         {
         }

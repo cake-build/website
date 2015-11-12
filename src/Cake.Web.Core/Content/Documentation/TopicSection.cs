@@ -7,52 +7,26 @@ namespace Cake.Web.Core.Content.Documentation
     [DebuggerDisplay("{DebuggerDisplay(),nq}")]
     public sealed class TopicSection
     {
-        private readonly string _id;
-        private readonly string _name;
-        private readonly bool _hidden;
-        private readonly List<Topic> _topics;
-        private bool _hasVisibleTopics;
-
-        public string Id
-        {
-            get { return _id; }
-        }
-
-        public string Name
-        {
-            get { return _name; }
-        }
-
-        public List<Topic> Topics
-        {
-            get { return _topics; }
-        }
-
-        public bool Hidden
-        {
-            get { return _hidden; }
-        }
-
-        public bool HasVisibleTopics
-        {
-            get { return _hasVisibleTopics; }
-        }
-
+        public string Id { get; }
+        public string Name { get; }
+        public IReadOnlyList<Topic> Topics { get; }
+        public bool Hidden { get; }
+        public bool HasVisibleTopics { get; }
         public TopicTree Tree { get; internal set; }
 
         public TopicSection(string id, string name, bool hidden, IEnumerable<Topic> topics)
         {
-            _id = id;
-            _name = name;
-            _hidden = hidden;
-            _topics = new List<Topic>(topics);
-            _hasVisibleTopics = _topics.Any(x => !x.Hidden);
+            Id = id;
+            Name = name;
+            Hidden = hidden;
+            Topics = new List<Topic>(topics);
+            HasVisibleTopics = Topics.Any(x => !x.Hidden);
         }
 
         // ReSharper disable once UnusedMethodReturnValue.Local
         private string DebuggerDisplay()
         {
-            return string.Format("Section: {0}", _name);
+            return $"Section: {Name}";
         }
     }
 }

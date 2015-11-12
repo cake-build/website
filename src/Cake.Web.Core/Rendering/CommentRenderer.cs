@@ -11,11 +11,6 @@ namespace Cake.Web.Core.Rendering
             comment.Accept(new CommentRenderer(), context);
         }
 
-        public override void VisitExample(ExampleComment comment, CommentRendererContext context)
-        {
-            base.VisitExample(comment, context);
-        }
-
         public override void VisitCode(CodeComment comment, CommentRendererContext context)
         {
             if (!string.IsNullOrWhiteSpace(comment.Code))

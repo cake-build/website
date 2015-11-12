@@ -13,18 +13,11 @@ namespace Cake.Web.Docs
     [DebuggerDisplay("{Identity,nq}")]
     public sealed class DocumentedProperty : DocumentedMember
     {
-        private readonly PropertyDefinition _definition;
-        private readonly string _identity;
-        private readonly ValueComment _value;
-
         /// <summary>
         /// Gets the property's identity.
         /// </summary>
         /// <value>The method's identity.</value>
-        public string Identity
-        {
-            get { return _identity; }
-        }
+        public string Identity { get; }
 
         /// <summary>
         /// Gets the declaring type.
@@ -36,19 +29,13 @@ namespace Cake.Web.Docs
         /// Gets the property definition.
         /// </summary>
         /// <value>The property definition.</value>
-        public PropertyDefinition Definition
-        {
-            get { return _definition; }
-        }
+        public PropertyDefinition Definition { get; }
 
         /// <summary>
         /// Gets the value comment.
         /// </summary>
         /// <value>The value comment.</value>
-        public ValueComment Value
-        {
-            get { return _value; }
-        }
+        public ValueComment Value { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="DocumentedProperty" /> class.
@@ -68,9 +55,9 @@ namespace Cake.Web.Docs
             IDocumentationMetadata metadata)
             : base(MemberClassification.Property, summary, remarks, examples, metadata)
         {
-            _definition = info.Definition;
-            _identity = info.Identity;
-            _value = value;
+            Definition = info.Definition;
+            Identity = info.Identity;
+            Value = value;
         }
     }
 }

@@ -7,12 +7,43 @@ namespace Cake.Web.Docs.Reflection.Signatures
     /// </summary>
     public sealed class TypeSignature
     {
-        private readonly string _identity;
-        private readonly string _name;
-        private readonly string _url;
-        private readonly NamespaceSignature _namespace;
-        private readonly List<string> _genericArguments;
-        private readonly List<TypeSignature> _genericParameters;
+        /// <summary>
+        /// Gets the Identity.
+        /// </summary>
+        /// <value>The Identity.</value>
+        public string Identity { get; }
+
+        /// <summary>
+        /// Gets the name.
+        /// </summary>
+        /// <value>The name.</value>
+        public string Name { get; }
+
+        /// <summary>
+        /// Gets the URL.
+        /// </summary>
+        /// <value>
+        /// The URL.
+        /// </value>
+        public string Url { get; }
+
+        /// <summary>
+        /// Gets the namespace.
+        /// </summary>
+        /// <value>The namespace.</value>
+        public NamespaceSignature Namespace { get; }
+
+        /// <summary>
+        /// Gets the generic arguments.
+        /// </summary>
+        /// <value>The generic arguments.</value>
+        public IReadOnlyList<string> GenericArguments { get; }
+
+        /// <summary>
+        /// Gets the generic parameters.
+        /// </summary>
+        /// <value>The generic parameters.</value>
+        public IReadOnlyList<TypeSignature> GenericParameters { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="TypeSignature" /> class.
@@ -24,75 +55,19 @@ namespace Cake.Web.Docs.Reflection.Signatures
         /// <param name="genericArguments">The generic arguments.</param>
         /// <param name="genericParameters">The generic parameters.</param>
         public TypeSignature(
-            string identity, 
-            string name, 
+            string identity,
+            string name,
             string url,
-            NamespaceSignature @namespace, 
+            NamespaceSignature @namespace,
             IEnumerable<string> genericArguments,
             IEnumerable<TypeSignature> genericParameters)
         {
-            _name = name;
-            _url = url ?? "#unresolved";
-            _identity = identity;
-            _namespace = @namespace;
-            _genericArguments = new List<string>(genericArguments);
-            _genericParameters = new List<TypeSignature>(genericParameters);
-        }
-
-        /// <summary>
-        /// Gets the Identity.
-        /// </summary>
-        /// <value>The Identity.</value>
-        public string Identity
-        {
-            get { return _identity; }
-        }
-
-        /// <summary>
-        /// Gets the name.
-        /// </summary>
-        /// <value>The name.</value>
-        public string Name
-        {
-            get { return _name; }
-        }
-
-        /// <summary>
-        /// Gets the URL.
-        /// </summary>
-        /// <value>
-        /// The URL.
-        /// </value>
-        public string Url
-        {
-            get { return _url; }
-        }
-
-        /// <summary>
-        /// Gets the namespace.
-        /// </summary>
-        /// <value>The namespace.</value>
-        public NamespaceSignature Namespace
-        {
-            get { return _namespace; }
-        }
-
-        /// <summary>
-        /// Gets the generic arguments.
-        /// </summary>
-        /// <value>The generic arguments.</value>
-        public List<string> GenericArguments
-        {
-            get { return _genericArguments; }
-        }
-
-        /// <summary>
-        /// Gets the generic parameters.
-        /// </summary>
-        /// <value>The generic parameters.</value>
-        public IReadOnlyList<TypeSignature> GenericParameters
-        {
-            get { return _genericParameters; }
+            Name = name;
+            Url = url ?? "#unresolved";
+            Identity = identity;
+            Namespace = @namespace;
+            GenericArguments = new List<string>(genericArguments);
+            GenericParameters = new List<TypeSignature>(genericParameters);
         }
     }
 }

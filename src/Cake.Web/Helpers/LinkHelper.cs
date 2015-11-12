@@ -25,7 +25,7 @@ namespace Cake.Web.Helpers
 
         public static string GetLink(BlogPost post)
         {
-            return string.Format("/blog/{0}/{1:00}/{2}", post.PostedAt.Year, post.PostedAt.Month, post.Slug);
+            return $"/blog/{post.PostedAt.Year}/{post.PostedAt.Month:00}/{post.Slug}";
         }
 
         public static string GetLink(BlogCategory category)
@@ -35,7 +35,7 @@ namespace Cake.Web.Helpers
 
         public static string GetArchiveLink(DateTime time)
         {
-            return string.Format("/blog/archive/{0}/{1:00}", time.Year, time.Month);
+            return $"/blog/archive/{time.Year}/{time.Month:00}";
         }
     }
 }

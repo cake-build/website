@@ -9,27 +9,17 @@ namespace Cake.Web.Docs
     /// </summary>
     public sealed class DocumentedNamespaceTree
     {
-        private readonly DocumentedNamespace _namespace;
-        private readonly List<DocumentedNamespaceTree> _children;
-        private DocumentedNamespaceTree _parent;
-
         /// <summary>
         /// Gets the namespace.
         /// </summary>
         /// <value>The namespace.</value>
-        public DocumentedNamespace Namespace
-        {
-            get { return _namespace; }
-        }
+        public DocumentedNamespace Namespace { get; }
 
         /// <summary>
         /// Gets the parent namespace tree node.
         /// </summary>
         /// <value>The parent.</value>
-        public DocumentedNamespaceTree Parent
-        {
-            get { return _parent; }
-        }
+        public DocumentedNamespaceTree Parent { get; private set; }
 
         /// <summary>
         /// Gets the child namespace tree nodes.
@@ -37,10 +27,7 @@ namespace Cake.Web.Docs
         /// <value>
         /// The children.
         /// </value>
-        public List<DocumentedNamespaceTree> Children
-        {
-            get { return _children; }
-        }
+        public List<DocumentedNamespaceTree> Children { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="DocumentedNamespaceTree"/> class.
@@ -48,25 +35,25 @@ namespace Cake.Web.Docs
         /// <param name="namespace">The namespace.</param>
         public DocumentedNamespaceTree(DocumentedNamespace @namespace)
         {
-            _namespace = @namespace;
-            _children = new List<DocumentedNamespaceTree>();
+            Namespace = @namespace;
+            Children = new List<DocumentedNamespaceTree>();
         }
 
         internal void AddChild(DocumentedNamespaceTree child)
         {
             if (child.SetParent(this))
             {
-                _children.Add(child);
+                Children.Add(child);
             }
         }
 
         internal bool SetParent(DocumentedNamespaceTree parent)
         {
-            if (_parent != null)
+            if (Parent != null)
             {
                 return false;
             }
-            _parent = parent;
+            Parent = parent;
             return true;
         }
 

@@ -8,42 +8,12 @@ namespace Cake.Web.Core.Dsl
     [DebuggerDisplay("{DebuggerDisplay(),nq}")]
     public sealed class DslCategory
     {
-        private readonly string _name;
-        private readonly IDocumentationMetadata _metadata;
-        private readonly SummaryComment _summary;
-        private readonly string _slug;
-        private readonly List<DocumentedMethod> _methods;
-        private readonly List<DslSubCategory> _subCategories;
-
-        public string Name
-        {
-            get { return _name; }
-        }
-
-        public IDocumentationMetadata Metadata
-        {
-            get { return _metadata; }
-        }
-
-        public SummaryComment Summary
-        {
-            get { return _summary; }
-        }
-
-        public string Slug
-        {
-            get { return _slug; }
-        }
-
-        public IReadOnlyList<DocumentedMethod> Methods
-        {
-            get { return _methods; }
-        }
-
-        public IReadOnlyList<DslSubCategory> SubCategories
-        {
-            get { return _subCategories; }
-        }
+        public string Name { get; }
+        public IDocumentationMetadata Metadata { get; }
+        public SummaryComment Summary { get; }
+        public string Slug { get; }
+        public IReadOnlyList<DocumentedMethod> Methods { get; }
+        public IReadOnlyList<DslSubCategory> SubCategories { get; }
 
         public DslModel Parent { get; internal set; }
 
@@ -54,12 +24,12 @@ namespace Cake.Web.Core.Dsl
             IEnumerable<DocumentedMethod> methods,
             IEnumerable<DslSubCategory> categories)
         {
-            _name = name;
-            _metadata = metadata;
-            _summary = summary;
-            _slug = _name.ToSlug();
-            _methods = new List<DocumentedMethod>(methods);
-            _subCategories = new List<DslSubCategory>(categories);
+            Name = name;
+            Metadata = metadata;
+            Summary = summary;
+            Slug = Name.ToSlug();
+            Methods = new List<DocumentedMethod>(methods);
+            SubCategories = new List<DslSubCategory>(categories);
         }
 
         // ReSharper disable once UnusedMethodReturnValue.Local

@@ -5,16 +5,11 @@
     /// </summary>
     public class SeeComment : Comment
     {
-        private readonly string _member;
-
         /// <summary>
         /// Gets the member.
         /// </summary>
         /// <value>The member.</value>
-        public string Member
-        {
-            get { return _member; }
-        }
+        public string Member { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="SeeComment"/> class.
@@ -22,7 +17,7 @@
         /// <param name="member">The member.</param>
         public SeeComment(string member)
         {
-            _member = member;
+            Member = member;
         }
 
         /// <summary>

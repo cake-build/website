@@ -7,17 +7,13 @@ namespace Cake.Web.Core.Dsl
     public sealed class DslModel
     {
         private readonly Dictionary<string, DslCategory> _cache;
-        private readonly List<DslCategory> _categories;
 
-        public IReadOnlyList<DslCategory> Categories
-        {
-            get { return _categories; }
-        }
+        public IReadOnlyList<DslCategory> Categories { get; }
 
         public DslModel(IEnumerable<DslCategory> categories)
         {
-            _categories = new List<DslCategory>(categories);
-            _cache = _categories.ToDictionary(x => x.Slug, x => x, StringComparer.OrdinalIgnoreCase);
+            Categories = new List<DslCategory>(categories);
+            _cache = Categories.ToDictionary(x => x.Slug, x => x, StringComparer.OrdinalIgnoreCase);
         }
 
         public DslCategory FindCategory(string slug)

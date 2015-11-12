@@ -5,16 +5,11 @@
     /// </summary>
     public sealed class TypeParamRefComment : Comment
     {
-        private readonly string _name;
-
         /// <summary>
         /// Gets the name.
         /// </summary>
         /// <value>The name.</value>
-        public string Name
-        {
-            get { return _name; }
-        }
+        public string Name { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="TypeParamRefComment"/> class.
@@ -22,7 +17,7 @@
         /// <param name="name">The name.</param>
         public TypeParamRefComment(string name)
         {
-            _name = name;
+            Name = name;
         }
 
         /// <summary>

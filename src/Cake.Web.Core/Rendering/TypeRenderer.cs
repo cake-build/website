@@ -94,8 +94,8 @@ namespace Cake.Web.Core.Rendering
                 else if (signature.GenericParameters.Count != 0)
                 {
                     // Write generic parameters.
+                    // TODO: Potential bug here.
                     writer.WriteEncodedText("<");
-                    var result = new List<string>();
                     var parameterIndex = 0;
                     foreach (var parameter in signature.GenericParameters)
                     {
@@ -107,7 +107,6 @@ namespace Cake.Web.Core.Rendering
                             writer.WriteEncodedText(" ");
                         }
                     }
-                    writer.WriteEncodedText(string.Join(", \u200B", result));
                     writer.WriteEncodedText(">");
                 }
             }

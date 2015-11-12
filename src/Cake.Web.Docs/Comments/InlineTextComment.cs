@@ -5,16 +5,11 @@
     /// </summary>
     public sealed class InlineTextComment : Comment
     {
-        private readonly string _text;
-
         /// <summary>
         /// Gets the text.
         /// </summary>
         /// <value>The text.</value>
-        public string Text
-        {
-            get { return _text; }
-        }
+        public string Text { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="InlineTextComment"/> class.
@@ -22,7 +17,7 @@
         /// <param name="text">The text.</param>
         public InlineTextComment(string text)
         {
-            _text = text;
+            Text = text;
         }
 
         /// <summary>

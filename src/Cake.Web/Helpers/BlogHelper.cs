@@ -28,8 +28,7 @@ namespace Cake.Web.Helpers
 
         public static string GetPreviousPageLink(this HtmlHelper helper, BlogPageViewModel model)
         {
-            var parts = new List<string>();
-            parts.Add("blog");
+            var parts = new List<string> { "blog" };
 
             if (model.Year != 0)
             {
@@ -48,15 +47,12 @@ namespace Cake.Web.Helpers
                 }
             }
 
-            return string.Format("/{0}/?page={1}", 
-                string.Join("/", parts),
-                Math.Max(model.CurrentPage - 1, 1));
+            return $"/{string.Join("/", parts)}/?page={Math.Max(model.CurrentPage - 1, 1)}";
         }
 
         public static string GetNextPageLink(this HtmlHelper helper, BlogPageViewModel model)
         {
-            var parts = new List<string>();
-            parts.Add("blog");
+            var parts = new List<string> { "blog" };
 
             if (model.Year != 0)
             {
@@ -76,9 +72,7 @@ namespace Cake.Web.Helpers
                 }
             }
 
-            return string.Format("/{0}/?page={1}",
-                string.Join("/", parts),
-                model.CurrentPage + 1);
+            return $"/{string.Join("/", parts)}/?page={model.CurrentPage + 1}";
         }
 
         public static IHtmlString RenderCategoryList(this HtmlHelper helper, BlogPost post)

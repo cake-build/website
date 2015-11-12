@@ -68,7 +68,7 @@ namespace Cake.Web
             });
 
             // Create the document model by downloading the nuget package.
-            var cakeVersion = (string)null;
+            string cakeVersion;
             var documentModel = NuGetBootstrapper.Download(appDataPath,
                 new NuGetConfiguration {
                     Packages = packageDefinitions

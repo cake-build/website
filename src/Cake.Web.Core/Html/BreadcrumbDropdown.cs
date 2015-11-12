@@ -8,15 +8,8 @@ namespace Cake.Web.Core.Html
         private readonly BreadcrumbItem _owner;
         private readonly LinkedList<IBreadcrumbItem> _items;
 
-        public int Count
-        {
-            get { return _items.Count; }
-        }
-
-        public IBreadcrumbItem this[int index]
-        {
-            get { return _items.First.Value; }
-        }
+        public int Count => _items.Count;
+        public IBreadcrumbItem this[int index] => _items.First.Value;
 
         public BreadcrumbDropdown(BreadcrumbItem owner)
         {

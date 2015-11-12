@@ -7,10 +7,7 @@ namespace Cake.Web.Models
     {
         private readonly List<AssemblyViewModel> _assemblies;
 
-        public IReadOnlyList<AssemblyViewModel> Assemblies
-        {
-            get { return _assemblies; }
-        }
+        public IReadOnlyList<AssemblyViewModel> Assemblies => _assemblies;
 
         public ApiViewModel(DocumentModel model)
         {

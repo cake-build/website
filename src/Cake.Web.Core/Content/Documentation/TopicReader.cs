@@ -22,15 +22,15 @@ namespace Cake.Web.Core.Content.Documentation
         {
             if (fileSystem == null)
             {
-                throw new ArgumentNullException("fileSystem");
+                throw new ArgumentNullException(nameof(fileSystem));
             }
             if (contentParser == null)
             {
-                throw new ArgumentNullException("contentParser");
+                throw new ArgumentNullException(nameof(contentParser));
             }
             if (contentConverter == null)
             {
-                throw new ArgumentNullException("contentConverter");
+                throw new ArgumentNullException(nameof(contentConverter));
             }
             _fileSystem = fileSystem;
             _contentParser = contentParser;
@@ -50,7 +50,7 @@ namespace Cake.Web.Core.Content.Documentation
                     return FixLinks(Read(root, stream));
                 }
             }
-            var message = string.Format("Could not find toc file ({0}).", path.FullPath);
+            var message = $"Could not find toc file ({path.FullPath}).";
             throw new FileNotFoundException(message);
         }
 

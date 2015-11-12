@@ -30,7 +30,7 @@ namespace Cake.Web.Core.Services
                     var typeSignature = type.Definition.GetTypeSignature(_resolver);
                     _documentedTypes.TryAdd(type, typeSignature);
                     _typeReferences.TryAdd(type.Definition, typeSignature);
-                    
+
                     foreach (var method in type.Methods
                         .Concat(type.Constructors)
                         .Concat(type.Operators))
@@ -49,7 +49,7 @@ namespace Cake.Web.Core.Services
             {
                 return signature;
             }
-            var message = string.Format("Could not find signature for {0}.", type.Identity);
+            var message = $"Could not find signature for {type.Identity}.";
             throw new InvalidOperationException(message);
         }
 
@@ -71,7 +71,7 @@ namespace Cake.Web.Core.Services
             {
                 return signature;
             }
-            var message = string.Format("Could not find signature for {0}.", method.Identity);
+            var message = $"Could not find signature for {method.Identity}.";
             throw new InvalidOperationException(message);
         }
     }

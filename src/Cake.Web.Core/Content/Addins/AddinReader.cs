@@ -5,7 +5,6 @@ using System.Linq;
 using System.Xml;
 using Cake.Core.IO;
 using Cake.Web.Core.NuGet;
-using Cake.Web.Docs;
 
 namespace Cake.Web.Core.Content.Addins
 {
@@ -28,7 +27,7 @@ namespace Cake.Web.Core.Content.Addins
                     return Read(stream);
                 }
             }
-            var message = string.Format("Could not find toc file ({0}).", path.FullPath);
+            var message = $"Could not find toc file ({path.FullPath}).";
             throw new FileNotFoundException(message);
         }
 
@@ -56,13 +55,15 @@ namespace Cake.Web.Core.Content.Addins
                     ReadElement(addinNode, "Categories", s => addin.Categories.AddRange(ParseCategories(s)));
 
                     var nugetNode = addinNode.SelectSingleNode("NuGet");
-                    if (nugetNode != null && nugetNode.Attributes != null)
+                    if (nugetNode?.Attributes != null)
                     {
                         var id = nugetNode.Attributes["Id"].Value;
 
-                        addin.PackageDefinition = new PackageDefinition();
-                        addin.PackageDefinition.PackageName = id;
-                        addin.PackageDefinition.Metadata = addin;
+                        addin.PackageDefinition = new PackageDefinition
+                        {
+                            PackageName = id,
+                            Metadata = addin
+                        };
 
                         var filters = nugetNode.SelectNodes("Filter");
                         if (filters != null)

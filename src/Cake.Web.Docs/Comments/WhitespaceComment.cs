@@ -5,16 +5,11 @@
     /// </summary>
     public sealed class WhitespaceComment : Comment
     {
-        private readonly string _text;
-
         /// <summary>
         /// Gets the whitespace text.
         /// </summary>
         /// <value>The text.</value>
-        public string Text
-        {
-            get { return _text; }
-        }
+        public string Text { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="WhitespaceComment"/> class.
@@ -22,7 +17,7 @@
         /// <param name="text">The text.</param>
         public WhitespaceComment(string text)
         {
-            _text = text;
+            Text = text;
         }
 
         /// <summary>

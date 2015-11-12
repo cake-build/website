@@ -13,7 +13,7 @@ namespace Cake.Web.Core.Content.Blog
         private readonly ContentConverter _converter;
         private readonly ContentProcessor _processor;
 
-        public BlogReader(IFileSystem fileSystem, 
+        public BlogReader(IFileSystem fileSystem,
             ContentParser parser,
             ContentConverter converter,
             ContentProcessor processor)

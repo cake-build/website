@@ -4,21 +4,16 @@ namespace Cake.Web.Core.Content.Documentation
 {
     public sealed class TopicTree
     {
-        private readonly List<TopicSection> _sections;
-
-        public IReadOnlyList<TopicSection> Sections
-        {
-            get { return _sections; }
-        }
+        public IReadOnlyList<TopicSection> Sections { get; }
 
         public TopicTree(IEnumerable<TopicSection> sections)
         {
-            _sections = new List<TopicSection>(sections);
+            Sections = new List<TopicSection>(sections);
         }
 
         public TopicSection FindSection(string sectionPath)
         {
-            foreach (var section in _sections)
+            foreach (var section in Sections)
             {
                 if (section.Id == sectionPath)
                 {

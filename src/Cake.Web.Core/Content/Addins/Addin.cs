@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Cake.Core.IO;
 using Cake.Web.Core.NuGet;
 using Cake.Web.Docs;
 
@@ -16,25 +15,10 @@ namespace Cake.Web.Core.Content.Addins
         public List<string> Categories { get; set; }
         public PackageDefinition PackageDefinition { get; set; }
 
-        public Uri Uri
-        {
-            get { return Repository ?? Website; }
-        }
-
-        public bool IsExternallyOwned
-        {
-            get { return true; }
-        }
-
-        public bool IsAlias
-        {
-            get { return false; }
-        }
-
-        public bool IsPropertyAlias
-        {
-            get { return false; }
-        }
+        public Uri Uri => Repository ?? Website;
+        public bool IsExternallyOwned => true;
+        public bool IsAlias => false;
+        public bool IsPropertyAlias => false;
 
         public Addin()
         {

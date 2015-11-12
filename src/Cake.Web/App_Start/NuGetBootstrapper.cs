@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using Cake.Core;
@@ -12,8 +11,8 @@ namespace Cake.Web
     public class NuGetBootstrapper
     {
         public static DocumentModel Download(
-            DirectoryPath appDataPath, 
-            NuGetConfiguration configuration, 
+            DirectoryPath appDataPath,
+            NuGetConfiguration configuration,
             out string version)
         {
             var fileSystem = new FileSystem();
@@ -39,12 +38,10 @@ namespace Cake.Web
                 var name = AssemblyName.GetAssemblyName(exe);
                 if (name != null)
                 {
-                    version = string.Format("{0}.{1}.{2}",
-                        name.Version.Major, name.Version.Minor,
-                        name.Version.Build);
+                    version = $"{name.Version.Major}.{name.Version.Minor}.{name.Version.Build}";
                 }
             }
-            
+
             // Build the model.
             return new DocumentModelBuilder()
                 .BuildModel(files);

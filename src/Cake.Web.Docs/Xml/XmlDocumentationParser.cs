@@ -31,7 +31,7 @@ namespace Cake.Web.Docs.Xml
         {
             if (documents == null)
             {
-                throw new ArgumentNullException("documents");
+                throw new ArgumentNullException(nameof(documents));
             }
 
             var result = new List<XmlDocumentationMember>();
@@ -46,16 +46,16 @@ namespace Cake.Web.Docs.Xml
         {
             if (document == null)
             {
-                throw new ArgumentNullException("document");
+                throw new ArgumentNullException(nameof(document));
             }
 
             // Get the assembly Identity.
             var members = new List<XmlDocumentationMember>();
 
-            // Get all members and parse them.                        
+            // Get all members and parse them.
             var nodes = document.SelectNodes("/doc/members/member");
             if (nodes != null)
-            {                
+            {
                 foreach (XmlNode node in nodes)
                 {
                     Debug.Assert(node != null, "Node cannot be null.");
@@ -78,7 +78,7 @@ namespace Cake.Web.Docs.Xml
                     }
 
                     members.Add(new XmlDocumentationMember(name.InnerText, comments));
-                }                
+                }
             }
 
             // Return the result.

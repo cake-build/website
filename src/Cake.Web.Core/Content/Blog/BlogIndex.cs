@@ -20,7 +20,7 @@ namespace Cake.Web.Core.Content.Blog
             _yearMonthToPostsLookup = new Dictionary<int, Dictionary<int, List<BlogPost>>>();
             _idToPostLookup = new Dictionary<string, BlogPost>(StringComparer.OrdinalIgnoreCase);
             _archive = new List<DateTime>();
-            
+
             var categories = new HashSet<BlogCategory>(new BlogCategoryComparer());
 
             foreach (var post in _posts)

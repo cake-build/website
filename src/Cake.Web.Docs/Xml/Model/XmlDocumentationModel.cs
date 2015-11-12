@@ -8,17 +8,13 @@ namespace Cake.Web.Docs.Xml.Model
     /// </summary>
     public sealed class XmlDocumentationModel
     {
-        private readonly List<XmlDocumentationMember> _members;
         private readonly Dictionary<string, XmlDocumentationMember> _lookup;
 
         /// <summary>
         /// Gets the assemblies.
         /// </summary>
         /// <value>The assemblies.</value>
-        public IReadOnlyList<XmlDocumentationMember> Members
-        {
-            get { return _members; }
-        }
+        public IReadOnlyList<XmlDocumentationMember> Members { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="XmlDocumentationModel" /> class.
@@ -27,16 +23,16 @@ namespace Cake.Web.Docs.Xml.Model
         internal XmlDocumentationModel(IEnumerable<XmlDocumentationMember> members)
         {
             // Get all members.
-            _members = new List<XmlDocumentationMember>(members);
+            Members = new List<XmlDocumentationMember>(members);
 
             // Create lookup table for members.
             _lookup = new Dictionary<string, XmlDocumentationMember>(StringComparer.Ordinal);
-            foreach (var member in _members)
+            foreach (var member in Members)
             {
                 if (_lookup.ContainsKey(member.CRef))
                 {
-                    throw new InvalidOperationException();   
-                }                    
+                    throw new InvalidOperationException();
+                }
                 _lookup.Add(member.CRef, member);
             }
         }

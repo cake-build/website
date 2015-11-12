@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.InteropServices;
 using Cake.Web.Docs;
 using Cake.Web.Docs.Comments;
 using Cake.Web.Docs.Reflection;
@@ -51,7 +50,7 @@ namespace Cake.Web.Core.Dsl
                         categoryName,
                         metadata,
                         summary,
-                        categoryMethods, 
+                        categoryMethods,
                         subCategories.OrderBy(x => x.Name)));
             }
 
@@ -68,9 +67,13 @@ namespace Cake.Web.Core.Dsl
         {
             var result = new Dictionary<string, Dictionary<string, List<DocumentedMethod>>>();
 
-            summaries = new Dictionary<string, SummaryComment>();
-            summaries.Add("General", new SummaryComment(new[] { new InlineTextComment("Contains miscellaneous functionality.") }));
-            
+            summaries = new Dictionary<string, SummaryComment>
+            {
+                {"General", new SummaryComment(new[] {
+                    new InlineTextComment("Contains miscellaneous functionality.")
+                })}
+            };
+
             foreach (var assembly in model.Assemblies)
             {
                 foreach (var ns in assembly.Namespaces)

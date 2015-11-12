@@ -84,9 +84,11 @@ namespace Cake.Web.Controllers
             }
 
             // Create the feed.
-            var feed = new SyndicationFeed(items);
-            feed.Title = new TextSyndicationContent("Cake", TextSyndicationContentKind.Plaintext);
-            feed.Description = new TextSyndicationContent("The Cake blog feed", TextSyndicationContentKind.Plaintext);
+            var feed = new SyndicationFeed(items)
+            {
+                Title = new TextSyndicationContent("Cake", TextSyndicationContentKind.Plaintext),
+                Description = new TextSyndicationContent("The Cake blog feed", TextSyndicationContentKind.Plaintext)
+            };
 
             // Write the feed as a response.
             // TODO: Cache this at start up?

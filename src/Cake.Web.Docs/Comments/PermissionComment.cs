@@ -7,16 +7,11 @@ namespace Cake.Web.Docs.Comments
     /// </summary>
     public sealed class PermissionComment : AggregateComment
     {
-        private readonly string _member;
-
         /// <summary>
         /// Gets the member.
         /// </summary>
         /// <value>The member.</value>
-        public string Member
-        {
-            get { return _member; }
-        }
+        public string Member { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="PermissionComment"/> class.
@@ -26,7 +21,7 @@ namespace Cake.Web.Docs.Comments
         public PermissionComment(string member, IEnumerable<IComment> comments)
             : base(comments)
         {
-            _member = member;
+            Member = member;
         }
 
         /// <summary>

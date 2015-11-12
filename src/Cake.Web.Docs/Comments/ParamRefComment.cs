@@ -5,18 +5,13 @@
     /// </summary>
     public sealed class ParamRefComment : Comment
     {
-        private readonly string _name;
-
         /// <summary>
         /// Gets the name of the parameter reference.
         /// </summary>
         /// <value>
         /// The name.
         /// </value>
-        public string Name
-        {
-            get { return _name; }
-        }
+        public string Name { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ParamRefComment"/> class.
@@ -24,7 +19,7 @@
         /// <param name="name">The name.</param>
         public ParamRefComment(string name)
         {
-            _name = name;
+            Name = name;
         }
 
         /// <summary>

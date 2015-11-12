@@ -106,7 +106,7 @@ namespace Cake.Web.Docs
 
                 // Do we have a documentation for this namespace?
                 var documentation = namespaceGroup.FirstOrDefault(x => x.Definition.Name.EndsWith("NamespaceDoc"));
-                var summary = documentation != null ? documentation.Summary : null;
+                var summary = documentation?.Summary;
                 if (documentation != null)
                 {
                     namespaceTypes.Remove(documentation);
@@ -212,7 +212,7 @@ namespace Cake.Web.Docs
             }
 
             var metadata = method.Metadata;
-            var isPropertyAlias = false;
+            bool isPropertyAlias;
             if (method.Definition.IsCakeAlias(out isPropertyAlias))
             {
                 metadata = new AliasMetadataAdapter(metadata, isPropertyAlias);

@@ -33,7 +33,7 @@ namespace Cake.Web.Helpers.Api
                 options = FixOptions(method, options);
 
                 var signature = context.SignatureResolver.GetMethodSignature(method);
-                return context.SignatureRenderer.Render(signature, MethodRenderOption.Name | MethodRenderOption.Parameters);
+                return context.SignatureRenderer.Render(signature, options);
             }
             return MvcHtmlString.Empty;
         }

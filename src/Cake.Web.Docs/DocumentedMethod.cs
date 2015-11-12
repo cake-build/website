@@ -13,20 +13,11 @@ namespace Cake.Web.Docs
     [DebuggerDisplay("{Identity,nq}")]
     public sealed class DocumentedMethod : DocumentedMember
     {
-        private readonly MethodDefinition _definition;
-        private readonly MethodClassification _methodClassification;
-        private readonly string _identity;        
-        private readonly List<DocumentedParameter> _parameters;
-        private readonly ReturnsComment _returns;
-
         /// <summary>
         /// Gets the method's identity.
         /// </summary>
         /// <value>The method's identity.</value>
-        public string Identity
-        {
-            get { return _identity; }
-        }
+        public string Identity { get; }
 
         /// <summary>
         /// Gets the declaring type.
@@ -40,37 +31,25 @@ namespace Cake.Web.Docs
         /// <value>
         /// The return value comment.
         /// </value>
-        public ReturnsComment Returns
-        {
-            get { return _returns; }
-        }
+        public ReturnsComment Returns { get; }
 
         /// <summary>
         /// Gets the method's parameters.
         /// </summary>
         /// <value>The parameters.</value>
-        public IReadOnlyList<DocumentedParameter> Parameters
-        {
-            get { return _parameters; }
-        }
+        public IReadOnlyList<DocumentedParameter> Parameters { get; }
 
         /// <summary>
         /// Gets the method definition.
         /// </summary>
         /// <value>The method definition.</value>
-        public MethodDefinition Definition
-        {
-            get { return _definition; }
-        }
+        public MethodDefinition Definition { get; }
 
         /// <summary>
         /// Gets the method classification.
         /// </summary>
         /// <value>The method classification.</value>
-        public MethodClassification MethodClassification
-        {
-            get { return _methodClassification; }
-        }
+        public MethodClassification MethodClassification { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="DocumentedMethod" /> class.
@@ -81,21 +60,22 @@ namespace Cake.Web.Docs
         /// <param name="remarks">The remarks comment.</param>
         /// <param name="examples">The example comments.</param>
         /// <param name="returns">The return value comment.</param>
+        /// <param name="metadata">The method metadata.</param>
         public DocumentedMethod(
-            IMethodInfo info, 
+            IMethodInfo info,
             IEnumerable<DocumentedParameter> parameters,
-            SummaryComment summary, 
-            RemarksComment remarks, 
+            SummaryComment summary,
+            RemarksComment remarks,
             IEnumerable<ExampleComment> examples,
             ReturnsComment returns,
-            IDocumentationMetadata metadata) 
+            IDocumentationMetadata metadata)
             : base(MemberClassification.Method, summary, remarks, examples, metadata)
         {
-            _definition = info.Definition;
-            _methodClassification = MethodClassifier.GetMethodClassification(info.Definition);
-            _identity = info.Identity;
-            _parameters = new List<DocumentedParameter>(parameters);
-            _returns = returns;
-        }        
+            Definition = info.Definition;
+            MethodClassification = MethodClassifier.GetMethodClassification(info.Definition);
+            Identity = info.Identity;
+            Parameters = new List<DocumentedParameter>(parameters);
+            Returns = returns;
+        }
     }
 }
