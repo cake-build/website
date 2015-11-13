@@ -38,7 +38,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <b>@assembly.Name</b>
-                @if (assembly.Metadata.IsExternallyOwned)
+                @if (assembly.Metadata.IsOwnedByAddin)
                 {
                     <span class="label label-addin">addin</span>
                 }

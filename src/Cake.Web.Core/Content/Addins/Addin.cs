@@ -15,8 +15,8 @@ namespace Cake.Web.Core.Content.Addins
         public List<string> Categories { get; set; }
         public PackageDefinition PackageDefinition { get; set; }
 
-        public Uri Uri => Repository ?? Website;
-        public bool IsExternallyOwned => true;
+        public Uri Url => Repository ?? Website;
+        public bool IsOwnedByAddin => true;
         public bool IsAlias => false;
         public bool IsPropertyAlias => false;
 

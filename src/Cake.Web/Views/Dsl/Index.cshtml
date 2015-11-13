@@ -50,7 +50,7 @@
                     <tr>
                         <td>
                             <a href="@Url.Action("Index", "Dsl", new {path = topicSection.Slug})">@topicSection.Name</a>
-                            @if (topicSection.Metadata.IsExternallyOwned)
+                            @if (topicSection.Metadata.IsOwnedByAddin)
                             {
                                 <span class="label label-addin">addin</span>
                             }

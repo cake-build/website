@@ -30,7 +30,7 @@
 <div style="margin-top: 20px">
 
     @* ADDIN *@
-    @if (@Model.Data.Metadata.IsExternallyOwned)
+    @if (@Model.Data.Metadata.IsOwnedByAddin)
     {
         @Html.Partial("_AddinWarning", Model.Data.Metadata)
     }

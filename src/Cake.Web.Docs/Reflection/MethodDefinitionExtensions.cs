@@ -27,6 +27,12 @@ namespace Cake.Web.Docs.Reflection
             return method.Name.StartsWith("op_");
         }
 
+        /// <summary>
+        /// Determines whether the specified method is a cake alias.
+        /// </summary>
+        /// <param name="method">The method.</param>
+        /// <param name="isPropertyAlias">if set to <c>true</c>, the alias is a property alias.</param>
+        /// <returns></returns>
         public static bool IsCakeAlias(this MethodDefinition method, out bool isPropertyAlias)
         {
             foreach (var attribute in method.CustomAttributes)
