@@ -7,8 +7,12 @@ This is a guide to get started with Cake and to show you how Cake works.
 ### 1. Clone the example repo
 
 First, clone the [example repository](https://github.com/cake-build/example) 
-or download the latest zip. This repository contains a simple project and 
-all files necessary to run the cake script.
+or download the latest zip.  This repository contains a simple project and all 
+files necessary to run the cake script.
+
+**NOTE:** If downloading the latest zip file, ensure that it 
+is [unblocked](http://www.howtogeek.com/70012/what-causes-the-file-downloaded-from-the-internet-warning-and-how-can-i-easily-remove-it/) 
+otherwise you will run into issues when attempting to execute Cake.
 
 #### Files of interest
 
@@ -22,7 +26,10 @@ commit to you repo to use Cake):
             <li style="padding-left: 3px; margin-top: 5px;">
                 This is a bootstrapper powershell script that ensures you have 
                 Cake and required dependencies installed. The bootstrapper 
-                script is also responsible for invoking Cake.
+                script is also responsible for invoking Cake.  This file is optional, 
+                and not a hard requirement.  If you would prefer not to use PowerShell
+                you can invoke Cake directly from the command line, once you have downloaded
+                and extracted it. 
             </li>
         </ul>
     </li>
@@ -63,6 +70,22 @@ It will then run the very simple build.cake script that will clean up
 the output directory, restore all NuGet packages and build the project. 
 
 **Congratulations, you've run you first Cake script!**
+
+**NOTE:** If you are running Cake on a 32 bit Operating System, you will need to provide an additional 
+parameter to ensure that the build script runs correctly.  This is due to an issue with Roslyn.  Either use:
+
+```powershell
+PS> .\cake\cake.exe build.cake -mono
+```
+
+or:
+
+```powershell
+PS> .\cake\cake.exe build.cake -experimental
+```
+
+If you are using the bootstrapper build.ps1 file, you will need to modify the calling of the Cake.exe 
+to include this parameter as well.
 
 ### 3. Bonus points!
 
