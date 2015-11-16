@@ -6,26 +6,28 @@ The Cake VSO build tasks makes it easy to run a Cake script directly without hav
 
 ### 1. Install the VSO extension
 
-To install the VSO extension for a VSO account, go to the
+To install the VSO extension, go to the
 [Cake Build Task page](https://marketplace.visualstudio.com/items/cake-build.cake-build-tasks)
-at the Visual Studio Marketplace and click "Install".
+on the Visual Studio Marketplace and click "Install".
 
 ### 2. Add a build task
 
-Go to the `Build` section fo VSO online and create a build definition if
-you doesn't already have one. Add a new build step by
-clicking the "Add build step..." button.
+Go to the `Build` section on VSO online and create a build definition or
+select an existing one. Add a new build step by clicking the
+"Add build step..." button.
 
 ![Add build step](https://raw.githubusercontent.com/cake-build/cake-vso/develop/Images/addbuildstep.png)
 
-A dialog should appear with different tasks. Select the "Cake" task.
+A dialog should appear with different tasks. Select the "Cake" task and click
+the "Add" button once. After that, click the "Close" button to close the window.
 
 ![Add build step](https://raw.githubusercontent.com/cake-build/cake-vso/develop/Images/addtasks.png)
 
 ### 3. Configure the build task
 
-Now you should be able to edit the build task information such as build script,
-build target, verbosity and arguments.
+You should now be able to edit the build task information such as which
+build script to execute, what build target to run, the amount of logging
+(verbosity) and additional arguments sent to the build script.
 
 By default, the Cake build step (when added to a build) will try to run the `build.cake` build script (found in the root of your repository) with the target `Default`. If you wish to run another build script or build target you can change this in the build step settings.
 
