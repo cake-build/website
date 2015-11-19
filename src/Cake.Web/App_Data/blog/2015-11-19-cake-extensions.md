@@ -26,6 +26,8 @@ As well as Cake Snippet Support, to help with the creation of Tasks
 
 ![Cake Snippet Support](https://raw.githubusercontent.com/cake-build/cake-vscode/master/images/SnippetSupport.png)
 
+Huge thanks go to [Rob Prouse](https://github.com/rprouse) for both [suggesting this extension](https://github.com/cake-build/cake/issues/530) and for doing most of the hard work to create it in the first place. Thanks!
+
 ## Cake Visual Studio Team Services Extension
 
 You can find the Cake extension for Visual Studio Team Services [here](https://marketplace.visualstudio.com/items/cake-build.cake).  To get started with using the extension, simply click the "Install" button.
