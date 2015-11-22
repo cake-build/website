@@ -145,6 +145,9 @@
     <Compile Include="Rendering\SyntaxRenderer.cs" />
     <Compile Include="Rendering\TypeRenderer.cs" />
     <Compile Include="Rendering\TypeRenderOption.cs" />
+    <Compile Include="Search\PrefixMatcher.cs" />
+    <Compile Include="Search\PrefixTree.cs" />
+    <Compile Include="Search\PrefixTreeNode.cs" />
     <Compile Include="Services\LanguageProvider.cs" />
     <Compile Include="Services\RouteService.cs" />
     <Compile Include="Services\SignatureCache.cs" />
