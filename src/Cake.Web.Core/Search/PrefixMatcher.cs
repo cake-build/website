@@ -6,21 +6,42 @@ using System.Threading.Tasks;
 
 namespace Cake.Web.Core.Search
 {
-    public class PrefixMatcher<T>
-        where T : class
+    public class SearchableEqualityComparer : IEqualityComparer<ISearchable>
     {
-        private readonly static List<T> EmptyResult = new List<T>();
-
-        public IReadOnlyList<T> GetMatches(PrefixTree<T> tree, string word)
+        public bool Equals(ISearchable x, ISearchable y)
         {
-            if (word.Length < 4)
+            if (x == null && y == null)
+            {
+                return true;
+            }
+            if (x == null || y == null)
+            {
+                return false;
+            }
+            return x.Term.Equals(y.Term, StringComparison.OrdinalIgnoreCase);
+        }
+
+        public int GetHashCode(ISearchable obj)
+        {
+            return obj.Term.GetHashCode();
+        }
+    }
+
+    public class PrefixMatcher<T>
+        where T : class, ISearchable
+    {
+        private readonly static HashSet<T> EmptyResult = new HashSet<T>();
+
+        public ISet<T> GetMatches(PrefixTree<T> tree, string word, int maxResults)
+        {
+            if (string.IsNullOrWhiteSpace(word) || word.Length < 1)
             {
                 return EmptyResult;
             }
 
-            var result = new List<T>();
+            var result = new HashSet<T>(new SearchableEqualityComparer());
 
-            var letters = new Queue<char>(word);
+            var letters = new Queue<char>(word.ToLowerInvariant());
             var root = tree.Root;
             while (letters.Count > 0)
             {
@@ -39,15 +60,15 @@ namespace Cake.Web.Core.Search
                 result.Add(root.Data);
             }
 
-            if (root != tree.Root)
+            if (result.Count < maxResults && root != tree.Root)
             {
-                result.AddRange(RecursiveSearch(root));
+                RecursiveSearch(root, result, maxResults - result.Count);
             }
 
             return result;
         }
 
-        private static IEnumerable<T> RecursiveSearch(PrefixTreeNode<T> node)
+        private static void RecursiveSearch(PrefixTreeNode<T> node, HashSet<T> result, int maxResults)
         {
             var stack = new Stack<PrefixTreeNode<T>>();
             stack.Push(node);
@@ -56,14 +77,16 @@ namespace Cake.Web.Core.Search
                 var current = stack.Pop();
                 if (current.IsTerminal)
                 {
-                    yield return current.Data;
-                }
-                else
-                {
-                    foreach (var child in current.Children)
+                    result.Add(current.Data);
+                    if (result.Count > maxResults)
                     {
-                        stack.Push(child);
+                        break;
                     }
+                }
+
+                foreach (var child in current.Children)
+                {
+                    stack.Push(child);
                 }
             }
         }

@@ -4,7 +4,7 @@ using System.Linq;
 namespace Cake.Web.Core.Search
 {
     public sealed class PrefixTree<T>
-        where T : class
+        where T : class, ISearchable
     {
         public PrefixTreeNode<T> Root { get; }
 
@@ -13,9 +13,9 @@ namespace Cake.Web.Core.Search
             Root = new PrefixTreeNode<T> { Letter = '\0' };
         }
 
-        public void Add(string word, T data)
+        public void Add(T data)
         {
-            var letters = new Queue<char>(word);
+            var letters = new Queue<char>(data.Term.ToLowerInvariant());
             var root = Root;
             while (letters.Count > 0)
             {

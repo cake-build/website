@@ -98,7 +98,7 @@ namespace Cake.Web
 
             // Search
             routes.MapRoute(
-                "Search", "search/{query}",
+                "Search", "search/",
                 new { controller = "Search", action = "index" }
             );
 

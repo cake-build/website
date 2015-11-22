@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace Cake.Web.Core.Search
 {
     public sealed class PrefixTreeNode<T>
-        where T : class
+        where T : class, ISearchable
     {
         public char Letter { get; internal set; }
         public bool IsTerminal { get; internal set; }

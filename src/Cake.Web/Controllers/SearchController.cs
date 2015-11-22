@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 using System.Web.Mvc;
+using Cake.Web.Core;
+using Cake.Web.Core.Search;
 using Cake.Web.Core.Services;
+using Cake.Web.Models;
 
 namespace Cake.Web.Controllers
 {
@@ -16,14 +16,21 @@ namespace Cake.Web.Controllers
             _service = service;
         }
 
-        // GET: Search
-        public ActionResult Index(string query)
+        public ActionResult Index()
         {
-            return new JsonResult
+            return View(new SearchResultViewModel(string.Empty, null));
+        }
+
+        [HttpPost]
+        [Throttle(Seconds = 1)]
+        public ActionResult Index(SearchViewModel model)
+        {
+            if (model == null)
             {
-                Data = _service.Find(query),
-                JsonRequestBehavior = JsonRequestBehavior.AllowGet
-            };
+                return View("Index", new SearchResultViewModel(model.Term, Enumerable.Empty<SearchTerm>()));
+            }
+            var result = _service.Find(model.Term, 10).ToList();
+            return View("Index", new SearchResultViewModel(model.Term, result));
         }
     }
 }

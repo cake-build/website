@@ -109,7 +109,7 @@ namespace Cake.Web
 
             // Build the search index.
             var searchService = container.Resolve<SearchService>();
-            searchService.BuildIndex(documentModel);
+            searchService.Build(documentModel);
 
             // Update the container.
             builder = new ContainerBuilder();
