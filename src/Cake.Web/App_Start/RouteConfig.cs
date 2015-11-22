@@ -96,6 +96,12 @@ namespace Cake.Web
                 new { controller = "Addin", action = "index" }
             );
 
+            // Search
+            routes.MapRoute(
+                "Search", "search/{query}",
+                new { controller = "Search", action = "index" }
+            );
+
             // Default
             routes.MapRoute(
                 name: "Default",

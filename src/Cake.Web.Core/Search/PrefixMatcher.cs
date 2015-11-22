@@ -28,6 +28,7 @@ namespace Cake.Web.Core.Search
                 var node = root.Children.SingleOrDefault(l => l.Letter == letter);
                 if (node == null)
                 {
+                    root = tree.Root;
                     break;
                 }
                 root = node;
@@ -38,7 +39,10 @@ namespace Cake.Web.Core.Search
                 result.Add(root.Data);
             }
 
-            result.AddRange(RecursiveSearch(root));
+            if (root != tree.Root)
+            {
+                result.AddRange(RecursiveSearch(root));
+            }
 
             return result;
         }
