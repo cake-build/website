@@ -1,5 +1,5 @@
 ---
-title: Cake File Extension Support GitHub
+title: Cake File Extension Support on GitHub
 category: News
 ---
 
