@@ -1,5 +1,5 @@
 ---
-title: Cake Extensions for VS Code and Visual Studio Team Services
+title: Cake File Extension Support GitHub
 category: News
 ---
 
