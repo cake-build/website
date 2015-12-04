@@ -155,6 +155,9 @@
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RedirectController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
+    <Compile Include="Models\SearchResultViewModel.cs" />
+    <Compile Include="Models\SearchViewModel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -266,6 +269,7 @@
     <Content Include="Views\Addin\Index.cshtml" />
     <Content Include="Views\Shared\_AddinWarning.cshtml" />
     <Content Include="App_Data\**\*.md" />
+    <Content Include="Views\Search\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Bootstrapper\" />

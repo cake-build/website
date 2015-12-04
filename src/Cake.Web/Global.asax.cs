@@ -95,6 +95,7 @@ namespace Cake.Web
             builder.RegisterType<SyntaxRenderer>().SingleInstance();
             builder.RegisterType<SignatureRenderer>().SingleInstance();
             builder.RegisterType<ApiServices>().SingleInstance();
+            builder.RegisterType<SearchService>().SingleInstance();
             builder.RegisterInstance(packagesConfig).SingleInstance();
             var container = builder.Build();
 
@@ -105,6 +106,10 @@ namespace Cake.Web
             // Read all blog entries.
             var blogReader = container.Resolve<IBlogReader>();
             var blogIndex = blogReader.Parse(appDataPath.Combine("blog"));
+
+            // Build the search index.
+            var searchService = container.Resolve<SearchService>();
+            searchService.Build(documentModel);
 
             // Update the container.
             builder = new ContainerBuilder();

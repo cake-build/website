@@ -1,0 +1,61 @@
+﻿@model Cake.Web.Models.SearchResultViewModel
+@{
+    ViewBag.Title = "Start";
+    ViewBag.Menu = "Search";
+    Layout = "~/Views/Shared/_LayoutSidebar.cshtml";
+}
+
+@section Sidebar
+{
+    <h4><i class="fa fa-bookmark"></i> Links</h4>
+    <ul>
+        <li><a href="/dsl">DSL Reference</a></li>
+        <li><a href="/api">API Reference</a></li>
+    </ul>
+}
+
+@* TITLE *@
+<div class="main-content-title">
+    <h2>Search</h2>
+</div>
+
+<p style="margin-top: 15px;">
+    Here you can search for API related things such as namespaces, types,
+    methods and properties related to Cake and Cake addins.
+</p>
+
+@using (Html.BeginForm("Index", "Search", FormMethod.Post))
+{
+    <div class="input-group" style="margin-top: 23px">
+        <input type="text" id="Term" name="Term" class="search-query form-control" placeholder="Search" value="@Model.Term" />
+        <span class="input-group-btn">
+            <button class="btn btn-danger" type="submit">
+                <i class="fa fa-search"> </i>
+            </button>
+        </span>
+    </div>
+}
+
+@if (Model != null && !string.IsNullOrWhiteSpace(Model.Term))
+{
+    <h3>Search results:</h3>
+    <ul>
+        @if (Model.Results.Count == 0)
+        {
+        <li>No results!</li>
+        }
+        else
+        {
+            foreach (var searchTerm in Model.Results.OrderBy(x => x.Category))
+            {
+                <li>
+                    <a href="@searchTerm.Uri">@searchTerm.Term</a> (@searchTerm.Category)
+                    @if (searchTerm.IsAddin)
+                    {
+                        <span class="label label-addin">addin</span>
+                    }
+                </li>
+            }
+        }
+    </ul>
+}
