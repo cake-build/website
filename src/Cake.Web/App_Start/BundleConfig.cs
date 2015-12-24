@@ -28,6 +28,9 @@ namespace Cake.Web
             bundles.Add(new ScriptBundle("~/Content/js/highlight").Include(
                       "~/Content/js/highlight.pack.js"));
 
+            bundles.Add(new ScriptBundle("~/Content/js/snowstorm").Include(
+                      "~/Content/js/snowstorm-min.js"));
+
             bundles.Add(new StyleBundle("~/Content/css/files").Include(
                       "~/Content/css/bootstrap.css",
                       "~/Content/css/cake-theme.css",
