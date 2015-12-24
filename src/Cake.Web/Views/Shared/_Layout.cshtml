@@ -13,7 +13,7 @@
     <link rel="alternate" type="application/atom+xml" title="The Cake blog feed" href="http://cakebuild.net/blog/feed/atom">
 
 </head>
-<body>
+<body id="root">
 
     @* HEADER *@
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -67,26 +67,35 @@
     @Scripts.Render("~/Content/js/snowstorm")
     @RenderSection("scripts", required: false)
 
+<script>
+    snowStorm.excludeMobile = false;
+    snowStorm.snowColor = '#99bbff';
+    snowStorm.animationInterval = 50;
+    snowStorm.snowStick = false;
+    snowStorm.zIndex = 999999;
+    snowStorm.followMouse = false;
+</script>
+
     <script>hljs.initHighlightingOnLoad();</script>
 
     <!-- Gitter -->
     <script>
-    ((window.gitter = {}).chat = {}).options = {
-        room: 'cake-build/cake'
-    };
+        ((window.gitter = {}).chat = {}).options = {
+            room: 'cake-build/cake'
+        };
     </script>
     <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 <!-- Google Analytics -->
     <script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-60516413-1', 'auto');
-    ga('send', 'pageview');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-60516413-1', 'auto');
+        ga('send', 'pageview');
     </script>
 
 </body>
