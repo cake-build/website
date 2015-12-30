@@ -64,18 +64,7 @@
     @Scripts.Render("~/Content/js/jquery")
     @Scripts.Render("~/Content/js/bootstrap")
     @Scripts.Render("~/Content/js/highlight")
-    @Scripts.Render("~/Content/js/snowstorm")
     @RenderSection("scripts", required: false)
-
-<script>
-    snowStorm.excludeMobile = false;
-    snowStorm.snowColor = '#99bbff';
-    snowStorm.animationInterval = 50;
-    snowStorm.snowStick = false;
-    snowStorm.zIndex = 999999;
-    snowStorm.usePositionFixed = true;
-    snowStorm.followMouse = false;
-</script>
 
     <script>hljs.initHighlightingOnLoad();</script>
 

@@ -200,7 +200,6 @@
     <Content Include="Content\img\preview.gif" />
     <Content Include="Content\img\screenshot.png" />
     <Content Include="Content\js\highlight.pack.js" />
-    <Content Include="Content\js\snowstorm-min.js" />
     <Content Include="favicon.ico" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
