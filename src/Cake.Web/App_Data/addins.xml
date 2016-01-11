@@ -195,4 +195,15 @@
     <Description>Cake AddIn that extends Cake with ability to transform ReSharper Reports into human readable format.</Description>
     <Categories>Reports</Categories>
   </Addin>  
+  <Addin>
+    <Name>Cake.HockeyApp</Name>
+    <NuGet Id="Cake.HockeyApp">
+      <Filter>/**/Cake.HockeyApp.dll</Filter>
+      <Filter>/**/Cake.HockeyApp.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/reicheltp/Cake.HockeyApp</Repository>
+    <Author>Paul Reichelt</Author>
+    <Description>Cake AddIn that allows you to deploy your app package to HockeyApp.</Description>
+    <Categories>Deployment</Categories>
+  </Addin>  
 </Addins>
