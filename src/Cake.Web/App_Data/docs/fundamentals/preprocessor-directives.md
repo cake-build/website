@@ -9,10 +9,14 @@ These can be used to reference other scripts, assemblies, namespaces and more.
 The add-in directive is used to install and reference assemblies using NuGet.
 
 #### Usage
-The directive takes an NuGet package id as first parameter and has NuGet source as an optional second parameter.
+The directives takes an package URI parameter.
+Right now, only NuGet packages are supported.
 
 ```csharp
-#addin "package id" ["source"]
+#addin nuget:?package=Cake.Foo
+#addin nuget:?package=Cake.Foo&version=1.2.3
+#addin nuget:?package=Cake.Foo&prerelease
+#addin nuget:https://myget.org/f/Cake/?package=Cake.Foo&prerelease
 ```
 
 ### Load directive
@@ -42,10 +46,14 @@ or
 The tool directive installs external command-line tools using NuGet.
 
 #### Usage
-The directive takes an NuGet package id as first parameter and has NuGet source as an optional second parameter.
+The directives takes an package URI parameter.
+Right now, only NuGet packages are supported.
 
 ```csharp
-#tool "package id" ["source"]
+#tool nuget:?package=Cake.Foo
+#tool nuget:?package=Cake.Foo&version=1.2.3
+#tool nuget:?package=Cake.Foo&prerelease
+#tool nuget:https://myget.org/f/Cake/?package=Cake.Foo&prerelease
 ```
 
 ### Shebang directive
