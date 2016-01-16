@@ -9,7 +9,7 @@ These can be used to reference other scripts, assemblies, namespaces and more.
 The add-in directive is used to install and reference assemblies using NuGet.
 
 #### Usage
-The directives takes an package URI parameter.
+The directive takes a single package URI parameter
 Right now, only NuGet packages are supported.
 
 ```csharp
@@ -23,7 +23,7 @@ Right now, only NuGet packages are supported.
 The load directive is used to reference external Cake scripts. Useful i.e. if you have common utility functions.
 
 #### Usage
-The directive has one parameters which is the location to the script.
+The directive has one parameter which is the location to the script.
 
 ```csharp
 #l "utilities.cake"
@@ -35,7 +35,8 @@ or
 The reference directive is used to reference external assemblies for use in your scripts.
 
 #### Usage
-The directive has one parameters which is the path to the dll to load.
+The directive has one parameter which is the path to the dll to load.
+
 ```csharp
 #r "bin/myassembly.dll"
 or
@@ -46,7 +47,7 @@ or
 The tool directive installs external command-line tools using NuGet.
 
 #### Usage
-The directives takes an package URI parameter.
+The directive takes a single package URI parameter
 Right now, only NuGet packages are supported.
 
 ```csharp
