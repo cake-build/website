@@ -9,17 +9,21 @@ These can be used to reference other scripts, assemblies, namespaces and more.
 The add-in directive is used to install and reference assemblies using NuGet.
 
 #### Usage
-The directive takes an NuGet package id as first parameter and has NuGet source as an optional second parameter.
+The directive takes a single package URI parameter
+Right now, only NuGet packages are supported.
 
 ```csharp
-#addin "package id" ["source"]
+#addin nuget:?package=Cake.Foo
+#addin nuget:?package=Cake.Foo&version=1.2.3
+#addin nuget:?package=Cake.Foo&prerelease
+#addin nuget:https://myget.org/f/Cake/?package=Cake.Foo&prerelease
 ```
 
 ### Load directive
 The load directive is used to reference external Cake scripts. Useful i.e. if you have common utility functions.
 
 #### Usage
-The directive has one parameters which is the location to the script.
+The directive has one parameter which is the location to the script.
 
 ```csharp
 #l "utilities.cake"
@@ -31,7 +35,8 @@ or
 The reference directive is used to reference external assemblies for use in your scripts.
 
 #### Usage
-The directive has one parameters which is the path to the dll to load.
+The directive has one parameter which is the path to the dll to load.
+
 ```csharp
 #r "bin/myassembly.dll"
 or
@@ -42,10 +47,14 @@ or
 The tool directive installs external command-line tools using NuGet.
 
 #### Usage
-The directive takes an NuGet package id as first parameter and has NuGet source as an optional second parameter.
+The directive takes a single package URI parameter
+Right now, only NuGet packages are supported.
 
 ```csharp
-#tool "package id" ["source"]
+#tool nuget:?package=Cake.Foo
+#tool nuget:?package=Cake.Foo&version=1.2.3
+#tool nuget:?package=Cake.Foo&prerelease
+#tool nuget:https://myget.org/f/Cake/?package=Cake.Foo&prerelease
 ```
 
 ### Shebang directive
