@@ -194,5 +194,16 @@
     <Author>Gary Ewan Park</Author>
     <Description>Cake AddIn that extends Cake with ability to transform ReSharper Reports into human readable format.</Description>
     <Categories>Reports</Categories>
-  </Addin>  
+  </Addin>
+  <Addin>
+    <Name>Cake.AppVeyor</Name>
+    <NuGet Id="Cake.AppVeyor">
+      <Filter>/**/Cake.AppVeyor.dll</Filter>
+      <Filter>/**/Cake.AppVeyor.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/Redth/Cake.AppVeyor</Repository>
+    <Author>Jonathan Dick</Author>
+    <Description>A set of aliases for Cake to access the AppVeyor REST API's</Description>
+    <Categories>AppVeyor</Categories>
+  </Addin>
 </Addins>
