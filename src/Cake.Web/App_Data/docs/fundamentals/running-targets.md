@@ -34,3 +34,9 @@ Task("Publish")
 
 RunTarget(target);
 ```
+
+With this Cake script, you can run a specific target by passing the `-Target` argument to `Cake.exe`. Thus, we can run the `"Publish"` target by calling: 
+
+```powershell
+./build.ps1 -Target Publish
+```
