@@ -9,7 +9,7 @@
     <Repository>https://github.com/Redth/Cake.FileHelpers</Repository>
     <Author>Jonathan Dick</Author>
     <Description>
-      A set of aliases for Cake to help with simple file operations 
+      A set of aliases for Cake to help with simple file operations
       such as Reading, Writing and Replacing text.
     </Description>
     <Categories>IO</Categories>
@@ -205,5 +205,16 @@
     <Author>Jonathan Dick</Author>
     <Description>A set of aliases for Cake to access the AppVeyor REST API's</Description>
     <Categories>AppVeyor</Categories>
+  </Addin>
+  <Addin>
+    <Name>Cake.HockeyApp</Name>
+    <NuGet Id="Cake.HockeyApp">
+      <Filter>/**/Cake.HockeyApp.dll</Filter>
+      <Filter>/**/Cake.HockeyApp.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/reicheltp/Cake.HockeyApp</Repository>
+    <Author>Paul Reichelt</Author>
+    <Description>Cake AddIn that allows you to deploy your app package to HockeyApp.</Description>
+    <Categories>Deployment</Categories>
   </Addin>
 </Addins>
