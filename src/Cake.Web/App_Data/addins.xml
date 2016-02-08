@@ -217,4 +217,15 @@
     <Description>Cake AddIn that allows you to deploy your app package to HockeyApp.</Description>
     <Categories>Deployment</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.VsCode</Name>
+    <NuGet Id="Cake.VsCode">
+      <Filter>/**/Cake.VsCode.dll</Filter>
+      <Filter>/**/Cake.VsCode.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/gep13/Cake.VsCode</Repository>
+    <Author>Gary Ewan Park</Author>
+    <Description>Cake AddIn that extends Cake with ability to execute the vsce command line utility.</Description>
+    <Categories>Deployment</Categories>
+  </Addin>
 </Addins>
