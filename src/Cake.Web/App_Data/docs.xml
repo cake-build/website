@@ -13,7 +13,7 @@
   <section title="Fundamentals">
     <item title="Tasks" file="fundamentals/tasks.md" />
     <item title="Dependencies" file="fundamentals/dependencies.md" />
-    <item title="Criterias" file="fundamentals/criterias.md" />
+    <item title="Criteria" file="fundamentals/criteria.md" />
     <item title="Error handling" file="fundamentals/error-handling.md" />
     <item title="Finally block" file="fundamentals/finally-block.md" />
     <item title="Setup and teardown" file="fundamentals/setup-and-teardown.md" />

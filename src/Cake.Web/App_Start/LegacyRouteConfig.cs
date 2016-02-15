@@ -17,7 +17,7 @@ namespace Cake.Web
                 {"documentation", "/docs"},
                 {"documentation/tasks", "/docs/fundamentals/tasks"},
                 {"documentation/dependencies", "/docs/fundamentals/dependencies"},
-                {"documentation/criterias", "/docs/fundamentals/criterias"},
+                {"documentation/criteria", "/docs/fundamentals/criteria"},
                 {"documentation/error-handling", "/docs/fundamentals/error-handling"},
                 {"documentation/error-reporting", "/docs/fundamentals/error-handling"},
                 {"documentation/finally-block", "/docs/fundamentals/finally-block"},
