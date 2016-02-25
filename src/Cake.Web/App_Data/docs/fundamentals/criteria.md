@@ -13,7 +13,7 @@ Task("A")
 
 Task("B")
     .WithCriteria(() => DateTime.Now.Second % 2 == 0)
-    .IsDependentOn("A");
+    .IsDependentOn("A")
     .Does(() =>
 {
 });
