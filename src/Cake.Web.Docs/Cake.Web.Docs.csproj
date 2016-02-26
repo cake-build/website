@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AliasMetadataAdapter.cs" />
+    <Compile Include="BaseTypeFinder.cs" />
     <Compile Include="CakeMetadata.cs" />
     <Compile Include="Comments\SeeExternalLinkComment.cs" />
     <Compile Include="DocumentedMethodComparer.cs" />

@@ -43,6 +43,16 @@ namespace Cake.Web.Docs
                 }
             }
 
+            // Map base types methods.
+            var baseTypeFinder = new BaseTypeFinder(model);
+            foreach (var @namespace in namespaces)
+            {
+                foreach (var type in @namespace.Types)
+                {
+                    type.BaseType = baseTypeFinder.FindBaseType(type);
+                }
+            }
+
             // Build namespace trees and map them.
             var trees = DocumentedNamespaceTree.Build(namespaces);
             foreach (var @namespace in namespaces)
