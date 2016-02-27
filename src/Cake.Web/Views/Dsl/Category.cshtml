@@ -12,11 +12,23 @@
         <li><a href="@Url.Action("Index", "Api")">API Reference</a></li>
     </ul>
 
-    <h4><i class="fa fa-gear"></i> Categories</h4>
+    <h4><i class="fa fa-gear"></i> Built-in</h4>
     <ul>
-        @foreach (var topicSection in Model.Parent.Categories)
+        @foreach (var topicSection in Model.Parent.Categories.Where(m => !m.Metadata.IsOwnedByAddin))
         {
-            <li><a href="@Url.Action("Index", "Dsl", new {path = topicSection.Slug})">@topicSection.Name</a></li>
+            <li>
+                <a href="@Url.Action("Index", "Dsl", new {path = topicSection.Slug})">@topicSection.Name</a>
+            </li>
+        }
+    </ul>
+
+    <h4><i class="fa fa-gear"></i> Addins</h4>
+    <ul>
+        @foreach (var topicSection in Model.Parent.Categories.Where(m => m.Metadata.IsOwnedByAddin))
+        {
+            <li>
+                <a href="@Url.Action("Index", "Dsl", new {path = topicSection.Slug})">@topicSection.Name</a>
+            </li>
         }
     </ul>
 }

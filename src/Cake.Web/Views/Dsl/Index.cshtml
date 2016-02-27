@@ -12,9 +12,19 @@
         <li>@Html.ActionLink("API Reference", "Index", "Api")</li>
     </ul>
 
-    <h4><i class="fa fa-gear"></i> Categories</h4>
+    <h4><i class="fa fa-gear"></i> Built-in</h4>
     <ul>
-        @foreach (var topicSection in Model.Categories)
+        @foreach (var topicSection in Model.Categories.Where(m => !m.Metadata.IsOwnedByAddin))
+        {
+            <li>
+                <a href="@Url.Action("Index", "Dsl", new {path = topicSection.Slug})">@topicSection.Name</a>
+            </li>
+        }
+    </ul>
+
+    <h4><i class="fa fa-gear"></i> Addins</h4>
+    <ul>
+        @foreach (var topicSection in Model.Categories.Where(m => m.Metadata.IsOwnedByAddin))
         {
             <li>
                 <a href="@Url.Action("Index", "Dsl", new {path = topicSection.Slug})">@topicSection.Name</a>
@@ -41,19 +51,33 @@
 
     <div class="panel panel-default" style="margin-top: 20px">
         <div class="panel-heading">
-            <b>Categories</b>
+            <b>Built-in</b>
         </div>
         <table class="table table-bordered table-striped">
             <tbody>
-                @foreach (var topicSection in Model.Categories)
+            @foreach (var topicSection in Model.Categories.Where(m => !m.Metadata.IsOwnedByAddin))
+            {
+                <tr>
+                    <td><a href="@Url.Action("Index", "Dsl", new {path = topicSection.Slug})">@topicSection.Name</a></td>
+                    <td>@Api.Comment(@topicSection.Summary)</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="panel panel-default" style="margin-top: 20px">
+        <div class="panel-heading">
+            <b>Addins</b>
+        </div>
+        <table class="table table-bordered table-striped">
+            <tbody>
+                @foreach (var topicSection in Model.Categories.Where(m => m.Metadata.IsOwnedByAddin))
                 {
                     <tr>
                         <td>
                             <a href="@Url.Action("Index", "Dsl", new {path = topicSection.Slug})">@topicSection.Name</a>
-                            @if (topicSection.Metadata.IsOwnedByAddin)
-                            {
-                                <span class="label label-addin">addin</span>
-                            }
+                            @*<span class="label label-addin">addin</span>*@
                         </td>
                         <td>@Api.Comment(@topicSection.Summary)</td>
                     </tr>
