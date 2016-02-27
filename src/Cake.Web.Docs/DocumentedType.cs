@@ -23,6 +23,14 @@ namespace Cake.Web.Docs
         public string Identity { get; }
 
         /// <summary>
+        /// Gets the base type.
+        /// </summary>
+        /// <value>
+        /// The base type.
+        /// </value>
+        public DocumentedType BaseType { get; internal set; }
+
+        /// <summary>
         /// Gets the namespace.
         /// </summary>
         /// <value>The namespace.</value>
