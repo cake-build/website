@@ -115,11 +115,17 @@
             </div>
             <table class="table table-bordered table-striped">
                 <tbody>
-                    @foreach (var property in Model.Properties.OrderBy(x => x.Identity))
+                    @foreach (var property in Model.Properties.OrderBy(x => x.Data.Identity))
                     {
                         <tr>
-                            <td>@Api.PropertyLink(property)</td>
-                            <td>@Api.Comment(property.Summary)</td>
+                            <td>@Api.PropertyLink(property.Data)</td>
+                            <td>
+                                @Api.Comment(property.Data.Summary)
+                                @if (property.Owner != Model.Data)
+                                {
+                                    <text>(Inherited from @Api.TypeLink(property.Owner))</text>
+                                }
+                            </td>
                         </tr>
                     }
                 </tbody>
@@ -136,11 +142,17 @@
             </div>
             <table class="table table-bordered table-striped">
                 <tbody>
-                    @foreach (var method in Model.Methods.OrderBy(x => x.Definition.Name))
+                    @foreach (var method in Model.Methods.OrderBy(x => x.Data.Definition.Name))
                     {
                         <tr>
-                            <td>@Api.MethodLink(method)</td>
-                            <td>@Api.Comment(method.Summary)</td>
+                            <td>@Api.MethodLink(method.Data)</td>
+                            <td>
+                                @Api.Comment(method.Data.Summary)
+                                @if (method.Owner != Model.Data)
+                                {
+                                    <text>(Inherited from @Api.TypeLink(method.Owner))</text>
+                                }
+                            </td>
                         </tr>
                     }
                 </tbody>
