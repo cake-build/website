@@ -1,6 +1,32 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Addins>
   <Addin>
+    <Name>Cake.Npm</Name>
+    <NuGet Id="Cake.Npm">
+      <Filter>/**/Cake.Npm.dll</Filter>
+      <Filter>/**/Cake.Npm.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/philo/cake-npm</Repository>
+    <Author>Phil Oyston</Author>
+    <Description>
+      A set of aliases for Cake to help with running Npm (Node Package Manager) commands.
+    </Description>
+    <Categories>Node</Categories>
+  </Addin>
+  <Addin>
+    <Name>Cake.Gulp</Name>
+    <NuGet Id="Cake.Gulp">
+      <Filter>/**/Cake.Gulp.dll</Filter>
+      <Filter>/**/Cake.Gulp.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/philo/cake-gulp</Repository>
+    <Author>Phil Oyston</Author>
+    <Description>
+      A set of aliases for Cake to help with running Gulp scripts as part of a build.
+    </Description>
+    <Categories>Node</Categories>
+  </Addin>
+  <Addin>
     <Name>Cake.FileHelpers</Name>
     <NuGet Id="Cake.FileHelpers">
       <Filter>/**/Cake.FileHelpers.dll</Filter>
