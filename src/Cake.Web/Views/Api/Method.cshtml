@@ -37,7 +37,7 @@
 
     @if (@Model.Data.Summary != null)
     {
-        <div id="summary" class="panel panel-default">
+        <div id="summary" class="panel panel-info">
             <div class="panel-heading">
                 <b>Summary</b>
             </div>
@@ -52,10 +52,35 @@
         <div class="panel-heading">
             <b>Syntax</b>
         </div>
-        <div class="panel-body code-box">
+        <div style="margin: 15px;">
             <pre><code class="csharp">@Api.Syntax(@Model.Data)</code></pre>
         </div>
     </div>
+
+    @* -EXAMPLE- *@
+    @if (@Model.Data.Examples.Count > 0)
+    {
+        var index = 0;
+        foreach (var example in @Model.Data.Examples)
+        {
+            index++;
+            <div id="example" class="panel panel-default">
+                <div class="panel-heading">
+                    @if(Model.Data.Examples.Count > 1)
+                    {
+                        <b>Example @index</b>
+                    }
+                    else
+                    {
+                        <b>Example</b>
+                    }
+                </div>
+                <div style="margin: 15px;">
+                    @Api.Comment(example)
+                </div>
+            </div>
+        }
+    }
 
     @* -PARAMETERS- *@
     @if (@Model.Data.Parameters.Count > 0 && !@Model.Data.Metadata.IsPropertyAlias)
@@ -90,28 +115,4 @@
         </div>
     }
 
-    @* -EXAMPLE- *@
-    @if (@Model.Data.Examples.Count > 0)
-    {
-        var index = 0;
-        foreach (var example in @Model.Data.Examples)
-        {
-            index++;
-            <div id="example" class="panel panel-info">
-                <div class="panel-heading">
-                    @if(Model.Data.Examples.Count > 1)
-                    {
-                        <b>Example @index</b>
-                    }
-                    else
-                    {
-                        <b>Example</b>
-                    }
-                </div>
-                <div style="margin: 15px;">
-                    @Api.Comment(example)
-                </div>
-            </div>
-        }
-    }
 </div>
