@@ -37,7 +37,7 @@
     @* SUMMARY *@
     @if (@Model.Data.Summary != null)
     {
-        <div id="summary" class="panel panel-default">
+        <div id="summary" class="panel panel-info">
             <div class="panel-heading">
                 <b>Summary</b>
             </div>
@@ -52,7 +52,7 @@
         <div class="panel-heading">
             <b>Syntax</b>
         </div>
-        <div class="panel-body code-box">
+        <div style="margin: 15px;">
             <pre><code class="csharp">@Api.Syntax(@Model.Data)</code></pre>
         </div>
     </div>

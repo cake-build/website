@@ -38,7 +38,7 @@
     @* SUMMARY *@
     @if (@Model.Data.Summary != null)
     {
-        <div id="summary" class="panel panel-default">
+        <div id="summary" class="panel panel-info">
             <div class="panel-heading">
                 <b>Summary</b>
             </div>
@@ -48,20 +48,6 @@
         </div>
     }
 
-    @* PROPERTY VALUE *@
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <b>Property Value</b>
-        </div>
-        <div class="panel-body">
-            <b>Type:</b> @Api.TypeLink(@Model.Data.Definition.PropertyType)
-            @if (@Model.Data.Value != null)
-            {
-                <p><b>Value:</b> @Api.Comment(@Model.Data.Value)</p>
-            }
-        </div>
-    </div>
-
     @* -EXAMPLE- *@
     @if (@Model.Data.Examples.Count > 0)
     {
@@ -69,7 +55,7 @@
         foreach (var example in @Model.Data.Examples)
         {
             index++;
-            <div id="example" class="panel panel-info">
+            <div id="example" class="panel panel-default">
                 <div class="panel-heading">
                     @if (Model.Data.Examples.Count > 1)
                     {
@@ -86,5 +72,19 @@
             </div>
         }
     }
+
+    @* PROPERTY VALUE *@
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <b>Property Value</b>
+        </div>
+        <div class="panel-body">
+            <b>Type:</b> @Api.TypeLink(@Model.Data.Definition.PropertyType)
+            @if (@Model.Data.Value != null)
+            {
+                <p><b>Value:</b> @Api.Comment(@Model.Data.Value)</p>
+            }
+        </div>
+    </div>
 
 </div>
