@@ -11,6 +11,11 @@ Cake uses a [dependency based programming model](http://martinfowler.com/article
 * MSBuild
 * Build systems
   * AppVeyor
+  * Bamboo
+  * Continua CI
+  * Jenkins
+  * MyGet
+  * TeamCity
 * AssemblyInfo patching
 * Release notes parsing
 * Unit Test Runners
@@ -31,6 +36,7 @@ Cake uses a [dependency based programming model](http://martinfowler.com/article
 * SignTool
 * Octopus Deploy
 * Compression (Zip)
+* SpecFlow
 * File hash calculation (MD5, SHA256, SHA512)
 
 Cake also contains functionality to conveniently work with file system paths as well as performing common file/directory/environment operations, manipulating XML, parsing Visual Studio solutions, starting processes and more.
