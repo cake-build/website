@@ -254,4 +254,15 @@
     <Description>Cake AddIn that extends Cake with ability to execute the vsce command line utility.</Description>
     <Categories>Deployment</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.Git</Name>
+    <NuGet Id="Cake.Git">
+      <Filter>/**/Cake.Git.dll</Filter>
+      <Filter>/**/Cake.Git.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/WCOMAB/Cake_Git</Repository>
+    <Author>WCOM AB</Author>
+    <Description>Cake AddIn that extends Cake with Git aliases using LibGit2 and LibGit2Sharp.</Description>
+    <Categories>Git</Categories>
+  </Addin>
 </Addins>
