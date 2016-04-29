@@ -265,4 +265,15 @@
     <Description>Cake AddIn that extends Cake with Git aliases using LibGit2 and LibGit2Sharp.</Description>
     <Categories>Git</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.DocFx</Name>
+    <NuGet Id="Cake.DocFx">
+      <Filter>/**/Cake.DocFx.dll</Filter>
+      <Filter>/**/Cake.DocFx.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/reicheltp/Cake.DocFx</Repository>
+    <Author>Paul Reichelt</Author>
+    <Description>Cake AddIn that generates documentation for .Net API reference and markdown files using DocFx.</Description>
+    <Categories>Documentation</Categories>
+  </Addin>
 </Addins>
