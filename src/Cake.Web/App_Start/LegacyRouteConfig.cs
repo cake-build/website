@@ -25,7 +25,7 @@ namespace Cake.Web
                 {"documentation/running-targets", "/docs/fundamentals/running-targets"},
                 {"documentation/script-aliases", "/docs/fundamentals/aliases"},
                 {"contribute", "/docs/contributing/guidelines"},
-                {"contribute/contribution-guidelines", "/docs/contributing/guidelines"},
+                {"contribute/contribution-guidelines", "/docs/contributing/guidelines"}
             };
 
             var index = 1;
