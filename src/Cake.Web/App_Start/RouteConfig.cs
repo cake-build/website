@@ -96,12 +96,47 @@ namespace Cake.Web
                 new { controller = "Addin", action = "index" }
             );
 
+            RegisterDownloads(routes);
+
             // Default
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+        }
+
+        private static void RegisterDownloads(RouteCollection routes)
+        {
+            // Downloads: Windows bootstrapper
+            routes.MapRoute(
+                "DownloadBootstrapperWindows", "download/bootstrapper/windows",
+                new { controller = "Download", action = "Windows" }
+                );
+
+            // Downloads: OSX bootstrapper
+            routes.MapRoute(
+                "DownloadBootstrapperOSX", "download/bootstrapper/osx",
+                new { controller = "Download", action = "OSX" }
+                );
+
+            // Downloads: Linux bootstrapper
+            routes.MapRoute(
+                "DownloadBootstrapperLinux", "download/bootstrapper/linux",
+                new { controller = "Download", action = "Linux" }
+                );
+
+            // Downloads: Bootstrapper packages
+            routes.MapRoute(
+                "DownloadBootstrapperPackages", "download/bootstrapper/packages",
+                new { controller = "Download", action = "Packages" }
+                );
+
+            // Downloads: Configuration
+            routes.MapRoute(
+                "DownloadConfiguration", "download/configuration",
+                new { controller = "Download", action = "Configuration" }
+                );
         }
     }
 }
