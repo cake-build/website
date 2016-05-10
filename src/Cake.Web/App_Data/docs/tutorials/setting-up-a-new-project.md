@@ -10,8 +10,8 @@ The bootstrapper is used to download Cake and the tools required by the
 build script. This is (kind of) an optional step, but recommended since
 it removes the need to store binaries in the source code repository.
 
-We install the bootstrapper by downloading it from the Cake bootstrapper
-repository.
+We install the bootstrapper by downloading it from the [Cake Resources
+repository](https://github.com/cake-build/resources).
 
 #### Windows
 
@@ -77,7 +77,7 @@ give the owner of the script permission to execute it.
 chmod +x build.sh
 ```
 
-When this have been done, you should be able to run your Cake script
+When this has been done, you should be able to run your Cake script
 by invoking the bootstrapper.
 
 ```bash
