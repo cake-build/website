@@ -18,7 +18,7 @@ repository.
 Open a new PowerShell window and run the following command.
 
 ```powershell
-Invoke-WebRequest http://cakebuild.net/bootstrapper/windows -OutFile build.ps1
+Invoke-WebRequest http://cakebuild.net/download/bootstrapper/windows -OutFile build.ps1
 ```
 
 #### Linux
@@ -26,7 +26,7 @@ Invoke-WebRequest http://cakebuild.net/bootstrapper/windows -OutFile build.ps1
 Open a new shell and run the following command.
 
 ```bash
-curl -Lsfo build.sh http://cakebuild.net/bootstrapper/linux
+curl -Lsfo build.sh http://cakebuild.net/download/bootstrapper/linux
 ```
 
 #### OS X
@@ -34,16 +34,13 @@ curl -Lsfo build.sh http://cakebuild.net/bootstrapper/linux
 Open a new shell and run the following command.
 
 ```bash
-curl -Lsfo build.sh http://cakebuild.net/bootstrapper/osx
+curl -Lsfo build.sh http://cakebuild.net/download/bootstrapper/osx
 ```
 
 ### 2. Create a Cake script
 
 Add a cake script called `build.cake` to the same location as the
-bootstrapper script that you downloaded. If you want a script that
-actually do something, check out the
-[minimal, convention based cake script](https://github.com/cake-build/bootstrapper/blob/master/res/scripts/build.cake)
-available in the bootstrapper repository.
+bootstrapper script that you downloaded.
 
 ```csharp
 var target = Argument("target", "Default");

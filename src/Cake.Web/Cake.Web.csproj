@@ -149,7 +149,7 @@
     <Compile Include="Controllers\AddinController.cs" />
     <Compile Include="Controllers\ApiController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
-    <Compile Include="Controllers\BootstrapperController.cs" />
+    <Compile Include="Controllers\DownloadController.cs" />
     <Compile Include="Controllers\DocsController.cs" />
     <Compile Include="Controllers\DslController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
@@ -295,7 +295,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
+          <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49871</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
