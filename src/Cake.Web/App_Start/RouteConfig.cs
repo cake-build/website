@@ -114,6 +114,12 @@ namespace Cake.Web
                 new { controller = "Download", action = "Windows" }
                 );
 
+            // Downloads: PowerShell bootstrapper
+            routes.MapRoute(
+                "DownloadBootstrapperPowerShell", "download/bootstrapper/powershell",
+                new { controller = "Download", action = "PowerShell" }
+                );
+
             // Downloads: OSX bootstrapper
             routes.MapRoute(
                 "DownloadBootstrapperOSX", "download/bootstrapper/osx",
@@ -124,6 +130,12 @@ namespace Cake.Web
             routes.MapRoute(
                 "DownloadBootstrapperLinux", "download/bootstrapper/linux",
                 new { controller = "Download", action = "Linux" }
+                );
+
+            // Downloads: Bash bootstrapper
+            routes.MapRoute(
+                "DownloadBootstrapperBash", "download/bootstrapper/bash",
+                new { controller = "Download", action = "Bash" }
                 );
 
             // Downloads: Bootstrapper packages
