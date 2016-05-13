@@ -278,7 +278,7 @@
   </Addin>
   <Addin>
     <Name>Cake.Wyam</Name>
-    <NuGet Id="Cake.Wyam" Version="0.12.2-beta3">
+    <NuGet Id="Cake.Wyam" Version="0.12.2-beta4">
       <Filter>/**/Cake.Wyam.dll</Filter>
       <Filter>/**/Cake.Wyam.xml</Filter>
     </NuGet>
