@@ -276,4 +276,15 @@
     <Description>Cake AddIn that generates documentation for .Net API reference and markdown files using DocFx.</Description>
     <Categories>Documentation</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.Wyam</Name>
+    <NuGet Id="Cake.Wyam" Version="0.12.2-beta3">
+      <Filter>/**/Cake.Wyam.dll</Filter>
+      <Filter>/**/Cake.Wyam.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/Wyamio/Wyam</Repository>
+    <Author>Dave Glick, Gary Ewan Park</Author>
+    <Description>An alias that generates static sites and other content using Wyam.</Description>
+    <Categories>Documentation;Static Site Generation</Categories>
+  </Addin>
 </Addins>

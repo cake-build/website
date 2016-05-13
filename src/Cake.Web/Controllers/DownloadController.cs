@@ -17,6 +17,11 @@ namespace Cake.Web.Controllers
             return Redirect("https://raw.githubusercontent.com/cake-build/resources/master/build.ps1");
         }
 
+        public ActionResult PowerShell()
+        {
+            return Redirect("https://raw.githubusercontent.com/cake-build/resources/master/build.ps1");
+        }
+
         public ActionResult Linux()
         {
             return Redirect("https://raw.githubusercontent.com/cake-build/resources/master/build.sh");
@@ -24,6 +29,11 @@ namespace Cake.Web.Controllers
 
         // ReSharper disable once InconsistentNaming
         public ActionResult OSX()
+        {
+            return Redirect("https://raw.githubusercontent.com/cake-build/resources/master/build.sh");
+        }
+
+        public ActionResult Bash()
         {
             return Redirect("https://raw.githubusercontent.com/cake-build/resources/master/build.sh");
         }

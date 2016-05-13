@@ -62,7 +62,16 @@ namespace Cake.Web.Core.NuGet
             if (!_fileSystem.Exist(packagePath.Combine(package.PackageName)))
             {
                 var packageManager = CreatePackageManager(packagePath);
-                packageManager.InstallPackage(package.PackageName);
+                if (!string.IsNullOrWhiteSpace(package.Version))
+                {
+                    // Install specific version.
+                    packageManager.InstallPackage(package.PackageName, new SemanticVersion(package.Version), true, true);
+                }
+                else
+                {
+                    // Install latest version.
+                    packageManager.InstallPackage(package.PackageName);
+                }
             }
 
             // Return the installation directory.

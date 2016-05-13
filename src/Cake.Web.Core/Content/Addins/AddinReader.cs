@@ -58,10 +58,12 @@ namespace Cake.Web.Core.Content.Addins
                     if (nugetNode?.Attributes != null)
                     {
                         var id = nugetNode.Attributes["Id"].Value;
+                        var version = nugetNode.Attributes["Version"]?.Value;
 
                         addin.PackageDefinition = new PackageDefinition
                         {
                             PackageName = id,
+                            Version = version,
                             Metadata = addin
                         };
 
