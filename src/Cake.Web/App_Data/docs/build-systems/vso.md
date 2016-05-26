@@ -2,9 +2,9 @@
 content-type: markdown
 ---
 
-The Cake VSO build task makes it easy to run a Cake script directly, without having to invoke PowerShell or other command line scripts. This makes it easy even for team members that are not familiar with Cake to add or adjust parameters passed to your build scripts.
+The Cake VSTS build task makes it easy to run a Cake script directly, without having to invoke PowerShell or other command line scripts. This makes it easy even for team members that are not familiar with Cake to add or adjust parameters passed to your build scripts.
 
-### 1. Install the VSO extension
+### 1. Install the VSTS extension
 
 To install the VSO extension, go to the
 [Cake Build Task page](https://marketplace.visualstudio.com/items/cake-build.cake)
