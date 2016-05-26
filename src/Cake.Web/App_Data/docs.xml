@@ -35,7 +35,7 @@
     <item title="Visual Studio Code" file="editors/vscode.md" />
   </section>
   <section id="build-systems" title="Build Systems">
-    <item title="Visual Studio Online" file="build-systems/vso.md" hidden="true"/>
+    <item title="Visual Studio Team Services" file="build-systems/vso.md"/>
   </section>
   <section title="Contributing">
     <item title="Contribution guidelines" file="contributing/guidelines.md" />
