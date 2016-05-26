@@ -20,6 +20,8 @@
     <item title="Running targets" file="fundamentals/running-targets.md" />
     <item title="Script aliases" file="fundamentals/aliases.md" />
     <item title="Preprocessor directives" file="fundamentals/preprocessor-directives.md" />
+    <item title="Configuration" file="fundamentals/configuration.md" />
+    <item title="Default Configuration Values" file="fundamentals/default-configuration-values.md" />
   </section>
   <section title="Tools">
     <item title="Installing tools" file="tools/installing-tools.md" />
