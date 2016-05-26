@@ -66,3 +66,14 @@ These are only used for shells to identify how to run the script and are omitted
 ```bash
 #!path/to/launch/cake
 ```
+
+### Break directive
+The break directive, when placed on any line within your Cake file, will cause `System.Diagnostics.Debugger.Break();` to be emitted at runtime.  As a result, when used in conjunction with the `-debug` parameter (which can be passed into the Cake.exe), the debugger will automatically stop on these lines.
+
+**NOTE:** If the debugger is not currently attached, then the `#break` directive is simply ignored.
+
+#### Usage
+
+```bash
+#break
+```
