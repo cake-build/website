@@ -20,7 +20,11 @@ namespace Cake.Web.Helpers
 
         public static string GetGitHubLink(Topic topic)
         {
-            return string.Format(GitHubTemplate, topic.Path.FullPath);
+            if (topic.Path != null)
+            {
+                return string.Format(GitHubTemplate, topic.Path.FullPath);
+            }
+            return string.Empty;
         }
 
         public static string GetLink(BlogPost post)

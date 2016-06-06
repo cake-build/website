@@ -38,7 +38,7 @@
     <item title="Visual Studio Team Services" file="build-systems/vso.md"/>
   </section>
   <section title="Contributing">
-    <item title="Contribution guidelines" file="contributing/guidelines.md" />
+    <item title="Contribution guidelines" id="guidelines" importurl="https://raw.githubusercontent.com/cake-build/cake/develop/CONTRIBUTING.md" />
     <item title="Documentation" file="contributing/documentation.md" />
   </section>
 </items>
