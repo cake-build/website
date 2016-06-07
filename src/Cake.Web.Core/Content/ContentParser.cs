@@ -23,13 +23,13 @@ namespace Cake.Web.Core.Content
                 using (var stream = file.OpenRead())
                 using (var reader = new StreamReader(stream))
                 {
-                    return ParseContent(reader.ReadToEnd());
+                    return ParseString(reader.ReadToEnd());
                 }
             }
             return new ContentParseResult(new Dictionary<string, string>(), string.Empty);
         }
 
-        private static ContentParseResult ParseContent(string content)
+        public ContentParseResult ParseString(string content)
         {
             var lines = SplitLines(content);
             if (!lines[0].StartsWith("---"))

@@ -133,18 +133,23 @@ namespace Cake.Web.Core.Content.Documentation
         private Topic ReadTopic(XmlReader reader, DirectoryPath root)
         {
             var file = reader.GetAttribute("file");
-            if (string.IsNullOrWhiteSpace(file))
+            var url = reader.GetAttribute("importurl");
+            if (string.IsNullOrWhiteSpace(file) &&
+                string.IsNullOrWhiteSpace(url))
             {
                 return null;
             }
 
             var id = reader.GetAttribute("id");
             var title = reader.GetAttribute("title");
-            var body = string.Empty;
             var hidden = string.Equals("true", reader.GetAttribute("hidden"), StringComparison.OrdinalIgnoreCase);
 
             if (string.IsNullOrWhiteSpace(id))
             {
+                if (!string.IsNullOrWhiteSpace(url))
+                {
+                    throw new InvalidOperationException("A remote document require a local ID.");
+                }
                 if (!string.IsNullOrWhiteSpace(file))
                 {
                     id = Path.GetFileNameWithoutExtension(file);
@@ -159,11 +164,11 @@ namespace Cake.Web.Core.Content.Documentation
                 }
             }
 
-            var path = root.CombineWithFilePath(file);
-            if (_fileSystem.Exist(path))
+            var body = ReadBody(root, file, url) ?? string.Empty;
+            if (!string.IsNullOrWhiteSpace(body))
             {
                 // Read the file and separate front matter from content.
-                var content = _contentParser.Parse(path);
+                var content = _contentParser.ParseString(body);
                 if (content != null)
                 {
                     body = _contentProcessor.PreProcess(content.Body);
@@ -174,7 +179,28 @@ namespace Cake.Web.Core.Content.Documentation
                 body = _contentProcessor.PostProcess(body) ?? body;
             }
 
-            return new Topic(id, title, body, hidden, file);
+            return new Topic(id, title, body, hidden, file, url);
+        }
+
+        private string ReadBody(DirectoryPath root, string path, string uri)
+        {
+            if (!string.IsNullOrWhiteSpace(path))
+            {
+                var file = _fileSystem.GetFile(root.CombineWithFilePath(path));
+                if (file.Exists)
+                {
+                    using (var stream = file.OpenRead())
+                    using (var reader = new StreamReader(stream))
+                    {
+                        return reader.ReadToEnd();
+                    }
+                }
+            }
+            else if (!string.IsNullOrWhiteSpace(uri))
+            {
+                return new System.Net.WebClient().DownloadString(uri);
+            }
+            return null;
         }
     }
 }
