@@ -26,7 +26,7 @@ namespace Cake.Web.Core.Content
                     }
                 }
             }
-            return content;
+            return _markdown.Transform(content);
         }
     }
 }

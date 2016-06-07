@@ -33,9 +33,18 @@
 
 @* TITLE *@
 <div class="main-content-title">
+
     <div style="float: right; line-height: 45px; padding-left: 20px;">
-        <a href="@Html.GitHubLink(Model)"><i class="fa fa-github"></i> Edit on GitHub</a>
+        @if (Model.Path != null)
+        {
+            <a href="@Html.GitHubLink(Model)"><i class="fa fa-github"></i> Edit on GitHub</a>
+        }
+        else if(Model.Url != null)
+        {
+            <a href="@Model.Url"><i class="fa fa-copy"></i> Mirrored from the web</a>
+        }
     </div>
+
     <h2>@Model.Name</h2>
 </div>
 
