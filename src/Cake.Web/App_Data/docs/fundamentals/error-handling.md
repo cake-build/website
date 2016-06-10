@@ -30,7 +30,7 @@ Task("A")
 
 ### Reporting errors
 
-If you want to report an error without affecting it's propagation or resulting stack trace, you can use the `ReportError` task extension. Any exceptions thrown in the scope of `ReportError` will be swallowed.
+If you want to report an error without affecting its propagation or resulting stack trace, you can use the `ReportError` task extension. Any exceptions thrown in the scope of `ReportError` will be swallowed.
 
 ```csharp
 Task("A")
