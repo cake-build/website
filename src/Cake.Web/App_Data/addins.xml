@@ -287,4 +287,15 @@
     <Description>An alias that generates static sites and other content using Wyam.</Description>
     <Categories>Documentation;Static Site Generation</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.AutoRest</Name>
+    <NuGet Id="Cake.AutoRest">
+      <Filter>/**/Cake.AutoRest.dll</Filter>
+      <Filter>/**/Cake.AutoRest.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/agc93/Cake.AutoRest</Repository>
+    <Author>Alistair Chapman</Author>
+    <Description>Cake addin for generating client code from compatible API definitions (including Swagger).</Description>
+    <Categories>Azure</Categories>
+  </Addin>
 </Addins>
