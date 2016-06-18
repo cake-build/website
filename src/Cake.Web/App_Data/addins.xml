@@ -299,6 +299,17 @@
     <Categories>Azure</Categories>
   </Addin>
   <Addin>
+    <Name>Cake.Vagrant</Name>
+    <NuGet Id="Cake.Vagrant">
+      <Filter>/**/Cake.Vagrant.dll</Filter>
+      <Filter>/**/Cake.Vagrant.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/agc93/Cake.Vagrant</Repository>
+    <Author>Alistair Chapman</Author>
+    <Description>Cake addin for creating and managing Vagrant virtual machines</Description>
+    <Categories>Vagrant</Categories>
+  </Addin>
+  <Addin>
     <Name>Cake.MagicChunks</Name>
     <NuGet Id="MagicChunks">
       <Filter>/**/MagicChunks.dll</Filter>
