@@ -309,4 +309,37 @@
     <Description>Cake addin for creating and managing Vagrant virtual machines</Description>
     <Categories>Vagrant</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.Squirrel</Name>
+    <NuGet Id="Cake.Squirrel">
+      <Filter>/**/Cake.Squirrel.dll</Filter>
+      <Filter>/**/Cake.Squirrel.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/phillipsj/Cake.Squirrel</Repository>
+    <Author>Jamie Phillips</Author>
+    <Description>Cake addin for Squirrel.Windows</Description>
+    <Categories>Squirrel;Deployment</Categories>
+  </Addin>
+  <Addin>
+    <Name>Cake.XdtTransform</Name>
+    <NuGet Id="Cake.XdtTransform">
+      <Filter>/**/Cake.XdtTransform.dll</Filter>
+      <Filter>/**/Cake.XdtTransform.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/phillipsj/Cake.XdtTransform</Repository>
+    <Author>Jamie Phillips</Author>
+    <Description>Cake addin for performing XDT Transformations</Description>
+    <Categories>Serialization;Deployment</Categories>
+  </Addin>
+  <Addin>
+    <Name>Cake.AzureStorage</Name>
+    <NuGet Id="Cake.AzureStorage">
+      <Filter>/**/Cake.AzureStorage.dll</Filter>
+      <Filter>/**/Cake.AzureStorage.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/RadioSystems/Cake.AzureStorage</Repository>
+    <Author>Radio Systems Corporation</Author>
+    <Description>Cake addin for Azure Storage</Description>
+    <Categories>Azure;Deployment</Categories>
+  </Addin>
 </Addins>
