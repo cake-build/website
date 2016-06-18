@@ -342,4 +342,15 @@
     <Description>Cake addin for Azure Storage</Description>
     <Categories>Azure;Deployment</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.MagicChunks</Name>
+    <NuGet Id="MagicChunks">
+      <Filter>/**/MagicChunks.dll</Filter>
+      <Filter>/**/MagicChunks.Cake.dll</Filter>
+    </NuGet>
+    <Repository>https://github.com/sergeyzwezdin/magic-chunks</Repository>
+    <Author>Sergey Zwezdin</Author>
+    <Description>Easy to use tool to config transformations for JSON, XML and YAML.</Description>
+    <Categories>Serialization;IO;Deployment;Configuration</Categories>
+  </Addin>
 </Addins>
