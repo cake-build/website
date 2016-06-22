@@ -296,7 +296,7 @@
     <Repository>https://github.com/agc93/Cake.AutoRest</Repository>
     <Author>Alistair Chapman</Author>
     <Description>Cake addin for generating client code from compatible API definitions (including Swagger).</Description>
-    <Categories>Azure</Categories>
+    <Categories>Azure;Swagger</Categories>
   </Addin>
   <Addin>
     <Name>Cake.Vagrant</Name>
@@ -352,5 +352,16 @@
     <Author>Sergey Zwezdin</Author>
     <Description>Easy to use tool to config transformations for JSON, XML and YAML.</Description>
     <Categories>Serialization;IO;Deployment;Configuration</Categories>
+  </Addin>
+  <Addin>
+    <Name>Cake.NSwag</Name>
+    <NuGet Id="Cake.NSwag">
+      <Filter>/**/Cake.NSwag.dll</Filter>
+      <Filter>/**/Cake.NSwag.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/agc93/Cake.NSwag</Repository>
+    <Author>Alistair Chapman</Author>
+    <Description>Cake addin for compiling client code and API definitions (including Swagger) using the NSwag toolchain</Description>
+    <Categories>Swagger</Categories>
   </Addin>
 </Addins>
