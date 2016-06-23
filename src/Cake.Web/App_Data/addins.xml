@@ -364,4 +364,15 @@
     <Description>Cake addin for compiling client code and API definitions (including Swagger) using the NSwag toolchain</Description>
     <Categories>Swagger</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.Plist</Name>
+    <NuGet Id="Cake.Plist">
+      <Filter>/**/Cake.Plist.dll</Filter>
+      <Filter>/**/Cake.Plist.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/reicheltp/Cake.Plist</Repository>
+    <Author>Paul Reichelt</Author>
+    <Description>Cake addin for deserializing, modifying and serializing Apple OSX/iOS xml plists directly from .NET source code.</Description>
+    <Categories>Mobile</Categories>
+  </Addin>
 </Addins>
