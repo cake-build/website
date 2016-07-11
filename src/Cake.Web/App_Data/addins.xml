@@ -375,4 +375,15 @@
     <Description>Cake addin for deserializing, modifying and serializing Apple OSX/iOS xml plists directly from .NET source code.</Description>
     <Categories>Mobile</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.AndroidAppManifest</Name>
+    <NuGet Id="Cake.AndroidAppManifest">
+      <Filter>/**/Cake.AndroidAppManifest.dll</Filter>
+      <Filter>/**/Cake.AndroidAppManifest.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/ghuntley/Cake.AndroidAppManifest</Repository>
+    <Author>Geoffrey Huntley</Author>
+    <Description>Cake Build addin for [de]serializing and updating an Android AppManifest.xml.</Description>
+    <Categories>Mobile</Categories>
+  </Addin>
 </Addins>
