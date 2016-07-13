@@ -386,4 +386,15 @@
     <Description>Cake Build addin for [de]serializing and updating an Android AppManifest.xml.</Description>
     <Categories>Mobile</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.Twitter</Name>
+    <NuGet Id="Cake.Twitter">
+      <Filter>/**/Cake.Twitter.dll</Filter>
+      <Filter>/**/Cake.Twitter.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/gep13/Cake.Twitter</Repository>
+    <Author>Gary Ewan Park</Author>
+    <Description>Cake Build addin for tweeting to Twitter.</Description>
+    <Categories>Communication;Social Media</Categories>
+  </Addin>
 </Addins>
