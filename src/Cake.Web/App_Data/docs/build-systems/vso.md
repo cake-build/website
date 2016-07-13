@@ -6,13 +6,13 @@ The Cake VSTS build task makes it easy to run a Cake script directly, without ha
 
 ### 1. Install the VSTS extension
 
-To install the VSO extension, go to the
+To install the VSTS extension, go to the
 [Cake Build Task page](https://marketplace.visualstudio.com/items/cake-build.cake)
 on the Visual Studio Marketplace and click "Install".
 
 ### 2. Add a build task
 
-Go to the `Build` section on VSO online and create a build definition, or
+Go to the `Build` section in your VSTS tenant  and create a build definition, or
 select an existing one. Add a new build step by clicking the
 "Add build step..." button.
 
