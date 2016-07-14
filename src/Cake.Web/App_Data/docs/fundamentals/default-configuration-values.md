@@ -86,7 +86,7 @@ CAKE_PATHS_ADDINS
 
 ```sh
 [Paths]
-Tools=./tools/Addins
+Addins=./tools/Addins
 ```
 
 #### Direct Argument
