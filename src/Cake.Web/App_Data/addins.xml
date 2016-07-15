@@ -1,6 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Addins>
   <Addin>
+    <Name>Cake.Webpack</Name>
+    <NuGet Id="Cake.Webpack">
+      <Filter>/**/Cake.Webpack.dll</Filter>
+      <Filter>/**/Cake.Webpack.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/philo/cake-webpack</Repository>
+    <Author>Phil Oyston</Author>
+    <Description>
+      Aliases to assist with running Webpack from Cake build scripts.
+    </Description>
+    <Categories>Node</Categories>
+  </Addin>
+  <Addin>
     <Name>Cake.Npm</Name>
     <NuGet Id="Cake.Npm">
       <Filter>/**/Cake.Npm.dll</Filter>
