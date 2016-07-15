@@ -332,6 +332,14 @@
     <Categories>Serialization;Deployment</Categories>
   </Addin>
   <Addin>
+    <Name>Cake.EnvXmlTransform</Name>
+    <NuGet Id="Cake.EnvXmlTransform" />
+    <Repository>https://github.com/nengberg/cake-envxmltransform</Repository>
+    <Author>Niklas Engberg</Author>
+    <Description>Cake addin that enables you to transform configuration files based on the environment or machine you're deploying to.</Description>
+    <Categories>Deployment</Categories>
+  </Addin>
+  <Addin>
     <Name>Cake.AzureStorage</Name>
     <NuGet Id="Cake.AzureStorage">
       <Filter>/**/Cake.AzureStorage.dll</Filter>
