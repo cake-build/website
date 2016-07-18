@@ -15,6 +15,7 @@ tools/Cake/
 tools/xunit.runners/
 tools/xunit.runner.console/
 tools/nuget.exe
+tools/packages.config.md5sum
 
 # mstest test results
 TestResults
