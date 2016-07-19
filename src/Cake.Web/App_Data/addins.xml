@@ -418,4 +418,15 @@
     <Description>Cake Build addin for tweeting to Twitter.</Description>
     <Categories>Communication;Social Media</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.Genymotion</Name>
+    <NuGet Id="Cake.Genymotion">
+      <Filter>/**/Cake.Genymotion.dll</Filter>
+      <Filter>/**/Cake.Genymotion.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/ghuntley/Cake.Genymotion</Repository>
+    <Author>Geoffrey Huntley</Author>
+    <Description>Cake Build addin managing Genymotion (Android) simulators.</Description>
+    <Categories>Mobile</Categories>
+  </Addin>
 </Addins>
