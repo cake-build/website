@@ -119,6 +119,7 @@
                     {
                         <tr>
                             <td>@Api.PropertyLink(property.Data)</td>
+                            <td>@Api.TypeLink(property.Data.Definition.PropertyType)</td>
                             <td>
                                 @Api.Comment(property.Data.Summary)
                                 @if (property.Owner != Model.Data)
