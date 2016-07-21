@@ -94,3 +94,34 @@ Addins=./tools/Addins
 ```sh
 cake.exe --paths_addins=./tools/Addins
 ```
+
+<hr/>
+
+### Modules Path
+
+This allows the configuration of the Modules folder which is used by Cake when loading custom Modules.
+
+#### Default Value
+
+```sh
+./tools/Modules
+```
+
+#### Environment Variable Name
+
+```sh
+CAKE_PATHS_MODULES
+```
+
+#### ini File Contents
+
+```sh
+[Paths]
+Modules=./tools/Modules
+```
+
+#### Direct Argument
+
+```sh
+cake.exe --paths_modules=./tools/Modules
+```
