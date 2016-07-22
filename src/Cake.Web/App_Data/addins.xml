@@ -429,4 +429,15 @@
     <Description>Cake Build addin managing Genymotion (Android) simulators.</Description>
     <Categories>Mobile</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.AppleSimulator</Name>
+    <NuGet Id="Cake.AppleSimulator">
+      <Filter>/**/Cake.AppleSimulator.dll</Filter>
+      <Filter>/**/Cake.AppleSimulator.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/ghuntley/Cake.AppleSimulator</Repository>
+    <Author>Geoffrey Huntley</Author>
+    <Description>Cake Build addin for managing (simctl) Apple iOS/watchOS/TV simulators.</Description>
+    <Categories>Mobile</Categories>
+  </Addin>
 </Addins>
