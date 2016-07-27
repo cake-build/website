@@ -1,6 +1,7 @@
 ---
 title: Cake Extensions for VS Code and Visual Studio Team Services
 category: News
+author: gep13
 ---
 
 As you might have heard at the Microsoft [Connect()](connect2015.visualstudio.com/) event yesterday, both VS Code and Visual Studio Team Services (formerly Visual Studio Online) now both support Extensions.
