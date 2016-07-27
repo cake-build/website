@@ -21,6 +21,15 @@
             <li><a href="@Html.GetArchiveLink(time)">@time.ToString("MMMM, yyyy")</a></li>
         }
     </ul>
+
+<h4><i class="fa fa-user"></i> Author</h4>
+<ul>
+    @foreach (var author in Model.Authors.OrderByDescending(t => t))
+    {
+        <li><a href="@Html.GetAuthorLink(author)">@author</a></li>
+    }
+</ul>
+
 }
 
 @RenderBody()

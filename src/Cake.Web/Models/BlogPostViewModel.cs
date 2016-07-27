@@ -11,7 +11,8 @@ namespace Cake.Web.Models
         public BlogPostViewModel(
             BlogPost post,
             IReadOnlyList<BlogCategory> categories,
-            IReadOnlyList<DateTime> archive) : base(categories, archive)
+            IReadOnlyList<DateTime> archive,
+            IReadOnlyList<string> authors) : base(categories, archive, authors)
         {
             Post = post;
         }

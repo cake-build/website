@@ -8,13 +8,16 @@ namespace Cake.Web.Models
     {
         public IReadOnlyList<BlogCategory> Categories { get; }
         public IReadOnlyList<DateTime> Archive { get; }
+        public IReadOnlyList<string> Authors { get; }
 
         protected BlogViewModel(
             IReadOnlyList<BlogCategory> categories,
-            IReadOnlyList<DateTime> archive)
+            IReadOnlyList<DateTime> archive,
+            IReadOnlyList<string> authors)
         {
             Categories = categories;
             Archive = archive;
+            Authors = authors;
         }
     }
 }
