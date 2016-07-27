@@ -1,6 +1,7 @@
 ---
 title: Cake File Extension Support on GitHub
 category: News
+author: gep13
 ---
 
 The Cake Team are very proud to announce that the .cake file extension has now become a first class citizen on the GitHub Website.  Starting today, your \*.cake files will now appear with full syntax highlighting, in the came way that your \*.cs files currently do.
@@ -17,4 +18,4 @@ You will now see it looking like this:
 
 ![build.cake file with highlighting](https://raw.githubusercontent.com/cake-build/website/master/src/Cake.Web/App_Data/images/CakeFileInGitHubWithHighlighting.png)
 
-If you are interested in following the process that was taken to get this support, you can find the GitHub Issue [here](https://github.com/github/linguist/pull/2707). 
+If you are interested in following the process that was taken to get this support, you can find the GitHub Issue [here](https://github.com/github/linguist/pull/2707).
