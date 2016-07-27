@@ -41,5 +41,10 @@ namespace Cake.Web.Helpers
         {
             return $"/blog/archive/{time.Year}/{time.Month:00}";
         }
+
+        public static string GetAuthorLink(string author)
+        {
+            return string.Concat("/blog/author/", author);
+        }
     }
 }

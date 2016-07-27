@@ -26,6 +26,11 @@ namespace Cake.Web.Helpers
             return LinkHelper.GetArchiveLink(time);
         }
 
+        public static string GetAuthorLink(this HtmlHelper helper, string author)
+        {
+            return LinkHelper.GetAuthorLink(author);
+        }
+
         public static string GetPreviousPageLink(this HtmlHelper helper, BlogPageViewModel model)
         {
             var parts = new List<string> { "blog" };
@@ -69,6 +74,12 @@ namespace Cake.Web.Helpers
                 {
                     parts.Add("category");
                     parts.Add(model.Category);
+                }
+
+                if (!string.IsNullOrWhiteSpace(model.Author))
+                {
+                    parts.Add("author");
+                    parts.Add(model.Author);
                 }
             }
 

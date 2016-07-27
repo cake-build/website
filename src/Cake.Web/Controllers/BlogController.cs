@@ -23,9 +23,9 @@ namespace Cake.Web.Controllers
             _index = index;
         }
 
-        public ActionResult Index(string category = null, int year = 0, int month = 0, int page = 1)
+        public ActionResult Index(string category = null, string author = null, int year = 0, int month = 0, int page = 1)
         {
-            var allPosts = _index.GetBlogPosts(category, year, month);
+            var allPosts = _index.GetBlogPosts(category, author, year, month);
 
             if (page < 1)
             {
@@ -40,12 +40,13 @@ namespace Cake.Web.Controllers
                 .Skip((page - 1) * PostsPerPage)
                 .Take(PostsPerPage).ToArray();
 
-            return View(new BlogPageViewModel(posts, _index.GetCategories(), _index.GetArchive())
+            return View(new BlogPageViewModel(posts, _index.GetCategories(), _index.GetArchive(), _index.GetAuthors())
             {
                 CurrentPage = page,
                 HasOlderPosts = allPosts.Count > page * PostsPerPage,
                 HasNewerPosts = page > 1,
                 Category = category,
+                Author = author,
                 Year = year,
                 Month = month
             });
@@ -59,7 +60,7 @@ namespace Cake.Web.Controllers
                 return new HttpNotFoundResult();
             }
 
-            return View(new BlogPostViewModel(post, _index.GetCategories(), _index.GetArchive()));
+            return View(new BlogPostViewModel(post, _index.GetCategories(), _index.GetArchive(), _index.GetAuthors()));
         }
 
         public ActionResult Feed(string format)

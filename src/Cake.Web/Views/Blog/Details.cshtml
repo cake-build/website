@@ -11,7 +11,8 @@
         </div>
         <div class="blog-post-meta">
             <i class="fa fa-calendar"></i> @Model.Post.PostedAt.ToString("dd MMM yyyy")<br />
-            <i class="fa fa-tag"></i> @Html.RenderCategoryList(@Model.Post)
+            <i class="fa fa-tag"></i> @Html.RenderCategoryList(@Model.Post)<br />
+            <i class="fa fa-user"></i> <a href="@Html.GetAuthorLink(@Model.Post.Author)">@Model.Post.Author</a>
         </div>
     </div>
     <div class="blog-post-content">

@@ -60,6 +60,12 @@ namespace Cake.Web
                 new { controller = "Blog", action = "index" }
             );
 
+            // Blog: Author
+            routes.MapRoute(
+                "BlogAuthor", "blog/author/{author}",
+                new { controller = "Blog", action = "index" }
+            );
+
             // Blog: Archive
             routes.MapRoute(
                 "BlogArchive", "blog/archive/{year}/{month}",
