@@ -13,12 +13,13 @@ namespace Cake.Web.Core.Content.Blog
         public string Excerpt { get; }
         public DateTime PostedAt { get; }
         public IReadOnlyList<BlogCategory> Categories { get; }
+        public string Author { get; }
 
         public bool IsLatest { get; internal set; }
         public bool HasExcept => !string.IsNullOrWhiteSpace(Excerpt);
 
         public BlogPost(string slug, string title, string body, string feedBody,
-            string excerpt, DateTime postedAt, IEnumerable<BlogCategory> categories)
+            string excerpt, DateTime postedAt, IEnumerable<BlogCategory> categories, string author)
         {
             Id = GetId(postedAt.Year, postedAt.Month, slug);
             Slug = slug;
@@ -28,6 +29,7 @@ namespace Cake.Web.Core.Content.Blog
             Excerpt = excerpt;
             PostedAt = postedAt;
             Categories = new List<BlogCategory>(categories);
+            Author = author;
         }
 
         public static string GetId(int year, int month, string slug)

@@ -1,6 +1,7 @@
 ---
 title: Cake joins the .NET foundation
 category: Announcement
+author: devlead
 ---
 It’s been an amazing journey since the push of the first public commit of Cake in May 2014, in just two years we’ve seen 72 releases, had more than 60 contributors, over a thousand issues and pull requests proposed. And on top of that a small eco system of more than 50 community provided Cake addins.
 

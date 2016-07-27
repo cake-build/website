@@ -1,6 +1,7 @@
 ---
 title: How to debug a Cake file
 category: How To's
+author: gep13
 ---
 
 As you might have noticed, as part of the v0.12.0 release of Cake, thanks to a [community contribution](https://github.com/cake-build/cake/pull/858) from [mholo65](https://github.com/mholo65), Cake now has debug support for Cake files.

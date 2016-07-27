@@ -58,10 +58,12 @@ namespace Cake.Web.Core.Content.Blog
                     // This is kind of a hack, but we need to make sure that all links are absolute.
                     var feedBody = RewriteRelativeLinks(body);
 
+                    var author = content.GetFrontMatter("author");
+
                     // Add the blog post.
                     posts.Add(new BlogPost(filename.Slug,
                         content.GetFrontMatter("title"), body, feedBody, excerpts, filename.PostedAt,
-                        GetCategories(content)));
+                        GetCategories(content), author == null ? "Cake Team" : author));
                 }
             }
 

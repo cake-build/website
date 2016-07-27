@@ -9,19 +9,23 @@ namespace Cake.Web.Core.Content.Blog
         private readonly List<BlogPost> _posts;
         private readonly List<BlogCategory> _categories;
         private readonly Dictionary<string, List<BlogPost>> _categoryToPostsLookup;
+        private readonly Dictionary<string, List<BlogPost>> _authorToPostsLookup;
         private readonly Dictionary<int, Dictionary<int, List<BlogPost>>> _yearMonthToPostsLookup;
         private readonly Dictionary<string, BlogPost> _idToPostLookup;
         private readonly List<DateTime> _archive;
+        private readonly List<string> _authors;
 
         public BlogIndex(IEnumerable<BlogPost> posts)
         {
             _posts = new List<BlogPost>(posts);
             _categoryToPostsLookup = new Dictionary<string, List<BlogPost>>(StringComparer.OrdinalIgnoreCase);
             _yearMonthToPostsLookup = new Dictionary<int, Dictionary<int, List<BlogPost>>>();
+            _authorToPostsLookup = new Dictionary<string, List<BlogPost>>(StringComparer.OrdinalIgnoreCase);
             _idToPostLookup = new Dictionary<string, BlogPost>(StringComparer.OrdinalIgnoreCase);
             _archive = new List<DateTime>();
 
             var categories = new HashSet<BlogCategory>(new BlogCategoryComparer());
+            var authors = new HashSet<string>();
 
             foreach (var post in _posts)
             {
@@ -42,11 +46,21 @@ namespace Cake.Web.Core.Content.Blog
                 // Create lookup by year and month.
                 AddToArchive(post);
 
+                if (!_authorToPostsLookup.ContainsKey(post.Author))
+                {
+                    _authorToPostsLookup.Add(post.Author, new List<BlogPost>());
+                }
+
+                _authorToPostsLookup[post.Author].Add(post);
+
+                authors.Add(post.Author);
+
                 // Create lookup by ID.
                 AddToLookup(post);
             }
 
             _categories = new List<BlogCategory>(categories);
+            _authors = new List<string>(authors);
         }
 
         public IReadOnlyList<BlogCategory> GetCategories()
@@ -59,16 +73,25 @@ namespace Cake.Web.Core.Content.Blog
             return _archive;
         }
 
+        public IReadOnlyList<string> GetAuthors()
+        {
+            return _authors;
+        }
+
         public IReadOnlyList<BlogPost> GetBlogPosts()
         {
             return _posts;
         }
 
-        public IReadOnlyList<BlogPost> GetBlogPosts(string category, int year, int month)
+        public IReadOnlyList<BlogPost> GetBlogPosts(string category, string author, int year, int month)
         {
             if (category != null)
             {
                 return GetBlogPostsByCategory(category);
+            }
+            if (author != null)
+            {
+                return GetBlogPostsByAuthor(author);
             }
             if (year != 0)
             {
@@ -88,6 +111,15 @@ namespace Cake.Web.Core.Content.Blog
             if (_categoryToPostsLookup.ContainsKey(category))
             {
                 return _categoryToPostsLookup[category];
+            }
+            return new List<BlogPost>();
+        }
+
+        public IReadOnlyList<BlogPost> GetBlogPostsByAuthor(string author)
+        {
+            if (_authorToPostsLookup.ContainsKey(author))
+            {
+                return _authorToPostsLookup[author];
             }
             return new List<BlogPost>();
         }

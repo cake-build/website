@@ -1,6 +1,7 @@
 ---
 title: Cake Kudu - Azure Web Deployment Addin
 category: Addins
+author: devlead
 ---
 
 Wouldn't it be great if you could fully control your _Azure web app deployments_, have them _configuration_ and _environment_ driven and all this orchestrated using C#? Well it turns out with Cake Kudu _you_ can!
