@@ -4,6 +4,37 @@ content-type: markdown
 
 The following shows all of the configuration options currently available within Cake, as well as their default values.
 
+### NuGet Download Url
+
+This allows the control of where Cake downloads NuGet packages from when using the addin and tool preprocessor directives.  This can be useful when it is necessary to work in an offline mode, where direct access to nuget.org is not available.
+
+#### Default Value
+
+```sh
+https://packages.nuget.org/api/v2
+```
+
+#### Environment Variable Name
+
+```sh
+NUGET_SOURCE
+```
+
+#### ini File Contents
+
+```sh
+[Nuget]
+Source=http://myfeed/nuget/
+```
+
+#### Direct Argument
+
+```sh
+cake.exe --nuget_source=http://myfeed/nuget/
+```
+
+<hr/>
+
 ### Roslyn NuGet Download Url
 
 This allows the control of where Cake downloads the required Roslyn NuGet packages.  This can be useful when it is necessary to work in an offline mode, where direct access to nuget.org is not available.
