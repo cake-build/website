@@ -1,0 +1,82 @@
+﻿@model Cake.Web.Models.ModuleViewModel
+
+@{
+    ViewBag.Title = "Modules";
+    ViewBag.Menu = "Modules";
+    Layout = "~/Views/Shared/_LayoutSidebar.cshtml";
+}
+
+@section Sidebar
+{
+    <h4><i class="fa fa-bookmark"></i> Categories</h4>
+    <ul class="api-nav">
+        @foreach (var category in Model.Categories.OrderBy(c => c))
+        {
+            if (@Model.Category != null && Model.Category.Equals(category, StringComparison.OrdinalIgnoreCase))
+            {
+                <li class="active"><i class="fa fa-caret-right"></i> @category</li>
+            }
+            else
+            {
+                <li><a href="/modules/category/@category.ToLowerInvariant()">@category</a></li>
+                <li><a href="/modules/category/@category.ToLowerInvariant()">@category</a></li>
+            }
+        }
+    </ul>
+}
+
+@* TITLE *@
+<div class="main-content-title">
+    @if (Model.Category == null)
+    {
+        <h2>Modules</h2>
+    }
+    else
+    {
+        <h2>@Model.Category</h2>
+    }
+</div>
+<p></p>
+
+<p style="margin-top: 15px;">
+    This page contain third party modules for Cake.
+    If you want to file an issue for any module listed here,
+    contact the author of the module.
+</p>
+
+@foreach (var module in Model.Modules.OrderBy(a => a.Name))
+{
+    <div class="panel panel-default addin-panel">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                <i class="fa fa-puzzle-piece"></i> @module.Name
+            </h3>
+        </div>
+        <div class="panel-body">
+            <p>@module.Description</p>
+            <p>
+                <b>Author:</b> @module.Author<br />
+
+                @if (module.PackageDefinition != null)
+                {
+                    if (!string.IsNullOrWhiteSpace(module.PackageDefinition.PackageName))
+                    {
+                        <b>NuGet:</b> <a href="https://www.nuget.org/packages/@module.PackageDefinition.PackageName">@module.Name</a><br />
+                    }
+                }
+
+                @if (module.Repository != null)
+                {
+                    <b>Repository:</b>
+                    <a href="@module.Repository.ToString()">@module.Repository.ToString()</a>
+                }
+
+                @if (module.Website != null)
+                {
+                    <b>Website:</b>
+                    <a href="@module.Website.ToString()">@module.Website.ToString()</a>
+                }
+            </p>
+        </div>
+    </div>
+}

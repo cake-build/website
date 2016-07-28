@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Modules>
+  <Module>
+    <Name>Cake.Paket.Module</Name>
+    <NuGet Id="Cake.Paket.Module">
+      <Filter>/**/Cake.Paket.Module.dll</Filter>
+      <Filter>/**/Cake.Paket.Module.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/gep13/cake-paket-module</Repository>
+    <Author>Gary Ewan Park</Author>
+    <Description>
+      Cake Alias which allows the use of Paket as an alternative package provider when using the tool and addin preprocessor directives.
+    </Description>
+    <Categories>Paket </Categories>
+  </Module>
+</Modules>
