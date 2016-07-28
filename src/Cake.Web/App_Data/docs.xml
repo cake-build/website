@@ -43,4 +43,11 @@
     <item title="Contribution guidelines" id="guidelines" importurl="https://raw.githubusercontent.com/cake-build/cake/develop/CONTRIBUTING.md" />
     <item title="Documentation" file="contributing/documentation.md" />
   </section>
+  <section title="Resources">
+    <item title="Videos" file="resources/videos.md" />
+    <item title="Presentations" file="resources/presentations.md" />
+    <item title="Podcasts" file="resources/podcasts.md" />
+    <item title="Blog Posts" file="resources/blogs.md" />
+    <item title="In The News" file="resources/in-the-news.md" />
+  </section>
 </items>
