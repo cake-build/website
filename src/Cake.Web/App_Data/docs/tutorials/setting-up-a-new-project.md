@@ -83,3 +83,13 @@ by invoking the bootstrapper.
 ```bash
 ./build.sh
 ```
+
+#### Note
+
+If you are downloading the `build.sh` file on a Windows machine (for example, you are using something like [Travis CI](https://travis-ci.org/) to run your Linux/OS builds) you can give the script permission to execute using the following command:
+
+```bash
+git update-index --add --chmod=+x build.sh
+```
+
+Obviously, this assumes that you have the git command line tool installed.
