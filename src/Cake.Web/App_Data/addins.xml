@@ -440,4 +440,15 @@
     <Description>Cake Build addin for managing (simctl) Apple iOS/watchOS/TV simulators.</Description>
     <Categories>Mobile</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.Raygun</Name>
+    <NuGet Id="Cake.Raygun">
+      <Filter>/**/Cake.Raygun.dll</Filter>
+      <Filter>/**/Cake.Raygun.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/ghuntley/Cake.Raygun</Repository>
+    <Author>Geoffrey Huntley</Author>
+    <Description>Cake Build addin for uploading Xamarin.iOS / Objective-C debug symbols (dSYM) to Raygun.io.</Description>
+    <Categories>Mobile</Categories>
+  </Addin>
 </Addins>
