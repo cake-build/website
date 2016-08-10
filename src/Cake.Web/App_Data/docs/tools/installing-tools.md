@@ -27,6 +27,8 @@ as part of executing your build script, simply use the `#tool` directive.
 #tool "xunit.runner.console"
 ```
 
+For more information see [preprocessor directives](docs://fundamentals/preprocessor-directives)
+
 ### From disk
 
 If you want to install a tool that's not available via NuGet or if you prefer to store 
