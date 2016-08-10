@@ -27,6 +27,13 @@ as part of executing your build script, simply use the `#tool` directive.
 #tool "xunit.runner.console"
 ```
 
+You can also install a specific version or the pre-release version of packages
+
+```
+#tool "nuget:?package=GitVersion.CommandLine&prerelease"
+#tool "nuget:?package=xunit.runner.console&version=2.0.0"
+```
+
 ### From disk
 
 If you want to install a tool that's not available via NuGet or if you prefer to store 
