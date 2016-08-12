@@ -5,6 +5,7 @@
   </section>
   <section title="Overview">
     <item title="Features" file="overview/features.md" />
+    <item title="Requirements" file="overview/requirements.md" />
   </section>
   <section title="Tutorials">
     <item title="Getting started" file="tutorials/getting-started.md" />
