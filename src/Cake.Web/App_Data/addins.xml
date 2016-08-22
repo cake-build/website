@@ -192,7 +192,7 @@
       <Filter>/**/Cake.Gitter.dll</Filter>
       <Filter>/**/Cake.Gitter.xml</Filter>
     </NuGet>
-    <Repository>https://github.com/gep13/Cake.Gitter</Repository>
+    <Repository>https://github.com/cake-contrib/Cake.Gitter</Repository>
     <Author>Gary Ewan Park</Author>
     <Description>Cake Addin to allow message posting to Gitter Room.</Description>
     <Categories>Communication</Categories>
@@ -229,7 +229,7 @@
       <Filter>/**/Cake.ReSharperReports.dll</Filter>
       <Filter>/**/Cake.ReSharperReports.xml</Filter>
     </NuGet>
-    <Repository>https://github.com/gep13/Cake.ReSharperReports</Repository>
+    <Repository>https://github.com/cake-contrib/Cake.ReSharperReports</Repository>
     <Author>Gary Ewan Park</Author>
     <Description>Cake AddIn that extends Cake with ability to transform ReSharper Reports into human readable format.</Description>
     <Categories>Reports</Categories>
@@ -262,7 +262,7 @@
       <Filter>/**/Cake.VsCode.dll</Filter>
       <Filter>/**/Cake.VsCode.xml</Filter>
     </NuGet>
-    <Repository>https://github.com/gep13/Cake.VsCode</Repository>
+    <Repository>https://github.com/cake-contrib/Cake.VsCode</Repository>
     <Author>Gary Ewan Park</Author>
     <Description>Cake AddIn that extends Cake with ability to execute the vsce command line utility.</Description>
     <Categories>Deployment</Categories>
@@ -413,7 +413,7 @@
       <Filter>/**/Cake.Twitter.dll</Filter>
       <Filter>/**/Cake.Twitter.xml</Filter>
     </NuGet>
-    <Repository>https://github.com/gep13/Cake.Twitter</Repository>
+    <Repository>https://github.com/cake-contrib/Cake.Twitter</Repository>
     <Author>Gary Ewan Park</Author>
     <Description>Cake Build addin for tweeting to Twitter.</Description>
     <Categories>Communication;Social Media</Categories>
@@ -450,5 +450,38 @@
     <Author>Geoffrey Huntley</Author>
     <Description>Cake Build addin for uploading Xamarin.iOS / Objective-C debug symbols (dSYM) to Raygun.io.</Description>
     <Categories>Mobile</Categories>
+  </Addin>
+  <Addin>
+    <Name>Cake.Tfx</Name>
+    <NuGet Id="Cake.Tfx">
+      <Filter>/**/Cake.Tfx.dll</Filter>
+      <Filter>/**/Cake.Tfx.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/cake-contrib/Cake.Tfx</Repository>
+    <Author>Gary Ewan Park</Author>
+    <Description>Cake Build addin for using tfx cli.</Description>
+    <Categories>VSTS;TFS;Deployment</Categories>
+  </Addin>
+  <Addin>
+    <Name>Cake.Gem</Name>
+    <NuGet Id="Cake.Gem">
+      <Filter>/**/Cake.Gem.dll</Filter>
+      <Filter>/**/Cake.Gem.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/cake-contrib/Cake.Gem</Repository>
+    <Author>Gary Ewan Park</Author>
+    <Description>Cake Build addin for using gem cli.</Description>
+    <Categories>RubyGems;Deployment</Categories>
+  </Addin>
+  <Addin>
+    <Name>Cake.Coveralls</Name>
+    <NuGet Id="Cake.Coveralls">
+      <Filter>/**/Cake.Coveralls.dll</Filter>
+      <Filter>/**/Cake.Coveralls.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/cake-contrib/Cake.Coveralls</Repository>
+    <Author>Gary Ewan Park</Author>
+    <Description>Cake Build addin for publishing code coverage results to coveralls.io.</Description>
+    <Categories>Code Coverage;Testing</Categories>
   </Addin>
 </Addins>
