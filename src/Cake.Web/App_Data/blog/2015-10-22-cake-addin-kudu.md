@@ -37,7 +37,7 @@ So what does [Cake](http://cakebuild.net) and the [Cake Kudu](https://github.com
 
 This enables advanced scenarios like synchronized deployment of multiple web sites (i.e. frontend, API, backoffice) from one repository, adapting build configuration depending on dev/production/geographical region/etc., basically endless possibilities for continuous deployment automation.
 
-It lets you use any of the available aliases and add-ins for Cake, you could post deployment statuses to [Slack](https://github.com/WCOMAB/Cake.Kudu) / [Gitter](https://github.com/gep13/Cake.Gitter), migrate databases using [AliaSql](https://github.com/RichiCoder1/Cake.AliaSql) and much more, all written in a rich, compiled and statically typed language like C# and with the extensive [dsl](http://cakebuild.net/dsl) the Cake builds system provides.
+It lets you use any of the available aliases and add-ins for Cake, you could post deployment statuses to [Slack](https://github.com/WCOMAB/Cake.Slack) / [Gitter](https://github.com/cake-contrib/Cake.Gitter), migrate databases using [AliaSql](https://github.com/RichiCoder1/Cake.AliaSql) and much more, all written in a rich, compiled and statically typed language like C# and with the extensive [dsl](http://cakebuild.net/dsl) the Cake builds system provides.
 
 You could even use your Azure web app as a build server posting **not** a website but i.e. a build result report to the web.
 
