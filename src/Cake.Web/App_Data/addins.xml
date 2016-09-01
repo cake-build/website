@@ -484,26 +484,4 @@
     <Description>Cake Build addin for publishing code coverage results to coveralls.io.</Description>
     <Categories>Code Coverage;Testing</Categories>
   </Addin>
-  <Addin>
-    <Name>Cake.SemVer</Name>
-    <NuGet Id="Cake.SemVer">
-      <Filter>/**/Cake.SemVer.dll</Filter>
-      <Filter>/**/Cake.SemVer.xml</Filter>
-    </NuGet>
-    <Repository>https://github.com/Redth/Cake.SemVer</Repository>
-    <Author>Jonathan Dick</Author>
-    <Description>Cake build aliases and classes for Semantic Versioning.</Description>
-    <Categories>Versioning</Categories>
-  </Addin>
-  <Addin>
-    <Name>Cake.ExtendedNuGet</Name>
-    <NuGet Id="Cake.ExtendedNuGet">
-      <Filter>/**/Cake.ExtendedNuGet.dll</Filter>
-      <Filter>/**/Cake.ExtendedNuGet.xml</Filter>
-    </NuGet>
-    <Repository>https://github.com/Redth/Cake.ExtendedNuGet</Repository>
-    <Author>Jonathan Dick</Author>
-    <Description>Cake build aliases and classes additional NuGet functionality.</Description>
-    <Categories>NuGet</Categories>
-  </Addin>
 </Addins>
