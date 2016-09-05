@@ -506,4 +506,15 @@
     <Description>Cake build aliases and classes additional NuGet functionality.</Description>
     <Categories>NuGet</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.Figlet</Name>
+    <NuGet Id="Cake.Figlet">
+      <Filter>/**/Cake.Figlet.dll</Filter>
+      <Filter>/**/Cake.Figlet.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/enkafan/Cake.Figlet</Repository>
+    <Author>Phil Scott</Author>
+    <Description>Cake build aliases and classes for adding ASCII art to your build script output.</Description>
+    <Categories>Misc</Categories>
+  </Addin>
 </Addins>
