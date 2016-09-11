@@ -521,6 +521,7 @@
     <Name>Cake.SqlServer</Name>
     <NuGet Id="Cake.SqlServer">
       <Filter>/**/Cake.SqlServer.dll</Filter>
+      <Filter>/**/Cake.SqlServer.xml</Filter>
     </NuGet>
     <Repository>https://github.com/AMVSoftware/Cake.SqlServer</Repository>
     <Author>Max Vasilyev</Author>
