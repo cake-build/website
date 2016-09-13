@@ -527,5 +527,5 @@
     <Author>Max Vasilyev</Author>
     <Description>Cake build aliases for manipulating SQL Server databases and executing inline SQL and script files.</Description>
     <Categories>SqlServer</Categories>
-  </Addin>  
+  </Addin>
 </Addins>
