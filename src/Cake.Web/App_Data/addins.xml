@@ -517,4 +517,15 @@
     <Description>Cake build aliases and classes for adding ASCII art to your build script output.</Description>
     <Categories>Misc</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.SqlServer</Name>
+    <NuGet Id="Cake.SqlServer">
+      <Filter>/**/Cake.SqlServer.dll</Filter>
+      <Filter>/**/Cake.SqlServer.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/AMVSoftware/Cake.SqlServer</Repository>
+    <Author>Max Vasilyev</Author>
+    <Description>Cake build aliases for manipulating SQL Server databases and executing inline SQL and script files.</Description>
+    <Categories>SqlServer</Categories>
+  </Addin>
 </Addins>
