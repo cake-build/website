@@ -137,7 +137,7 @@
   </Addin>
   <Addin>
     <Name>Cake.Unity</Name>
-    <Repository>https://github.com/patriksvensson/Cake.Unity</Repository>
+    <Repository>https://github.com/cake-contrib/Cake.Unity</Repository>
     <Author>Patrik Svensson</Author>
     <Description>Unity build support for Cake.</Description>
     <Categories>Unity;Gaming</Categories>
@@ -181,7 +181,7 @@
       <Filter>/**/Cake.CMake.dll</Filter>
       <Filter>/**/Cake.CMake.xml</Filter>
     </NuGet>
-    <Repository>https://github.com/patriksvensson/Cake.CMake</Repository>
+    <Repository>https://github.com/cake-contrib/Cake.CMake</Repository>
     <Author>Patrik Svensson</Author>
     <Description>Addin that extends Cake with CMake support.</Description>
     <Categories>CMake</Categories>
@@ -251,7 +251,7 @@
       <Filter>/**/Cake.HockeyApp.dll</Filter>
       <Filter>/**/Cake.HockeyApp.xml</Filter>
     </NuGet>
-    <Repository>https://github.com/reicheltp/Cake.HockeyApp</Repository>
+    <Repository>https://github.com/cake-contrib/Cake.HockeyApp</Repository>
     <Author>Paul Reichelt</Author>
     <Description>Cake AddIn that allows you to deploy your app package to HockeyApp.</Description>
     <Categories>Deployment</Categories>
@@ -284,7 +284,7 @@
       <Filter>/**/Cake.DocFx.dll</Filter>
       <Filter>/**/Cake.DocFx.xml</Filter>
     </NuGet>
-    <Repository>https://github.com/reicheltp/Cake.DocFx</Repository>
+    <Repository>https://github.com/cake-contrib/Cake.DocFx</Repository>
     <Author>Paul Reichelt</Author>
     <Description>Cake AddIn that generates documentation for .Net API reference and markdown files using DocFx.</Description>
     <Categories>Documentation</Categories>
@@ -317,7 +317,7 @@
       <Filter>/**/Cake.Vagrant.dll</Filter>
       <Filter>/**/Cake.Vagrant.xml</Filter>
     </NuGet>
-    <Repository>https://github.com/agc93/Cake.Vagrant</Repository>
+    <Repository>https://github.com/cake-contrib/Cake.Vagrant</Repository>
     <Author>Alistair Chapman</Author>
     <Description>Cake addin for creating and managing Vagrant virtual machines</Description>
     <Categories>Vagrant</Categories>
@@ -391,7 +391,7 @@
       <Filter>/**/Cake.Plist.dll</Filter>
       <Filter>/**/Cake.Plist.xml</Filter>
     </NuGet>
-    <Repository>https://github.com/reicheltp/Cake.Plist</Repository>
+    <Repository>https://github.com/cake-contrib/Cake.Plist</Repository>
     <Author>Paul Reichelt</Author>
     <Description>Cake addin for deserializing, modifying and serializing Apple OSX/iOS xml plists directly from .NET source code.</Description>
     <Categories>Mobile</Categories>
