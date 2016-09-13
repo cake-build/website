@@ -528,4 +528,15 @@
     <Description>Cake build aliases for manipulating SQL Server databases and executing inline SQL and script files.</Description>
     <Categories>SqlServer</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.HipChat</Name>
+    <NuGet Id="Cake.HipChat">
+      <Filter>/**/Cake.HipChat.dll</Filter>
+      <Filter>/**/Cake.HipChat.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/cake-contrib/HipChat</Repository>
+    <Author>Alan Low</Author>
+    <Description>Cake Addin to allow message posting to HipChat.</Description>
+    <Categories>Communication</Categories>
+  </Addin>
 </Addins>
