@@ -73,17 +73,24 @@ namespace Cake.Web.Docs
         private static IDictionary<string, IDocumentationMetadata> FilterFilesOnExtension(IDictionary<string, IDocumentationMetadata> items, string extension)
         {
             var result = new Dictionary<string, IDocumentationMetadata>();
+            var processedFiles = new Dictionary<string, bool>(StringComparer.OrdinalIgnoreCase);
             foreach (var item in items)
             {
                 var path = item.Key;
                 var pathExtension = Path.GetExtension(path);
-                if (!string.IsNullOrWhiteSpace(pathExtension))
+                var filename = Path.GetFileName(path);
+                if (string.IsNullOrWhiteSpace(pathExtension) || string.IsNullOrWhiteSpace(filename))
                 {
-                    if (pathExtension.Equals(extension, StringComparison.OrdinalIgnoreCase))
-                    {
-                        result.Add(item.Key, item.Value);
-                    }
+                    continue;
                 }
+
+                if (!pathExtension.Equals(extension, StringComparison.OrdinalIgnoreCase) || processedFiles.ContainsKey(filename))
+                {
+                    continue;
+                }
+
+                result.Add(item.Key, item.Value);
+                processedFiles.Add(filename, true);
             }
             return result;
         }
