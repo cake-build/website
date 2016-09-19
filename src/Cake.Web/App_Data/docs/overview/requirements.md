@@ -11,4 +11,4 @@ Cake requires [.NET Framework 4.5](https://www.microsoft.com/en-us/download/deta
 Cake requires [Mono](http://www.mono-project.com/) to run on Linux / OSX.
 
 The official recommended version of Mono is `4.2.3`.  
-Older versions might work but is not supported.
+Older versions might work but are not supported.
