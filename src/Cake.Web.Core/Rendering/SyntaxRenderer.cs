@@ -148,7 +148,7 @@ namespace Cake.Web.Core.Rendering
                 }
                 foreach (var @interface in type.Definition.Interfaces)
                 {
-                    result.Add(_renderer.Render(@interface.GetTypeSignature(_urlResolver),
+                    result.Add(_renderer.Render(@interface.InterfaceType.GetTypeSignature(_urlResolver),
                         TypeRenderOption.Name | TypeRenderOption.Link));
                 }
             }

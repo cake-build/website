@@ -16,7 +16,7 @@ namespace Cake.Web
             out string version)
         {
             var fileSystem = new FileSystem();
-            var environment = new CakeEnvironment();
+            var environment = new CakeEnvironment(new CakePlatform(), new CakeRuntime());
             var globber = new Globber(fileSystem, environment);
             var installer = new NuGetInstaller(fileSystem, globber);
 
@@ -31,7 +31,7 @@ namespace Cake.Web
             }
 
             // Find Cake.exe.
-            version = "0.5.2"; // Default to this version if we could not find.
+            version = "0.16.0"; // Default to this version if we could not find.
             var exe = files.Keys.FirstOrDefault(x => x.EndsWith("Cake.Core.dll"));
             if (exe != null)
             {
