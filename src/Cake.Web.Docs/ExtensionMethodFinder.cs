@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using Cake.Web.Docs.Reflection;
 
@@ -22,12 +23,21 @@ namespace Cake.Web.Docs
             {
                 try
                 {
-                    var parameterType = method.Parameters[0].Definition.ParameterType.Resolve();
-                    if (!_lookup.ContainsKey(parameterType.FullName))
+                    var extensionParameter = method.Parameters[0];
+                    var fullName = extensionParameter.Definition.ParameterType.Resolve()?.FullName
+                        ?? (extensionParameter.Definition.ParameterType as Mono.Cecil.GenericParameter)?.Constraints.FirstOrDefault()?.Resolve().FullName;
+                    if (fullName == null)
                     {
-                        _lookup.Add(parameterType.FullName, new HashSet<DocumentedMethod>());
+                        Debug.WriteLine("Failed to resolve Name: {0}, Parameter: {1}, ParameterType: {2}",
+                            method.Definition.FullName, extensionParameter.Definition.Name, extensionParameter.Definition.ParameterType);
+                        continue;
                     }
-                    _lookup[parameterType.FullName].Add(method);
+
+                    if (!_lookup.ContainsKey(fullName))
+                    {
+                        _lookup.Add(fullName, new HashSet<DocumentedMethod>());
+                    }
+                    _lookup[fullName].Add(method);
                 }
                 catch (Exception)
                 {
@@ -57,9 +67,9 @@ namespace Cake.Web.Docs
                 // Found extension methods for the current types interfaces?
                 foreach (var typeReference in current.Interfaces)
                 {
-                    if (_lookup.ContainsKey(typeReference.FullName))
+                    if (_lookup.ContainsKey(typeReference.InterfaceType.FullName))
                     {
-                        methods.AddRange(_lookup[typeReference.FullName]);
+                        methods.AddRange(_lookup[typeReference.InterfaceType.FullName]);
                     }
                 }
 
