@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net;
 using Cake.Core.IO;
 
 namespace Cake.Web.Core.NuGet
@@ -51,13 +52,24 @@ namespace Cake.Web.Core.NuGet
             return result.Select(path => _fileSystem.GetFile(path));
         }
 
-        public DirectoryPath InstallPackage(PackageDefinition package, DirectoryPath root)
+        private DirectoryPath InstallPackage(PackageDefinition package, DirectoryPath root)
         {
             var packagePath = root.Combine("libs");
             if (!_fileSystem.Exist(packagePath))
             {
                 _fileSystem.GetDirectory(packagePath).Create();
             }
+            var toolsPath = root.Combine("tools");
+            var nugetToolPath = toolsPath.CombineWithFilePath("nuget.exe");
+            if (!_fileSystem.Exist(toolsPath))
+            {
+                _fileSystem.GetDirectory(toolsPath).Create();
+            }
+            if (!_fileSystem.Exist(nugetToolPath))
+            {
+                DownloadNuget(nugetToolPath);
+            }
+
 
             if (_fileSystem.Exist(packagePath.Combine(package.PackageName)))
             {
@@ -67,17 +79,18 @@ namespace Cake.Web.Core.NuGet
             var arguments = $"install \"{package.PackageName}\" -Source \"https://api.nuget.org/v3/index.json\" -PreRelease -ExcludeVersion -OutputDirectory \"{packagePath.FullPath}\"{(!string.IsNullOrWhiteSpace(package.Version) ? $" -Version \"{package.Version}\"" : string.Empty)}";
             var fallbackarguments = $"install \"{package.PackageName}\" -Source \"https://api.nuget.org/v3/index.json\" -Source \"https://www.myget.org/F/xunit/api/v3/index.json\" -Source \"https://dotnet.myget.org/F/dotnet-core/api/v3/index.json\" -Source \"https://dotnet.myget.org/F/cli-deps/api/v3/index.json\" -PreRelease -ExcludeVersion -OutputDirectory \"{packagePath.FullPath}\"{(!string.IsNullOrWhiteSpace(package.Version) ? $" -Version \"{package.Version}\"" : string.Empty)}";
             
-            ExecuteNuget(arguments, fallbackarguments, 3);
+            ExecuteNuget(nugetToolPath, arguments, fallbackarguments, 3);
 
             // Return the installation directory.
             return packagePath.Combine(package.PackageName);
         }
 
-        private static void ExecuteNuget(string arguments, string fallbackarguments, int retries)
+        // ReSharper disable once SuggestBaseTypeForParameter
+        private static void ExecuteNuget(FilePath nugetToolPath, string arguments, string fallbackarguments, int retries)
         {
             while (true)
             {
-                var process = Process.Start(new ProcessStartInfo("nuget", arguments) {UseShellExecute = false});
+                var process = Process.Start(new ProcessStartInfo(nugetToolPath.FullPath, arguments) {UseShellExecute = false});
                 if (process == null)
                 {
                     throw new NullReferenceException(nameof(process));
@@ -100,6 +113,15 @@ namespace Cake.Web.Core.NuGet
                 }
 
                 arguments = fallbackarguments;
+            }
+        }
+
+        // ReSharper disable once SuggestBaseTypeForParameter
+        private static void DownloadNuget(FilePath nugetToolPath)
+        {
+            using (var client = new WebClient())
+            {
+                client.DownloadFile("https://dist.nuget.org/win-x86-commandline/latest/nuget.exe", nugetToolPath.FullPath);
             }
         }
     }
