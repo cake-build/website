@@ -1,8 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Net;
 using Cake.Core.IO;
-using NuGet;
-using IFileSystem = Cake.Core.IO.IFileSystem;
 
 namespace Cake.Web.Core.NuGet
 {
@@ -51,39 +52,77 @@ namespace Cake.Web.Core.NuGet
             return result.Select(path => _fileSystem.GetFile(path));
         }
 
-        public DirectoryPath InstallPackage(PackageDefinition package, DirectoryPath root)
+        private DirectoryPath InstallPackage(PackageDefinition package, DirectoryPath root)
         {
             var packagePath = root.Combine("libs");
             if (!_fileSystem.Exist(packagePath))
             {
                 _fileSystem.GetDirectory(packagePath).Create();
             }
-
-            if (!_fileSystem.Exist(packagePath.Combine(package.PackageName)))
+            var toolsPath = root.Combine("tools");
+            var nugetToolPath = toolsPath.CombineWithFilePath("nuget.exe");
+            if (!_fileSystem.Exist(toolsPath))
             {
-                var packageManager = CreatePackageManager(packagePath);
-                if (!string.IsNullOrWhiteSpace(package.Version))
-                {
-                    // Install specific version.
-                    packageManager.InstallPackage(package.PackageName, new SemanticVersion(package.Version), true, true);
-                }
-                else
-                {
-                    // Install latest version.
-                    packageManager.InstallPackage(package.PackageName);
-                }
+                _fileSystem.GetDirectory(toolsPath).Create();
             }
+            if (!_fileSystem.Exist(nugetToolPath))
+            {
+                DownloadNuget(nugetToolPath);
+            }
+
+
+            if (_fileSystem.Exist(packagePath.Combine(package.PackageName)))
+            {
+                return packagePath.Combine(package.PackageName);
+            }
+
+            var arguments = $"install \"{package.PackageName}\" -Source \"https://api.nuget.org/v3/index.json\" -PreRelease -ExcludeVersion -OutputDirectory \"{packagePath.FullPath}\"{(!string.IsNullOrWhiteSpace(package.Version) ? $" -Version \"{package.Version}\"" : string.Empty)}";
+            var fallbackarguments = $"install \"{package.PackageName}\" -Source \"https://api.nuget.org/v3/index.json\" -Source \"https://www.myget.org/F/xunit/api/v3/index.json\" -Source \"https://dotnet.myget.org/F/dotnet-core/api/v3/index.json\" -Source \"https://dotnet.myget.org/F/cli-deps/api/v3/index.json\" -PreRelease -ExcludeVersion -OutputDirectory \"{packagePath.FullPath}\"{(!string.IsNullOrWhiteSpace(package.Version) ? $" -Version \"{package.Version}\"" : string.Empty)}";
+            
+            ExecuteNuget(nugetToolPath, arguments, fallbackarguments, 3);
 
             // Return the installation directory.
             return packagePath.Combine(package.PackageName);
         }
 
-        private static PackageManager CreatePackageManager(DirectoryPath packagePath)
+        // ReSharper disable once SuggestBaseTypeForParameter
+        private static void ExecuteNuget(FilePath nugetToolPath, string arguments, string fallbackarguments, int retries)
         {
-            var repository = PackageRepositoryFactory.Default.CreateRepository("https://packages.nuget.org/api/v2");
-            var resolver = new PackagePathResolver(packagePath);
-            var fileSystem = new PhysicalFileSystem(packagePath.FullPath);
-            return new PackageManager(repository, resolver, fileSystem);
+            while (true)
+            {
+                var process = Process.Start(new ProcessStartInfo(nugetToolPath.FullPath, arguments) {UseShellExecute = false});
+                if (process == null)
+                {
+                    throw new NullReferenceException(nameof(process));
+                }
+
+                bool timeout;
+                if ((timeout = !process.WaitForExit(45000)) && !process.HasExited)
+                {
+                    process.Kill();
+                }
+
+                if (!timeout && process.ExitCode == 0)
+                {
+                    return;
+                }
+
+                if (--retries <= 0)
+                {
+                    throw new InvalidOperationException($"Failed to install package ({arguments})");
+                }
+
+                arguments = fallbackarguments;
+            }
+        }
+
+        // ReSharper disable once SuggestBaseTypeForParameter
+        private static void DownloadNuget(FilePath nugetToolPath)
+        {
+            using (var client = new WebClient())
+            {
+                client.DownloadFile("https://dist.nuget.org/win-x86-commandline/latest/nuget.exe", nugetToolPath.FullPath);
+            }
         }
     }
 }
