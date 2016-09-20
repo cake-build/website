@@ -37,3 +37,7 @@ Authoring new addins just became much easier with the new Cake Addin project tem
 To get started with Cake for Visual Studio, simply install the extension from the [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/).
 
 As always we welcome your contributions and feedback and you can find the extension [on GitHub](https://github.com/cake-build/cake-vs) as well.
+
+---
+
+My name is Alistair Chapman and I'm an ALM consultant and occasional .NET developer from Brisbane, Australia who started working on Cake in 2016 and coincidentally hasn't been bored ever since. You can find me on [GitHub](https://github.com/agc93) and [Twitter](https://twitter.com/agc93) as agc93, or check out [my blog](http://blog.agchapman.com).
