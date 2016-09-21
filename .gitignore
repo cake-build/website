@@ -16,6 +16,10 @@ tools/xunit.runners/
 tools/xunit.runner.console/
 tools/nuget.exe
 tools/packages.config.md5sum
+tools/Addins/
+tools/KuduSync.NET/
+LocalDeploy/
+
 
 # mstest test results
 TestResults
