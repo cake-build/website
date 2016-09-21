@@ -42,6 +42,7 @@ namespace Cake.Web.Docs
             var parameters = new ReaderParameters
             {
                 AssemblyResolver = resolver,
+                InMemory = true
             };
 
             foreach (var item in items)
