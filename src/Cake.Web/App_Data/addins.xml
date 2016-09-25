@@ -364,7 +364,7 @@
     <Categories>Azure;Deployment</Categories>
   </Addin>
   <Addin>
-    <Name>Cake.MagicChunks</Name>
+    <Name>Magic Chunks</Name>
     <NuGet Id="MagicChunks">
       <Filter>/**/MagicChunks.dll</Filter>
       <Filter>/**/MagicChunks.Cake.dll</Filter>
