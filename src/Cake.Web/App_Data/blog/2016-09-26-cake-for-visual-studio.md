@@ -22,7 +22,7 @@ If you have a build.cake file included in your solution, open the Task Runner Ex
 
 ### Bootstrapper commands
 
-Check out the new "Cake Build" group in your Build menu for a set of quick commands for installing Cake bootstrapper scripts or configuration files into your solution. 
+Check out the new "Cake Build" group in your Build menu for a set of quick commands for installing Cake bootstrapper scripts or configuration files into your solution.
 
 ![Build menu items](https://raw.githubusercontent.com/cake-build/website/master/src/Cake.Web/App_Data/images/cake-for-vs/commands.png)
 
@@ -34,7 +34,7 @@ Authoring new addins just became much easier with the new Cake Addin project tem
 
 ### Getting started
 
-To get started with Cake for Visual Studio, simply install the extension from the [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/).
+To get started with Cake for Visual Studio, simply install the extension from the [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/57a658df-3577-440a-93e5-9f2734d80686).
 
 As always we welcome your contributions and feedback and you can find the extension [on GitHub](https://github.com/cake-build/cake-vs) as well.
 
