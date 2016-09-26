@@ -1,4 +1,10 @@
 ## 2016
+
+### Automating Builds with Cake (C# Make)
+#### Derek Comartin - CodeOpinion
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Y9T6568jlnc" frameborder="0" allowfullscreen></iframe>
+
 ### A Piece of Cake - C# powered cross platform build automation
 #### Gary Ewan Park - NDC
 
