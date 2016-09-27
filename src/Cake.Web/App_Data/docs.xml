@@ -35,6 +35,7 @@
   <section id="editors" title="Editors">
     <item title="Atom" file="editors/atom.md" />
     <item title="Visual Studio Code" file="editors/vscode.md" />
+    <item title="Visual Studio" file="editors/visualstudio.md" />
   </section>
   <section id="build-systems" title="Build Systems">
     <item title="Visual Studio Team Services" file="build-systems/vso.md"/>
