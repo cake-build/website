@@ -115,6 +115,9 @@
     <Compile Include="DocumentModelMapper.cs" />
     <Compile Include="Identity\CRefHelpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\SolutionInfo.cs">
+      <Link>Properties\SolutionInfo.cs</Link>
+    </Compile>
     <Compile Include="Reflection\ReflectionModelBuilder.cs" />
     <Compile Include="Reflection\Model\ReflectionModel.cs" />
     <Compile Include="Reflection\MethodClassification.cs" />

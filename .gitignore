@@ -19,7 +19,11 @@ tools/packages.config.md5sum
 tools/Addins/
 tools/KuduSync.NET/
 LocalDeploy/
-
+output/_PublishedWebsites/
+output/*.xml
+output/*.dll
+output/*.pdb
+output/*.config
 
 # mstest test results
 TestResults
