@@ -1,5 +1,9 @@
 ﻿## 2016
 
+### Patrik Svensson
+
+* [Cake](http://www.slideshare.net/PatrikSvensson14/cake-66612025)
+
 ### Gary Ewan Park
 
 * [Aberdeen Developers .Net User Group](http://www.slideshare.net/gep13/having-your-cake-and-eating-it-too)
