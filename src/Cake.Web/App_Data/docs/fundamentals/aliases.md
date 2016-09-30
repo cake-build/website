@@ -26,7 +26,7 @@ PM> Install-Package Cake.Core
 
 Add the alias method that you want to expose to your Cake script. A script alias method is simply an extension method for [ICakeContext](api://T:Cake.Core.ICakeContext) that's been marked with the [CakeMethodAliasAttribute](api://T:Cake.Core.Annotations.CakeMethodAliasAttribute) attribute.
 
-You could also add an script alias property, which works the same way as a script alias method, except that it accepts no arguments and is marked with the [CakePropertyAliasAttribute](api://T:Cake.Core.Annotations.CakePropertyAliasAttribute) attribute.
+You could also add a script alias property, which works the same way as a script alias method, except that it accepts no arguments and is marked with the [CakePropertyAliasAttribute](api://T:Cake.Core.Annotations.CakePropertyAliasAttribute) attribute.
 
 ```csharp
 using Cake.Core;
