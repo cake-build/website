@@ -6,7 +6,7 @@ Gary appeared on the [1st](http://cynicaldeveloper.com/podcast/1/) ever show.
 
 ### Hanselminutes
 
-TBC
+Patrik appeared on show [548](http://hanselminutes.com/548/cake-build-a-c-make-cross-platform-build-automation-system-with-patrik-svensson)
 
 ### Herding Code
 
