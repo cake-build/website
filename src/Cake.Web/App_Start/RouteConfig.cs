@@ -102,6 +102,18 @@ namespace Cake.Web
                 new { controller = "Addin", action = "index" }
             );
 
+            // Modules
+            routes.MapRoute(
+                "Modules", "modules/",
+                new { controller = "Module", action = "index" }
+            );
+
+            // Addins: Category
+            routes.MapRoute(
+                "ModulesCategory", "modules/category/{category}",
+                new { controller = "Module", action = "index" }
+            );
+
             RegisterDownloads(routes);
 
             // Default

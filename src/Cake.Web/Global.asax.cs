@@ -13,6 +13,7 @@ using Cake.Web.Core.Content;
 using Cake.Web.Core.Content.Addins;
 using Cake.Web.Core.Content.Blog;
 using Cake.Web.Core.Content.Documentation;
+using Cake.Web.Core.Content.Modules;
 using Cake.Web.Core.Dsl;
 using Cake.Web.Core.NuGet;
 using Cake.Web.Core.Rendering;
@@ -33,6 +34,11 @@ namespace Cake.Web
             // TODO: Fix this container hack.
             var addinReader = new AddinReader(new FileSystem());
             var addins = addinReader.Read(appDataPath.CombineWithFilePath("addins.xml"));
+
+            // Read all modules.
+            // TODO: Fix this container hack.
+            var moduleReader = new ModuleReader(new FileSystem());
+            var modules = moduleReader.Read(appDataPath.CombineWithFilePath("modules.xml"));
 
             // Define packages.
             var packageDefinitions = new List<PackageDefinition>();
@@ -111,6 +117,7 @@ namespace Cake.Web
             builder.RegisterInstance(topics).As<TopicTree>().SingleInstance();
             builder.RegisterInstance(blogIndex).As<BlogIndex>().SingleInstance();
             builder.RegisterInstance(addins).As<AddinIndex>().SingleInstance();
+            builder.RegisterInstance(modules).As<ModuleIndex>().SingleInstance();
             builder.Update(container);
 
             // Perform registrations.

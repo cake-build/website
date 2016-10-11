@@ -160,6 +160,7 @@
     <Compile Include="Controllers\DslController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ModuleController.cs" />
     <Compile Include="Controllers\RedirectController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -184,6 +185,7 @@
     <Compile Include="Models\BlogPageViewModel.cs" />
     <Compile Include="Models\BlogViewModel.cs" />
     <Compile Include="Models\MethodViewModel.cs" />
+    <Compile Include="Models\ModuleViewModel.cs" />
     <Compile Include="Models\NamespaceViewmodel.cs" />
     <Compile Include="Models\PropertyViewModel.cs" />
     <Compile Include="Models\TypeViewModel.cs" />
@@ -192,6 +194,9 @@
   <ItemGroup>
     <Content Include="App_Data\addins.xml" />
     <Content Include="App_Data\docs.xml" />
+    <Content Include="App_Data\modules.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Content\css\bootstrap-theme.css" />
     <Content Include="Content\css\bootstrap-theme.min.css" />
     <Content Include="Content\css\bootstrap.css" />
@@ -273,6 +278,7 @@
     <Content Include="Views\Addin\Index.cshtml" />
     <Content Include="Views\Shared\_AddinWarning.cshtml" />
     <Content Include="App_Data\**\*.md" />
+    <Content Include="Views\Module\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Bootstrapper\" />
