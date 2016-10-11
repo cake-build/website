@@ -17,7 +17,7 @@ otherwise you will run into issues when attempting to execute Cake.
 #### Files of interest
 
 You need three files for a build (these will be the only files you need to 
-commit to you repo to use Cake):
+commit to your repo to use Cake):
 
 <ul class="fa-ul" style="padding-left: 0px; padding-top: 10px;">
     <li style="padding-left: 0px">
@@ -69,7 +69,7 @@ it from NuGet.
 It will then run the very simple build.cake script that will clean up 
 the output directory, restore all NuGet packages and build the project. 
 
-**Congratulations, you've run you first Cake script!**
+**Congratulations, you've run your first Cake script!**
 
 **NOTE:** If you are running Cake on a 32 bit Operating System, you will need to provide an additional 
 parameter to ensure that the build script runs correctly.  This is due to an issue with Roslyn.  Either use:

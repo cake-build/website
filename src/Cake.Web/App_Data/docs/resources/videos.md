@@ -15,3 +15,8 @@
 #### Scott Hanselman - .NET Conf Day 3 Keynote
 
 <iframe src="https://channel9.msdn.com/Events/dotnetConf/2016/NET-Conf-Day-3-Keynote-Scott-Hanselman/player" width="640" height="360" allowFullScreen frameBorder="0"></iframe>
+
+### Motz Codes Live
+#### Continuous Integration for Libraries with Jon Dick aka Redth
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/D0gWjHhJ3IU" frameborder="0" allowfullscreen></iframe>

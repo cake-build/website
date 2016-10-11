@@ -1,11 +1,16 @@
 ﻿## 2016
 
+### Patrik Svensson
+
+* [Cake](http://www.slideshare.net/PatrikSvensson14/cake-66612025)
+
 ### Gary Ewan Park
 
 * [Aberdeen Developers .Net User Group](http://www.slideshare.net/gep13/having-your-cake-and-eating-it-too)
 * [DDD Scotland](http://www.slideshare.net/gep13/having-your-cake-and-eating-it-too-dddscotland)
 * [NDC Oslo](http://www.slideshare.net/gep13/having-your-cake-and-eating-it-too-ndc-oslo-2016)
 * [DDD 11](http://www.slideshare.net/gep13/a-piece-of-cake-ddd11-reading)
+* [DDD North](http://www.slideshare.net/gep13/a-piece-of-cake-ddd-north)
 
 ### Jamie Phillips
 

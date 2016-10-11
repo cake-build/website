@@ -1,5 +1,9 @@
 ## 2016
 
+### Channel 9
+
+* [Cake!... Baking a new Build with C# Make](https://channel9.msdn.com/coding4fun/blog/Cake-Baking-a-new-Build-with-C-Make)
+
 ### Jamie Phillips
 
 * [Cake: Automating an existing project](http://www.phillipsj.net/2016/07/24/Cake-Automating-an-existing-project/)
