@@ -14,33 +14,33 @@ namespace Cake.Web.Controllers
 
         public ActionResult Windows()
         {
-            return Redirect("https://raw.githubusercontent.com/cake-build/resources/master/build.ps1");
+            return Download("https://raw.githubusercontent.com/cake-build/resources/master/build.ps1");
         }
 
         public ActionResult PowerShell()
         {
-            return Redirect("https://raw.githubusercontent.com/cake-build/resources/master/build.ps1");
+            return Download("https://raw.githubusercontent.com/cake-build/resources/master/build.ps1");
         }
 
         public ActionResult Linux()
         {
-            return Redirect("https://raw.githubusercontent.com/cake-build/resources/master/build.sh");
+            return Download("https://raw.githubusercontent.com/cake-build/resources/master/build.sh");
         }
 
         // ReSharper disable once InconsistentNaming
         public ActionResult OSX()
         {
-            return Redirect("https://raw.githubusercontent.com/cake-build/resources/master/build.sh");
+            return Download("https://raw.githubusercontent.com/cake-build/resources/master/build.sh");
         }
 
         public ActionResult Bash()
         {
-            return Redirect("https://raw.githubusercontent.com/cake-build/resources/master/build.sh");
+            return Download("https://raw.githubusercontent.com/cake-build/resources/master/build.sh");
         }
 
         public ActionResult Configuration()
         {
-            return Redirect("https://raw.githubusercontent.com/cake-build/resources/master/cake.config");
+            return Download("https://raw.githubusercontent.com/cake-build/resources/master/cake.config");
         }
 
         public ActionResult Packages()
@@ -48,6 +48,17 @@ namespace Cake.Web.Controllers
             var result = File(_content.Data, "text/xml", "packages.config");
             Response.Charset = "utf-8";
             return result;
+        }
+
+        private ActionResult Download(string url)
+        {
+            using (var client = new System.Net.WebClient())
+            {
+                return File(
+                    client.DownloadData(url),
+                    "text/plain; charset=utf-8"
+                    );
+            }
         }
     }
 }
