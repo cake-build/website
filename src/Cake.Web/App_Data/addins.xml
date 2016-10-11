@@ -534,7 +534,7 @@
       <Filter>/**/Cake.HipChat.dll</Filter>
       <Filter>/**/Cake.HipChat.xml</Filter>
     </NuGet>
-    <Repository>https://github.com/cake-contrib/HipChat</Repository>
+    <Repository>https://github.com/cake-contrib/Cake.HipChat</Repository>
     <Author>Alan Low</Author>
     <Description>Cake Addin to allow message posting to HipChat.</Description>
     <Categories>Communication</Categories>
