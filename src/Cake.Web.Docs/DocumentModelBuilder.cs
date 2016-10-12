@@ -33,21 +33,15 @@ namespace Cake.Web.Docs
             var items = FilterFilesOnExtension(paths, ".dll");
             var definitions = new Dictionary<AssemblyDefinition, IDocumentationMetadata>();
 
-            var resolver = new DefaultAssemblyResolver();
+            var resolver = new CakeAssemblyResolver();
             foreach (var item in items)
             {
                 resolver.AddSearchDirectory(Path.GetDirectoryName(item.Key));
             }
 
-            var parameters = new ReaderParameters
-            {
-                AssemblyResolver = resolver,
-                InMemory = true
-            };
-
             foreach (var item in items)
             {
-                var definition = AssemblyDefinition.ReadAssembly(item.Key, parameters);
+                var definition = AssemblyDefinition.ReadAssembly(item.Key, resolver.ReaderParameters);
                 definitions.Add(definition, item.Value);
             }
 
