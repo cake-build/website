@@ -1,5 +1,7 @@
 #tool "nuget:https://www.nuget.org/api/v2/?package=KuduSync.NET"
 #addin "nuget:https://www.nuget.org/api/v2/?package=Cake.Kudu"
+#addin "nuget:https://www.nuget.org/api/v2/?package=Cake.Git"
+
 ///////////////////////////////////////////////////////////////////////////////
 // ARGUMENTS
 ///////////////////////////////////////////////////////////////////////////////
@@ -9,12 +11,32 @@ var configuration   = Argument<string>("configuration", "Release");
 ///////////////////////////////////////////////////////////////////////////////
 // GLOBAL VARIABLES
 ///////////////////////////////////////////////////////////////////////////////
-FilePath        solutionPath        = MakeAbsolute(File("./src/Cake.Web.sln"));
-FilePath        addinsXmlPath       = MakeAbsolute(File("./src/Cake.Web/App_Data/addins.xml"));
-DirectoryPath   websitePublishPath  = MakeAbsolute(Directory("./src/Cake.Web"));
-DirectoryPath   addinPath           = MakeAbsolute(Directory("./src/Cake.Web/App_Data/libs"));
+DirectoryPath   outputPath          = MakeAbsolute(Directory("./output"));
+DirectoryPath   websitePublishPath  = outputPath.Combine("_PublishedWebsites/Cake.Web");
+DirectoryPath   addinPath           = websitePublishPath.Combine("App_Data/libs");
 DirectoryPath   deploymentPath;
 
+FilePath        solutionPath        = MakeAbsolute(File("./src/Cake.Web.sln"));
+FilePath        projectPath         = MakeAbsolute(File("./src/Cake.Web/Cake.Web.csproj"));
+FilePath        addinsXmlPath       = addinPath.CombineWithFilePath("../addins.xml").Collapse();
+FilePath        solutionInfoPath    = MakeAbsolute(File("./src/SolutionInfo.cs"));
+
+DateTime        utcNow              = DateTime.UtcNow;
+string          version             = string.Format(
+                                            "{0}.{1}.{2}.{3}{4:00}",
+                                            utcNow.Year,
+                                            utcNow.Month,
+                                            utcNow.Day,
+                                            utcNow.Hour,
+                                            utcNow.Minute
+                                        );
+string          semVersion          = string.Format(
+                                            "{0}+{1}.{2}.{3}",
+                                            version,
+                                            GitBranchCurrent("./").FriendlyName,
+                                            GitLogTip("./").Sha,
+                                            System.Environment.MachineName
+                                        );
 
 ///////////////////////////////////////////////////////////////////////////////
 // SETUP / TEARDOWN
@@ -40,13 +62,13 @@ Setup(ctx =>
     }
 
     // Executed BEFORE the first task.
-    Information("Running tasks...");
+    Information("Building version {0}...", semVersion);
 });
 
 Teardown(ctx =>
 {
     // Executed AFTER the last task.
-    Information("Finished running tasks.");
+    Information("Done building version {0}.", semVersion);
 });
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -60,6 +82,8 @@ Task("Clean")
     CleanDirectories("./src/**/" + configuration + "/bin");
     CleanDirectories("./src/**/" + configuration + "/obj");
     CleanDirectories(new [] {
+        outputPath,
+        websitePublishPath,
         addinPath,
         "./src/Cake.Web/bin",
         "./src/Cake.Web/obj"
@@ -74,18 +98,37 @@ Task("Restore")
     NuGetRestore(solutionPath);
 });
 
+Task("Create-Solution-Info")
+    .Does(() =>
+{
+    var assemblyInfoSettings  =  new AssemblyInfoSettings {
+            Version                 = version,
+            FileVersion             = version,
+            InformationalVersion    = semVersion,
+            Copyright               = "Copyright (c) .NET Foundation and Contributors"
+        };
+    CreateAssemblyInfo(solutionInfoPath, assemblyInfoSettings);
+});
+
+
 Task("Build")
     .IsDependentOn("Clean")
     .IsDependentOn("Restore")
+    .IsDependentOn("Create-Solution-Info")
     .Does(() =>
 {
     // Build target web & tests.
-    Information("Building web {0}...", solutionPath);
-    MSBuild(solutionPath, settings =>
+    Information("Building web {0}...", projectPath);
+
+    MSBuild(projectPath, settings =>
         settings.SetPlatformTarget(PlatformTarget.MSIL)
             .WithProperty("TreatWarningsAsErrors","true")
+            .WithProperty("OutDir", outputPath.FullPath + "/")
             .WithTarget("Build")
-            .SetConfiguration(configuration));
+            .WithTarget("ResolveReferences")
+            .WithTarget("_CopyWebApplication")
+            .SetConfiguration(configuration)
+            .SetVerbosity(Verbosity.Minimal));
 });
 
 Task("Prefetch-Addins")
@@ -93,7 +136,11 @@ Task("Prefetch-Addins")
     .Does(() =>
 {
     Information("Parsing {0}...", addinsXmlPath);
-    var addinIds = (
+    var addinIds = new []{
+            "Cake",
+            "Cake.Common",
+            "Cake.Core"
+        }.Concat(
                     from addins in System.Xml.Linq.XDocument.Load(addinsXmlPath.FullPath).Elements("Addins")
                     from addin in addins.Elements("Addin")
                     from nuget in addin.Elements("NuGet")
@@ -108,11 +155,11 @@ Task("Prefetch-Addins")
         {
             Information("Installing addin {0}...", addinId);
             NuGetInstall(addinId, new NuGetInstallSettings {
-                ExcludeVersion  = true,
-                OutputDirectory = addinPath,
-                Source          = new [] { "https://api.nuget.org/v3/index.json" },
-                Verbosity       = NuGetVerbosity.Quiet
-            });
+                        ExcludeVersion  = true,
+                        OutputDirectory = addinPath,
+                        Source          = new [] { "https://api.nuget.org/v3/index.json" },
+                        Verbosity       = NuGetVerbosity.Quiet,
+                        Prerelease      = true });
         }
         catch
         {
@@ -125,8 +172,6 @@ Task("Publish")
     .IsDependentOn("Prefetch-Addins")
     .Does(() =>
 {
-    DeleteDirectory("./src/Cake.Web/obj", recursive:true);
-
     Information("Deploying web from {0} to {1}...", websitePublishPath, deploymentPath);
     Kudu.Sync(websitePublishPath);
 });

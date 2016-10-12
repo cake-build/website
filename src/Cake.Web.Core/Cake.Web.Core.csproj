@@ -140,6 +140,9 @@
     <Compile Include="NuGet\NuGetInstaller.cs" />
     <Compile Include="NuGet\PackageDefinition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\SolutionInfo.cs">
+      <Link>Properties\SolutionInfo.cs</Link>
+    </Compile>
     <Compile Include="Rendering\CommentRenderer.cs" />
     <Compile Include="Rendering\CommentRendererContext.cs" />
     <Compile Include="Rendering\MethodRenderer.cs" />
