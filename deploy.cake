@@ -139,7 +139,8 @@ Task("Prefetch-Addins")
     var addinIds = new []{
             "Cake",
             "Cake.Common",
-            "Cake.Core"
+            "Cake.Core",
+            "Cake.Testing"
         }.Concat(
                     from addins in System.Xml.Linq.XDocument.Load(addinsXmlPath.FullPath).Elements("Addins")
                     from addin in addins.Elements("Addin")
