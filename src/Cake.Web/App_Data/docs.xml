@@ -10,6 +10,7 @@
   <section title="Tutorials">
     <item title="Getting started" file="tutorials/getting-started.md" />
     <item title="Setting up a new project" file="tutorials/setting-up-a-new-project.md" />
+    <item title="PowerShell security" file="tutorials/powershell-security.md" />
     <item title="Extending the bootstrapper" file="tutorials/extending-the-bootstrapper.md" />
   </section>
   <section title="Fundamentals">
