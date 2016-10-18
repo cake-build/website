@@ -20,6 +20,7 @@ FilePath        solutionPath        = MakeAbsolute(File("./src/Cake.Web.sln"));
 FilePath        projectPath         = MakeAbsolute(File("./src/Cake.Web/Cake.Web.csproj"));
 FilePath        addinsXmlPath       = addinPath.CombineWithFilePath("../addins.xml").Collapse();
 FilePath        solutionInfoPath    = MakeAbsolute(File("./src/SolutionInfo.cs"));
+FilePath        webConfigPath       = websitePublishPath.CombineWithFilePath("web.config");
 
 DateTime        utcNow              = DateTime.UtcNow;
 string          version             = string.Format(
@@ -131,8 +132,15 @@ Task("Build")
             .SetVerbosity(Verbosity.Minimal));
 });
 
-Task("Prefetch-Addins")
+Task("Transform-Warmup")
     .IsDependentOn("Build")
+    .Does(() =>
+{
+    XmlPoke(webConfigPath, "/configuration/system.webServer/applicationInitialization/add[@initializationPage = '/']/@hostName", Kudu.WebSite.HostName);
+});
+
+Task("Prefetch-Addins")
+    .IsDependentOn("Transform-Warmup")
     .Does(() =>
 {
     Information("Parsing {0}...", addinsXmlPath);
