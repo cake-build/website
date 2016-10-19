@@ -539,4 +539,14 @@
     <Description>Cake Addin to allow message posting to HipChat.</Description>
     <Categories>Communication</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.DoInDirectory</Name>
+    <NuGet Id="Cake.DoInDirectory">
+      <Filter>/**/Cake.DoInDirectory.dll</Filter>
+    </NuGet>
+    <Repository>https://github.com/pitermarx/Cake.DoInDirectory</Repository>
+    <Author>pitermarx</Author>
+    <Description>Cake Addin to allow the temporary change of the working directory.</Description>
+    <Categories>IO</Categories>
+  </Addin>
 </Addins>
