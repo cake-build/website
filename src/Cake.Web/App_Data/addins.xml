@@ -539,4 +539,15 @@
     <Description>Cake Addin to allow message posting to HipChat.</Description>
     <Categories>Communication</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.SemVer.FromAssembly</Name>
+    <NuGet Id="Cake.SemVer.FromAssembly">
+      <Filter>/**/Cake.SemVer.FromAssembly.dll</Filter>
+      <Filter>/**/Cake.SemVer.FromAssembly.XML</Filter>
+    </NuGet>
+    <Repository>https://github.com/wallymathieu/Cake.SemVer.FromAssembly</Repository>
+    <Author>Oskar Gewalli</Author>
+    <Description>Cake Addin to help get version from assembly differences.</Description>
+    <Categories>Versioning</Categories>
+  </Addin>
 </Addins>
