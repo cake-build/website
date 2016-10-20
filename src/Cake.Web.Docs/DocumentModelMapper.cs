@@ -157,8 +157,20 @@ namespace Cake.Web.Docs
             if (member != null)
             {
                 // Get the comments for the type.
-                summary = member.Comments.OfType<SummaryComment>().SingleOrDefault();
-                remarks = member.Comments.OfType<RemarksComment>().SingleOrDefault();
+                summary = member.Comments.OfType<SummaryComment>().Aggregate(
+                    null as SummaryComment,
+                    (prev, curr) => (curr != null && prev != null)
+                        ? new SummaryComment(prev.Children.Concat(curr.Children))
+                        : curr ?? prev,
+                    result => result
+                    );
+                remarks = member.Comments.OfType<RemarksComment>().Aggregate(
+                    null as RemarksComment,
+                    (prev, curr) => (curr != null && prev != null)
+                        ? new RemarksComment(prev.Children.Concat(curr.Children))
+                        : curr ?? prev,
+                    result => result
+                    );
                 example = member.Comments.OfType<ExampleComment>();
             }
 

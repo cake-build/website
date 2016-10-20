@@ -543,10 +543,22 @@
     <Name>Cake.DoInDirectory</Name>
     <NuGet Id="Cake.DoInDirectory">
       <Filter>/**/Cake.DoInDirectory.dll</Filter>
+      <Filter>/**/Cake.DoInDirectory.XML</Filter>
     </NuGet>
     <Repository>https://github.com/pitermarx/Cake.DoInDirectory</Repository>
     <Author>pitermarx</Author>
     <Description>Cake Addin to allow the temporary change of the working directory.</Description>
     <Categories>IO</Categories>
+  </Addin>
+  <Addin>
+    <Name>Cake.SemVer.FromAssembly</Name>
+    <NuGet Id="Cake.SemVer.FromAssembly">
+      <Filter>/**/Cake.SemVer.FromAssembly.dll</Filter>
+      <Filter>/**/Cake.SemVer.FromAssembly.XML</Filter>
+    </NuGet>
+    <Repository>https://github.com/wallymathieu/Cake.SemVer.FromAssembly</Repository>
+    <Author>Oskar Gewalli</Author>
+    <Description>Cake Addin to help get version from assembly differences.</Description>
+    <Categories>Versioning</Categories>
   </Addin>
 </Addins>
