@@ -550,4 +550,15 @@
     <Description>Cake Addin to help get version from assembly differences.</Description>
     <Categories>Versioning</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.DoInDirectory</Name>
+    <NuGet Id="Cake.DoInDirectory">
+      <Filter>/**/Cake.DoInDirectory.dll</Filter>
+      <Filter>/**/Cake.DoInDirectory.XML</Filter>
+    </NuGet>
+    <Repository>https://github.com/pitermarx/Cake.DoInDirectory</Repository>
+    <Author>pitermarx</Author>
+    <Description>Cake Addin to allow the temporary change of the working directory.</Description>
+    <Categories>IO</Categories>
+  </Addin>
 </Addins>
