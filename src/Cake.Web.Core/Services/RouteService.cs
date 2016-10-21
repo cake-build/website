@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Cake.Web.Docs;
 
@@ -57,31 +56,19 @@ namespace Cake.Web.Core.Services
             }
         }
 
-        public List<DocumentedNamespace> FindNamespacesFromRoutePart(string id)
+        public bool TryFindNamespacesFromRoutePart(string id, out List<DocumentedNamespace> namespaces)
         {
-            if (!_namespaces.ContainsKey(id))
-            {
-                throw new InvalidOperationException("Could not find namespace.");
-            }
-            return _namespaces[id];
+            return _namespaces.TryGetValue(id, out namespaces);
         }
 
-        public DocumentedType FindTypeFromRoutePart(string id)
+        public bool TryFindTypeFromRoutePart(string id, out DocumentedType type)
         {
-            if (!_types.ContainsKey(id))
-            {
-                throw new InvalidOperationException("Could not find type.");
-            }
-            return _types[id];
+            return _types.TryGetValue(id, out type);
         }
 
-        public DocumentedMember FindTypeMemberFromRoutePart(string id)
+        public bool TryFindTypeMemberFromRoutePart(string id, out DocumentedMember member)
         {
-            if (!_members.ContainsKey(id))
-            {
-                throw new InvalidOperationException("Could not find member.");
-            }
-            return _members[id];
+            return _members.TryGetValue(id, out member);
         }
 
         public string GetRoutePart(DocumentedNamespace @namespace)
