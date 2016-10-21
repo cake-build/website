@@ -10,6 +10,7 @@
   <section title="Tutorials">
     <item title="Getting started" file="tutorials/getting-started.md" />
     <item title="Setting up a new project" file="tutorials/setting-up-a-new-project.md" />
+    <item title="PowerShell security" file="tutorials/powershell-security.md" />
     <item title="Extending the bootstrapper" file="tutorials/extending-the-bootstrapper.md" />
   </section>
   <section title="Fundamentals">
@@ -20,6 +21,7 @@
     <item title="Finally block" file="fundamentals/finally-block.md" />
     <item title="Setup and teardown" file="fundamentals/setup-and-teardown.md" />
     <item title="Running targets" file="fundamentals/running-targets.md" />
+    <item title="Arguments and environment vars" file="fundamentals/args-and-environment-vars.md" />
     <item title="Script aliases" file="fundamentals/aliases.md" />
     <item title="Preprocessor directives" file="fundamentals/preprocessor-directives.md" />
     <item title="Configuration" file="fundamentals/configuration.md" />
