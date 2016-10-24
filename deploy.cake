@@ -164,16 +164,17 @@ Task("Prefetch-Addins")
         {
             Information("Installing addin {0}...", addinId);
             NuGetInstall(addinId, new NuGetInstallSettings {
-                        ExcludeVersion  = true,
-                        NoCache         = true,
-                        OutputDirectory = addinPath,
-                        Source          = new [] { "https://api.nuget.org/v3/index.json" },
-                        Verbosity       = NuGetVerbosity.Quiet,
-                        Prerelease      = true });
+                        ExcludeVersion          = true,
+                        NoCache                 = true,
+                        OutputDirectory         = addinPath,
+                        Source                  = new [] { "https://api.nuget.org/v3/index.json" },
+                        Verbosity               = NuGetVerbosity.Quiet,
+                        Prerelease              = true,
+                        EnvironmentVariables    = new Dictionary<string, string>{{"NUGET_XMLDOC_MODE", "None"}}});
         }
-        catch
+        catch(Exception ex)
         {
-            Information("Failed to install addin {0}.", addinId);
+            Information("Failed to install addin {0} ({1}).", addinId, ex.Message);
         }
      }
 });
