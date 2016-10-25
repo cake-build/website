@@ -13,6 +13,7 @@ var configuration   = Argument<string>("configuration", "Release");
 ///////////////////////////////////////////////////////////////////////////////
 DirectoryPath   outputPath          = MakeAbsolute(Directory("./output"));
 DirectoryPath   websitePublishPath  = outputPath.Combine("_PublishedWebsites/Cake.Web");
+DirectoryPath   packagesPath        = outputPath.Combine("packages");
 DirectoryPath   addinPath           = websitePublishPath.Combine("App_Data/libs");
 DirectoryPath   deploymentPath;
 
@@ -85,6 +86,7 @@ Task("Clean")
     CleanDirectories(new [] {
         outputPath,
         websitePublishPath,
+        packagesPath,
         addinPath,
         "./src/Cake.Web/bin",
         "./src/Cake.Web/obj"
@@ -170,7 +172,12 @@ Task("Prefetch-Addins")
                         Source                  = new [] { "https://api.nuget.org/v3/index.json" },
                         Verbosity               = NuGetVerbosity.Quiet,
                         Prerelease              = true,
-                        EnvironmentVariables    = new Dictionary<string, string>{{"NUGET_XMLDOC_MODE", "None"}}});
+                        EnvironmentVariables    = new Dictionary<string, string>{
+                            {"EnableNuGetPackageRestore", "true"},
+                            {"NUGET_XMLDOC_MODE", "None"},
+                            {"NUGET_PACKAGES", packagesPath.FullPath},
+                            {"NUGET_EXE",  Context.Tools.Resolve("nuget.exe").FullPath }
+                }});
         }
         catch(Exception ex)
         {
