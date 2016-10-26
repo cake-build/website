@@ -69,7 +69,7 @@
   <Addin>
     <Name>Cake.AliaSql</Name>
     <NuGet Id="Cake.AliaSql" />
-    <Repository>https://github.com/RichiCoder1/Cake.AliaSql</Repository>
+    <Repository>https://github.com/cake-contrib/Cake.AliaSql</Repository>
     <Author>RichieCoder1</Author>
     <Description>
       AliaSql Script Alias for Cake.
