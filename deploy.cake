@@ -1,6 +1,7 @@
 #tool "nuget:https://www.nuget.org/api/v2/?package=KuduSync.NET"
 #addin "nuget:https://www.nuget.org/api/v2/?package=Cake.Kudu"
 #addin "nuget:https://www.nuget.org/api/v2/?package=Cake.Git"
+using System.Xml.Linq;
 
 ///////////////////////////////////////////////////////////////////////////////
 // ARGUMENTS
@@ -20,6 +21,7 @@ DirectoryPath   deploymentPath;
 FilePath        solutionPath        = MakeAbsolute(File("./src/Cake.Web.sln"));
 FilePath        projectPath         = MakeAbsolute(File("./src/Cake.Web/Cake.Web.csproj"));
 FilePath        addinsXmlPath       = addinPath.CombineWithFilePath("../addins.xml").Collapse();
+FilePath        packagesConfigPath  = addinPath.CombineWithFilePath("package.config").Collapse();
 FilePath        solutionInfoPath    = MakeAbsolute(File("./src/SolutionInfo.cs"));
 FilePath        webConfigPath       = websitePublishPath.CombineWithFilePath("web.config");
 
@@ -152,38 +154,62 @@ Task("Prefetch-Addins")
             "Cake.Core",
             "Cake.Testing"
         }.Concat(
-                    from addins in System.Xml.Linq.XDocument.Load(addinsXmlPath.FullPath).Elements("Addins")
+                    from addins in XDocument.Load(addinsXmlPath.FullPath).Elements("Addins")
                     from addin in addins.Elements("Addin")
                     from nuget in addin.Elements("NuGet")
                     from id in nuget.Attributes("Id")
+                    where !string.IsNullOrEmpty(id.Value)
                     select id.Value
                 ).ToArray();
+
     Information("Found {0} addins.", addinIds.Length);
 
-    foreach(var addinId in addinIds)
-    {
-        try
-        {
-            Information("Installing addin {0}...", addinId);
-            NuGetInstall(addinId, new NuGetInstallSettings {
-                        ExcludeVersion          = true,
-                        NoCache                 = true,
-                        OutputDirectory         = addinPath,
-                        Source                  = new [] { "https://api.nuget.org/v3/index.json" },
-                        Verbosity               = NuGetVerbosity.Quiet,
-                        Prerelease              = true,
-                        EnvironmentVariables    = new Dictionary<string, string>{
-                            {"EnableNuGetPackageRestore", "true"},
-                            {"NUGET_XMLDOC_MODE", "None"},
-                            {"NUGET_PACKAGES", packagesPath.FullPath},
-                            {"NUGET_EXE",  Context.Tools.Resolve("nuget.exe").FullPath }
-                }});
-        }
-        catch(Exception ex)
-        {
-            Information("Failed to install addin {0} ({1}).", addinId, ex.Message);
-        }
-     }
+    System.Threading.Tasks.Parallel.ForEach(
+        addinIds,
+        new ParallelOptions { MaxDegreeOfParallelism = 20 },
+        addinId => {
+            var addInVersionUrl = string.Format("https://www.nuget.org/api/v2/Packages()?$filter=Id%20eq%20'{0}'%20and%20IsAbsoluteLatestVersion%20eq%20true",
+                                    Uri.EscapeDataString(addinId));
+            string addinVersion;
+            try
+            {
+                addinVersion = (
+                    from feed in XDocument.Load(addInVersionUrl).Elements()
+                    from entry in feed.Elements().Where(element => element.Name.LocalName == "entry")
+                    from properties in entry.Elements().Where(element => element.Name.LocalName == "properties")
+                    from version in properties.Elements().Where(element => element.Name.LocalName == "Version")
+                    select version.Value
+                ).FirstOrDefault();
+            }
+            catch(Exception ex)
+            {
+                addinVersion = null;
+                Information("Failed to fetch version for addin {0} ({1})...", addinId, ex.Message);
+            }
+
+            try
+            {
+                Information("Installing addin {0} ({1})...", addinId, addinVersion ?? "*null*");
+                NuGetInstall(addinId, new NuGetInstallSettings {
+                            Version                 = addinVersion,
+                            ExcludeVersion          = true,
+                            NoCache                 = true,
+                            OutputDirectory         = addinPath,
+                            Source                  = new [] { "https://api.nuget.org/v3/index.json" },
+                            Verbosity               = NuGetVerbosity.Quiet,
+                            Prerelease              = true,
+                            EnvironmentVariables    = new Dictionary<string, string>{
+                                {"EnableNuGetPackageRestore", "true"},
+                                {"NUGET_XMLDOC_MODE", "None"},
+                                {"NUGET_PACKAGES", packagesPath.FullPath},
+                                {"NUGET_EXE",  Context.Tools.Resolve("nuget.exe").FullPath }
+                    }});
+            }
+            catch(Exception ex)
+            {
+                Information("Failed to install addin {0} ({1}, {2})...", addinId, addinVersion, ex.Message);
+            }
+        });
 });
 
 Task("Publish")
