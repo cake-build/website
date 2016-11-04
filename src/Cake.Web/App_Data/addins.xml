@@ -594,4 +594,15 @@
     <Description>Cake Addin that exends Cake with ability to utilize CakeMail.</Description>
     <Categories>Email</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.Compression</Name>
+    <NuGet Id="Cake.Compression">
+      <Filter>/**/Cake.Compression.dll</Filter>
+      <Filter>/**/Cake.Compression.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/akordowski/Cake.Compression/</Repository>
+    <Author>Artur Kordowski</Author>
+    <Description>Cake AddIn which provides compression functionality for BZip2, GZip and Zip.</Description>
+    <Categories>Compression</Categories>
+  </Addin>
 </Addins>
