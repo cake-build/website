@@ -605,4 +605,17 @@
     <Description>Cake AddIn which provides compression functionality for BZip2, GZip and Zip.</Description>
     <Categories>Compression</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.Yarn</Name>
+    <NuGet Id="Cake.Yarn">
+      <Filter>/**/Cake.Yarn.dll</Filter>
+      <Filter>/**/Cake.Yarn.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/MilovanovM/cake-yarn</Repository>
+    <Author>Maxim Milovanov</Author>
+    <Description>
+      A set of aliases for Cake to help with running Yarn (Node Package Manager from Facebook) commands.
+    </Description>
+    <Categories>Node</Categories>
+  </Addin>
 </Addins>
