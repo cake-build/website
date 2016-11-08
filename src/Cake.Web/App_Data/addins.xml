@@ -618,4 +618,15 @@
     </Description>
     <Categories>Node</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.MsDeploy</Name>
+    <NuGet Id="Cake.MsDeploy">
+      <Filter>/**/Cake.MsDeploy.dll</Filter>
+      <Filter>/**/Cake.MsDeploy.XML</Filter>
+    </NuGet>
+    <Repository>https://github.com/cake-contrib/Cake.MsDeploy</Repository>
+    <Author>Louis Fischer</Author>
+    <Description>Cake Addin that extends Cake for executing commands with the MsDeploy.exe command line interface (cli)</Description>
+    <Categories>MsDeploy;Deployment</Categories>
+  </Addin>  
 </Addins>
