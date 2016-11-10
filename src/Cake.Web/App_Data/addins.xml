@@ -628,5 +628,16 @@
     <Author>Louis Fischer</Author>
     <Description>Cake Addin that extends Cake for executing commands with the MsDeploy.exe command line interface (cli)</Description>
     <Categories>MsDeploy;Deployment</Categories>
-  </Addin>  
+  </Addin>
+  <Addin>
+    <Name>Cake.FluentMigrator</Name>
+    <NuGet Id="Cake.FluentMigrator">
+      <Filter>/**/Cake.FluentMigrator.dll</Filter>
+      <Filter>/**/Cake.FluentMigrator.XML</Filter>
+    </NuGet>
+    <Repository>https://github.com/cake-contrib/Cake.FluentMigrator</Repository>
+    <Author>Fredrik Leijon</Author>
+    <Description>Cake Addin that extends Cake for executing commands with the FluentMigrator tool.</Description>
+    <Categories>FluentMigrator;Deployment</Categories>
+  </Addin>
 </Addins>
