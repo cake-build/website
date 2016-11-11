@@ -653,4 +653,15 @@
     </Description>
     <Categories>Database</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.GitPackager</Name>
+    <NuGet Id="Cake.GitPackager">
+      <Filter>/**/Cake.GitPackager.dll</Filter>
+      <Filter>/**/Cake.GitPackager.XML</Filter>
+    </NuGet>
+    <Repository>https://github.com/ilich/Cake.GitPackager</Repository>
+    <Author>Ilya Verbitskiy</Author>
+    <Description>Cake AddIn which copies files based on Git log.</Description>
+    <Categories>Git</Categories>
+  </Addin>
 </Addins>
