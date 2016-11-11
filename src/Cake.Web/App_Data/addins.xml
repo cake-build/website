@@ -640,4 +640,17 @@
     <Description>Cake Addin that extends Cake for executing commands with the FluentMigrator tool.</Description>
     <Categories>FluentMigrator;Deployment</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.SqlServerPackager</Name>
+    <NuGet Id="Cake.SqlServerPackager">
+      <Filter>/**/Cake.SqlServerPackager.dll</Filter>
+      <Filter>/**/Cake.SqlServerPackager.XML</Filter>
+    </NuGet>
+    <Repository>https://github.com/ilich/Cake.SqlServerPackager</Repository>
+    <Author>Ilya Verbitskiy</Author>
+    <Description>
+      Cake AddIn that packages multiple SQL Scripts into one file to speed up deployment and minimize the probability of errors.
+    </Description>
+    <Categories>Database</Categories>
+  </Addin>
 </Addins>
