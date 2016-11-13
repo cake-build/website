@@ -674,5 +674,38 @@
     <Author>Ilya Verbitskiy</Author>
     <Description>Cake AddIn to upload files using WinSCP.</Description>
     <Categories>Deployment</Categories>
-  </Addin>  
+  </Addin>
+  <Addin>
+    <Name>Cake.Orchard</Name>
+    <NuGet Id="Cake.Orchard">
+      <Filter>/**/Cake.Orchard.dll</Filter>
+      <Filter>/**/Cake.Orchard.XML</Filter>
+    </NuGet>
+    <Repository>https://github.com/RadioSystems/Cake.Orchard</Repository>
+    <Author>Radio Systems</Author>
+    <Description>Cake AddIn to assist building Orchard projects.</Description>
+    <Categories>Orchard</Categories>
+  </Addin>
+  <Addin>
+    <Name>Cake.Watch</Name>
+    <NuGet Id="Cake.Watch">
+      <Filter>/**/Cake.Watch.dll</Filter>
+      <Filter>/**/Cake.Watch.XML</Filter>
+    </NuGet>
+    <Repository>https://github.com/cake-addin/cake-watch</Repository>
+    <Author>Somnuk Wongkhan</Author>
+    <Description>Cake addin to watch files change.</Description>
+    <Categories>Misc</Categories>
+  </Addin>
+  <Addin>
+    <Name>Cake.StrongNameTool</Name>
+    <NuGet Id="Cake.StrongNameTool">
+      <Filter>/**/cake.strongnametool.dll</Filter>
+      <Filter>/**/cake.strongnametool.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/SaferSocietyGroup/cake.strongnametool</Repository>
+    <Author>Kristofer Linnestjerna</Author>
+    <Description>Cake AddIn to help with the resigning and verification of StrongName in .NET assemblies by using sn.exe</Description>
+    <Categories>Signing</Categories>
+  </Addin>
 </Addins>
