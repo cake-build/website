@@ -674,5 +674,16 @@
     <Author>Ilya Verbitskiy</Author>
     <Description>Cake AddIn to upload files using WinSCP.</Description>
     <Categories>Deployment</Categories>
-  </Addin>  
+  </Addin>
+  <Addin>
+    <Name>Cake.Orchard</Name>
+    <NuGet Id="Cake.Orchard">
+      <Filter>/**/Cake.Orchard.dll</Filter>
+      <Filter>/**/Cake.Orchard.XML</Filter>
+    </NuGet>
+    <Repository>https://github.com/RadioSystems/Cake.Orchard</Repository>
+    <Author>Radio Systems</Author>
+    <Description>Cake AddIn to assist building Orchard projects.</Description>
+    <Categories>Orchard</Categories>
+  </Addin>    
 </Addins>
