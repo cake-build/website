@@ -561,4 +561,15 @@
     <Description>Cake Addin to allow the temporary change of the working directory.</Description>
     <Categories>IO</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.ProjHelpers</Name>
+    <NuGet Id="Cake.ProjHelpers">
+      <Filter>/**/Cake.ProjHelpers.dll</Filter>
+      <Filter>/**/Cake.ProjHelpers.XML</Filter>
+    </NuGet>
+    <Repository>https://github.com/orialmog/Cake.ProjHelpers</Repository>
+    <Author>orialmog</Author>
+    <Description>Cake AddIn for manipulating .proj files</Description>
+    <Categories>Build</Categories>
+  </Addin>
 </Addins>
