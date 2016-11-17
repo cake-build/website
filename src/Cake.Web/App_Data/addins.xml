@@ -719,4 +719,15 @@
     <Description>Cake Build addon to assist with reading version numbers from an assembly</Description>
     <Categories>Versioning</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.ProjHelpers</Name>
+    <NuGet Id="Cake.ProjHelpers">
+      <Filter>/**/Cake.ProjHelpers.dll</Filter>
+      <Filter>/**/Cake.ProjHelpers.XML</Filter>
+    </NuGet>
+    <Repository>https://github.com/orialmog/Cake.ProjHelpers</Repository>
+    <Author>orialmog</Author>
+    <Description>Cake AddIn for manipulating .proj files</Description>
+    <Categories>Build</Categories>
+  </Addin>
 </Addins>
