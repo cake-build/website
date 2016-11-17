@@ -740,5 +740,16 @@
     <Author>Miha Markič</Author>
     <Description>A Cake AddIn that extends Cake with Docker command tools.</Description>
     <Categories>Docker</Categories>
-  </Addin>  
+  </Addin>
+  <Addin>
+    <Name>Cake.Putty</Name>
+    <NuGet Id="Cake.Putty">
+      <Filter>/**/Cake.Putty.dll</Filter>
+      <Filter>/**/Cake.Putty.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/MihaMarkic/Cake.Putty</Repository>
+    <Author>Miha Markič</Author>
+    <Description>A Cake AddIn that extends Cake with Putty command tools.</Description>
+    <Categories>Communication</Categories>
+  </Addin>
 </Addins>
