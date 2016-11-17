@@ -708,4 +708,48 @@
     <Description>Cake AddIn to help with the resigning and verification of StrongName in .NET assemblies by using sn.exe</Description>
     <Categories>Signing</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.VersionReader</Name>
+    <NuGet Id="Cake.VersionReader">
+      <Filter>/**/Cake.VersionReader.dll</Filter>
+      <Filter>/**/Cake.VersionReader.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/NinetailLabs/Cake.VersionReader</Repository>
+    <Author>NineTail Labs</Author>
+    <Description>Cake Build addon to assist with reading version numbers from an assembly</Description>
+    <Categories>Versioning</Categories>
+  </Addin>
+  <Addin>
+    <Name>Cake.ProjHelpers</Name>
+    <NuGet Id="Cake.ProjHelpers">
+      <Filter>/**/Cake.ProjHelpers.dll</Filter>
+      <Filter>/**/Cake.ProjHelpers.XML</Filter>
+    </NuGet>
+    <Repository>https://github.com/orialmog/Cake.ProjHelpers</Repository>
+    <Author>orialmog</Author>
+    <Description>Cake AddIn for manipulating .proj files</Description>
+    <Categories>Build</Categories>
+  </Addin>
+  <Addin>
+    <Name>Cake.Docker</Name>
+    <NuGet Id="Cake.Docker">
+      <Filter>/**/Cake.Docker.dll</Filter>
+      <Filter>/**/Cake.Docker.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/MihaMarkic/Cake.Docker</Repository>
+    <Author>Miha Markič</Author>
+    <Description>A Cake AddIn that extends Cake with Docker command tools.</Description>
+    <Categories>Docker</Categories>
+  </Addin>
+  <Addin>
+    <Name>Cake.Putty</Name>
+    <NuGet Id="Cake.Putty">
+      <Filter>/**/Cake.Putty.dll</Filter>
+      <Filter>/**/Cake.Putty.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/MihaMarkic/Cake.Putty</Repository>
+    <Author>Miha Markič</Author>
+    <Description>A Cake AddIn that extends Cake with Putty command tools.</Description>
+    <Categories>Communication</Categories>
+  </Addin>
 </Addins>
