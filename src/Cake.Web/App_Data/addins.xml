@@ -730,4 +730,15 @@
     <Description>Cake AddIn for manipulating .proj files</Description>
     <Categories>Build</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.Docker</Name>
+    <NuGet Id="Cake.Docker">
+      <Filter>/**/Cake.Docker.dll</Filter>
+      <Filter>/**/Cake.Docker.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/MihaMarkic/Cake.Docker</Repository>
+    <Author>Miha Markič</Author>
+    <Description>A Cake AddIn that extends Cake with Docker command tools.</Description>
+    <Categories>Docker</Categories>
+  </Addin>  
 </Addins>
