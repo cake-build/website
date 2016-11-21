@@ -59,7 +59,32 @@ public static class MyCakeExtension
 }
 ```
 
-# Using the alias
+=======
+#### Importing Namespaces
+Your script alias may need to import one or more namespaces into your Cake script.  Cake supports the automatic import of namespaces with attributes.
+
+The [CakeNamespaceImportAttribute](/api/Cake.Core.Annotations/CakeNamespaceImportAttribute) can be applied at the method, class, or assembly level, or any combination thereof.
+
+```csharp
+// Imports the Cake.Common.IO.Paths namespace into the Cake script for this method only
+[CakeNamespaceImport("Cake.Common.IO.Paths")]
+public static ConvertableDirectoryPath Directory(this ICakeContext context, string path)
+{...}
+```
+
+```csharp
+// Imports the Cake.Common.IO.Paths namespace into the Cake script for any alias method used in the class.
+[CakeNamespaceImport("Cake.Common.IO.Paths")]
+public static class DirectoryAliases
+{...}
+```
+
+```csharp
+// Imports the Cake.Common.IO.Paths namespace into the Cake script for any alias method used in the assembly.
+[assembly: CakeNamespaceImport("Cake.Common.IO.Paths")]
+```
+
+### Using the alias
 
 Compile the assembly and add a reference to it in the build script via the `#r` directive.
 
