@@ -752,4 +752,15 @@
     <Description>A Cake AddIn that extends Cake with Putty command tools.</Description>
     <Categories>Communication</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.Stylecop</Name>
+    <NuGet Id="Cake.Stylecop">
+      <Filter>/**/Cake.Stylecop.dll</Filter>
+      <Filter>/**/Cake.Stylecop.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/Ashthos/Cake.Stylecop</Repository>
+    <Author>Ash Beeson</Author>
+    <Description>A Cake AddIn that allows code style 'linting' using Stylecop.</Description>
+    <Categories>Code Quality;Misc</Categories>
+  </Addin>
 </Addins>

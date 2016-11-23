@@ -1,5 +1,9 @@
 ## 2016
 
+### Adam Hathcock
+
+* [.NET Core 1.1 building with Docker and Cake](https://adamhathcock.github.io/2016/11/22/net-core-1-1-building-with-docker-and-cake.html)
+
 ### Channel 9
 
 * [Cake!... Baking a new Build with C# Make](https://channel9.msdn.com/coding4fun/blog/Cake-Baking-a-new-Build-with-C-Make)
