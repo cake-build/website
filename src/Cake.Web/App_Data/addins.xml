@@ -763,4 +763,15 @@
     <Description>A Cake AddIn that allows code style 'linting' using Stylecop.</Description>
     <Categories>Code Quality;Misc</Categories>
   </Addin>
+    <Addin>
+    <Name>Cake.Sonar</Name>
+    <NuGet Id="Cake.Sonar">
+      <Filter>/**/Cake.Sonar.dll</Filter>
+      <Filter>/**/Cake.Sonar.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/AgileArchitect/Cake.Sonar</Repository>
+    <Author>Tom Staijen</Author>
+    <Description>A Cake AddIn that allows will run the Sonar MSBuild Runner for csharp projects.</Description>
+    <Categories>Code Quality;Misc</Categories>
+  </Addin>
 </Addins>
