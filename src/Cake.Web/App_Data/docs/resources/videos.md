@@ -20,3 +20,9 @@
 #### Continuous Integration for Libraries with Jon Dick aka Redth
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/D0gWjHhJ3IU" frameborder="0" allowfullscreen></iframe>
+
+### Cake tasting (C# Make)
+#### Luís Gonçalves - NetPonto Lisboa
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NdKNmtf9nIU" frameborder="0" allowfullscreen></iframe>
+<p>In Portuguese</p>

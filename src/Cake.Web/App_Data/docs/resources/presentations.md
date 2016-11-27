@@ -19,3 +19,7 @@
 ### Laurent Kempé
 
 * [Cake (C# Make)](https://sway.com/G8xS5gVqbwOA9euI)
+
+### Luís Gonçalves
+
+* [Comunidade NetPonto Lisboa](https://luisfsgoncalves.files.wordpress.com/2016/11/cake.pdf) ([video](https://www.youtube.com/watch?v=NdKNmtf9nIU) (PT))
