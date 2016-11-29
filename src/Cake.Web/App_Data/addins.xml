@@ -774,4 +774,15 @@
     <Description>A Cake AddIn that allows will run the Sonar MSBuild Runner for csharp projects.</Description>
     <Categories>Code Quality;Misc</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.AppPackager</Name>
+    <NuGet Id="Cake.AppPackager">
+      <Filter>/**/Cake.AppPackager.dll</Filter>
+      <Filter>/**/Cake.AppPackager.XML</Filter>
+    </NuGet>
+    <Repository>https://github.com/phillipsj/Cake.AppPackager</Repository>
+    <Author>Jamie Phillips</Author>
+    <Description>Cake AddIn for creating Windows packages.</Description>
+    <Categories>Windows;Deployment</Categories>
+  </Addin>  
 </Addins>
