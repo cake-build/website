@@ -784,5 +784,16 @@
     <Author>Jamie Phillips</Author>
     <Description>Cake AddIn for creating Windows packages.</Description>
     <Categories>Windows;Deployment</Categories>
-  </Addin>  
+  </Addin>
+  <Addin>
+    <Name>Cake.Newman</Name>
+    <NuGet Id="Cake.Newman">
+      <Filter>/**/Cake.Newman.dll</Filter>
+      <Filter>/**/Cake.Newman.xml</Filter>
+    </NuGet>
+    <Repository>https://github.com/cake-contrib/Cake.Newman</Repository>
+    <Author>Alistair Chapman</Author>
+    <Description>Cake addin for testing Postman Collection APIs using the Newman CLI.</Description>
+    <Categories>Postman</Categories>
+  </Addin>
 </Addins>
