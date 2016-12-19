@@ -796,4 +796,15 @@
     <Description>Cake addin for testing Postman Collection APIs using the Newman CLI.</Description>
     <Categories>Postman</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.Ftp</Name>
+    <NuGet Id="Cake.Ftp">
+      <Filter>/**/Cake.Ftp.dll</Filter>
+      <Filter>/**/Cake.Ftp.XML</Filter>
+    </NuGet>
+    <Repository>https://github.com/phillipsj/Cake.Ftp</Repository>
+    <Author>Jamie Phillips</Author>
+    <Description>Cake Addin for working with FTP from a Cake script.</Description>
+    <Categories>Deployment</Categories>
+  </Addin>
 </Addins>
