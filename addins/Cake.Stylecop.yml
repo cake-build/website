@@ -1,0 +1,10 @@
+Name: Cake.Stylecop
+NuGet: Cake.Stylecop
+Assemblies:
+- "/**/Cake.Stylecop.dll"
+Repository: https://github.com/Ashthos/Cake.Stylecop
+Author: Ash Beeson
+Description: "A Cake AddIn that allows code style 'linting' using Stylecop."
+Categories:
+- Code Quality
+- Misc

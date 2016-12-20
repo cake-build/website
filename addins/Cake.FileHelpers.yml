@@ -1,0 +1,9 @@
+Name: Cake.FileHelpers
+NuGet: Cake.FileHelpers
+Assemblies:
+- "/**/Cake.FileHelpers.dll"
+Repository: https://github.com/Redth/Cake.FileHelpers
+Author: Jonathan Dick
+Description: "A set of aliases for Cake to help with simple file operations such as Reading, Writing and Replacing text."
+Categories:
+- IO

@@ -1,0 +1,9 @@
+Name: Cake.SemVer.FromAssembly
+NuGet: Cake.SemVer.FromAssembly
+Assemblies:
+- "/**/Cake.SemVer.FromAssembly.dll"
+Repository: https://github.com/wallymathieu/Cake.SemVer.FromAssembly
+Author: Oskar Gewalli
+Description: "Cake Addin to help get version from assembly differences."
+Categories:
+- Versioning

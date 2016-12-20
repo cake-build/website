@@ -1,0 +1,9 @@
+Name: Cake.Json
+NuGet: Cake.Json
+Assemblies:
+- "/**/Cake.Json.dll"
+Repository: https://github.com/Redth/Cake.Json
+Author: Jonathan Dick
+Description: "A set of aliases to help with JSON Serialization"
+Categories:
+- Serialization

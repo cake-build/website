@@ -1,0 +1,11 @@
+Name: Cake.Tfx
+NuGet: Cake.Tfx
+Assemblies:
+- "/**/Cake.Tfx.dll"
+Repository: https://github.com/cake-contrib/Cake.Tfx
+Author: Gary Ewan Park
+Description: "Cake Build addin for using tfx cli."
+Categories:
+- VSTS
+- TFS
+- Deployment
