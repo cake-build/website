@@ -1,6 +1,6 @@
 title: New Static Cake Website
 category: Announcement
-author: dglick
+author: daveaglick
 ---
 Hi! My name is Dave Glick and I run the [Wyam static site engine](http://wyam.io) project. I'm also a big Cake fanboy, and over the last couple months I've been privileged to work with the rest of the Cake team on transitioning the Cake website from a dynamic ASP.NET website to a static one built by [Wyam](http://wyam.io). This effort was more than mere window dressing; the new site goes beyond the old one in some interesting ways:
 - Every API type now has a clickable type hierarchy diagram on it's page.
