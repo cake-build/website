@@ -34,7 +34,7 @@ Cake was early to support the .NET Core tooling, but in September we announced [
 
 ### The Team
 
-In December we added an additional member to the team, [Alistair Chapman](https://github.com/orgs/cake-build/people/agc93), he's been an amazing asset, contributing directly to Cake, surrounding tooling and in supporting the community.  He's been the mastermind behind the [Cake for Visual Studio extension](http://cakebuild.net/blog/2016/09/cake-for-visual-studio) and [Cake for Yeoman](http://cakebuild.net/blog/2016/09/cake-for-yeoman).
+In December we added an additional member to the team, [Alistair Chapman](https://github.com/agc93), he's been an amazing asset, contributing directly to Cake, surrounding tooling and in supporting the community.  He's been the mastermind behind the [Cake for Visual Studio extension](http://cakebuild.net/blog/2016/09/cake-for-visual-studio) and [Cake for Yeoman](http://cakebuild.net/blog/2016/09/cake-for-yeoman).
 
 ### In the spotlight
 
