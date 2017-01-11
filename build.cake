@@ -1,7 +1,7 @@
 #tool "nuget:https://api.nuget.org/v3/index.json?package=Wyam&prerelease"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Wyam&prerelease"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=Octokit"
-#addin "Cake.Yaml"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Yaml"
 
 using Octokit;
 
@@ -46,7 +46,7 @@ Task("CleanSource")
     if(DirectoryExists(sourceDir))
     {
         DeleteDirectory(sourceDir, true);
-    }    
+    }
 });
 
 Task("GetSource")
@@ -55,11 +55,11 @@ Task("GetSource")
     {
         GitHubClient github = new GitHubClient(new ProductHeaderValue("CakeDocs"));
 	    // The GitHub releases API returns Not Found if all are pre-release, so need workaround below
-        //Release release = github.Repository.Release.GetLatest("cake-build", "cake").Result;        
+        //Release release = github.Repository.Release.GetLatest("cake-build", "cake").Result;
 	    Release release = github.Repository.Release.GetAll("cake-build", "cake").Result.First();
 	    FilePath releaseZip = DownloadFile(release.ZipballUrl);
         Unzip(releaseZip, releaseDir);
-        
+
         // Need to rename the container directory in the zip file to something consistent
         var containerDir = GetDirectories(releaseDir.Path.FullPath + "/*").First(x => x.GetDirectoryName().StartsWith("cake"));
         MoveDirectory(containerDir, sourceDir);
@@ -77,7 +77,7 @@ Task("GetAddinSpecs")
     var addinSpecFiles = GetFiles("./addins/*.yml");
     addinSpecs
         .AddRange(addinSpecFiles
-            .Select(x => 
+            .Select(x =>
             {
                 Verbose("Deserializing addin YAML from " + x);
                 return DeserializeYamlFromFile<AddinSpec>(x);
@@ -89,15 +89,25 @@ Task("GetAddinPackages")
     .IsDependentOn("CleanAddinPackages")
     .IsDependentOn("GetAddinSpecs")
     .Does(() =>
-    {        
+    {
+        DirectoryPath   packagesPath        = MakeAbsolute(Directory("./output")).Combine("packages");
         foreach(var addinSpec in addinSpecs.Where(x => !string.IsNullOrEmpty(x.NuGet)))
         {
-            Verbose("Installing addin package " + addinSpec.NuGet);
+            Information("Installing addin package " + addinSpec.NuGet);
             NuGetInstall(addinSpec.NuGet,
                 new NuGetInstallSettings
                 {
                     OutputDirectory = addinDir,
-                    Prerelease = addinSpec.Prerelease
+                    Prerelease = addinSpec.Prerelease,
+                    Verbosity = NuGetVerbosity.Quiet,
+                    Source = new [] { "https://api.nuget.org/v3/index.json" },
+                    NoCache = true,
+                    EnvironmentVariables    = new Dictionary<string, string>{
+                                                    {"EnableNuGetPackageRestore", "true"},
+                                                    {"NUGET_XMLDOC_MODE", "None"},
+                                                    {"NUGET_PACKAGES", packagesPath.FullPath},
+                                                    {"NUGET_EXE",  Context.Tools.Resolve("nuget.exe").FullPath }
+                                              }
                 });
         }
     });
@@ -115,9 +125,9 @@ Task("Build")
             {
                 { "AssemblyFiles",  addinSpecs.Where(x => x.Assemblies != null).SelectMany(x => x.Assemblies).Select(x => "../release/addins" + x) }
             }
-        });        
+        });
     });
-    
+
 // Does not download artifacts (run Build or GetArtifacts target first)
 Task("Preview")
     .IsDependentOn("GetAddinSpecs")
@@ -133,9 +143,9 @@ Task("Preview")
             {
                 { "AssemblyFiles",  addinSpecs.Where(x => x.Assemblies != null).SelectMany(x => x.Assemblies).Select(x => "../release/addins" + x) }
             }
-        });   
+        });
     });
-    
+
 // Assumes Wyam source is local and at ../Wyam
 Task("Debug")
     .Does(() =>
@@ -159,4 +169,7 @@ Task("GetArtifacts")
 // EXECUTION
 //////////////////////////////////////////////////////////////////////
 
-RunTarget(target);
+if (!StringComparer.OrdinalIgnoreCase.Equals(target, "Deploy"))
+{
+    RunTarget(target);
+}
