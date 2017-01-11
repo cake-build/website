@@ -810,8 +810,8 @@
   <Addin>
     <Name>Cake.Paket</Name>
     <NuGet Id="Cake.Paket">
-      <Filter>/**/Cake.Paket.dll</Filter>
-      <Filter>/**/Cake.Paket.xml</Filter>
+      <Filter>/**/Cake.Paket.Addin.dll</Filter>
+      <Filter>/**/Cake.Paket.Addin.XML</Filter>
     </NuGet>
     <Repository>https://github.com/larzw/Cake.Paket</Repository>
     <Author>Larz White</Author>
