@@ -1,0 +1,9 @@
+Name: Cake.Genymotion
+NuGet: Cake.Genymotion
+Assemblies:
+- "/**/Cake.Genymotion.dll"
+Repository: https://github.com/ghuntley/Cake.Genymotion
+Author: Geoffrey Huntley
+Description: "Cake Build addin managing Genymotion (Android) simulators."
+Categories:
+- Mobile

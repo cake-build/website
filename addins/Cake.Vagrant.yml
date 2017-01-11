@@ -1,0 +1,9 @@
+Name: Cake.Vagrant
+NuGet: Cake.Vagrant
+Assemblies:
+- "/**/Cake.Vagrant.dll"
+Repository: https://github.com/cake-contrib/Cake.Vagrant
+Author: Alistair Chapman
+Description: "Cake addin for creating and managing Vagrant virtual machines"
+Categories:
+- Vagrant
