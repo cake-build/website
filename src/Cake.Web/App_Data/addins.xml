@@ -807,4 +807,15 @@
     <Description>Cake Addin for working with FTP from a Cake script.</Description>
     <Categories>Deployment</Categories>
   </Addin>
+  <Addin>
+    <Name>Cake.Paket</Name>
+    <NuGet Id="Cake.Paket">
+      <Filter>/**/Cake.Paket.Addin.dll</Filter>
+      <Filter>/**/Cake.Paket.Addin.XML</Filter>
+    </NuGet>
+    <Repository>https://github.com/larzw/Cake.Paket</Repository>
+    <Author>Larz White</Author>
+    <Description>Adds paket support to cake.</Description>
+    <Categories>NuGet</Categories>
+  </Addin>
 </Addins>
