@@ -20,15 +20,34 @@ Right now, only NuGet packages are supported.
 
 # Load directive
 The load directive is used to reference external Cake scripts. Useful i.e. if you have common utility functions.
+Starting from 0.18.0 you can also load cake scripts from nuget.
 
 ## Usage
-The directive has one parameter which is the location to the script.
+The directive has one parameter which is the location to the script which optionally includes a scheme: `local` or `nuget`. The default is `local`. 
 
+### Default:
 ```csharp
-#l "utilities.cake"
+#l "scripts/utilities.cake"
 or
-#load "utilities.cake"
+#load "scripts/utilities.cake"
 ```
+Attempts to load `utilities.cake` from `scripts` directory.
+
+### Local scheme:
+```csharp
+#l "local:?path=scripts/utilities.cake"
+or
+#load "local:?path=scripts/utilities.cake"
+```
+Attempts to load `utilities.cake` from `scripts` directory
+
+### Nuget scheme:
+```csharp
+#l "nuget:?package=utilities.cake"
+or
+#load "nuget:?package=utilities.cake"
+```
+Attempts to load `utilities.cake` from nuget
 
 # Reference directive
 The reference directive is used to reference external assemblies for use in your scripts.
