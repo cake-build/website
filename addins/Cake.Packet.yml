@@ -1,0 +1,9 @@
+Name: Cake.Paket
+NuGet: Cake.Paket
+Assemblies:
+- "/**/Cake.Paket.dll"
+Repository: https://github.com/larzw/Cake.Paket
+Author: Larz White
+Description: "Adds paket support to cake."
+Categories:
+- NuGet
