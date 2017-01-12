@@ -12,6 +12,10 @@ Title: Blog Posts
 
 * [Let them use CAKE](http://cburbidge.github.io/let-them-use-cake/)
 
+## Max Vasilyev
+
+* [VSTS vs NuGet vs CakeBuild – again!](http://tech.trailmax.info/2017/01/vsts-vs-nuget-vs-cakebuild-again/)
+
 ## Adam Hathcock
 
 * [.NET Core 1.1 building with Docker and Cake](https://adamhathcock.github.io/2016/11/22/net-core-1-1-building-with-docker-and-cake.html)
