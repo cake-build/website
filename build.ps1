@@ -94,8 +94,14 @@ $PACKAGES_CONFIG = Join-Path $TOOLS_DIR "packages.config"
 $PACKAGES_CONFIG_MD5 = Join-Path $TOOLS_DIR "packages.config.md5sum"
 
 # Delete the Wyam tool and addin folders
-Remove-Item $TOOLS_DIR\Wyam* -Force -Recurse
-Remove-Item $TOOLS_DIR\Addins\Cake.Wyam* -Force -Recurse
+if (Test-Path $TOOLS_DIR)
+{
+    Get-ChildItem $TOOLS_DIR\Wyam*| Remove-Item -Force -Recurse
+    if (Test-Path $TOOLS_DIR\Addins)
+    {
+        Get-ChildItem $TOOLS_DIR\Addins\Cake.Wyam*| Remove-Item -Force -Recurse
+    }
+}
 
 # Should we use mono?
 $UseMono = "";
