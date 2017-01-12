@@ -4,6 +4,10 @@ Title: Blog Posts
 
 # 2016
 
+## November Fire
+
+* [Jenkins Serving Cake: Our Recipe for Windows](https://novemberfive.co/blog/windows-jenkins-cake-tutorial/)
+
 ## Chester Burbidge
 
 * [Let them use CAKE](http://cburbidge.github.io/let-them-use-cake/)
