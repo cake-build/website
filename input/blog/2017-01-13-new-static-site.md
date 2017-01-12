@@ -6,7 +6,6 @@ Hi! My name is Dave Glick and I run the [Wyam static site engine](http://wyam.io
 - Every API type now has a clickable type hierarchy diagram on it's page.
 - A new quick-search provides instant API type searching across the entire API surface (including addins).
 - Type names are automatically linked to their corresponding API doc in documentation and blog posts.
-- The new design is fully responsive and uses [Turbolinks](https://github.com/turbolinks/turbolinks) for faster page transitions (the same library GitHub uses).
 - The documentation section is more flexible and can accommodate arbitrary nesting levels (which we plan to take advantage of soon).
 - Being fully static, no run-time evaluation is needed resulting in faster page delivery and easier caching.
 
