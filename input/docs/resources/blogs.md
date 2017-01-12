@@ -4,6 +4,10 @@ Title: Blog Posts
 
 # 2016
 
+## Chester Burbidge
+
+* [Let them use CAKE](http://cburbidge.github.io/let-them-use-cake/)
+
 ## Adam Hathcock
 
 * [.NET Core 1.1 building with Docker and Cake](https://adamhathcock.github.io/2016/11/22/net-core-1-1-building-with-docker-and-cake.html)
