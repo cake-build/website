@@ -4,6 +4,10 @@ Title: Blog Posts
 
 # 2016
 
+## miso_soup3
+
+* [Custom Deployment for Azure Web Apps using CAKE \- miso\_soup3 Blog](http://miso-soup3.hateblo.jp/entry/2016/12/28/191112)
+
 ## November Fire
 
 * [Jenkins Serving Cake: Our Recipe for Windows](https://novemberfive.co/blog/windows-jenkins-cake-tutorial/)
