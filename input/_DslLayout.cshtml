@@ -36,30 +36,45 @@
     }
 
     @{
-        IEnumerable<IGrouping<string, IDocument>> aliasGroups = Model
+        var aliasGroups = Model
             .DocumentList(Keys.GroupDocuments)
             .SelectMany(x => x.DocumentList(CodeAnalysisKeys.Members))
-            .Where(x => x.String("Kind") == "Method" 
-                && x.DocumentList(CodeAnalysisKeys.Attributes).Any(attr => attr.String(CodeAnalysisKeys.Name) == "CakeMethodAliasAttribute"))
-            .GroupBy(x => x.DocumentList(CodeAnalysisKeys.Attributes)
+            .Where(x => x.String("Kind") == "Method")
+            .Select(x => new 
+            {
+                Doc = x,
+                MethodAlias = x.DocumentList(CodeAnalysisKeys.Attributes).Any(attr => attr.String(CodeAnalysisKeys.Name) == "CakeMethodAliasAttribute"),
+                PropertyAlias = x.DocumentList(CodeAnalysisKeys.Attributes).Any(attr => attr.String(CodeAnalysisKeys.Name) == "CakePropertyAliasAttribute")
+            })
+            .Where(x => x.MethodAlias || x.PropertyAlias)
+            .GroupBy(x => x.Doc.DocumentList(CodeAnalysisKeys.Attributes)
                 .Where(attr => attr.String(CodeAnalysisKeys.Name) == "CakeAliasCategoryAttribute")
                 .Select(attr => attr.Get<Microsoft.CodeAnalysis.AttributeData>(CodeAnalysisKeys.AttributeData).ConstructorArguments.FirstOrDefault().Value)
                 .FirstOrDefault() as string ?? string.Empty)
             .OrderBy(x => x.Key);
     }
 
-    @foreach(IGrouping<string, IDocument> aliasGroup in aliasGroups.OrderBy(x => x.Key))
+    @foreach(var aliasGroup in aliasGroups)
     {
         string groupName = string.IsNullOrEmpty(aliasGroup.Key) ? "General" : aliasGroup.Key;
         <h1 id="@(groupName.Replace(" ", "-"))">@groupName</h1>  
         <div class="box">
             <div class="box-body no-padding">
                 <table class="table table-striped table-hover two-cols">
-                    @foreach(IDocument alias in aliasGroup.OrderBy(x => x.String(CodeAnalysisKeys.DisplayName)))
+                    @foreach(var alias in aliasGroup.OrderBy(x => x.Doc.String(CodeAnalysisKeys.DisplayName)))
                     {
                         <tr>
-                            <td>@Context.GetTypeLink(alias)</td>
-                            <td>@Html.Raw(alias.String(CodeAnalysisKeys.Summary))</td>
+                            <td>
+                                @if(alias.MethodAlias)
+                                {
+                                    <text>@Context.GetTypeLink(alias.Doc)</text>
+                                }
+                                else
+                                {
+                                    <text>@Context.GetTypeLink(alias.Doc, alias.Doc.String("Name"))</text>
+                                }
+                            </td>
+                            <td>@Html.Raw(alias.Doc.String(CodeAnalysisKeys.Summary))</td>
                         </tr>
                     }
                 </table>
