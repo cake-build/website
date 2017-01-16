@@ -6,7 +6,7 @@ Title: Blog Posts
 
 ## miso_soup3
 
-* [Custom Deployment for Azure Web Apps using CAKE \- miso\_soup3 Blog](http://miso-soup3.hateblo.jp/entry/2016/12/28/191112)
+* [Custom Deployment for Azure Web Apps using CAKE \- miso\_soup3 Blog](http://miso-soup3.hateblo.jp/entry/2016/12/28/191112)  **NOTE:** written in Japenese
 
 ## November Fire
 
