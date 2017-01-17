@@ -74,7 +74,19 @@
                                     <text>@Context.GetTypeLink(alias.Doc, alias.Doc.String("Name"))</text>
                                 }
                             </td>
-                            <td>@Html.Raw(alias.Doc.String(CodeAnalysisKeys.Summary))</td>
+                            <td>
+                                @Html.Raw(alias.Doc.String(CodeAnalysisKeys.Summary))
+                                @{
+                                    IDocument assemblyDoc = alias.Doc.Document(CodeAnalysisKeys.ContainingAssembly);
+                                    if(assemblyDoc != null)
+                                    {
+                                        <text>
+                                            <br/>
+                                            <small><i>Addin from @Context.GetTypeLink(assemblyDoc)</i></small>
+                                        </text>
+                                    }
+                                }
+                            </td>
                         </tr>
                     }
                 </table>
