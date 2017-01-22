@@ -185,6 +185,12 @@ Task("Debug")
             "-a \"../Wyam/src/**/bin/Debug/*.dll\" -r \"docs -i\" -t \"../Wyam/themes/Docs/Samson\" -p --attach");
     });
 
+Task("Copy-Bootstrapper-Download")
+    .Does(()=>
+    {
+        CopyDirectory("./download", outputPath.Combine("download"));
+    });
+
 Task("Deploy")
     .WithCriteria(isRunningOnAppVeyor)
     .WithCriteria(!isPullRequest)
@@ -192,6 +198,7 @@ Task("Deploy")
     .WithCriteria(!string.IsNullOrEmpty(deployRemote))
     .WithCriteria(!string.IsNullOrEmpty(deployBranch))
     .IsDependentOn("Build")
+    .IsDependentOn("Copy-Bootstrapper-Download")
     .Does(() =>
     {
         EnsureDirectoryExists(rootPublishFolder);
