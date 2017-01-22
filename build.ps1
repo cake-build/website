@@ -100,6 +100,8 @@ if (Test-Path $TOOLS_DIR)
     if (Test-Path $TOOLS_DIR\Addins)
     {
         Get-ChildItem $TOOLS_DIR\Addins\Cake.Wyam*| Remove-Item -Force -Recurse
+        Get-ChildItem $TOOLS_DIR\Addins\Cake.Kudu*| Remove-Item -Force -Recurse
+        Get-ChildItem $TOOLS_DIR\Addins\Cake.Git*| Remove-Item -Force -Recurse
     }
 }
 

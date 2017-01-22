@@ -4,7 +4,7 @@ init:
 
 # Build script
 build_script:
-  - cmd: localdeploy.cmd
+  - ps: .\build.ps1 -Target "AppVeyor"
 
 # Tests
 test: off
@@ -12,7 +12,7 @@ test: off
 # Artifacts
 artifacts:
 # Static website
-  - path: LocalDeploy
+  - path: output
 
 # Branches to build
 branches:
