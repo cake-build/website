@@ -1,0 +1,21 @@
+@{
+	Layout = "/_BlogLayout.cshtml";
+}
+
+@Html.Partial("_BlogPostDetails")
+
+@RenderBody()
+
+<hr />
+
+@{
+    string sharingLink = Uri.EscapeDataString(Context.GetLink(Model));
+    string sharingTitle = Uri.EscapeDataString(Model.String(Keys.Title));
+}
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcakebuild.net@(sharingLink)&t=@(sharingTitle)" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="/assets/img/social_flat_rounded_rects_svg/Facebook.svg"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fcakebuild.net@(sharingLink)&text=@(sharingTitle):%20http%3A%2F%2Fcakebuild.net@(sharingLink)&via=cakebuildnet" target="_blank" title="Tweet"><img alt="Tweet" src="/assets/img/social_flat_rounded_rects_svg/Twitter.svg"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fcakebuild.net@(sharingLink)&title=@(sharingTitle)" target="_blank" title="Submit to Reddit"><img alt="Submit to Reddit" src="/assets/img/social_flat_rounded_rects_svg/Reddit.svg"></a></li>
+  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fcakebuild.net@(sharingLink)&title=@(sharingTitle)&summary=&source=http%3A%2F%2Fcakebuild.net@(sharingLink)" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="/assets/img/social_flat_rounded_rects_svg/LinkedIn.svg"></a></li>
+  <li><a href="mailto:?subject=@(sharingTitle)&body=:%20http%3A%2F%2Fcakebuild.net@(sharingLink)" target="_blank" title="Send email"><img alt="Send email" src="/assets/img/social_flat_rounded_rects_svg/Email.svg"></a></li>
+</ul>
