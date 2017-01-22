@@ -1,7 +1,7 @@
 Settings.Host = "cakebuild.net";
 GlobalMetadata[DocsKeys.Title] = "Cake";
 GlobalMetadata[DocsKeys.SourceFiles] = "../release/repo/src/**/{!bin,!obj,!packages,!*.Tests,}/**/*.cs";
-GlobalMetadata[DocsKeys.BaseEditUrl] = "https://github.com/cake-build/website/blob/develop/src/input/";
+GlobalMetadata[DocsKeys.BaseEditUrl] = "https://github.com/cake-build/website/blob/develop/input/";
 GlobalMetadata[DocsKeys.IncludeDateInPostPath] = true;
 GlobalMetadata[DocsKeys.BlogAtomPath] = "blog/feed/atom/index.xml";
 GlobalMetadata[DocsKeys.BlogRssPath] = "blog/feed/rss/index.xml";
