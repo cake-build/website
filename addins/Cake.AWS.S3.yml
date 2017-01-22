@@ -1,0 +1,7 @@
+Name: Cake.AWS.S3
+NuGet: Cake.AWS.S3
+Repository: https://github.com/SharpeRAD/Cake.AWS.S3
+Author: SharpeRAD
+Description: "AWS S3 addin for Cake."
+Categories:
+- AWS

@@ -1,0 +1,52 @@
+Settings.Host = "cakebuild.net";
+GlobalMetadata[DocsKeys.Title] = "Cake";
+GlobalMetadata[DocsKeys.SourceFiles] = "../release/repo/src/**/{!bin,!obj,!packages,!*.Tests,}/**/*.cs";
+GlobalMetadata[DocsKeys.BaseEditUrl] = "https://github.com/cake-build/website/blob/develop/src/input/";
+GlobalMetadata[DocsKeys.IncludeDateInPostPath] = true;
+GlobalMetadata[DocsKeys.BlogAtomPath] = "blog/feed/atom/index.xml";
+GlobalMetadata[DocsKeys.BlogRssPath] = "blog/feed/rss/index.xml";
+
+Pipelines.InsertBefore(DocsPipelines.Code, "Addins",
+    ReadFiles("../addins/*.yml"),
+    Yaml()
+);
+
+Pipelines.InsertAfter("Addins", "AddinCategories",
+    GroupByMany(@doc.List<string>("Categories"),
+        Documents("Addins")
+    ),
+    Meta(Keys.WritePath, new FilePath("addins/" + @doc.String(Keys.GroupKey).ToLower().Replace(" ", "-") + "/index.html")),
+    Meta(Keys.RelativeFilePath, @doc.FilePath(Keys.WritePath)),
+    OrderBy(@doc.String(Keys.GroupKey))
+);
+
+Pipelines.InsertAfter(DocsPipelines.Api, "DslAliases",
+    GroupByMany(@doc.DocumentList(CodeAnalysisKeys.Attributes)
+        .Where(attr => attr.String(CodeAnalysisKeys.Name) == "CakeAliasCategoryAttribute")
+        .Select(attr => attr.Get<Microsoft.CodeAnalysis.AttributeData>(CodeAnalysisKeys.AttributeData).ConstructorArguments.FirstOrDefault().Value),
+        Documents(DocsPipelines.Api),
+        Where(@doc.String(CodeAnalysisKeys.Kind) == "NamedType"
+            && @doc.DocumentList(CodeAnalysisKeys.Attributes)
+                .Any(attr => attr.String(CodeAnalysisKeys.Name) == "CakeAliasCategoryAttribute")
+        )
+    ),
+    Meta(Keys.WritePath, new FilePath("dsl/" + @doc.String(Keys.GroupKey).ToLower().Replace(" ", "-") + "/index.html")),
+    Meta(Keys.RelativeFilePath, @doc.FilePath(Keys.WritePath)),
+    OrderBy(@doc.String(Keys.GroupKey))
+);
+
+Pipelines.Add("RenderAddins",
+    Documents("AddinCategories"),
+    Razor()
+        .WithLayout("/_AddinsLayout.cshtml"),
+    WriteFiles()
+);
+
+Pipelines.Add("RenderDsl",
+    Documents("DslAliases"),
+    Razor()
+        .WithLayout("/_DslLayout.cshtml"),
+    Headings(),
+    HtmlInsert("div#infobar-headings", (doc, ctx) => ctx.GenerateInfobarHeadings(doc)),
+    WriteFiles()
+);

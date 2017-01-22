@@ -1,0 +1,41 @@
+@model IEnumerable<IDocument>
+
+<p>This page contain third party addins for Cake. If you want to file an issue for any addin listed here, contact the author of the addin.</p>
+<p>If you're an addin author and want your addin listed here, follow the instructions <a href="https://github.com/cake-build/website/blob/develop/README.md#addins">here</a>.</p>
+
+@foreach(IDocument addin in Model)
+{
+    string description = @addin.String("Description");
+    string author = @addin.String("Author");
+    string nuget = @addin.String("NuGet");
+    string repository = @addin.String("repository");
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-puzzle-piece"></i> @addin.String("Name")</h3>
+        </div>
+        <div class="panel-body">
+            @if(!string.IsNullOrEmpty(description))
+            {
+                <p>@description</p>
+            }    
+            <dl class="dl-horizontal">	
+                @if(!string.IsNullOrEmpty(author))
+                {
+                    <dt>Author</dt>
+                    <dd>@author</dd>
+                }
+                @if(!string.IsNullOrEmpty(nuget))
+                {
+                    <dt>NuGet</dt>
+                    <dd><a href="https://www.nuget.org/packages/@(nuget)">@nuget</a></dd>
+                }
+                @if(!string.IsNullOrEmpty(repository))
+                {
+                    <dt>Repository</dt>
+                    <dd><a href="@(repository)">@repository</a></dd>
+                }
+            </dl>
+        </div>
+    </div>
+}

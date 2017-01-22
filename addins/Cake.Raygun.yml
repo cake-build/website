@@ -1,0 +1,9 @@
+Name: Cake.Raygun
+NuGet: Cake.Raygun
+Assemblies:
+- "/**/Cake.Raygun.dll"
+Repository: https://github.com/ghuntley/Cake.Raygun
+Author: Geoffrey Huntley
+Description: "Cake Build addin for uploading Xamarin.iOS / Objective-C debug symbols (dSYM) to Raygun.io."
+Categories:
+- Mobile

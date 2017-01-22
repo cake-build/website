@@ -1,0 +1,10 @@
+Name: Cake.Twitter
+NuGet: Cake.Twitter
+Assemblies:
+- "/**/Cake.Twitter.dll"
+Repository: https://github.com/cake-contrib/Cake.Twitter
+Author: Gary Ewan Park
+Description: "Cake Build addin for tweeting to Twitter."
+Categories:
+- Communication
+- Social Media

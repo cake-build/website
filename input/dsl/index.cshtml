@@ -1,0 +1,75 @@
+Title: Reference
+NoSidebar: false
+---
+@section Infobar {	
+	<div>
+        <h6>On This Page</h6>
+        <p><a href="#built-in">Built-In</a></p>
+        <p><a href="#addins">Addins</a></p>
+        <hr class="infobar-hidden" />
+    </div>
+}
+
+@section Sidebar {    
+    @Html.Partial("_DslSidebar")
+}
+
+<p>This reference guide describes the various methods and properties which make up the Cake build language, or DSL. If you're looking for other kind of information, check out the <a href="/api">API reference</a> or the <a href="/docs">documentation</a>.</p>
+
+<p>The DSL is made up of <a href="/docs/fundamentals/aliases">script aliases</a>, that offers specific functionality within the context of a Cake build script. A script alias is an extension method for ICakeContext.</p>
+
+@{
+    List<Tuple<string, string, IDocument, bool, bool>> categories = new List<Tuple<string, string, IDocument, bool, bool>>();        
+    foreach(IDocument group in Documents.FromPipeline("DslAliases"))
+    {
+        string summary = group
+            .DocumentList(Keys.GroupDocuments)
+            .Select(x => x.String(CodeAnalysisKeys.Summary))
+            .FirstOrDefault(x => !string.IsNullOrEmpty(x)); 
+        categories.Add(new Tuple<string, string, IDocument, bool, bool>(group.String(Keys.GroupKey), summary, group,
+            group.DocumentList(Keys.GroupDocuments).Any(y => y.Document(CodeAnalysisKeys.ContainingAssembly) == null),            
+            group.DocumentList(Keys.GroupDocuments).Any(y => y.Document(CodeAnalysisKeys.ContainingAssembly) != null)
+        ));
+    }
+}
+<h1 id="built-in">Built-In</h1>
+<div class="box">
+    <div class="box-body no-padding table-responsive">
+        <table class="table table-striped table-hover two-cols-alt">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Summary</th>
+                </tr>
+            </thead>
+            @foreach(Tuple<string, string, IDocument, bool, bool> category in categories.Where(x => x.Item4))
+            {
+                <tr>
+                    <td><a href="@Context.GetLink(category.Item3)">@category.Item1</a></td>
+                    <td>@Html.Raw(category.Item2)</td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+
+<h1 id="addins">Addins</h1>
+<div class="box">
+    <div class="box-body no-padding table-responsive">
+        <table class="table table-striped table-hover two-cols-alt">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Summary</th>
+                </tr>
+            </thead>
+            @foreach(Tuple<string, string, IDocument, bool, bool> category in categories.Where(x => x.Item5))
+            {
+                <tr>
+                    <td><a href="@Context.GetLink(category.Item3)">@category.Item1</a></td>
+                    <td>@Html.Raw(category.Item2)</td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

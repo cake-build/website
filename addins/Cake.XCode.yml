@@ -1,0 +1,9 @@
+Name: Cake.XCode
+NuGet: Cake.XCode
+Assemblies:
+- "/**/Cake.XCode.dll"
+Repository: https://github.com/Redth/Cake.XCode
+Author: Jonathan Dick
+Description: "A set of aliases for Cake to help with XCode and CocoaPods."
+Categories:
+- XCode

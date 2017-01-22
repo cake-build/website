@@ -1,0 +1,9 @@
+Name: Cake.Git
+NuGet: Cake.Git
+Assemblies:
+- "/**/Cake.Git.dll"
+Repository: https://github.com/WCOMAB/Cake_Git
+Author: WCOM AB
+Description: "Cake AddIn that extends Cake with Git aliases using LibGit2 and LibGit2Sharp."
+Categories:
+- Git

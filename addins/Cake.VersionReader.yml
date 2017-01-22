@@ -1,0 +1,9 @@
+Name: Cake.VersionReader
+NuGet: Cake.VersionReader
+Assemblies:
+- "/**/Cake.VersionReader.dll"
+Repository: https://github.com/NinetailLabs/Cake.VersionReader
+Author: NineTail Labs
+Description: "Cake Build addon to assist with reading version numbers from an assembly"
+Categories:
+- Versioning

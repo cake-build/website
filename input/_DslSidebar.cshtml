@@ -1,0 +1,24 @@
+@{
+    List<Tuple<string, IDocument, bool, bool>> categories = new List<Tuple<string, IDocument, bool, bool>>();        
+    foreach(IDocument group in Documents.FromPipeline("DslAliases"))
+    {
+        categories.Add(new Tuple<string, IDocument, bool, bool>(group.String(Keys.GroupKey), group,
+            group.DocumentList(Keys.GroupDocuments).Any(y => y.Document(CodeAnalysisKeys.ContainingAssembly) == null),
+            group.DocumentList(Keys.GroupDocuments).Any(y => y.Document(CodeAnalysisKeys.ContainingAssembly) != null)
+        ));
+    }
+}
+
+<li class="header">Built-In</li>
+@foreach(Tuple<string, IDocument, bool, bool> category in categories.Where(x => x.Item3))
+{
+    string selectedClass = category.Item1 == Model.String(Keys.GroupKey) ? "selected" : null;
+    <li class="@selectedClass"><a href="@Context.GetLink(category.Item2)">@category.Item1</a></li>        
+}
+
+<li class="header">Addins</li>
+@foreach(Tuple<string, IDocument, bool, bool> category in categories.Where(x => x.Item4))
+{
+    string selectedClass = category.Item1 == Model.String(Keys.GroupKey) ? "selected" : null;
+    <li class="@selectedClass"><a href="@Context.GetLink(category.Item2)">@category.Item1</a></li>        
+}

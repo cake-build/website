@@ -1,0 +1,98 @@
+@{
+	Layout = "/_Master.cshtml";
+	
+	ViewData[Keys.Title] = "Reference - " + Model.String(Keys.GroupKey);
+}
+
+@section Infobar {	
+	<div id="infobar-headings"></div>
+}
+
+@section Sidebar {    
+    @Html.Partial("_DslSidebar")
+}
+
+<section class="content-header">
+	<h1>@Model.String(Keys.GroupKey)</h1>
+</section>
+<section class="content">
+    @{
+        IDocument containingClass = Model
+            .DocumentList(Keys.GroupDocuments)
+            .FirstOrDefault();
+    }
+    @Html.Partial("_AddinAlert", containingClass)
+
+    @{
+        string summary = Model
+            .DocumentList(Keys.GroupDocuments)
+            .Select(x => x.String(CodeAnalysisKeys.Summary))
+            .FirstOrDefault(x => !string.IsNullOrEmpty(x)); 
+    }
+    @if(!string.IsNullOrWhiteSpace(summary))
+    {
+        <h1 id="Summary">Summary</h1>
+        <div>@Html.Raw(summary)</div>
+    }
+
+    @{
+        var aliasGroups = Model
+            .DocumentList(Keys.GroupDocuments)
+            .SelectMany(x => x.DocumentList(CodeAnalysisKeys.Members))
+            .Where(x => x.String("Kind") == "Method")
+            .Select(x => new 
+            {
+                Doc = x,
+                MethodAlias = x.DocumentList(CodeAnalysisKeys.Attributes).Any(attr => attr.String(CodeAnalysisKeys.Name) == "CakeMethodAliasAttribute"),
+                PropertyAlias = x.DocumentList(CodeAnalysisKeys.Attributes).Any(attr => attr.String(CodeAnalysisKeys.Name) == "CakePropertyAliasAttribute")
+            })
+            .Where(x => x.MethodAlias || x.PropertyAlias)
+            .GroupBy(x => x.Doc.DocumentList(CodeAnalysisKeys.Attributes)
+                .Where(attr => attr.String(CodeAnalysisKeys.Name) == "CakeAliasCategoryAttribute")
+                .Select(attr => attr.Get<Microsoft.CodeAnalysis.AttributeData>(CodeAnalysisKeys.AttributeData).ConstructorArguments.FirstOrDefault().Value)
+                .FirstOrDefault() as string ?? string.Empty)
+            .OrderBy(x => x.Key);
+    }
+
+    @foreach(var aliasGroup in aliasGroups)
+    {
+        string groupName = string.IsNullOrEmpty(aliasGroup.Key) ? "General" : aliasGroup.Key;
+        <h1 id="@(groupName.Replace(" ", "-"))">@groupName</h1>  
+        <div class="box">
+            <div class="box-body no-padding">
+                <table class="table table-striped table-hover two-cols">
+                    @foreach(var alias in aliasGroup.OrderBy(x => x.Doc.String(CodeAnalysisKeys.DisplayName)))
+                    {
+                        <tr>
+                            <td>
+                                @if(alias.MethodAlias)
+                                {
+                                    <text>@Context.GetTypeLink(alias.Doc)</text>
+                                }
+                                else
+                                {
+                                    <text>@Context.GetTypeLink(alias.Doc, alias.Doc.String("Name"))</text>
+                                }
+                            </td>
+                            <td>
+                                @Html.Raw(alias.Doc.String(CodeAnalysisKeys.Summary))
+                                @{
+                                    IDocument assemblyDoc = alias.Doc.Document(CodeAnalysisKeys.ContainingAssembly);
+                                    if(assemblyDoc != null)
+                                    {
+                                        <text>
+                                            <br/>
+                                            <small><i>Addin from @Context.GetTypeLink(assemblyDoc)</i></small>
+                                        </text>
+                                    }
+                                }
+                            </td>
+                        </tr>
+                    }
+                </table>
+            </div>
+        </div>
+    }
+    
+    @RenderBody()
+</section>

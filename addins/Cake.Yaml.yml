@@ -1,0 +1,9 @@
+Name: Cake.Yaml
+NuGet: Cake.Yaml
+Assemblies:
+- "/**/Cake.Yaml.dll"
+Repository: https://github.com/Redth/Cake.Yaml
+Author: Jonathan Dick
+Description: "A set of aliases to help with YAML Serialization"
+Categories:
+- Serialization
