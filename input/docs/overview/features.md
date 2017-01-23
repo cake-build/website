@@ -15,6 +15,7 @@ Cake uses a [dependency based programming model](http://martinfowler.com/article
   * Jenkins
   * MyGet
   * TeamCity
+  * Gitlab CI
 * AssemblyInfo patching
 * Release notes parsing
 * Unit Test Runners
