@@ -189,6 +189,7 @@ Task("Copy-Bootstrapper-Download")
     .Does(()=>
     {
         CopyDirectory("./download", outputPath.Combine("download"));
+        CopyDirectory("./download/bootstrapper", outputPath.Combine("bootstrapper"));
     });
 
 Task("Deploy")
