@@ -85,10 +85,14 @@ Task("GetSource")
     .Does(() =>
     {
         GitHubClient github = new GitHubClient(new ProductHeaderValue("CakeDocs"));
-	    // The GitHub releases API returns Not Found if all are pre-release, so need workaround below
+        if (!string.IsNullOrEmpty(accessToken))
+        {
+            github.Credentials = new Credentials(accessToken);
+        }
+        // The GitHub releases API returns Not Found if all are pre-release, so need workaround below
         //Release release = github.Repository.Release.GetLatest("cake-build", "cake").Result;
-	    Release release = github.Repository.Release.GetAll("cake-build", "cake").Result.First();
-	    FilePath releaseZip = DownloadFile(release.ZipballUrl);
+        Release release = github.Repository.Release.GetAll("cake-build", "cake").Result.First();
+        FilePath releaseZip = DownloadFile(release.ZipballUrl);
         Unzip(releaseZip, releaseDir);
 
         // Need to rename the container directory in the zip file to something consistent
