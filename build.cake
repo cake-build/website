@@ -156,7 +156,7 @@ Task("Build")
             Recipe = "Docs",
             Theme = "Samson",
             UpdatePackages = true,
-            GlobalMetadata = new Dictionary<string, object>
+            Settings = new Dictionary<string, object>
             {
                 { "AssemblyFiles",  addinSpecs.Where(x => x.Assemblies != null).SelectMany(x => x.Assemblies).Select(x => "../release/addins" + x) }
             }
@@ -174,7 +174,7 @@ Task("Preview")
             Theme = "Samson",
             UpdatePackages = true,
             Preview = true,
-            GlobalMetadata = new Dictionary<string, object>
+            Settings = new Dictionary<string, object>
             {
                 { "AssemblyFiles",  addinSpecs.Where(x => x.Assemblies != null).SelectMany(x => x.Assemblies).Select(x => "../release/addins" + x) }
             }
