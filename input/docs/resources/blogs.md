@@ -2,6 +2,20 @@ Order: 40
 Title: Blog Posts
 ---
 
+# 2017 
+
+## Alistair Chapman
+
+* [Using Cake with VSTS or TFS](https://blog.agchapman.com/using-cake-with-vsts-or-tfs/)
+
+## Muhammad Rehan Saeed
+
+* [Cross-Platform DevOps for .NET Core](http://rehansaeed.com/cross-platform-devops-net-core/)
+
+## Stackify
+
+* [How we use Cake to build .NET Core apps and version assemblies](https://stackify.com/how-we-use-cake-to-build-net-core-apps/)
+
 # 2016
 
 ## miso_soup3
