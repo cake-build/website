@@ -26,3 +26,9 @@
 ## Luís Gonçalves
 
 * [Comunidade NetPonto Lisboa](https://luisfsgoncalves.files.wordpress.com/2016/11/cake.pdf) ([video](https://www.youtube.com/watch?v=NdKNmtf9nIU) (PT))
+
+#2017
+
+## Pedro Marques
+
+* [A Piece of cake](https://slides.com/pitermarx/cake/)
