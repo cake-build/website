@@ -1,7 +1,7 @@
 Name: Cake.MicrosoftTeams
 NuGet: Cake.MicrosoftTeams
 Assemblies:
-- "Cake.MicrosoftTeams.dll"
+- "/**/Cake.MicrosoftTeams.dll"
 Repository: https://github.com/cake-contrib/Cake.MicrosoftTeams
 Author: WCOMAB
 Description: "Cake Addin that extends Cake with Microsoft Teams messaging capabilities"
