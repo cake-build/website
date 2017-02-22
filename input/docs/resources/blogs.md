@@ -4,6 +4,10 @@ Title: Blog Posts
 
 # 2017
 
+## Mattias Karlsson
+
+* [Bringing Cake to Microsoft Teams](https://medium.com/@devlead/bringing-cake-to-microsoft-teams-b49848981d5d)
+
 ## Manuel Blanquett
 
 * [Creating a distributable deployment host with Cake](https://blanquett.net/2017/02/18/octocake/)
