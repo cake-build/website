@@ -4,6 +4,10 @@ Title: Blog Posts
 
 # 2017
 
+## Jamie Phillips
+
+* [Cake: One way to SFTP](http://www.phillipsj.net/posts/cake-one-way-to-sftp?platform=hootsuite)
+
 ## Mattias Karlsson
 
 * [Bringing Cake to Microsoft Teams](https://medium.com/@devlead/bringing-cake-to-microsoft-teams-b49848981d5d)
