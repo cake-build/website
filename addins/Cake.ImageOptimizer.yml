@@ -1,0 +1,11 @@
+Name: Cake.ImageOptimizer
+NuGet: Cake.ImageOptimizer
+Assemblies:
+- "/**/Cake.AWS.ImageOptimizer.dll"
+Repository: https://github.com/SharpeRAD/Cake.ImageOptimizer
+Author: SharpeRAD
+Description: "Cake addin for bulk optimizing images"
+Categories:
+- Images
+- Deployment
+- CDN
