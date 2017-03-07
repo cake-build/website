@@ -1,0 +1,10 @@
+Name: Cake.SqlTools
+NuGet: Cake.SqlTools
+Assemblies:
+- "/**/Cake.SqlTools.dll"
+Repository: https://github.com/SharpeRAD/Cake.SqlTools
+Author: SharpeRAD
+Description: "Cake Build addin for executing sql scripts against a database"
+Categories:
+- Sql
+- Database

@@ -6,4 +6,5 @@ Repository: https://github.com/AMVSoftware/Cake.SqlServer
 Author: Max Vasilyev
 Description: "Cake build aliases for manipulating SQL Server databases and executing inline SQL and script files."
 Categories:
-- SqlServer
+- Sql
+- Database
