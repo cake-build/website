@@ -4,6 +4,11 @@ Title: Blog Posts
 
 # 2017
 
+## Mattias Karlsson
+
+* [Delivering Functions with Cake](https://medium.com/@devlead/delivering-functions-with-cake-4b269c50f817)
+* [Bringing Cake to Microsoft Teams](https://medium.com/@devlead/bringing-cake-to-microsoft-teams-b49848981d5d)
+
 ## Jamie Phillips
 
 * [Cake: One way to SFTP](http://www.phillipsj.net/posts/cake-one-way-to-sftp?platform=hootsuite)
@@ -11,10 +16,6 @@ Title: Blog Posts
 ## Software Architekt
 
 * [How to use #nopcommerce with #cakebuildnet. It's awesome, It's easy!](https://www.software-architekt.ch/blog/webdeploy-package-erstellen-mit-cakebuild) **NOTE:** Written in German
-
-## Mattias Karlsson
-
-* [Bringing Cake to Microsoft Teams](https://medium.com/@devlead/bringing-cake-to-microsoft-teams-b49848981d5d)
 
 ## Manuel Blanquett
 
