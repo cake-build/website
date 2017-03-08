@@ -9,7 +9,7 @@ they are discovered by your build script.
 ## Via bootstrapper
 
 The recommended way of using Cake is by using the bootstrapper script which you can
-read more about in the [Setting up a new project](docs://tutorials/setting-up-a-new-project).  
+read more about in the [Setting up a new project](/docs/tutorials/setting-up-a-new-project).  
 
 When using the bootstrapper script you can simply add the NuGet package to the 
 `packages.config` file in the `tools` directory.
@@ -26,10 +26,10 @@ as part of executing your build script, simply use the `#tool` directive.
 #tool "xunit.runner.console"
 ```
 
-For more information see [preprocessor directives](docs://fundamentals/preprocessor-directives)
+For more information see [preprocessor directives](/docs/fundamentals/preprocessor-directives)
 
 # From disk
 
 If you want to install a tool that's not available via NuGet or if you prefer to store 
 the tool locally, you want to take a look at the 
-[tool resolution conventions](docs://tools/tool-resolution).
+[tool resolution conventions](/docs/tools/tool-resolution).
