@@ -7,7 +7,7 @@ Cake uses a combination of standard [C# XML Documentation Comments](https://msdn
 
 ## Classes
 
-Classes purpose are documented with a [summary](https://msdn.microsoft.com/en-us/library/2d6dt3kf.aspx) tag and categorized using [CakeAliasCategoryAttribute ](http://cakebuild.net/api/cake.core.annotations/ffb6caa8) attribute.
+Classes purpose are documented with a [summary](https://msdn.microsoft.com/en-us/library/2d6dt3kf.aspx) tag and categorized using [CakeAliasCategoryAttribute ](http://cakebuild.net/api/cake.core.annotations/cakealiascategoryattribute/) attribute.
 ```csharp
 /// <summary>
 /// Contains functionality for working with GitReleaseManager.
