@@ -1,0 +1,10 @@
+Name: Cake.Terraform
+NuGet: Cake.Terraform
+Assemblies:
+- "/**/Cake.Terraform.dll"
+Repository: https://github.com/erikvanbrakel/Cake.Terraform
+Author: Erik van Brakel
+Description: "Cake addin for working with Terraform"
+Categories:
+- Terraform
+- Infrastructure as Code
