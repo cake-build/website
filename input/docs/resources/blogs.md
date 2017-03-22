@@ -11,7 +11,16 @@ Title: Blog Posts
 
 ## Jamie Phillips
 
+* [Cake: Developing Addins Part 1](http://www.phillipsj.net/posts/cake-developing-addins-part-1)
+* [Cake: Developing Addins Part 2](http://www.phillipsj.net/posts/cake-developing-addins-part-2)
+* [Cake: Developing Addins Part 3](http://www.phillipsj.net/posts/cake-developing-addins-part-3)
+* [Cake: Developing Addins Part 4](http://www.phillipsj.net/posts/cake-developing-addins-part-4)
+* [Hudson Bay Start for Projects](http://www.phillipsj.net/posts/hudson-bay-start-for-projects)
+* [Cake: Developing Addins Part 5](http://www.phillipsj.net/posts/cake-developing-addins-part-5)
+* [Cake Crumbs of the Week](http://www.phillipsj.net/posts/cake-crumbs-of-the-week)
 * [Cake: One way to SFTP](http://www.phillipsj.net/posts/cake-one-way-to-sftp?platform=hootsuite)
+* [Cake Crumbs of the Week #2](http://www.phillipsj.net/posts/cake-crumbs-of-the-week-second-edition)
+* [Cake Crumbs of the Week #3](http://www.phillipsj.net/posts/cake-crumbs-of-the-week-third-edition)
 
 ## Software Architekt
 
@@ -47,6 +56,11 @@ Title: Blog Posts
 
 * [Let them use CAKE](http://cburbidge.github.io/let-them-use-cake/)
 
+## tpodolak
+
+* [Debugging Cake Scripts](https://tpodolak.com/blog/2016/07/10/debugging-cake-scripts/)
+* [Cake - Data at the root level is invalid](https://tpodolak.com/blog/2016/09/08/cake-data-root-level-invalid/)
+
 ## Max Vasilyev
 
 * [VSTS vs NuGet vs CakeBuild – again!](http://tech.trailmax.info/2017/01/vsts-vs-nuget-vs-cakebuild-again/)
@@ -61,10 +75,14 @@ Title: Blog Posts
 
 ## Jamie Phillips
 
+* [XML Docs for Cake Addins](http://www.phillipsj.net/posts/xml-docs-for-cake-addins)
+* [Shockingly Sweet: Electron and Cake](http://www.phillipsj.net/posts/shockingly-sweet-electron-and-cake)
 * [Cake: Automating an existing project](http://www.phillipsj.net/2016/07/24/Cake-Automating-an-existing-project/)
 * [Using C# 6 features in Cake](http://www.phillipsj.net/2016/07/25/Using-C-6-features-in-Cake/)
 * [Cake: Creating your first addin](http://www.phillipsj.net/2016/07/31/Cake-Creating-your-first-addin/)
 * [Cake: Unit testing addins](http://www.phillipsj.net/2016/08/07/Cake-Unit-testing-addins/)
+* [Cake.AppPackager](http://www.phillipsj.net/posts/cake-apppackager)
+* [Announcing Cake.Ftp](http://www.phillipsj.net/posts/announcing-cake-ftp)
 
 ## Derek Comartin
 
@@ -84,3 +102,11 @@ Title: Blog Posts
 ## Chris Missal
 
 * [Who Wants Cake?!](https://lostechies.com/chrismissal/2015/07/22/who-wants-cake/)
+
+## Jamie Phillips
+
+* [Builds are better with Cake](http://www.phillipsj.net/posts/builds-are-better-with-cake)
+* [Cake.XdtTransform](http://www.phillipsj.net/posts/cake-xdttransform)
+* [Web Compiler with a side of Cake](http://www.phillipsj.net/posts/web-compiler-with-a-side-of-cake)
+* [I like surprises, especically when Cake is involved](http://www.phillipsj.net/posts/i-like-surprises-especially-when-cake-is-involved)
+* [Cake.Squirrel](http://www.phillipsj.net/posts/cake-squirrel)
