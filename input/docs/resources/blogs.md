@@ -56,6 +56,11 @@ Title: Blog Posts
 
 * [Let them use CAKE](http://cburbidge.github.io/let-them-use-cake/)
 
+## tpodolak
+
+* [Debugging Cake Scripts](https://tpodolak.com/blog/2016/07/10/debugging-cake-scripts/)
+* [Cake - Data at the root level is invalid](https://tpodolak.com/blog/2016/09/08/cake-data-root-level-invalid/)
+
 ## Max Vasilyev
 
 * [VSTS vs NuGet vs CakeBuild – again!](http://tech.trailmax.info/2017/01/vsts-vs-nuget-vs-cakebuild-again/)
