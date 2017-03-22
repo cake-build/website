@@ -35,3 +35,7 @@ By default, the Cake build step (when added to a build) will try to run the `bui
 
 For those who are already using Cake making use of the [Bootstrapper file](http://cakebuild.net/docs/tutorials/setting-up-a-new-project), this is not called when using the VSO task.
 To use the bootstrapper file you should add a "PowerShell" or "Shell Script" task instead.
+
+## Notes about Variables
+
+Environment Variables which are marked secret in VSTS, cannot be resolved using `EnvironmentVariable()` in a Cake script. Instead they can be passed as arguments to the build script. You can read more about this limitation in the [Visual Studio documentation under the Secret Variables section](https://www.visualstudio.com/en-us/docs/build/define/variables#SecretVariables).
