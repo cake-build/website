@@ -16,7 +16,7 @@ otherwise you will run into issues when attempting to execute Cake.
 ## Files of interest
 
 You need three files for a build (these will be the only files you need to 
-commit to your repo to use Cake):
+commit to your repo to use Cake, see how to [pinning cake version](http://cakebuild.net/docs/tutorials/extending-the-bootstrapper) for further guidance.):
 
 <ul class="fa-ul" style="padding-left: 0px; padding-top: 10px;">
     <li style="padding-left: 0px">
