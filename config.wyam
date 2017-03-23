@@ -1,3 +1,5 @@
+ContentStreamFactory = new MemoryContentStreamFactory();
+
 Settings[Keys.Host] = "cakebuild.net";
 Settings[DocsKeys.Title] = "Cake";
 Settings[DocsKeys.Logo] = "/assets/img/logo.png";
