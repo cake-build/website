@@ -7,3 +7,4 @@ Author: BBT Software AG
 Description: "The Inspect Code support for the Pull Request Code Analysis Addin for Cake allows you to write any issues logged by JetBrains Inspect Code as comments to a pull request."
 Categories:
 - Pull Request Code Analysis
+- InspectCode

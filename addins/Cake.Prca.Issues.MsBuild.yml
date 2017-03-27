@@ -7,3 +7,4 @@ Author: BBT Software AG
 Description: "The MsBuild support for the Pull Request Code Analysis Addin for Cake allows you to write any issues logged as warnings in a MsBuild log as comments to a pull request."
 Categories:
 - Pull Request Code Analysis
+- MSBuild
