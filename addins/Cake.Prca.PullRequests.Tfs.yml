@@ -7,3 +7,5 @@ Author: BBT Software AG
 Description: "The TFS / VSTS support for the Pull Request Code Analysis Addin for Cake allows you to write found issues as comments to Team Foundation Server or Visual Studio Team Services pull requests."
 Categories:
 - Pull Request Code Analysis
+- VSTS
+- TFS
