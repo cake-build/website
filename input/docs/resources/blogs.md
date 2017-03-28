@@ -21,6 +21,7 @@ Title: Blog Posts
 * [Cake: One way to SFTP](http://www.phillipsj.net/posts/cake-one-way-to-sftp?platform=hootsuite)
 * [Cake Crumbs of the Week #2](http://www.phillipsj.net/posts/cake-crumbs-of-the-week-second-edition)
 * [Cake Crumbs of the Week #3](http://www.phillipsj.net/posts/cake-crumbs-of-the-week-third-edition)
+* [Cake: A recipe for success](http://www.phillipsj.net/posts/cake-a-recipe-for-success)
 
 ## Software Architekt
 
