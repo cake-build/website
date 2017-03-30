@@ -93,7 +93,7 @@ If you know you would like to find the directory for a specific product you can 
 
 DirectoryPath buildToolsInstallation  = VSWhereProducts("Microsoft.VisualStudio.Product.BuildTools").FirstOrDefault();
 
-if(buildToolsInstallation == null)
+if(buildToolsInstallation != null)
 {
     MSBuild("./src/Example.sln", new MSBuildSettings {
         ToolPath = buildToolsInstallation.CombineWithFilePath("./MSBuild/15.0/Bin/amd64/MSBuild.exe")
@@ -110,7 +110,7 @@ If you know you need the build tools installation with a specific component or w
 DirectoryPath buildToolsInstallation  = VSWhereProducts("Microsoft.VisualStudio.Product.BuildTools",
                                             new VSWhereLatestSettings { Requires = "Microsoft.VisualStudio.Workload.ManagedDesktop"}).FirstOrDefault();
 
-if(buildToolsInstallation == null)
+if(buildToolsInstallation != null)
 {
     MSBuild("./src/Example.sln", new MSBuildSettings {
         ToolPath = buildToolsInstallation.CombineWithFilePath("./MSBuild/15.0/Bin/amd64/MSBuild.exe")
