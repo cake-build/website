@@ -6,7 +6,7 @@ author: phillipsj
 
 Since version 0.18.0 of Cake, there has been support created for Visual Studio 2017. The support was added to the MSBuild tool to search for the default installation locations of the various flavors of MSBuild. The default locations did not require an external dependency on the [Microsoft.VisualStudio.Setup.Configuration.Interop](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) package that was created by Microsoft to help locate Visual Studio 2017 installations.
 
-Shortly after the release of version 0.18.0, Microsoft released a tool called [vshwere](https://github.com/Microsoft/vswhere) to help locate Visual Studio and other products in the family. This tool was released with Cake version 0.19.1 to allow everyone that moved to Visual Studio 2017 to get their builds up and running.
+Shortly after the release of version 0.18.0, Microsoft released a tool called [vswhere](https://github.com/Microsoft/vswhere) to help locate Visual Studio and other products in the family. This tool was released with Cake version 0.19.1 to allow everyone that moved to Visual Studio 2017 to get their builds up and running.
 
 This post is going to walk through the different pieces of functionality supported by the [VSWhere tool](http://cakebuild.net/dsl/vswhere/).
 
