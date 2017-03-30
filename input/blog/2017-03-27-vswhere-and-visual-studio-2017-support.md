@@ -10,6 +10,8 @@ Shortly after the release of version 0.18.0, Microsoft released a tool called [v
 
 This post is going to walk through the different pieces of functionality supported by the [VSWhere tool](http://cakebuild.net/dsl/vswhere/).
 
+<!--excerpt-->
+
 ## Getting Started
 
 VSWhere is available on [NuGet](https://www.nuget.org/packages/vswhere/) (and [Chocolatey](https://chocolatey.org/packages/vswhere)) which means you can fetch it using the tool pre-processor directive like this:
@@ -17,8 +19,6 @@ VSWhere is available on [NuGet](https://www.nuget.org/packages/vswhere/) (and [C
 ```csharp
 #tool nuget:?package=vswhere
 ```
-
-
 
 ## Getting the **Latest** installation
 
@@ -40,7 +40,7 @@ MSBuild("./src/Example.sln", new MSBuildSettings {
 
 If you are looking for the latest installation that supports a specific, optional component, like the .NET Framework (desktop) workload you would specify that in the *Requires* property in the settings.
 
-:::{.alert .alert-info} To find a comprehensive list of components, please see the Microsoft Documentation [here](https://docs.microsoft.com/en-us/visualstudio/install/workload-and-component-ids) :::
+To find a comprehensive list of components, please see the Microsoft Documentation [here](https://docs.microsoft.com/en-us/visualstudio/install/workload-and-component-ids)
 
 ```csharp
 #tool nuget:?package=vswhere
