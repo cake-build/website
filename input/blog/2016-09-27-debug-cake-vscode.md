@@ -19,7 +19,9 @@ In order to enable debugging of a Cake file using Visual Studio Code, follow the
 1. Set up .NET Core debugger in Visual Studio Code. See [http://aka.ms/vscclrdebugger](http://aka.ms/vscclrdebugger) for details
 1. Open the directory containing your Cake files in Visual Studio Code 
 1. Create file `.vscode/launch.json` and add the following content (assuming your Cake file is `build.cake`)
-<br/><pre><code class="json">{
+
+```json
+{
         "version": "0.2.0",
         "configurations": [
             {
@@ -37,7 +39,8 @@ In order to enable debugging of a Cake file using Visual Studio Code, follow the
                 "externalConsole": false
             }
         ]
-}</code></pre>
+}
+```
 1. Open your Cake file and add a breakpoint by hitting `F9`
 1. Hit `F5` to start debugging
 <br/>![Debugging](/assets/img/debugging-cake-file-vscode/debugging.png)
@@ -47,12 +50,14 @@ In order to enable debugging of a Cake file using Visual Studio Code, follow the
 Another way to enable debugging of a Cake script is to start Cake from the commandline and then attach the debugger from within Visual Studio Code. This can be done using the following steps:
 
 1. Add the following `configuration` to the `.vscode/launch.json` file that you created in the previous steps
-<br/><pre><code class="json">{
+```json
+{
         "name": ".NET Core Attach",
         "type": "coreclr",
         "request": "attach",
         "processId": "${command.pickProcess}"
-}</code></pre>
+}
+```
 1. Open your Cake file and add a breakpoint by hitting `F9`
 1. Select the `configuration` you added in the previous step
 <br/>![Select config](/assets/img/debugging-cake-file-vscode/select_config.png)
