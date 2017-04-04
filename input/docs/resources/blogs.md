@@ -43,6 +43,10 @@ Title: Blog Posts
 
 * [How we use Cake to build .NET Core apps and version assemblies](https://stackify.com/how-we-use-cake-to-build-net-core-apps/)
 
+## Dave Glick
+
+* [Publishing To Azure Using Cake And Web Deploy](https://daveaglick.com/posts/publishing-to-azure-using-cake-and-web-deploy)
+
 # 2016
 
 ## miso_soup3
