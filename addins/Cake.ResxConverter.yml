@@ -4,7 +4,7 @@ Assemblies:
 - "/**/ResxConverter.Core.dll"
 - "/**/ResxConverter.Mobile.dll"
 - "/**/Cake.ResxConverter.dll"
-Repository: hhttps://github.com/cake-contrib/Cake.ResxConverter
+Repository: https://github.com/cake-contrib/Cake.ResxConverter
 Author: jzeferino, Luís Gonçalves
 Description: "ResxConverter is a tool that helps convert Resx files to any format."
 Categories:
