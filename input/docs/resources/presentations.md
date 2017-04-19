@@ -3,6 +3,10 @@
 
 # 2017
 
+## Igor Fesenko
+
+* [Cake (C# Make)](https://doc.co/vJ7Jr4)([Demo Code](https://github.com/Ky7m/DemoCode/tree/master/CakeBuild))
+
 ## Pedro Marques
 
 * [A Piece of cake](https://slides.com/pitermarx/cake/)
