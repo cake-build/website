@@ -4,6 +4,10 @@ Title: Blog Posts
 
 # 2017
 
+## Jürgen Gutsch
+
+* [A first glimpse into CAKE](http://asp.net-hacker.rocks/2017/04/20/trying-cake.html)
+
 ## Mattias Karlsson
 
 * [Delivering Functions with Cake](https://medium.com/@devlead/delivering-functions-with-cake-4b269c50f817)
