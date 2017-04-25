@@ -11,7 +11,7 @@ Cake supports the concept of external configuration, to allow the internals of h
 
 ## Where can this configuration be applied?
 
-As an example of where this overridable configuration can be applied, let's look at how Cake determines where the required Roslyn assemblies (which Cake requires in order to function) are downloaded from.  By default, it does this by downloading the nuget packages from the following URL `https://packages.nuget.org/api/v2`.  However, it may be necessary (for example, when running in an offline/local environment) to download these nuget packaages from an alternative source.  This is where the Cake Configuration comes into play.
+As an example of where this overridable configuration can be applied, let's look at how Cake determines where the required Roslyn assemblies (which Cake requires in order to function) are downloaded from.  By default, it does this by downloading the nuget packages from the following URL `https://packages.nuget.org/api/v2`.  However, it may be necessary (for example, when running in an offline/local environment) to download these nuget packages from an alternative source.  This is where the Cake Configuration comes into play.
 
 By creating an Environment variable with the name of `CAKE_ROSLYN_NUGETSOURCE` and setting the value to the URL that is required, Cake will use this alternative download source, rather than the default.
 
