@@ -4,6 +4,10 @@ Title: Blog Posts
 
 # 2017
 
+## Henning Støverud
+
+* [Publish xUnit test results in VSTS using Cake](http://blog.stoverud.no/posts/publish-xunit-test-results-in-vsts/)
+
 ## Jürgen Gutsch
 
 * [A first glimpse into CAKE](http://asp.net-hacker.rocks/2017/04/20/trying-cake.html)
@@ -37,6 +41,7 @@ Title: Blog Posts
 
 ## Alistair Chapman
 
+* [Introducing the Cake Build Systems Module](https://blog.agchapman.com/introducing-the-cake-build-systems-module)
 * [Using Cake with VSTS or TFS](https://blog.agchapman.com/using-cake-with-vsts-or-tfs/)
 
 ## Muhammad Rehan Saeed
