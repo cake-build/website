@@ -41,6 +41,7 @@ Title: Blog Posts
 
 ## Alistair Chapman
 
+* [Introducing the Cake DNF Module](https://blog.agchapman.com/introducing-the-cake-dnf-module/)
 * [Introducing the Cake Build Systems Module](https://blog.agchapman.com/introducing-the-cake-build-systems-module)
 * [Using Cake with VSTS or TFS](https://blog.agchapman.com/using-cake-with-vsts-or-tfs/)
 
