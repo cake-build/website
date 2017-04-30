@@ -17,4 +17,4 @@ Since that, we´ve continued working on the `Cake` plugin for `OmniSharp`. We've
 
 We got it _mostly_ working and I'm pretty confident when saying _Intellisense will happen during 2017_. We still have lots of work to do, but both we and the OmniSharp team are working hard to make this happen. At this point I would like to thank the Cake Team for letting me in on this journey. OmniSharp team (especially [David Driscoll](https://github.com/david-driscoll) and [Dustin Campbell](https://github.com/DustinCampbell)) for all the hard work and support. Last but not least I'd like to thank [Richard Simpson](https://github.com/RichiCoder1) for his work on [paving the way](https://github.com/OmniSharp/omnisharp-roslyn/issues/208) for OmniSharp plugins.
 
-<script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
