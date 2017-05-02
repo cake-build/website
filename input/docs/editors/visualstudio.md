@@ -4,7 +4,7 @@ Title: Visual Studio
 
 # Syntax Highlighting
 
-Syntax highlighting and Code snippets for .cake files are provided by the **Cake for Visual Studio** extension available from the [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/). 
+Syntax highlighting and Code snippets for .cake files are provided by the **Cake for Visual Studio** extension available from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1392591.CakeforVisualStudio).
 
 # Intellisense
 
