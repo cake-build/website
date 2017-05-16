@@ -4,7 +4,6 @@ init:
 
 # Build script
 build_script:
-  - cmd: ping api.nuget.org
   - ps: .\build.ps1 -Target "AppVeyor"
 
 # Tests
@@ -21,6 +20,3 @@ branches:
   only:
     - develop
     - master
-
-hosts:
-  api.nuget.org: 93.184.221.200
