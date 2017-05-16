@@ -20,3 +20,6 @@ branches:
   only:
     - develop
     - master
+
+hosts:
+  api.nuget.org: 93.184.221.200
