@@ -24,15 +24,15 @@ Setup will only be called if a call to `RunTarget` is made and the dependency gr
 You can also use `TaskSetup` and `TaskTeardown` if you want to do something before and after each task is run. A use case for this might be when you need to use custom logging for each task executed
 
 ```csharp
-TaskSetup((context, task) =>
+TaskSetup(setupContext =>
 {
-    var message = string.Format("Task: {0}", task.Task.Name);
+    var message = string.Format("Task: {0}", setupContext.Task.Name);
     // custom logging
 });
 
-TaskTeardown((context, task) =>
+TaskTeardown(teardownContext =>
 {
-    var message = string.Format("Task: {0}", task.Task.Name);
+    var message = string.Format("Task: {0}", teardownContext.Task.Name);
     // custom logging
 });
 
