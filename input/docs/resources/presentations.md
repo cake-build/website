@@ -5,7 +5,7 @@
 
 ## Igor Fesenko
 
-* [Cake (C# Make)](https://1drv.ms/p/s!AmdJq1kgIxHUjuNogknwMLZZSQmfiA)([Demo Code](https://github.com/Ky7m/DemoCode/tree/master/CakeBuild))
+* [Cake (C# Make)](https://www.slideshare.net/ssuser8ad51a/cake-c-make-77085334)([Demo Code](https://github.com/Ky7m/DemoCode/tree/master/CakeBuild))
 
 ## Pedro Marques
 
