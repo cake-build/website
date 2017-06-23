@@ -59,8 +59,8 @@ public static class MyCakeExtension
 }
 ```
 
-=======
 #### Importing Namespaces
+
 Your script alias may need to import one or more namespaces into your Cake script.  Cake supports the automatic import of namespaces with attributes.
 
 The [CakeNamespaceImportAttribute](/api/Cake.Core.Annotations/CakeNamespaceImportAttribute) can be applied at the method, class, or assembly level, or any combination thereof.
