@@ -17,3 +17,5 @@ To help with this false association, and also as a means to highlight the amazin
 Going forward, we will be encouraging all Cake Community Maintainers to use this icon whenever they are creating addins, modules, extensions, etc for Cake.  If you want to grab the icon, you can find various formats and sizes in the Cake Contrib [graphics repository](https://github.com/cake-contrib/graphics).
 
 Please do let us know what you think about the new icon, or if you have any questions.
+
+We are very grateful to [Mikael Brassman](https://twitter.com/spoike) for creating the icon for us.
