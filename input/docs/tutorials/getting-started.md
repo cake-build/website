@@ -20,13 +20,13 @@ commit to your repo to use Cake, see how to [pinning cake version](/docs/tutoria
 
 <ul class="fa-ul" style="padding-left: 0px; padding-top: 10px;">
     <li style="padding-left: 0px">
-        <i class="fa-li fa fa-file-o"></i><b>build.ps1</b>
+        <i class="fa-li fa fa-file-o"></i><b>build.ps1 and build.sh</b>
         <ul style="padding-left: 0px; list-style-type: none;">
             <li style="padding-left: 3px; margin-top: 5px;">
-                This is a bootstrapper powershell script that ensures you have
+                These is a bootstrapper scripts that ensures you have
                 Cake and required dependencies installed. The bootstrapper
-                script is also responsible for invoking Cake.  This file is optional,
-                and not a hard requirement.  If you would prefer not to use PowerShell
+                scripts are also responsible for invoking Cake. These files are optional,
+                and not a hard requirement.  If you would prefer not to use these shell scripts
                 you can invoke Cake directly from the command line, once you have downloaded
                 and extracted it.
             </li>
