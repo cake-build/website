@@ -25,7 +25,7 @@ commit to your repo to use Cake, see how to [pinning cake version](/docs/tutoria
             <li style="padding-left: 3px; margin-top: 5px;">
                 These is a bootstrapper scripts that ensures you have
                 Cake and required dependencies installed. The bootstrapper
-                scripts are also responsible for invoking Cake.  These file is optional,
+                scripts are also responsible for invoking Cake. These files are optional,
                 and not a hard requirement.  If you would prefer not to use these shell scripts
                 you can invoke Cake directly from the command line, once you have downloaded
                 and extracted it.
