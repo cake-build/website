@@ -23,10 +23,10 @@ commit to your repo to use Cake, see how to [pinning cake version](/docs/tutoria
         <i class="fa-li fa fa-file-o"></i><b>build.ps1 and build.sh</b>
         <ul style="padding-left: 0px; list-style-type: none;">
             <li style="padding-left: 3px; margin-top: 5px;">
-                These is a bootstrapper scripts that ensures you have
-                Cake and required dependencies installed. The bootstrapper
+                These are bootstrapper scripts that ensure you have
+                Cake and other required dependencies installed. The bootstrapper
                 scripts are also responsible for invoking Cake. These files are optional,
-                and not a hard requirement.  If you would prefer not to use these shell scripts
+                and not a hard requirement.  If you would prefer not to use these scripts
                 you can invoke Cake directly from the command line, once you have downloaded
                 and extracted it.
             </li>
