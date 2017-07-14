@@ -14,6 +14,7 @@ Title: Blog Posts
 
 ## Mattias Karlsson
 
+* [Dispelling the magic! - The layers and pieces of Cake](https://hackernoon.com/dispelling-the-magic-6dc0fdfe476c)
 * [Delivering Functions with Cake](https://medium.com/@devlead/delivering-functions-with-cake-4b269c50f817)
 * [Bringing Cake to Microsoft Teams](https://medium.com/@devlead/bringing-cake-to-microsoft-teams-b49848981d5d)
 
