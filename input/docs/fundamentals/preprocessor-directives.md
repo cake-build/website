@@ -67,12 +67,14 @@ The tool directive installs external command-line tools using NuGet.
 ## Usage
 The directive takes a single package URI parameter
 Right now, only NuGet packages are supported.
+Specify the `include` parameter if the executable does not end with .exe
 
 ```csharp
 #tool nuget:?package=Cake.Foo
 #tool nuget:?package=Cake.Foo&version=1.2.3
 #tool nuget:?package=Cake.Foo&prerelease
 #tool nuget:https://myget.org/f/Cake/?package=Cake.Foo&prerelease
+#tool nuget:?package=Cake.Foo&include=path/to/foo.cmd
 ```
 
 # Shebang directive
