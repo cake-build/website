@@ -11,3 +11,9 @@ Full details on how to install an extension for VS Code can be found [here](http
 # Intellisense
 
 There is currently no support for Intellisense in .cake files within Visual Studio Code.
+
+# Resource Video
+
+There is a short introductory video showing off the features of the Visual Studio Code Extension for Cake here:
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/zzZuysl3xSg" frameborder="0" allowfullscreen></iframe>
