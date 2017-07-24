@@ -7,7 +7,8 @@ Cake uses a combination of standard [C# XML Documentation Comments](https://msdn
 
 ## Classes
 
-Classes purpose are documented with a [summary](https://msdn.microsoft.com/en-us/library/2d6dt3kf.aspx) tag and categorized using [CakeAliasCategoryAttribute ](http://cakebuild.net/api/cake.core.annotations/cakealiascategoryattribute/) attribute.
+Classes purpose are documented with a [summary](https://msdn.microsoft.com/en-us/library/2d6dt3kf.aspx) tag and categorized using [CakeAliasCategoryAttribute](http://cakebuild.net/api/cake.core.annotations/cakealiascategoryattribute/) attribute.
+
 ```csharp
 /// <summary>
 /// Contains functionality for working with GitReleaseManager.
@@ -19,7 +20,7 @@ public static class GitReleaseManagerAliases
 
 ## Methods
 
-Methods purpose are documented with a [summary](https://msdn.microsoft.com/en-us/library/2d6dt3kf.aspx) tag, parameters with the [param](https://msdn.microsoft.com/en-us/library/8cw818w8.aspx) tag, if it returns somethings it's you use the [returns](https://msdn.microsoft.com/en-us/library/4dcfdeds.aspx) tag and categorized using [CakeAliasCategoryAttribute ](http://cakebuild.net/api/cake.core.annotations/ffb6caa8) attribute.
+Methods purpose are documented with a [summary](https://msdn.microsoft.com/en-us/library/2d6dt3kf.aspx) tag, parameters with the [param](https://msdn.microsoft.com/en-us/library/8cw818w8.aspx) tag, if it returns somethings it's you use the [returns](https://msdn.microsoft.com/en-us/library/4dcfdeds.aspx) tag and categorized using [CakeAliasCategoryAttribute](http://cakebuild.net/api/cake.core.annotations/ffb6caa8) attribute.
 
 Example usage is documented using the [example](https://msdn.microsoft.com/en-us/library/9w4cf933.aspx) tag and [code](https://msdn.microsoft.com/en-us/library/f8hahtxf.aspx) tag for code.
 
@@ -57,6 +58,7 @@ public bool Prerelease { get; set; }
 ```
 
 ## Namespaces
+
 Namespaces aren't documentable by default in the XML file format. Cake solves this by having an special internal class for each namespace called [NamespaceDoc](https://github.com/cake-build/cake/blob/develop/src/Cake.Common/Properties/Namespaces.cs#L12) which are documented using the [summary](https://msdn.microsoft.com/en-us/library/2d6dt3kf.aspx) tag.
 
 The convention is to place all these classes in common [Namespaces.cs](https://github.com/cake-build/cake/blob/develop/src/Cake.Common/Properties/Namespaces.cs) file per assembly.
