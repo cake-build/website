@@ -4,6 +4,16 @@ Title: Blog Posts
 
 # 2017
 
+## Geert van Horrik
+
+* [Debugging Cake add-ins using Visual Studio](http://geertvanhorrik.com/2017/08/01/debugging-cake-add-ins-using-visual-studio/)
+
+## Jeremy Lindsay
+
+* [Deploy a UWP application to a Windows 10 device from the command line with Cake](https://jeremylindsayni.wordpress.com/2017/07/24/deploy-a-uwp-application-to-a-windows-10-device-from-the-command-line-with-cake/)
+* [Running a .NET Core 2 app on Raspbian Jessie, and deploying to the Pi with Cake](https://jeremylindsayni.wordpress.com/2017/07/23/running-a-net-core-2-app-on-raspbian-jessie-and-deploying-to-the-pi-with-cake/)
+* [Calling a custom executable from Cake using StartProcess and ProcessSettings](https://jeremylindsayni.wordpress.com/2017/07/17/calling-a-custom-executable-from-cake-using-startprocess-and-processsettings/)
+
 ## Henning Støverud
 
 * [Publish xUnit test results in VSTS using Cake](http://blog.stoverud.no/posts/publish-xunit-test-results-in-vsts/)
