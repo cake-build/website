@@ -8,7 +8,7 @@ Since version 0.18.0 of Cake, there has been support created for Visual Studio 2
 
 Shortly after the release of version 0.18.0, Microsoft released a tool called [vswhere](https://github.com/Microsoft/vswhere) to help locate Visual Studio and other products in the family. This tool was released with Cake version 0.19.1 to allow everyone that moved to Visual Studio 2017 to get their builds up and running.
 
-This post is going to walk through the different pieces of functionality supported by the [VSWhere tool](http://cakebuild.net/dsl/vswhere/).
+This post is going to walk through the different pieces of functionality supported by the [VSWhere tool](https://cakebuild.net/dsl/vswhere/).
 
 <!--excerpt-->
 
@@ -22,7 +22,7 @@ VSWhere is available on [NuGet](https://www.nuget.org/packages/vswhere/) (and [C
 
 ## Getting the **Latest** installation
 
-If you just want to use the latest Visual Studio version available - then there's the [VSWhereLatest](http://cakebuild.net/api/Cake.Common.Tools.VSWhere/VSWhereAliases/59EB3043) alias. A complete example of fetching the VSWhere tool and using it to find path to MSBuild is shown below:
+If you just want to use the latest Visual Studio version available - then there's the [VSWhereLatest](https://cakebuild.net/api/Cake.Common.Tools.VSWhere/VSWhereAliases/59EB3043) alias. A complete example of fetching the VSWhere tool and using it to find path to MSBuild is shown below:
 
 ```csharp
 #tool nuget:?package=vswhere

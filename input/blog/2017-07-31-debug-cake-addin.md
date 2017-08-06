@@ -42,7 +42,7 @@ Attach debugger to process 80276 to continue
 
 # Loading the addin from source
 
-In the build.cake file I add the following [preprocessor directive](http://cakebuild.net/docs/fundamentals/preprocessor-directives)
+In the build.cake file I add the following [preprocessor directive](https://cakebuild.net/docs/fundamentals/preprocessor-directives)
 
 ``` csharp
 #r "./Cake.HockeyApp/src/Cake.HockeyApp/bin/Debug/net45/Cake.HockeyApp.dll"

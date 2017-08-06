@@ -33,7 +33,7 @@ By default, the Cake build step (when added to a build) will try to run the `bui
 
 ![Add build step](https://raw.githubusercontent.com/cake-build/cake-vso/develop/Images/configurebuildstep.png)
 
-For those who are already using Cake making use of the [Bootstrapper file](http://cakebuild.net/docs/tutorials/setting-up-a-new-project), this is not called when using the VSO task.
+For those who are already using Cake making use of the [Bootstrapper file](https://cakebuild.net/docs/tutorials/setting-up-a-new-project), this is not called when using the VSO task.
 To use the bootstrapper file you should add a "PowerShell" or "Shell Script" task instead.
 
 ## Notes about Variables
@@ -50,7 +50,7 @@ Error: NuGet: Process returned an error (exit code 1).
 
 # 1. Download the Bootstrapperfile
 
-To download the file go to the [Setting up a new project](http://cakebuild.net/docs/tutorials/setting-up-a-new-project) page and download the bootstrapper file for your platform.
+To download the file go to the [Setting up a new project](https://cakebuild.net/docs/tutorials/setting-up-a-new-project) page and download the bootstrapper file for your platform.
 
 # 2. Pin NuGet to at least v4.0.0
 

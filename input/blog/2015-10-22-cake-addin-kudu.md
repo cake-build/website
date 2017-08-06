@@ -22,22 +22,22 @@ Out of the box _Kudu_ allows you to build and deploy you web apps directly on _A
 
 It gives you easy access to
 
-* [Deployment paths](http://cakebuild.net/api/cake.kudu.provider/a5ae8623)
-* [App settings](http://cakebuild.net/api/cake.kudu.provider/3d10564b/d3b19dd0)
-* [Connection strings](http://cakebuild.net/api/cake.kudu.provider/3d10564b/43c2776d)
-* [Source control management](http://cakebuild.net/api/cake.kudu.provider/499464bd)
-* [Tool paths](http://cakebuild.net/api/cake.kudu.provider/eb1bc85d)
-* [Web site information](http://cakebuild.net/api/cake.kudu.provider/fadcc0d6)
-* [Deployment sync file/folder methods](http://cakebuild.net/api/cake.kudu.provider/3d10564b/10367dab)
+* [Deployment paths](https://cakebuild.net/api/cake.kudu.provider/a5ae8623)
+* [App settings](https://cakebuild.net/api/cake.kudu.provider/3d10564b/d3b19dd0)
+* [Connection strings](https://cakebuild.net/api/cake.kudu.provider/3d10564b/43c2776d)
+* [Source control management](https://cakebuild.net/api/cake.kudu.provider/499464bd)
+* [Tool paths](https://cakebuild.net/api/cake.kudu.provider/eb1bc85d)
+* [Web site information](https://cakebuild.net/api/cake.kudu.provider/fadcc0d6)
+* [Deployment sync file/folder methods](https://cakebuild.net/api/cake.kudu.provider/3d10564b/10367dab)
 
 
 ### Super charging Kudu
 
-So what does [Cake](http://cakebuild.net) and the [Cake Kudu](https://github.com/WCOMAB/Cake.Kudu) add-in bring to the table? It will let you do custom build, test and deploy scripts written in C#, driven by convention, environment and configuration.
+So what does [Cake](https://cakebuild.net) and the [Cake Kudu](https://github.com/WCOMAB/Cake.Kudu) add-in bring to the table? It will let you do custom build, test and deploy scripts written in C#, driven by convention, environment and configuration.
 
 This enables advanced scenarios like synchronized deployment of multiple web sites (i.e. frontend, API, backoffice) from one repository, adapting build configuration depending on dev/production/geographical region/etc., basically endless possibilities for continuous deployment automation.
 
-It lets you use any of the available aliases and add-ins for Cake, you could post deployment statuses to [Slack](https://github.com/WCOMAB/Cake.Slack) / [Gitter](https://github.com/cake-contrib/Cake.Gitter), migrate databases using [AliaSql](https://github.com/RichiCoder1/Cake.AliaSql) and much more, all written in a rich, compiled and statically typed language like C# and with the extensive [dsl](http://cakebuild.net/dsl) the Cake builds system provides.
+It lets you use any of the available aliases and add-ins for Cake, you could post deployment statuses to [Slack](https://github.com/WCOMAB/Cake.Slack) / [Gitter](https://github.com/cake-contrib/Cake.Gitter), migrate databases using [AliaSql](https://github.com/RichiCoder1/Cake.AliaSql) and much more, all written in a rich, compiled and statically typed language like C# and with the extensive [dsl](https://cakebuild.net/dsl) the Cake builds system provides.
 
 You could even use your Azure web app as a build server posting **not** a website but i.e. a build result report to the web.
 

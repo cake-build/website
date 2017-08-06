@@ -37,5 +37,5 @@ Once installed, you will have the option to add a new Cake Build Step into your 
 
 ![Add Cake Build Step](https://raw.githubusercontent.com/cake-build/cake-vso/develop/Images/configurebuildstep.png)
 
-For more information on what you can, and can't do, with the Extension please refer to our [documentation page](http://cakebuild.net/docs/build-systems/vso).
+For more information on what you can, and can't do, with the Extension please refer to our [documentation page](https://cakebuild.net/docs/build-systems/vso).
 
