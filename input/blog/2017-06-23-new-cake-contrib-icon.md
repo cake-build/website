@@ -4,7 +4,7 @@ category: Announcement
 author: gep13
 ---
 
-Towards the end of 2016, the Cake Team had an internal discussion about the newly created [Cake Contrib Organisation](http://cakebuild.net/blog/2016/08/cake-contribution-organization).  The topic of this conversation was, how could we distinguish between packages (mainly NuGet ones) that were part of the Core Cake system (for example, Cake, Cake.Core, Cake.NuGet, etc), and packages which have been created by our amazing Cake Community, in the form of addins, and modules.
+Towards the end of 2016, the Cake Team had an internal discussion about the newly created [Cake Contrib Organisation](https://cakebuild.net/blog/2016/08/cake-contribution-organization).  The topic of this conversation was, how could we distinguish between packages (mainly NuGet ones) that were part of the Core Cake system (for example, Cake, Cake.Core, Cake.NuGet, etc), and packages which have been created by our amazing Cake Community, in the form of addins, and modules.
 
 We, the Cake Team, are always startled by our amazing Cake Community.  There is now somewhere in the region of 166 addins/modules for Cake.  152 of those have added the [cake-contrib NuGet user](https://www.nuget.org/profiles/cake-contrib) as a co-owner of that package on NuGet.org, and 72 of these packages have opted to move the repository into the [Cake Contrib Organisation](https://github.com/cake-contrib) on GitHub.
 

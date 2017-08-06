@@ -16,7 +16,7 @@ Today, however, we don't have to rely on our CI builds for packages anymore (alt
 
 ### MyGet VSIX Feed
 
-Thanks to the awesome guys over at [MyGet](https://www.myget.org/), we now have a custom VSIX feed to use for our CI releases. The MyGet VSIX feed works much like the MyGet NuGet feed (you can read more about that [in an earlier blog post](http://cakebuild.net/blog/2016/08/how-does-cake-use-myget)), but instead of serving NuGet packages, it serves a VSIX *feed*, ready for Visual Studio to consume. This means you will be able to get every new feature and fix as it is merged, rather than waiting for the next stable release.
+Thanks to the awesome guys over at [MyGet](https://www.myget.org/), we now have a custom VSIX feed to use for our CI releases. The MyGet VSIX feed works much like the MyGet NuGet feed (you can read more about that [in an earlier blog post](https://cakebuild.net/blog/2016/08/how-does-cake-use-myget)), but instead of serving NuGet packages, it serves a VSIX *feed*, ready for Visual Studio to consume. This means you will be able to get every new feature and fix as it is merged, rather than waiting for the next stable release.
 
 Note that being bleeding-edge builds, there may be occasional issues with these packages. New stable releases will still be published on [the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1392591.CakeforVisualStudio).
 

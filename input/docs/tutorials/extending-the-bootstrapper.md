@@ -1,7 +1,7 @@
 Order: 30
 ---
 
-The Cake Bootstrapper that you can get directly from [cakebuild.net](http://cakebuild.net) is intended as a starting point for what can be done. It is the developer's discretion to extend the bootstrapper to solve for your own requirements.
+The Cake Bootstrapper that you can get directly from [cakebuild.net](https://cakebuild.net) is intended as a starting point for what can be done. It is the developer's discretion to extend the bootstrapper to solve for your own requirements.
 
 # Adding an additional parameter
  For example, let's say you want to add an input parameter to the bootstrapper for mobile build configurations.  These are the changes that you could make in order to achieve this...

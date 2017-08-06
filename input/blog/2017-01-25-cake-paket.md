@@ -152,7 +152,7 @@ A few side notes are in order. First, if you need to specify a package without a
 
 ### Conclusion
 
-The Cake.Paket addin and module make Paket a first class citizen in your Cake scripts. The addin provides support for common Paket commands such as *restore*, *pack*, and *push* while the module allows you to use Paket for the dependency management system in your Cake scripts. Checkout [Cake.Paket.Example](https://github.com/larzw/Cake.Paket.Example) for a working example of how to use the addin and module as well as the [API](http://cakebuild.net/dsl/paket/) documentation on Cake's website.
+The Cake.Paket addin and module make Paket a first class citizen in your Cake scripts. The addin provides support for common Paket commands such as *restore*, *pack*, and *push* while the module allows you to use Paket for the dependency management system in your Cake scripts. Checkout [Cake.Paket.Example](https://github.com/larzw/Cake.Paket.Example) for a working example of how to use the addin and module as well as the [API](https://cakebuild.net/dsl/paket/) documentation on Cake's website.
 
 ---
 

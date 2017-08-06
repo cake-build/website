@@ -7,7 +7,7 @@ Cake uses a combination of standard [C# XML Documentation Comments](https://msdn
 
 ## Classes
 
-Classes purpose are documented with a [summary](https://msdn.microsoft.com/en-us/library/2d6dt3kf.aspx) tag and categorized using [CakeAliasCategoryAttribute](http://cakebuild.net/api/cake.core.annotations/cakealiascategoryattribute/) attribute.
+Classes purpose are documented with a [summary](https://msdn.microsoft.com/en-us/library/2d6dt3kf.aspx) tag and categorized using [CakeAliasCategoryAttribute](https://cakebuild.net/api/cake.core.annotations/cakealiascategoryattribute/) attribute.
 
 ```csharp
 /// <summary>
@@ -20,7 +20,7 @@ public static class GitReleaseManagerAliases
 
 ## Methods
 
-Methods purpose are documented with a [summary](https://msdn.microsoft.com/en-us/library/2d6dt3kf.aspx) tag, parameters with the [param](https://msdn.microsoft.com/en-us/library/8cw818w8.aspx) tag, if it returns somethings it's you use the [returns](https://msdn.microsoft.com/en-us/library/4dcfdeds.aspx) tag and categorized using [CakeAliasCategoryAttribute](http://cakebuild.net/api/cake.core.annotations/ffb6caa8) attribute.
+Methods purpose are documented with a [summary](https://msdn.microsoft.com/en-us/library/2d6dt3kf.aspx) tag, parameters with the [param](https://msdn.microsoft.com/en-us/library/8cw818w8.aspx) tag, if it returns somethings it's you use the [returns](https://msdn.microsoft.com/en-us/library/4dcfdeds.aspx) tag and categorized using [CakeAliasCategoryAttribute](https://cakebuild.net/api/cake.core.annotations/ffb6caa8) attribute.
 
 Example usage is documented using the [example](https://msdn.microsoft.com/en-us/library/9w4cf933.aspx) tag and [code](https://msdn.microsoft.com/en-us/library/f8hahtxf.aspx) tag for code.
 
