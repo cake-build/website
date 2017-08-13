@@ -14,3 +14,9 @@ tools/*
 
 # Updating the Cake version after pinning
  To update the version of Cake you are using after you have pinned it, all you need to do is update the version in the packages.config file to the newer version you would like to use.
+
+# Video
+
+Further information on this topic can be seen in the following video:
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/xq41JgaGN7k" frameborder="0" allowfullscreen></iframe>

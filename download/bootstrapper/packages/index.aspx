@@ -1,1 +1,1 @@
-<% Response.Redirect("https://raw.githubusercontent.com/cake-build/example/master/tools/packages.config") %>
+<% Response.Redirect("https://raw.githubusercontent.com/cake-build/resources/master/packages.config") %>
