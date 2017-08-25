@@ -3,6 +3,10 @@
 
 # 2017
 
+## Manuel Blanquett
+
+* [A Full Stack of Cake](https://slides.com/manuelblanquett/a-full-stack-of-cake)([Demo Code](https://github.com/nalla/a-full-stack-of-cake))
+
 ## Igor Fesenko
 
 * [Cake (C# Make)](https://www.slideshare.net/ssuser8ad51a/cake-c-make-77085334)([Demo Code](https://github.com/Ky7m/DemoCode/tree/master/CakeBuild))
