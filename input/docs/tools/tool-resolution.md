@@ -14,7 +14,7 @@ set of conventions are used to locate executables on disc.
 By inheriting from the [Tool<T>](/api/Cake.Core.Tooling/Tool_1) class
 when implementing tools, you will get the conventions "for free".
 
-You can override and register tool paths using the [IToolLocator](/api/Cake.Core.Tooling/IToolLocator/) [Tools](http://cakebuild.net/api/Cake.Core/ICakeContext/8C889AB4) property on the [ICakeContext](http://cakebuild.net/api/Cake.Core/ICakeContext/):
+You can override and register tool paths using the [IToolLocator](/api/Cake.Core.Tooling/IToolLocator/) [Tools](/api/Cake.Core/ICakeContext/8C889AB4) property on the [ICakeContext](/api/Cake.Core/ICakeContext/):
 
 ```csharp
 Setup(context => {
@@ -22,7 +22,7 @@ Setup(context => {
 });
 ```
 
-If you want to use the tool resolution from your Cake script for generic tasks, i.e. starting a process, that's certainly possible using the [Resolve(string) ](http://cakebuild.net/api/Cake.Core.Tooling/IToolLocator/D57090B2) method:
+If you want to use the tool resolution from your Cake script for generic tasks, i.e. starting a process, that's certainly possible using the [Resolve(string) ](/api/Cake.Core.Tooling/IToolLocator/D57090B2) method:
 ```csharp
 Task("NuGet-Help-Install")
     .Does(()=> {
