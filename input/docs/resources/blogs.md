@@ -42,9 +42,10 @@ Title: Blog Posts
 * [Cake Crumbs of the Week #3](http://www.phillipsj.net/posts/cake-crumbs-of-the-week-third-edition)
 * [Cake: A recipe for success](http://www.phillipsj.net/posts/cake-a-recipe-for-success)
 
-## Software Architekt
+## bambit
 
-* [How to use #nopcommerce with #cakebuildnet. It's awesome, It's easy!](https://www.software-architekt.ch/blog/webdeploy-package-erstellen-mit-cakebuild) **NOTE:** Written in German
+* [Build a Orckestra C1 CMS Addon with Cake](https://bambit.ch/blog/Orckestra-C1-CMS-Add-On-mit-Cake-C-Make-paketieren) **NOTE:** Written in German
+* [Build nopCommerce as WebDeploy Package with Cake!](https://bambit.ch/blog/webdeploy-package-erstellen-mit-cakebuild) **NOTE:** Written in German
 
 ## Manuel Blanquett
 
