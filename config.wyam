@@ -1,6 +1,7 @@
 ContentStreamFactory = new MemoryContentStreamFactory();
 
 Settings[Keys.Host] = "cakebuild.net";
+Settings[Keys.LinksUseHttps] = true;
 Settings[DocsKeys.Title] = "Cake";
 Settings[DocsKeys.Logo] = "/assets/img/logo.png";
 Settings[DocsKeys.SourceFiles] = "../release/repo/src/**/{!bin,!obj,!packages,!*.Tests,}/**/*.cs";
