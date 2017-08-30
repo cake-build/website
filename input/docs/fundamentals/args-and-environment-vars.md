@@ -27,7 +27,7 @@ RunTarget("Default");
 
 PowerShell:
 ```powershell
-.\build.ps1 -ScriptArgs '-my_setting="from PowerShell"'
+.\build.ps1 -ScriptArgs '--my_setting="from PowerShell"'
 ```
 
 The output is
@@ -38,7 +38,7 @@ My setting is: from PowerShell
 
 Batch File:
 ```batchfile
-powershell -File build.ps1 -ScriptArgs '-my_setting="from a batch file"'
+powershell -File build.ps1 -ScriptArgs '--my_setting="from a batch file"'
 ```
 
 The output is
