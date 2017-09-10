@@ -16,7 +16,7 @@ https://packages.nuget.org/api/v2
 ## Environment Variable Name
 
 ```sh
-NUGET_SOURCE
+CAKE_NUGET_SOURCE
 ```
 
 ## ini File Contents
@@ -154,4 +154,47 @@ Modules=./tools/Modules
 
 ```sh
 cake.exe --paths_modules=./tools/Modules
+```
+
+
+<hr/>
+
+# Skip Verification
+
+If any breaking changes are introduced to Cake, we'll set the minimum supported version of the `Cake.Core` assembly, any addin/assembly that references an older version of `Cake.Core` will generate an exception and ultimately abort the execution of the script. This is to avoid runtime errors during execution of the script.
+
+But if you really need to use an addin/assembly and have verified that the breaking change introduced doesn't concern the addin/assembly directly, i.e. it doesn't use a removed property or changed interface, for this scenario we'll allow you to temporarily opt-out of the assembly verification until addin/assembly author has released a version of the assembly targeting the minimum required version of `Cake.Core`.
+
+A word of **caution**, this setting is global for all addins/assemblies your script references and should therefore be considered a temporary quick fix.
+
+## Default Value
+
+```sh
+false
+```
+## Valid Values
+
+```sh
+true
+or
+false
+```
+
+## Environment Variable Name
+
+```sh
+CAKE_SETTINGS_SKIPVERIFICATION
+```
+
+## ini File Contents
+
+```sh
+[Settings]
+SkipVerification=true
+```
+
+## Direct Argument
+
+```sh
+cake.exe --settings_skipverification=true
 ```
