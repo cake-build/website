@@ -20,3 +20,13 @@ tools/*
 Further information on this topic can be seen in the following video:
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/xq41JgaGN7k" frameborder="0" allowfullscreen></iframe>
+
+# Pinning addin version
+
+If addins are referenced through the *packages.config* file they can be pinned the same way as the Cake version.
+
+If addins are referenced using the `#addin` preprocessor directive the can be pinned like this:
+
+```
+#addin nuget:?package=Cake.Foo&version=1.2.3
+```
