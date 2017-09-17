@@ -1,0 +1,10 @@
+Name: Cake.Issues.PullRequests
+NuGet: Cake.Issues.PullRequests
+Assemblies:
+- "/**/Cake.Issues.PullRequests.dll"
+Repository: https://github.com/cake-contrib/Cake.Issues.PullRequests
+Author: BBT Software AG
+Description: "Pull request support for the Cake Issues Addin allows you to write found issues as comments to pull requests in any supported pull request system."
+Categories:
+- Issues
+- Pull Requests

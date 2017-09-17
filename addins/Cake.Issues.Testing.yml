@@ -1,0 +1,9 @@
+Name: Cake.Issues.Testing
+NuGet: Cake.Issues.Testing
+Assemblies:
+- "/**/Cake.Issues.Testing.dll"
+Repository: https://github.com/cake-contrib/Cake.Issues.Testing
+Author: BBT Software AG
+Description: "The testing extensions for the Cake Issues Addin provide helpers to implement test cases for Cake Issue Addins."
+Categories:
+- Issues

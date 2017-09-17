@@ -1,0 +1,10 @@
+Name: Cake.Issues.InspectCode
+NuGet: Cake.Issues.InspectCode
+Assemblies:
+- "/**/Cake.Issues.InspectCode.dll"
+Repository: https://github.com/cake-contrib/Cake.Issues.InspectCode
+Author: BBT Software AG
+Description: "The Inspect Code support for the Cake Issues Addin allows you to read issues logged by JetBrains Inspect Code."
+Categories:
+- Issues
+- InspectCode

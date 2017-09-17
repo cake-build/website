@@ -1,0 +1,12 @@
+Name: Cake.Issues.PullRequests.Tfs
+NuGet: Cake.Issues.PullRequests.Tfs
+Assemblies:
+- "/**/Cake.Issues.PullRequests.Tfs.dll"
+Repository: https://github.com/cake-contrib/Cake.Issues.PullRequests.Tfs
+Author: BBT Software AG
+Description: "The TFS / VSTS support for the Cake Issues Addin allows you to write found issues as comments to Team Foundation Server or Visual Studio Team Services pull requests."
+Categories:
+- Issues
+- Pull Requests
+- VSTS
+- TFS
