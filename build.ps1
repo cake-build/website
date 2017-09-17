@@ -93,6 +93,10 @@ $NUGET_URL = "https://dist.nuget.org/win-x86-commandline/latest/nuget.exe"
 $PACKAGES_CONFIG = Join-Path $TOOLS_DIR "packages.config"
 $PACKAGES_CONFIG_MD5 = Join-Path $TOOLS_DIR "packages.config.md5sum"
 
+# Temporarily skip verification and opt-in to new in-proc NuGet
+$ENV:CAKE_SETTINGS_SKIPVERIFICATION='true'
+$ENV:CAKE_NUGET_USEINPROCESSCLIENT='true'
+
 # Delete the Wyam tool and addin folders
 if (Test-Path $TOOLS_DIR)
 {
