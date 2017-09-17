@@ -10,7 +10,7 @@ Settings[DocsKeys.IncludeDateInPostPath] = true;
 Settings[DocsKeys.BlogAtomPath] = "blog/feed/atom/index.xml";
 Settings[DocsKeys.BlogRssPath] = "blog/feed/rss/index.xml";
 
-Pipelines.InsertBefore(DocsPipelines.Code, "Addins",
+Pipelines.InsertBefore(Docs.Code, "Addins",
     ReadFiles("../addins/*.yml"),
     Yaml()
 );
@@ -24,11 +24,11 @@ Pipelines.InsertAfter("Addins", "AddinCategories",
     OrderBy(@doc.String(Keys.GroupKey))
 );
 
-Pipelines.InsertAfter(DocsPipelines.Api, "DslAliases",
+Pipelines.InsertAfter(Docs.Api, "DslAliases",
     GroupByMany(@doc.DocumentList(CodeAnalysisKeys.Attributes)
         .Where(attr => attr.String(CodeAnalysisKeys.Name) == "CakeAliasCategoryAttribute")
         .Select(attr => attr.Get<Microsoft.CodeAnalysis.AttributeData>(CodeAnalysisKeys.AttributeData).ConstructorArguments.FirstOrDefault().Value),
-        Documents(DocsPipelines.Api),
+        Documents(Docs.Api),
         Where(@doc.String(CodeAnalysisKeys.Kind) == "NamedType"
             && @doc.DocumentList(CodeAnalysisKeys.Attributes)
                 .Any(attr => attr.String(CodeAnalysisKeys.Name) == "CakeAliasCategoryAttribute")
