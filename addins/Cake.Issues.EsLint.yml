@@ -1,0 +1,10 @@
+Name: Cake.Issues.EsLint
+NuGet: Cake.Issues.EsLint
+Assemblies:
+- "/**/Cake.Issues.EsLint.dll"
+Repository: https://github.com/cake-contrib/Cake.Issues.EsLint
+Author: BBT Software AG
+Description: "The ESLint support for the Cake Issues Addin allows you to read issues logged by ESLint."
+Categories:
+- Issues
+- ESLint
