@@ -1,0 +1,10 @@
+Name: Cake.Issues.Markdownlint
+NuGet: Cake.Issues.Markdownlint
+Assemblies:
+- "/**/Cake.Issues.Markdownlint.dll"
+Repository: https://github.com/cake-contrib/Cake.Issues.Markdownlint
+Author: BBT Software AG
+Description: "The Markdownlint support for the Cake Issues Addin allows you to read issues logged by Markdownlint."
+Categories:
+- Issues
+- InspectCode

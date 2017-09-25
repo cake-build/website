@@ -1,9 +1,0 @@
-Name: Cake.Prca
-NuGet: Cake.Prca
-Assemblies:
-- "/**/Cake.Prca.dll"
-Repository: https://github.com/cake-contrib/Cake.Prca
-Author: BBT Software AG
-Description: "The Pull Request Code Analysis Addin for Cake allows you to write issue found using any code analyzer or linter as comments to pull requests."
-Categories:
-- Pull Request Code Analysis

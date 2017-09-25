@@ -1,0 +1,10 @@
+Name: Cake.Issues.MsBuild
+NuGet: Cake.Issues.MsBuild
+Assemblies:
+- "/**/Cake.Issues.MsBuild.dll"
+Repository: https://github.com/cake-contrib/Cake.Issues.MsBuild
+Author: BBT Software AG
+Description: "The MsBuild support for the Cake Issues Addin allows you to read issues logged as warnings in a MsBuild log."
+Categories:
+- Issues
+- MSBuild
