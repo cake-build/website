@@ -18,12 +18,24 @@ Right now, only NuGet packages are supported.
 #addin nuget:https://myget.org/f/Cake/?package=Cake.Foo&prerelease
 ```
 
+### Dependencies
+
+From Cake version 0.22.0 there's an option to fetch and load NuGet dependencies
+
+```csharp
+#addin nuget:?package=foo&loaddependencies=true
+or
+#addin nuget:?package=foo.bar&loaddependencies=false
+```
+
+This feature requires Cake to be [configured](/fundamentals/configuration.md) to not use `nuget.exe` but instead let Cake handle NuGet installation in-process.
+
 # Load directive
 The load directive is used to reference external Cake scripts. Useful i.e. if you have common utility functions.
 Starting from 0.18.0 you can also load cake scripts from nuget.
 
 ## Usage
-The directive has one parameter which is the location to the script which optionally includes a scheme: `local` or `nuget`. The default is `local`. 
+The directive has one parameter which is the location to the script which optionally includes a scheme: `local` or `nuget`. The default is `local`.
 
 ### Default:
 ```csharp
