@@ -7,4 +7,4 @@ Author: BBT Software AG
 Description: "The Markdownlint support for the Cake Issues Addin allows you to read issues logged by Markdownlint."
 Categories:
 - Issues
-- InspectCode
+- Markdown

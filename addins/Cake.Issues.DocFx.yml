@@ -7,4 +7,5 @@ Author: BBT Software AG
 Description: "The DocFx support for the Cake Issues Addin allows you to read warnings logged by DocFx."
 Categories:
 - Issues
+- Documentation
 - DocFx
