@@ -1,0 +1,11 @@
+Name: Cake.MobileCenter
+NuGet: Cake.MobileCenter
+Assemblies:
+- "/**/Cake.MobileCenter.dll"
+Repository: https://github.com/cake-contrib/Cake.MobileCenter
+Author: Miha Markic
+Description: "A Cake AddIn that extends Cake with MobileCenter command tools."
+Categories:
+- Deployment
+- Test
+- Build
