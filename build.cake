@@ -1,10 +1,11 @@
-#tool "nuget:https://api.nuget.org/v3/index.json?package=KuduSync.NET"
-#tool "nuget:https://api.nuget.org/v3/index.json?package=Wyam&prerelease"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Git"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Kudu"
+#tool "nuget:https://api.nuget.org/v3/index.json?package=KuduSync.NET&version=1.3.1"
+#tool "nuget:https://api.nuget.org/v3/index.json?package=Wyam&version=1.0.0"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Git&version=0.16.0"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Kudu&version=0.4.0"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Wyam&prerelease"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Yaml"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=Octokit"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Yaml&version=2.0.0"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=YamlDotNet&version=4.2.1"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=Octokit&version=0.26.0"
 
 using Octokit;
 
