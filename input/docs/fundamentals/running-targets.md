@@ -15,7 +15,7 @@ RunTarget("Default");
 
 # Passing a target to the script
 
-All arguments passed to `Cake.exe` will also be accesible from the Cake script. You can access the arguments by using the [argument DSL](/dsl/#arguments). 
+All arguments passed to `Cake.exe` will also be accessible from the Cake script. You can access the arguments by using the [argument DSL](/dsl/#arguments). 
 
 ```csharp
 var target = Argument("target", "Build");
