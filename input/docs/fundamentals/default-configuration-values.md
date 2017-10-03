@@ -34,37 +34,6 @@ cake.exe --nuget_source=http://myfeed/nuget/
 
 <hr/>
 
-# Roslyn NuGet Download Url
-
-This allows the control of where Cake downloads the required Roslyn NuGet packages.  This can be useful when it is necessary to work in an offline mode, where direct access to nuget.org is not available.
-
-## Default Value
-
-```sh
-https://packages.nuget.org/api/v2
-```
-
-## Environment Variable Name
-
-```sh
-CAKE_ROSLYN_NUGETSOURCE
-```
-
-## ini File Contents
-
-```sh
-[Roslyn]
-NuGetSource=https://mycustomurl
-```
-
-## Direct Argument
-
-```sh
-cake.exe --roslyn_nugetsource=http://mycustomurl
-```
-
-<hr/>
-
 # Tools Path
 
 This allows the configuration of the tools folder which is used by Cake when restoring tools.
@@ -198,3 +167,118 @@ SkipVerification=true
 ```sh
 cake.exe --settings_skipverification=true
 ```
+
+<hr/>
+
+# In-Process NuGet installation
+
+From Cake version `0.22.0` you can opt-in to not use `NuGet.exe` but instead let Cake handle the installation of addins, tools and scripts in-process.
+
+## Default Value
+
+```sh
+false
+```
+
+## Valid Values
+
+```sh
+true
+or
+false
+```
+
+## Environment Variable Name
+
+```sh
+CAKE_NUGET_USEINPROCESSCLIENT
+```
+
+## ini File Contents
+
+```sh
+[NuGet]
+UseInProcessClient=true
+```
+
+## Direct Argument
+
+```sh
+cake.exe --nuget_useinprocessclient=true
+```
+
+
+<hr/>
+
+# Addin NuGet dependencies
+
+When using In-Process NuGet installation available since Cake `0.22.0`, you now got the option to opt-in to installing and referencing NuGet package dependencies.
+
+## Default Value
+
+```sh
+false
+```
+
+## Valid Values
+
+```sh
+true
+or
+false
+```
+
+## Environment Variable Name
+
+```sh
+CAKE_NUGET_LOADDEPENDENCIES
+```
+
+## ini File Contents
+
+```sh
+[NuGet]
+LoadDependencies=true
+```
+
+## Direct Argument
+
+```sh
+cake.exe --nuget_loaddependencies=true
+```
+
+
+<hr/>
+
+# Roslyn NuGet Download Url
+
+**_This only applies to Cake version `0.21.1` and older, Roslyn ships with Cake from version `0.22.0`._**
+
+This allows the control of where Cake downloads the required Roslyn NuGet packages.  This can be useful when it is necessary to work in an offline mode, where direct access to nuget.org is not available.
+
+## Default Value
+
+```sh
+https://packages.nuget.org/api/v2
+```
+
+## Environment Variable Name
+
+```sh
+CAKE_ROSLYN_NUGETSOURCE
+```
+
+## ini File Contents
+
+```sh
+[Roslyn]
+NuGetSource=https://mycustomurl
+```
+
+## Direct Argument
+
+```sh
+cake.exe --roslyn_nugetsource=http://mycustomurl
+```
+
+<hr/>
