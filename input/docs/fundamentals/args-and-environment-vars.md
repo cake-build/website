@@ -46,6 +46,16 @@ The output is
 My setting is: from a batch file
 ```
 
+Bash (Linux/macOS):
+```
+./build.sh --my_setting="from Bash"
+```
+
+The output is
+```
+My setting is: from Bash
+```
+
 # Environment Variables
 
 
