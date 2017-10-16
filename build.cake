@@ -1,7 +1,7 @@
 #tool "nuget:https://api.nuget.org/v3/index.json?package=KuduSync.NET&version=1.3.1"
 #tool "nuget:https://api.nuget.org/v3/index.json?package=Wyam&version=1.0.0"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Git&version=0.16.0"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Kudu&version=0.4.0"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Git&version=0.16.1"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Kudu&version=0.5.0"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Wyam&version=1.0.0"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Yaml&version=2.0.0"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=YamlDotNet&version=4.2.1"
@@ -73,11 +73,17 @@ Task("CleanSource")
     if(DirectoryExists(sourceDir))
     {
         CleanDirectory(sourceDir);
-        DeleteDirectory(sourceDir, true);
+        DeleteDirectory(sourceDir, new DeleteDirectorySettings {
+            Recursive = true,
+            Force = true
+        });
     }
     foreach(var cakeDir in GetDirectories(releaseDir.Path.FullPath + "/cake*"))
     {
-        DeleteDirectory(cakeDir, true);
+        DeleteDirectory(cakeDir, new DeleteDirectorySettings {
+            Recursive = true,
+            Force = true
+        });
     }
 });
 
