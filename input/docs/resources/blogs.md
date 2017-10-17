@@ -75,27 +75,6 @@ Title: Blog Posts
 
 # 2016
 
-## miso_soup3
-
-* [Custom Deployment for Azure Web Apps using CAKE \- miso\_soup3 Blog](http://miso-soup3.hateblo.jp/entry/2016/12/28/191112)  **NOTE:** written in Japenese
-
-## November Five
-
-* [Jenkins Serving Cake: Our Recipe for Windows](https://novemberfive.co/blog/windows-jenkins-cake-tutorial/)
-
-## Chester Burbidge
-
-* [Let them use CAKE](http://cburbidge.github.io/let-them-use-cake/)
-
-## tpodolak
-
-* [Debugging Cake Scripts](https://tpodolak.com/blog/2016/07/10/debugging-cake-scripts/)
-* [Cake - Data at the root level is invalid](https://tpodolak.com/blog/2016/09/08/cake-data-root-level-invalid/)
-
-## Max Vasilyev
-
-* [VSTS vs NuGet vs CakeBuild – again!](http://tech.trailmax.info/2017/01/vsts-vs-nuget-vs-cakebuild-again/)
-
 ## Adam Hathcock
 
 * [.NET Core 1.1 building with Docker and Cake](https://adamhathcock.github.io/2016/11/22/net-core-1-1-building-with-docker-and-cake.html)
@@ -103,6 +82,15 @@ Title: Blog Posts
 ## Channel 9
 
 * [Cake!... Baking a new Build with C# Make](https://channel9.msdn.com/coding4fun/blog/Cake-Baking-a-new-Build-with-C-Make)
+
+## Chester Burbidge
+
+* [Let them use CAKE](http://cburbidge.github.io/let-them-use-cake/)
+
+## Derek Comartin
+
+* [Automating Builds with Cake (c# Make)](http://codeopinion.com/automating-builds-with-cake-c-make/)
+* [Octopus Deploy in Your Cake (C# Make)](http://codeopinion.com/octopus-deploy-in-your-cake-c-make/)
 
 ## Jamie Phillips
 
@@ -115,18 +103,30 @@ Title: Blog Posts
 * [Cake.AppPackager](http://www.phillipsj.net/posts/cake-apppackager)
 * [Announcing Cake.Ftp](http://www.phillipsj.net/posts/announcing-cake-ftp)
 
-## Derek Comartin
+## Laurent Kempe
 
-* [Automating Builds with Cake (c# Make)](http://codeopinion.com/automating-builds-with-cake-c-make/)
-* [Octopus Deploy in Your Cake (C# Make)](http://codeopinion.com/octopus-deploy-in-your-cake-c-make/)
+* [Moving to Cake (C# Make)](http://laurentkempe.com/2016/04/05/Moving-to-Cake-CSharp-Make/)
+
+## Max Vasilyev
+
+* [VSTS vs NuGet vs CakeBuild – again!](http://tech.trailmax.info/2017/01/vsts-vs-nuget-vs-cakebuild-again/)
+
+## miso_soup3
+
+* [Custom Deployment for Azure Web Apps using CAKE \- miso\_soup3 Blog](http://miso-soup3.hateblo.jp/entry/2016/12/28/191112)  **NOTE:** written in Japenese
+
+## November Five
+
+* [Jenkins Serving Cake: Our Recipe for Windows](https://novemberfive.co/blog/windows-jenkins-cake-tutorial/)
 
 ## Robert Muehsig
 
 * [CAKE: Building solutions with C# & Roslyn](http://blog.codeinside.eu/2016/07/09/cake-building-with-cake/)
 
-## Laurent Kempe
+## tpodolak
 
-* [Moving to Cake (C# Make)](http://laurentkempe.com/2016/04/05/Moving-to-Cake-CSharp-Make/)
+* [Debugging Cake Scripts](https://tpodolak.com/blog/2016/07/10/debugging-cake-scripts/)
+* [Cake - Data at the root level is invalid](https://tpodolak.com/blog/2016/09/08/cake-data-root-level-invalid/)
 
 # 2015
 
