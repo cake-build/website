@@ -38,17 +38,21 @@ Title: Blog Posts
 
 ## Jamie Phillips
 
-* [Cake: Developing Addins Part 1](http://www.phillipsj.net/posts/cake-developing-addins-part-1)
-* [Cake: Developing Addins Part 2](http://www.phillipsj.net/posts/cake-developing-addins-part-2)
-* [Cake: Developing Addins Part 3](http://www.phillipsj.net/posts/cake-developing-addins-part-3)
-* [Cake: Developing Addins Part 4](http://www.phillipsj.net/posts/cake-developing-addins-part-4)
-* [Hudson Bay Start for Projects](http://www.phillipsj.net/posts/hudson-bay-start-for-projects)
-* [Cake: Developing Addins Part 5](http://www.phillipsj.net/posts/cake-developing-addins-part-5)
-* [Cake Crumbs of the Week](http://www.phillipsj.net/posts/cake-crumbs-of-the-week)
-* [Cake: One way to SFTP](http://www.phillipsj.net/posts/cake-one-way-to-sftp?platform=hootsuite)
-* [Cake Crumbs of the Week #2](http://www.phillipsj.net/posts/cake-crumbs-of-the-week-second-edition)
-* [Cake Crumbs of the Week #3](http://www.phillipsj.net/posts/cake-crumbs-of-the-week-third-edition)
+* [Cake: Contributing to an Addin](https://www.phillipsj.net/posts/cake-contributing-to-an-addin)
+* [Deploying Desktop Apps with ClickOnce, MSDeploy, and Cake](https://www.phillipsj.net/posts/deploying-desktop-apps-with-clickonce-msdeploy-and-cake)
+* [Moving most of my Cake Addins](https://www.phillipsj.net/posts/moving-most-of-my-cake-addins)
+* [Announcing Cake.Netlify](https://www.phillipsj.net/posts/announcing-cake-netlify)
 * [Cake: A recipe for success](http://www.phillipsj.net/posts/cake-a-recipe-for-success)
+* [Cake Crumbs of the Week #3](http://www.phillipsj.net/posts/cake-crumbs-of-the-week-third-edition)
+* [Cake Crumbs of the Week #2](http://www.phillipsj.net/posts/cake-crumbs-of-the-week-second-edition)
+* [Cake: One way to SFTP](http://www.phillipsj.net/posts/cake-one-way-to-sftp?platform=hootsuite)
+* [Cake Crumbs of the Week](http://www.phillipsj.net/posts/cake-crumbs-of-the-week)
+* [Cake: Developing Addins Part 5](http://www.phillipsj.net/posts/cake-developing-addins-part-5)
+* [Hudson Bay Start for Projects](http://www.phillipsj.net/posts/hudson-bay-start-for-projects)
+* [Cake: Developing Addins Part 4](http://www.phillipsj.net/posts/cake-developing-addins-part-4)
+* [Cake: Developing Addins Part 3](http://www.phillipsj.net/posts/cake-developing-addins-part-3)
+* [Cake: Developing Addins Part 2](http://www.phillipsj.net/posts/cake-developing-addins-part-2)
+* [Cake: Developing Addins Part 1](http://www.phillipsj.net/posts/cake-developing-addins-part-1)
 
 ## Jeremy Lindsay
 
