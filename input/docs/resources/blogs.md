@@ -6,8 +6,13 @@ Title: Blog Posts
 
 ## Alistair Chapman
 
+* ['Failed to install tool' errors when running Cake on Linux](https://blog.agchapman.com/failed-to-install-tool-errors-when-running-cake-on-linux/)
+* [Introducing the Cake APT Module](https://blog.agchapman.com/introducing-the-cake-apt-module/)
+* [Using NSwag with Cake on .NET Core](https://blog.agchapman.com/using-nswag-with-cake-on-net-core/)
 * [Introducing the Cake DNF Module](https://blog.agchapman.com/introducing-the-cake-dnf-module/)
 * [Introducing the Cake Build Systems Module](https://blog.agchapman.com/introducing-the-cake-build-systems-module)
+* [VSIX Continuous Delivery using Cake, AppVeyor and MyGet](https://blog.agchapman.com/vsix-continuous-delivery-using-cake-appveyor-and-myget/)
+* [VSIX Continuous Integration using Cake and AppVeyor](https://blog.agchapman.com/vsix-continuous-integration-using-cake-and-appveyor/)
 * [Using Cake with VSTS or TFS](https://blog.agchapman.com/using-cake-with-vsts-or-tfs/)
 
 ## Andrew Lock
