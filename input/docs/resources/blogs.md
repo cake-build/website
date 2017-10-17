@@ -4,6 +4,10 @@ Title: Blog Posts
 
 # 2017
 
+## Andrew Lock
+
+* [Running tests with dotnet xunit using Cake](https://andrewlock.net/running-tests-with-dotnet-xunit-using-cake/)
+
 ## Geert van Horrik
 
 * [Debugging Cake add-ins using Visual Studio](http://geertvanhorrik.com/2017/08/01/debugging-cake-add-ins-using-visual-studio/)
