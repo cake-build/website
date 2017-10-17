@@ -4,33 +4,32 @@ Title: Blog Posts
 
 # 2017
 
+## Alistair Chapman
+
+* [Introducing the Cake DNF Module](https://blog.agchapman.com/introducing-the-cake-dnf-module/)
+* [Introducing the Cake Build Systems Module](https://blog.agchapman.com/introducing-the-cake-build-systems-module)
+* [Using Cake with VSTS or TFS](https://blog.agchapman.com/using-cake-with-vsts-or-tfs/)
+
 ## Andrew Lock
 
 * [Running tests with dotnet xunit using Cake](https://andrewlock.net/running-tests-with-dotnet-xunit-using-cake/)
+
+## bambit
+
+* [Build a Orckestra C1 CMS Addon with Cake](https://bambit.ch/blog/Orckestra-C1-CMS-Add-On-mit-Cake-C-Make-paketieren) **NOTE:** Written in German
+* [Build nopCommerce as WebDeploy Package with Cake!](https://bambit.ch/blog/webdeploy-package-erstellen-mit-cakebuild) **NOTE:** Written in German
+
+## Dave Glick
+
+* [Publishing To Azure Using Cake And Web Deploy](https://daveaglick.com/posts/publishing-to-azure-using-cake-and-web-deploy)
 
 ## Geert van Horrik
 
 * [Debugging Cake add-ins using Visual Studio](http://geertvanhorrik.com/2017/08/01/debugging-cake-add-ins-using-visual-studio/)
 
-## Jeremy Lindsay
-
-* [Deploy a UWP application to a Windows 10 device from the command line with Cake](https://jeremylindsayni.wordpress.com/2017/07/24/deploy-a-uwp-application-to-a-windows-10-device-from-the-command-line-with-cake/)
-* [Running a .NET Core 2 app on Raspbian Jessie, and deploying to the Pi with Cake](https://jeremylindsayni.wordpress.com/2017/07/23/running-a-net-core-2-app-on-raspbian-jessie-and-deploying-to-the-pi-with-cake/)
-* [Calling a custom executable from Cake using StartProcess and ProcessSettings](https://jeremylindsayni.wordpress.com/2017/07/17/calling-a-custom-executable-from-cake-using-startprocess-and-processsettings/)
-
 ## Henning Støverud
 
 * [Publish xUnit test results in VSTS using Cake](http://blog.stoverud.no/posts/publish-xunit-test-results-in-vsts/)
-
-## Jürgen Gutsch
-
-* [A first glimpse into CAKE](http://asp.net-hacker.rocks/2017/04/20/trying-cake.html)
-
-## Mattias Karlsson
-
-* [Dispelling the magic! - The layers and pieces of Cake](https://hackernoon.com/dispelling-the-magic-6dc0fdfe476c)
-* [Delivering Functions with Cake](https://medium.com/@devlead/delivering-functions-with-cake-4b269c50f817)
-* [Bringing Cake to Microsoft Teams](https://medium.com/@devlead/bringing-cake-to-microsoft-teams-b49848981d5d)
 
 ## Jamie Phillips
 
@@ -46,20 +45,25 @@ Title: Blog Posts
 * [Cake Crumbs of the Week #3](http://www.phillipsj.net/posts/cake-crumbs-of-the-week-third-edition)
 * [Cake: A recipe for success](http://www.phillipsj.net/posts/cake-a-recipe-for-success)
 
-## bambit
+## Jeremy Lindsay
 
-* [Build a Orckestra C1 CMS Addon with Cake](https://bambit.ch/blog/Orckestra-C1-CMS-Add-On-mit-Cake-C-Make-paketieren) **NOTE:** Written in German
-* [Build nopCommerce as WebDeploy Package with Cake!](https://bambit.ch/blog/webdeploy-package-erstellen-mit-cakebuild) **NOTE:** Written in German
+* [Deploy a UWP application to a Windows 10 device from the command line with Cake](https://jeremylindsayni.wordpress.com/2017/07/24/deploy-a-uwp-application-to-a-windows-10-device-from-the-command-line-with-cake/)
+* [Running a .NET Core 2 app on Raspbian Jessie, and deploying to the Pi with Cake](https://jeremylindsayni.wordpress.com/2017/07/23/running-a-net-core-2-app-on-raspbian-jessie-and-deploying-to-the-pi-with-cake/)
+* [Calling a custom executable from Cake using StartProcess and ProcessSettings](https://jeremylindsayni.wordpress.com/2017/07/17/calling-a-custom-executable-from-cake-using-startprocess-and-processsettings/)
+
+## Jürgen Gutsch
+
+* [A first glimpse into CAKE](http://asp.net-hacker.rocks/2017/04/20/trying-cake.html)
 
 ## Manuel Blanquett
 
 * [Creating a distributable deployment host with Cake](https://blanquett.net/2017/02/18/octocake/)
 
-## Alistair Chapman
+## Mattias Karlsson
 
-* [Introducing the Cake DNF Module](https://blog.agchapman.com/introducing-the-cake-dnf-module/)
-* [Introducing the Cake Build Systems Module](https://blog.agchapman.com/introducing-the-cake-build-systems-module)
-* [Using Cake with VSTS or TFS](https://blog.agchapman.com/using-cake-with-vsts-or-tfs/)
+* [Dispelling the magic! - The layers and pieces of Cake](https://hackernoon.com/dispelling-the-magic-6dc0fdfe476c)
+* [Delivering Functions with Cake](https://medium.com/@devlead/delivering-functions-with-cake-4b269c50f817)
+* [Bringing Cake to Microsoft Teams](https://medium.com/@devlead/bringing-cake-to-microsoft-teams-b49848981d5d)
 
 ## Muhammad Rehan Saeed
 
@@ -68,10 +72,6 @@ Title: Blog Posts
 ## Stackify
 
 * [How we use Cake to build .NET Core apps and version assemblies](https://stackify.com/how-we-use-cake-to-build-net-core-apps/)
-
-## Dave Glick
-
-* [Publishing To Azure Using Cake And Web Deploy](https://daveaglick.com/posts/publishing-to-azure-using-cake-and-web-deploy)
 
 # 2016
 
