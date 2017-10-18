@@ -1,6 +1,13 @@
 Order: 10
 ---
 
+# 2017
+
+## Cake 101 – Getting Started with C# Powered Cross Platform
+### Mattias Karlsson - DevConf 2017
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/KioM-eN5e1k" frameborder="0" allowfullscreen></iframe>
+
 # 2016
 
 ## Automating Builds with Cake (C# Make)

@@ -4,9 +4,55 @@ Title: Blog Posts
 
 # 2017
 
+## Alistair Chapman
+
+* ['Failed to install tool' errors when running Cake on Linux](https://blog.agchapman.com/failed-to-install-tool-errors-when-running-cake-on-linux/)
+* [Introducing the Cake APT Module](https://blog.agchapman.com/introducing-the-cake-apt-module/)
+* [Using NSwag with Cake on .NET Core](https://blog.agchapman.com/using-nswag-with-cake-on-net-core/)
+* [Introducing the Cake DNF Module](https://blog.agchapman.com/introducing-the-cake-dnf-module/)
+* [Introducing the Cake Build Systems Module](https://blog.agchapman.com/introducing-the-cake-build-systems-module)
+* [VSIX Continuous Delivery using Cake, AppVeyor and MyGet](https://blog.agchapman.com/vsix-continuous-delivery-using-cake-appveyor-and-myget/)
+* [VSIX Continuous Integration using Cake and AppVeyor](https://blog.agchapman.com/vsix-continuous-integration-using-cake-and-appveyor/)
+* [Using Cake with VSTS or TFS](https://blog.agchapman.com/using-cake-with-vsts-or-tfs/)
+
+## Andrew Lock
+
+* [Running tests with dotnet xunit using Cake](https://andrewlock.net/running-tests-with-dotnet-xunit-using-cake/)
+
+## bambit
+
+* [Build a Orckestra C1 CMS Addon with Cake](https://bambit.ch/blog/Orckestra-C1-CMS-Add-On-mit-Cake-C-Make-paketieren) **NOTE:** Written in German
+* [Build nopCommerce as WebDeploy Package with Cake!](https://bambit.ch/blog/webdeploy-package-erstellen-mit-cakebuild) **NOTE:** Written in German
+
+## Dave Glick
+
+* [Publishing To Azure Using Cake And Web Deploy](https://daveaglick.com/posts/publishing-to-azure-using-cake-and-web-deploy)
+
 ## Geert van Horrik
 
 * [Debugging Cake add-ins using Visual Studio](http://geertvanhorrik.com/2017/08/01/debugging-cake-add-ins-using-visual-studio/)
+
+## Henning Støverud
+
+* [Publish xUnit test results in VSTS using Cake](http://blog.stoverud.no/posts/publish-xunit-test-results-in-vsts/)
+
+## Jamie Phillips
+
+* [Cake: Contributing to an Addin](https://www.phillipsj.net/posts/cake-contributing-to-an-addin)
+* [Deploying Desktop Apps with ClickOnce, MSDeploy, and Cake](https://www.phillipsj.net/posts/deploying-desktop-apps-with-clickonce-msdeploy-and-cake)
+* [Moving most of my Cake Addins](https://www.phillipsj.net/posts/moving-most-of-my-cake-addins)
+* [Announcing Cake.Netlify](https://www.phillipsj.net/posts/announcing-cake-netlify)
+* [Cake: A recipe for success](http://www.phillipsj.net/posts/cake-a-recipe-for-success)
+* [Cake Crumbs of the Week #3](http://www.phillipsj.net/posts/cake-crumbs-of-the-week-third-edition)
+* [Cake Crumbs of the Week #2](http://www.phillipsj.net/posts/cake-crumbs-of-the-week-second-edition)
+* [Cake: One way to SFTP](http://www.phillipsj.net/posts/cake-one-way-to-sftp?platform=hootsuite)
+* [Cake Crumbs of the Week](http://www.phillipsj.net/posts/cake-crumbs-of-the-week)
+* [Cake: Developing Addins Part 5](http://www.phillipsj.net/posts/cake-developing-addins-part-5)
+* [Hudson Bay Start for Projects](http://www.phillipsj.net/posts/hudson-bay-start-for-projects)
+* [Cake: Developing Addins Part 4](http://www.phillipsj.net/posts/cake-developing-addins-part-4)
+* [Cake: Developing Addins Part 3](http://www.phillipsj.net/posts/cake-developing-addins-part-3)
+* [Cake: Developing Addins Part 2](http://www.phillipsj.net/posts/cake-developing-addins-part-2)
+* [Cake: Developing Addins Part 1](http://www.phillipsj.net/posts/cake-developing-addins-part-1)
 
 ## Jeremy Lindsay
 
@@ -14,48 +60,19 @@ Title: Blog Posts
 * [Running a .NET Core 2 app on Raspbian Jessie, and deploying to the Pi with Cake](https://jeremylindsayni.wordpress.com/2017/07/23/running-a-net-core-2-app-on-raspbian-jessie-and-deploying-to-the-pi-with-cake/)
 * [Calling a custom executable from Cake using StartProcess and ProcessSettings](https://jeremylindsayni.wordpress.com/2017/07/17/calling-a-custom-executable-from-cake-using-startprocess-and-processsettings/)
 
-## Henning Støverud
-
-* [Publish xUnit test results in VSTS using Cake](http://blog.stoverud.no/posts/publish-xunit-test-results-in-vsts/)
-
 ## Jürgen Gutsch
 
 * [A first glimpse into CAKE](http://asp.net-hacker.rocks/2017/04/20/trying-cake.html)
+
+## Manuel Blanquett
+
+* [Creating a distributable deployment host with Cake](https://blanquett.net/2017/02/18/octocake/)
 
 ## Mattias Karlsson
 
 * [Dispelling the magic! - The layers and pieces of Cake](https://hackernoon.com/dispelling-the-magic-6dc0fdfe476c)
 * [Delivering Functions with Cake](https://medium.com/@devlead/delivering-functions-with-cake-4b269c50f817)
 * [Bringing Cake to Microsoft Teams](https://medium.com/@devlead/bringing-cake-to-microsoft-teams-b49848981d5d)
-
-## Jamie Phillips
-
-* [Cake: Developing Addins Part 1](http://www.phillipsj.net/posts/cake-developing-addins-part-1)
-* [Cake: Developing Addins Part 2](http://www.phillipsj.net/posts/cake-developing-addins-part-2)
-* [Cake: Developing Addins Part 3](http://www.phillipsj.net/posts/cake-developing-addins-part-3)
-* [Cake: Developing Addins Part 4](http://www.phillipsj.net/posts/cake-developing-addins-part-4)
-* [Hudson Bay Start for Projects](http://www.phillipsj.net/posts/hudson-bay-start-for-projects)
-* [Cake: Developing Addins Part 5](http://www.phillipsj.net/posts/cake-developing-addins-part-5)
-* [Cake Crumbs of the Week](http://www.phillipsj.net/posts/cake-crumbs-of-the-week)
-* [Cake: One way to SFTP](http://www.phillipsj.net/posts/cake-one-way-to-sftp?platform=hootsuite)
-* [Cake Crumbs of the Week #2](http://www.phillipsj.net/posts/cake-crumbs-of-the-week-second-edition)
-* [Cake Crumbs of the Week #3](http://www.phillipsj.net/posts/cake-crumbs-of-the-week-third-edition)
-* [Cake: A recipe for success](http://www.phillipsj.net/posts/cake-a-recipe-for-success)
-
-## bambit
-
-* [Build a Orckestra C1 CMS Addon with Cake](https://bambit.ch/blog/Orckestra-C1-CMS-Add-On-mit-Cake-C-Make-paketieren) **NOTE:** Written in German
-* [Build nopCommerce as WebDeploy Package with Cake!](https://bambit.ch/blog/webdeploy-package-erstellen-mit-cakebuild) **NOTE:** Written in German
-
-## Manuel Blanquett
-
-* [Creating a distributable deployment host with Cake](https://blanquett.net/2017/02/18/octocake/)
-
-## Alistair Chapman
-
-* [Introducing the Cake DNF Module](https://blog.agchapman.com/introducing-the-cake-dnf-module/)
-* [Introducing the Cake Build Systems Module](https://blog.agchapman.com/introducing-the-cake-build-systems-module)
-* [Using Cake with VSTS or TFS](https://blog.agchapman.com/using-cake-with-vsts-or-tfs/)
 
 ## Muhammad Rehan Saeed
 
@@ -65,32 +82,7 @@ Title: Blog Posts
 
 * [How we use Cake to build .NET Core apps and version assemblies](https://stackify.com/how-we-use-cake-to-build-net-core-apps/)
 
-## Dave Glick
-
-* [Publishing To Azure Using Cake And Web Deploy](https://daveaglick.com/posts/publishing-to-azure-using-cake-and-web-deploy)
-
 # 2016
-
-## miso_soup3
-
-* [Custom Deployment for Azure Web Apps using CAKE \- miso\_soup3 Blog](http://miso-soup3.hateblo.jp/entry/2016/12/28/191112)  **NOTE:** written in Japenese
-
-## November Five
-
-* [Jenkins Serving Cake: Our Recipe for Windows](https://novemberfive.co/blog/windows-jenkins-cake-tutorial/)
-
-## Chester Burbidge
-
-* [Let them use CAKE](http://cburbidge.github.io/let-them-use-cake/)
-
-## tpodolak
-
-* [Debugging Cake Scripts](https://tpodolak.com/blog/2016/07/10/debugging-cake-scripts/)
-* [Cake - Data at the root level is invalid](https://tpodolak.com/blog/2016/09/08/cake-data-root-level-invalid/)
-
-## Max Vasilyev
-
-* [VSTS vs NuGet vs CakeBuild – again!](http://tech.trailmax.info/2017/01/vsts-vs-nuget-vs-cakebuild-again/)
 
 ## Adam Hathcock
 
@@ -99,6 +91,15 @@ Title: Blog Posts
 ## Channel 9
 
 * [Cake!... Baking a new Build with C# Make](https://channel9.msdn.com/coding4fun/blog/Cake-Baking-a-new-Build-with-C-Make)
+
+## Chester Burbidge
+
+* [Let them use CAKE](http://cburbidge.github.io/let-them-use-cake/)
+
+## Derek Comartin
+
+* [Automating Builds with Cake (c# Make)](http://codeopinion.com/automating-builds-with-cake-c-make/)
+* [Octopus Deploy in Your Cake (C# Make)](http://codeopinion.com/octopus-deploy-in-your-cake-c-make/)
 
 ## Jamie Phillips
 
@@ -111,18 +112,30 @@ Title: Blog Posts
 * [Cake.AppPackager](http://www.phillipsj.net/posts/cake-apppackager)
 * [Announcing Cake.Ftp](http://www.phillipsj.net/posts/announcing-cake-ftp)
 
-## Derek Comartin
+## Laurent Kempe
 
-* [Automating Builds with Cake (c# Make)](http://codeopinion.com/automating-builds-with-cake-c-make/)
-* [Octopus Deploy in Your Cake (C# Make)](http://codeopinion.com/octopus-deploy-in-your-cake-c-make/)
+* [Moving to Cake (C# Make)](http://laurentkempe.com/2016/04/05/Moving-to-Cake-CSharp-Make/)
+
+## Max Vasilyev
+
+* [VSTS vs NuGet vs CakeBuild – again!](http://tech.trailmax.info/2017/01/vsts-vs-nuget-vs-cakebuild-again/)
+
+## miso_soup3
+
+* [Custom Deployment for Azure Web Apps using CAKE \- miso\_soup3 Blog](http://miso-soup3.hateblo.jp/entry/2016/12/28/191112)  **NOTE:** written in Japenese
+
+## November Five
+
+* [Jenkins Serving Cake: Our Recipe for Windows](https://novemberfive.co/blog/windows-jenkins-cake-tutorial/)
 
 ## Robert Muehsig
 
 * [CAKE: Building solutions with C# & Roslyn](http://blog.codeinside.eu/2016/07/09/cake-building-with-cake/)
 
-## Laurent Kempe
+## tpodolak
 
-* [Moving to Cake (C# Make)](http://laurentkempe.com/2016/04/05/Moving-to-Cake-CSharp-Make/)
+* [Debugging Cake Scripts](https://tpodolak.com/blog/2016/07/10/debugging-cake-scripts/)
+* [Cake - Data at the root level is invalid](https://tpodolak.com/blog/2016/09/08/cake-data-root-level-invalid/)
 
 # 2015
 
