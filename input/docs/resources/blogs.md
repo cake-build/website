@@ -78,6 +78,11 @@ Title: Blog Posts
 
 * [Cross-Platform DevOps for .NET Core](http://rehansaeed.com/cross-platform-devops-net-core/)
 
+## Rodney Littles II
+
+* [Building with Cake.Recipe](https://rodneylittlesii.com/posts/topic/adding-cake-recipe)
+* [How do you debug a Cake addin](https://rodneylittlesii.com/posts/topic/debug-cake-addin)
+
 ## Stackify
 
 * [How we use Cake to build .NET Core apps and version assemblies](https://stackify.com/how-we-use-cake-to-build-net-core-apps/)
