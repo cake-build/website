@@ -32,6 +32,10 @@ Title: Blog Posts
 
 * [There Is Cake at Pluralsight](https://megakemp.com/2017/10/20/cake-at-pluralsight/)
 
+## Gary Woodfine
+
+* [How to write a Cake Build script for ASP.net core project](https://garywoodfine.com/how-to-write-a-cake-build-script-for-asp-net-core-project/)
+
 ## Geert van Horrik
 
 * [Debugging Cake add-ins using Visual Studio](http://geertvanhorrik.com/2017/08/01/debugging-cake-add-ins-using-visual-studio/)
@@ -132,6 +136,10 @@ Title: Blog Posts
 * [Cake: Unit testing addins](http://www.phillipsj.net/2016/08/07/Cake-Unit-testing-addins/)
 * [Cake.AppPackager](http://www.phillipsj.net/posts/cake-apppackager)
 * [Announcing Cake.Ftp](http://www.phillipsj.net/posts/announcing-cake-ftp)
+
+## John Louros
+
+* [Manage your build workflow with Cake-Build](https://www.johnlouros.com/blog/manage-your-build-process-with-cake-build)
 
 ## Laurent Kempe
 
