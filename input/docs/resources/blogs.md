@@ -60,6 +60,10 @@ Title: Blog Posts
 * [Running a .NET Core 2 app on Raspbian Jessie, and deploying to the Pi with Cake](https://jeremylindsayni.wordpress.com/2017/07/23/running-a-net-core-2-app-on-raspbian-jessie-and-deploying-to-the-pi-with-cake/)
 * [Calling a custom executable from Cake using StartProcess and ProcessSettings](https://jeremylindsayni.wordpress.com/2017/07/17/calling-a-custom-executable-from-cake-using-startprocess-and-processsettings/)
 
+## Jon D (redth)
+
+* [Debugging Cake on macOS with Mono](https://redth.codes/debugging-cake-on-macos-with-mono/)
+
 ## Jürgen Gutsch
 
 * [A first glimpse into CAKE](http://asp.net-hacker.rocks/2017/04/20/trying-cake.html)
@@ -77,6 +81,11 @@ Title: Blog Posts
 ## Muhammad Rehan Saeed
 
 * [Cross-Platform DevOps for .NET Core](http://rehansaeed.com/cross-platform-devops-net-core/)
+
+## Rodney Littles II
+
+* [Building with Cake.Recipe](https://rodneylittlesii.com/posts/topic/adding-cake-recipe)
+* [How do you debug a Cake addin](https://rodneylittlesii.com/posts/topic/debug-cake-addin)
 
 ## Stackify
 
@@ -150,3 +159,7 @@ Title: Blog Posts
 * [Web Compiler with a side of Cake](http://www.phillipsj.net/posts/web-compiler-with-a-side-of-cake)
 * [I like surprises, especically when Cake is involved](http://www.phillipsj.net/posts/i-like-surprises-especially-when-cake-is-involved)
 * [Cake.Squirrel](http://www.phillipsj.net/posts/cake-squirrel)
+
+## Jon D (redth)
+
+* [Would you like some C# in your Cake?](https://redth.codes/would-you-like-some-csharp-in-your-cake/)
