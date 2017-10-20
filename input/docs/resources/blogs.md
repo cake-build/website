@@ -28,6 +28,10 @@ Title: Blog Posts
 
 * [Publishing To Azure Using Cake And Web Deploy](https://daveaglick.com/posts/publishing-to-azure-using-cake-and-web-deploy)
 
+## Enrico Campidoglio
+
+* [There Is Cake at Pluralsight](https://megakemp.com/2017/10/20/cake-at-pluralsight/)
+
 ## Geert van Horrik
 
 * [Debugging Cake add-ins using Visual Studio](http://geertvanhorrik.com/2017/08/01/debugging-cake-add-ins-using-visual-studio/)
@@ -90,6 +94,14 @@ Title: Blog Posts
 ## Stackify
 
 * [How we use Cake to build .NET Core apps and version assemblies](https://stackify.com/how-we-use-cake-to-build-net-core-apps/)
+
+## Warren Bates
+
+* [Setting up the addin build process](http://wbates.net/posts/baking-a-cake-addin-part-3-recipe)
+* [Getting Started with Cake.Recipe](http://wbates.net/posts/getting-started-with-cake-recipe)
+* [Setting up a Wyam blog with Cake.Recipe and GitHub pages](http://wbates.net/posts/setting-up-a-wyam-blog-with-cake-recipe-and-github-pages)
+* [Testing a Cake Addin](http://wbates.net/posts/baking-a-cake-adding-part-2-testing)
+* [Baking a Cake Addin](http://wbates.net/posts/baking-a-cake-addin-part-1)
 
 # 2016
 
