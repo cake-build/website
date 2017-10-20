@@ -28,6 +28,10 @@ Title: Blog Posts
 
 * [Publishing To Azure Using Cake And Web Deploy](https://daveaglick.com/posts/publishing-to-azure-using-cake-and-web-deploy)
 
+## Enrico Campidoglio
+
+* [There Is Cake at Pluralsight](https://megakemp.com/2017/10/20/cake-at-pluralsight/)
+
 ## Geert van Horrik
 
 * [Debugging Cake add-ins using Visual Studio](http://geertvanhorrik.com/2017/08/01/debugging-cake-add-ins-using-visual-studio/)
