@@ -91,6 +91,14 @@ Title: Blog Posts
 
 * [How we use Cake to build .NET Core apps and version assemblies](https://stackify.com/how-we-use-cake-to-build-net-core-apps/)
 
+## Warren Bates
+
+* [Setting up the addin build process](http://wbates.net/posts/baking-a-cake-addin-part-3-recipe)
+* [Getting Started with Cake.Recipe](http://wbates.net/posts/getting-started-with-cake-recipe)
+* [Setting up a Wyam blog with Cake.Recipe and GitHub pages](http://wbates.net/posts/setting-up-a-wyam-blog-with-cake-recipe-and-github-pages)
+* [Testing a Cake Addin](http://wbates.net/posts/baking-a-cake-adding-part-2-testing)
+* [Baking a Cake Addin](http://wbates.net/posts/baking-a-cake-addin-part-1)
+
 # 2016
 
 ## Adam Hathcock
