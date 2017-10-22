@@ -28,6 +28,10 @@ Title: Blog Posts
 
 * [Publishing To Azure Using Cake And Web Deploy](https://daveaglick.com/posts/publishing-to-azure-using-cake-and-web-deploy)
 
+## Dariusz Pawlukiewicz
+
+* [Integrating Codecov with .NET Core app, AppVeyor and Github](http://foreverframe.net/integrating-codecov-with-net-core-app-appveyor-and-github/)
+
 ## Enrico Campidoglio
 
 * [There Is Cake at Pluralsight](https://megakemp.com/2017/10/20/cake-at-pluralsight/)
