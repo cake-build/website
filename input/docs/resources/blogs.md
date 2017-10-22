@@ -28,9 +28,17 @@ Title: Blog Posts
 
 * [Publishing To Azure Using Cake And Web Deploy](https://daveaglick.com/posts/publishing-to-azure-using-cake-and-web-deploy)
 
+## Dariusz Pawlukiewicz
+
+* [Integrating Codecov with .NET Core app, AppVeyor and Github](http://foreverframe.net/integrating-codecov-with-net-core-app-appveyor-and-github/)
+
 ## Enrico Campidoglio
 
 * [There Is Cake at Pluralsight](https://megakemp.com/2017/10/20/cake-at-pluralsight/)
+
+## Gary Woodfine
+
+* [How to write a Cake Build script for ASP.net core project](https://garywoodfine.com/how-to-write-a-cake-build-script-for-asp-net-core-project/)
 
 ## Geert van Horrik
 
@@ -132,6 +140,10 @@ Title: Blog Posts
 * [Cake: Unit testing addins](http://www.phillipsj.net/2016/08/07/Cake-Unit-testing-addins/)
 * [Cake.AppPackager](http://www.phillipsj.net/posts/cake-apppackager)
 * [Announcing Cake.Ftp](http://www.phillipsj.net/posts/announcing-cake-ftp)
+
+## John Louros
+
+* [Manage your build workflow with Cake-Build](https://www.johnlouros.com/blog/manage-your-build-process-with-cake-build)
 
 ## Laurent Kempe
 
