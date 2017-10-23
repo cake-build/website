@@ -94,6 +94,10 @@ Title: Blog Posts
 
 * [Cross-Platform DevOps for .NET Core](http://rehansaeed.com/cross-platform-devops-net-core/)
 
+## Pavlo Glazkov
+
+* [Build scripts instead of build steps in CI tools](https://www.pglazkov.com/ci-build-with-scripts-or-ci-tools/)
+
 ## Rodney Littles II
 
 * [Building with Cake.Recipe](https://rodneylittlesii.com/posts/topic/adding-cake-recipe)
@@ -124,6 +128,10 @@ Title: Blog Posts
 ## Chester Burbidge
 
 * [Let them use CAKE](http://cburbidge.github.io/let-them-use-cake/)
+
+## Dave Diehl
+
+* [Avoid Programming in TeamCity or Jenkins with Cake](http://daveondevops.com/2016/04/13/avoidbuildtoolusecake/)
 
 ## Derek Comartin
 
