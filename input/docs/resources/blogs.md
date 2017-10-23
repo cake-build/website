@@ -125,6 +125,10 @@ Title: Blog Posts
 
 * [Let them use CAKE](http://cburbidge.github.io/let-them-use-cake/)
 
+## Dave Diehl
+
+* [Avoid Programming in TeamCity or Jenkins with Cake](http://daveondevops.com/2016/04/13/avoidbuildtoolusecake/)
+
 ## Derek Comartin
 
 * [Automating Builds with Cake (c# Make)](http://codeopinion.com/automating-builds-with-cake-c-make/)
