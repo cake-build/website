@@ -1,5 +1,6 @@
 Name: Cake.Svn
 NuGet: Cake.Svn
+Prerelease: true
 Assemblies:
 - "Cake.Svn.dll"
 Repository: https://github.com/cake-contrib/Cake.Svn
