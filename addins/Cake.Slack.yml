@@ -1,7 +1,7 @@
 Name: Cake.Slack
 NuGet: Cake.Slack
 Assemblies:
-- "Cake.Slack.dll"
+- "/**/Cake.Slack.dll"
 Repository: https://github.com/WCOMAB/Cake.Slack
 Author: WCOMAB
 Description: "Cake Addin that extends Cake with Slack messaging features."
