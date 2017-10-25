@@ -193,7 +193,19 @@ Task("Debug")
     .Does(() =>
     {
         StartProcess("../Wyam/src/clients/Wyam/bin/Debug/wyam.exe",
-            "-a \"../Wyam/src/**/bin/Debug/*.dll\" -r \"docs -i\" -t \"../Wyam/themes/Docs/Samson\" -p --attach");
+            "-a \"../Wyam/src/**/bin/Debug/**/*.dll\" -r \"docs -i\" -t \"../Wyam/themes/Docs/Samson\" -p");
+    });
+    
+// Does not download artifacts (run Build or GetArtifacts target first)
+Task("Debug-Addins")
+    .IsDependentOn("GetAddinSpecs")
+    .Does(() =>
+    {
+        StartProcess("../Wyam/src/clients/Wyam/bin/Debug/wyam.exe",
+            "-a \"../Wyam/src/**/bin/Debug/**/*.dll\" -r \"docs -i\" -t \"../Wyam/themes/Docs/Samson\" -p --attach"
+            + " --setting \"AssemblyFiles=["
+            + String.Join(",", addinSpecs.Where(x => x.Assemblies != null).SelectMany(x => x.Assemblies).Select(x => "../release/addins" + x))
+            + "]\"");
     });
 
 Task("Copy-Bootstrapper-Download")
