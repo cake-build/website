@@ -28,6 +28,18 @@ Title: Blog Posts
 
 * [Publishing To Azure Using Cake And Web Deploy](https://daveaglick.com/posts/publishing-to-azure-using-cake-and-web-deploy)
 
+## Dariusz Pawlukiewicz
+
+* [Integrating Codecov with .NET Core app, AppVeyor and Github](http://foreverframe.net/integrating-codecov-with-net-core-app-appveyor-and-github/)
+
+## Enrico Campidoglio
+
+* [There Is Cake at Pluralsight](https://megakemp.com/2017/10/20/cake-at-pluralsight/)
+
+## Gary Woodfine
+
+* [How to write a Cake Build script for ASP.net core project](https://garywoodfine.com/how-to-write-a-cake-build-script-for-asp-net-core-project/)
+
 ## Geert van Horrik
 
 * [Debugging Cake add-ins using Visual Studio](http://geertvanhorrik.com/2017/08/01/debugging-cake-add-ins-using-visual-studio/)
@@ -60,6 +72,10 @@ Title: Blog Posts
 * [Running a .NET Core 2 app on Raspbian Jessie, and deploying to the Pi with Cake](https://jeremylindsayni.wordpress.com/2017/07/23/running-a-net-core-2-app-on-raspbian-jessie-and-deploying-to-the-pi-with-cake/)
 * [Calling a custom executable from Cake using StartProcess and ProcessSettings](https://jeremylindsayni.wordpress.com/2017/07/17/calling-a-custom-executable-from-cake-using-startprocess-and-processsettings/)
 
+## Jon D (redth)
+
+* [Debugging Cake on macOS with Mono](https://redth.codes/debugging-cake-on-macos-with-mono/)
+
 ## Jürgen Gutsch
 
 * [A first glimpse into CAKE](http://asp.net-hacker.rocks/2017/04/20/trying-cake.html)
@@ -78,6 +94,18 @@ Title: Blog Posts
 
 * [Cross-Platform DevOps for .NET Core](http://rehansaeed.com/cross-platform-devops-net-core/)
 
+## Pavlo Glazkov
+
+* [Build scripts instead of build steps in CI tools](https://www.pglazkov.com/ci-build-with-scripts-or-ci-tools/)
+
+## Philipp Grathwohl
+
+* [Renew your builds - A piece of cake](https://blog.papau.org/2017/10/25/renew-your-builds.html)
+
+## Reuben Bond
+
+* [Deploying Wyam GitHub Using Visual Studio Online](https://reubenbond.github.io/posts/2017-Oct-30-setting-up-wyam)
+
 ## Rodney Littles II
 
 * [Building with Cake.Recipe](https://rodneylittlesii.com/posts/topic/adding-cake-recipe)
@@ -86,6 +114,14 @@ Title: Blog Posts
 ## Stackify
 
 * [How we use Cake to build .NET Core apps and version assemblies](https://stackify.com/how-we-use-cake-to-build-net-core-apps/)
+
+## Warren Bates
+
+* [Setting up the addin build process](http://wbates.net/posts/baking-a-cake-addin-part-3-recipe)
+* [Getting Started with Cake.Recipe](http://wbates.net/posts/getting-started-with-cake-recipe)
+* [Setting up a Wyam blog with Cake.Recipe and GitHub pages](http://wbates.net/posts/setting-up-a-wyam-blog-with-cake-recipe-and-github-pages)
+* [Testing a Cake Addin](http://wbates.net/posts/baking-a-cake-adding-part-2-testing)
+* [Baking a Cake Addin](http://wbates.net/posts/baking-a-cake-addin-part-1)
 
 # 2016
 
@@ -100,6 +136,10 @@ Title: Blog Posts
 ## Chester Burbidge
 
 * [Let them use CAKE](http://cburbidge.github.io/let-them-use-cake/)
+
+## Dave Diehl
+
+* [Avoid Programming in TeamCity or Jenkins with Cake](http://daveondevops.com/2016/04/13/avoidbuildtoolusecake/)
 
 ## Derek Comartin
 
@@ -116,6 +156,10 @@ Title: Blog Posts
 * [Cake: Unit testing addins](http://www.phillipsj.net/2016/08/07/Cake-Unit-testing-addins/)
 * [Cake.AppPackager](http://www.phillipsj.net/posts/cake-apppackager)
 * [Announcing Cake.Ftp](http://www.phillipsj.net/posts/announcing-cake-ftp)
+
+## John Louros
+
+* [Manage your build workflow with Cake-Build](https://www.johnlouros.com/blog/manage-your-build-process-with-cake-build)
 
 ## Laurent Kempe
 
@@ -155,3 +199,7 @@ Title: Blog Posts
 * [Web Compiler with a side of Cake](http://www.phillipsj.net/posts/web-compiler-with-a-side-of-cake)
 * [I like surprises, especically when Cake is involved](http://www.phillipsj.net/posts/i-like-surprises-especially-when-cake-is-involved)
 * [Cake.Squirrel](http://www.phillipsj.net/posts/cake-squirrel)
+
+## Jon D (redth)
+
+* [Would you like some C# in your Cake?](https://redth.codes/would-you-like-some-csharp-in-your-cake/)

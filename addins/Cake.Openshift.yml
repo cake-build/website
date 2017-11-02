@@ -1,0 +1,9 @@
+Name: Cake.Openshift
+NuGet: Cake.Openshift
+Assemblies:
+- "/**/Cake.Openshift.dll"
+Repository: https://github.com/cake-contrib/Cake.Openshift
+Author: Meir Blachman
+Description: "A set of aliases for Cake to help with running Openshift commands"
+Categories:
+- Openshift
