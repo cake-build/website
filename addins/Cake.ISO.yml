@@ -1,0 +1,10 @@
+Name: Cake.ISO
+NuGet: Cake.ISO
+Prerelease: true
+Assemblies:
+- "/**/Cake.ISO.dll"
+Repository: https://github.com/austinlparker/Cake.ISO
+Author: Austin Parker @austinlparker
+Description: "Create an ISO as part of a Cake build."
+Categories:
+- Misc
