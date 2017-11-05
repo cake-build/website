@@ -98,6 +98,14 @@ Title: Blog Posts
 
 * [Build scripts instead of build steps in CI tools](https://www.pglazkov.com/ci-build-with-scripts-or-ci-tools/)
 
+## Philipp Grathwohl
+
+* [Renew your builds - A piece of cake](https://blog.papau.org/2017/10/25/renew-your-builds.html)
+
+## Reuben Bond
+
+* [Deploying Wyam GitHub Using Visual Studio Online](https://reubenbond.github.io/posts/2017-Oct-30-setting-up-wyam)
+
 ## Rodney Littles II
 
 * [Building with Cake.Recipe](https://rodneylittlesii.com/posts/topic/adding-cake-recipe)
