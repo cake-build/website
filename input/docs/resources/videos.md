@@ -3,6 +3,13 @@ Order: 10
 
 # 2017
 
+## Build Automation? It's a piece of Cake
+### Guilherme Ferreira - NetPonto
+
+**NOTE:** Presented in Portuguese
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/sN7eA4hL13A" frameborder="0" allowfullscreen></iframe>
+
 ## Cake 101 – Getting Started with C# Powered Cross Platform
 ### Mattias Karlsson - DevConf 2017
 
