@@ -90,6 +90,10 @@ Title: Blog Posts
 * [Delivering Functions with Cake](https://medium.com/@devlead/delivering-functions-with-cake-4b269c50f817)
 * [Bringing Cake to Microsoft Teams](https://medium.com/@devlead/bringing-cake-to-microsoft-teams-b49848981d5d)
 
+## Max Vasilyev
+
+* [VSTS vs NuGet vs CakeBuild – again!](http://tech.trailmax.info/2017/01/vsts-vs-nuget-vs-cakebuild-again/)
+
 ## Muhammad Rehan Saeed
 
 * [Cross-Platform DevOps for .NET Core](http://rehansaeed.com/cross-platform-devops-net-core/)
@@ -167,7 +171,9 @@ Title: Blog Posts
 
 ## Max Vasilyev
 
-* [VSTS vs NuGet vs CakeBuild – again!](http://tech.trailmax.info/2017/01/vsts-vs-nuget-vs-cakebuild-again/)
+* [Database Integration Tests in Visual Studio Team Services and Cake Build](http://tech.trailmax.info/2016/10/database-integration-tests-in-visual-studio-team-services-and-cake-build/)
+* [Cake Build vs VSTS](http://tech.trailmax.info/2016/09/cake-build-vs-vsts/)
+* [All Your Cake belong to… NOM-NOM-NOM](http://tech.trailmax.info/2016/09/all-your-cake-belong-to-nom-nom-nom/)
 
 ## miso_soup3
 
