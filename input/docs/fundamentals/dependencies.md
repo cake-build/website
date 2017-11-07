@@ -37,7 +37,7 @@ Task("B")
 
 Task("C")
     .IsDependentOn("A")
-    .IsDependentOn("A")
+    .IsDependentOn("B")
     .Does(() =>
 {
 });
