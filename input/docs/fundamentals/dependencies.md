@@ -22,11 +22,35 @@ RunTarget("B");
 This will first execute target `A` and then `B` as expected.
 
 
+Multiple dependencies is also possible.
+
+```csharp
+Task("A")
+    .Does(() =>
+{
+});
+
+Task("B")
+    .Does(() =>
+{
+});
+
+Task("C")
+    .IsDependentOn("A")
+    .IsDependentOn("B")
+    .Does(() =>
+{
+});
+
+RunTarget("C");
+```
+Running target `C` will execute `A` and then `B`.
+
 # Reverse task dependencies
 
 Since version 0.23.0, if you prefer to define dependencies with a reversed relationship, you can define them using the `IsDependeeOf` method.
 
-The task definition of the previous example will be identical to the following:
+The task definition of the first example above will be identical to the following:
 
 ```csharp
 Task("A")
@@ -40,6 +64,7 @@ Task("B")
 {
 });
 
+=======
 RunTarget("B");
 ```
 
