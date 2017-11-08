@@ -6,23 +6,26 @@ author: mholo65
 
 ## Intellisense
 
-As some of you might have noticed, we have been working on getting intellisense working for Cake files in Visual Studio Code. Today we are happy to announce that the [OmniSharp](http://www.omnisharp.net/) project have merged our pull requests ([#932](https://github.com/OmniSharp/omnisharp-roslyn/pull/932) and [#1681](https://github.com/OmniSharp/omnisharp-vscode/pull/1681)) and released v1.13.0 of the [C# extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp), which includes support for Cake. In addition to this, we have released a new tool, called [bakery](https://github.com/cake-build/bakery), which is the script analysis and code generation engine making this possible. More information about bakery and how everything works behind the scenes are coming in an upcoming blog.
+As some of you might have noticed, we have been working on getting intellisense working for Cake files in Visual Studio Code.  Today we are happy to announce that the [OmniSharp](http://www.omnisharp.net/) project have merged our pull requests ([#932](https://github.com/OmniSharp/omnisharp-roslyn/pull/932) and [#1681](https://github.com/OmniSharp/omnisharp-vscode/pull/1681)) and released v1.13.0 of the [C# extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp), which includes support for Cake.  In addition to this, we have released a new tool, called [bakery](https://github.com/cake-build/bakery), which is the script analysis and code generation engine making this possible. More information about bakery and how everything works behind the scenes are coming in an upcoming blog.
 
 ## How
 
 How do you get this working then? Well, just follow the following steps (we assume that you already have Visual Studio Code installed):
+
+1. Open Visual Studio Code to the folder that you have a Cake file in.
 1. Make sure v1.13.0 of the [C# for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) extension is installed in Visual Studio Code.
-2. Make sure that [Cake](https://www.nuget.org/packages/Cake/) is installed in your `tools` folder. We recommend v0.22.0 or later, otherwise your addins will be installed twice.
-3. Make sure that [Bakery](https://www.nuget.org/packages/Cake.Bakery/) is installed in your `tools` folder.
-4. Open the folder containing your `*.cake` files in Visual Studio Code.
-5. Success!
+1. Make sure v0.10.1 of the [Visual Studio Code Extension for Cake](https://marketplace.visualstudio.com/items?itemName=cake-build.cake-vscode) is installed in Visual Studio Code.
+1. Make sure that [Cake](https://www.nuget.org/packages/Cake/) is installed in your `tools` folder. We recommend v0.22.0 or later, otherwise your addins will be installed twice.  The easiest way to do this would be to run your `.\build.ps1` file.
+1. Make sure that [Bakery](https://www.nuget.org/packages/Cake.Bakery/) is installed in your `tools` folder.  The easiest way to do this would be using the `Install intellisense support` command which ships with the Visual Studio Code Extension for Cake.  Simply open the command palette, type `cake` and then select the option.
+1. At this point, you will need to close and re-open the folder within Visual Studio Code.
+1. Success!
 <br/>![Intellisense](/assets/img/intellisense-vscode/intellisense-vscode.png)
 
 ## Troubleshooting
 
 **Q: I've followed the steps, but I don't get any intellisense.**
 
-C# Extension for Visual Studio Code will automatically locate any `*.sln` file and use that as target directory when starting `omnisharp`. If your `*.cake` files are located in a different, you might need to select `Cake` project in the [project selector](https://code.visualstudio.com/docs/languages/csharp#_roslyn-and-omnisharp).
+The C# Extension for Visual Studio Code will automatically locate any `*.sln` file and use that as the target directory when starting `omnisharp`. If your `*.cake` files are located in a different location, you might need to select `Cake` project in the [project selector](https://code.visualstudio.com/docs/languages/csharp#_roslyn-and-omnisharp).
 
 **Q: I've selected the `Cake` project, but still don't get intellisense.**
 
@@ -33,7 +36,7 @@ Look in the `OmniSharp Log` for errors or warnings.
     Cake script service not connected. Aborting.
 ```
 
-The above is an indication on that `Cake.Bakery` isn't installed in your `tools` folder while the below usually means that `Cake` isn't installed in your `tools` folder. (Yes, we are working on better error messages :))
+The above is an indication that `Cake.Bakery` isn't installed in your `tools` folder, while the below usually means that `Cake` isn't installed in your `tools` folder. (Yes, we are working on better error messages :))
 
 ```
 [fail]: OmniSharp.Cake.CakeProjectSystem
