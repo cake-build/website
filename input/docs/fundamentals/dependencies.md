@@ -42,3 +42,28 @@ Task("B")
 
 RunTarget("B");
 ```
+
+# Multiple dependencies is also possible.
+
+```csharp
+Task("A")
+    .Does(() =>
+{
+});
+
+Task("B")
+    .Does(() =>
+{
+});
+
+Task("C")
+    .IsDependentOn("A")
+    .IsDependentOn("B")
+    .Does(() =>
+{
+});
+
+RunTarget("C");
+```
+
+Running target `C` will execute `A` and then `B`.
