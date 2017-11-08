@@ -40,19 +40,9 @@ Task("B")
 {
 });
 
-<<<<<<< HEAD
 RunTarget("B");
-=======
-Task("C")
-    .IsDependentOn("A")
-    .IsDependentOn("B")
-    .Does(() =>
-{
-});
-
-RunTarget("C");
->>>>>>> Update dependencies.md
 ```
+
 # Multiple dependencies is also possible.
 
 ```csharp
@@ -66,10 +56,9 @@ Task("B")
 {
 });
 
-<<<<<<< HEAD
 Task("C")
     .IsDependentOn("A")
-    .IsDependentOn("A")
+    .IsDependentOn("B")
     .Does(() =>
 {
 });
@@ -78,8 +67,3 @@ RunTarget("C");
 ```
 
 Running target `C` will execute `A` and then `B`.
-=======
-=======
-RunTarget("B");
-```
->>>>>>> Update dependencies.md

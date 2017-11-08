@@ -2,18 +2,18 @@ Order: 20
 Title: Visual Studio Code
 ---
 
-# Syntax Highlighting/Snippets
+# Snippets
 
-Syntax highlighting and Code snippets for .cake files are provided by the VS Code [Cake Extension](https://marketplace.visualstudio.com/items/cake-build.cake-vscode). 
+Code snippets for .cake files are provided by the VS Code [Cake Extension](https://marketplace.visualstudio.com/items/cake-build.cake-vscode).
 
 Full details on how to install an extension for VS Code can be found [here](https://code.visualstudio.com/docs/editor/extension-gallery)
 
 # Intellisense
 
-There is currently no support for Intellisense in .cake files within Visual Studio Code.
+Intellisense support for .cake files is provided through the Omnisharp project, along with Cake.Bakery.  Full details can be found in the [release blog post](https://cakebuild.net/blog/2017/11/intellisense-vscode).
 
-# Resource Video
+# Resource Videos
 
-There is a short introductory video showing off the features of the Visual Studio Code Extension for Cake here:
+There is a playlist of videos showing off the new features in each release of the Visual Studio Code Extension for Cake here:
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/zzZuysl3xSg" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL84yg23i9GBg7_7an5Qbo0Qllg-l2e-q-" frameborder="0" gesture="media" allowfullscreen></iframe>
