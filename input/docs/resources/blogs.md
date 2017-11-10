@@ -24,6 +24,10 @@ Title: Blog Posts
 * [Build a Orckestra C1 CMS Addon with Cake](https://bambit.ch/blog/Orckestra-C1-CMS-Add-On-mit-Cake-C-Make-paketieren) **NOTE:** Written in German
 * [Build nopCommerce as WebDeploy Package with Cake!](https://bambit.ch/blog/webdeploy-package-erstellen-mit-cakebuild) **NOTE:** Written in German
 
+## Bas de Cort
+
+* [Setting up a Xamarin build with Cake](https://basdecort.com/2017/10/10/setting-up-xamarin-build-with-cake/)
+
 ## Dave Glick
 
 * [Publishing To Azure Using Cake And Web Deploy](https://daveaglick.com/posts/publishing-to-azure-using-cake-and-web-deploy)
