@@ -123,6 +123,10 @@ Title: Blog Posts
 
 * [How we use Cake to build .NET Core apps and version assemblies](https://stackify.com/how-we-use-cake-to-build-net-core-apps/)
 
+## Tomasz Cielecki
+
+* [Modifying XML nodes with Cake](https://blog.ostebaronen.dk/2017/11/cake-modifying-xml-nodes.html)
+
 ## Warren Bates
 
 * [Setting up the addin build process](http://wbates.net/posts/baking-a-cake-addin-part-3-recipe)
