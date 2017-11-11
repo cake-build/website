@@ -24,6 +24,10 @@ Title: Blog Posts
 * [Build a Orckestra C1 CMS Addon with Cake](https://bambit.ch/blog/Orckestra-C1-CMS-Add-On-mit-Cake-C-Make-paketieren) **NOTE:** Written in German
 * [Build nopCommerce as WebDeploy Package with Cake!](https://bambit.ch/blog/webdeploy-package-erstellen-mit-cakebuild) **NOTE:** Written in German
 
+## Bas de Cort
+
+* [Setting up a Xamarin build with Cake](https://basdecort.com/2017/10/10/setting-up-xamarin-build-with-cake/)
+
 ## Dave Glick
 
 * [Publishing To Azure Using Cake And Web Deploy](https://daveaglick.com/posts/publishing-to-azure-using-cake-and-web-deploy)
@@ -68,6 +72,7 @@ Title: Blog Posts
 
 ## Jeremy Lindsay
 
+* [Deploying a .NET Core 2 app to a Raspberry Pi with Cake and PuTTY saved sessions](https://jeremylindsayni.wordpress.com/2017/11/10/deploying-a-net-core-2-app-to-a-raspberry-pi-and-putty-saved-sessions/)
 * [Deploy a UWP application to a Windows 10 device from the command line with Cake](https://jeremylindsayni.wordpress.com/2017/07/24/deploy-a-uwp-application-to-a-windows-10-device-from-the-command-line-with-cake/)
 * [Running a .NET Core 2 app on Raspbian Jessie, and deploying to the Pi with Cake](https://jeremylindsayni.wordpress.com/2017/07/23/running-a-net-core-2-app-on-raspbian-jessie-and-deploying-to-the-pi-with-cake/)
 * [Calling a custom executable from Cake using StartProcess and ProcessSettings](https://jeremylindsayni.wordpress.com/2017/07/17/calling-a-custom-executable-from-cake-using-startprocess-and-processsettings/)
@@ -118,6 +123,10 @@ Title: Blog Posts
 ## Stackify
 
 * [How we use Cake to build .NET Core apps and version assemblies](https://stackify.com/how-we-use-cake-to-build-net-core-apps/)
+
+## Tomasz Cielecki
+
+* [Modifying XML nodes with Cake](https://blog.ostebaronen.dk/2017/11/cake-modifying-xml-nodes.html)
 
 ## Warren Bates
 
