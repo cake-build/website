@@ -67,9 +67,9 @@ If script execution fail due to the execution policy, you might have to
 tell PowerShell to allow running scripts. You do this by
 [changing the execution policy](https://technet.microsoft.com/en-us/library/ee176961.aspx).
 
-## Linux/OS X
+## Linux/macOS
 
-To be able to execute the bash script on Linux or OS X you should
+To be able to execute the bash script on Linux or macOS you should
 give the owner of the script permission to execute it.
 
 ```bash

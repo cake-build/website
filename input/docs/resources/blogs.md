@@ -126,7 +126,9 @@ Title: Blog Posts
 
 ## Tomasz Cielecki
 
+* [Restore NuGets From Private Feed With Cake](https://blog.ostebaronen.dk/2017/11/cake-restore-nuget-from-private-feed.html)
 * [Modifying XML nodes with Cake](https://blog.ostebaronen.dk/2017/11/cake-modifying-xml-nodes.html)
+* [Cake build issue reporting with PRCA](https://blog.ostebaronen.dk/2017/08/cake-build-issue-reporting-with-prca.html)
 
 ## Warren Bates
 

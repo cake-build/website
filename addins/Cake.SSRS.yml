@@ -1,0 +1,9 @@
+Name: Cake.SSRS
+NuGet: Cake.SSRS
+Assemblies:
+- "/**/Cake.SSRS.dll"
+Repository: https://github.com/cake-contrib/Cake.SSRS
+Author: Louis Fischer
+Description: "Cake.SSRS is set of aliases that help simplify deploying objects to SQL Server Reporting Services (SSRS)."
+Categories:
+- SSRS
