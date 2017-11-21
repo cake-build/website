@@ -3,6 +3,8 @@ Order: 110
 
 The following shows all of the configuration options currently available within Cake, as well as their default values.
 
+Refer to [Configuration](/docs/fundamentals/configuration) for instructions on using a config file.
+
 # NuGet Download Url
 
 This allows the control of where Cake downloads NuGet packages from when using the addin and tool preprocessor directives.  This can be useful when it is necessary to work in an offline mode, where direct access to nuget.org is not available.
@@ -19,7 +21,7 @@ https://packages.nuget.org/api/v2
 CAKE_NUGET_SOURCE
 ```
 
-## ini File Contents
+## Config File Contents
 
 ```sh
 [Nuget]
@@ -50,7 +52,7 @@ This allows the configuration of the tools folder which is used by Cake when res
 CAKE_PATHS_TOOLS
 ```
 
-## ini File Contents
+## Config File Contents
 
 ```sh
 [Paths]
@@ -81,7 +83,7 @@ This allows the configuration of the Addins folder which is used by Cake when re
 CAKE_PATHS_ADDINS
 ```
 
-## ini File Contents
+## Config File Contents
 
 ```sh
 [Paths]
@@ -112,7 +114,7 @@ This allows the configuration of the Modules folder which is used by Cake when l
 CAKE_PATHS_MODULES
 ```
 
-## ini File Contents
+## Config File Contents
 
 ```sh
 [Paths]
@@ -155,7 +157,7 @@ false
 CAKE_SETTINGS_SKIPVERIFICATION
 ```
 
-## ini File Contents
+## Config File Contents
 
 ```sh
 [Settings]
@@ -194,7 +196,7 @@ false
 CAKE_NUGET_USEINPROCESSCLIENT
 ```
 
-## ini File Contents
+## Config File Contents
 
 ```sh
 [NuGet]
@@ -212,7 +214,7 @@ cake.exe --nuget_useinprocessclient=true
 
 # Addin NuGet dependencies
 
-When using In-Process NuGet installation available since Cake `0.22.0`, you now got the option to opt-in to installing and referencing NuGet package dependencies.
+When using In-Process NuGet installation, available since Cake `0.22.0`, you can also opt in to automatically installing and referencing NuGet package dependencies.
 
 ## Default Value
 
@@ -234,7 +236,7 @@ false
 CAKE_NUGET_LOADDEPENDENCIES
 ```
 
-## ini File Contents
+## Config File Contents
 
 ```sh
 [NuGet]
@@ -268,7 +270,7 @@ https://packages.nuget.org/api/v2
 CAKE_ROSLYN_NUGETSOURCE
 ```
 
-## ini File Contents
+## Config File Contents
 
 ```sh
 [Roslyn]
