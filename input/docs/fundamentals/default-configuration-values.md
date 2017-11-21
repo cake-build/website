@@ -212,7 +212,7 @@ cake.exe --nuget_useinprocessclient=true
 
 # Addin NuGet dependencies
 
-When using In-Process NuGet installation available since Cake `0.22.0`, you now got the option to opt-in to installing and referencing NuGet package dependencies.
+When using In-Process NuGet installation, available since Cake `0.22.0`, you can also opt in to automatically installing and referencing NuGet package dependencies.
 
 ## Default Value
 
