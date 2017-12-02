@@ -16,6 +16,10 @@ Right now, only NuGet packages are supported.
 #addin nuget:?package=Cake.Foo&version=1.2.3
 #addin nuget:?package=Cake.Foo&prerelease
 #addin nuget:https://myget.org/f/Cake/?package=Cake.Foo&prerelease
+// Local feed
+#addin nuget:file://localhost/packages/?package=Cake.Foo
+#addin nuget:file://localhost/packages/?package=Cake.Foo&version=1.2.3
+#addin nuget:file://localhost/packages/?package=Cake.Foo&prerelease
 ```
 
 ### Dependencies
@@ -87,6 +91,10 @@ Specify the `include` parameter if the executable does not end with .exe
 #tool nuget:?package=Cake.Foo&prerelease
 #tool nuget:https://myget.org/f/Cake/?package=Cake.Foo&prerelease
 #tool nuget:?package=Cake.Foo&include=path/to/foo.cmd
+// Local feed
+#tool nuget:file://localhost/packages/?package=Cake.Foo
+#tool nuget:file://localhost/packages/?package=Cake.Foo&version=1.2.3
+#tool nuget:file://localhost/packages/?package=Cake.Foo&prerelease
 ```
 
 # Shebang directive
