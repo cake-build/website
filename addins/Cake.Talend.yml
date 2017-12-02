@@ -1,0 +1,10 @@
+Name: Cake.Talend
+NuGet: Cake.Talend
+Assemblies:
+- "/**/Cake.Talend.dll"
+Repository: https://github.com/RadioSystems/Cake.Talend
+Author: Radio Systems Corporation
+Description: "Cake Addin for working with Talend."
+Categories:
+- Talend
+- ESB
