@@ -31,8 +31,15 @@ From Cake version 0.22.0 there's an option to fetch and load NuGet dependencies
 or
 #addin nuget:?package=foo.bar&loaddependencies=false
 ```
-
 This feature requires Cake to be [configured](/fundamentals/configuration.md) to not use `nuget.exe` but instead let Cake handle NuGet installation in-process.
+
+### Include and Exclude Options:
+
+```csharp
+#addin nuget:?package=Cake.Foo&include=/**/NoFoo.dll
+or
+#addin nuget:?package=Cake.Foo&exclude=/**/Foo.dll
+```
 
 # Load directive
 The load directive is used to reference external Cake scripts. Useful i.e. if you have common utility functions.
@@ -65,6 +72,14 @@ or
 ```
 Attempts to load `utilities.cake` from nuget
 
+### Include and Exclude Options:
+
+```csharp
+#load nuget:?package=utilities.cake&include=/**/NoFoo.cake
+or
+#load nuget:?package=utilities.cake&=exclude/**/Foo.cake
+```
+
 # Reference directive
 The reference directive is used to reference external assemblies for use in your scripts.
 
@@ -95,6 +110,14 @@ Specify the `include` parameter if the executable does not end with .exe
 #tool nuget:file://localhost/packages/?package=Cake.Foo
 #tool nuget:file://localhost/packages/?package=Cake.Foo&version=1.2.3
 #tool nuget:file://localhost/packages/?package=Cake.Foo&prerelease
+```
+
+### Include and Exclude Options:
+
+```csharp
+#tool nuget:?package=Cake.Foo&include=/**/NoFoo.exe
+or
+#tool nuget:?package=Cake.Foo&=exclude/**/Foo.exe
 ```
 
 # Shebang directive
