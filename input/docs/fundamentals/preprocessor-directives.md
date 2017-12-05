@@ -140,3 +140,13 @@ The break directive, when placed on any line within your Cake file, will cause `
 ```bash
 #break
 ```
+
+# Using static directive
+The using static directive allows referencing a type's static members without needed to specify the type name.
+
+## Usage
+```csharp
+using static System.Math;
+
+Information(Round(1.1));
+```
