@@ -16,6 +16,10 @@ Right now, only NuGet packages are supported.
 #addin nuget:?package=Cake.Foo&version=1.2.3
 #addin nuget:?package=Cake.Foo&prerelease
 #addin nuget:https://myget.org/f/Cake/?package=Cake.Foo&prerelease
+// Local feed
+#addin nuget:file://localhost/packages/?package=Cake.Foo
+#addin nuget:file://localhost/packages/?package=Cake.Foo&version=1.2.3
+#addin nuget:file://localhost/packages/?package=Cake.Foo&prerelease
 ```
 
 ### Dependencies
@@ -27,8 +31,15 @@ From Cake version 0.22.0 there's an option to fetch and load NuGet dependencies
 or
 #addin nuget:?package=foo.bar&loaddependencies=false
 ```
-
 This feature requires Cake to be [configured](/fundamentals/configuration.md) to not use `nuget.exe` but instead let Cake handle NuGet installation in-process.
+
+### Include and Exclude Options:
+
+```csharp
+#addin nuget:?package=Cake.Foo&include=/**/NoFoo.dll
+or
+#addin nuget:?package=Cake.Foo&exclude=/**/Foo.dll
+```
 
 # Load directive
 The load directive is used to reference external Cake scripts. Useful i.e. if you have common utility functions.
@@ -61,6 +72,14 @@ or
 ```
 Attempts to load `utilities.cake` from nuget
 
+### Include and Exclude Options:
+
+```csharp
+#load nuget:?package=utilities.cake&include=/**/NoFoo.cake
+or
+#load nuget:?package=utilities.cake&=exclude/**/Foo.cake
+```
+
 # Reference directive
 The reference directive is used to reference external assemblies for use in your scripts.
 
@@ -87,6 +106,18 @@ Specify the `include` parameter if the executable does not end with .exe
 #tool nuget:?package=Cake.Foo&prerelease
 #tool nuget:https://myget.org/f/Cake/?package=Cake.Foo&prerelease
 #tool nuget:?package=Cake.Foo&include=path/to/foo.cmd
+// Local feed
+#tool nuget:file://localhost/packages/?package=Cake.Foo
+#tool nuget:file://localhost/packages/?package=Cake.Foo&version=1.2.3
+#tool nuget:file://localhost/packages/?package=Cake.Foo&prerelease
+```
+
+### Include and Exclude Options:
+
+```csharp
+#tool nuget:?package=Cake.Foo&include=/**/NoFoo.exe
+or
+#tool nuget:?package=Cake.Foo&=exclude/**/Foo.exe
 ```
 
 # Shebang directive
@@ -108,4 +139,14 @@ The break directive, when placed on any line within your Cake file, will cause `
 
 ```bash
 #break
+```
+
+# Using static directive
+The using static directive allows referencing a type's static members without needed to specify the type name.
+
+## Usage
+```csharp
+using static System.Math;
+
+Information(Round(1.1));
 ```

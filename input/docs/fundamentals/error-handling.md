@@ -57,3 +57,20 @@ Task("Check-ReleaseNotes")
     }
 });
 ```
+
+# Deferring on error
+
+`DeferOnError` allows a given task the ability to defer all exceptions until the end of the task execution. This way tasks can run all actions to completion before failing. This can have some value when you work with something like multiple unit test projects, or multiple publishes. You can see the output of the entire task, and not just where it failed.
+
+```csharp
+Task("A")
+    .Does(() => 
+{ 
+    throw new Exception(); 
+})
+.DoesForEach(GetFiles("**/*.txt"), (file) => 
+{
+   // Take action on the file.
+})
+.DeferOnError();
+```
