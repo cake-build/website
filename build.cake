@@ -181,6 +181,7 @@ Task("Preview")
             Theme = "Samson",
             UpdatePackages = true,
             Preview = true,
+            Watch = true,
             Settings = new Dictionary<string, object>
             {
                 { "AssemblyFiles",  addinSpecs.Where(x => x.Assemblies != null).SelectMany(x => x.Assemblies).Select(x => "../release/addins" + x) }
@@ -195,7 +196,7 @@ Task("Debug")
         StartProcess("../Wyam/src/clients/Wyam/bin/Debug/wyam.exe",
             "-a \"../Wyam/src/**/bin/Debug/**/*.dll\" -r \"docs -i\" -t \"../Wyam/themes/Docs/Samson\" -p");
     });
-    
+
 // Does not download artifacts (run Build or GetArtifacts target first)
 Task("Debug-Addins")
     .IsDependentOn("GetAddinSpecs")
