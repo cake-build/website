@@ -67,3 +67,24 @@ RunTarget("C");
 ```
 
 Running target `C` will execute `A` and then `B`.
+
+# Referencing dependencies using the task object.
+
+This method adds a dependency using the task instead of the name as a string.
+
+```csharp
+var taskA = Task("A")
+    .Does(() =>
+{
+});
+
+Task("B")
+    .IsDependentOn(taskA)
+    .Does(() =>
+{
+});
+
+RunTarget("B");
+```
+
+This will first execute target `A` and then `B` as expected.
