@@ -80,6 +80,7 @@ Title: Blog Posts
 ## Jon D (redth)
 
 * [Debugging Cake on macOS with Mono](https://redth.codes/debugging-cake-on-macos-with-mono/)
+* [Cake #load url:](https://redth.codes/cake-load-url/)
 
 ## Jürgen Gutsch
 

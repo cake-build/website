@@ -3,7 +3,7 @@ Order: 60
 
 # Script
 
-If you want to do something before the first or after the last task has been run, you can use `Setup` and `Teardown`. A use case for this might be when you need to start some kind of server and want to make sure it gets teared down properly.
+If you want to do something before the first or after the last task has been run, you can use `Setup` and `Teardown`. A use case for this might be when you need to start some kind of server and want to make sure it gets torn down properly.
 
 ```csharp
 Setup(context =>
