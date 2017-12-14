@@ -66,7 +66,7 @@ Task("C")
 RunTarget("C");
 ```
 
-Running target `C` will execute `A` and then `B`.
+Running target `C` will execute `A` and then `B`. If a task is referenced multiple times, it will only execute once.
 
 # Referencing dependencies using the task object.
 
