@@ -1,0 +1,11 @@
+Name: Cake.ProGet
+NuGet: Cake.ProGet
+Assemblies:
+- "/**/Cake.ProGet.dll"
+Repository: https://github.com/apprenda/Cake.ProGet
+Author: Apprenda
+Description: "Cake addin that extends Cake with Inedo ProGet support."
+Categories:
+- Build
+- Deployment
+- UPack
