@@ -1,0 +1,10 @@
+Name: Cake.SmartAssembly
+NuGet: Cake.SmartAssembly
+Assemblies:
+- "/**/Cake.SmartAssembly.dll"
+Repository: https://github.com/cake-contrib/Cake.SmartAssembly
+Author: Miha Markic
+Description: "A Cake AddIn that extends Cake with Redgate's SmartAssembly."
+Categories:
+- Obfuscator
+- SmartAssembly
