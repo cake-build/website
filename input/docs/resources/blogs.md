@@ -154,6 +154,10 @@ Title: Blog Posts
 
 * [Let them use CAKE](http://cburbidge.github.io/let-them-use-cake/)
 
+## Coding4Fun
+
+* [Cake!... Baking a new Build with C# Make](https://channel9.msdn.com/coding4fun/blog/Cake-Baking-a-new-Build-with-C-Make)
+
 ## Dave Diehl
 
 * [Avoid Programming in TeamCity or Jenkins with Cake](http://daveondevops.com/2016/04/13/avoidbuildtoolusecake/)
