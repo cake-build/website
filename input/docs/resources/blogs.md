@@ -18,6 +18,7 @@ Title: Blog Posts
 ## Andrew Lock
 
 * [Running tests with dotnet xunit using Cake](https://andrewlock.net/running-tests-with-dotnet-xunit-using-cake/)
+* [Building ASP.NET Core apps using Cake in Docker](https://andrewlock.net/building-asp-net-core-apps-using-cake-in-docker/)
 
 ## bambit
 
@@ -152,6 +153,10 @@ Title: Blog Posts
 ## Chester Burbidge
 
 * [Let them use CAKE](http://cburbidge.github.io/let-them-use-cake/)
+
+## Coding4Fun
+
+* [Cake!... Baking a new Build with C# Make](https://channel9.msdn.com/coding4fun/blog/Cake-Baking-a-new-Build-with-C-Make)
 
 ## Dave Diehl
 
