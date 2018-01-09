@@ -1,0 +1,11 @@
+Name: Cake.Apprenda
+NuGet: Cake.Apprenda
+Assemblies:
+- "/**/Cake.Apprenda.dll"
+Repository: https://github.com/apprenda/Cake.Apprenda
+Author: Apprenda
+Description: "Extends Cake to interact with the Apprenda Cloud Platform"
+Categories:
+- Build
+- Deployment
+- Apprenda
