@@ -1,7 +1,7 @@
 Name: Cake.Microsoft.Extensions.Configuration
 NuGet: Cake.Microsoft.Extensions.Configuration
 Assemblies:
-- "/**/Cake.Microsoft.Configuration.dll"
+- "/**/Cake.Microsoft.Extensions.Configuration.dll"
 Repository: https://github.com/JonCubed/cake-microsoft-extensions-configuration
 Author: Jonathan Kuleff
 Description: "Cake Addin for strongly typed configuration"
