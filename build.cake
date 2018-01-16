@@ -133,25 +133,26 @@ Task("GetAddinPackages")
     .Does(() =>
     {
         DirectoryPath   packagesPath        = MakeAbsolute(Directory("./output")).Combine("packages");
-        foreach(var addinSpec in addinSpecs.Where(x => !string.IsNullOrEmpty(x.NuGet)))
-        {
-            Information("Installing addin package " + addinSpec.NuGet);
-            NuGetInstall(addinSpec.NuGet,
-                new NuGetInstallSettings
-                {
-                    OutputDirectory = addinDir,
-                    Prerelease = addinSpec.Prerelease,
-                    Verbosity = NuGetVerbosity.Quiet,
-                    Source = new [] { "https://api.nuget.org/v3/index.json" },
-                    NoCache = true,
-                    EnvironmentVariables    = new Dictionary<string, string>{
-                                                    {"EnableNuGetPackageRestore", "true"},
-                                                    {"NUGET_XMLDOC_MODE", "None"},
-                                                    {"NUGET_PACKAGES", packagesPath.FullPath},
-                                                    {"NUGET_EXE",  Context.Tools.Resolve("nuget.exe").FullPath }
-                                              }
-                });
-        }
+        Parallel.ForEach(
+            addinSpecs.Where(x => !string.IsNullOrEmpty(x.NuGet)),
+            addinSpec => {
+                Information("Installing addin package " + addinSpec.NuGet);
+                NuGetInstall(addinSpec.NuGet,
+                    new NuGetInstallSettings
+                    {
+                        OutputDirectory = addinDir,
+                        Prerelease = addinSpec.Prerelease,
+                        Verbosity = NuGetVerbosity.Quiet,
+                        Source = new [] { "https://api.nuget.org/v3/index.json" },
+                        NoCache = true,
+                        EnvironmentVariables    = new Dictionary<string, string>{
+                                                        {"EnableNuGetPackageRestore", "true"},
+                                                        {"NUGET_XMLDOC_MODE", "None"},
+                                                        {"NUGET_PACKAGES", packagesPath.FullPath},
+                                                        {"NUGET_EXE",  Context.Tools.Resolve("nuget.exe").FullPath }
+                                                  }
+                    });
+        });
     });
 
 Task("Build")
