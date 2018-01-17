@@ -174,12 +174,12 @@ cake.exe --settings_skipverification=true
 
 # In-Process NuGet installation
 
-From Cake version `0.22.0` you can opt-in to not use `NuGet.exe` but instead let Cake handle the installation of addins, tools and scripts in-process.
+From version `0.25.0` of Cake, the default is now to use the In-Process NuGet Client.  If you require to use NuGet.exe instead, you can opt-out by setting this value to false.
 
 ## Default Value
 
 ```sh
-false
+true
 ```
 
 ## Valid Values
@@ -200,13 +200,13 @@ CAKE_NUGET_USEINPROCESSCLIENT
 
 ```sh
 [NuGet]
-UseInProcessClient=true
+UseInProcessClient=false
 ```
 
 ## Direct Argument
 
 ```sh
-cake.exe --nuget_useinprocessclient=true
+cake.exe --nuget_useinprocessclient=false
 ```
 
 
