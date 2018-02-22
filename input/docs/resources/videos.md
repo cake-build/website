@@ -8,6 +8,11 @@ Order: 10
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/bOQLC2HXCzE" frameborder="0" allowfullscreen></iframe>
 
+## Cake + .NET Core = Write Once, Build Anywhere
+### Enrico Campidoglio - NDC London
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/FKbykwvB_MU" frameborder="0" allowfullscreen></iframe>
+
 # 2017
 
 ## Build Automation? It's a piece of Cake
@@ -30,7 +35,7 @@ Order: 10
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Y9T6568jlnc" frameborder="0" allowfullscreen></iframe>
 
 ## A Piece of Cake - C# powered cross platform build automation
-### Gary Ewan Park - NDC
+### Gary Ewan Park - NDC Oslo
 
 <iframe src="https://player.vimeo.com/video/171704581" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/171704581">A Piece of Cake - C# powered cross platform build automation - Gary Ewan Park</a> from <a href="https://vimeo.com/ndcconferences">NDC Conferences</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
