@@ -14,6 +14,9 @@ CAKE_EXE=$TOOLS_DIR/Cake/Cake.exe
 PACKAGES_CONFIG=$TOOLS_DIR/packages.config
 PACKAGES_CONFIG_MD5=$TOOLS_DIR/packages.config.md5sum
 
+# Temporarily skip verification of addins.
+export CAKE_SETTINGS_SKIPVERIFICATION='true'
+
 # Define md5sum or md5 depending on Linux/OSX
 MD5_EXE=
 if [[ "$(uname -s)" == "Darwin" ]]; then
