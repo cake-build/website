@@ -30,3 +30,13 @@ If addins are referenced using the `#addin` preprocessor directive the can be pi
 ```
 #addin nuget:?package=Cake.Foo&version=1.2.3
 ```
+
+# Pinning tool version
+
+If tools are referenced through the *packages.config* file they can be pinned the same way as the Cake version.
+
+If tools are referenced using the `#tool` preprocessor directive the can be pinned like this:
+
+```
+#tool nuget:?package=Tool.Foo&version=1.2.3
+```
