@@ -4,6 +4,9 @@ Title: Blog Posts
 
 # 2018
 
+## Henrik Molnes
+* [Simplifying the build process with Cake](http://blogg.itverket.no/cake/)
+
 ## Sacha Barber
 
 * [Cake Build Tool](https://sachabarbs.wordpress.com/2018/02/20/cake-build-tool/)
