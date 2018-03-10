@@ -1,4 +1,4 @@
-Name: Magic Chunks
+Name: MagicChunks
 NuGet: MagicChunks
 Assemblies:
 - "/**/MagicChunks.dll"
