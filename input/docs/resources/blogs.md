@@ -4,6 +4,9 @@ Title: Blog Posts
 
 # 2018
 
+## Martin Deslongchamps
+* [How to build a NuGet package for Cake](http://thefutureofcode.com/2018/03/11/how-to-build-a-nuget-package-for-cake/)
+
 ## Henrik Molnes
 * [Simplifying the build process with Cake](http://blogg.itverket.no/cake/)
 
