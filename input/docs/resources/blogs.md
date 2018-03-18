@@ -4,8 +4,15 @@ Title: Blog Posts
 
 # 2018
 
+## Martin Deslongchamps
+* [How to build a NuGet package for Cake](http://thefutureofcode.com/2018/03/11/how-to-build-a-nuget-package-for-cake/)
+
 ## Henrik Molnes
 * [Simplifying the build process with Cake](http://blogg.itverket.no/cake/)
+
+## Mattias Karlsson
+* [Introducing Cake Kudu Client](https://hackernoon.com/introducing-cake-kudu-client-abda40d15f38)
+* [“Run-From-Zip” with Cake Kudu Client](https://hackernoon.com/run-from-zip-with-cake-kudu-client-5c063cd72b37)
 
 ## Sacha Barber
 
