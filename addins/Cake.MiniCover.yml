@@ -1,0 +1,11 @@
+
+Name: Cake.MiniCover
+NuGet: Cake.MiniCover
+Assemblies:
+- "/**/Cake.MiniCover.dll"
+Repository: https://github.com/nlowe/Cake.MiniCover
+Author: Nathan Lowe
+Description: "Cake addin for MiniCover"
+Categories:
+- Code Coverage
+- Testing

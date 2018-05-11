@@ -1,0 +1,14 @@
+Name: Cake.DependenciesAnalyser
+NuGet: Cake.DependenciesAnalyser
+Prerelease: false
+Assemblies:
+- "/**/Cake.DependenciesAnalyser.dll"
+- "/**/DependencyChecker.NuGet.Adapter.dll"
+- "/**/Domain.dll"
+Repository: https://github.com/joaoasrosa/dotnet-project-dependencies-analyser
+Author: João Rosa
+Description: "An addin to verify if the NuGet dependencies of a C# Project are up-to-date. Produces an inline report."
+Categories:
+- Code Quality
+- Dependencies Analyser
+- Reports

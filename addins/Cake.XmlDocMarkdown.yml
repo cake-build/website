@@ -1,0 +1,10 @@
+Name: Cake.XmlDocMarkdown
+NuGet: Cake.XmlDocMarkdown
+Assemblies:
+- "/**/Cake.XmlDocMarkdown.dll"
+Repository: https://github.com/ejball/XmlDocMarkdown
+Author: Ed Ball
+Description: "Generates Markdown from .NET XML documentation comments."
+Categories:
+- Documentation
+- Markdown

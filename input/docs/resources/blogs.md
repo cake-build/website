@@ -7,6 +7,14 @@ Title: Blog Posts
 ## Henrik Molnes
 * [Simplifying the build process with Cake](http://blogg.itverket.no/cake/)
 
+## Martin Deslongchamps
+* [How to build a NuGet package for Cake](http://thefutureofcode.com/2018/03/11/how-to-build-a-nuget-package-for-cake/)
+
+## Mattias Karlsson
+* [Introducing Cake Kudu Client](https://hackernoon.com/introducing-cake-kudu-client-abda40d15f38)
+* [“Run-From-Zip” with Cake Kudu Client](https://hackernoon.com/run-from-zip-with-cake-kudu-client-5c063cd72b37)
+* [Deploying .NET Core to Azure using Bitrise and Cake](https://blog.bitrise.io/deploying-net-core-to-azure-using-bitrise-and-cake)
+
 ## Sacha Barber
 
 * [Cake Build Tool](https://sachabarbs.wordpress.com/2018/02/20/cake-build-tool/)

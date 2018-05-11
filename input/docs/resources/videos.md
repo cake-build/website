@@ -3,6 +3,11 @@ Order: 10
 
 # 2018
 
+## From Source To Production With Ease
+### Asbjørn Ulsberg - DevOps Pro Vilnius
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/sLhbBrbasvs" frameborder="0" allowfullscreen></iframe>
+
 ## A Piece of Cake
 ### Gary Ewan Park - .Net Sheffield
 
