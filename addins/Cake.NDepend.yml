@@ -3,7 +3,7 @@ NuGet: Cake.NDepend
 Prerelease: false
 Assemblies:
 - "/**/Cake.NDepend.dll"
-Repository: https://github.com/joaoasrosa/cake-ndepend
+Repository: https://github.com/cake-contrib/cake-ndepend
 Author: João Rosa
 Description: "An alias wrapping the NDepend.Console command line tool."
 Categories:
