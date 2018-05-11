@@ -3,10 +3,10 @@ Title: Frequently Asked Questions
 ---
 
 [//]: # (TOC Begin)
-* [How do you pin the version of Cake being used?](#how-do-you-pin-the-version-of-cake-being-used?)
-* [How do you pin the version of an Addin being used?](#how-do-you-pin-the-version-of-an-addin-being-used?)
-* [How do you pin the version of a Tool being used?](#how-do-you-pin-the-version-of-a-tool-being-used?)
-* [How do you pin the version of a Module being used?](#how-do-you-pin-the-version-of-a-module-being-used?)
+* [How do you pin the version of Cake being used?](#how-do-you-pin-the-version-of-cake-being-used)
+* [How do you pin the version of an Addin being used?](#how-do-you-pin-the-version-of-an-addin-being-used)
+* [How do you pin the version of a Tool being used?](#how-do-you-pin-the-version-of-a-tool-being-used)
+* [How do you pin the version of a Module being used?](#how-do-you-pin-the-version-of-a-module-being-used)
 
 [//]: # (TOC End)
 
