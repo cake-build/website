@@ -2,7 +2,7 @@ Name: Cake.MSBuildTask
 NuGet: Cake.MSBuildTask
 Assemblies:
 - "/**/Cake.MSBuildTask.dll"
-Repository: https://github.com/marcosnz/Cake.MSBuildTask
+Repository: https://github.com/cake-contrib/Cake.MSBuildTask
 Author: Mark Walker
 Description: "Adds ability to run any MSBuild task from a Cake script."
 Categories:

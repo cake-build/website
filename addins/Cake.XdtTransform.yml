@@ -2,7 +2,7 @@ Name: Cake.XdtTransform
 NuGet: Cake.XdtTransform
 Assemblies:
 - "/**/Cake.XdtTransform.dll"
-Repository: https://github.com/phillipsj/Cake.XdtTransform
+Repository: https://github.com/cake-contrib/Cake.XdtTransform
 Author: Jamie Phillips
 Description: "Cake addin for performing XDT Transformations"
 Categories:
