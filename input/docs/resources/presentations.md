@@ -1,6 +1,12 @@
 ﻿Order: 20
 ---
 
+# 2018
+
+## Lee Richardson
+
+* [Intro to Cake](https://prezi.com/view/BvoTydDPGZt8JhLv397L/)
+
 # 2017
 
 ## Manuel Blanquett

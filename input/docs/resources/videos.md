@@ -3,6 +3,11 @@ Order: 10
 
 # 2018
 
+## Intro to Cake: Cross Platform Build Automation in C#
+### Lee Richardson - Code Hour Episode #16
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/WbaR2-v6JXQ" frameborder="0" allowfullscreen></iframe>
+
 ## From Source To Production With Ease
 ### Asbjørn Ulsberg - DevOps Pro Vilnius
 
