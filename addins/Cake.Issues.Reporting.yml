@@ -1,0 +1,10 @@
+Name: Cake.Issues.Reporting
+NuGet: Cake.Issues.Reporting
+Assemblies:
+- "/**/Cake.Issues.Reporting.dll"
+Repository: https://github.com/cake-contrib/Cake.Issues.Reporting
+Author: Pascal Berger
+Description: "Addin for the Cake build automation system for creating reports for issues from any code analyzer or linter."
+Categories:
+- Issues
+- Reports
