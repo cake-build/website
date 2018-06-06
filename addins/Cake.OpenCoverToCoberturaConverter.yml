@@ -1,0 +1,10 @@
+Name: Cake.OpenCoverToCoberturaConverter
+NuGet: Cake.OpenCoverToCoberturaConverter
+Assemblies:
+- "/**/Cake.OpenCoverToCoberturaConverter.dll"
+Repository: https://github.com/volak/Cake.OpenCoverToCoberturaConverter
+Author: Charles Solar
+Description: "Converts OpenCover xml report to Cobertura format - for use with VSTS"
+Categories:
+- Code Coverage
+- VSTS
