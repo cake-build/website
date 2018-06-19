@@ -23,7 +23,9 @@ Alternatively, you can create a `cake.config` file with the following content:
 [Nuget]
 Source=https://mycustomurl
 ```
+
 <br/>
+
 Specifying a configuration value within a configuration file will override the same configuration value stored within an equivalent Environment variable.
 
 **NOTE:** This configuration file should be located in the same directory as your `build.cake` file.
@@ -33,10 +35,12 @@ Finally, you can specify an input parameter directly to the Cake.exe, in the fol
 ```sh
 cake.exe --nuget_source=http://mycustomurl
 ```
-<br/>
+
+<br />
+
 Passing a configuration value directly to the Cake.exe will override the same configuration value stored within an Environment variable and also any stored in a local configuration file.
-<br/>
-When configuring NuGet sources in both cake.config and via the command line, multiple sources can be supplied by joining them with a semicolon.
+
+When configuring NuGet sources in both cake.config, and via the command line, multiple sources can be supplied by joining them with a semi-colon.
 
 ```sh
 cake.exe --nuget_source=http://mycustomurl;http://myothercustomurl
