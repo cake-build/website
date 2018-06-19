@@ -28,10 +28,23 @@ CAKE_NUGET_SOURCE
 Source=http://myfeed/nuget/
 ```
 
+Or with multiple sources:
+
+```sh
+[Nuget]
+Source=http://myfeed/nuget/;http://myotherfeed/nuget
+```
+
 ## Direct Argument
 
 ```sh
 cake.exe --nuget_source=http://myfeed/nuget/
+```
+
+Or with multiple sources:
+
+```sh
+cake.exe --nuget_source=http://myfeed/nuget/;http://myotherfeed/nuget
 ```
 
 <hr/>
