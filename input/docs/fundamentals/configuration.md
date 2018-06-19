@@ -35,5 +35,11 @@ cake.exe --nuget_source=http://mycustomurl
 ```
 <br/>
 Passing a configuration value directly to the Cake.exe will override the same configuration value stored within an Environment variable and also any stored in a local configuration file.
+<br/>
+When configuring NuGet sources in both cake.config and via the command line, multiple sources can be supplied by joining them with a semicolon.
+
+```sh
+cake.exe --nuget_source=http://mycustomurl;http://myothercustomurl
+```
 
 Refer to the [default configuration values](/docs/fundamentals/default-configuration-values) for a list of all the available configuration options.
