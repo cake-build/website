@@ -1,0 +1,15 @@
+Name: Cake.Xamarin.Build
+NuGet: Cake.Xamarin.Build
+Assemblies:
+- "/**/Cake.Xamarin.Build.dll"
+Repository: https://github.com/Redth/Cake.Xamarin.Build
+Author: Redth
+Description: "NOT RECOMMENDED FOR PUBLIC USE: Cake Build addon to provide Aliases for Xamarin product build scripts.
+         
+         This addin exists to help with Xamarin product build scripts.  
+         
+         While you are free to use it, it is not recommended or supported for public use."
+Categories:
+- Cake
+- Script
+- Build

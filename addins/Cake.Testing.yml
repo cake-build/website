@@ -1,0 +1,11 @@
+Name: Cake.Testing
+NuGet: Cake.Testing
+Assemblies:
+- "/**/Cake.Testing.dll"
+Repository: https://www.nuget.org/packages/Cake.Testing/
+Author: Patrik Svensson, Mattias Karlsson, Gary Ewan Park, Alistair Chapman, Martin Björkström and contributors
+Description: "Contains testing utilities for Cake."
+Categories:
+- Cake
+- Script
+- Build
