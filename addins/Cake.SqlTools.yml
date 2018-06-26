@@ -4,8 +4,10 @@ Assemblies:
 - "/**/Cake.SqlTools.dll"
 Repository: https://github.com/SharpeRAD/Cake.SqlTools
 Author: SharpeRAD
-Description: "Cake Build addin for executing sql scripts against a database"
-Prerelease: true
+Description: "Cake Build addon for executing sql queries."
 Categories:
-- Sql
-- Database
+- Cake
+- Script
+- Build
+- SQL
+- Queries

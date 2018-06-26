@@ -1,0 +1,12 @@
+Name: Cake.Paket.Module
+NuGet: Cake.Paket.Module
+Assemblies:
+- "/**/Cake.Paket.Module.dll"
+Repository: https://github.com/cake-contrib/Cake.Paket
+Author: Larz White
+Description: "Paket module for cake."
+Categories:
+- Cake
+- Script
+- Build
+- paket

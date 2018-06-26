@@ -1,0 +1,16 @@
+Name: Cake.APT.Module
+NuGet: Cake.APT.Module
+Assemblies:
+- "/**/Cake.APT.Module.dll"
+Repository: https://github.com/agc93/Cake.APT.Module
+Author: agc93
+Description: "This Cake module adds support for the APT package manager when installing tools in your Cake build scripts."
+Prerelease: "true"
+Categories:
+- cake
+- build
+- ci
+- apt
+- linux
+- debian
+- ubuntu

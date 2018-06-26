@@ -1,0 +1,11 @@
+Name: Cake.BuildSystems.Module
+NuGet: Cake.BuildSystems.Module
+Assemblies:
+- "/**/Cake.BuildSystems.Module.dll"
+Repository: https://github.com/agc93/Cake.BuildSystems.Module
+Author: agc93
+Description: "This Cake module will introduce a number of features for running in hosted CI build environments to tightly integrate with the host environment/tools."
+Categories:
+- cake
+- build
+- ci

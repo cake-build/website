@@ -1,0 +1,9 @@
+Name: Cake.Parallel.Module
+NuGet: Cake.Parallel.Module
+Assemblies:
+- "/**/Cake.Parallel.Module.dll"
+Repository: https://github.com/aabenoja/Cake.Parallel
+Author: aabenoja
+Description: "Package Description"
+Categories:
+

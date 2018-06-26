@@ -2,8 +2,11 @@ Name: Cake.ReSharperReports
 NuGet: Cake.ReSharperReports
 Assemblies:
 - "/**/Cake.ReSharperReports.dll"
-Repository: https://github.com/cake-contrib/Cake.ReSharperReports
-Author: Gary Ewan Park
-Description: "Cake AddIn that extends Cake with ability to transform ReSharper Reports into human readable format."
+Repository: https://github.com/cake-contrib/Cake.ReSharperReports/
+Author: gep13
+Description: "Cake ReSharperReports AddIn."
 Categories:
-- Reports
+- Cake
+- Script
+- Build
+- ReSharperReports
