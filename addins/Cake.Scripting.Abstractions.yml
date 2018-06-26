@@ -1,0 +1,11 @@
+Name: Cake.Scripting.Abstractions
+NuGet: Cake.Scripting.Abstractions
+Assemblies:
+- "/**/Cake.Scripting.Abstractions.dll"
+Repository: https://www.nuget.org/packages/Cake.Scripting.Abstractions/
+Author: Patrik Svensson, Mattias Karlsson, Gary Ewan Park, Alistair Chapman, Martin Björkström and contributors
+Description: "The Cake script analyzer and code generator."
+Categories:
+- Cake
+- Script
+- Build

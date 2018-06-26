@@ -1,0 +1,11 @@
+Name: Cake.Recipe
+NuGet: Cake.Recipe
+Assemblies:
+- "/**/Cake.Recipe.dll"
+Repository: https://github.com/cake-contrib/Cake.Recipe
+Author: gep13
+Description: "Re-usable build script for Cake that can be used for numerous projects."
+Categories:
+- Default
+- Build
+- Cake

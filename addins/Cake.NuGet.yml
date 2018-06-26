@@ -1,0 +1,11 @@
+Name: Cake.NuGet
+NuGet: Cake.NuGet
+Assemblies:
+- "/**/Cake.NuGet.dll"
+Repository: https://www.nuget.org/packages/Cake.NuGet/
+Author: Patrik Svensson, Mattias Karlsson, Gary Ewan Park, Alistair Chapman, Martin Björkström and contributors
+Description: "Cake Module providing NuGet install capabilities for i.e. preprocessor directives like #addin, #tool and #load"
+Categories:
+- Cake
+- Script
+- Build

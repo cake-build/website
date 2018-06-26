@@ -1,0 +1,11 @@
+Name: Cake.Scripting.Transport
+NuGet: Cake.Scripting.Transport
+Assemblies:
+- "/**/Cake.Scripting.Transport.dll"
+Repository: https://www.nuget.org/packages/Cake.Scripting.Transport/
+Author: Patrik Svensson, Mattias Karlsson, Gary Ewan Park, Alistair Chapman, Martin Björkström and contributors
+Description: "The Cake script analyzer and code generator."
+Categories:
+- Cake
+- Script
+- Build

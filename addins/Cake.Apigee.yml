@@ -3,9 +3,10 @@ NuGet: Cake.Apigee
 Assemblies:
 - "/**/Cake.Apigee.dll"
 Repository: https://github.com/LittleColin/Cake.Apigee
-Author: Simon Ransom
-Description: "Cake Aliases for Apigee"
+Author: LittleColin
+Description: "Cake Build addin for Apigee management API. Currently only handles proxy deployment."
 Categories:
+- Cake
+- Script
+- Build
 - Apigee
-- API gateway
-- Deployment
