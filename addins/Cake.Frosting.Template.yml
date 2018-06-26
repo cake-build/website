@@ -1,0 +1,12 @@
+Name: Cake.Frosting.Template
+NuGet: Cake.Frosting.Template
+Assemblies:
+- "/**/Cake.Frosting.Template.dll"
+Repository: https://github.com/cake-build/frosting
+Author: cake-build
+Description: "Cake.Frosting templates for the .NET SDK."
+Prerelease: "true"
+Categories:
+- Cake
+- Script
+- Build

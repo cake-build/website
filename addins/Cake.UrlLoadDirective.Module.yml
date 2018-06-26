@@ -1,0 +1,12 @@
+Name: Cake.UrlLoadDirective.Module
+NuGet: Cake.UrlLoadDirective.Module
+Assemblies:
+- "/**/Cake.UrlLoadDirective.Module.dll"
+Repository: https://github.com/redth/Cake.UrlLoadDirective.Module
+Author: redth
+Description: "Cake module for supporting downloading files from url's in the #load directive."
+Categories:
+- Cake
+- Script
+- Build
+- Module

@@ -1,0 +1,13 @@
+Name: Cake.Chocolatey.Module
+NuGet: Cake.Chocolatey.Module
+Assemblies:
+- "/**/Cake.Chocolatey.Module.dll"
+Repository: https://github.com/cake-contrib/Cake.Chocolatey.Module/
+Author: gep13
+Description: "Cake Chocolatey Module."
+Categories:
+- Cake
+- Script
+- Build
+- Chocolatey
+- Module

@@ -1,0 +1,11 @@
+Name: Cake.Bridge
+NuGet: Cake.Bridge
+Assemblies:
+- "/**/Cake.Bridge.dll"
+Repository: https://github.com/devlead/Cake.Bridge
+Author: devlead
+Description: "Assembly which makes it easier for other environments and languages to interop with Cake"
+Prerelease: "true"
+Categories:
+- Cake
+- Build
