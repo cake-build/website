@@ -3,10 +3,20 @@ NuGet: Cake.Issues.PullRequests.Tfs
 Assemblies:
 - "/**/Cake.Issues.PullRequests.Tfs.dll"
 Repository: https://github.com/cake-contrib/Cake.Issues.PullRequests.Tfs
-Author: BBT Software AG
-Description: "The TFS / VSTS support for the Cake Issues Addin allows you to write found issues as comments to Team Foundation Server or Visual Studio Team Services pull requests."
+Author: BBT Software AG and contributors
+Description: "The Team Foundation Server / Visual Studio Team Services support for the Cake.Issues addin for Cake allows you to
+write found issues as comments Team Foundation Server or Visual Studio Team Services pull requests.
+
+This addin provides the aliases for writing to Team Foundation Server or Visual Studio Team Services pull requests.
+It also requires the core Cake.Issues and Cake.Issues.PullRequests addins and one or more issue providers.
+
+See the Project Site for an overview of the whole ecosystem of addins for working with issues in Cake scripts."
 Categories:
+- Cake
+- Script
+- Cake-Issues
+- Cake-PullRequestSystem
 - Issues
-- Pull Requests
-- VSTS
+- PullRequest
 - TFS
+- VSTS

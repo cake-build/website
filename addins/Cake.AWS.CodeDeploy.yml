@@ -4,7 +4,10 @@ Assemblies:
 - "/**/Cake.AWS.CodeDeploy.dll"
 Repository: https://github.com/SharpeRAD/Cake.AWS.CodeDeploy
 Author: SharpeRAD
-Description: "AWS CodeDeploy addin for Cake."
+Description: "Cake Build addon for Amazon CodeDeploy."
 Categories:
-- AWS
-- Deployment
+- Cake
+- Script
+- Build
+- Amazon
+- CodeDeploy

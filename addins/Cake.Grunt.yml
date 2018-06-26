@@ -1,9 +1,13 @@
 Name: Cake.Grunt
 NuGet: Cake.Grunt
 Assemblies:
-- "/**/Cake.Gulp.dll"
-Repository: https://github.com/cake-contrib/cake-grunt
+- "/**/Cake.Grunt.dll"
+Repository: https://github.com/cake-contrib/Cake.Grunt/
 Author: Ken Lea
-Description: "A set of aliases for Cake to help with running Grunt scripts as part of a build. (Copied from https://github.com/cake-contrib/cake-gulp by Phil Oyston)"
+Description: "Cake Grunt Addin."
 Categories:
-- Node
+- Cake
+- Script
+- Build
+- Grunt
+- Addin
