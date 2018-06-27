@@ -1,0 +1,13 @@
+Name: Cake.ServiceOrchestration
+NuGet: Cake.ServiceOrchestration
+Assemblies:
+- "/**/Cake.ServiceOrchestration.dll"
+Repository: https://github.com/agc93/Cake.ServiceOrchestration/
+Author: agc93
+Description: "A sample/reference approach to multi-instance service deployment and orchestration using Cake"
+Categories:
+- cake
+- build
+- microservices
+- deployment
+- orchestration

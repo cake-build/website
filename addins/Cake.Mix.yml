@@ -1,0 +1,9 @@
+Name: Cake.Mix
+NuGet: Cake.Mix
+Assemblies:
+- "/**/Cake.Mix.dll"
+Repository: https://www.nuget.org/packages/Cake.Mix/
+Author: DevDigital
+Description: "Set of utility Cake build scripts."
+Categories:
+

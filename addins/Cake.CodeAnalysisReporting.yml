@@ -6,6 +6,8 @@ Repository: https://github.com/cake-contrib/Cake.CodeAnalysisReporting
 Author: BBT Software AG
 Description: "The Code Analysis Reporting Addin for Cake allows you to generate reports from issue found using any code analyzer or linter."
 Categories:
-- Code Quality
-- MSBuild
-- Reports
+- Cake
+- Script
+- CodeAnalysis
+- Linting
+- Reporting

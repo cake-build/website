@@ -4,8 +4,11 @@ Assemblies:
 - "/**/Cake.AWS.CloudFront.dll"
 Repository: https://github.com/SharpeRAD/Cake.AWS.CloudFront
 Author: SharpeRAD
-Description: "AWS CloudFront addin for Cake."
+Description: "Cake Build addon for managing Amazon CloudFront CDN."
 Categories:
-- AWS
-- Deployment
+- Cake
+- Script
+- Build
+- Amazon
+- CloudFront
 - CDN

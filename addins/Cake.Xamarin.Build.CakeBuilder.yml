@@ -1,0 +1,9 @@
+Name: Cake.Xamarin.Build.CakeBuilder
+NuGet: Cake.Xamarin.Build.CakeBuilder
+Assemblies:
+- "/**/Cake.Xamarin.Build.CakeBuilder.dll"
+Repository: https://www.nuget.org/packages/Cake.Xamarin.Build.CakeBuilder/
+Author: Cake.Xamarin.Build.CakeBuilder
+Description: "Package Description"
+Categories:
+

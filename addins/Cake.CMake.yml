@@ -6,4 +6,8 @@ Repository: https://github.com/cake-contrib/Cake.CMake
 Author: Patrik Svensson
 Description: "Addin that extends Cake with CMake support."
 Categories:
-- CMake
+- Cake
+- Script
+- Build
+- Unity
+- Unity3D

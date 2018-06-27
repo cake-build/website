@@ -1,0 +1,12 @@
+Name: Cake.Wyam.Recipe
+NuGet: Cake.Wyam.Recipe
+Assemblies:
+- "/**/Cake.Wyam.Recipe.dll"
+Repository: https://github.com/cake-contrib/Cake.Wyam.Recipe
+Author: gep13
+Description: "Re-usable build script for Cake that can be used for numerous Wyam projects."
+Categories:
+- Build
+- Cake
+- Wyam
+- Recipe
