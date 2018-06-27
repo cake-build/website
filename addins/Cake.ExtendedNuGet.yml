@@ -3,7 +3,9 @@ NuGet: Cake.ExtendedNuGet
 Assemblies:
 - "/**/Cake.ExtendedNuGet.dll"
 Repository: https://github.com/Redth/Cake.ExtendedNuGet
-Author: Jonathan Dick
-Description: "Cake build aliases and classes additional NuGet functionality."
+Author: Redth
+Description: "Cake Build addon to provide Aliases for NuGet package inspection."
 Categories:
-- NuGet
+- Cake
+- Script
+- Build
