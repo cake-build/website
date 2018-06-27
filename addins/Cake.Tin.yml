@@ -1,0 +1,12 @@
+Name: Cake.Tin
+NuGet: Cake.Tin
+Assemblies:
+- "/**/Cake.Tin.dll"
+Repository: https://github.com/CakeTin/Cake.Tin
+Author: CakeTin
+Description: "Cake Tin - a wrapper for Cake (C# Make)"
+Prerelease: "true"
+Categories:
+- Cake
+- Script
+- Build
