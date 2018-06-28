@@ -4,7 +4,7 @@ Assemblies:
 - "/**/Cake.Terraform.dll"
 Repository: https://github.com/cake-contrib/Cake.Terraform
 Author: Erik van Brakel
-Description: "Cake addin for working with Terraform"
+Description: "Cake Terraform Addin."
 Categories:
 - Terraform
-- Infrastructure as Code
+- Hashicorp

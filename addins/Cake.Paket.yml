@@ -1,9 +1,9 @@
 Name: Cake.Paket
 NuGet: Cake.Paket
 Assemblies:
-- "/**/Cake.Paket.Addin.dll"
+- "/**/Cake.Paket.dll"
 Repository: https://github.com/cake-contrib/Cake.Paket
 Author: Larz White
-Description: "Adds paket support to cake."
+Description: "Paket addin for Cake."
 Categories:
-- NuGet
+- paket

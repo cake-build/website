@@ -4,6 +4,6 @@ Assemblies:
 - "/**/Cake.VsMetrics.dll"
 Repository: https://github.com/cake-contrib/Cake.VsMetrics
 Author: fwinkelbauer
-Description: "Cake Addin that extends Cake with the ability to use Visual Studio's metrics.exe"
+Description: "Cake AddIn for Visual Studio's standalone metrics.exe command line tool"
 Categories:
 - Metrics

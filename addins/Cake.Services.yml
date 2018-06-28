@@ -4,7 +4,6 @@ Assemblies:
 - "/**/Cake.Services.dll"
 Repository: https://github.com/SharpeRAD/Cake.Services
 Author: SharpeRAD
-Description: "Windows Services addin for Cake."
+Description: "Cake Build addon for Windows services."
 Categories:
-- Windows
-- Deployment
+- WindowsService

@@ -2,9 +2,9 @@ Name: Cake.Kudu
 NuGet: Cake.Kudu
 Assemblies:
 - "/**/Cake.Kudu.dll"
-Repository: https://github.com/cake-contrib/Cake.Kudu
-Author: WCOMAB
-Description: "Cake addin to help with Kudu deployments."
+Repository: https://github.com/cake-contrib/Cake.Kudu/
+Author: WCOM AB
+Description: "Cake add-in to help with Kudu deployments using C#"
 Categories:
-- Azure
-- Kudu
+- Microsoft
+- Teams

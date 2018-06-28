@@ -4,7 +4,6 @@ Assemblies:
 - "/**/Cake.Powershell.dll"
 Repository: https://github.com/SharpeRAD/Cake.Powershell
 Author: SharpeRAD
-Description: "Cake addin that extends Cake with Powershell command support."
+Description: "Cake Build addon for Powershell."
 Categories:
 - Powershell
-- Deployment

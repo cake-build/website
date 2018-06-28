@@ -3,7 +3,9 @@ NuGet: Cake.VsixSignTool
 Assemblies:
 - "/**/Cake.VsixSignTool.dll"
 Repository: https://github.com/MihaMarkic/Cake.VsixSignTool
-Author: Miha Markiè
-Description: "Cake AddIn that extends Cake with VsixSignTool."
+Author: MihaMarkic
+Description: "Cake Build addin for VsixSignTool."
 Categories:
-- Signing
+- VsixSignTool
+- contrib
+- build
