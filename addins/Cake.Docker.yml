@@ -3,7 +3,10 @@ NuGet: Cake.Docker
 Assemblies:
 - "/**/Cake.Docker.dll"
 Repository: https://github.com/MihaMarkic/Cake.Docker
-Author: Miha Markič
-Description: "A Cake AddIn that extends Cake with Docker command tools."
+Author: MihaMarkic
+Description: "Cake Build addin for Docker."
 Categories:
-- Docker
+-- cake
+-- docker
+-- build
+-- contrib

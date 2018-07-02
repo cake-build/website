@@ -4,8 +4,7 @@ Assemblies:
 - "/**/Cake.AWS.S3.dll"
 Repository: https://github.com/SharpeRAD/Cake.AWS.S3
 Author: SharpeRAD
-Description: "AWS S3 addin for Cake."
+Description: "Cake Build addon for transfering files to and from Amazon S3."
 Categories:
-- AWS
-- Deployment
-- CDN
+-- Amazon
+-- S3

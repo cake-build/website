@@ -4,7 +4,6 @@ Assemblies:
 - "/**/Cake.WebDeploy.dll"
 Repository: https://github.com/SharpeRAD/Cake.WebDeploy
 Author: SharpeRAD
-Description: "Cake addin that extends Cake with WebDeploy commands for publishing to IIS."
+Description: "Cake Build addon for publishing websites via WebDeploy."
 Categories:
-- Deployment
-- IIS
+-- WebDeploy

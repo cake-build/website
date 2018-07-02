@@ -4,7 +4,7 @@ Assemblies:
 - "/**/Cake.AWS.ElasticLoadBalancing.dll"
 Repository: https://github.com/SharpeRAD/Cake.AWS.ElasticLoadBalancing
 Author: SharpeRAD
-Description: "AWS ElasticLoadBalancing addin for Cake."
+Description: "Cake Build addon for configuring Amazon Elastic Load Balancers."
 Categories:
-- AWS
-- Deployment
+-- Amazon
+-- ElasticLoadBalancing

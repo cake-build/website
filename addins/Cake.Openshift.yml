@@ -3,7 +3,10 @@ NuGet: Cake.Openshift
 Assemblies:
 - "/**/Cake.Openshift.dll"
 Repository: https://github.com/cake-contrib/Cake.Openshift
-Author: Meir Blachman
+Author: Cake.Openshift
 Description: "A set of aliases for Cake to help with running Openshift commands"
 Categories:
-- Openshift
+-- cake
+-- openshift
+-- addin
+-- plugin

@@ -3,8 +3,11 @@ NuGet: Cake.MsDeploy
 Assemblies:
 - "/**/Cake.MsDeploy.dll"
 Repository: https://github.com/cake-contrib/Cake.MsDeploy
-Author: Louis Fischer
-Description: "Cake Addin that extends Cake for executing commands with the MsDeploy.exe command line interface (cli)"
+Author: louisfischer
+Description: "Cake Build addin for using the MsDeploy command line interface (cli)."
 Categories:
-- MsDeploy
-- Deployment
+-- cake
+-- script
+-- build
+-- msdeploy
+-- webdeploy

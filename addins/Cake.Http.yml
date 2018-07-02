@@ -3,7 +3,11 @@ NuGet: Cake.Http
 Assemblies:
 - "/**/Cake.Http.dll"
 Repository: https://github.com/cake-contrib/Cake.Http
-Author: Louis Fischer
-Description: "Cake.Http is set of aliases that help simplify HTTP calls for GET, POST, PUT, DELETE, PATCH, etc."
+Author: louisfischer
+Description: "HttpClient addin for cake build."
 Categories:
-- Http
+-- cake
+-- script
+-- build
+-- httpclient
+-- web
