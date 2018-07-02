@@ -7,5 +7,5 @@ Author: SharpeRAD
 Description: "Cake Build addon for executing sql queries."
 Prerelease: "true"
 Categories:
--- SQL
--- Queries
+- SQL
+- Queries

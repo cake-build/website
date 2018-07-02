@@ -6,7 +6,7 @@ Repository: https://github.com/cake-contrib/Cake.Openshift
 Author: Cake.Openshift
 Description: "A set of aliases for Cake to help with running Openshift commands"
 Categories:
--- cake
--- openshift
--- addin
--- plugin
+- cake
+- openshift
+- addin
+- plugin

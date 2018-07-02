@@ -6,10 +6,10 @@ Repository: https://github.com/thzinc/Cake.HandlebarsDotNet
 Author: thzinc
 Description: "Cake addin for working with Handlebars templates"
 Categories:
--- c#
--- csharp
--- cake
--- addin
--- handlebars
--- handlebarsjs
--- handlebars.net
+- c#
+- csharp
+- cake
+- addin
+- handlebars
+- handlebarsjs
+- handlebars.net

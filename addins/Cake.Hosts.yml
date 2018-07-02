@@ -6,7 +6,7 @@ Repository: https://github.com/AMVSoftware/Cake.Hosts
 Author: AMVSoftware
 Description: "Cake Build addon to manipulate Hosts file"
 Categories:
--- cake
--- hosts
--- build
--- contrib
+- cake
+- hosts
+- build
+- contrib

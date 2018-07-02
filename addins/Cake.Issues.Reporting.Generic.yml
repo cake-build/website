@@ -11,8 +11,8 @@ It also requires the core Cake.Issues and Cake.Issues.Reporting addins and one o
 
 See the Project Site for an overview of the whole ecosystem of addins for working with issues in Cake scripts."
 Categories:
--- Issues
--- ReportFormat
--- Reporting
--- Html
--- Markdown
+- Issues
+- ReportFormat
+- Reporting
+- Html
+- Markdown

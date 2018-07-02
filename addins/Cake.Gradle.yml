@@ -6,4 +6,4 @@ Repository: https://github.com/abeggchr/cake-gradle/blob/master/README.md
 Author: abeggchr
 Description: "An aliase for Cake to help with running Gradle commands"
 Categories:
--- Gradle
+- Gradle

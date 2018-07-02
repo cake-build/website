@@ -6,7 +6,7 @@ Repository: https://github.com/MihaMarkic/Cake.Putty
 Author: MihaMarkic
 Description: "Cake Build addin for Putty."
 Categories:
--- cake
--- putty
--- build
--- contrib
+- cake
+- putty
+- build
+- contrib

@@ -6,6 +6,6 @@ Repository: https://github.com/Julien-Mialon/cake
 Author: Julien-Mialon
 Description: "Cake addin to help pack/publish nuget packages."
 Categories:
--- cake
--- nuget
--- json
+- cake
+- nuget
+- json

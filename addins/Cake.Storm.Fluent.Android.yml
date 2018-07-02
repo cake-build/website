@@ -6,8 +6,8 @@ Repository: https://github.com/Julien-Mialon/cake
 Author: Julien-Mialon
 Description: "Cake addin for fluent description for android relative tasks."
 Categories:
--- cake
--- build
--- contrib
--- fluent
--- android
+- cake
+- build
+- contrib
+- fluent
+- android

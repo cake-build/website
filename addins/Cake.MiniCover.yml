@@ -6,7 +6,7 @@ Repository: https://github.com/nlowe/Cake.MiniCover
 Author: nlowe
 Description: "Cake Aliases for https://github.com/lucaslorentz/minicover"
 Categories:
--- cake
--- minicover
--- build
--- contrib
+- cake
+- minicover
+- build
+- contrib

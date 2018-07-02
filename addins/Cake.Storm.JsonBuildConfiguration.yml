@@ -6,6 +6,6 @@ Repository: https://github.com/Julien-Mialon/cake
 Author: Julien-Mialon
 Description: "Cake addin to help read a build configuration from a json file."
 Categories:
--- cake
--- configuration
--- json
+- cake
+- configuration
+- json

@@ -6,9 +6,9 @@ Repository: https://github.com/redth/Cake.Android.AvdManager
 Author: redth
 Description: "Cake Build addin to provide Aliases for Android's AVD Manager."
 Categories:
--- xamarin
--- android
--- cake
--- addin
--- avd
--- avdmanager
+- xamarin
+- android
+- cake
+- addin
+- avd
+- avdmanager

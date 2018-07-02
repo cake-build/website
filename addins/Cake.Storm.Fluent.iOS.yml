@@ -6,8 +6,8 @@ Repository: https://github.com/Julien-Mialon/cake
 Author: Julien-Mialon
 Description: "Cake addin for fluent description for iOS relative tasks."
 Categories:
--- cake
--- build
--- contrib
--- fluent
--- ios
+- cake
+- build
+- contrib
+- fluent
+- ios

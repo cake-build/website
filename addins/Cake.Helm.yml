@@ -7,7 +7,7 @@ Author: santey
 Description: "Cake AddIn that extends Cake with Helm"
 Prerelease: "true"
 Categories:
--- cake
--- helm
--- build
--- contrib
+- cake
+- helm
+- build
+- contrib

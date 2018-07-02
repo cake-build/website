@@ -6,8 +6,8 @@ Repository: https://github.com/cake-contrib/Cake.MsDeploy
 Author: louisfischer
 Description: "Cake Build addin for using the MsDeploy command line interface (cli)."
 Categories:
--- cake
--- script
--- build
--- msdeploy
--- webdeploy
+- cake
+- script
+- build
+- msdeploy
+- webdeploy

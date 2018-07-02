@@ -11,7 +11,7 @@ It requires the core Cake.Issues addin, addins for reading issues and one or mor
 
 See the Project Site for an overview of the whole ecosystem of addins for working with issues in Cake scripts."
 Categories:
--- Issues
--- CodeAnalysis
--- Linting
--- Reporting
+- Issues
+- CodeAnalysis
+- Linting
+- Reporting

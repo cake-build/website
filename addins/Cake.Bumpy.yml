@@ -6,6 +6,6 @@ Repository: https://github.com/cake-contrib/Cake.Bumpy
 Author: fwinkelbauer
 Description: "Cake AddIn for the version management command line tool Bumpy"
 Categories:
--- Versioning
--- AssemblyInfo
--- NuSpec
+- Versioning
+- AssemblyInfo
+- NuSpec

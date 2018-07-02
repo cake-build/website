@@ -6,12 +6,12 @@ Repository: https://github.com/Julien-Mialon/cake
 Author: Julien-Mialon
 Description: "Cake addin for fluent description to update file content before build (csproj & cs source file)."
 Categories:
--- cake
--- build
--- contrib
--- fluent
--- transformation
--- edition
--- csproj
--- cs
--- source
+- cake
+- build
+- contrib
+- fluent
+- transformation
+- edition
+- csproj
+- cs
+- source

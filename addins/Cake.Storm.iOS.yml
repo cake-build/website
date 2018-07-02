@@ -6,7 +6,7 @@ Repository: https://github.com/Julien-Mialon/cake
 Author: Julien-Mialon
 Description: "Cake addin to help build xamarin iOS application."
 Categories:
--- cake
--- ios
--- xamarin
--- plist
+- cake
+- ios
+- xamarin
+- plist

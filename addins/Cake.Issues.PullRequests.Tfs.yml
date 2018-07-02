@@ -12,8 +12,8 @@ It also requires the core Cake.Issues and Cake.Issues.PullRequests addins and on
 
 See the Project Site for an overview of the whole ecosystem of addins for working with issues in Cake scripts."
 Categories:
--- Issues
--- PullRequestSystem
--- PullRequest
--- TFS
--- VSTS
+- Issues
+- PullRequestSystem
+- PullRequest
+- TFS
+- VSTS

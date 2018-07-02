@@ -6,4 +6,4 @@ Repository: https://github.com/cake-addin/cake-server
 Author: cake-addin
 Description: "Cake.SimpleHTTPServer"
 Categories:
--- SimpleHTTPServer
+- SimpleHTTPServer

@@ -6,4 +6,4 @@ Repository: https://github.com/cake-contrib/Cake.VsCode/
 Author: gep13
 Description: "Cake VsCode AddIn."
 Categories:
--- VsCode
+- VsCode

@@ -6,6 +6,6 @@ Repository: https://github.com/SharpeRAD/Cake.Topshelf
 Author: SharpeRAD
 Description: "Cake Build addon for managing Topshelf services."
 Categories:
--- Topshelf
--- Windows
--- Service
+- Topshelf
+- Windows
+- Service

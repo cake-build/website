@@ -6,6 +6,6 @@ Repository: https://github.com/Supermortal/Cake.FtpDeploy
 Author: Supermortal
 Description: "Cake.FtpDeploy addin"
 Categories:
--- cake
--- ftp
--- deploy
+- cake
+- ftp
+- deploy

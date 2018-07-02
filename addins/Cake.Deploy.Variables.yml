@@ -6,6 +6,6 @@ Repository: https://github.com/ObjectivityLtd/Cake.Deploy.Variables
 Author: ObjectivityLtd
 Description: "Cake addin for the deployment variables management."
 Categories:
--- Deploy
--- Variables
--- Deployment
+- Deploy
+- Variables
+- Deployment

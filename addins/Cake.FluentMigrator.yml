@@ -6,4 +6,4 @@ Repository: https://github.com/cake-contrib/Cake.FluentMigrator
 Author: Fredrik Leijon
 Description: "FluentMigrator extension for Cake."
 Categories:
--- FluentMigrator
+- FluentMigrator

@@ -6,10 +6,10 @@ Repository: https://github.com/Julien-Mialon/cake
 Author: Julien-Mialon
 Description: "Cake addin for fluent description for dotnetcore tooling relative tasks."
 Categories:
--- cake
--- build
--- contrib
--- fluent
--- dotnetcore
--- vs2017
--- netstandard
+- cake
+- build
+- contrib
+- fluent
+- dotnetcore
+- vs2017
+- netstandard

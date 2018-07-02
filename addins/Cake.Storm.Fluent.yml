@@ -6,7 +6,7 @@ Repository: https://github.com/Julien-Mialon/cake
 Author: Julien-Mialon
 Description: "Cake addin for fluent description of build tasks."
 Categories:
--- cake
--- build
--- contrib
--- fluent
+- cake
+- build
+- contrib
+- fluent

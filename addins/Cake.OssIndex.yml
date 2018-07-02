@@ -7,6 +7,6 @@ Author: TrekkingForCharity
 Description: "A set of aliases for Cake to help with checking security of packages with OssIndex."
 Prerelease: "true"
 Categories:
--- cake
--- ossindex
--- build
+- cake
+- ossindex
+- build

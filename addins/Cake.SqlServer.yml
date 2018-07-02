@@ -6,4 +6,4 @@ Repository: https://github.com/AMVSoftware/Cake.SqlServer
 Author: AMVSoftware
 Description: "Cake Build addon for executing some operations in MS Sql Server."
 Categories:
--- SQLServer
+- SQLServer

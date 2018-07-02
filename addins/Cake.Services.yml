@@ -6,4 +6,4 @@ Repository: https://github.com/SharpeRAD/Cake.Services
 Author: SharpeRAD
 Description: "Cake Build addon for Windows services."
 Categories:
--- WindowsService
+- WindowsService

@@ -6,6 +6,6 @@ Repository: https://github.com/SharpeRAD/Cake.AWS.CloudFront
 Author: SharpeRAD
 Description: "Cake Build addon for managing Amazon CloudFront CDN."
 Categories:
--- Amazon
--- CloudFront
--- CDN
+- Amazon
+- CloudFront
+- CDN

@@ -7,9 +7,9 @@ Author: agc93
 Description: "A simple Cake addin powered by NSwag for compiling client code and API definitions from a variety of sources"
 Prerelease: "true"
 Categories:
--- cake
--- build
--- script
--- swagger
--- api
--- openapi
+- cake
+- build
+- script
+- swagger
+- api
+- openapi

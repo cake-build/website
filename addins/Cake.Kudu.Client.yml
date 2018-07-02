@@ -6,4 +6,4 @@ Repository: https://github.com/cake-contrib/Cake.Kudu.Client/
 Author: WCOM AB
 Description: "Cake add-in to help with remotely communicating with Kudu using C#"
 Categories:
--- Kudu
+- Kudu

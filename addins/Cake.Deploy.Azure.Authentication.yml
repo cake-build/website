@@ -6,8 +6,8 @@ Repository: https://github.com/ObjectivityLtd/Cake.Deploy.Azure.Authentication
 Author: ObjectivityLtd
 Description: "Cake addin for loging in to Azure Resource Manager."
 Categories:
--- Deploy
--- Azure
--- Resource
--- Manager
--- Deployment
+- Deploy
+- Azure
+- Resource
+- Manager
+- Deployment

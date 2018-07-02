@@ -6,4 +6,4 @@ Repository: https://github.com/cake-contrib/Cake.Paket
 Author: Larz White
 Description: "Paket addin for Cake."
 Categories:
--- paket
+- paket

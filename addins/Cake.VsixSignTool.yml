@@ -6,6 +6,6 @@ Repository: https://github.com/MihaMarkic/Cake.VsixSignTool
 Author: MihaMarkic
 Description: "Cake Build addin for VsixSignTool."
 Categories:
--- VsixSignTool
--- contrib
--- build
+- VsixSignTool
+- contrib
+- build

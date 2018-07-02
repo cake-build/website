@@ -6,6 +6,6 @@ Repository: https://github.com/RLittlesII/Cake.TravisCI
 Author: RLittlesII
 Description: "Cake add in that extends Cake with support for TravisCI."
 Categories:
--- cake
--- travisci
--- build
+- cake
+- travisci
+- build

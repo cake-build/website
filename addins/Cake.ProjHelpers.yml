@@ -6,6 +6,6 @@ Repository: https://github.com/orialmog/Cake.ProjHelpers
 Author: orialmog
 Description: "Cake AddIn to embed files into .proj files"
 Categories:
--- Resources
--- Embed
--- Task
+- Resources
+- Embed
+- Task

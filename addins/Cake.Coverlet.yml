@@ -6,8 +6,8 @@ Repository: https://github.com/romanx/Cake.Coverlet
 Author: romanx
 Description: "Coverlet extensions for Cake Build"
 Categories:
--- cake
--- script
--- build
--- coverage
--- coverlet
+- cake
+- script
+- build
+- coverage
+- coverlet

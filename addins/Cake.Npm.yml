@@ -6,7 +6,7 @@ Repository: https://github.com/cake-contrib/cake-npm
 Author: Phil Oyston, Pascal Berger, Cake-Contrib
 Description: "A set of aliases for Cake to help with running Npm (Node Package Manager) commands"
 Categories:
--- cake
--- npm
--- build
--- contrib
+- cake
+- npm
+- build
+- contrib

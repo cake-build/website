@@ -6,4 +6,4 @@ Repository: https://github.com/SharpeRAD/Cake.WebDeploy
 Author: SharpeRAD
 Description: "Cake Build addon for publishing websites via WebDeploy."
 Categories:
--- WebDeploy
+- WebDeploy

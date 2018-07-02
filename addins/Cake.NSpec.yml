@@ -6,8 +6,8 @@ Repository: https://github.com/app-iron/Cake.NSpec/tree/master
 Author: app-iron
 Description: "Cake Adapter that enables nspec tests"
 Categories:
--- nspec
--- cake
--- bdd
--- tdd
--- testing
+- nspec
+- cake
+- bdd
+- tdd
+- testing

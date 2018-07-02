@@ -6,4 +6,4 @@ Repository: https://github.com/SharpeRAD/Cake.Powershell
 Author: SharpeRAD
 Description: "Cake Build addon for Powershell."
 Categories:
--- Powershell
+- Powershell
