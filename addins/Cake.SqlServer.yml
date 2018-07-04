@@ -1,0 +1,9 @@
+Name: Cake.SqlServer
+NuGet: Cake.SqlServer
+Assemblies:
+- "/**/Cake.SqlServer.dll"
+Repository: https://github.com/AMVSoftware/Cake.SqlServer
+Author: AMVSoftware
+Description: "Cake Build addon for executing some operations in MS Sql Server."
+Categories:
+- SQLServer
