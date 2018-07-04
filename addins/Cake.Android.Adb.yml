@@ -1,9 +1,0 @@
-Name: Cake.Android.Adb
-NuGet: Cake.Android.Adb
-Assemblies:
-- "/**/Cake.Android.Adb.dll"
-Repository: https://github.com/Redth/Cake.Android.Adb
-Author: Jonathan Dick
-Description: "Cake Aliases for Android's adb command line tool"
-Categories:
-- Android

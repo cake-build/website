@@ -1,7 +1,0 @@
-Name: Cake.EnvXmlTransform
-NuGet: Cake.EnvXmlTransform
-Repository: https://github.com/nengberg/cake-envxmltransform
-Author: Niklas Engberg
-Description: "Cake addin that enables you to transform configuration files based on the environment or machine you're deploying to."
-Categories:
-- Deployment
