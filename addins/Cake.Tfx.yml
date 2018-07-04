@@ -1,9 +1,0 @@
-Name: Cake.Tfx
-NuGet: Cake.Tfx
-Assemblies:
-- "/**/Cake.Tfx.dll"
-Repository: https://github.com/cake-contrib/Cake.Tfx/
-Author: gep13
-Description: "Cake Tfx AddIn."
-Categories:
-- Tfx

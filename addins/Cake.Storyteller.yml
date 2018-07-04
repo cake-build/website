@@ -1,9 +1,0 @@
-Name: Cake.Storyteller
-NuGet: Cake.Storyteller
-Assemblies:
-- "/**/Cake.Storyteller.dll"
-Repository: https://github.com/bibodha/Cake.Storyteller
-Author: Bibodha
-Description: "Storyteller 3 Alias for Cake"
-Categories:
-- Test

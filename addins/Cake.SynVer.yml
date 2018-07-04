@@ -1,9 +1,0 @@
-Name: Cake.SynVer
-NuGet: Cake.SynVer
-Assemblies:
-- "/**/Cake.SynVer.dll"
-Repository: https://github.com/fsprojects/Cake.SynVer
-Author: Oskar Gewalli, SPISE MISU ApS (Ramón Soto Mathiesen)
-Description: "Cake Addin to help get version from assembly differences."
-Categories:
-- Versioning
