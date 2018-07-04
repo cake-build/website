@@ -1,0 +1,9 @@
+Name: Cake.Transifex
+NuGet: Cake.Transifex
+Assemblies:
+- "/**/Cake.Transifex.dll"
+Repository: https://github.com/cake-contrib/Cake.Transifex
+Author: Kim Nordmo
+Description: "Cake Aliases for using the transifex localization service client"
+Categories:
+- Localization
