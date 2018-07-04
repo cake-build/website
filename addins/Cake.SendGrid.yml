@@ -1,9 +1,0 @@
-Name: Cake.SendGrid
-NuGet: Cake.SendGrid
-Assemblies:
-- "/**/Cake.SendGrid.dll"
-Repository: https://github.com/cake-contrib/Cake.SendGrid/
-Author: jericho
-Description: "Cake Addin that exends Cake with ability to utilize SendGrid."
-Categories:
-- Email

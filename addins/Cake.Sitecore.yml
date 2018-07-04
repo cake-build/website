@@ -1,8 +1,0 @@
-Name: Cake.Sitecore
-NuGet: Cake.Sitecore
-Repository: https://github.com/asmagin/Cake.Sitecore
-Author: asmagin
-Description: "A set of Cake scripts and tools to compile and deploy Sitecore Helix projects."
-Categories:
-- Build
-- Sitecore

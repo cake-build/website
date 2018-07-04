@@ -1,9 +1,0 @@
-Name: Cake.Slack
-NuGet: Cake.Slack
-Assemblies:
-- "/**/Cake.Slack.dll"
-Repository: https://github.com/cake-contrib/Cake.Slack/
-Author: WCOM AB
-Description: "Provides Slack aliases (extension methods on Cake context) for Cake."
-Categories:
-- Slack

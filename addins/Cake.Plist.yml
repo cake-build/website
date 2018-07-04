@@ -1,9 +1,0 @@
-Name: Cake.Plist
-NuGet: Cake.Plist
-Assemblies:
-- "/**/Cake.Plist.dll"
-Repository: https://github.com/cake-contrib/Cake.Plist
-Author: Paul Reichelt
-Description: "Plist Addin for Cake Build Automation System"
-Categories:
-- Plist

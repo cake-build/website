@@ -1,9 +1,0 @@
-Name: Cake.ReSharperReports
-NuGet: Cake.ReSharperReports
-Assemblies:
-- "/**/Cake.ReSharperReports.dll"
-Repository: https://github.com/cake-contrib/Cake.ReSharperReports/
-Author: gep13
-Description: "Cake ReSharperReports AddIn."
-Categories:
-- ReSharperReports

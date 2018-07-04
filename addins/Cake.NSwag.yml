@@ -1,9 +1,0 @@
-Name: Cake.NSwag
-NuGet: Cake.NSwag
-Assemblies:
-- "/**/Cake.NSwag.dll"
-Repository: https://github.com/agc93/Cake.NSwag
-Author: Alistair Chapman
-Description: "Cake addin for compiling client code and API definitions (including Swagger) using the NSwag toolchain"
-Categories:
-- Swagger
