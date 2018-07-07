@@ -1,9 +1,0 @@
-Name: Cake.Email
-NuGet: Cake.Email
-Assemblies:
-- "/**/Cake.Email.dll"
-Repository: https://github.com/cake-contrib/Cake.Email/
-Author: jericho
-Description: "Cake Addin that exends Cake with ability to send email."
-Categories:
-- Email

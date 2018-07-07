@@ -1,7 +1,0 @@
-Name: Cake.AliaSql
-NuGet: Cake.AliaSql
-Repository: https://github.com/cake-contrib/Cake.AliaSql
-Author: RichieCoder1
-Description: "AliaSql Script Alias for Cake."
-Categories:
-- Database

@@ -1,9 +1,0 @@
-Name: Cake.CakeMail
-NuGet: Cake.CakeMail
-Assemblies:
-- "/**/Cake.CakeMail.dll"
-Repository: https://github.com/cake-contrib/Cake.CakeMail/
-Author: jericho
-Description: "Cake Addin that exends Cake with ability to utilize CakeMail."
-Categories:
-- Email

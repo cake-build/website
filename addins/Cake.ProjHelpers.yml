@@ -1,9 +1,0 @@
-Name: Cake.ProjHelpers
-NuGet: Cake.ProjHelpers
-Assemblies:
-- "/**/Cake.ProjHelpers.dll"
-Repository: https://github.com/orialmog/Cake.ProjHelpers
-Author: orialmog
-Description: "Cake AddIn for manipulating .proj files"
-Categories:
-- Build

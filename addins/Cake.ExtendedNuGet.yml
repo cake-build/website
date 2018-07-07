@@ -1,9 +1,0 @@
-Name: Cake.ExtendedNuGet
-NuGet: Cake.ExtendedNuGet
-Assemblies:
-- "/**/Cake.ExtendedNuGet.dll"
-Repository: https://github.com/Redth/Cake.ExtendedNuGet
-Author: Jonathan Dick
-Description: "Cake build aliases and classes additional NuGet functionality."
-Categories:
-- NuGet

@@ -1,9 +1,0 @@
-Name: Cake.DoInDirectory
-NuGet: Cake.DoInDirectory
-Assemblies:
-- "/**/Cake.DoInDirectory.dll"
-Repository: https://github.com/pitermarx/Cake.DoInDirectory
-Author: pitermarx
-Description: "Cake Addin to allow the temporary change of the working directory."
-Categories:
-- IO

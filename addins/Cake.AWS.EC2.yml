@@ -1,9 +1,0 @@
-Name: Cake.AWS.EC2
-NuGet: Cake.AWS.EC2
-Assemblies:
-- "/**/Cake.AWS.EC2.dll"
-Repository: https://github.com/SharpeRAD/Cake.AWS.EC2
-Author: SharpeRAD
-Description: "Amazon EC2 addon for Cake."
-Categories:
-- AWS

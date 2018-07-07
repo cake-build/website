@@ -1,9 +1,0 @@
-Name: Cake.Bumpy
-NuGet: Cake.Bumpy
-Assemblies:
-- "/**/Cake.Bumpy.dll"
-Repository: https://github.com/cake-contrib/Cake.Bumpy
-Author: fwinkelbauer
-Description: "Cake Addin that extends Cake with the ability to manage version information in a project using bumpy.exe"
-Categories:
-- Versioning

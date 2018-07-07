@@ -1,9 +1,0 @@
-Name: Cake.Plist
-NuGet: Cake.Plist
-Assemblies:
-- "/**/Cake.Plist.dll"
-Repository: https://github.com/cake-contrib/Cake.Plist
-Author: Paul Reichelt
-Description: "Cake addin for deserializing, modifying and serializing Apple OSX/iOS xml plists directly from .NET source code."
-Categories:
-- Mobile

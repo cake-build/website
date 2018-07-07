@@ -1,9 +1,0 @@
-Name: Cake.OctoDeploy
-NuGet: Cake.OctoDeploy
-Assemblies:
-- "/**/Cake.OctoDeploy.dll"
-Repository: https://github.com/NinetailLabs/Cake.OctoDeploy
-Author: NineTail Labs
-Description: "Cake addin for easy creation of GitHub releases"
-Categories:
-- GitHub

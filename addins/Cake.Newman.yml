@@ -1,9 +1,0 @@
-Name: Cake.Newman
-NuGet: Cake.Newman
-Assemblies:
-- "/**/Cake.Newman.dll"
-Repository: https://github.com/cake-contrib/Cake.Newman
-Author: Alistair Chapman
-Description: "Cake addin for testing Postman Collection APIs using the Newman CLI."
-Categories:
-- Postman
