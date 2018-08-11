@@ -5,7 +5,7 @@ Title: Blog Posts
 # 2018
 
 ## Dan Clarke
-* [https://www.danclarke.com/dotnetoxford-feb-2018](.NET Oxford Meetup XI: A Piece of Cake)
+* [.NET Oxford Meetup XI: A Piece of Cake](https://www.danclarke.com/dotnetoxford-feb-2018)
 
 ## Henrik Molnes
 * [Simplifying the build process with Cake](http://blogg.itverket.no/cake/)
