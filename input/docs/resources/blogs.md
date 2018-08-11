@@ -4,8 +4,14 @@ Title: Blog Posts
 
 # 2018
 
+## Dan Clarke
+* [https://www.danclarke.com/dotnetoxford-feb-2018](.NET Oxford Meetup XI: A Piece of Cake)
+
 ## Henrik Molnes
 * [Simplifying the build process with Cake](http://blogg.itverket.no/cake/)
+
+## Liam Westley
+* [Have your CAKE and eat it–implementing a C# build script at Huddle](https://blog.liamwestley.co.uk/2018/08/01/have-your-cake-and-eat-it-implementing-a-c-build-script-at-huddle/)
 
 ## Martin Deslongchamps
 * [How to build a NuGet package for Cake](http://thefutureofcode.com/2018/03/11/how-to-build-a-nuget-package-for-cake/)
@@ -49,6 +55,11 @@ Title: Blog Posts
 ## Dave Glick
 
 * [Publishing To Azure Using Cake And Web Deploy](https://daveaglick.com/posts/publishing-to-azure-using-cake-and-web-deploy)
+
+## Dan Clarke
+
+* [A piece of Cake!](https://www.danclarke.com/a-piece-of-cake)
+* [.NET Oxford Meetup VIII: Lightning Does Strike Twice!](https://www.danclarke.com/dotnetoxford-nov-2017)
 
 ## Dariusz Pawlukiewicz
 
