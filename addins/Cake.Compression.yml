@@ -1,5 +1,6 @@
 Name: Cake.Compression
 NuGet: Cake.Compression
+Prerelease: true
 Assemblies:
 - "/**/Cake.Compression.dll"
 Repository: https://github.com/akordowski/Cake.Compression/
