@@ -10,6 +10,10 @@ Title: Blog Posts
 ## Henrik Molnes
 * [Simplifying the build process with Cake](http://blogg.itverket.no/cake/)
 
+## Kevin Smith
+
+* [Configuring private VSTS NuGet feeds with Cake](https://kevsoft.net/2018/08/06/configuring-private-vsts-nuget-feeds-with-cake.html)
+
 ## Liam Westley
 * [Have your CAKE and eat it–implementing a C# build script at Huddle](https://blog.liamwestley.co.uk/2018/08/01/have-your-cake-and-eat-it-implementing-a-c-build-script-at-huddle/)
 
