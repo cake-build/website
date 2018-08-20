@@ -5,6 +5,6 @@
 [Rr]elease/
 nuget.exe
 [Ll]ocal[Dd]eploy/
-packages.xml
+/config.wyam.packages.xml
 /config.wyam.dll
 /config.wyam.hash

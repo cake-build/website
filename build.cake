@@ -1,8 +1,8 @@
 #tool "nuget:https://api.nuget.org/v3/index.json?package=KuduSync.NET&version=1.3.1"
-#tool "nuget:https://api.nuget.org/v3/index.json?package=Wyam&version=1.2.0"
+#tool "nuget:https://api.nuget.org/v3/index.json?package=Wyam&version=1.5.0"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Git&version=0.16.1"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Kudu&version=0.5.0"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Wyam&version=1.2.0"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Wyam&version=1.5.0"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Yaml&version=2.0.0"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=YamlDotNet&version=4.2.1"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=Octokit&version=0.26.0"
@@ -194,8 +194,8 @@ Task("Preview")
 Task("Debug")
     .Does(() =>
     {
-        StartProcess("../Wyam/src/clients/Wyam/bin/Debug/wyam.exe",
-            "-a \"../Wyam/src/**/bin/Debug/**/*.dll\" -r \"docs -i\" -t \"../Wyam/themes/Docs/Samson\" -p");
+        StartProcess("../Wyam/src/clients/Wyam/bin/Debug/net462/wyam.exe",
+            "-a \"../Wyam/tests/integration/Wyam.Examples.Tests/bin/Debug/net462/**/*.dll\" -r \"docs -i\" -t \"../Wyam/themes/Docs/Samson\" -p");
     });
 
 // Does not download artifacts (run Build or GetArtifacts target first)
@@ -203,8 +203,8 @@ Task("Debug-Addins")
     .IsDependentOn("GetAddinSpecs")
     .Does(() =>
     {
-        StartProcess("../Wyam/src/clients/Wyam/bin/Debug/wyam.exe",
-            "-a \"../Wyam/src/**/bin/Debug/**/*.dll\" -r \"docs -i\" -t \"../Wyam/themes/Docs/Samson\" -p --attach"
+        StartProcess("../Wyam/src/clients/Wyam/bin/Debug/net462/wyam.exe",
+            "-a \"../Wyam/tests/integration/Wyam.Examples.Tests/bin/Debug/net462/**/*.dll\" -r \"docs -i\" -t \"../Wyam/themes/Docs/Samson\" -p --attach"
             + " --setting \"AssemblyFiles=["
             + String.Join(",", addinSpecs.Where(x => x.Assemblies != null).SelectMany(x => x.Assemblies).Select(x => "../release/addins" + x))
             + "]\"");
