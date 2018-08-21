@@ -3,8 +3,7 @@ NuGet: Cake.SqlServer
 Assemblies:
 - "/**/Cake.SqlServer.dll"
 Repository: https://github.com/AMVSoftware/Cake.SqlServer
-Author: Max Vasilyev
-Description: "Cake build aliases for manipulating SQL Server databases and executing inline SQL and script files."
+Author: AMVSoftware
+Description: "Cake Build addon for executing some operations in MS Sql Server."
 Categories:
-- Sql
-- Database
+- SQLServer

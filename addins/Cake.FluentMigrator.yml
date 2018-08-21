@@ -4,7 +4,6 @@ Assemblies:
 - "/**/Cake.FluentMigrator.dll"
 Repository: https://github.com/cake-contrib/Cake.FluentMigrator
 Author: Fredrik Leijon
-Description: "Cake Addin that extends Cake for executing commands with the FluentMigrator tool."
+Description: "FluentMigrator extension for Cake."
 Categories:
 - FluentMigrator
-- Deployment

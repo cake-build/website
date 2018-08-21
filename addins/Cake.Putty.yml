@@ -3,7 +3,10 @@ NuGet: Cake.Putty
 Assemblies:
 - "/**/Cake.Putty.dll"
 Repository: https://github.com/MihaMarkic/Cake.Putty
-Author: Miha Markič
-Description: "A Cake AddIn that extends Cake with Putty command tools."
+Author: MihaMarkic
+Description: "Cake Build addin for Putty."
 Categories:
-- Communication
+- cake
+- putty
+- build
+- contrib

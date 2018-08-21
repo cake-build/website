@@ -3,7 +3,10 @@ NuGet: Cake.Npm
 Assemblies:
 - "/**/Cake.Npm.dll"
 Repository: https://github.com/cake-contrib/cake-npm
-Author: Phil Oyston
-Description: "A set of aliases for Cake to help with running Npm (Node Package Manager) commands."
+Author: Phil Oyston, Pascal Berger, Cake-Contrib
+Description: "A set of aliases for Cake to help with running Npm (Node Package Manager) commands"
 Categories:
-- Node
+- cake
+- npm
+- build
+- contrib
