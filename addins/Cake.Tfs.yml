@@ -1,0 +1,12 @@
+Name: Cake.Tfs
+NuGet: Cake.Tfs
+Assemblies:
+- "/**/Cake.Tfs.dll"
+Repository: https://github.com/cake-contrib/Cake.Tfs
+Author: Pascal Berger
+Description: "The TFS Addin for Cake allows you to access Team Foundation Server or Visual Studio Team Services from Cake build scripts."
+Categories:
+- TFS
+- VSTS
+- Pull Requests
+- Git
