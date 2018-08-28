@@ -25,6 +25,10 @@ Title: Blog Posts
 * [“Run-From-Zip” with Cake Kudu Client](https://hackernoon.com/run-from-zip-with-cake-kudu-client-5c063cd72b37)
 * [Deploying .NET Core to Azure using Bitrise and Cake](https://blog.bitrise.io/deploying-net-core-to-azure-using-bitrise-and-cake)
 
+## NuGet Blog
+
+* [Introducing Source Code Link for NuGet packages](https://blog.nuget.org/20180827/Introducing-Source-Code-Link-for-NuGet-packages.html)
+
 ## Octopus Deploy Blog
 
 * [Build Pipelines and Application Packaging With .NETCore](https://octopus.com/blog/packaging-netcore)
