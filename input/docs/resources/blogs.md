@@ -4,6 +4,9 @@ Title: Blog Posts
 
 # 2018
 
+## Chester Burbidge
+* [Running VsTest with Cake](https://blog.scottlogic.com/2018/08/14/run-vstest-with-cake.html)
+
 ## Dan Clarke
 * [.NET Oxford Meetup XI: A Piece of Cake](https://www.danclarke.com/dotnetoxford-feb-2018)
 
@@ -192,7 +195,7 @@ Title: Blog Posts
 
 ## Chester Burbidge
 
-* [Let them use CAKE](http://cburbidge.github.io/let-them-use-cake/)
+* [Let them use CAKE](https://chester.codes/let-them-use-cake/)
 
 ## Coding4Fun
 
