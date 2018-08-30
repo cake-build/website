@@ -3,7 +3,9 @@ NuGet: Cake.FtpDeploy
 Assemblies:
 - "/**/Cake.FtpDeploy.dll"
 Repository: https://github.com/Supermortal/Cake.FtpDeploy
-Author: Christopher Pink
-Description: "Cake Addin to facilitate deployment with FTP."
+Author: Supermortal
+Description: "Cake.FtpDeploy addin"
 Categories:
-- Deployment
+- cake
+- ftp
+- deploy

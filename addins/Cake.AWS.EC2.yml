@@ -4,6 +4,7 @@ Assemblies:
 - "/**/Cake.AWS.EC2.dll"
 Repository: https://github.com/SharpeRAD/Cake.AWS.EC2
 Author: SharpeRAD
-Description: "Amazon EC2 addon for Cake."
+Description: "Cake Build addon for configuring Amazon Elastic Compute Cloud."
 Categories:
-- AWS
+- Amazon
+- EC2

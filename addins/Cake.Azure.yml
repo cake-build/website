@@ -4,6 +4,6 @@ Assemblies:
 - "/**/Cake.Azure.dll"
 Repository: https://github.com/DixonDs/Cake.Azure
 Author: DixonDs
-Description: "Cake plugin to manage Azure resources"
+Description: "Cake addin for Azure management."
 Categories:
 - Azure
