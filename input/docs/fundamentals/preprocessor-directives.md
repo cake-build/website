@@ -77,7 +77,7 @@ Attempts to load `utilities.cake` from nuget
 ```csharp
 #load nuget:?package=utilities.cake&include=/**/NoFoo.cake
 or
-#load nuget:?package=utilities.cake&=exclude/**/Foo.cake
+#load nuget:?package=utilities.cake&exclude=/**/Foo.cake
 ```
 
 # Reference directive
@@ -117,7 +117,7 @@ Specify the `include` parameter if the executable does not end with .exe
 ```csharp
 #tool nuget:?package=Cake.Foo&include=/**/NoFoo.exe
 or
-#tool nuget:?package=Cake.Foo&=exclude/**/Foo.exe
+#tool nuget:?package=Cake.Foo&exclude=/**/Foo.exe
 ```
 
 # Shebang directive
