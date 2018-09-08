@@ -4,7 +4,8 @@ Assemblies:
 - "/**/Cake.AWS.Route53.dll"
 Repository: https://github.com/SharpeRAD/Cake.AWS.Route53
 Author: SharpeRAD
-Description: "AWS Route53 addin for Cake."
+Description: "Cake Build addon for managing Amazon Route53 DNS."
 Categories:
-- AWS
-- Deployment
+- Amazon
+- Route53
+- DNS

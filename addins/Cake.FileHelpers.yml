@@ -3,7 +3,7 @@ NuGet: Cake.FileHelpers
 Assemblies:
 - "/**/Cake.FileHelpers.dll"
 Repository: https://github.com/cake-contrib/Cake.FileHelpers
-Author: Jonathan Dick
-Description: "A set of aliases for Cake to help with simple file operations such as Reading, Writing and Replacing text."
+Author: Redth
+Description: "Cake Build addon to provide Aliases for common File operations (Reading, Writing, Replacing Text)."
 Categories:
-- IO
+
