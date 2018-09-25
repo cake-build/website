@@ -15,7 +15,7 @@ This was one of the most requested features regarding intellisense support. Prev
   ```
   nuget.exe install Cake.Bakery -OutputDirectory <global_path> -ExcludeVersion
   ```
-2. Create a file called `omnisharp.json` in `%USERPROFILE%/.omnisharp/` (`~/.omnisharp/` if you are on Linux/macOS) with the following content (replace <global_path> with the path you chose in the previous step):
+2. Create a file called `omnisharp.json` in `%USERPROFILE%/.omnisharp/` (`~/.omnisharp/` if you are on Linux/macOS, and make sure to use double backslashes (\\) on Windows) with the following content (replace <global_path> with the path you chose in the previous step):
   ```json
   {
     "cake": {
