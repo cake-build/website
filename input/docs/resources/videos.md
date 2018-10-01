@@ -37,6 +37,11 @@ Order: 10
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/KioM-eN5e1k" frameborder="0" allowfullscreen></iframe>
 
+## Making builds a piece of Cake
+### Alistair Chapman - .NET Fringe (Lightning Talk)
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/uFzhZUDa-iQ" frameborder="0" allowfullscreen></iframe>
+
 # 2016
 
 ## Automating Builds with Cake (C# Make)
