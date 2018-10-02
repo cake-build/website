@@ -10,3 +10,5 @@ You can use the [Cake.CoreCLR](https://www.nuget.org/packages/Cake.CoreCLR) NuGe
 The [Cake](https://www.nuget.org/packages/Cake) NuGet package can be used on Windows to run using the full [.NET Framework 4.6.1](https://www.microsoft.com/en-us/download/details.aspx?id=49981).
 
 Alternatively, you can also use [Mono](http://www.mono-project.com/) to run on Mac or Linux. The official recommended version of Mono is `4.4.2`. Older versions might work but are not supported.
+
+**NOTE:** It is suggested to use [.NET Framework 4.7.2](https://www.microsoft.com/net/download/dotnet-framework/net472) or newer to run build scripts which are using addins targetting .NET Standard 2.0 only.
