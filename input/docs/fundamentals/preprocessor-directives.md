@@ -166,3 +166,19 @@ As modules can change and extend the internals of Cake, this bootstrapping needs
 ./cake.exe build.cake --bootstrap
 ./cake.exe build.cake
 ```
+
+# Define directive
+
+The define directive - `#define` creates a symbol, it can be later use to decide, what Cake will execute. You use it like `#define` in C#.
+To check if symbol is defined, you have to use directives `#if` ... `#else` ... `#endif`
+
+## Usage
+```csharp
+#define FOO
+
+#if (FOO)
+    // code in this branch will execute
+#else
+    // code in this branch will be skipped
+#endif
+```
