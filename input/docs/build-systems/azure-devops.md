@@ -1,5 +1,6 @@
 Order: 10
 Title: Azure DevOps
+RedirectFrom: docs/build-systems/vso
 ---
 
 The Cake Azure DevOps build task makes it easy to run a Cake script directly, without having to invoke PowerShell or other command line scripts. This makes it easy even for team members that are not familiar with Cake to add or adjust parameters passed to your build scripts.
