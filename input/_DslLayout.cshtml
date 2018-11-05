@@ -67,11 +67,11 @@
                             <td>
                                 @if(alias.MethodAlias)
                                 {
-                                    <text>@Context.GetTypeLink(alias.Doc)</text>
+                                    <text>@Context.GetTypeLink(alias.Doc, false)</text>
                                 }
                                 else
                                 {
-                                    <text>@Context.GetTypeLink(alias.Doc, alias.Doc.String("Name"))</text>
+                                    <text>@Context.GetTypeLink(alias.Doc, alias.Doc.String("Name"), false)</text>
                                 }
                             </td>
                             <td>

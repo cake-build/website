@@ -29,4 +29,4 @@ This can be done through the packages.config file in the root of the Modules fol
 
 ### How do you enable a different verbosity for logging within Cake?
 
-This has been answered on a Stack Overflow question [here](https://stackoverflow.com/questions/386586600).
+This has been answered on a Stack Overflow question [here](https://stackoverflow.com/questions/38658660).

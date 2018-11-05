@@ -23,6 +23,10 @@ Title: Usage Information
             <td class="col-md-6">Shows the description for tasks.</td>
         </tr>
         <tr>
+            <td class="col-md-6">-showtree, -tree</a></td>
+            <td class="col-md-6">Shows build target graph.</td>
+        </tr>
+        <tr>
             <td class="col-md-6">-dryrun</a></td>
             <td class="col-md-6">Performs a dry run.</td>
         </tr>

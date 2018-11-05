@@ -18,7 +18,8 @@ Pipelines.InsertBefore(Docs.Code, "Addins",
 Pipelines.InsertAfter("Addins", "AddinCategories",
     GroupByMany(@doc.List<string>("Categories"),
         Documents("Addins")
-    ),
+    )
+        .WithEmptyOutputIfNoGroups(),
     Meta(Keys.WritePath, new FilePath("addins/" + @doc.String(Keys.GroupKey).ToLower().Replace(" ", "-") + "/index.html")),
     Meta(Keys.RelativeFilePath, @doc.FilePath(Keys.WritePath)),
     OrderBy(@doc.String(Keys.GroupKey))
