@@ -1,6 +1,6 @@
 Name: Cake.Unity
 Repository: https://github.com/cake-contrib/Cake.Unity
-Author: Patrik Svensson
+Author: Patrik Svensson, Anatoliy Kolesnick
 Description: "Unity build support for Cake."
 Categories:
 - Unity
