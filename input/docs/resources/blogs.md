@@ -13,6 +13,9 @@ Title: Blog Posts
 ## Henrik Molnes
 * [Simplifying the build process with Cake](http://blogg.itverket.no/cake/)
 
+## Ivan Iakimov
+* [Integration of Cake build script with TeamCity](https://www.codeproject.com/Tips/1271037/Integration-of-Cake-build-script-with-TeamCity)
+
 ## Kevin Smith
 
 * [Configuring private VSTS NuGet feeds with Cake](https://kevsoft.net/2018/08/06/configuring-private-vsts-nuget-feeds-with-cake.html)
