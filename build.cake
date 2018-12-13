@@ -100,7 +100,7 @@ Task("GetSource")
         }
         // The GitHub releases API returns Not Found if all are pre-release, so need workaround below
         //Release release = github.Repository.Release.GetLatest("cake-build", "cake").Result;
-        Release release = github.Repository.Release.GetAll("cake-build", "cake").Result.First();
+        Release release = github.Repository.Release.GetAll("cake-build", "cake").Result.First( r =>r.PublishedAt.HasValue);
         FilePath releaseZip = DownloadFile(release.ZipballUrl);
         Unzip(releaseZip, releaseDir);
 
