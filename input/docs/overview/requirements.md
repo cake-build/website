@@ -3,7 +3,7 @@ Order: 20
 
 # .NET Core 2.1
 
-Cake provides two options for running on .NET Core, [.NET Core](https://dotnet.microsoft.com/download/dotnet-core/2.1) is available cross-platform on Windows, Mac or Linux.
+Cake provides two options for running on [.NET Core](https://dotnet.microsoft.com/download/dotnet-core/2.1), cross-platform on Windows, Mac or Linux.
 
 The [Cake.CoreCLR](https://www.nuget.org/packages/Cake.CoreCLR) NuGet package, targeting `netcoreapp2.0`.
 
