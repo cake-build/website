@@ -3,7 +3,7 @@ NuGet: Cake.Prompt
 Assemblies:
 - "/**/Cake.Prompt.dll"
 Repository: https://github.com/megakid/cake.prompt
-Author: megakid
+Author: James Connor, Yves Schmid
 Description: "Cake AddIn that provides ability to collect user input during build."
 Categories:
 - Prompt
