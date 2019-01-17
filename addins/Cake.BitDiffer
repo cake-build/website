@@ -1,0 +1,10 @@
+Name: Cake.BitDiffer
+NuGet: Cake.BitDiffer
+Prerelease: true
+Assemblies:
+- "/**/Cake.BitDiffer.dll"
+Repository: https://github.com/WebDucer/Cake.BitDiffer
+Author: Eugen [WebDucer] Richter
+Description: "Cake Addin for BitDiffer command line"
+Categories:
+- BitDiffer
