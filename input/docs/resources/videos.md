@@ -1,5 +1,17 @@
 Order: 10
 ---
+# 2019
+
+## How to generate a Static website with Cake build and Azure DevOps Pipeline
+### Frank Boucher - cloud5mins Episode #45
+
+#### English
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Sp4G81oLk_E" frameborder="0" allowfullscreen></iframe>
+
+#### French
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/fa4D3stDitU" frameborder="0" allowfullscreen></iframe>
 
 # 2018
 
