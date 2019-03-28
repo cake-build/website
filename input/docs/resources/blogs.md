@@ -1,6 +1,11 @@
 Order: 40
 Title: Blog Posts
 ---
+# 2019
+
+## François (Frank) Boucher
+
+* [How to use Azure DevOps Pipeline and Cake to generate a static website](http://www.frankysnotes.com/2019/03/how-to-use-azure-devops-pipeline-and.html)
 
 # 2018
 
