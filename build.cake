@@ -1,12 +1,14 @@
-#tool "nuget:https://api.nuget.org/v3/index.json?package=KuduSync.NET&version=1.3.1"
-#tool "nuget:https://api.nuget.org/v3/index.json?package=Wyam&version=1.6.0"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Git&version=0.16.1"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Kudu&version=0.5.0"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Wyam&version=1.6.0"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Yaml&version=2.0.0"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=YamlDotNet&version=4.2.1"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=Octokit&version=0.26.0"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=Polly&version=6.1.0"
+#module nuget:?package=Cake.DotNetTool.Module&version=0.1.0
+#tool "dotnet:https://api.nuget.org/v3/index.json?package=Wyam.Tool&version=2.2.4"
+#tool "nuget:https://api.nuget.org/v3/index.json?package=KuduSync.NET&version=1.5.2"
+#tool "nuget:https://api.nuget.org/v3/index.json?package=NuGet.CommandLine&version=4.9.4"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Git&version=0.19.0"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Kudu&version=0.8.0"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Wyam&version=2.2.4"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Yaml&version=3.0.0"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=YamlDotNet&version=5.2.1"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=Octokit&version=0.32.0"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=Polly&version=7.1.0"
 
 using Octokit;
 using Polly;

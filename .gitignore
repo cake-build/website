@@ -8,3 +8,6 @@ nuget.exe
 /config.wyam.packages.xml
 /config.wyam.dll
 /config.wyam.hash
+# .NET CLI
+/.dotnet/
+/.packages/
