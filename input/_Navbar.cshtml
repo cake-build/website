@@ -9,9 +9,9 @@
         Tuple.Create("FAQ", Context.GetLink("faq")),
         Tuple.Create("<i class=\"fa fa-github\"></i> Source", "https://github.com/cake-build/cake")
     };
-    foreach(Tuple<string, string> page in pages)
+    foreach(Tuple<string, string> p in pages)
     {
-        string active = Context.GetLink(Document).StartsWith(page.Item2) ? "active" : null;
-        <li class="@active"><a href="@page.Item2">@Html.Raw(page.Item1)</a></li>
+        string active = Context.GetLink(Document).StartsWith(p.Item2) ? "active" : null;
+        <li class="@active"><a href="@p.Item2">@Html.Raw(p.Item1)</a></li>
     }
 }
