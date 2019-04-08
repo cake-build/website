@@ -8,10 +8,10 @@
 #addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Yaml&version=3.0.0"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=YamlDotNet&version=5.2.1"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=Octokit&version=0.32.0"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=Polly&version=7.1.0"
+
+#load "nuget.cake"
 
 using Octokit;
-using Polly;
 
 //////////////////////////////////////////////////////////////////////
 // ARGUMENTS
@@ -134,37 +134,13 @@ Task("GetAddinSpecs")
 Task("GetAddinPackages")
     .IsDependentOn("CleanAddinPackages")
     .IsDependentOn("GetAddinSpecs")
-    .Does(() =>
+    .Does(context =>
     {
-        var retryPolicy = Policy
-                              .Handle<Exception>()
-                              .WaitAndRetry(5, retryAttempt =>
-                                TimeSpan.FromSeconds(Math.Pow(2, retryAttempt))
-                              );
-        DirectoryPath   packagesPath        = MakeAbsolute(Directory("./output")).Combine("packages");
-        Parallel.ForEach(
-            addinSpecs.Where(x => !string.IsNullOrEmpty(x.NuGet)),
-            addinSpec => {
-                Information("Installing addin package " + addinSpec.NuGet);
-
-                retryPolicy.Execute(
-                    () => NuGetInstall(addinSpec.NuGet,
-                            new NuGetInstallSettings
-                            {
-                                OutputDirectory = addinDir,
-                                Prerelease = addinSpec.Prerelease,
-                                Verbosity = NuGetVerbosity.Quiet,
-                                Source = new [] { "https://api.nuget.org/v3/index.json" },
-                                NoCache = true,
-                                EnvironmentVariables    = new Dictionary<string, string>{
-                                                                {"EnableNuGetPackageRestore", "true"},
-                                                                {"NUGET_XMLDOC_MODE", "None"},
-                                                                {"NUGET_PACKAGES", packagesPath.FullPath},
-                                                                {"NUGET_EXE",  Context.Tools.Resolve("nuget.exe").FullPath }
-                                                          }
-                            })
-                );
-        });
+        context.DownloadPackages(addinDir,
+            addinSpecs
+                .Where(x => !string.IsNullOrEmpty(x.NuGet))
+                .Select(x => x.NuGet)
+                .ToArray());
     });
 
 Task("Build")
