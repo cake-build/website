@@ -1,0 +1,11 @@
+Name: Cake.BitDiffer
+NuGet: Cake.BitDiffer
+Assemblies:
+- "/**/Cake.BitDiffer.dll"
+Repository: https://github.com/WebDucer/Cake.BitDiffer
+Author: WebDucer
+Description: "Cake Addin for using BitDiffer coimmand line tool"
+Prerelease: "true"
+Categories:
+- BitDiffer
+- WebDucer

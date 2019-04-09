@@ -1,0 +1,9 @@
+Name: Cake.ReportPortal
+NuGet: Cake.ReportPortal
+Assemblies:
+- "/**/Cake.ReportPortal.dll"
+Repository: https://www.nuget.org/packages/Cake.ReportPortal/
+Author: Aleh Yanushkevich
+Description: "Alias for merging RP launches"
+Categories:
+

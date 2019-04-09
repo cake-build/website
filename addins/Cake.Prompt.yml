@@ -1,0 +1,9 @@
+Name: Cake.Prompt
+NuGet: Cake.Prompt
+Assemblies:
+- "/**/Cake.Prompt.dll"
+Repository: https://github.com/megakid/Cake.Prompt
+Author: megakid
+Description: "Cake Prompt AddIn"
+Categories:
+
