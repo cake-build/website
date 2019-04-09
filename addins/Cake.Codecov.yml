@@ -6,5 +6,4 @@ Repository: https://github.com/cake-contrib/Cake.Codecov
 Author: Larz White
 Description: "Cake addin that extends Cake with ability to use Codecov."
 Categories:
-- Code Coverage
-- Testing
+- Codecov

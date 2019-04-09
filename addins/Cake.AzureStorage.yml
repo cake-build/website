@@ -3,8 +3,8 @@ NuGet: Cake.AzureStorage
 Assemblies:
 - "/**/Cake.AzureStorage.dll"
 Repository: https://github.com/RadioSystems/Cake.AzureStorage
-Author: Radio Systems Corporation
-Description: "Cake addin for Azure Storage"
+Author: RadioSystems
+Description: "Cake Addin for working with Azure Storage."
 Categories:
 - Azure
-- Deployment
+- Storage

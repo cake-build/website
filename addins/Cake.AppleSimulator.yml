@@ -4,6 +4,11 @@ Assemblies:
 - "/**/Cake.AppleSimulator.dll"
 Repository: https://github.com/cake-contrib/Cake.AppleSimulator
 Author: Geoffrey Huntley
-Description: "Cake Build addin for managing (simctl) Apple iOS/watchOS/TV simulators."
+Description: "Cake Build addin for managing Apple (iOS/TV/Watch) simulators."
 Categories:
-- Mobile
+- Xamarin
+- iOS
+- watchOS
+- tvOS
+- Simulator
+- simctl

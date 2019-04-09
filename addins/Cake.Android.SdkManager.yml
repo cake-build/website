@@ -3,7 +3,7 @@ NuGet: Cake.Android.SdkManager
 Assemblies:
 - "/**/Cake.Android.SdkManager.dll"
 Repository: https://github.com/Redth/Cake.Android.SdkManager
-Author: Jonathan Dick
-Description: "Cake Aliases for Android's sdkmanager command line tool"
+Author: Redth
+Description: "Cake Build addon to provide Aliases for Android's SDK Manager."
 Categories:
-- Android
+
