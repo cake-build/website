@@ -1,0 +1,9 @@
+Name: Cake.Frosting
+NuGet: Cake.Frosting
+Assemblies:
+- "/**/Cake.Frosting.dll"
+Repository: https://www.nuget.org/packages/Cake.Frosting/
+Author: Patrik Svensson, Mattias Karlsson, Gary Ewan Park, Alistair Chapman, Martin Björkström and contributors
+Description: "The .NET Core host for Cake."
+Categories:
+- automation
