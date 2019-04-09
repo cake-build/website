@@ -1,4 +1,4 @@
-#module nuget:?package=Cake.DotNetTool.Module&version=0.1.0
+#module nuget:?package=Cake.DotNetTool.Module&version=0.2.0
 #tool "dotnet:https://api.nuget.org/v3/index.json?package=Wyam.Tool&version=2.2.4"
 #tool "nuget:https://api.nuget.org/v3/index.json?package=KuduSync.NET&version=1.5.2"
 #tool "nuget:https://api.nuget.org/v3/index.json?package=NuGet.CommandLine&version=4.9.4"
