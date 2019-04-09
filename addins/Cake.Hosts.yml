@@ -3,7 +3,9 @@ NuGet: Cake.Hosts
 Assemblies:
 - "/**/Cake.Hosts.dll"
 Repository: https://github.com/AMVSoftware/Cake.Hosts
-Author: Max Vasilyev
-Description: "Cake build aliases for manipulating HOSTS file."
+Author: AMVSoftware
+Description: "Cake Build addon to manipulate Hosts file"
 Categories:
-- Hosts-file
+- hosts
+- build
+- contrib
