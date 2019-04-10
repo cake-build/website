@@ -4,6 +4,6 @@ Assemblies:
 - "/**/Cake.DoInDirectory.dll"
 Repository: https://github.com/pitermarx/Cake.DoInDirectory
 Author: pitermarx
-Description: "Cake Addin to allow the temporary change of the working directory."
+Description: "An extension to Cake Build. Changes the current directory."
 Categories:
-- IO
+
