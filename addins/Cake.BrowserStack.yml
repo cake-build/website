@@ -1,0 +1,9 @@
+Name: Cake.BrowserStack
+NuGet: Cake.BrowserStack
+Assemblies:
+- "/**/Cake.BrowserStack.dll"
+Repository: https://github.com/dlbroadfoot/Cake.BrowserStack
+Author: dlbroadfoot
+Description: "Cake Build addin for BrowserStack API's."
+Categories:
+

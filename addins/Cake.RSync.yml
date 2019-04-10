@@ -1,0 +1,9 @@
+Name: Cake.RSync
+NuGet: Cake.RSync
+Assemblies:
+- "/**/Cake.RSync.dll"
+Repository: https://github.com/csnewman/Cake.RSync
+Author: csnewman
+Description: "RSync support for Cake"
+Categories:
+- RSync

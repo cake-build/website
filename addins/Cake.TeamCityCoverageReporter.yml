@@ -1,0 +1,9 @@
+Name: Cake.TeamCityCoverageReporter
+NuGet: Cake.TeamCityCoverageReporter
+Assemblies:
+- "/**/Cake.TeamCityCoverageReporter.dll"
+Repository: https://github.com/wozzo/Cake.TeamCityCoverageReporter
+Author: wozzo
+Description: "Package Description"
+Categories:
+
