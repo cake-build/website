@@ -1,0 +1,10 @@
+Name: Cake.Vault
+NuGet: Cake.Vault
+Assemblies:
+- "/**/Cake.Vault.dll"
+Repository: https://github.com/jincod/Cake.Vault.git
+Author: jincod
+Description: "Get vault secrets."
+Prerelease: "true"
+Categories:
+- Configs-Generator
