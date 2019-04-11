@@ -1,0 +1,9 @@
+Name: Cake.NScan
+NuGet: Cake.NScan
+Assemblies:
+- "/**/Cake.NScan.dll"
+Repository: https://github.com/grzesiek-galezowski/nscan
+Author: grzesiek-galezowski
+Description: "A utility for enforcing project dependency conventions - cake plugin."
+Categories:
+

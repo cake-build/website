@@ -1,0 +1,9 @@
+Name: Cake.Debootstrap
+NuGet: Cake.Debootstrap
+Assemblies:
+- "/**/Cake.Debootstrap.dll"
+Repository: https://github.com/csnewman/Cake.Debootstrap
+Author: csnewman
+Description: "Debootstrap support for Cake"
+Categories:
+- Debootstrap
