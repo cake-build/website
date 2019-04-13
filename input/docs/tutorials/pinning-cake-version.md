@@ -23,7 +23,7 @@ Further information on this topic can be seen in the following video:
 
 # Pinning addin version
 
-If addins are referenced through the *packages.config* file they can be pinned the same way as the Cake version.
+If addins are referenced through the *packages.config* in the addins folder, file they can be pinned the same way as the Cake version.
 
 If addins are referenced using the `#addin` preprocessor directive they can be pinned like this:
 
@@ -40,3 +40,15 @@ If tools are referenced using the `#tool` preprocessor directive they can be pin
 ```
 #tool nuget:?package=Tool.Foo&version=1.2.3
 ```
+
+# Pinning module version
+
+If modules are referenced through the *packages.config* file in the modules folder, they can be pinned in the same way as the Cake version.
+
+If modules are referenced using the `#module` preprocessor directive they can be pinned like this:
+
+```
+#module nuget:?package=Cake.DotNetTool.Module&version=0.1.0
+```
+
+**NOTE:** Using this technique will require calling Cake once using the `--bootstrap` option, so that the modules are first downloaded before executing Cake.  This is due to the fact that modules assemblies need to exist prior to Cake executing, otherwise, they can't be included in the current execution.
