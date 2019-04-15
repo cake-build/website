@@ -255,7 +255,7 @@ Task("UploadArtifacts")
     .WithCriteria(BuildSystem.IsRunningOnAzurePipelinesHosted)
     .Does(() =>
 {
-    TFBuild.Commands.UploadArtifact("website", zipFileName);
+    TFBuild.Commands.UploadArtifact("website", zipFileName, "website");
 });
 
 //////////////////////////////////////////////////////////////////////
