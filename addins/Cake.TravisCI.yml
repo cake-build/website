@@ -1,0 +1,9 @@
+Name: Cake.TravisCI
+NuGet: Cake.TravisCI
+Assemblies:
+- "/**/Cake.TravisCI.dll"
+Repository: https://github.com/cake-contrib/Cake.TravisCI
+Author: Rodney Littles II
+Description: "Cake addin that extends the DSL with TravisCI aliases."
+Categories:
+- TravisCI
