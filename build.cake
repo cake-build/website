@@ -30,6 +30,8 @@ var accessToken         = EnvironmentVariable("git_access_token");
 var deployRemote        = EnvironmentVariable("git_deploy_remote");
 var currentBranch       = isRunningOnAppVeyor ? BuildSystem.AppVeyor.Environment.Repository.Branch : GitBranchCurrent("./").FriendlyName;
 var deployBranch        = string.Concat("publish/", currentBranch);
+var zipFileName         = "output.zip";
+var deployCakeFileName  = "deploy.cake";
 
 // Define directories.
 var releaseDir          = Directory("./release");
@@ -241,6 +243,23 @@ Task("Deploy")
         GitPush(publishFolder, accessToken, "x-oauth-basic", deployBranch);
     });
 
+Task("ZipArtifacts")
+    .IsDependentOn("Build")
+    .IsDependentOn("Copy-Bootstrapper-Download")
+    .Does(() =>
+{
+    Zip(outputPath, zipFileName);
+});
+
+Task("UploadArtifacts")
+    .IsDependentOn("ZipArtifacts")
+    .WithCriteria(BuildSystem.IsRunningOnAzurePipelinesHosted)
+    .Does(() =>
+{
+    TFBuild.Commands.UploadArtifact("website", zipFileName, "website");
+    TFBuild.Commands.UploadArtifact("website", deployCakeFileName, "website");
+});
+
 //////////////////////////////////////////////////////////////////////
 // TASK TARGETS
 //////////////////////////////////////////////////////////////////////
@@ -255,6 +274,8 @@ Task("GetArtifacts")
 Task("AppVeyor")
     .IsDependentOn(isPullRequest ? "Build" : "Deploy");
 
+Task("AzureDevOps")
+    .IsDependentOn("UploadArtifacts");
 
 //////////////////////////////////////////////////////////////////////
 // EXECUTION

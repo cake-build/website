@@ -3,13 +3,13 @@ Title: Frequently Asked Questions
 ---
 
 [//]: # (TOC Begin)
+
 * [How do you pin the version of Cake being used?](#how-do-you-pin-the-version-of-cake-being-used)
 * [How do you pin the version of an Addin being used?](#how-do-you-pin-the-version-of-an-addin-being-used)
 * [How do you pin the version of a Tool being used?](#how-do-you-pin-the-version-of-a-tool-being-used)
 * [How do you pin the version of a Module being used?](#how-do-you-pin-the-version-of-a-module-being-used)
 
 [//]: # (TOC End)
-
 
 ### How do you pin the version of Cake being used?
 
@@ -25,7 +25,7 @@ This can either be done through the packages.config file in the root of the Tool
 
 ### How do you pin the version of a Module being used?
 
-This can be done through the packages.config file in the root of the Modules folder.  See this [tutorial](https://cakebuild.net/docs/tutorials/pinning-cake-version) for more information.
+This can be done through the packages.config file in the root of the Modules folder, or via the module pre-processor directive in your Cake script.  See this [tutorial](https://cakebuild.net/docs/tutorials/pinning-cake-version) for more information.
 
 ### How do you enable a different verbosity for logging within Cake?
 
