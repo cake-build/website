@@ -31,6 +31,7 @@ var deployRemote        = EnvironmentVariable("git_deploy_remote");
 var currentBranch       = isRunningOnAppVeyor ? BuildSystem.AppVeyor.Environment.Repository.Branch : GitBranchCurrent("./").FriendlyName;
 var deployBranch        = string.Concat("publish/", currentBranch);
 var zipFileName         = "output.zip";
+var deployCakeFileName  = "deploy.cake";
 
 // Define directories.
 var releaseDir          = Directory("./release");
@@ -256,6 +257,7 @@ Task("UploadArtifacts")
     .Does(() =>
 {
     TFBuild.Commands.UploadArtifact("website", zipFileName, "website");
+    TFBuild.Commands.UploadArtifact("website", deployCakeFileName, "website");
 });
 
 //////////////////////////////////////////////////////////////////////
