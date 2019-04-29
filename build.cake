@@ -1,9 +1,5 @@
 #module nuget:?package=Cake.DotNetTool.Module&version=0.2.0
 #tool "dotnet:https://api.nuget.org/v3/index.json?package=Wyam.Tool&version=2.2.4"
-#tool "nuget:https://api.nuget.org/v3/index.json?package=KuduSync.NET&version=1.5.2"
-#tool "nuget:https://api.nuget.org/v3/index.json?package=NuGet.CommandLine&version=4.9.4"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Git&version=0.19.0"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Kudu&version=0.8.0"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Wyam&version=2.2.4"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Yaml&version=3.0.0"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=YamlDotNet&version=5.2.1"
@@ -28,8 +24,6 @@ var isRunningOnAppVeyor = AppVeyor.IsRunningOnAppVeyor;
 var isPullRequest       = AppVeyor.Environment.PullRequest.IsPullRequest;
 var accessToken         = EnvironmentVariable("git_access_token");
 var deployRemote        = EnvironmentVariable("git_deploy_remote");
-var currentBranch       = isRunningOnAppVeyor ? BuildSystem.AppVeyor.Environment.Repository.Branch : GitBranchCurrent("./").FriendlyName;
-var deployBranch        = string.Concat("publish/", currentBranch);
 var zipFileName         = "output.zip";
 var deployCakeFileName  = "deploy.cake";
 
@@ -56,16 +50,14 @@ class AddinSpec
 // Variables
 List<AddinSpec> addinSpecs = new List<AddinSpec>();
 
-
 //////////////////////////////////////////////////////////////////////
 // SETUP
 //////////////////////////////////////////////////////////////////////
 
-
 Setup(ctx =>
 {
     // Executed BEFORE the first task.
-    Information("Building branch {0} ({1})...", currentBranch, deployBranch);
+    Information("Building site...");
 });
 
 
@@ -84,6 +76,7 @@ Task("CleanSource")
             Force = true
         });
     }
+
     foreach(var cakeDir in GetDirectories(releaseDir.Path.FullPath + "/cake*"))
     {
         DeleteDirectory(cakeDir, new DeleteDirectorySettings {
@@ -98,10 +91,12 @@ Task("GetSource")
     .Does(() =>
     {
         GitHubClient github = new GitHubClient(new ProductHeaderValue("CakeDocs"));
+
         if (!string.IsNullOrEmpty(accessToken))
         {
             github.Credentials = new Credentials(accessToken);
         }
+        
         // The GitHub releases API returns Not Found if all are pre-release, so need workaround below
         //Release release = github.Repository.Release.GetLatest("cake-build", "cake").Result;
         Release release = github.Repository.Release.GetAll("cake-build", "cake").Result.First( r =>r.PublishedAt.HasValue);
@@ -207,42 +202,6 @@ Task("Copy-Bootstrapper-Download")
         CopyDirectory("./download/bootstrapper", outputPath.Combine("bootstrapper"));
     });
 
-Task("Deploy")
-    .WithCriteria(isRunningOnAppVeyor)
-    .WithCriteria(!isPullRequest)
-    .WithCriteria(!string.IsNullOrEmpty(accessToken))
-    .WithCriteria(!string.IsNullOrEmpty(deployRemote))
-    .WithCriteria(!string.IsNullOrEmpty(deployBranch))
-    .IsDependentOn("Build")
-    .IsDependentOn("Copy-Bootstrapper-Download")
-    .Does(() =>
-    {
-        EnsureDirectoryExists(rootPublishFolder);
-        var sourceCommit = GitLogTip("./");
-        var publishFolder = rootPublishFolder.Combine(DateTime.Now.ToString("yyyyMMdd_HHmmss"));
-        Information("Getting publish branch {0}...", deployBranch);
-        GitClone(deployRemote, publishFolder, new GitCloneSettings{ BranchName = deployBranch });
-
-        Information("Sync output files...");
-        Kudu.Sync(outputPath, publishFolder, new KuduSyncSettings {
-            PathsToIgnore = new []{ ".git", "appveyor.yml" }
-        });
-
-        Information("Stage all changes...");
-        GitAddAll(publishFolder);
-
-        Information("Commit all changes...");
-        GitCommit(
-            publishFolder,
-            sourceCommit.Committer.Name,
-            sourceCommit.Committer.Email,
-            string.Format("AppVeyor Publish: {0}\r\n{1}", sourceCommit.Sha, sourceCommit.Message)
-            );
-
-        Information("Pushing all changes...");
-        GitPush(publishFolder, accessToken, "x-oauth-basic", deployBranch);
-    });
-
 Task("ZipArtifacts")
     .IsDependentOn("Build")
     .IsDependentOn("Copy-Bootstrapper-Download")
@@ -272,7 +231,7 @@ Task("GetArtifacts")
     .IsDependentOn("GetAddinPackages");
 
 Task("AppVeyor")
-    .IsDependentOn(isPullRequest ? "Build" : "Deploy");
+    .IsDependentOn("Build");
 
 Task("AzureDevOps")
     .IsDependentOn("UploadArtifacts");
