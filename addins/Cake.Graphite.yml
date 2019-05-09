@@ -1,0 +1,9 @@
+Name: Cake.Graphite
+NuGet: Cake.Graphite
+Assemblies:
+- "/**/Cake.Graphite.dll"
+Repository: https://github.com/cake-contrib/Cake.Graphite
+Author: Nicolai Brogaard
+Description: "A set of aliases for Cake to help with sending metrics to Graphite."
+Categories:
+- Metrics
