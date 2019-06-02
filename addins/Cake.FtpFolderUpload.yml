@@ -1,0 +1,9 @@
+Name: Cake.FtpFolderUpload
+NuGet: Cake.FtpFolderUpload
+Assemblies:
+- "/**/Cake.FtpFolderUpload.dll"
+Repository: https://www.nuget.org/packages/Cake.FtpFolderUpload/
+Author: jeppevammenkristensen
+Description: "This a cake add in for publishing a folder and it's content to a ftp server"
+Categories:
+

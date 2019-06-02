@@ -1,0 +1,9 @@
+Name: Cake.NUnit
+NuGet: Cake.NUnit
+Assemblies:
+- "/**/Cake.NUnit.dll"
+Repository: https://www.nuget.org/packages/Cake.NUnit/
+Author: 
+Description: "Alias for running NUnit3 without failing Cake task"
+Categories:
+- NUnit3
