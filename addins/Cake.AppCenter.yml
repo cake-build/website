@@ -3,9 +3,10 @@ NuGet: Cake.AppCenter
 Assemblies:
 - "/**/Cake.AppCenter.dll"
 Repository: https://github.com/cake-contrib/Cake.AppCenter
-Author: Miha Markic
-Description: "A Cake AddIn that extends Cake with AppCenter command tools."
+Author: Miha Markic, Cake Contributors
+Description: "AppCenter Addin for Cake Build, Test and Deployment Automation System."
 Categories:
-- Deployment
 - Test
-- Build
+- Deploy
+- AppCenter
+- Deployment

@@ -3,8 +3,9 @@ NuGet: Cake.Handlebars
 Assemblies:
 - "/**/Cake.Handlebars.dll"
 Repository: https://github.com/agc93/Cake.Handlebars
-Author: Alistair Chapman
-Description: "A simple Cake addin for rendering and compiling Handlebars templates."
+Author: agc93
+Description: "A simple Cake addin powered by Handlebars.Net for rendering and compiling Handlebars templates"
+Prerelease: "true"
 Categories:
-- Code Generation
-- Documentation
+- handlebars
+- templates

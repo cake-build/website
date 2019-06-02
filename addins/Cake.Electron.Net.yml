@@ -3,7 +3,10 @@ NuGet: Cake.Electron.Net
 Assemblies:
 - "/**/Cake.Electron.Net.dll"
 Repository: https://github.com/Blind-Striker/Cake.Electron.Net
-Author: Deniz İrgin
-Description: "A Cake AddIn that extends Cake with Electron.NET command tools."
+Author: Blind-Striker
+Description: "Cake AddIn that extends Cake with Electron.NET"
 Categories:
-- Electron.NET
+- build
+- contrib
+- electron
+- electron-net

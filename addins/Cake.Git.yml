@@ -4,6 +4,6 @@ Assemblies:
 - "/**/Cake.Git.dll"
 Repository: https://github.com/cake-contrib/Cake_Git
 Author: WCOM AB
-Description: "Cake AddIn that extends Cake with Git aliases using LibGit2 and LibGit2Sharp."
+Description: "Cake Git AddIn"
 Categories:
 - Git

@@ -3,8 +3,7 @@ NuGet: Cake.Gem
 Assemblies:
 - "/**/Cake.Gem.dll"
 Repository: https://github.com/cake-contrib/Cake.Gem
-Author: Gary Ewan Park
-Description: "Cake Build addin for using gem cli."
+Author: gep13
+Description: "Cake Gem AddIn."
 Categories:
-- RubyGems
-- Deployment
+- Gem

@@ -4,7 +4,8 @@ Assemblies:
 - "/**/Cake.AppPackager.dll"
 Repository: https://github.com/cake-contrib/Cake.AppPackager
 Author: Jamie Phillips
-Description: "Cake AddIn for creating Windows packages."
+Description: "Cake Addin for creating UWP packages."
 Categories:
-- Windows
-- Deployment
+- AppPackager
+- MakeAppX
+- UWP

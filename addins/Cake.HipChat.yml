@@ -3,7 +3,7 @@ NuGet: Cake.HipChat
 Assemblies:
 - "/**/Cake.HipChat.dll"
 Repository: https://github.com/cake-contrib/Cake.HipChat
-Author: Alan Low
-Description: "Cake Addin to allow message posting to HipChat."
+Author: scene316
+Description: "Cake HipChat AddIn"
 Categories:
-- Communication
+- HipChat
