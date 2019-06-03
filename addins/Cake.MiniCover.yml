@@ -1,4 +1,3 @@
-
 Name: Cake.MiniCover
 NuGet: Cake.MiniCover
 Assemblies:
@@ -6,6 +5,7 @@ Assemblies:
 Repository: https://github.com/nlowe/Cake.MiniCover
 Author: Nathan Lowe
 Description: "Cake addin for MiniCover"
+Prerelease: "true"
 Categories:
 - Code Coverage
 - Testing
