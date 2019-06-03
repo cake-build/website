@@ -1,6 +1,5 @@
 Name: Cake.Incubator
 NuGet: Cake.Incubator
-Prerelease: false
 Assemblies:
 - "/**/Cake.Incubator.dll"
 Repository: https://github.com/cake-contrib/Cake.Incubator

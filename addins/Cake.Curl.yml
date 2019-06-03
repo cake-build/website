@@ -1,6 +1,5 @@
 Name: Cake.Curl
 NuGet: Cake.Curl
-Prerelease: true
 Assemblies:
 - "/**/Cake.Curl.dll"
 Repository: https://github.com/cake-contrib/Cake.Curl
