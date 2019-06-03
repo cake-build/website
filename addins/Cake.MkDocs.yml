@@ -2,8 +2,7 @@ Name: Cake.MkDocs
 NuGet: Cake.MkDocs
 Assemblies:
 - "/**/Cake.MkDocs.dll"
-- "/**/Semver.dll"
-Repository: https://github.com/michalkowal/Cake.MkDocs/
+Repository: https://github.com/michalkowal/Cake.MkDocs
 Author: Michał Kowal
 Description: "Cake Addin that extends Cake with ability to run the MkDocs."
 Categories:
