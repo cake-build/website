@@ -5,6 +5,7 @@ Assemblies:
 Repository: https://github.com/agc93/Cake.Handlebars
 Author: Alistair Chapman
 Description: "A simple Cake addin for rendering and compiling Handlebars templates."
+Prerelease: "true"
 Categories:
 - Code Generation
 - Documentation
