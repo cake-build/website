@@ -2,7 +2,7 @@ Name: Cake.Watch
 NuGet: Cake.Watch
 Assemblies:
 - "/**/Cake.Watch.dll"
-Repository: https://github.com/cake-addin/cake-watch
+Repository: https://www.nuget.org/packages/Cake.Watch/
 Author: Somnuk Wongkhan
 Description: "Cake addin to watch files change."
 Categories:
