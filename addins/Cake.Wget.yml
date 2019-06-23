@@ -1,0 +1,9 @@
+Name: Cake.Wget
+NuGet: Cake.Wget
+Assemblies:
+- "/**/Cake.Wget.dll"
+Repository: https://github.com/deqenq/Cake.Wget
+Author: deqenq
+Description: "Cake.Wget is a cross-platform add-in for Cake build automation system which encapsulates Wget tool."
+Categories:
+- Wget
