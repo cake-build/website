@@ -1,6 +1,6 @@
 #module nuget:?package=Cake.DotNetTool.Module&version=0.2.0
-#tool "dotnet:https://api.nuget.org/v3/index.json?package=Wyam.Tool&version=2.2.4"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Wyam&version=2.2.4"
+#tool "dotnet:https://api.nuget.org/v3/index.json?package=Wyam.Tool&version=2.2.5"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Wyam&version=2.2.5"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Yaml&version=3.0.0"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=YamlDotNet&version=5.2.1"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=Octokit&version=0.32.0"
@@ -96,7 +96,7 @@ Task("GetSource")
         {
             github.Credentials = new Credentials(accessToken);
         }
-        
+
         // The GitHub releases API returns Not Found if all are pre-release, so need workaround below
         //Release release = github.Repository.Release.GetLatest("cake-build", "cake").Result;
         Release release = github.Repository.Release.GetAll("cake-build", "cake").Result.First( r =>r.PublishedAt.HasValue);
