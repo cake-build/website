@@ -1,8 +1,6 @@
 Name: Cake.ResxConverter
 NuGet: Cake.ResxConverter
 Assemblies:
-- "/**/ResxConverter.Core.dll"
-- "/**/ResxConverter.Mobile.dll"
 - "/**/Cake.ResxConverter.dll"
 Repository: https://github.com/cake-contrib/Cake.ResxConverter
 Author: jzeferino, Luís Gonçalves

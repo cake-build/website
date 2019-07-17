@@ -5,6 +5,7 @@ Assemblies:
 Repository: https://github.com/graph-uk/Cake.XmlConfigStructureBuilder
 Author: BggClr
 Description: "The project compiles multiple xml configs to single one using the CTT."
+Prerelease: "true"
 Categories:
 - Configs-Generator
 - Deployment
