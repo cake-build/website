@@ -4,9 +4,8 @@ Assemblies:
 - "/**/Cake.Tfs.dll"
 Repository: https://github.com/cake-contrib/Cake.Tfs
 Author: Pascal Berger
-Description: "The TFS Addin for Cake allows you to access Team Foundation Server or Visual Studio Team Services from Cake build scripts."
+Description: "The Azure DevOps Addin for Cake allows you to access Azure DevOps from Cake build scripts."
 Categories:
-- TFS
-- VSTS
+- Azure DevOps
 - Pull Requests
 - Git
