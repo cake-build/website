@@ -1,0 +1,12 @@
+Name: Cake.RepoVersion
+NuGet: Cake.RepoVersion
+Assemblies:
+- "/**/Cake.RepoVersion.dll"
+Repository: https://github.com/kjjuno/repo-version
+Author: Kevin Johnson
+Description: "Cake AddIn that provides automatic versioning using the repo-version tool."
+Categories:
+- Git
+- Versioning
+- version
+- Version
