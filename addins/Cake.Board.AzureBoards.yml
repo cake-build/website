@@ -10,7 +10,7 @@ Description: "This add-in allows you to interact directly with the work items of
 Prerelease: "true"
 Categories:
 - azure
-- azure-boards
-- work-item
+- azure boards
+- work item
 - wit
 - board

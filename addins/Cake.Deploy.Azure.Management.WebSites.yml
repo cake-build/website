@@ -6,8 +6,8 @@ Repository: https://github.com/ObjectivityLtd/Cake.Deploy.Azure.Management.WebSi
 Author: ObjectivityLtd
 Description: "Cake addin to get Azure WebApp Publishing Credentials."
 Categories:
-- Deploy
-- Azure
-- Management
-- WebSites
-- Deployment
+- deploy
+- azure
+- management
+- webSites
+- deployment

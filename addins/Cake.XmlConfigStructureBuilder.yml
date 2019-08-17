@@ -6,6 +6,6 @@ Repository: https://github.com/graph-uk/Cake.XmlConfigStructureBuilder
 Author: BggClr
 Description: "The project compiles multiple xml configs to single one using the CTT."
 Categories:
-- Configs-Generator
-- Deployment
-- Environment
+- configs generator
+- deployment
+- environment

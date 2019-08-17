@@ -6,4 +6,4 @@ Repository: https://github.com/dotnetaddicted/cake-apireference-uploader
 Author: dotnetaddicted
 Description: "CakeBuild extension for uploading Api references to specified URL."
 Categories:
-- CakeBuild
+- api reference

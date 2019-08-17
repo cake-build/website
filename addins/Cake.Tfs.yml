@@ -6,6 +6,6 @@ Repository: https://github.com/cake-contrib/Cake.Tfs
 Author: Pascal Berger
 Description: "The Azure DevOps Addin for Cake allows you to access Azure DevOps from Cake build scripts."
 Categories:
-- Azure DevOps
-- Pull Requests
-- Git
+- azure devops
+- pull requests
+- git

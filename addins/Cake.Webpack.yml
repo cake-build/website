@@ -6,4 +6,4 @@ Repository: https://github.com/cake-contrib/Cake.Webpack
 Author: Phil Oyston
 Description: "Aliases to assist with running Webpack from Cake build scripts."
 Categories:
-- Node
+- webpack

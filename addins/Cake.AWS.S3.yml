@@ -6,6 +6,7 @@ Repository: https://github.com/SharpeRAD/Cake.AWS.S3
 Author: SharpeRAD
 Description: "AWS S3 addin for Cake."
 Categories:
-- AWS
-- Deployment
-- CDN
+- amazon
+- aws
+- deployment
+- cdn

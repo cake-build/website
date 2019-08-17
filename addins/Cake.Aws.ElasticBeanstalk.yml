@@ -6,4 +6,5 @@ Repository: https://github.com/mathieukempe/Cake.AWS.ElasticBeanstalk
 Author: mathieukempe
 Description: "Cake-Build addin that extends Cake with AWS Elasticbeanstalk extensions."
 Categories:
-- AWS
+- amazon
+- aws

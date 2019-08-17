@@ -6,6 +6,6 @@ Repository: https://github.com/cake-contrib/Cake.Tfx
 Author: Gary Ewan Park
 Description: "Cake Build addin for using tfx cli."
 Categories:
-- VSTS
-- TFS
-- Deployment
+- vsts
+- tfs
+- deployment

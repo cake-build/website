@@ -6,6 +6,6 @@ Repository: https://github.com/lukoerfer/cake-codegen-nswag
 Author: lukoerfer
 Description: "Cake Addin for code generation from OpenAPI specifications via NSwag"
 Categories:
-- code-generation
+- code generation
 - openapi
 - nswag

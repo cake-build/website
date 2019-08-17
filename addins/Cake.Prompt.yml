@@ -6,4 +6,4 @@ Repository: https://github.com/cake-contrib/Cake.Prompt
 Author: James Connor, Yves Schmid
 Description: "Cake AddIn that provides ability to collect user input during build."
 Categories:
-- Prompt
+- prompt

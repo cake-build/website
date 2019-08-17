@@ -6,4 +6,5 @@ Repository: https://github.com/SharpeRAD/Cake.AWS.EC2
 Author: SharpeRAD
 Description: "Amazon EC2 addon for Cake."
 Categories:
-- AWS
+- amazon
+- aws

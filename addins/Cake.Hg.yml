@@ -6,5 +6,5 @@ Repository: https://github.com/cake-contrib/Cake.Hg
 Author: vCipher
 Description: "Cake AddIn that extends Cake with Mercurial features using Mercurial.Net"
 Categories:
-- Hg
-- Mercurial
+- hg
+- mercurial

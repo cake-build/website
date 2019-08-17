@@ -6,4 +6,5 @@ Repository: https://github.com/cake-contrib/Cake.Eazfuscator.Net
 Author: gep13
 Description: "Cake addin that extends Cake with ability to use Eazfuscator.Net."
 Categories:
-- Eazfuscator.Net
+- eazfuscator.net
+- obfuscator

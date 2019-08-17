@@ -6,4 +6,4 @@ Repository: https://github.com/pitermarx/Cake.SonarScanner
 Author: pitermarx
 Description: "Cake Addin to run the sonnar-scanner tool."
 Categories:
-- Code Quality
+- code quality

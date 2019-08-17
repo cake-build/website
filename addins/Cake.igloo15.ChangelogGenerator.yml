@@ -6,6 +6,4 @@ Repository: https://github.com/igloo15/Cake.igloo15
 Author: igloo15
 Description: "A Cake addin used to call the changelog commands to generate a config or create a changelog file"
 Categories:
-- Addins
-- Changelog
-- Extensions
+- changelog

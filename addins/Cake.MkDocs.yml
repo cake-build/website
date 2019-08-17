@@ -6,6 +6,6 @@ Repository: https://github.com/michalkowal/Cake.MkDocs
 Author: Michał Kowal
 Description: "Cake Addin that extends Cake with ability to run the MkDocs."
 Categories:
-- MkDocs
-- Documentation
-- Static Site Generation
+- mkdocs
+- documentation
+- static site generation

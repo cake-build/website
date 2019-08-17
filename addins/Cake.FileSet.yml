@@ -6,4 +6,4 @@ Repository: https://github.com/CleanKludge/Cake.FileSet
 Author: Steve Phillips
 Description: "FileSet alias which uses Microsoft.Extensions.FileSystemGlobbing to find files based on include and exclude patterns."
 Categories:
-- IO
+- io

@@ -7,4 +7,4 @@ Author: Alistair Chapman
 Description: "Cake addin for creating and managing Vagrant virtual machines"
 Prerelease: "true"
 Categories:
-- Vagrant
+- vagrant

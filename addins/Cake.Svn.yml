@@ -6,4 +6,5 @@ Repository: https://github.com/cake-contrib/Cake.Svn
 Author: Martin Björkström, Pascal Berger and contributors
 Description: "Addin that extends the Cake build automation system with Subversion features using SharpSvn."
 Categories:
-- Subversion
+- subversion
+- svn

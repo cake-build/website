@@ -7,5 +7,5 @@ Repository: https://github.com/daveaglick/Scripty
 Author: Dave Glick
 Description: "Tools to let you use Roslyn-powered C# scripts for code generation."
 Categories:
-- Build
-- Code Generation
+- build
+- code generation

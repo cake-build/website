@@ -6,5 +6,5 @@ Repository: https://github.com/cake-contrib/Cake.DotNetCoreEf
 Author: mvput
 Description: "Cake Build addin for using the .NET Core EntityFrameworkCore command line interface (CLI)"
 Categories:
-- Entity Framework
-- Dot Net Core
+- entity framework
+- dot net core

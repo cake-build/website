@@ -6,6 +6,6 @@ Repository: https://github.com/SharpeRAD/Cake.ImageOptimizer
 Author: SharpeRAD
 Description: "Cake addin for bulk optimizing images"
 Categories:
-- Images
-- Deployment
-- CDN
+- images
+- deployment
+- cdn

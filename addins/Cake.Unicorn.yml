@@ -7,4 +7,4 @@ Repository: https://github.com/georgechang/Cake.Unicorn
 Author: George Chang
 Description: "An add-in for the Cake Build system to execute an Unicorn sync for Sitecore."
 Categories:
-- Sitecore
+- sitecore

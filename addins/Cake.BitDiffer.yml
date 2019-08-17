@@ -6,7 +6,7 @@ Repository: https://github.com/cake-contrib/Cake.BitDiffer
 Author: Eugen [WebDucer] Richter
 Description: "Cake Addin for BitDiffer command line"
 Categories:
-- BitDiffer
-- Deployment
-- Test
-- Testing
+- bitdiffer
+- deployment
+- test
+- testing

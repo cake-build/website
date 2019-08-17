@@ -7,4 +7,4 @@ Author: Philipp Grathwohl
 Description: "Addin for running liquibase database migrations with the Cake build system."
 Prerelease: "true"
 Categories:
-- Database
+- database

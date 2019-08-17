@@ -6,5 +6,5 @@ Repository: https://github.com/cake-contrib/Cake.ProGet
 Author: Apprenda
 Description: "Cake addin that extends Cake with Inedo ProGet support."
 Categories:
-- Deployment
-- UPack
+- deployment
+- upack

@@ -7,5 +7,5 @@ Repository: https://github.com/Wyamio/Wyam
 Author: Dave Glick, Gary Ewan Park
 Description: "An alias that generates static sites and other content using Wyam."
 Categories:
-- Documentation
-- Static Site Generation
+- documentation
+- static site generation

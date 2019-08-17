@@ -6,6 +6,6 @@ Repository: https://github.com/nils-a/cake.asciidoctorj
 Author: Nils Andresen
 Description: "An alias for Cake to help with running AsciiDoctorJ."
 Categories:
-- AsciiDoc
+- asciidoc
 - adoc
-- Documentation
+- documentation

@@ -6,4 +6,5 @@ Repository: https://github.com/cake-contrib/Cake.Grunt
 Author: Ken Lea
 Description: "A set of aliases for Cake to help with running Grunt scripts as part of a build. (Copied from https://github.com/cake-contrib/cake-gulp by Phil Oyston)"
 Categories:
-- Node
+- grunt
+- javascript

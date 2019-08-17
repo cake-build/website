@@ -6,4 +6,4 @@ Repository: https://github.com/cake-contrib/Cake.CakeMail
 Author: jericho
 Description: "Cake Addin that exends Cake with ability to utilize CakeMail."
 Categories:
-- Email
+- email
