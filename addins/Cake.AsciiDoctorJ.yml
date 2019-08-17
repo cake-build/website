@@ -1,0 +1,11 @@
+Name: Cake.AsciiDoctorJ
+NuGet: Cake.AsciiDoctorJ
+Assemblies:
+- "/**/Cake.AsciiDoctorJ.dll"
+Repository: https://github.com/nils-a/cake.asciidoctorj
+Author: Nils Andresen
+Description: "An alias for Cake to help with running AsciiDoctorJ."
+Categories:
+- AsciiDoc
+- adoc
+- Documentation
