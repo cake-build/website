@@ -1,5 +1,5 @@
 # Build Init
-image: Previous Visual Studio 2017
+image: Visual Studio 2019 Preview
 init:
   - git config --global core.autocrlf true
 
@@ -19,5 +19,4 @@ artifacts:
 branches:
   # Whitelist
   only:
-    - develop
     - master
