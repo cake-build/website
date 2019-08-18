@@ -1,0 +1,11 @@
+Name: Cake.AzureDevOps
+NuGet: Cake.AzureDevOps
+Assemblies:
+- "/**/Cake.AzureDevOps.dll"
+Repository: https://github.com/cake-contrib/Cake.AzureDevOps
+Author: Pascal Berger
+Description: "Addin for the Cake build automation system for working with Azure DevOps or Azure DevOps Server."
+Prerelease: "true"
+Categories:
+- Azure-DevOps
+- Azure-DevOps-Server

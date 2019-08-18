@@ -1,0 +1,10 @@
+Name: Cake.SoftNUnit3
+NuGet: Cake.SoftNUnit3
+Assemblies:
+- "/**/Cake.SoftNUnit3.dll"
+Repository: https://github.com/OlegYanushkevich/Cake.SoftNUnit3
+Author: OlegYanushkevich
+Description: "Package for running nunit 3 tests without failing cake task if any test was failed."
+Categories:
+- NUnit3
+- SoftRunner

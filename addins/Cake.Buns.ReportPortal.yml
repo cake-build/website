@@ -1,0 +1,11 @@
+Name: Cake.Buns.ReportPortal
+NuGet: Cake.Buns.ReportPortal
+Assemblies:
+- "/**/Cake.Buns.ReportPortal.dll"
+Repository: https://github.com/OlegYanushkevich/Cake.Buns.ReportPortal
+Author: OlegYanushkevich
+Description: "Cake extension for cleaning and merging ReportPortal launches."
+Categories:
+- ReportPortal
+- Merging
+- Cleaning
