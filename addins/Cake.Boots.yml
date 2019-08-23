@@ -1,0 +1,13 @@
+Name: Cake.Boots
+NuGet: Cake.Boots
+Assemblies:
+- "/**/Cake.Boots.dll"
+Repository: https://github.com/jonathanpeppers/boots/
+Author: jonathanpeppers
+Description: boots is a dotnet global tool for "bootstrapping" vsix & pkg files.
+Categories:
+- bootstrap
+- ci
+- xamarin
+- azure
+- devops
