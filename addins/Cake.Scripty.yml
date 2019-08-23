@@ -1,6 +1,5 @@
 Name: Cake.Scripty
 NuGet: Cake.Scripty
-Prerelease: true
 Assemblies:
 - "/**/Cake.Scripty.dll"
 Repository: https://github.com/daveaglick/Scripty

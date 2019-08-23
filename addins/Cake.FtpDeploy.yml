@@ -2,7 +2,7 @@ Name: Cake.FtpDeploy
 NuGet: Cake.FtpDeploy
 Assemblies:
 - "/**/Cake.FtpDeploy.dll"
-Repository: https://github.com/Supermortal/Cake.FtpDeploy
+Repository: https://www.nuget.org/packages/Cake.FtpDeploy/
 Author: Christopher Pink
 Description: "Cake Addin to facilitate deployment with FTP."
 Categories:
