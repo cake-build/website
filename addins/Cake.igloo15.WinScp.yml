@@ -1,0 +1,11 @@
+Name: Cake.igloo15.WinScp
+NuGet: Cake.igloo15.WinScp
+Assemblies:
+- "/**/Cake.igloo15.WinScp.dll"
+Repository: https://github.com/igloo15/Cake.igloo15/
+Author: igloo15
+Description: A Cake addin used to call winscp commands
+Categories:
+- addins
+- winscp
+- extensions
