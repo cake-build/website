@@ -2,8 +2,8 @@ Name: Cake.Dialog
 NuGet: Cake.Dialog
 Assemblies:
 - "/**/CakeDialog.dll"
-Repository: https://github.com/wk-j/cake-dialog
+Repository: https://github.com/wk-j/cake-dialog/
 Author: wk-j
-Description: "Cake AddIn that provides ability to collect user input during build."
+Description: Cake AddIn that provides ability to collect user input during build.
 Categories:
 - dialog

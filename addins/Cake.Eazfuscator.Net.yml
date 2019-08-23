@@ -2,9 +2,9 @@ Name: Cake.Eazfuscator.Net
 NuGet: Cake.Eazfuscator.Net
 Assemblies:
 - "/**/Cake.Eazfuscator.Net.dll"
-Repository: https://github.com/cake-contrib/Cake.Eazfuscator.Net
+Repository: https://github.com/cake-contrib/Cake.Eazfuscator.Net/
 Author: gep13
-Description: "Cake addin that extends Cake with ability to use Eazfuscator.Net."
+Description: Cake addin that extends Cake with ability to use Eazfuscator.Net.
 Categories:
 - eazfuscator.net
 - obfuscator

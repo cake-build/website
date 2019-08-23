@@ -7,5 +7,5 @@ Author: Pascal Berger
 Description: Addin for the Cake build automation system for working with Azure DevOps or Azure DevOps Server.
 Prerelease: "true"
 Categories:
-- azure-devops
-- azure-devops-server
+- azure devops
+- azure devops server
