@@ -6,4 +6,5 @@ Repository: https://github.com/cake-contrib/Cake.Paket
 Author: Larz White
 Description: "Adds paket support to cake."
 Categories:
-- NuGet
+- nuget
+- paket

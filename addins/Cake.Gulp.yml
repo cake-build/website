@@ -6,4 +6,5 @@ Repository: https://github.com/cake-contrib/Cake.Gulp
 Author: Phil Oyston
 Description: "A set of aliases for Cake to help with running Gulp scripts as part of a build."
 Categories:
-- Node
+- gulp
+- javascript

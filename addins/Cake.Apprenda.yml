@@ -6,5 +6,6 @@ Repository: https://github.com/apprenda/Cake.Apprenda/
 Author: Apprenda
 Description: "Extends Cake to interact with the Apprenda Cloud Platform"
 Categories:
-- Deployment
-- Apprenda
+- build
+- deployment
+- apprenda

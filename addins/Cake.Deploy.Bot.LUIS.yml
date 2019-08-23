@@ -6,4 +6,4 @@ Repository: https://github.com/ObjectivityLtd/Cake.Deploy.Bot.LUIS
 Author: ObjectivityLtd
 Description: "Cake addin for deploying LUIS app"
 Categories:
-- LUIS
+- luis

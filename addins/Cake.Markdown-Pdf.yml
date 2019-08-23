@@ -6,6 +6,5 @@ Repository: https://github.com/cake-contrib/Cake.Markdown-Pdf
 Author: Warren Bates
 Description: "An alias for Cake to help with running Markdown-Pdf commands as part of a build"
 Categories:
-- Markdown
-- Pdf
-- Markdown-Pdf
+- markdown
+- pdf

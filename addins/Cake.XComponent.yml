@@ -6,7 +6,7 @@ Repository: https://github.com/xcomponent/Cake.XComponent
 Author: XComponent Team
 Description: "Cake build aliases for manipulating XComponent Tools."
 Categories:
-- XComponent
-- XCTools
-- XCStudio
-- MicroServices
+- xcomponent
+- xctools
+- xcstudio
+- micro services

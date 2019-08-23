@@ -7,4 +7,5 @@ Author: jincod
 Description: "Get vault secrets."
 Prerelease: "true"
 Categories:
-- Configs-Generator
+- configs generator
+- vault

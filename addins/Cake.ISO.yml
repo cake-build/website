@@ -7,4 +7,4 @@ Author: Austin Parker @austinlparker
 Description: "Create an ISO as part of a Cake build."
 Prerelease: "true"
 Categories:
-- Misc
+- misc

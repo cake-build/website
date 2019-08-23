@@ -7,5 +7,5 @@ Author: Nathan Lowe
 Description: "Cake addin for MiniCover"
 Prerelease: "true"
 Categories:
-- Code Coverage
-- Testing
+- code coverage
+- testing

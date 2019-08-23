@@ -7,7 +7,7 @@ Author: wozzo
 Description: "An alias for Cake to help with displaying Task dependencies"
 Prerelease: "true"
 Categories:
-- Graph
-- Nodes
-- Dependencies
-- Tasks
+- graph
+- nodes
+- dependencies
+- tasks

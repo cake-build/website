@@ -1,10 +1,10 @@
 Name: Cake.Unity3D
-NuGet: 
+NuGet:
 Assemblies:
 - "/**/Cake.Unity3D.dll"
 Repository: https://github.com/samoatesgames/Cake.Unity3D
 Author: Sam Oates
 Description: "Unity build support for Cake."
 Categories:
-- Unity
-- Gaming
+- unity
+- gaming

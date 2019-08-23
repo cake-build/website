@@ -6,4 +6,5 @@ Repository: https://github.com/cake-contrib/Cake.DotNetVersionDetector
 Author: gep13
 Description: "Cake addin providing support for the .Net Version Detector application"
 Categories:
-- DotNetVersionDetector
+- version
+- detector

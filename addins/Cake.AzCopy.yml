@@ -7,5 +7,5 @@ Author: Alistair Chapman
 Description: "A simple Cake addin powered by the AzCopy utility for uploading and downloading files to and from Azure Storage (including Blob, Table and Files)."
 Prerelease: "true"
 Categories:
-- Azure
-- IO
+- azure
+- io

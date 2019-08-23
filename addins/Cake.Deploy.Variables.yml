@@ -8,4 +8,4 @@ Description: "Cake addin for the deployment variables management."
 Categories:
 - variables
 - deploy
-- release-variables
+- release variables

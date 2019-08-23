@@ -6,4 +6,4 @@ Repository: https://github.com/cake-contrib/Cake.AppleSimulator
 Author: Geoffrey Huntley
 Description: "Cake Build addin for managing (simctl) Apple iOS/watchOS/TV simulators."
 Categories:
-- Mobile
+- mobile

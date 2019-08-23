@@ -6,6 +6,5 @@ Repository: https://github.com/unatecict/Cake.PlasticSCM
 Author: unatecict
 Description: "A cakebuild addin that allows you to work with PlasticSCM"
 Categories:
-- cakebuild
 - plastic
 - plasticscm

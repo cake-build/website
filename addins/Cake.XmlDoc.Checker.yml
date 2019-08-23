@@ -6,6 +6,5 @@ Repository: https://github.com/dotnetaddicted/cake-xmldoc-checker
 Author: dotnetaddicted
 Description: "CakeBuild extension for checking DLL's public members xml documentation completeness."
 Categories:
-- CakeBuild
-- XmlDoc
-- DocsByReference
+- documentation
+- xmldoc

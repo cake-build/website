@@ -6,5 +6,6 @@ Repository: https://github.com/SharpeRAD/Cake.AWS.CodeDeploy
 Author: SharpeRAD
 Description: "AWS CodeDeploy addin for Cake."
 Categories:
-- AWS
-- Deployment
+- amazon
+- aws
+- deployment

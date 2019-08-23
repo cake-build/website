@@ -6,5 +6,6 @@ Repository: https://github.com/SharpeRAD/Cake.AWS.Lambda
 Author: SharpeRAD
 Description: "Cake Build addon for Amazon Lambda."
 Categories:
-- Amazon
-- Lambda
+- amazon
+- aws
+- lambda

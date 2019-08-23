@@ -6,4 +6,4 @@ Repository: https://github.com/cake-contrib/Cake.MSBuildTask
 Author: Mark Walker
 Description: "Adds ability to run any MSBuild task from a Cake script."
 Categories:
-- MSBuild
+- msbuild

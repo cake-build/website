@@ -6,6 +6,6 @@ Repository: https://github.com/joaoasrosa/cake-ndepend
 Author: João Rosa
 Description: "An alias wrapping the NDepend.Console command line tool."
 Categories:
-- Code Quality
-- NDepend
-- Reports
+- code quality
+- ndepend
+- reports

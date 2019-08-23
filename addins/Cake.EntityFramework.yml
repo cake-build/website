@@ -6,4 +6,4 @@ Repository: https://github.com/cake-contrib/Cake.EntityFramework
 Author: louisfischer
 Description: "A set of Cake aliases for Entity Framework code first migrations."
 Categories:
-- Entity Framework
+- entity framework

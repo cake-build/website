@@ -6,4 +6,4 @@ Repository: https://github.com/DixonDs/Cake.Azure
 Author: DixonDs
 Description: "Cake plugin to manage Azure resources"
 Categories:
-- Azure
+- azure

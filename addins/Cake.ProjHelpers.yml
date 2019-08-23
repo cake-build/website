@@ -6,4 +6,4 @@ Repository: https://github.com/orialmog/Cake.ProjHelpers
 Author: orialmog
 Description: "Cake AddIn for manipulating .proj files"
 Categories:
-
+- build

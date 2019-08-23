@@ -7,4 +7,6 @@ Author: Alistair Chapman
 Description: "Cake addin for compiling client code and API definitions (including Swagger) using the NSwag toolchain. If you have issues running this addin on .NET Core, try using Cake.NSwag.Console instead."
 Prerelease: "true"
 Categories:
-- Swagger
+- swagger
+- api
+- openapi

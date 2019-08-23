@@ -6,5 +6,5 @@ Repository: https://github.com/SharpeRAD/Cake.WebDeploy
 Author: SharpeRAD
 Description: "Cake addin that extends Cake with WebDeploy commands for publishing to IIS."
 Categories:
-- Deployment
-- IIS
+- deployment
+- iis

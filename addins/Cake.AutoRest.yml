@@ -7,5 +7,5 @@ Author: Alistair Chapman
 Description: "Cake addin for generating client code from compatible API definitions (including Swagger)."
 Prerelease: "true"
 Categories:
-- Azure
-- Swagger
+- azure
+- swagger

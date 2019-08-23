@@ -6,6 +6,4 @@ Repository: https://github.com/igloo15/Cake.igloo15
 Author: igloo15
 Description: "An addin for cake scripts that provides a number of helper functions and classes"
 Categories:
-- Addins
-- Helpers
-- Extensions
+- helpers

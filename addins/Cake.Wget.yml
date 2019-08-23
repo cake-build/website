@@ -6,4 +6,4 @@ Repository: https://github.com/cake-contrib/Cake.Wget
 Author: deqenq
 Description: "Cake.Wget is a cross-platform add-in for Cake build automation system which encapsulates Wget tool."
 Categories:
-- Wget
+- wget

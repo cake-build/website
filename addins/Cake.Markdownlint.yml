@@ -6,4 +6,4 @@ Repository: https://github.com/cake-contrib/Cake.Markdownlint
 Author: BBT Software AG
 Description: "The Issues Addin for Cake allows you to run markdownlint."
 Categories:
-- Markdown
+- markdown

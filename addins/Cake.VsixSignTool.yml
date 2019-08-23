@@ -6,4 +6,4 @@ Repository: https://github.com/MihaMarkic/Cake.VsixSignTool
 Author: Miha Markiè
 Description: "Cake AddIn that extends Cake with VsixSignTool."
 Categories:
-- Signing
+- signing

@@ -7,7 +7,7 @@ Repository: https://github.com/sergeyzwezdin/magic-chunks
 Author: Sergey Zwezdin
 Description: "Easy to use tool to config transformations for JSON, XML and YAML."
 Categories:
-- Serialization
-- IO
-- Deployment
-- Configuration
+- serialization
+- io
+- deployment
+- configuration

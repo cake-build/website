@@ -7,4 +7,4 @@ Author: Alistair Chapman
 Description: "Cake addin for testing Postman Collection APIs using the Newman CLI."
 Prerelease: "true"
 Categories:
-- Postman
+- postman
