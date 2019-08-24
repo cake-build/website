@@ -2,8 +2,8 @@ Name: Cake.Flutter
 NuGet: Cake.Flutter
 Assemblies:
 - "/**/Cake.Flutter.dll"
-Repository: https://github.com/cake-contrib/Cake.Flutter
+Repository: https://github.com/cake-contrib/Cake.Flutter/
 Author: Miha Markic
-Description: "A Cake addin to provide support for Flutter."
+Description: A Cake addin to provide support for Flutter.
 Categories:
 - flutter

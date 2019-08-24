@@ -2,8 +2,8 @@ Name: Cake.Incubator
 NuGet: Cake.Incubator
 Assemblies:
 - "/**/Cake.Incubator.dll"
-Repository: https://github.com/cake-contrib/Cake.Incubator
+Repository: https://github.com/cake-contrib/Cake.Incubator/
 Author: Scott Mackay @wwwlicious
-Description: "A set of useful extension methods and aliases for Cake"
+Description: A set of useful extension methods and aliases for Cake
 Categories:
 - misc

@@ -2,8 +2,8 @@ Name: Cake.LycheeOS
 NuGet: Cake.LycheeOS
 Assemblies:
 - "/**/Cake.LycheeOS.dll"
-Repository: https://github.com/lycheeos/cake-tools
+Repository: https://github.com/lycheeos/cake-tools/
 Author: lycheeos
-Description: "LycheeOS support for Cake"
+Description: LycheeOS support for Cake
 Categories:
 - lycheeos

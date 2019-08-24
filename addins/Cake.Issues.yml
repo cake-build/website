@@ -2,8 +2,8 @@ Name: Cake.Issues
 NuGet: Cake.Issues
 Assemblies:
 - "/**/Cake.Issues.dll"
-Repository: https://github.com/cake-contrib/Cake.Issues
+Repository: https://github.com/cake-contrib/Cake.Issues/
 Author: BBT Software AG
-Description: "The Issues Addin for Cake allows you to read issues from any code analyzer or linter."
+Description: The Issues Addin for Cake allows you to read issues from any code analyzer or linter.
 Categories:
 - issues
