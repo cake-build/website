@@ -2,9 +2,9 @@ Name: Cake.AWS.CodeDeploy
 NuGet: Cake.AWS.CodeDeploy
 Assemblies:
 - "/**/Cake.AWS.CodeDeploy.dll"
-Repository: https://github.com/SharpeRAD/Cake.AWS.CodeDeploy
+Repository: https://github.com/SharpeRAD/Cake.AWS.CodeDeploy/
 Author: SharpeRAD
-Description: "AWS CodeDeploy addin for Cake."
+Description: AWS CodeDeploy addin for Cake.
 Categories:
 - amazon
 - aws

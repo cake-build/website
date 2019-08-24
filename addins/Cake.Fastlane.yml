@@ -2,9 +2,9 @@ Name: Cake.Fastlane
 NuGet: Cake.Fastlane
 Assemblies:
 - "/**/Cake.Fastlane.dll"
-Repository: https://github.com/RLittlesII/Cake.Fastlane/
+Repository: https://github.com/cake-contrib/Cake.Fastlane/
 Author: Rodney Littles II
-Description: "Cake addin that extends Cake with support for fastlane tools."
+Description: Cake addin that extends Cake with support for fastlane tools.
 Categories:
 - fastlane
 - mobile

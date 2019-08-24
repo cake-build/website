@@ -2,10 +2,9 @@ Name: Cake.BitDiffer
 NuGet: Cake.BitDiffer
 Assemblies:
 - "/**/Cake.BitDiffer.dll"
-Repository: https://github.com/cake-contrib/Cake.BitDiffer
+Repository: https://github.com/cake-contrib/Cake.BitDiffer/
 Author: Eugen [WebDucer] Richter
-Description: "Cake Addin for BitDiffer command line"
-Prerelease: "true"
+Description: Cake Addin for BitDiffer command line
 Categories:
 - bitdiffer
 - deployment

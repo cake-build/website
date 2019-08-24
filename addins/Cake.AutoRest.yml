@@ -4,7 +4,7 @@ Assemblies:
 - "/**/Cake.AutoRest.dll"
 Repository: https://github.com/agc93/Cake.AutoRest/
 Author: Alistair Chapman
-Description: "Cake addin for generating client code from compatible API definitions (including Swagger)."
+Description: Cake addin for generating client code from compatible API definitions (including Swagger).
 Prerelease: "true"
 Categories:
 - azure

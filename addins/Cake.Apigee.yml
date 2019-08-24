@@ -2,9 +2,9 @@ Name: Cake.Apigee
 NuGet: Cake.Apigee
 Assemblies:
 - "/**/Cake.Apigee.dll"
-Repository: https://github.com/LittleColin/Cake.Apigee
+Repository: https://github.com/cake-contrib/Cake.Apigee/
 Author: Simon Ransom
-Description: "Cake Aliases for Apigee"
+Description: Cake Aliases for Apigee
 Categories:
 - apigee
 - api gateway
