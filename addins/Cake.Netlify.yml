@@ -2,9 +2,9 @@ Name: Cake.Netlify
 NuGet: Cake.Netlify
 Assemblies:
 - "/**/Cake.Netlify.dll"
-Repository: https://github.com/cake-contrib/Cake.Netlify
+Repository: https://github.com/cake-contrib/Cake.Netlify/
 Author: Jamie Phillips
-Description: "Cake addin for Netlify"
+Description: Cake addin for Netlify
 Categories:
 - netlify
 - deployment
