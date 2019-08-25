@@ -2,8 +2,8 @@ Name: Cake.SonarScanner
 NuGet: Cake.SonarScanner
 Assemblies:
 - "/**/Cake.SonarScanner.dll"
-Repository: https://github.com/pitermarx/Cake.SonarScanner
+Repository: https://github.com/pitermarx/Cake.SonarScanner/
 Author: pitermarx
-Description: "Cake Addin to run the sonnar-scanner tool."
+Description: Cake Addin to run the sonnar-scanner tool.
 Categories:
 - code quality

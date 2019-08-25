@@ -2,9 +2,9 @@ Name: Cake.Topshelf
 NuGet: Cake.Topshelf
 Assemblies:
 - "/**/Cake.Topshelf.dll"
-Repository: https://github.com/SharpeRAD/Cake.Topshelf
+Repository: https://github.com/SharpeRAD/Cake.Topshelf/
 Author: SharpeRAD
-Description: "Cake build addin for managing Topshelf based windows services."
+Description: Cake build addin for managing Topshelf based windows services.
 Categories:
 - windows
 - deployment

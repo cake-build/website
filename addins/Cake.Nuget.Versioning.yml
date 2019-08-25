@@ -2,9 +2,9 @@ Name: Cake.Nuget.Versioning
 NuGet: Cake.Nuget.Versioning
 Assemblies:
 - "/**/Cake.Nuget.Versioning.dll"
-Repository: https://github.com/Kemyke/Cake.Nuget.Versioning
+Repository: https://github.com/Kemyke/Cake.Nuget.Versioning/
 Author: Attila Kemeny
-Description: "Contains functionality for creating Nuget compatible version numbers"
+Description: Contains functionality for creating Nuget compatible version numbers
 Categories:
 - nuget
 - semver

@@ -2,8 +2,8 @@ Name: Cake.UServer
 NuGet: Cake.UServer
 Assemblies:
 - "/**/Cake.UServer.dll"
-Repository: https://github.com/cake-addin/cake-u-server
+Repository: https://github.com/cake-addin/cake-u-server/
 Author: cake-addin
-Description: "Cake.UServer"
+Description: Cake.UServer
 Categories:
 - µhttpsharp

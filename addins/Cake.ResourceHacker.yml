@@ -2,8 +2,8 @@ Name: Cake.ResourceHacker
 NuGet: Cake.ResourceHacker
 Assemblies:
 - "/**/Cake.ResourceHacker.dll"
-Repository: https://github.com/cake-contrib/Cake.ResourceHacker
+Repository: https://github.com/cake-contrib/Cake.ResourceHacker/
 Author: Miha Markic, Cake Contributors
-Description: "ResourceHacker Addin for Cake Build."
+Description: ResourceHacker Addin for Cake Build.
 Categories:
 - resourcehacker

@@ -2,9 +2,9 @@ Name: Cake.NSpec
 NuGet: Cake.NSpec
 Assemblies:
 - "/**/Cake.NSpec.dll"
-Repository: https://github.com/app-iron/Cake.NSpec/tree/master
+Repository: https://github.com/app-iron/Cake.NSpec/tree/master/
 Author: app-iron
-Description: "Cake Adapter that enables nspec tests"
+Description: Cake Adapter that enables nspec tests
 Categories:
 - nspec
 - bdd
