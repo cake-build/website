@@ -2,9 +2,9 @@ Name: Cake.ProtobufTools
 NuGet: Cake.ProtobufTools
 Assemblies:
 - "/**/Cake.ProtobufTools.dll"
-Repository: https://github.com/cake-contrib/Cake.ProtobufTools
+Repository: https://github.com/cake-contrib/Cake.ProtobufTools/
 Author: Miha Markic
-Description: "A Cake AddIn that extends Cake with ProtobufTools command tools."
+Description: A Cake AddIn that extends Cake with ProtobufTools command tools.
 Categories:
 - code generation
 - protobuf

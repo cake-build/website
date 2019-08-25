@@ -2,8 +2,8 @@ Name: Cake.Tfs.AutoMerge
 NuGet: Cake.Tfs.AutoMerge
 Assemblies:
 - "/**/Cake.Tfs.AutoMerge.dll"
-Repository: https://github.com/mabreuortega/Cake.Tfs
+Repository: https://github.com/mabreuortega/Cake.Tfs/
 Author: mabreu
-Description: "Cake Aliases for auto merge Git Branches using TFS Pull Requests."
+Description: Cake Aliases for auto merge Git Branches using TFS Pull Requests.
 Categories:
 - tfs

@@ -2,9 +2,9 @@ Name: Cake.SqlPackage
 NuGet: Cake.SqlPackage
 Assemblies:
 - "/**/Cake.SqlPackage.dll"
-Repository: https://github.com/cake-contrib/Cake.SqlPackage
+Repository: https://github.com/cake-contrib/Cake.SqlPackage/
 Author: Rodney Littles II
-Description: "Cake AddIn that extends Cake for creating and deploying SQL Server databases and DACPAC packages."
+Description: Cake AddIn that extends Cake for creating and deploying SQL Server databases and DACPAC packages.
 Categories:
 - sql
 - database

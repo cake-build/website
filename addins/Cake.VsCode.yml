@@ -2,8 +2,8 @@ Name: Cake.VsCode
 NuGet: Cake.VsCode
 Assemblies:
 - "/**/Cake.VsCode.dll"
-Repository: https://github.com/cake-contrib/Cake.VsCode
+Repository: https://github.com/cake-contrib/Cake.VsCode/
 Author: Gary Ewan Park
-Description: "Cake AddIn that extends Cake with ability to execute the vsce command line utility."
+Description: Cake AddIn that extends Cake with ability to execute the vsce command line utility.
 Categories:
 - deployment
