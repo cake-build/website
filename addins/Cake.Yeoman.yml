@@ -2,8 +2,8 @@ Name: Cake.Yeoman
 NuGet: Cake.Yeoman
 Assemblies:
 - "/**/Cake.Yeoman.dll"
-Repository: https://github.com/cake-contrib/Cake.Yeoman
+Repository: https://github.com/cake-contrib/Cake.Yeoman/
 Author: BBT Software AG
-Description: "The Yeoman Addin for Cake allows you to call Yeoman generators from Cake."
+Description: The Yeoman Addin for Cake allows you to call Yeoman generators from Cake.
 Categories:
 - yeoman

@@ -2,8 +2,8 @@ Name: Cake.Watch_Advance
 NuGet: Cake.Watch_Advance
 Assemblies:
 - "/**/Cake.Watch.dll"
-Repository: https://github.com/cake-addin/cake-watch
+Repository: https://github.com/cake-addin/cake-watch/
 Author: cake-addin
-Description: "Cake_Watch_Advance"
+Description: Cake_Watch_Advance
 Categories:
 - watch
