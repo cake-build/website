@@ -2,7 +2,7 @@ Name: Cake.Board.AzureBoards
 NuGet: Cake.Board.AzureBoards
 Assemblies:
 - "/**/Cake.Board.AzureBoards.dll"
-Repository: https://github.com/nicolabiancolini/Cake.Board/
+Repository: https://github.com/cake-contrib/Cake.Board/
 Author: Nicola Biancolini
 Description: This add-in allows you to interact directly with the work items of Azure Boards.
 Prerelease: "true"
