@@ -2,7 +2,7 @@ Name: Cake.GitLabAPICI
 NuGet: Cake.GitLabAPICI
 Assemblies:
 - "/**/Cake.GitLabAPICI.dll"
-Repository: https://github.com/absolutebandit/Cake.GitLabAPICI
+Repository: https://github.com/absolutebandit/Cake.GitLabAPICI/blob/master/src/Cake.GitLabAPICI/Cake.GitLabAPICI.csproj/
 Author: absolutebandit
 Description: A cake addin for running GitLab pipelines and jobs via the GitLab API
 Categories:
