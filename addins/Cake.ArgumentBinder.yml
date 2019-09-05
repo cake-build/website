@@ -2,7 +2,7 @@ Name: Cake.ArgumentBinder
 NuGet: Cake.ArgumentBinder
 Assemblies:
 - "/**/Cake.ArgumentBinder.dll"
-Repository: https://github.com/xforever1313/Cake.ArgumentBinder/
+Repository: https://github.com/cake-contrib/Cake.ArgumentBinder/
 Author: xforever1313
 Description: Bind Cake arguments to classes via Attributes
 Categories:
