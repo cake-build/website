@@ -39,6 +39,6 @@ To use the bootstrapper file you should add a "PowerShell" or "Shell Script" tas
 
 ## Notes about Variables
 
-Environment Variables which are marked secret in Azure DevOps, can be default not be resolved using `EnvironmentVariable()` in a Cake script.
+Environment Variables which are marked secret in Azure DevOps, can by default not be resolved using `EnvironmentVariable()` in a Cake script.
 They can be passed as arguments to the build script or explicitly mapped in using a YAML build definition.
 You can read more about this limitation in the [Azure DevOps documentation](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=vsts&tabs=yaml%2Cbatch#secret-variables).
