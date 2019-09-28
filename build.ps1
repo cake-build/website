@@ -98,6 +98,7 @@ if($FoundDotNetCliVersion -ne $DotNetVersion) {
 
 $env:DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1
 $env:DOTNET_CLI_TELEMETRY_OPTOUT=1
+$env:DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX=2
 
 
 ###########################################################################
