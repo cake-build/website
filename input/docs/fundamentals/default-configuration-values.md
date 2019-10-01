@@ -265,35 +265,3 @@ cake.exe --nuget_loaddependencies=true
 
 <hr/>
 
-# Roslyn NuGet Download Url
-
-**_This only applies to Cake version `0.21.1` and older, Roslyn ships with Cake from version `0.22.0`._**
-
-This allows the control of where Cake downloads the required Roslyn NuGet packages.  This can be useful when it is necessary to work in an offline mode, where direct access to nuget.org is not available.
-
-## Default Value
-
-```sh
-https://packages.nuget.org/api/v2
-```
-
-## Environment Variable Name
-
-```sh
-CAKE_ROSLYN_NUGETSOURCE
-```
-
-## Config File Contents
-
-```sh
-[Roslyn]
-NuGetSource=https://mycustomurl
-```
-
-## Direct Argument
-
-```sh
-cake.exe --roslyn_nugetsource=http://mycustomurl
-```
-
-<hr/>
