@@ -4,7 +4,7 @@ Assemblies:
 - "/**/Cake.Issues.PullRequests.AzureDevOps.dll"
 Repository: https://github.com/cake-contrib/Cake.Issues.PullRequests.AzureDevOps/
 Author: BBT Software AG and contributors
-Description: |`
+Description: |-
   The Azure DevOps support for the Cake.Issues addin for Cake allows you to
   write found issues as comments to Azure DevOps pull requests.
 
