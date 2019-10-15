@@ -1,0 +1,10 @@
+Name: Cake.Tfs
+NuGet: Cake.Tfs
+Assemblies:
+- "/**/Cake.Tfs.dll"
+Repository: https://cake-contrib.github.io/Cake.Tfs/
+Author: Pascal Berger
+Description: Addin for the Cake build automation system for working with Azure DevOps or Azure DevOps Server.
+Categories:
+- azure devops
+- azure devops server
