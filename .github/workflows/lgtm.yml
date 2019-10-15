@@ -14,3 +14,5 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
           GITHUB_COMMENT_BODY: ${{ github.event.comment.body }}
           GITHUB_ISSUE_NUMBER: ${{ github.event.issue.number }}
+        with:
+          trigger: 'LGTM!'
