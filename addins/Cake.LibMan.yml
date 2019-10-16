@@ -1,0 +1,10 @@
+Name: Cake.LibMan
+NuGet: Cake.LibMan
+Assemblies:
+- "/**/Cake.LibMan.dll"
+Repository: https://github.com/cake-contrib/Cake.LibMan/
+Author: louisfischer, Cake-Contrib
+Description: Cake.LibMan is an Addin that extends Cake for executing commands with the LibMan (Library Manager) command line interface (cli).
+Categories:
+- libman
+- library manager
