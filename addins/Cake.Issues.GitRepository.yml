@@ -5,7 +5,6 @@ Assemblies:
 Repository: https://github.com/cake-contrib/Cake.Issues.GitRepository/
 Author: Pascal Berger
 Description: Git repository linting support for the Cake.Issues addin.
-Prerelease: "true"
 Categories:
 - issues
 - git
