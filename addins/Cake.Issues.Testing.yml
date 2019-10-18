@@ -5,6 +5,5 @@ Assemblies:
 Repository: https://cakeissues.net/
 Author: BBT Software AG
 Description: The testing extensions for the Cake Issues Addin provide helpers to implement test cases for Cake Issue Addins.
-Prerelease: "true"
 Categories:
 - issues
