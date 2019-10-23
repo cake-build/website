@@ -1,0 +1,9 @@
+Name: Cake.StrongNameSigner
+NuGet: Cake.StrongNameSigner
+Assemblies:
+- "/**/Cake.StrongNameSigner.dll"
+Repository: https://github.com/cake-contrib/Cake.StrongNameSigner/
+Author: Gary Ewan Park
+Description: Cake.StrongNameSigner is an Addin for Cake which allows the execution of the StrongNameSigner.Console.exe.
+Categories:
+- strongnamesigner
