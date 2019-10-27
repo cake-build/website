@@ -183,6 +183,11 @@ Title: Blog Posts
 * [Modifying XML nodes with Cake](https://blog.ostebaronen.dk/2017/11/cake-modifying-xml-nodes.html)
 * [Cake build issue reporting with PRCA](https://blog.ostebaronen.dk/2017/08/cake-build-issue-reporting-with-prca.html)
 
+## tpodolak
+
+* [VS Code – forcing partial IntelliSense support for Cake scripts](https://tpodolak.com/blog/2017/04/12/vs-code-forcing-partial-intellisense-support-cake-scripts/)
+* [Finding typos with ReSharper Command Line Tools, ReSpeller and Cake](https://tpodolak.com/blog/2017/10/27/finding-typos-resharper-command-line-tools-respeller-cake/)
+
 ## Warren Bates
 
 * [Setting up the addin build process](http://wbates.net/posts/baking-a-cake-addin-part-3-recipe)
