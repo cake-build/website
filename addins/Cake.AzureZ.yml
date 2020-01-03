@@ -1,0 +1,9 @@
+Name: Cake.AzureZ
+NuGet: Cake.AzureZ
+Assemblies:
+- "/**/Cake.AzureZ.dll"
+Repository: https://github.com/zbeer/Cake.Azure/
+Author: zbeer
+Description: Cake addin for Azure management.
+Categories:
+- azure
