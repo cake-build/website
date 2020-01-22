@@ -2,7 +2,7 @@ Name: Cake.SharePoint
 NuGet: Cake.SharePoint
 Assemblies:
 - "/**/Cake.SharePoint.dll"
-Repository: https://github.com/JeroenVandezande/Cake.SharePoint/
+Repository: https://github.com/cake-contrib/Cake.SharePoint/
 Author: JeroenVandezande
 Description: Cake AddIn to upload build artifacts to SharePoint.
 Categories:
