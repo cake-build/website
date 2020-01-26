@@ -16,6 +16,8 @@ The Cake site contains a blog where important announcements and other informatio
 
 ## Addins
 
+> PLEASE NOTE: Addin authors do not have to manually create YAML files as there is an automated process that scans nuget.org twice per day to find all addins that follow the recommended naming convention (which is `Cake.xxx` where xxx describes the functionality provided by the addin) and generates the appropriate YAML content based on the metadata for the NuGet package.
+
 All addins are specified in individual YAML files under `./addins`. Adding an addin here will trigger downloading it's NuGet Package during site generation and will include it in the "Reference" and "Addins" sections of the Cake site.
 
 The format of an addin file generally looks like:
