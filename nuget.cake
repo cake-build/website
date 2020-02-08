@@ -26,7 +26,7 @@ public static void DownloadPackages(this ICakeContext context, DirectoryPath add
 public static void DownloadPackage(this ICakeContext context, DirectoryPath addinDir, HttpClient httpClient, string packageId)
 {
     context.Information("[{0}] fetching meta data...", packageId);
-    var packageJson = httpClient.GetStringAsync($"https://api.nuget.org/v3/registration3/{packageId.ToLowerInvariant()}/index.json")
+    var packageJson = httpClient.GetStringAsync($"https://api.nuget.org/v3/registration4/{packageId.ToLowerInvariant()}/index.json")
                     .GetAwaiter()
                     .GetResult();
 
