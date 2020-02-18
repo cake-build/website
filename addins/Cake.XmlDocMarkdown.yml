@@ -5,6 +5,7 @@ Assemblies:
 Repository: https://ejball.com/XmlDocMarkdown/
 Author: Ed Ball
 Description: Generates Markdown from .NET XML documentation comments.
+Prerelease: "true"
 Categories:
 - documentation
 - markdown
