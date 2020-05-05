@@ -262,6 +262,35 @@ LoadDependencies=true
 cake.exe --nuget_loaddependencies=true
 ```
 
+<hr/>
 
+# NuGet Configuration File Path
+
+This allows the configuration of the path to NuGet config file for overriding the default file.
+
+## Default Value
+
+```sh
+If NuGet config not specified, will use NuGet default mechanism for resolving it
+```
+
+## Environment Variable Name
+
+```sh
+CAKE_NUGET_CONFIGFILE
+```
+
+## Config File Contents
+
+```sh
+[NuGet]
+ConfigFile=./NuGet.config
+```
+
+## Direct Argument
+
+```sh
+cake.exe --nuget_configfile=./NuGet.config
+```
 <hr/>
 
