@@ -1,0 +1,10 @@
+Name: Cake.CoverageComparer
+NuGet: Cake.CoverageComparer
+Assemblies:
+- "/**/Cake.CoverageComparer.dll"
+Repository: https://github.com/AlbertoMonteiro/Cake.CoverageComparer/
+Author: AlbertoMonteiro
+Description: A simple coverage comparer that compares opecover html report
+Categories:
+- opencover
+- coverage
