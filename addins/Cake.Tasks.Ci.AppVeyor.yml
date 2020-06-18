@@ -1,0 +1,9 @@
+Name: Cake.Tasks.Ci.AppVeyor
+NuGet: Cake.Tasks.Ci.AppVeyor
+Assemblies:
+- "/**/Cake.Tasks.Ci.AppVeyor.dll"
+Repository: https://github.com/JeevanJames/Cake.Tasks/
+Author: JeevanJames
+Description: Cake AppVeyor CI tasks
+Categories:
+- tasks
