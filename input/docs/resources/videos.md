@@ -1,5 +1,12 @@
 Order: 10
 ---
+# 2020
+
+## Azure DevOps Pipelines as code using C#
+### Mattias Karlsson - Swetugg Stockholm
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/ZeGMTuuEKxM" frameborder="0" allowfullscreen></iframe>
+
 # 2019
 
 ## How to generate a Static website with Cake build and Azure DevOps Pipeline
