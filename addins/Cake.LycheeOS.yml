@@ -1,9 +1,0 @@
-Name: Cake.LycheeOS
-NuGet: Cake.LycheeOS
-Assemblies:
-- "/**/Cake.LycheeOS.dll"
-Repository: https://www.nuget.org/packages/Cake.LycheeOS/
-Author: lycheeos
-Description: LycheeOS support for Cake
-Categories:
-- lycheeos
