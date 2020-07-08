@@ -26,6 +26,8 @@ which are using addins targeting .NET Standard 2.0 only.
 This runner is mainly for backwards compatibility where scripts or addins are used which require .NET Framework.
 In all other cases it is recommended to use [.NET Core Tool](#net-core-tool).
 
+For bootstrapping Cake runner for .NET Framework see [Bootstrapping for Cake runner for .NET Framework](bootstrapping-scripts/#bootstrapping-for-cake-runner-for-net-framework).
+
 # Cake runner for .NET Core
 
 The [Cake.CoreCLR](https://www.nuget.org/packages/Cake.CoreCLR) NuGet package is a runner compiled for .NET Core 2.0.
