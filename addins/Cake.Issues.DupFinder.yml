@@ -13,7 +13,6 @@ Description: |-
   There are also additional addins for generating reports or posting issues to pull requests.
   
   See the Project Site for an overview of the whole ecosystem of addins for working with issues in Cake scripts.
-Prerelease: "true"
 Categories:
 - cake issues
 - cake issueprovider
