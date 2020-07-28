@@ -1,0 +1,9 @@
+Name: Cake.IIS.Core
+NuGet: Cake.IIS.Core
+Assemblies:
+- "/**/Cake.IIS.Core.dll"
+Repository: https://github.com/appulate/Cake.IIS.Core/
+Author: appulate
+Description: Cake Build addon for IIS - Net Core Version.
+Categories:
+- iis
