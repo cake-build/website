@@ -32,13 +32,7 @@ See [Bootstrapping .NET Core Tool](bootstrapping-scripts#bootstrapping-for.net-c
 Create a file called `build.cake` with the following content:
 
 ```csharp
-#tool nuget:?package=NUnit.ConsoleRunner&version=3.11.1
-
-//////////////////////////////////////////////////////////////////////
-// ARGUMENTS
-//////////////////////////////////////////////////////////////////////
-
-var target = Argument("target", "Default");
+var target = Argument("target", "Test");
 var configuration = Argument("configuration", "Release");
 
 //////////////////////////////////////////////////////////////////////
@@ -46,57 +40,32 @@ var configuration = Argument("configuration", "Release");
 //////////////////////////////////////////////////////////////////////
 
 Task("Clean")
+    .WithCriteria(c => HasArgument("rebuild"))
     .Does(() =>
 {
-    var buildDir = Directory("./src/Example/bin") + Directory(configuration);
-    CleanDirectory(buildDir);
-});
-
-Task("Restore-NuGetPackages")
-    .IsDependentOn("Clean")
-    .Does(() =>
-{
-    NuGetRestore("./src/Example.sln");
+    CleanDirectory($"./src/Example/bin/{configuration}");
 });
 
 Task("Build")
-    .IsDependentOn("Restore-NuGetPackages")
+    .IsDependentOn("Clean")
     .Does(() =>
 {
-    if(IsRunningOnWindows())
+    DotNetCoreBuild("./src/Example.sln", new DotNetCoreBuildSettings
     {
-      // Use MSBuild
-      MSBuild(
-          "./src/Example.sln",
-          settings => settings.SetConfiguration(configuration));
-    }
-    else
-    {
-      // Use XBuild
-      XBuild(
-          "./src/Example.sln",
-          settings => settings.SetConfiguration(configuration));
-    }
+        Configuration = configuration,
+    });
 });
 
-Task("Run-UnitTests")
+Task("Test")
     .IsDependentOn("Build")
     .Does(() =>
 {
-    NUnit3(
-        "./src/**/bin/" + configuration + "/*.Tests.dll",
-        new NUnit3Settings
-        {
-            NoResults = true
-        });
+    DotNetCoreTest("./src/Example.sln", new DotNetCoreBuildSettings
+    {
+        Configuration = configuration,
+        NoBuild = true,
+    });
 });
-
-//////////////////////////////////////////////////////////////////////
-// TASK TARGETS
-//////////////////////////////////////////////////////////////////////
-
-Task("Default")
-    .IsDependentOn("Run-UnitTests");
 
 //////////////////////////////////////////////////////////////////////
 // EXECUTION
