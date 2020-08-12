@@ -60,7 +60,7 @@ Task("Test")
     .IsDependentOn("Build")
     .Does(() =>
 {
-    DotNetCoreTest("./src/Example.sln", new DotNetCoreBuildSettings
+    DotNetCoreTest("./src/Example.sln", new DotNetCoreTestSettings
     {
         Configuration = configuration,
         NoBuild = true,
