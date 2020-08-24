@@ -31,7 +31,7 @@ Task("SendEmail")
                 recipientAddress: "jane@example.com",
                 subject: "This is a test",
                 content: "<html><body>This is a test</body></html>",
-                sendAsHtml: true,
+                attachments: null,
                 settings: new EmailSettings 
                 {
                     SmtpHost = "smtp.gmail.com",
@@ -87,7 +87,8 @@ Task("SendEmail")
                 subject: "This is a test",
                 htmlContent: "<html><body>This is a test</body></html>",
                 textContent: "This is a test",
-                settings: new SendGridEmailSettings { ApiKey = sendGridApiKey }
+                attachments: null,
+                settings: new SendGridSettings { ApiKey = sendGridApiKey }
         );
 
         if (result.Ok)
@@ -135,7 +136,7 @@ Task("SendEmail")
                 subject: "This is a test",
                 htmlContent: "<html><body>This is a test</body></html>",
                 textContent: "This is a test",
-                settings: new CakeMailEmailSettings
+                settings: new CakeMailSettings
                 {
                     ApiKey = apiKey,
                     UserName = userName,
