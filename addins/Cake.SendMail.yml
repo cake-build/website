@@ -1,0 +1,9 @@
+Name: Cake.SendMail
+NuGet: Cake.SendMail
+Assemblies:
+- "/**/Cake.SendMail.dll"
+Repository: https://github.com/ajaywhiz/Cake.Email/
+Author: ajaywhiz
+Description: Cake Build addin to provide Aliases for sending emails via SMTP.
+Categories:
+- email
