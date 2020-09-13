@@ -13,6 +13,16 @@ The [Cake.Tool](https://www.nuget.org/packages/Cake.Tool) NuGet package, is a .N
 
 For bootstrapping .NET Core Tool see [Bootstrapping .NET Core Tool](bootstrapping-scripts#bootstrapping-for.net-core-tool).
 
+# Cake Frosting
+
+[Cake.Frosting](https://github.com/cake-build/frosting) is a .NET Core host which allows you to write your build scripts as a console application.
+
+:::{.alert .alert-info}
+A console application has the advantage of full IDE support, like IntelliSense, refactoring and debugging.
+:::
+
+For bootstrapping Cake Frosting see [Bootstrapping for Cake Frosting](bootstrapping-scripts#bootstrapping-for-cake-frosting).
+
 # Cake runner for .NET Framework
 
 The [Cake](https://www.nuget.org/packages/Cake) NuGet package is a runner requiring [.NET Framework 4.6.1](https://www.microsoft.com/net/download/dotnet-framework/net461)
