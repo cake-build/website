@@ -5,7 +5,6 @@ Assemblies:
 Repository: https://github.com/Kieranties/SimpleVersion/
 Author: Kieranties
 Description: SimpleVersion - A simple tool to version your code
-Prerelease: "true"
 Categories:
 - semver
 - versioning

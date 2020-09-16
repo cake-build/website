@@ -5,6 +5,5 @@ Assemblies:
 Repository: https://github.com/cake-contrib/Cake.ISO/
 Author: Austin Parker
 Description: Create an ISO as part of a Cake build.
-Prerelease: "true"
 Categories:
 - misc

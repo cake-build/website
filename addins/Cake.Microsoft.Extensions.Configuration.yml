@@ -5,6 +5,5 @@ Assemblies:
 Repository: https://www.nuget.org/packages/Cake.Microsoft.Extensions.Configuration/
 Author: Jonathan Kuleff
 Description: Cake Addin for strongly typed configuration
-Prerelease: "true"
 Categories:
 - configuration

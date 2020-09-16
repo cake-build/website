@@ -5,7 +5,6 @@ Assemblies:
 Repository: https://github.com/agc93/DocCreator/
 Author: agc93
 Description: A Cake addin to generate HTML documentation from Markdown source, using DocCreator
-Prerelease: "true"
 Categories:
 - documentation
 - markdown

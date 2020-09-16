@@ -39,7 +39,6 @@ class AddinSpec
 {
     public string Name { get; set; }
     public string NuGet { get; set; }
-    public bool Prerelease { get; set; }
     public List<string> Assemblies { get; set; }
     public string Repository { get; set; }
     public string Author { get; set; }

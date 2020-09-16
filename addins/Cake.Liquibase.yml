@@ -5,6 +5,5 @@ Assemblies:
 Repository: https://github.com/papauorg/Cake.Liquibase/
 Author: Philipp Grathwohl
 Description: Addin for running liquibase database migrations with the Cake build system.
-Prerelease: "true"
 Categories:
 - database
