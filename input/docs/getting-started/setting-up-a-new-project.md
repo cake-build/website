@@ -1,4 +1,7 @@
 Order: 20
+RedirectFrom:
+  - tutorials/getting-started
+  - tutorials/setting-up-a-new-project
 ---
 
 This is a guide to get started with Cake and to show you how Cake works.
