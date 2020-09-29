@@ -1,7 +1,7 @@
 Order: 30
 RedirectFrom:
-  - tutorials/extending-the-bootstrapper
-  - tutorials/powershell-security
+  - docs/tutorials/extending-the-bootstrapper
+  - docs/tutorials/powershell-security
 ---
 
 Bootstrapping scripts ensure you have Cake and other required dependencies installed.
