@@ -1,5 +1,5 @@
 Order: 10
-RedirectFrom: overview/requirements
+RedirectFrom: docs/overview/requirements
 ---
 
 There are different runners available for running Cake scripts.
