@@ -1,4 +1,7 @@
 Order: 30
+RedirectFrom:
+  - tutorials/extending-the-bootstrapper
+  - tutorials/powershell-security
 ---
 
 Bootstrapping scripts ensure you have Cake and other required dependencies installed.
@@ -155,7 +158,7 @@ operating system from below:
                 <p>
                     See <a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/unblock-file">Unblock-File</a> for details.
                 </p>
-            </div> 
+            </div>
         </p>
     </div>
     <div id="linux" class="tab-pane fade">
@@ -180,7 +183,7 @@ operating system from below:
                 <p>
                     This assumes that you have the Git command line installed.
                 </p>
-            </div> 
+            </div>
         </p>
     </div>
     <div id="macos" class="tab-pane fade">
@@ -205,7 +208,7 @@ operating system from below:
                 <p>
                     This assumes that you have the Git command line installed.
                 </p>
-            </div> 
+            </div>
         </p>
     </div>
 </div>
