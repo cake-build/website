@@ -12,7 +12,7 @@ The basic documentation pages can be found under `./input/docs`. The directory s
 
 ## Blog
 
-The Cake site contains a blog where important announcements and other relevant information are posted. The blog posts can be found under `./input/blog`. As with documentation pages, blog posts are written in Markdown. The file name for each blog post contains its published date in the format `YYYY-MM-DD-title.md`.
+The Cake site contains a blog where important announcements,important updates and other relevant information and many more information are are posted. The blog posts can be found under `./input/blog`. As with documentation pages, blog posts are written in Markdown. The file name for each blog post contains its published date in the format `YYYY-MM-DD-title.md`.
 
 ## Addins
 
