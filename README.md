@@ -36,11 +36,11 @@ Categories:
 - Static Site Generation
 ```
 
-Note that the `Prerelease` flag can be omitted for non-prerelease packages and controls whether NuGet will attempt to download a prerelease version of the package when generating the site.
+Note that the `Pre-release` flag can be omitted for non-pre-release packages and controls whether NuGet will attempt to download a pre-release version of the package when generating the site.
 
 # Building
 
-The site is built using Cake (of course!). There are a number of different targets depending on what you're working on and how complete you want the generated site to be.
+The site is built using Cake (of course! what else did you expect). There are a number of different targets depending on what you're working on and how complete you want the generated site to be.
 
 `build --target=GetSource` will download the Cake source code that the generation process uses to create the "API" section.
 
