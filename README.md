@@ -38,7 +38,7 @@ Categories:
 
 Note that the `Prerelease` flag can be omitted for non-prerelease packages and controls whether NuGet will attempt to download a prerelease version of the package when generating the site.
 
-# Building
+## Building
 
 The site is built using Cake (of course!). There are a number of different targets depending on what you're working on and how complete you want the generated site to be.
 
