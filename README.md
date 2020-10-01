@@ -36,11 +36,11 @@ Categories:
 - Static Site Generation
 ```
 
-Note that the `Prerelease` flag can be omitted for non-prerelease packages and controls whether NuGet will attempt to download a prerelease version of the package when generating the site.
+Note that the `Prerelease` flag can be omitted for non-prerelease packages and controls whether NuGet will attempt to download a prerelease version of the package while generating the site.
 
 # Building
 
-The site is built using Cake (of course!). There are a number of different targets depending on what you're working on and how complete you want the generated site to be.
+The site is built using Cake (of course!). There are number of different targets depending on what you're working on and how complete you want the generated site to be.
 
 `build --target=GetSource` will download the Cake source code that the generation process uses to create the "API" section.
 
@@ -50,4 +50,4 @@ The site is built using Cake (of course!). There are a number of different targe
 
 `build --target=Build` will run a complete build, downloading new copies of Cake source code and addin NuGet packages. Note that due to the number of addins and the complexity of generating complete API documentation, the site generation may take a while (sometimes as long as 20 minutes).
 
-`build --target=Preview` will run a build but *will not* download Cake source code or NuGet packages. This lets you shorten the build cycle by avoiding the time to obtain those resources if you've already downloaded them, or to bypass them altogether if you're just working on something like general documentation pages. This target will also launch a preview server to look at the generated site from a local web browser. The URL of the generated preview site is `http://localhost:5080/`.
+`build --target=Preview` will run a build but *will not* download Cake source code or NuGet packages. This let's you shorten the build cycle by avoiding the time to obtain those resources if you've already downloaded them, or to bypass them altogether if you're just working on something like general documentation pages. This target will also launch a preview server to look at the generated site from a local web browser. The URL of the generated preview site is `http://localhost:5080/`.
