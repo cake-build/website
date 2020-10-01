@@ -12,3 +12,5 @@ maintainers:
 features:
   - comments
   - pr_description_required
+
+contributing_url: https://github.com/cake-build/website#contributing
