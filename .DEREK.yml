@@ -1,0 +1,14 @@
+maintainers:
+  - agc93
+  - daveaglick
+  - devlead
+  - ecampidoglio
+  - gep13
+  - jericho
+  - mholo65
+  - pascalberger
+  - patriksvensson
+
+features:
+  - comments
+  - pr_description_required
