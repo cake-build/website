@@ -8,7 +8,7 @@ Any contributions are appreciated, no matter how big or small. The Cake site con
 
 **NOTE** If you're interested in contributing please reach out to us on [Gitter](https://gitter.im/cake-build/cake) first.
 
-## Documentation
+## Documenting /Documentation
 
 The basic documentation pages can be found under `./input/docs`. The directory structure mirrors what's on the site. Most pages are written in Markdown. To add a new page, just add a new file.
 
