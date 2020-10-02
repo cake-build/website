@@ -80,7 +80,8 @@ To enable IntelliSense support in Visual Studio Code follow these steps:
                             </p>
                             <p>
                                 Create a file called <code>omnisharp.json</code> in <code>%USERPROFILE%/.omnisharp/</code>
-                                (<code>~/.omnisharp/</code> if you are on Linux/macOS, and make sure to use double backslashes (<code>\</code>) on Windows) with the following  content (replace <code>&lt;custom_path&gt;</code> with the path to Cake.Bakery.):
+                                (<code>~/.omnisharp/</code> if you are on Linux/macOS) with the following content
+                                (replace <code>&lt;custom_path&gt;</code> with the path to Cake.Bakery.):
                             </p>
 <pre><code class="language-json">
 {
@@ -194,7 +195,8 @@ To enable IntelliSense support in Visual Studio Code follow these steps:
                             </p>
                             <p>
                                 Create a file called <code>omnisharp.json</code> in <code>%USERPROFILE%/.omnisharp/</code>
-                                (<code>~/.omnisharp/</code> if you are on Linux/macOS, and make sure to use double backslashes (<code>\</code>) on Windows) with the following  content (replace <code>&lt;custom_path&gt;</code> with the path to Cake.Bakery.):
+                                (<code>~/.omnisharp/</code> if you are on Linux/macOS) with the following content
+                                (replace <code>&lt;custom_path&gt;</code> with the path to Cake.Bakery.):
                             </p>
 <pre><code class="language-json">
 {
