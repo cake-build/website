@@ -12,5 +12,6 @@ maintainers:
 features:
   - comments
   - pr_description_required
+  - no_newbies # Enable for Hacktoberfest
 
 contributing_url: https://github.com/cake-build/website#contributing
