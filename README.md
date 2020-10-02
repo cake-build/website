@@ -57,8 +57,8 @@ The site is built using Cake (of course!). There are a number of different targe
 
 ### _The END Thing You Should Now_
 ```html
-Making An Amazing Website
+Making An Amazing Website,
     From scratch, I learn to code to make website .That's really a fun the amazing thing is that how are you creative website will be more impressive.
-    You should try to more creative which come from what you do in a day.We should'nt stop Anytime Anywhere we need a continuous progress/growth to build as a best creator.
+         You should try to more creative which come from what you do in a day.We should'nt stop Anytime Anywhere we need a continuous progress/growth to build as a best creator.
 ```
 >_**KEEP SMILING AND WORK HARDER**_
