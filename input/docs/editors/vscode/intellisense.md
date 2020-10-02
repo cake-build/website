@@ -158,7 +158,7 @@ To enable IntelliSense support in Visual Studio Code follow these steps:
                 <div class="alert alert-warning">
                     <p>
                         For Cake.Bakery <code>Cake.Core.dll</code> and <code>Cake.exe</code> need to be available in the same folder.
-                        Installation of Cake through <a href="https://chocolatey.org/packages/cake.portable" target="_blank">Cake.Portable Chocolatey pacakge</a>
+                        Installation of Cake through <a href="https://chocolatey.org/packages/cake.portable" target="_blank">Cake.Portable Chocolatey package</a>
                         therefore won't support IntelliSense.
                     </p>
                 </div>
