@@ -16,7 +16,8 @@ For bootstrapping .NET Core Tool see [Bootstrapping .NET Core Tool](bootstrappin
 
 # Cake Frosting
 
-[Cake.Frosting](https://github.com/cake-build/frosting) is a .NET Core host which allows you to write your build scripts as a console application.
+[Cake.Frosting](https://github.com/cake-build/frosting) is a .NET host which allows you to write your build scripts as a console application
+(`netcoreapp3.1` or `net461`).
 
 :::{.alert .alert-info}
 A console application has the advantage of full IDE support, like IntelliSense, refactoring and debugging.
