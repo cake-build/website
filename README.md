@@ -53,3 +53,12 @@ The site is built using Cake (of course!). There are a number of different targe
 `build --target=Build` will run a complete build, downloading new copies of Cake source code and addin NuGet packages. Note that due to the number of addins and the complexity of generating complete API documentation, the site generation may take a while (sometimes as long as 20 minutes).
 
 `build --target=Preview` will run a build but *will not* download Cake source code or NuGet packages. This lets you shorten the build cycle by avoiding the time to obtain those resources if you've already downloaded them, or to bypass them altogether if you're just working on something like general documentation pages. This target will also launch a preview server to look at the generated site from a local web browser. The URL of the generated preview site is `http://localhost:5080/`.
+
+
+### _The END Thing You Should Now_
+```html
+Making An Amazing Website
+    From scratch, I learn to code to make website .That's really a fun the amazing thing is that how are you creative website will be more impressive.
+    You should try to more creative which come from what you do in a day.We should'nt stop Anytime Anywhere we need a continuous progress/growth to build as a best creator.
+```
+>_**KEEP SMILING AND WORK HARDER**_
