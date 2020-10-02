@@ -315,6 +315,73 @@ To enable IntelliSense support in Visual Studio Code follow these steps:
     </div>
 </div>
 
+# Troubleshooting
+
+## I've followed the steps, but I don't get any IntelliSense.
+
+The [C# extension for Visual Studio Code] will automatically locate any `*.sln` file and use that as the target directory when starting OmniSharp.
+If your `*.cake` files are located in a different location, you might need to select `Cake` project in the [project selector](https://code.visualstudio.com/docs/languages/csharp#_roslyn-and-omnisharp).
+
+## I've selected the `Cake` project, but still don't get IntelliSense.
+
+Look in the `OmniSharp Log` for errors or warnings.
+
+Here are some common errors and fixes:
+
+```
+[warn]: OmniSharp.Cake.CakeProjectSystem
+    Cake script service not connected. Aborting.
+```
+
+This warning is an indication that [Cake.Bakery] isn't installed.
+See above how to install [Cake.Bakery].
+
+```
+[fail]: OmniSharp.Cake.CakeProjectSystem
+    c:\Users\mb\src\gh\bakery\setup.cake will be ignored due to an following error
+    System.TypeLoadException: A null or zero length string does not represent a valid Type.
+```
+
+This error usually means that Cake isn't available.
+If using Cake Runner for .NET Framework make sure Cake is installed in your `tools` folder.
+The easiest way to do this is to run your bootstrapping file (e.g. `.\build.ps1`).
+
+## I don't see any error message and still don't get IntelliSense.
+
+Look in the `OmniSharp Log` do you see anything even related to Cake if everything is setup correctly, you should at least see something similar to this:
+
+```
+[info]: OmniSharp.Cake.CakeProjectSystem
+    Detecting Cake files in 'c:\Users\mb\src\gh\bakery'.
+[info]: OmniSharp.Cake.CakeProjectSystem
+    Found 29 Cake files.
+```
+
+If you don't, you probably have issues with getting the [C# extension for Visual Studio Code] installed.
+Please uninstall the extension and then try installing it again.
+Look for `OmniSharp.Cake.dll` in `%userprofile%\.vscode\extensions\ms-vscode.csharp-1.13.0\.omnisharp\` if you're on Windows and
+`~/.vscode/extensions/ms-vscode.csharp-1.13.0/.omnisharp/` if you are running Linux or Mac OS
+(replace `1.13.0` with the version of the C# extension for Visual Studio Code which you have installed).
+
+## How can I use a pre-release version of OmniSharp
+
+To use a pre-release version of OmniSharp follow these steps:
+
+* Open command palette (<code>Ctrl+Shift+P</code>)
+* Select <code>Open User Settings</code> command
+
+  ![Open user settings](/assets/img/intellisense-vscode/open-user-settings.png)
+* Search for `omnisharp.path` and click `Edit in settings.json`
+
+  ![omnisharp.path settings](/assets/img/intellisense-vscode/omnisharp-path.png)
+* Set `"omnisharp.path": "latest"` and save settings
+* Answer question if you want to restart OmniSharp server with yes
+* Wait until new version of OmniSharp is downloaded, installed and started
+
+## I tried everything above, I still don't get IntelliSense.
+
+Submit an issue in the [bakery](https://github.com/cake-build/bakery) repository on GitHub or reach out to us on [Gitter](https://gitter.im/cake-build/cake).
+
 [Cake extension for Visual Studio Code]: https://marketplace.visualstudio.com/items/cake-build.cake-vscode
 [C# extension for Visual Studio Code]: https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp
 [Extension Marketplace documentation]: https://code.visualstudio.com/docs/editor/extension-gallery
