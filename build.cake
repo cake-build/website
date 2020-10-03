@@ -1,6 +1,6 @@
 #module nuget:?package=Cake.DotNetTool.Module&version=0.4.0
-#tool "dotnet:https://api.nuget.org/v3/index.json?package=Wyam.Tool&version=2.2.8"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Wyam&version=2.2.8"
+#tool "dotnet:https://api.nuget.org/v3/index.json?package=Wyam.Tool&version=2.2.9"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Wyam&version=2.2.9"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Yaml&version=3.0.0"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=YamlDotNet&version=5.2.1"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=Octokit&version=0.32.0"
