@@ -1,0 +1,9 @@
+Name: Cake.Tasks.GitVersion
+NuGet: Cake.Tasks.GitVersion
+Assemblies:
+- "/**/Cake.Tasks.GitVersion.dll"
+Repository: https://github.com/JeevanJames/Cake.Tasks/
+Author: JeevanJames
+Description: Cake GitVersion tasks
+Categories:
+- tasks
