@@ -1,0 +1,9 @@
+Name: Cake.Tasks.DotNetCore
+NuGet: Cake.Tasks.DotNetCore
+Assemblies:
+- "/**/Cake.Tasks.DotNetCore.dll"
+Repository: https://github.com/JeevanJames/Cake.Tasks/
+Author: JeevanJames
+Description: Cake .NET Core tasks
+Categories:
+- tasks
