@@ -1,0 +1,9 @@
+Name: Cake.Tasks.Ci.Tfs
+NuGet: Cake.Tasks.Ci.Tfs
+Assemblies:
+- "/**/Cake.Tasks.Ci.Tfs.dll"
+Repository: https://github.com/JeevanJames/Cake.Tasks/
+Author: JeevanJames
+Description: Cake TFS CI tasks
+Categories:
+- tasks
