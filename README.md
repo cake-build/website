@@ -10,7 +10,7 @@ Any contributions are appreciated, no matter how big or small. The Cake site con
 
 ## Documentation
 
-The basic documentation pages can be found under `./input/docs`. The directory structure mirrors what's on the site. Most pages are written in Markdown. To add a new page, just add a new file.
+The basic documentations pages can be found under `./input/docs`. The directory structure mirrors what's on the site. Most pages are written in Markdown. To add a new page, just add a new file.
 
 ## Blog
 
@@ -40,9 +40,9 @@ Categories:
 
 Note that the `Prerelease` flag can be omitted for non-prerelease packages and controls whether NuGet will attempt to download a prerelease version of the package when generating the site.
 
-## Building
+## Buildings
 
-The site is built using Cake (of course!). There are a number of different targets depending on what you're working on and how complete you want the generated site to be.
+The site is built using Cakes (of course!). There are a number of different targets depending on what you're working on and how complete you want the generated site to be.
 
 `build --target=GetSource` will download the Cake source code that the generation process uses to create the "API" section.
 
