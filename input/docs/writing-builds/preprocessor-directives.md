@@ -25,7 +25,11 @@ Right now, only NuGet packages are supported.
 
 ### Dependencies
 
-From Cake version 0.22.0 there's an option to fetch and load NuGet dependencies
+:::{.alert .alert-success}
+Available since Cake 0.22.0.
+:::
+
+There's an option to fetch and load NuGet dependencies
 
 ```csharp
 #addin nuget:?package=foo&loaddependencies=true
@@ -134,7 +138,9 @@ These are only used for shells to identify how to run the script and are omitted
 # Break directive
 The break directive, when placed on any line within your Cake file, will cause `System.Diagnostics.Debugger.Break();` to be emitted at runtime.  As a result, when used in conjunction with the `-debug` parameter (which can be passed into the Cake.exe), the debugger will automatically stop on these lines.
 
-**NOTE:** If the debugger is not currently attached, then the `#break` directive is simply ignored.
+:::{.alert .alert-info}
+If the debugger is not currently attached, then the `#break` directive is simply ignored.
+:::
 
 ## Usage
 

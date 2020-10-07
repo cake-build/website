@@ -6,11 +6,15 @@ Sharing variables and state across your builds can currently be achieved in a ha
 
 ## Typed Context
 
-**_This only applies to Cake version `0.28.0` and later_**
-
-> For more background on typed context, check out [the release blog post](https://cakebuild.net/blog/2018/05/cake-v0.28.0-released#typed-context)
+:::{.alert .alert-success}
+Available since Cake 0.28.0.
+:::
 
 You can use a typed context to easily share complex state across tasks *without* using global variables or static members. Using typed context in your script is done in 3 parts: the context itself, the `Setup` method, and individual `Task` methods.
+
+:::{.alert .alert-info}
+For more background on typed context, check out [the release blog post](https://cakebuild.net/blog/2018/05/cake-v0.28.0-released#typed-context)
+:::
 
 ### Creating your typed context
 

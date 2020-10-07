@@ -39,4 +39,6 @@ TaskTeardown(teardownContext =>
 
 ```
 
-**NOTE:** If `RunTarget` is called before the `Setup` or `Teardown` methods are called, they won't be correctly setup and won't work.
+:::{.alert .alert-warning}
+If `RunTarget` is called before the `Setup` or `Teardown` methods are called, they won't be correctly setup and won't work.
+:::
