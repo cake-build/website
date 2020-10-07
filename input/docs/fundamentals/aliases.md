@@ -1,4 +1,4 @@
-Order: 80
+Order: 10
 Title: Script Aliases
 ---
 
