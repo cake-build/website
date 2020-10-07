@@ -1,126 +1,29 @@
 Order: 30
-RedirectFrom:
-  - docs/tutorials/extending-the-bootstrapper
-  - docs/tutorials/powershell-security
+Title: Cake runner for .NET Framework
 ---
+
+This runner is mainly for backwards compatibility where scripts or addins are used which require .NET Framework.
+In all other cases it is recommended to use [.NET Core Tool](dotnet-core-tool).
+
+# Requirements
+
+The [Cake](https://www.nuget.org/packages/Cake) NuGet package is a runner requiring [.NET Framework 4.6.1](https://www.microsoft.com/net/download/dotnet-framework/net461)
+or newer on Windows and Mono `5.12.0` or newer on Mac or Linux.
+
+:::{.alert .alert-warning}
+It is suggested to use [.NET Framework 4.7.2](https://www.microsoft.com/net/download/dotnet-framework/net472) or newer to run build scripts
+which are using addins targeting .NET Standard 2.0 only.
+:::
+
+# Bootstrapping for Cake runner for .NET Framework
 
 Bootstrapping scripts ensure you have Cake and other required dependencies installed.
 The bootstrapper scripts are also responsible for invoking Cake.
 
-:::{.alert .alert-info}
-If you have [.NET Core Tool](running-cake-scripts#net-core-tool) or any other Cake Runner already available in your
-environment you won't need a bootstrapping script.
-:::
-
-# Bootstrapping for .NET Core Tool
-
-:::{.alert .alert-info}
-The following instructions require .NET Core 3.0 or newer.
-See [How to manage .NET Core tools](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools) for details and other options.
-:::
-
-## Setup
-
-There's a one-time setup required for configuring a repository to use Cake .NET Core tool.
-
-Make sure to have a tool manifest available in your repository or create one using the following command:
-
-```shell
-dotnet new tool-manifest
-```
-
-Install Cake as a local tool using the `dotnet tool` command:
-
-```shell
-dotnet tool install Cake.Tool --version x.y.z
-```
-
-## Running build script
-
-Make sure tools are restored:
-
-```shell
-dotnet tool restore
-```
-
-Once installed, you can launch Cake using the .NET CLI:
-
-```shell
-dotnet cake
-```
-
-:::{.alert .alert-info}
-By convention this will execute the build script named `build.cake`.
-You can override this behavior by additionally passing the name of the build script.
-:::
-
-# Bootstrapping for Cake Frosting
-
-When creating a new [Cake Frosting](https://github.com/cake-build/frosting) project from the template default bootstrapping scripts for Windows, macOS and Linux are created.
-
-:::{.alert .alert-info}
-The following instructions require .NET Core 3.1.301 or newer.
-You can find the SDK at https://dotnet.microsoft.com/download
-:::
-
-## Setup
-
-To create a new [Cake Frosting](https://github.com/cake-build/frosting) project you need to install the Frosting template:
-
-```
-dotnet new --install Cake.Frosting.Template
-```
-
-Create a new Frosting project:
-
-```
-dotnet new cakefrosting
-```
-
-This will create the Cake Frosting build script and bootstrapping scripts.
-
-## Running build script
-
-
-Run the build script:
-
-<ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#windows">Windows</a></li>
-    <li><a data-toggle="tab" href="#linux">Linux</a></li>
-    <li><a data-toggle="tab" href="#macos">MacOS</a></li>
-</ul>
-
-<div class="tab-content">
-    <div id="windows" class="tab-pane fade in active">
-        <p>
-            <code class="language-powershell hljs">
-               ./build.ps1
-            </code>
-        </p>
-    </div>
-    <div id="linux" class="tab-pane fade">
-        <p>
-            <code class="language-bash hljs">
-               build.sh
-            </code>
-        </p>
-    </div>
-    <div id="macos" class="tab-pane fade">
-        <p>
-            <code class="language-bash hljs">
-               build.sh
-            </code>
-        </p>
-    </div>
-</div>
-
-# Bootstrapping for Cake runner for .NET Framework
-
 ## Getting the bootstrapper
 
-Bootstrapper for [Cake runner for .NET Framework](running-cake-scripts/#cake-runner-for-net-framework) is available in the
-[Cake Resources repository](https://github.com/cake-build/resources) and can be installed using the command for your
-operating system from below:
+Bootstrapper for Cake runner for .NET Framework is available in the [Cake Resources repository](https://github.com/cake-build/resources)
+and can be installed using the command for your operating system from below:
 
 <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#windows">Windows</a></li>
