@@ -1,5 +1,6 @@
-Order: 40
-RedirectFrom: docs/fundamentals/configuration
+Order: 10
+RedirectFrom:
+  - docs/fundamentals/configuration
 ---
 
 Cake supports the concept of external configuration, to allow the internals of how Cake operates to be controlled, based on a specified priority, from either:
@@ -14,7 +15,11 @@ Cake supports the concept of external configuration, to allow the internals of h
 
 As an example of where this overridable configuration can be applied, let's look at how Cake determines where to download NuGet packages from. By default, it does this by downloading the nuget packages user configured sources.  However, it may be necessary (for example, when running in an offline/local environment) to download these nuget packages from an alternative source.  This is where the Cake Configuration comes into play.
 
+### Environment Variable
+
 By creating an Environment variable with the name of `CAKE_NUGET_SOURCE` and setting the value to the URL that is required, Cake will use this alternative download source, rather than the defaults.
+
+### Configuration File
 
 Alternatively, you can create a `cake.config` file with the following content:
 
@@ -30,6 +35,8 @@ Source=https://mycustomurl
 Specifying a configuration value within a configuration file will override the same configuration value stored within an equivalent Environment variable.
 
 **NOTE:** This configuration file should be located in the same directory as your `build.cake` file.
+
+### Command Line
 
 Finally, you can specify an input parameter directly to the Cake.exe, in the following format:
 
@@ -49,4 +56,4 @@ cake.exe --nuget_source=http://mycustomurl;http://myothercustomurl
 
 <br />
 
-Refer to the [default configuration values](/docs/fundamentals/default-configuration-values) for a list of all the available configuration options.
+Refer to the [default configuration values](/docs/running-builds/configuration/default-configuration-values) for a list of all the available configuration options.

@@ -1,10 +1,12 @@
-Order: 50
-RedirectFrom: docs/fundamentals/default-configuration-values
+Order: 20
+RedirectFrom:
+  - docs/running-builds/default-configuration-values
+  - docs/fundamentals/default-configuration-values
 ---
 
 The following shows all of the configuration options currently available within Cake, as well as their default values.
 
-Refer to [Configuration](/docs/fundamentals/configuration) for instructions on using a config file.
+Refer to [set configuration values](/docs/running-builds/configuration/set-configuration-values) for instructions on using a config file.
 
 # NuGet Download Url
 
