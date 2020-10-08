@@ -10,6 +10,28 @@ A console application has the advantage of full IDE support, like IntelliSense, 
 [Cake.Frosting](https://github.com/cake-build/frosting) is a .NET host which allows you to write your build scripts as a console application
 (`netcoreapp3.1` or `net461`).
 
+# Usage
+
+```powershell
+dotnet Cake.Frosting.dll [switches]
+```
+
+## Switches
+
+| Switch | Description |
+|--------|-------------|
+| --target &lt;target&gt; | Sets the build target. |
+| --working &lt;dir&gt; | Sets the working directory. |
+| --verbosity &lt;value&gt; | Sets the verbosity. |
+| --dryrun | Performs a dry run. |
+| --version | Displays Cake.Frosting version number. |
+| --help | Prints help information. |
+
+## Custom switches
+
+All switches not recognized by Cake will be added to an argument list that is passed to the build script.
+See [Arguments And Environment Variables](../../writing-builds/args-and-environment-vars#arguments) how to read arguments in your script.
+
 # Bootstrapping for Cake Frosting
 
 When creating a new [Cake Frosting](https://github.com/cake-build/frosting) project from the template default bootstrapping scripts for Windows, macOS and Linux are created.

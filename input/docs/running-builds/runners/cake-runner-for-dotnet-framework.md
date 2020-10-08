@@ -15,6 +15,14 @@ It is suggested to use [.NET Framework 4.7.2](https://www.microsoft.com/net/down
 which are using addins targeting .NET Standard 2.0 only.
 :::
 
+# Usage
+
+```powershell
+Cake.exe [script] [switches]
+```
+
+^"../../../Shared/switches.md"
+
 # Bootstrapping for Cake runner for .NET Framework
 
 Bootstrapping scripts ensure you have Cake and other required dependencies installed.
