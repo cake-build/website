@@ -4,7 +4,7 @@ RedirectFrom: docs/fundamentals/sharing-build-state
 
 Sharing variables and state across your builds can currently be achieved in a handful of different ways, depending on what state you want to share and across what scope.
 
-## Typed Context
+# Typed Context
 
 :::{.alert .alert-success}
 Available since Cake 0.28.0.
@@ -16,7 +16,7 @@ You can use a typed context to easily share complex state across tasks *without*
 For more background on typed context, check out [the release blog post](https://cakebuild.net/blog/2018/05/cake-v0.28.0-released#typed-context)
 :::
 
-### Creating your typed context
+## Creating your typed context
 
 First, you will need a class to act as the typed context. This can be any standard C#, and doesn't need to include any Cake-specific code. For this example, we'll use the following simple class:
 
@@ -38,7 +38,7 @@ public class BuildData
 }
 ```
 
-### Returning your context from `Setup`
+## Returning your context from `Setup`
 
 To have your script use a typed context, you need to return an instance of your setup class from your (correctly-typed) `Setup` method. You can use this method to change how your tasks will run later. Using the example above:
 
@@ -55,7 +55,7 @@ Setup<BuildData>(setupContext => {
 });
 ```
 
-### Using your context in a `Task`
+## Using your context in a `Task`
 
 Finally, you can access your typed context from any task, by supplying a type parameter to the `Does`, `DoesForEach` or `WithCriteria` method of your task declaration:
 
@@ -77,7 +77,7 @@ Teardown<BuildData>((context, data) => // make sure you use the type parameter h
 });
 ```
 
-## Global Variables
+# Global Variables
 
 The simplest approach to sharing variables or state across your build is using global variables in your build script.
 
