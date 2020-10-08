@@ -10,6 +10,14 @@ This is the recommended way to run Cake Scripts.
 
 The [Cake.Tool](https://www.nuget.org/packages/Cake.Tool) NuGet package, is a .NET Core global tool compiled for .NET Core 2.1 or newer.
 
+# Usage
+
+```powershell
+dotnet cake [script] [switches]
+```
+
+^"../../../Shared/switches.md"
+
 # Bootstrapping for .NET Core Tool
 
 :::{.alert .alert-info}

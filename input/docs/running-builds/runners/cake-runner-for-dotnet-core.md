@@ -9,3 +9,11 @@ The Cake runner for .NET Core is deprecated and it is suggested to use [.NET Cor
 # Requirements
 
 The [Cake.CoreCLR](https://www.nuget.org/packages/Cake.CoreCLR) NuGet package is a runner compiled for .NET Core 2.0.
+
+# Usage
+
+```powershell
+Cake.exe [script] [switches]
+```
+
+^"../../../Shared/switches.md"
