@@ -99,7 +99,7 @@ To enable IntelliSense support in Visual Studio Code follow these steps:
     </div>
     <div id="frosting" class="tab-pane fade">
         <p>
-            IntelliSense support for <a href="../getting-started/running-cake-scripts#cake-frosting">Cake Frosting</a> projects is provided through the
+            IntelliSense support for <a href="../../running-builds/runners#cake-frosting">Cake Frosting</a> projects is provided through the
             <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp">C# extension for Visual Studio Code</a>.
         </p>
         <ol>
