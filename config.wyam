@@ -62,3 +62,9 @@ Pipelines.Add("RenderDsl",
     HtmlInsert("div#infobar-headings", (doc, ctx) => ctx.GenerateInfobarHeadings(doc)),
     WriteFiles()
 );
+
+Pipelines.Add("BuildSiteMap",
+    Documents(@ctx.Documents.ExceptPipeline("Addins").Except(@ctx.Documents.FromPipeline("Code"))),
+    Sitemap(),
+    WriteFiles((d,c) => "sitemap.xml")
+);
