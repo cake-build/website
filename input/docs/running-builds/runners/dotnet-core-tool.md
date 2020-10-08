@@ -2,7 +2,7 @@ Order: 10
 Title: .NET Core Tool
 ---
 
-:::{.alert .alert-info}
+:::{.alert .alert-success}
 This is the recommended way to run Cake Scripts.
 :::
 

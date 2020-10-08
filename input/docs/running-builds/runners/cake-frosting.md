@@ -1,7 +1,7 @@
 Order: 20
 ---
 
-:::{.alert .alert-info}
+:::{.alert .alert-success}
 A console application has the advantage of full IDE support, like IntelliSense, refactoring and debugging.
 :::
 
