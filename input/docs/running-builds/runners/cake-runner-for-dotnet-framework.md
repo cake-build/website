@@ -34,13 +34,13 @@ Bootstrapper for Cake runner for .NET Framework is available in the [Cake Resour
 and can be installed using the command for your operating system from below:
 
 <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#windows">Windows</a></li>
-    <li><a data-toggle="tab" href="#linux">Linux</a></li>
-    <li><a data-toggle="tab" href="#macos">MacOS</a></li>
+    <li class="active"><a data-toggle="tab" href="#windows1">Windows</a></li>
+    <li><a data-toggle="tab" href="#linux1">Linux</a></li>
+    <li><a data-toggle="tab" href="#macos1">MacOS</a></li>
 </ul>
 
 <div class="tab-content">
-    <div id="windows" class="tab-pane fade in active">
+    <div id="windows1" class="tab-pane fade in active">
         <p>
             Open a new PowerShell window and run the following command:
         </p>
@@ -72,7 +72,7 @@ and can be installed using the command for your operating system from below:
             </div>
         </p>
     </div>
-    <div id="linux" class="tab-pane fade">
+    <div id="linux1" class="tab-pane fade">
         <p>
             Open a new shell and run the following command:
         </p>
@@ -97,7 +97,7 @@ and can be installed using the command for your operating system from below:
             </div>
         </p>
     </div>
-    <div id="macos" class="tab-pane fade">
+    <div id="macos1" class="tab-pane fade">
         <p>
             Open a new shell and run the following command:
         </p>
@@ -128,3 +128,86 @@ and can be installed using the command for your operating system from below:
 
 The bootstrapper that you can get directly from [cakebuild.net](https://cakebuild.net) is intended as a starting point for what can be done.
 It is the developer's discretion to extend the bootstrapper to solve for your own requirements.
+
+# Using pre-release versions
+
+Cake uses [Azure Artifacts](https://dev.azure.com/cake-build/Cake/_packaging?_a=package&feed=cake&package=Cake&protocolType=NuGet) as a NuGet feed for testing and pre-release builds.
+With these pre-release builds the next version of Cake can be accessed and utilized for getting the latest features or testing addins or build scripts to know if the next release will be safe when you need to upgrade.
+
+:::{.alert .alert-info}
+These instructions assume you are using the NuGet CLI as done in the [default bootstrapper for Windows](https://github.com/cake-build/resources/blob/develop/build.ps1)
+or [default bootstrapper for macOS & Linux](https://github.com/cake-build/resources/blob/develop/build.sh).
+:::
+
+1. Update the bootstrapper
+
+   <ul class="nav nav-tabs">
+       <li class="active"><a data-toggle="tab" href="#windows2">Windows</a></li>
+       <li><a data-toggle="tab" href="#linux2">Linux</a></li>
+       <li><a data-toggle="tab" href="#macos2">MacOS</a></li>
+   </ul>
+
+   <div class="tab-content">
+       <div id="windows2" class="tab-pane fade in active">
+           <p>
+               Replace the following line in the bootstrapper:
+           </p>
+           <p>
+               <code class="language-powershell hljs">
+                   $NuGetOutput = Invoke-Expression "& $env:NUGET_EXE_INVOCATION install -ExcludeVersion -OutputDirectory `"$TOOLS_DIR`""
+               </code>
+           </p>
+           <p>
+               with:
+           </p>
+           <p>
+               <code class="language-powershell hljs">
+                   $NuGetOutput = Invoke-Expression "& $env:NUGET_EXE_INVOCATION install -ExcludeVersion -OutputDirectory `"$TOOLS_DIR`" -Source https://pkgs.dev.azure.com/cake-build/Cake/_packaging/cake/nuget/v3/index.json"
+               </code>
+           </p>
+       </div>
+       <div id="linux2" class="tab-pane fade">
+           <p>
+               Replace the following line in the bootstrapper:
+           </p>
+           <p>
+               <code class="language-bash hljs">
+                   mono "$NUGET_EXE" install -ExcludeVersion
+               </code>
+           </p>
+           <p>
+               with:
+           </p>
+           <p>
+               <code class="language-bash hljs">
+                   mono "$NUGET_EXE" install -ExcludeVersion -Source https://pkgs.dev.azure.com/cake-build/Cake/_packaging/cake/nuget/v3/index.json"
+               </code>
+           </p>
+       </div>
+       <div id="macos2" class="tab-pane fade">
+           <p>
+               Replace the following line in the bootstrapper:
+           </p>
+           <p>
+               <code class="language-bash hljs">
+                   mono "$NUGET_EXE" install -ExcludeVersion
+               </code>
+           </p>
+           <p>
+               with:
+           </p>
+           <p>
+               <code class="language-bash hljs">
+                   mono "$NUGET_EXE" install -ExcludeVersion -Source https://pkgs.dev.azure.com/cake-build/Cake/_packaging/cake/nuget/v3/index.json"
+               </code>
+           </p>
+       </div>
+   </div>
+2. Modify the `packages.config` file to pin the Cake version to one of the pre-releases:
+
+   ```xml
+   <?xml version="1.0" encoding="utf-8"?>
+   <packages>
+       <package id="Cake" version="1.0.0-alpha0079" />
+   </packages>
+   ```
