@@ -5,6 +5,7 @@ RedirectFrom:
   - docs/overview/requirements
   - docs/getting-started/running-cake-scripts
   - docs/getting-started/bootstrapping-scripts
+  - docs/running-builds/using-cake-pre-release
 ---
 
 There are different runners available for running Cake scripts.
