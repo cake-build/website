@@ -16,7 +16,7 @@ The [Cake.Tool](https://www.nuget.org/packages/Cake.Tool) NuGet package, is a .N
 dotnet cake [script] [switches]
 ```
 
-^"../../../Shared/switches.md"
+^"../../../Shared/switches.txt"
 
 # Bootstrapping for .NET Core Tool
 

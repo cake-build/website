@@ -16,4 +16,4 @@ The [Cake.CoreCLR](https://www.nuget.org/packages/Cake.CoreCLR) NuGet package is
 Cake.exe [script] [switches]
 ```
 
-^"../../../Shared/switches.md"
+^"../../../Shared/switches.txt"
