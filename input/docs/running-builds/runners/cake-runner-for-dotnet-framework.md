@@ -21,7 +21,7 @@ which are using addins targeting .NET Standard 2.0 only.
 Cake.exe [script] [switches]
 ```
 
-^"../../../Shared/switches.md"
+^"../../../Shared/switches.txt"
 
 # Bootstrapping for Cake runner for .NET Framework
 
