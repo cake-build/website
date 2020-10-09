@@ -1,5 +1,5 @@
 Name: Cake.Unity3D
-NuGet: 
+NuGet: Cake.Unity3D
 Assemblies:
 - "/**/Cake.Unity3D.dll"
 Repository: https://github.com/samoatesgames/Cake.Unity3D/
