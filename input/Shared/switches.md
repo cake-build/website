@@ -2,7 +2,6 @@
 
 | Switch | Description |
 |--------|-------------|
-| --target=&lt;target&gt; | Target task to invoke. This is a [custom switch](#custom-switches) which script must support explicitly. |
 | --verbosity=&lt;value&gt; | Specifies the amount of information to be displayed (quiet, minimal, normal, verbose, diagnostic). |
 | --debug | Launches script in debug mode. |
 | --showdescription | Shows description about tasks. |
@@ -12,6 +11,10 @@
 | --version | Displays version information. |
 | --info | Displays additional information about Cake execution. |
 | --help | Prints help information. |
+
+:::{.alert .alert-info}
+`--target=<target>` is not a switch of the runner, but a [custom switch](#custom-switches) which scripts often implement to invoke a specific task.
+:::
 
 ## Custom switches
 
