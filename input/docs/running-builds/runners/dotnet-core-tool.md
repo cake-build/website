@@ -63,3 +63,8 @@ dotnet cake
 By convention this will execute the build script named `build.cake`.
 You can override this behavior by additionally passing the name of the build script.
 :::
+
+# Using pre-release versions
+
+Cake uses [Azure Artifacts](https://dev.azure.com/cake-build/Cake/_packaging?_a=package&feed=cake&package=Cake.Tool&protocolType=NuGet) as a NuGet feed for testing and pre-release builds.
+With these pre-release builds the next version of Cake can be accessed and utilized for getting the latest features or testing addins or build scripts to know if the next release will be safe when you need to upgrade.

@@ -1,4 +1,4 @@
-Order: 30
+Order: 20
 RedirectFrom: docs/tutorials/pinning-cake-version
 ---
 

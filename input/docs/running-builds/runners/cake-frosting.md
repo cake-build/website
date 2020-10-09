@@ -91,3 +91,8 @@ Run the build script:
         </p>
     </div>
 </div>
+
+# Using pre-release versions
+
+Cake uses [Azure Artifacts](https://dev.azure.com/cake-build/Cake/_packaging?_a=package&feed=cake&package=Cake.Frosting&protocolType=NuGet) as a NuGet feed for testing and pre-release builds.
+With these pre-release builds the next version of Cake can be accessed and utilized for getting the latest features or testing addins or build scripts to know if the next release will be safe when you need to upgrade.
