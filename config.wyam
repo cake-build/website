@@ -12,7 +12,13 @@ Settings[DocsKeys.BlogRssPath] = "blog/feed/rss/index.xml";
 
 Pipelines.InsertBefore(Docs.Code, "Addins",
     ReadFiles("../addins/*.yml"),
-    Yaml()
+    Yaml(),
+    Meta(
+        "Version",
+        FileSystem.GetInputFile($"../release/addins/{@doc.String("NuGet")}.version").Exists
+            ? FileSystem.GetInputFile($"../release/addins/{@doc.String("NuGet")}.version").ReadAllText()
+            : null
+    )
 );
 
 Pipelines.InsertAfter("Addins", "AddinCategories",
