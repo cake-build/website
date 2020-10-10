@@ -1,5 +1,6 @@
 #addin "nuget:https://api.nuget.org/v3/index.json?package=Polly&version=7.1.0"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=LitJson&version=0.13.0"
+#addin "nuget:https://api.nuget.org/v3/index.json??package=Cake.FileHelpers&version=3.3.0"
 
 using System.Net.Http;
 using Polly;
@@ -90,6 +91,8 @@ public static void DownloadPackage(this ICakeContext context, DirectoryPath addi
             }
         }
     }
+
+    context.FileWriteText(addinDir.CombineWithFilePath($"{packageId}.version"), packageInfo.version);
 
     context.Information("[{0}] done.", packageId);
 }

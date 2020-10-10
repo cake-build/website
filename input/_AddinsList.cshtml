@@ -9,6 +9,7 @@
     string author = @addin.String("Author");
     string nuget = @addin.String("NuGet");
     string repository = @addin.String("repository");
+    string version = @addin.String("Version");
 
     <div class="panel panel-default">
         <div class="panel-heading">
@@ -20,6 +21,11 @@
                 <p>@description</p>
             }    
             <dl class="dl-horizontal">	
+                @if(!string.IsNullOrEmpty(version))
+                {
+                    <dt>Version</dt>
+                    <dd>@version</dd>
+                }
                 @if(!string.IsNullOrEmpty(author))
                 {
                     <dt>Author</dt>
