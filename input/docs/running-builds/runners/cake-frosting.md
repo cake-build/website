@@ -18,14 +18,14 @@ dotnet Cake.Frosting.dll [switches]
 
 ## Switches
 
-| Switch | Description |
-|--------|-------------|
-| --target &lt;target&gt; | Sets the build target. |
-| --working &lt;dir&gt; | Sets the working directory. |
-| --verbosity &lt;value&gt; | Sets the verbosity. |
-| --dryrun | Performs a dry run. |
-| --version | Displays Cake.Frosting version number. |
-| --help | Prints help information. |
+| Switch                    | Description                            | Available Since                                         |
+|---------------------------|----------------------------------------|---------------------------------------------------------|
+| --target &lt;target&gt;   | Sets the build target.                 | https://github.com/cake-build/cake/releases/tag/v0.30.0 |
+| --working &lt;dir&gt;     | Sets the working directory.            | https://github.com/cake-build/cake/releases/tag/v0.30.0 |
+| --verbosity &lt;value&gt; | Sets the verbosity.                    | https://github.com/cake-build/cake/releases/tag/v0.30.0 |
+| --dryrun                  | Performs a dry run.                    | https://github.com/cake-build/cake/releases/tag/v0.30.0 |
+| --version                 | Displays Cake.Frosting version number. | https://github.com/cake-build/cake/releases/tag/v0.30.0 |
+| --help                    | Prints help information.               | https://github.com/cake-build/cake/releases/tag/v0.30.0 |
 
 ## Custom switches
 
