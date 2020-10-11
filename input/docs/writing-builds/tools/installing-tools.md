@@ -5,17 +5,13 @@ RedirectFrom: docs/tools/installing-tools
 This guide will demonstrate how to install tool executables to make sure
 they are discovered by your build script.
 
-# From NuGet
+# Installing Tools From NuGet
 
-## Via bootstrapper
+## Via Script
 
-The recommended way of using Cake is by using the bootstrapper script which you can
-read more about in the [Setting up a new project](/docs/tutorials/setting-up-a-new-project).
-
-When using the bootstrapper script you can simply add the NuGet package to the
-`packages.config` file in the `tools` directory.
-
-## Via script
+:::{.alert .alert-success}
+This is the recommended way to install tools.
+:::
 
 Cake extends the C# language with custom pre-processor directives, and we've added one
 to automatically download a tool from NuGet and install it in the `tools` folder.
@@ -27,10 +23,19 @@ as part of executing your build script, simply use the `#tool` directive.
 #tool "xunit.runner.console"
 ```
 
-For more information see [preprocessor directives](/docs/fundamentals/preprocessor-directives)
+For more information see [preprocessor directives](../preprocessor-directives)
 
-# From disk
+## Via Bootstrapper
+
+:::{.alert .alert-warning}
+This option is only available when using [Cake runner for .NET Framework](/docs/running-builds/runners/cake-runner-for-dotnet-framework) or
+[Cake runner for .NET Core](/docs/running-builds/runners/cake-runner-for-dotnet-core).
+:::
+
+The [default bootstrapper for Cake runner for .NET Framework](/docs/running-builds/runners/cake-runner-for-dotnet-framework#bootstrapping-for-cake-runner-for.net-framework)
+supports restoring of tools listed in the `tools\packages.config` file before running the Cake script.
+
+# Installing Tools From Disk
 
 If you want to install a tool that's not available via NuGet or if you prefer to store
-the tool locally, you want to take a look at the
-[tool resolution conventions](/docs/tools/tool-resolution).
+the tool locally, you want to take a look at the [tool resolution conventions](tool-resolution).
