@@ -5,7 +5,7 @@ RedirectFrom: docs/fundamentals/args-and-environment-vars
 
 How you can pass settings to build.cake.
 
-# Arguments
+# Passing And Reading Arguments
 
 Call the [Argument alias](/dsl/arguments/) in your Cake file to read arguments from the command line.
 
@@ -59,48 +59,13 @@ Execution:
 The conversion uses [type converters](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.typeconverter) under the hood to convert the string value to the desired type.
 :::
 
-# Environment Variables
+# Reading Environment Variables
 
 
-Call the EnvironmentVariable() alias in your cake file to get the environment variable.
+Call the [Environment variables alias](/dsl/environment/#Environment-Variables) alias in your Cake file to get the environment variable.
 
-
-```csharp
-var mySetting = EnvironmentVariable("my_setting") ?? "default value";
-```
-
-For example:
+The following example will read the value of the `BUILD_NUMBER` environment variable or return `42` if the environment variable is not defined:
 
 ```csharp
-var mySetting = EnvironmentVariable("my_setting") ?? "default value";
-
-Task("Default")
-    .Does(() =>
-{
-    Information("My setting is: " + mySetting);
-});
-
-RunTarget("Default");
-```
-
-PowerShell:
-```powershell
-$env:my_setting = "from PowerShell"
-.\build.ps1
-```
-
-The output is
-```
-My setting is: from PowerShell
-```
-
-Batch File:
-```batchfile
-SET my_setting=from a batch file
-powershell -File build.ps1
-```
-
-The output is
-```
-My setting is: from a batch file
+Information(EnvironmentVariable<int>("BUILD_NUMBER", 42));
 ```
