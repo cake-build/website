@@ -1,16 +1,24 @@
 ## Switches
 
-| Switch                    | Description                                                                                        | Available Since                                         |
-|---------------------------|----------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| --verbosity=&lt;value&gt; | Specifies the amount of information to be displayed (quiet, minimal, normal, verbose, diagnostic). | https://github.com/cake-build/cake/releases/tag/v0.1.1  |
-| --debug                   | Launches script in debug mode.                                                                     | https://github.com/cake-build/cake/releases/tag/v0.12.0 |
-| --showdescription         | Shows description about tasks.                                                                     | https://github.com/cake-build/cake/releases/tag/v0.1.10 |
-| --showtree, --tree        | Shows the task dependency tree.                                                                    | https://github.com/cake-build/cake/releases/tag/v0.31.0 |
-| --dryrun                  | Performs a dry run.                                                                                | https://github.com/cake-build/cake/releases/tag/v0.2.0  |
-| --exclusive               | Execute a single task without any dependencies.                                                    | https://github.com/cake-build/cake/releases/tag/v0.29.0 |
-| --version                 | Displays version information.                                                                      | https://github.com/cake-build/cake/releases/tag/v0.1.12 |
-| --info                    | Displays additional information about Cake execution.                                              | https://github.com/cake-build/cake/releases/tag/v0.31.0 |
-| --help                    | Prints help information.                                                                           | https://github.com/cake-build/cake/releases/tag/v0.1.12 |
+| Switch                    | Description                                                                                        | Available Since |
+|---------------------------|----------------------------------------------------------------------------------------------------|-----------------|
+| --verbosity=&lt;value&gt; | Specifies the amount of information to be displayed (quiet, minimal, normal, verbose, diagnostic). | [0.1.1]         |
+| --debug                   | Launches script in debug mode.                                                                     | [0.12.0]        |
+| --showdescription         | Shows description about tasks.                                                                     | [0.1.10]        |
+| --showtree, --tree        | Shows the task dependency tree.                                                                    | [0.31.0]        |
+| --dryrun                  | Performs a dry run.                                                                                | [0.2.0]         |
+| --exclusive               | Execute a single task without any dependencies.                                                    | [0.29.0]        |
+| --version                 | Displays version information.                                                                      | [0.1.12]        |
+| --info                    | Displays additional information about Cake execution.                                              | [0.31.0]        |
+| --help                    | Prints help information.                                                                           | [0.1.12]        |
+
+[0.1.1]: https://github.com/cake-build/cake/releases/tag/v0.1.1
+[0.1.10]: https://github.com/cake-build/cake/releases/tag/v0.1.10
+[0.1.12]: https://github.com/cake-build/cake/releases/tag/v0.1.12
+[0.2.0]: https://github.com/cake-build/cake/releases/tag/v0.2.0
+[0.12.0]: https://github.com/cake-build/cake/releases/tag/v0.12.0
+[0.29.0]: https://github.com/cake-build/cake/releases/tag/v0.29.0
+[0.31.0]: https://github.com/cake-build/cake/releases/tag/v0.31.0
 
 :::{.alert .alert-info}
 `--target=<target>` is not a switch of the runner, but a [custom switch](#custom-switches) which scripts often implement to invoke a specific task.
