@@ -1,5 +1,6 @@
 Order: 20
 Title: Visual Studio Code snippets
+Description: Support for code snippets
 RedirectFrom: docs/editors/vscode/snippets
 ---
 

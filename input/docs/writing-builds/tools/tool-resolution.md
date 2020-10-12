@@ -1,4 +1,5 @@
 Order: 20
+Description: How external tools are located
 RedirectFrom: docs/tools/tool-resolution
 ---
 

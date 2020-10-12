@@ -1,4 +1,5 @@
 Order: 20
+Description: Guide on how to get started with Cake
 RedirectFrom:
   - docs/tutorials/getting-started
   - docs/tutorials/setting-up-a-new-project

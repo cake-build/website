@@ -1,4 +1,5 @@
 Order: 20
+Description: How to make tasks dependent on each other
 RedirectFrom: docs/fundamentals/dependencies
 ---
 # Task dependencies

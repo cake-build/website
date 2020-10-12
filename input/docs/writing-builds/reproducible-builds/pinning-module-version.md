@@ -1,4 +1,5 @@
 Order: 40
+Description: How to make builds reproducible when using modules
 ---
 
 If modules are referenced through a `packages.config` file in the modules folder, they can be pinned in the same way as the Cake version (when using the Cake Runner for .Net Framework or .NET Core).

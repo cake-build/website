@@ -1,4 +1,5 @@
 Order: 10
+Description: How to install external tools
 RedirectFrom: docs/tools/installing-tools
 ---
 
