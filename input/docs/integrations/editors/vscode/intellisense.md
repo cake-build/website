@@ -66,7 +66,7 @@ To enable IntelliSense support in Visual Studio Code follow these steps:
                         <p>
                             On Windows using <a href="https://chocolatey.org/">Chocolatey</a>:
                         </p>
-                        <pre><code class="language-cmd">choco install cake-bakery.portable</code></pre>
+                        <pre><code class="language-cmd hljs">choco install cake-bakery.portable</code></pre>
                     </li>
                     <li>
                         <p>
@@ -84,7 +84,7 @@ To enable IntelliSense support in Visual Studio Code follow these steps:
                                 (<code>~/.omnisharp/</code> if you are on Linux/macOS) with the following content
                                 (replace <code>&lt;custom_path&gt;</code> with the path to Cake.Bakery.):
                             </p>
-<pre><code class="language-json">
+<pre><code class="language-json hljs">
 {
   "cake": {
     "bakeryPath": "&lt;custom_path&gt;/Cake.Bakery/tools/Cake.Bakery.exe"
@@ -181,7 +181,7 @@ To enable IntelliSense support in Visual Studio Code follow these steps:
                         <p>
                             On Windows using <a href="https://chocolatey.org/">Chocolatey</a>:
                         </p>
-                        <pre><code class="language-cmd">choco install cake-bakery.portable</code></pre>
+                        <pre><code class="language-cmd hljs">choco install cake-bakery.portable</code></pre>
                     </li>
                     <li>
                         <p>
@@ -199,7 +199,7 @@ To enable IntelliSense support in Visual Studio Code follow these steps:
                                 (<code>~/.omnisharp/</code> if you are on Linux/macOS) with the following content
                                 (replace <code>&lt;custom_path&gt;</code> with the path to Cake.Bakery.):
                             </p>
-<pre><code class="language-json">
+<pre><code class="language-json hljs">
 {
   "cake": {
     "bakeryPath": "&lt;custom_path&gt;/Cake.Bakery/tools/Cake.Bakery.exe"
@@ -280,7 +280,7 @@ To enable IntelliSense support in Visual Studio Code follow these steps:
                         <p>
                             On Windows using <a href="https://chocolatey.org/">Chocolatey</a>:
                         </p>
-                        <pre><code class="language-cmd">choco install cake-bakery.portable</code></pre>
+                        <pre><code class="language-cmd hljs">choco install cake-bakery.portable</code></pre>
                     </li>
                     <li>
                         <p>
@@ -298,7 +298,7 @@ To enable IntelliSense support in Visual Studio Code follow these steps:
                                 (<code>~/.omnisharp/</code> if you are on Linux/macOS) with the following content
                                 (replace <code>&lt;custom_path&gt;</code> with the path to Cake.Bakery.):
                             </p>
-<pre><code class="language-json">
+<pre><code class="language-json hljs">
 {
   "cake": {
     "bakeryPath": "&lt;custom_path&gt;/Cake.Bakery/tools/Cake.Bakery.exe"

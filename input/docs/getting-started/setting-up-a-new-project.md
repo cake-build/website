@@ -16,13 +16,13 @@ on .NET Core 3.0 and newer.
 
 Make sure to have a tool manifest available in your repository or create one using the following command:
 
-```shell
+```powershell
 dotnet new tool-manifest
 ```
 
 Install Cake as a local tool using the `dotnet tool` command:
 
-```shell
+```powershell
 dotnet tool install Cake.Tool --version x.y.z
 ```
 

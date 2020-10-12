@@ -35,13 +35,13 @@ If you have .NET Core Tool already available in your environment you can skip th
 
 Make sure to have a tool manifest available in your repository or create one using the following command:
 
-```shell
+```powershell
 dotnet new tool-manifest
 ```
 
 Install Cake as a local tool using the `dotnet tool` command:
 
-```shell
+```powershell
 dotnet tool install Cake.Tool --version x.y.z
 ```
 
@@ -49,13 +49,13 @@ dotnet tool install Cake.Tool --version x.y.z
 
 Make sure tools are restored:
 
-```shell
+```powershell
 dotnet tool restore
 ```
 
 Once installed, you can launch Cake using the .NET CLI:
 
-```shell
+```powershell
 dotnet cake
 ```
 
