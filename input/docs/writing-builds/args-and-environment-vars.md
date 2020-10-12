@@ -36,7 +36,9 @@ Execution:
     </div>
     <div id="frosting2" class="tab-pane fade">
         <p>
-            dotnet Cake.Frosting.dll --showstuff=true
+            <code class="language-powershell hljs">
+                dotnet Cake.Frosting.dll --showstuff=true
+            </code>
         </p>
     </div>
     <div id="netfx2" class="tab-pane fade">
