@@ -1,0 +1,125 @@
+Title: Thanks
+---
+
+@*
+Based on Code from https://github.com/reactiveui/website
+
+The MIT License (MIT)
+
+Copyright (c) 2017 Geoffrey Huntley
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*@
+
+We would like to say thank you to the following people and organizations without whom Cake would not have been possible.
+
+<h1>Sponsors</h1>
+
+<object data="https://opencollective.com/cake/sponsors.svg" type="image/svg+xml"></object>
+
+<h1>Backers</h1>
+
+@for (var id = 0; id <= 200; id++)
+{
+    <a href="https://opencollective.com/cake/backer/@id/website" target="_blank" rel="nofollow">
+        <img src="//opencollective.com/cake/backer/@id/avatar.svg" />
+    </a>
+}
+
+<h1>Contributors</h1>
+
+<div class="alert alert-info">
+  Listed are GitHub users that have contributed to the following repositories:
+  <a href="https://github.com/cake-build/bakery">bakery</a>,
+  <a href="https://github.com/cake-build/bitrise-cake-step">bitrise-cake-step</a>,
+  <a href="https://github.com/cake-build/cake">cake</a>,
+  <a href="https://github.com/cake-build/cake-action">cake-action</a>,
+  <a href="https://github.com/cake-build/cake-teamcity">cake-teamcity</a>,
+  <a href="https://github.com/cake-build/cake-vs">cake-vs</a>,
+  <a href="https://github.com/cake-build/cake-vscode">cake-vscode</a>,
+  <a href="https://github.com/cake-build/cake-vso">cake-vso</a>,
+  <a href="https://github.com/cake-build/cake-yeoman">cake-yeoman</a>,
+  <a href="https://github.com/cake-build/pantry">pantry</a>,
+  <a href="https://github.com/cake-build/resources">resources</a> and
+  <a href="https://github.com/cake-build/website">website</a>
+</div>
+
+<div class="contributors"></div>
+
+<script>
+  $.when(
+    $.ajax('https://api.github.com/repos/cake-build/bakery/contributors?per_page=250'),
+    $.ajax('https://api.github.com/repos/cake-build/bitrise-cake-step/contributors?per_page=250'),
+    $.ajax('https://api.github.com/repos/cake-build/cake/contributors?per_page=250'),
+    $.ajax('https://api.github.com/repos/cake-build/cake-action/contributors?per_page=250'),
+    $.ajax('https://api.github.com/repos/cake-build/cake-teamcity/contributors?per_page=250'),
+    $.ajax('https://api.github.com/repos/cake-build/cake-vs/contributors?per_page=250'),
+    $.ajax('https://api.github.com/repos/cake-build/cake-vscode/contributors?per_page=250'),
+    $.ajax('https://api.github.com/repos/cake-build/cake-vso/contributors?per_page=250'),
+    $.ajax('https://api.github.com/repos/cake-build/cake-yeoman/contributors?per_page=250'),
+    $.ajax('https://api.github.com/repos/cake-build/pantry/contributors?per_page=250'),
+    $.ajax('https://api.github.com/repos/cake-build/resources/contributors?per_page=250'),
+    $.ajax('https://api.github.com/repos/cake-build/website/contributors?per_page=250'))
+  .then(function(bakeryData, bitriseData, cakeData, actionData, teamcityData, vsData, vscodeData, vsoData, yeomanData, pantryData, resourcesData, websiteData) {
+    var persons = {};
+    var allData =
+      bakeryData[0].
+        concat(bitriseData[0]).
+        concat(cakeData[0]).
+        concat(actionData[0]).
+        concat(teamcityData[0]).
+        concat(vsData[0]).
+        concat(vscodeData[0]).
+        concat(vsoData[0]).
+        concat(yeomanData[0]).
+        concat(pantryData[0]).
+        concat(resourcesData[0]).
+        concat(websiteData[0]);
+
+    for(var i = 0; i < allData.length; i++) {
+        persons[allData[i].login] = allData[i];
+    }
+
+    // var sortedLogins = Object.keys(persons).sort();
+    var logins = Object.keys(persons);
+    shuffleArray(logins);
+
+    $(logins).each(function (index, login) {
+      var person = persons[login];
+      var img = '<img class="contributor" src="' + person.avatar_url + '" />';
+      $('.contributors')
+        .append('<a title="' + person.login + '" href="' + person.html_url + '">'
+                + img + '</a>');
+    });
+  });
+
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+</script>
+
+<style>
+  .contributor {
+    width: 80px;
+    border-radius: 730px;
+    margin: 10px 10px 0 0;
+  }
+</style>
