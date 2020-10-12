@@ -5,6 +5,10 @@ RedirectFrom: docs/fundamentals/preprocessor-directives
 Cake scripts have support for pre-processor line directives, which run before the script is executed.
 These can be used to reference other scripts, assemblies, namespaces and more.
 
+:::{.alert .alert-info}
+Preprocessor directives are not required or available when running with [Cake Frosting](/docs/running-builds/runners/cake-frosting).
+:::
+
 # Add-in directive
 The add-in directive is used to install and reference assemblies using NuGet.
 
