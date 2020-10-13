@@ -47,13 +47,13 @@ You can find the SDK at https://dotnet.microsoft.com/download
 
 To create a new [Cake Frosting](https://github.com/cake-build/frosting) project you need to install the Frosting template:
 
-```
+```powershell
 dotnet new --install Cake.Frosting.Template
 ```
 
 Create a new Frosting project:
 
-```
+```powershell
 dotnet new cakefrosting
 ```
 
