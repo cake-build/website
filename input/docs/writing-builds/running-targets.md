@@ -1,4 +1,5 @@
 Order: 30
+Description: How to run targets and tasks
 RedirectFrom: docs/fundamentals/running-targets
 ---
 

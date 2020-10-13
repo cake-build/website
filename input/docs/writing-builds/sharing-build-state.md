@@ -1,4 +1,5 @@
 Order: 70
+Description: How to share state across tasks
 RedirectFrom: docs/fundamentals/sharing-build-state
 ---
 

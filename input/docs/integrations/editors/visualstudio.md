@@ -1,5 +1,6 @@
 Order: 30
 Title: Visual Studio
+Description: Extensions and supported features for Visual Studio
 RedirectFrom: docs/editors/visualstudio
 ---
 

@@ -1,4 +1,5 @@
 Order: 30
+Description: How to define criterias for tasks
 RedirectFrom: docs/fundamentals/criteria
 ---
 

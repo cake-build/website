@@ -1,5 +1,6 @@
 Order: 10
 Title: Azure DevOps
+Description: Extensions and supported features for Azure DevOps
 RedirectFrom:
   - docs/build-systems/vso
   - docs/build-systems/azure-devops

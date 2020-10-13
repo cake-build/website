@@ -1,4 +1,5 @@
 Order: 20
+Description: Available configuration options
 RedirectFrom:
   - docs/running-builds/default-configuration-values
   - docs/fundamentals/default-configuration-values

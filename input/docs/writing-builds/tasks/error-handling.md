@@ -1,4 +1,5 @@
 Order: 50
+Description: How to implement error handling in tasks
 RedirectFrom: docs/fundamentals/error-handling
 ---
 

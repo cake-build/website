@@ -1,4 +1,5 @@
 Order: 20
+Description: How to create custom addins
 ---
 
 Start by creating a new class library project and add a reference to the [Cake.Core](/api/Cake.Core/) NuGet package via the package manager.
