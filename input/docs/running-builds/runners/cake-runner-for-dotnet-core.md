@@ -13,7 +13,7 @@ The [Cake.CoreCLR](https://www.nuget.org/packages/Cake.CoreCLR) NuGet package is
 # Usage
 
 ```powershell
-Cake.exe [script] [switches]
+dotnet Cake.dll [script] [switches]
 ```
 
 ^"../../../Shared/switches.txt"
