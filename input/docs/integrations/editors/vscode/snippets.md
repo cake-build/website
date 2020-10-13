@@ -4,8 +4,6 @@ Description: Support for code snippets
 RedirectFrom: docs/editors/vscode/snippets
 ---
 
-# Visual Studio Code snippets
-
 <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#tool">.NET Core Tool</a></li>
     <li><a data-toggle="tab" href="#frosting">Cake Frosting</a></li>
