@@ -121,11 +121,11 @@ You can also use the commands from the Build > Cake Build menu to install the de
 
 <div class="tab-content">
     <div id="tool4" class="tab-pane fade in active">
-            Task runner is currently not support for <a href="/docs/running-builds/runners/dotnet-core-tool">.NET Core Tool</a>.
+            Task runner is currently not supported for <a href="/docs/running-builds/runners/dotnet-core-tool">.NET Core Tool</a>.
     </div>
     <div id="frosting4" class="tab-pane fade">
         <p>
-            Task runner is currently not support for <a href="/docs/running-builds/runners/cake-frosting">Cake Frosting</a> projects.
+            Task runner is currently not supported for <a href="/docs/running-builds/runners/cake-frosting">Cake Frosting</a> projects.
         </p>
     </div>
     <div id="netfx4" class="tab-pane fade">
@@ -145,6 +145,6 @@ You can also use the commands from the Build > Cake Build menu to install the de
         </p>
     </div>
     <div id="core4" class="tab-pane fade">
-            Task runner is currently not support for <a href="/docs/running-builds/runners/cake-runner-for-dotnet-core">Cake runner for .NET Core</a>.
+            Task runner is currently not supported for <a href="/docs/running-builds/runners/cake-runner-for-dotnet-core">Cake runner for .NET Core</a>.
     </div>
 </div>
