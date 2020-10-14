@@ -5,61 +5,68 @@ NoGutter: true
 ---
 <div class="jumbotron">
     <div class="container">
-        <h1>What is Cake?</h1>
-        <p>Cake (C# Make) is a cross-platform build automation system with a C# DSL for tasks such as compiling code, copying files and folders, running unit tests, compressing files and building NuGet packages.</p>
-        <p>
-            <a class="btn btn-primary btn-lg" href="/docs/getting-started/setting-up-a-new-project" role="button">Get Started &raquo;</a>
-            <a class="btn btn-primary btn-lg" href="https://github.com/cake-build/cake" role="button" target="_blank"><i class="fa fa-star"></i> Star on GitHub</a>
-        </p>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <h1>What is Cake?</h1>
+                <p>
+                    Cake (C# Make) is a cross-platform build automation system with a C# DSL for tasks such as compiling code, copying files and folders, running unit tests, compressing files and building NuGet packages.
+                </p>
+                <p>
+                    <a class="btn btn-primary btn-lg" href="/docs/getting-started/setting-up-a-new-project" role="button">Get Started &raquo;</a>
+                    <a class="btn btn-primary btn-lg" href="https://github.com/cake-build/cake" role="button" target="_blank"><i class="fa fa-star"></i> Star on GitHub</a>
+                </p>
+            </div>
+            <div class="col-sm-6 hidden-xs">
+                <img style="width: 360px;float: right;" src="/assets/img/screenshot.png" alt=""/>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-sm-6">
-
-            <h3 class="align-top">Familiar</h3>
+<div class="container text-center">
+    <div class="row slideanim">
+        <div class="col-sm-4">
+            <h3 class="no-anchor">Familiar</h3>
             <p>
-                Cake is built on top of the Roslyn compiler which enables you to write your build scripts in C#.
+                Cake is built on top of the Roslyn compiler which enables you to write your build scripts in pure C#.
             </p>
-
-            <h3>Cross platform</h3>
+        </div>
+        <div class="col-sm-4">
+            <h3 class="no-anchor">Cross platform &amp; cross runtime</h3>
             <p>
-                Cake is available on Windows, Linux and macOS.
-            </p>
-
-            <h3>Cross runtime</h3>
-            <p>
-                Cake runs on .NET Core, .NET Framework and Mono.
-            </p>
-
-            <h3>Flexible</h3>
-            <p>
-                Cake can be used with scripts or as simple console applications with full IDE integration.
+                Cake runs on .NET Core, .NET Framework, Mono and is available on Windows, Linux and macOS.
                 See <a href="docs/running-builds/runners">Runners</a> for a list of available runners.
             </p>
-
-            <h3>Reliable</h3>
+        </div>
+        <div class="col-sm-4">
+            <h3 class="no-anchor">IDE integration</h3>
+            <p>
+                Cake can run as simple console applications with full IDE integration including IntelliSense or refactoring.
+                There are extensions available to provide advanced features for most popular IDEs and editors.
+                See <a href="docs/integrations/editors">Editors</a> for detailed feature list.
+             </p>
+        </div>
+        <div class="col-sm-4">
+            <h3 class="no-anchor">Reliable</h3>
             <p>
                 Regardless if you're building on your own machine, or building on a CI system such as AppVeyor, Azure DevOps,
                 TeamCity or Jenkins, Cake is built to behave in the same way.
             </p>
-
-            <h3>Batteries included</h3>
+        </div>
+        <div class="col-sm-4">
+            <h3 class="no-anchor">Batteries included</h3>
             <p>
                 Cake supports the most common tools used during builds such as MSBuild, .NET Core CLI, MSTest, xUnit, NUnit,
                 NuGet, ILMerge, WiX and SignTool out of the box and many more through an ever growing list of <a href="/addins">addins</a>.
             </p>
-
-            <h3>Open source</h3>
+        </div>
+        <div class="col-sm-4">
+            <h3 class="no-anchor">Open source</h3>
             <p>
                 We believe in open source and so should you. The source code for Cake is
-                <a href="https://github.com/cake-build/cake">hosted on GitHub</a> and
+                <a href="https://github.com/cake-build">hosted on GitHub</a> and
                 includes everything needed to build it yourself.
             </p>
-        </div>
-        <div class="col-sm-6 hidden-xs">
-            <img style="width: 100%;" src="/assets/img/screenshot.png" alt=""/>
         </div>
     </div>
 </div>
