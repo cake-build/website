@@ -82,6 +82,6 @@ RunTarget(target);
 
 Run the build script using the .NET CLI:
 
-```shell
+```powershell
 dotnet cake
 ```
