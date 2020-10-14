@@ -6,6 +6,51 @@ RedirectFrom: docs/editors/vscode/snippets
 
 # Visual Studio Code snippets
 
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#tool">.NET Core Tool</a></li>
+    <li><a data-toggle="tab" href="#frosting">Cake Frosting</a></li>
+    <li><a data-toggle="tab" href="#netfx">Cake runner for .NET Framework</a></li>
+    <li><a data-toggle="tab" href="#core">Cake runner for .NET Core</a></li>
+</ul>
+
+<div class="tab-content">
+    <div id="tool" class="tab-pane fade in active">
+        <p>
+            Code snippets for <code>.cake</code> files are provided by the <a href="https://marketplace.visualstudio.com/items/cake-build.cake-vscode">Cake extension for Visual Studio Code</a>.
+        </p>
+        <div class="alert alert-info">
+            <p>
+                For instructions how to install an extension in Visual Studio Code see <a href="https://code.visualstudio.com/docs/editor/extension-gallery">Extension Marketplace documentation</a>.
+            </p>
+        </div>
+    </div>
+    <div id="frosting" class="tab-pane fade">
+        <p>
+            Code snippets are currently not supported for <a href="/docs/running-builds/runners/cake-frosting">Cake Frosting</a> projects.
+        </p>
+    </div>
+    <div id="netfx" class="tab-pane fade">
+        <p>
+            Code snippets for <code>.cake</code> files are provided by the <a href="https://marketplace.visualstudio.com/items/cake-build.cake-vscode">Cake extension for Visual Studio Code</a>.
+        </p>
+        <div class="alert alert-info">
+            <p>
+                For instructions how to install an extension in Visual Studio Code see <a href="https://code.visualstudio.com/docs/editor/extension-gallery">Extension Marketplace documentation</a>.
+            </p>
+        </div>
+    </div>
+    <div id="core" class="tab-pane fade">
+        <p>
+            Code snippets for <code>.cake</code> files are provided by the <a href="https://marketplace.visualstudio.com/items/cake-build.cake-vscode">Cake extension for Visual Studio Code</a>.
+        </p>
+        <div class="alert alert-info">
+            <p>
+                For instructions how to install an extension in Visual Studio Code see <a href="https://code.visualstudio.com/docs/editor/extension-gallery">Extension Marketplace documentation</a>.
+            </p>
+        </div>
+    </div>
+</div>
+
 Code snippets for `.cake` files are provided by the [Cake extension for Visual Studio Code].
 
 :::{.alert .alert-info}
