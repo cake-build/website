@@ -94,17 +94,17 @@ public class Deployment
     {
         if (shouldPurgeCloudFlareCache)
         {
-            if (string.IsNullOrWhitespace(cloudflareAuthEmail))
+            if (string.IsNullOrWhiteSpace(cloudflareAuthEmail))
             {
                 throw new ArgumentNullException(nameof(cloudflareAuthEmail));
             }
 
-            if (string.IsNullOrWhitespace(cloudflareAuthKey))
+            if (string.IsNullOrWhiteSpace(cloudflareAuthKey))
             {
                 throw new ArgumentNullException(nameof(cloudflareAuthKey));
             }
 
-            if (string.IsNullOrWhitespace(cloudflareZoneId))
+            if (string.IsNullOrWhiteSpace(cloudflareZoneId))
             {
                 throw new ArgumentNullException(nameof(cloudflareZoneId));
             }
