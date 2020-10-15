@@ -21,7 +21,7 @@ Setup<Deployment>(
               value => value.Value,
               StringComparer.OrdinalIgnoreCase);
 
-    var shouldPurgeCloudFlareCache = context.HasEnvironmentVariable("SHOULD_PURGE_CLOUDFLARE_CACHE");
+    var shouldPurgeCloudFlareCache = context.EnvironmentVariable("SHOULD_PURGE_CLOUDFLARE_CACHE", false);
 
     var cloudflareAuthEmail = context.EnvironmentVariable("CLOUDFLARE_AUTH_EMAIL");
 
