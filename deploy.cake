@@ -92,6 +92,25 @@ public class Deployment
 
     public Deployment(FilePath zipFilePath, DeploymentTarget[] targets, bool shouldPurgeCloudFlareCache, string cloudflareAuthEmail, string cloudflareAuthKey, string cloudflareZoneId)
     {
+        if (shouldPurgeCloudFlareCache)
+        {
+            if (string.IsNullOrWhitespace(cloudflareAuthEmail))
+            {
+                throw new ArgumentNullException(nameof(cloudflareAuthEmail));
+            }
+
+            if (string.IsNullOrWhitespace(cloudflareAuthKey))
+            {
+                throw new ArgumentNullException(nameof(cloudflareAuthKey));
+            }
+
+            if (string.IsNullOrWhitespace(cloudflareZoneId))
+            {
+                throw new ArgumentNullException(nameof(cloudflareZoneId));
+            }
+
+        }
+
         ZipFilePath = zipFilePath;
         Targets = targets;
         ShouldPurgeCloudFlareCache = shouldPurgeCloudFlareCache;
