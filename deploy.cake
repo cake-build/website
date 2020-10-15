@@ -1,5 +1,6 @@
 #addin nuget:?package=Polly&version=7.1.0
 #addin nuget:?package=Cake.Kudu.Client&version=0.8.0
+#addin nuget:?package=Cake.Http&version=0.7.0
 
 using Polly;
 
@@ -19,6 +20,14 @@ Setup<Deployment>(
               key => key.Key,
               value => value.Value,
               StringComparer.OrdinalIgnoreCase);
+
+    var shouldPurgeCloudFlareCache = context.HasEnvironmentVariable("SHOULD_PURGE_CLOUDFLARE_CACHE");
+
+    var cloudflareAuthEmail = context.EnvironmentVariable("CLOUDFLARE_AUTH_EMAIL");
+
+    var cloudflareAuthKey = context.EnvironmentVariable("CLOUDFLARE_AUTH_KEY");
+
+    var cloudflareZoneId = context.EnvironmentVariable("CLOUDFLARE_ZONE_ID");
 
     var deploymentTargets = kuduPublishVariables.Keys
                                 .Select(
@@ -46,7 +55,7 @@ Setup<Deployment>(
                                     .ToArray();
     context.Information("Setup complete found {0} deployment targets.", deploymentTargets.Length);
 
-    return new Deployment(zipFilePath, deploymentTargets);
+    return new Deployment(zipFilePath, deploymentTargets, shouldPurgeCloudFlareCache, cloudflareAuthEmail, cloudflareAuthKey, cloudflareZoneId);
 });
 
 public class DeploymentTarget
@@ -73,10 +82,22 @@ public class Deployment
 
     public DeploymentTarget[] Targets { get; }
 
-    public Deployment(FilePath zipFilePath, DeploymentTarget[] targets)
+    public bool ShouldPurgeCloudFlareCache { get; }
+
+    public string CloudflareAuthEmail { get; }
+
+    public string CloudflareAuthKey { get; }
+
+    public string CloudflareZoneId { get; }
+
+    public Deployment(FilePath zipFilePath, DeploymentTarget[] targets, bool shouldPurgeCloudFlareCache, string cloudflareAuthEmail, string cloudflareAuthKey, string cloudflareZoneId)
     {
         ZipFilePath = zipFilePath;
         Targets = targets;
+        ShouldPurgeCloudFlareCache = shouldPurgeCloudFlareCache;
+        CloudflareAuthEmail = cloudflareAuthEmail;
+        CloudflareAuthKey = cloudflareAuthKey;
+        CloudflareZoneId = cloudflareZoneId;
     }
 }
 
@@ -96,5 +117,30 @@ Task("Deploy")
            )
   );
 
+Task("Purge-Cloudflare-Cache")
+    .IsDependentOn("Deploy")
+    .Does<Deployment>((context, deployment) =>
+{
+    if(deployment.ShouldPurgeCloudFlareCache)
+    {
+        context.Information("Purging Cloudflare Cache...");
 
-RunTarget("Deploy");
+        var settings = new HttpSettings()
+            .SetRequestBody("{ \"purge_everything\": true }")
+            .AppendHeader("X-Auth-Email", deployment.CloudflareAuthEmail)
+            .AppendHeader("X-Auth-Key", deployment.CloudflareAuthKey);
+
+        var result = HttpSend(
+            string.Format("https://api.cloudflare.com/client/v4/zones/{0}/purge_cache", deployment.CloudflareZoneId),
+            "DELETE",
+            settings);
+
+        context.Information(result);
+    }
+    else
+    {
+        context.Information("Skipping purge of Cloudflare Cache");
+    }
+});
+
+RunTarget("Purge-Cloudflare-Cache");
