@@ -14,7 +14,7 @@ Setup<Deployment>(
     var kuduPublishVariables = context.EnvironmentVariables()
           .Where(key => key.Key.StartsWith("KUDU_CLIENT_BASEURI_") ||
                         key.Key.StartsWith("KUDU_CLIENT_USERNAME_") ||
-                        key.Key.StartsWith("KUDU_CLIENT_PASSWORD_")) 
+                        key.Key.StartsWith("KUDU_CLIENT_PASSWORD_"))
           .ToDictionary(
               key => key.Key,
               value => value.Value,
@@ -87,7 +87,7 @@ Task("Deploy")
               deployment.Targets,
               target => {
                   context.Information("Deploying {0} to {1}...", deployment.ZipFilePath, target.Key);
-                  
+
                    deployment.RetryPolicy.Execute(
                       () => target.KuduClient.ZipDeployFile(deployment.ZipFilePath));
 
