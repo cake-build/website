@@ -9,12 +9,15 @@
     });
 </script>
 
+<!-- Anchor configuration -->
+<script>
+    // Allow to set ".no-anchor" class to not have an anchor on an element.
+    anchors.add('.content h1:not(.no-anchor), .content h2:not(.no-anchor), .content h3:not(.no-anchor), .content h4:not(.no-anchor)');
+</script>
+
 <!-- Copy to clipboard functionality for code blocks -->
 <script type="text/javascript" src="/assets/js/clipboard.min.js"></script>
 <script type="text/javascript">
-    anchors.options.placement = 'left';
-    anchors.add('#content h1:not(.no-anchor), #content h2:not(.no-anchor), #content h3:not(.no-anchor), #content h4:not(.no-anchor)');
-
     var snippets = document.querySelectorAll("pre > code");
     [].forEach.call(snippets, function(snippet) {
         snippet.insertAdjacentHTML("beforebegin", "<button class='btn-copy' data-clipboard-snippet><img class='clippy' width=13 src='@Context.GetLink("/assets/img/clippy.svg")' alt='Copy to clipboard'></button>");
