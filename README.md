@@ -43,7 +43,7 @@ Note that the `Prerelease` flag can be omitted for non-prerelease packages and c
 ## Search
 
 Search uses [Algolia DocSearch](https://docsearch.algolia.com/) as backend.
-Configuration for crawler is available at https://github.com/algolia/docsearch-configs/blob/master/configs/cakeissues.json.
+Configuration for crawler is available at https://github.com/algolia/docsearch-configs/blob/master/configs/cakebuild.json.
 
 ## Building
 
