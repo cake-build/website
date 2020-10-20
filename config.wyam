@@ -26,7 +26,7 @@ Pipelines.InsertAfter("Addins", "AddinCategories",
         Documents("Addins")
     )
         .WithEmptyOutputIfNoGroups(),
-    Meta(Keys.WritePath, new FilePath("addins/" + @doc.String(Keys.GroupKey).ToLower().Replace(" ", "-") + "/index.html")),
+    Meta(Keys.WritePath, new FilePath("extensions/" + @doc.String(Keys.GroupKey).ToLower().Replace(" ", "-") + "/index.html")),
     Meta(Keys.RelativeFilePath, @doc.FilePath(Keys.WritePath)),
     OrderBy(@doc.String(Keys.GroupKey))
 );
