@@ -35,7 +35,7 @@ fi
 export DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER=0
-
+export DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX=2
 
 ###########################################################################
 # INSTALL CAKE

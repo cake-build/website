@@ -11,3 +11,4 @@ nuget.exe
 # .NET CLI
 /.dotnet/
 /.packages/
+.DS_Store
