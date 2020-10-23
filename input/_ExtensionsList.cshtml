@@ -1,0 +1,83 @@
+@model IEnumerable<IDocument>
+
+<div class="alert alert-info">
+    <p>
+        This page contains extensions for Cake.
+        If you want to file an issue for any extension listed here, contact the author of the extension.
+    </p>
+    <p>
+        If you're an extension author and want your extension listed here, follow the instructions <a href="https://github.com/cake-build/website/blob/master/README.md#addins" target="_blank">here</a>.
+    </p>
+</div>
+
+<section id="extensions">
+
+    <input id="search" type="text" class="search" aria-label="Enter extensions to search" placeholder="Search for extensions..." autocomplete="off" value>
+
+    <div class="row no-margin">
+        <div id="result-count" class="col-md-10 no-padding">
+            @Model.Count() extensions found
+        </div>
+    </div>
+
+    <div class="list-extensions list" role="list">
+
+    @foreach(IDocument addin in Model.OrderBy(d => d.String("Name")))
+    {
+        string name = addin.String("Name");
+        string description = addin.String("Description");
+        string author = addin.String("Author");
+        string repository = addin.String("Repository");
+        string version = addin.String("Version");
+        string categories = (String.Join(", ", addin.List<string>("Categories")));
+
+        <article class="extension row" data-name="@name" data-categories="@categories">
+            <div class="col-sm-1 hidden-xs hidden-sm col-package-icon">
+                <i class="fa fa-puzzle-piece fa-4x"></i>
+            </div>
+            <div class="col-sm-11">
+                <div class="extension-header">
+                    <span class="extension-title">@name</span>
+                    <span class="extension-by">
+                        by @author
+                    </span>
+                </div>
+
+                <ul class="extension-metadata">
+                    <li>
+                        Latest version: @version
+                    </li>
+                    <li>
+                        <i class="fa fa-github"></i>
+                        <a href="@repository" target="_blank">@repository.Replace("https://github.com/", string.Empty).TrimEnd('/')</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-tags"></i>
+                        @categories
+                    </li>
+                </ul>
+
+                <div class="extension-details">
+                    @description
+                </div>
+            </div>
+        </article>
+    }
+    </div>
+</section>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+<script>
+    var options = {
+      valueNames: [
+        { data: ['name'] },
+        { data: ['categories'] }
+      ]
+    };
+
+    var extensionList = new List('extensions', options);
+
+    extensionList.on('searchComplete', function() {
+        document.getElementById("result-count").innerHTML = extensionList.update().matchingItems.length + " extensions found";
+    });
+</script>

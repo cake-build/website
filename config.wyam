@@ -21,16 +21,6 @@ Pipelines.InsertBefore(Docs.Code, "Addins",
     )
 );
 
-Pipelines.InsertAfter("Addins", "AddinCategories",
-    GroupByMany(@doc.List<string>("Categories"),
-        Documents("Addins")
-    )
-        .WithEmptyOutputIfNoGroups(),
-    Meta(Keys.WritePath, new FilePath("extensions/" + @doc.String(Keys.GroupKey).ToLower().Replace(" ", "-") + "/index.html")),
-    Meta(Keys.RelativeFilePath, @doc.FilePath(Keys.WritePath)),
-    OrderBy(@doc.String(Keys.GroupKey))
-);
-
 Pipelines.InsertAfter(Docs.Api, "DslAliases",
     GroupByMany(@doc.DocumentList(CodeAnalysisKeys.Attributes)
         .Where(attr => attr.String(CodeAnalysisKeys.Name) == "CakeAliasCategoryAttribute")
@@ -45,13 +35,6 @@ Pipelines.InsertAfter(Docs.Api, "DslAliases",
     Meta(Keys.WritePath, new FilePath("dsl/" + @doc.String(Keys.GroupKey).ToLower().Replace(" ", "-") + "/index.html")),
     Meta(Keys.RelativeFilePath, @doc.FilePath(Keys.WritePath)),
     OrderBy(@doc.String(Keys.GroupKey))
-);
-
-Pipelines.Add("RenderAddins",
-    Documents("AddinCategories"),
-    Razor()
-        .WithLayout("/_AddinsLayout.cshtml"),
-    WriteFiles()
 );
 
 Pipelines.Add("RenderDsl",
