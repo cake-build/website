@@ -18,7 +18,12 @@ Pipelines.InsertBefore(Docs.Code, "Addins",
         FileSystem.GetInputFile($"../release/addins/{@doc.String("NuGet")}.version").Exists
             ? FileSystem.GetInputFile($"../release/addins/{@doc.String("NuGet")}.version").ReadAllText()
             : null
-    )
+    ),
+    Meta(
+        Keys.WritePath,
+        new FilePath("extensions/" + @doc.String("Name").ToLower().Replace(".", "-") + "/index.html")
+    ),
+    Meta(DocsKeys.NoSidebar, true)
 );
 
 Pipelines.InsertAfter(Docs.Api, "DslAliases",
@@ -35,6 +40,13 @@ Pipelines.InsertAfter(Docs.Api, "DslAliases",
     Meta(Keys.WritePath, new FilePath("dsl/" + @doc.String(Keys.GroupKey).ToLower().Replace(" ", "-") + "/index.html")),
     Meta(Keys.RelativeFilePath, @doc.FilePath(Keys.WritePath)),
     OrderBy(@doc.String(Keys.GroupKey))
+);
+
+Pipelines.Add("RenderAddins",
+    Documents("Addins"),
+    Razor()
+        .WithLayout("/_AddinsLayout.cshtml"),
+    WriteFiles()
 );
 
 Pipelines.Add("RenderDsl",
