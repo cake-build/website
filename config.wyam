@@ -10,6 +10,7 @@ Settings[DocsKeys.IncludeDateInPostPath] = true;
 Settings[DocsKeys.BlogAtomPath] = "blog/feed/atom/index.xml";
 Settings[DocsKeys.BlogRssPath] = "blog/feed/rss/index.xml";
 
+// Reads addin metadata
 Pipelines.InsertBefore(Docs.Code, "Addins",
     ReadFiles("../addins/*.yml"),
     Yaml(),
@@ -26,22 +27,31 @@ Pipelines.InsertBefore(Docs.Code, "Addins",
     Meta(DocsKeys.NoSidebar, true)
 );
 
-Pipelines.InsertAfter(Docs.Api, "DslAliases",
-    GroupByMany(@doc.DocumentList(CodeAnalysisKeys.Attributes)
-        .Where(attr => attr.String(CodeAnalysisKeys.Name) == "CakeAliasCategoryAttribute")
-        .Select(attr => attr.Get<Microsoft.CodeAnalysis.AttributeData>(CodeAnalysisKeys.AttributeData).ConstructorArguments.FirstOrDefault().Value)
-        .Distinct(),
-        Documents(Docs.Api),
-        Where(@doc.String(CodeAnalysisKeys.Kind) == "NamedType"
-            && @doc.DocumentList(CodeAnalysisKeys.Attributes)
-                .Any(attr => attr.String(CodeAnalysisKeys.Name) == "CakeAliasCategoryAttribute")
-        )
+// Read all classes containing aliases from API documentation
+Pipelines.InsertAfter(Docs.Api, "Aliases",
+    Documents(Docs.Api),
+    Where(
+        @doc.String(CodeAnalysisKeys.Kind) == "NamedType"
+        && @doc.DocumentList(CodeAnalysisKeys.Attributes)
+            .Any(attr => attr.String(CodeAnalysisKeys.Name) == "CakeAliasCategoryAttribute")
+    )
+);
+
+// Prepares aliases classes for reference page by grouping them by category.
+Pipelines.InsertAfter("Aliases", "DslAliases",
+    GroupByMany(
+        @doc.DocumentList(CodeAnalysisKeys.Attributes)
+            .Where(attr => attr.String(CodeAnalysisKeys.Name) == "CakeAliasCategoryAttribute")
+            .Select(attr => attr.Get<Microsoft.CodeAnalysis.AttributeData>(CodeAnalysisKeys.AttributeData).ConstructorArguments.FirstOrDefault().Value)
+            .Distinct(),
+        Documents("Aliases")
     ),
     Meta(Keys.WritePath, new FilePath("dsl/" + @doc.String(Keys.GroupKey).ToLower().Replace(" ", "-") + "/index.html")),
     Meta(Keys.RelativeFilePath, @doc.FilePath(Keys.WritePath)),
     OrderBy(@doc.String(Keys.GroupKey))
 );
 
+// Renders individual addin pages
 Pipelines.Add("RenderAddins",
     Documents("Addins"),
     Razor()
@@ -49,6 +59,7 @@ Pipelines.Add("RenderAddins",
     WriteFiles()
 );
 
+// Renders reference page
 Pipelines.Add("RenderDsl",
     Documents("DslAliases"),
     Razor()
@@ -58,6 +69,7 @@ Pipelines.Add("RenderDsl",
     WriteFiles()
 );
 
+// Creates sitemap
 Pipelines.Add("BuildSiteMap",
     Documents(@ctx.Documents.ExceptPipeline("Addins").Except(@ctx.Documents.FromPipeline("Code"))),
     Sitemap(),

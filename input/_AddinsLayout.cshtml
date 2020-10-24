@@ -12,6 +12,7 @@
     string repository = Model.String("Repository");
     string version = Model.String("Version");
     string categories = (String.Join(", ", Model.List<string>("Categories")));
+    var assemblies = Model.List<string>("Assemblies");
 }
 
 <section class="content-header">
@@ -41,6 +42,33 @@
                 </p>
             </div>
         </div>
+
+        @if (assemblies != null)
+        {
+            <h2 class="no-anchor">Aliases</h2>
+
+            // Read classes containing aliases from current addin.
+            var aliasClasses =
+                Documents["Aliases"]
+                    .Where(
+                        aliasDocument =>
+                            aliasDocument != null &&
+                            aliasDocument.Document(CodeAnalysisKeys.ContainingAssembly) != null &&
+                            assemblies.Any(
+                                addinAssembly =>
+                                    addinAssembly != null &&
+                                    addinAssembly.Contains(
+                                        aliasDocument.Document(CodeAnalysisKeys.ContainingAssembly).String("Name") + ".dll")));
+
+            @Html.Partial(
+                "_AliasesList",
+                aliasClasses,
+                new ViewDataDictionary(ViewData)
+                {
+                    { "groupHeadingLevel", 3 },
+                    { "showAddinReference", false }
+                })
+        }
     </article>
 
     <aside class="col-sm-4 extension-info" aria-label="Extension info" >
