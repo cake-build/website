@@ -51,10 +51,13 @@
                         <i class="fa fa-github"></i>
                         <a href="@repository" target="_blank">@repository.Replace("https://github.com/", string.Empty).TrimEnd('/')</a>
                     </li>
-                    <li>
-                        <i class="fa fa-tags"></i>
-                        @categories
-                    </li>
+                    @if (!string.IsNullOrWhiteSpace(categories))
+                    {
+                        <li>
+                            <i class="fa fa-tags"></i>
+                            @categories
+                        </li>
+                    }
                 </ul>
 
                 <div class="extension-details">
