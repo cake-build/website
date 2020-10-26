@@ -37,6 +37,7 @@ var rootPublishFolder   = MakeAbsolute(Directory("publish"));
 // Definitions
 class ExtensionSpec
 {
+    public string Type { get; set; }
     public string Name { get; set; }
     public string NuGet { get; set; }
     public List<string> Assemblies { get; set; }

@@ -25,6 +25,7 @@ All extensions are specified in individual YAML files under `./extensions`. Addi
 The format of an extension file generally looks like:
 
 ```
+Type: Addin
 Name: Cake.Wyam
 NuGet: Cake.Wyam
 Assemblies:
@@ -36,6 +37,8 @@ Categories:
 - Documentation
 - Static Site Generation
 ```
+
+`Type` can be one of the following values: `API` (extensions only added to API documentation), `Addin`, `Module`, `Recipe`.
 
 ## Search
 

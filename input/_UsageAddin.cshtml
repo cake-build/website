@@ -1,0 +1,24 @@
+@model IDocument
+
+@{
+    string nuget = Model.String("NuGet");
+    string version = Model.String("Version");
+}
+
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#directive">Preprocessor directive</a></li>
+    <li><a data-toggle="tab" href="#config">packages.config</a></li>
+</ul>
+
+<div class="tab-content">
+    <div id="directive" class="tab-pane fade in active">
+        <p>
+<pre><code class="language-csharp hljs">#addin nuget:?package=@(nuget)&version=@(version)</code></pre>
+        </p>
+    </div>
+    <div id="config" class="tab-pane fade">
+        <p>
+<pre><code class="language-xml hljs">&lt;package id="@(nuget)" version="@(version)" /&gt;</code></pre>
+        </p>
+    </div>
+</div>
