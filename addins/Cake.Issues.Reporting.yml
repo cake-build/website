@@ -6,10 +6,10 @@ Repository: https://github.com/cake-contrib/Cake.Issues.Reporting/
 Author: Pascal Berger
 Description: |-
   The issues reporting addin allows you to create reports for issue from any code analyzer or linter.
-
+  
   This addin provides the aliases for creating reports.
   It requires the core Cake.Issues addin, addins for reading issues and one or more reporting format addin for the specific report format.
-
+  
   See cakeissues.net for an overview of the whole ecosystem of addins for working with issues in Cake scripts.
 Categories:
 - issues
