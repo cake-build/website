@@ -7,10 +7,10 @@ Author: BBT Software AG and contributors
 Description: |-
   The Azure DevOps support for the Cake.Issues addin allows you to
   write found issues as comments to Azure DevOps pull requests.
-
+  
   This addin provides the aliases for writing to Azure DevOps pull requests.
   It also requires the core Cake.Issues and Cake.Issues.PullRequests addins and one or more issue providers.
-
+  
   See cakeissues.net for an overview of the whole ecosystem of addins for working with issues in Cake scripts.
 Categories:
 - cake issues
