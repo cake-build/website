@@ -1,3 +1,4 @@
+Type: Addin
 Name: Cake.Issues.EsLint
 NuGet: Cake.Issues.EsLint
 Assemblies:

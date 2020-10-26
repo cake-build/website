@@ -1,3 +1,4 @@
+Type: Addin
 Name: Cake.Topshelf
 NuGet: Cake.Topshelf
 Assemblies:

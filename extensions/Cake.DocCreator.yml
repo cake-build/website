@@ -1,3 +1,4 @@
+Type: Addin
 Name: Cake.DocCreator
 NuGet: Cake.DocCreator
 Assemblies:

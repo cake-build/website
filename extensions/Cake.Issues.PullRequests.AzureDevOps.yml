@@ -1,3 +1,4 @@
+Type: Addin
 Name: Cake.Issues.PullRequests.AzureDevOps
 NuGet: Cake.Issues.PullRequests.AzureDevOps
 Assemblies:

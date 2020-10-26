@@ -1,3 +1,4 @@
+Type: Addin
 Name: Cake.AWS.EC2
 NuGet: Cake.AWS.EC2
 Assemblies:

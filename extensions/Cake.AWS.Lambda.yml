@@ -1,3 +1,4 @@
+Type: Addin
 Name: Cake.AWS.Lambda
 NuGet: Cake.AWS.Lambda
 Assemblies:

@@ -1,3 +1,4 @@
+Type: Addin
 Name: Cake.Kubectl
 NuGet: Cake.Kubectl
 Assemblies:

@@ -1,3 +1,4 @@
+Type: Addin
 Name: Cake.Incubator
 NuGet: Cake.Incubator
 Assemblies:

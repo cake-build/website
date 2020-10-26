@@ -1,3 +1,4 @@
+Type: Addin
 Name: Cake.NDepend
 NuGet: Cake.NDepend
 Assemblies:

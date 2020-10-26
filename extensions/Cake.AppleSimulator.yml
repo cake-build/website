@@ -1,3 +1,4 @@
+Type: Addin
 Name: Cake.AppleSimulator
 NuGet: Cake.AppleSimulator
 Assemblies:

@@ -1,3 +1,4 @@
+Type: Addin
 Name: Cake.OctoDeploy
 NuGet: Cake.OctoDeploy
 Assemblies:

@@ -1,3 +1,4 @@
+Type: Addin
 Name: Cake.AWS.ElasticLoadBalancing
 NuGet: Cake.AWS.ElasticLoadBalancing
 Assemblies:

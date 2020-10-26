@@ -1,3 +1,4 @@
+Type: Addin
 Name: Cake.SqlTools
 NuGet: Cake.SqlTools
 Assemblies:

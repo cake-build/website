@@ -1,3 +1,4 @@
+Type: Addin
 Name: Cake.ProtobufTools
 NuGet: Cake.ProtobufTools
 Assemblies:

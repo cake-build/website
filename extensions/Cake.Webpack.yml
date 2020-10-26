@@ -1,3 +1,4 @@
+Type: Addin
 Name: Cake.Webpack
 NuGet: Cake.Webpack
 Assemblies:

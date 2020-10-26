@@ -1,3 +1,4 @@
+Type: Addin
 Name: Cake.Issues.Reporting.Generic
 NuGet: Cake.Issues.Reporting.Generic
 Assemblies:

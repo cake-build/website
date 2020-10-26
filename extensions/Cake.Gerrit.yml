@@ -1,3 +1,4 @@
+Type: Addin
 Name: Cake.Gerrit
 NuGet: Cake.Gerrit
 Assemblies:

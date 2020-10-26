@@ -1,3 +1,4 @@
+Type: Addin
 Name: Cake.Issues.Markdownlint
 NuGet: Cake.Issues.Markdownlint
 Assemblies:

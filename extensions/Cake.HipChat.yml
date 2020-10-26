@@ -1,3 +1,4 @@
+Type: Addin
 Name: Cake.HipChat
 NuGet: Cake.HipChat
 Assemblies:

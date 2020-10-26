@@ -1,3 +1,4 @@
+Type: Addin
 Name: Cake.Deploy.Bot.LUIS
 NuGet: Cake.Deploy.Bot.LUIS
 Assemblies:

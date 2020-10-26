@@ -1,3 +1,4 @@
+Type: Addin
 Name: Cake.Hg
 NuGet: Cake.Hg
 Assemblies:
