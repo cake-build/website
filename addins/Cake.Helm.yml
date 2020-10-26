@@ -5,6 +5,5 @@ Assemblies:
 Repository: https://github.com/santey/Cake.Helm/
 Author: pitermarx
 Description: Cake AddIn that extends Cake with Helm
-Prerelease: "true"
 Categories:
 - helm

@@ -5,7 +5,6 @@ Assemblies:
 Repository: https://github.com/cake-contrib/Cake.Vault/
 Author: jincod
 Description: Get vault secrets.
-Prerelease: "true"
 Categories:
 - configs generator
 - vault

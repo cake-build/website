@@ -5,7 +5,6 @@ Assemblies:
 Repository: https://github.com/agc93/clicktwice/
 Author: agc93
 Description: Cake host for ClickTwice publishing, including the addin and all required libraries
-Prerelease: "true"
 Categories:
 - clicktwice
 - publish

@@ -5,6 +5,5 @@ Assemblies:
 Repository: https://github.com/cake-contrib/Cake.Azure/
 Author: DixonDs
 Description: Cake plugin to manage Azure resources
-Prerelease: "true"
 Categories:
 - azure

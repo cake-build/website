@@ -27,7 +27,6 @@ The format of an addin file generally looks like:
 ```
 Name: Cake.Wyam
 NuGet: Cake.Wyam
-Prerelease: true
 Assemblies:
 - "/**/Cake.Wyam.dll"
 Repository: https://github.com/Wyamio/Wyam
@@ -37,8 +36,6 @@ Categories:
 - Documentation
 - Static Site Generation
 ```
-
-Note that the `Prerelease` flag can be omitted for non-prerelease packages and controls whether NuGet will attempt to download a prerelease version of the package when generating the site.
 
 ## Search
 
