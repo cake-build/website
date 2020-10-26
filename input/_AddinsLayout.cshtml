@@ -11,7 +11,7 @@
     string author = Model.String("Author");
     string repository = Model.String("Repository");
     string version = Model.String("Version");
-    string categories = (String.Join(", ", Model.List<string>("Categories")));
+    string categories = (String.Join(" ", Model.List<string>("Categories").Select(x => $"<span class=\"badge badge-secondary\">{x}</span>")));
     var assemblies = Model.List<string>("Assemblies");
 }
 
@@ -94,7 +94,7 @@
 
         <h2 class="no-anchor">Categories</h2>
         <p>
-            @categories
+            @Html.Raw(categories)
         </p>
     </aside>
 </section>
