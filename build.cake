@@ -30,12 +30,12 @@ var deployCakeFileName  = "deploy.cake";
 // Define directories.
 var releaseDir          = Directory("./release");
 var sourceDir           = releaseDir + Directory("repo");
-var addinDir            = releaseDir + Directory("addins");
+var extensionDir        = releaseDir + Directory("extensions");
 var outputPath          = MakeAbsolute(Directory("./output"));
 var rootPublishFolder   = MakeAbsolute(Directory("publish"));
 
 // Definitions
-class AddinSpec
+class ExtensionSpec
 {
     public string Name { get; set; }
     public string NuGet { get; set; }
@@ -47,7 +47,7 @@ class AddinSpec
 }
 
 // Variables
-List<AddinSpec> addinSpecs = new List<AddinSpec>();
+List<ExtensionSpec> extensionSpecs = new List<ExtensionSpec>();
 
 //////////////////////////////////////////////////////////////////////
 // SETUP
@@ -107,33 +107,33 @@ Task("GetSource")
         MoveDirectory(containerDir, sourceDir);
     });
 
-Task("CleanAddinPackages")
+Task("CleanExtensionPackages")
     .Does(() =>
 {
-    CleanDirectory(addinDir);
+    CleanDirectory(extensionDir);
 });
 
-Task("GetAddinSpecs")
+Task("GetExtensionSpecs")
     .Does(() =>
 {
-    var addinSpecFiles = GetFiles("./addins/*.yml");
-    addinSpecs
-        .AddRange(addinSpecFiles
+    var extensionSpecFiles = GetFiles("./extensions/*.yml");
+    extensionSpecs
+        .AddRange(extensionSpecFiles
             .Select(x =>
             {
-                Verbose("Deserializing addin YAML from " + x);
-                return DeserializeYamlFromFile<AddinSpec>(x);
+                Verbose("Deserializing extension YAML from " + x);
+                return DeserializeYamlFromFile<ExtensionSpec>(x);
             })
         );
 });
 
-Task("GetAddinPackages")
-    .IsDependentOn("CleanAddinPackages")
-    .IsDependentOn("GetAddinSpecs")
+Task("GetExtensionPackages")
+    .IsDependentOn("CleanExtensionPackages")
+    .IsDependentOn("GetExtensionSpecs")
     .Does(context =>
     {
-        context.DownloadPackages(addinDir,
-            addinSpecs
+        context.DownloadPackages(extensionDir,
+            extensionSpecs
                 .Where(x => !string.IsNullOrEmpty(x.NuGet))
                 .Select(x => x.NuGet)
                 .ToArray());
@@ -150,14 +150,14 @@ Task("Build")
             UpdatePackages = true,
             Settings = new Dictionary<string, object>
             {
-                { "AssemblyFiles",  addinSpecs.Where(x => x.Assemblies != null).SelectMany(x => x.Assemblies).Select(x => "../release/addins" + x) }
+                { "AssemblyFiles",  extensionSpecs.Where(x => x.Assemblies != null).SelectMany(x => x.Assemblies).Select(x => "../release/extensions" + x) }
             }
         });
     });
 
 // Does not download artifacts (run Build or GetArtifacts target first)
 Task("Preview")
-    .IsDependentOn("GetAddinSpecs")
+    .IsDependentOn("GetExtensionSpecs")
     .Does(() =>
     {
         Wyam(new WyamSettings
@@ -169,7 +169,7 @@ Task("Preview")
             Watch = true,
             Settings = new Dictionary<string, object>
             {
-                { "AssemblyFiles",  addinSpecs.Where(x => x.Assemblies != null).SelectMany(x => x.Assemblies).Select(x => "../release/addins" + x) }
+                { "AssemblyFiles",  extensionSpecs.Where(x => x.Assemblies != null).SelectMany(x => x.Assemblies).Select(x => "../release/extensions" + x) }
             }
         });
     });
@@ -183,14 +183,14 @@ Task("Debug")
     });
 
 // Does not download artifacts (run Build or GetArtifacts target first)
-Task("Debug-Addins")
-    .IsDependentOn("GetAddinSpecs")
+Task("Debug-Extensions")
+    .IsDependentOn("GetExtensionSpecs")
     .Does(() =>
     {
         StartProcess("../Wyam/src/clients/Wyam/bin/Debug/net462/wyam.exe",
             "-a \"../Wyam/tests/integration/Wyam.Examples.Tests/bin/Debug/net462/**/*.dll\" -r \"docs -i\" -t \"../Wyam/themes/Docs/Samson\" -p --attach"
             + " --setting \"AssemblyFiles=["
-            + String.Join(",", addinSpecs.Where(x => x.Assemblies != null).SelectMany(x => x.Assemblies).Select(x => "../release/addins" + x))
+            + String.Join(",", extensionSpecs.Where(x => x.Assemblies != null).SelectMany(x => x.Assemblies).Select(x => "../release/extensions" + x))
             + "]\"");
     });
 
@@ -227,7 +227,7 @@ Task("Default")
 
 Task("GetArtifacts")
     .IsDependentOn("GetSource")
-    .IsDependentOn("GetAddinPackages");
+    .IsDependentOn("GetExtensionPackages");
 
 Task("AppVeyor")
     .IsDependentOn("Build");

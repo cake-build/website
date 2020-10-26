@@ -16,13 +16,13 @@ The basic documentation pages can be found under `./input/docs`. The directory s
 
 The Cake site contains a blog where important announcements and other relevant information are posted. The blog posts can be found under `./input/blog`. As with documentation pages, blog posts are written in Markdown. The file name for each blog post contains its published date in the format `YYYY-MM-DD-title.md`.
 
-## Addins
+## Extensions
 
-> PLEASE NOTE: Addin authors do not have to manually create YAML files as there is an automated process that scans nuget.org twice per day to find all addins that follow the recommended naming convention (which is `Cake.xxx` where xxx describes the functionality provided by the addin) and generates the appropriate YAML content based on the metadata for the NuGet package.
+> PLEASE NOTE: Extension authors do not have to manually create YAML files as there is an automated process that scans nuget.org twice per day to find all extensions that follow the recommended naming convention (which is `Cake.xxx` for addins and `Cake.xxx.Module` for modules, where xxx describes the functionality provided by the extension) and generates the appropriate YAML content based on the metadata for the NuGet package.
 
-All addins are specified in individual YAML files under `./addins`. Adding an addin here will trigger downloading it's NuGet Package during site generation and will include it in the "Reference" and "Addins" sections of the Cake site.
+All extensions are specified in individual YAML files under `./extensions`. Adding an extension here will trigger downloading it's NuGet Package during site generation and will include it in the "Reference" and "Extensions" sections of the Cake site.
 
-The format of an addin file generally looks like:
+The format of an extension file generally looks like:
 
 ```
 Name: Cake.Wyam
@@ -48,10 +48,10 @@ The site is built using Cake (of course!). There are a number of different targe
 
 `build --target=GetSource` will download the Cake source code that the generation process uses to create the "API" section.
 
-`build --target=GetAddinPackages` will download new NuGet packages for all specified addins. These packages are used to create the "Reference" and "Addins" sections.
+`build --target=GetExtensionPackages` will download new NuGet packages for all specified extensions. These packages are used to create the "Reference" and "Extensions" sections.
 
-`build --target=GetArtifacts` will download both the Cake source code and the addin NuGet packages.
+`build --target=GetArtifacts` will download both the Cake source code and the extension NuGet packages.
 
-`build --target=Build` will run a complete build, downloading new copies of Cake source code and addin NuGet packages. Note that due to the number of addins and the complexity of generating complete API documentation, the site generation may take a while (sometimes as long as 20 minutes).
+`build --target=Build` will run a complete build, downloading new copies of Cake source code and extension NuGet packages. Note that due to the number of extensions and the complexity of generating complete API documentation, the site generation may take a while (sometimes as long as 20 minutes).
 
 `build --target=Preview` will run a build but *will not* download Cake source code or NuGet packages. This lets you shorten the build cycle by avoiding the time to obtain those resources if you've already downloaded them, or to bypass them altogether if you're just working on something like general documentation pages. This target will also launch a preview server to look at the generated site from a local web browser. The URL of the generated preview site is `http://localhost:5080/`.

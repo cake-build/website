@@ -10,14 +10,14 @@ Settings[DocsKeys.IncludeDateInPostPath] = true;
 Settings[DocsKeys.BlogAtomPath] = "blog/feed/atom/index.xml";
 Settings[DocsKeys.BlogRssPath] = "blog/feed/rss/index.xml";
 
-// Reads addin metadata
-Pipelines.InsertBefore(Docs.Code, "Addins",
-    ReadFiles("../addins/*.yml"),
+// Reads extension metadata
+Pipelines.InsertBefore(Docs.Code, "Extensions",
+    ReadFiles("../extensions/*.yml"),
     Yaml(),
     Meta(
         "Version",
-        FileSystem.GetInputFile($"../release/addins/{@doc.String("NuGet")}.version").Exists
-            ? FileSystem.GetInputFile($"../release/addins/{@doc.String("NuGet")}.version").ReadAllText()
+        FileSystem.GetInputFile($"../release/extensions/{@doc.String("NuGet")}.version").Exists
+            ? FileSystem.GetInputFile($"../release/extensions/{@doc.String("NuGet")}.version").ReadAllText()
             : null
     ),
     Meta(
@@ -51,11 +51,11 @@ Pipelines.InsertAfter("Aliases", "DslAliases",
     OrderBy(@doc.String(Keys.GroupKey))
 );
 
-// Renders individual addin pages
-Pipelines.Add("RenderAddins",
-    Documents("Addins"),
+// Renders individual extension pages
+Pipelines.Add("RenderExtensions",
+    Documents("Extensions"),
     Razor()
-        .WithLayout("/_AddinsLayout.cshtml"),
+        .WithLayout("/_ExtensionsLayout.cshtml"),
     WriteFiles()
 );
 
@@ -71,7 +71,7 @@ Pipelines.Add("RenderDsl",
 
 // Creates sitemap
 Pipelines.Add("BuildSiteMap",
-    Documents(@ctx.Documents.ExceptPipeline("Addins").Except(@ctx.Documents.FromPipeline("Code"))),
+    Documents(@ctx.Documents.ExceptPipeline("Extensions").Except(@ctx.Documents.FromPipeline("Code"))),
     Sitemap(),
     WriteFiles((d,c) => "sitemap.xml")
 );
