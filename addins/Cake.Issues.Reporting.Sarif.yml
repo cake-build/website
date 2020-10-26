@@ -5,12 +5,12 @@ Assemblies:
 Repository: https://github.com/cake-contrib/Cake.Issues.Reporting.Sarif/
 Author: Pascal Berger
 Description: |-
-  The SARIF support for the Cake.Issues addin for Cake allows you to create SARIF compatible files.
-  
+  The SARIF support for the Cake.Issues addin allows you to create SARIF compatible files.
+
   This addin provides the aliases for creating SARIF compatible files.
   It also requires the core Cake.Issues and Cake.Issues.Reporting addins and one or more issue providers.
-  
-  See the Project Site for an overview of the whole ecosystem of addins for working with issues in Cake scripts.
+
+  See cakeissues.net for an overview of the whole ecosystem of addins for working with issues in Cake scripts.
 Categories:
 - cake issues
 - cake reportformat
