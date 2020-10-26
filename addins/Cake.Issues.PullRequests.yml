@@ -6,10 +6,10 @@ Repository: https://github.com/cake-contrib/Cake.Issues.PullRequests/
 Author: BBT Software AG
 Description: |-
   The pull requests issues addin allows you to write issue from any code analyzer or linter as comments to pull requests.
-
+  
   This addin provides the aliases for writing issues to pull requests.
   It requires the core Cake.Issues addin, addins for reading issues and an addin for the specific pull request system.
-
+  
   See cakeissues.net for an overview of the whole ecosystem of addins for working with issues in Cake scripts.
 Categories:
 - issues
