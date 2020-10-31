@@ -382,7 +382,7 @@ To use a pre-release version of OmniSharp follow these steps:
 
 ## I tried everything above, I still don't get IntelliSense.
 
-Submit an issue in the [bakery](https://github.com/cake-build/bakery) repository on GitHub or reach out to us on [Gitter](https://gitter.im/cake-build/cake).
+See [Getting Help](/community/getting-help) for information how to reach out to us.
 
 [Cake extension for Visual Studio Code]: https://marketplace.visualstudio.com/items/cake-build.cake-vscode
 [C# extension for Visual Studio Code]: https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp
