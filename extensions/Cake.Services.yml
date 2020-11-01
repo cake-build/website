@@ -1,0 +1,11 @@
+Type: Addin
+Name: Cake.Services
+NuGet: Cake.Services
+Assemblies:
+- "/**/Cake.Services.dll"
+Repository: https://github.com/SharpeRAD/Cake.Services/
+Author: SharpeRAD
+Description: Windows Services addin for Cake.
+Categories:
+- windows
+- deployment

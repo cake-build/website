@@ -1,0 +1,10 @@
+Type: Addin
+Name: Cake.PinNuGetDependency
+NuGet: Cake.PinNuGetDependency
+Assemblies:
+- "/**/Cake.PinNuGetDependency.dll"
+Repository: https://github.com/cake-contrib/Cake.PinNuGetDependency/
+Author: Geoffrey Huntley
+Description: Cake Build addin used to lock dependency versions within NuGet packages.
+Categories:
+- nuget

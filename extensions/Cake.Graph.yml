@@ -1,0 +1,13 @@
+Type: Addin
+Name: Cake.Graph
+NuGet: Cake.Graph
+Assemblies:
+- "/**/Cake.Graph.dll"
+Repository: https://github.com/cake-contrib/Cake.Graph/
+Author: wozzo
+Description: An alias for Cake to help with displaying Task dependencies
+Categories:
+- graph
+- nodes
+- dependencies
+- tasks

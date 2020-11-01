@@ -1,0 +1,10 @@
+Type: Addin
+Name: Cake.Flyway
+NuGet: Cake.Flyway
+Assemblies:
+- "/**/Cake.Flyway.dll"
+Repository: https://github.com/buthomas/Cake.Flyway/
+Author: Thomas Burgener
+Description: A set of aliases for Cake to help with running Flyway scripts as part of a build.
+Categories:
+- database

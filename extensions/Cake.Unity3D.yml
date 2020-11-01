@@ -1,0 +1,11 @@
+Type: Addin
+Name: Cake.Unity3D
+NuGet: Cake.Unity3D
+Assemblies:
+- "/**/Cake.Unity3D.dll"
+Repository: https://github.com/samoatesgames/Cake.Unity3D/
+Author: Sam Oates
+Description: Unity build support for Cake.
+Categories:
+- unity
+- gaming

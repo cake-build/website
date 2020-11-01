@@ -1,9 +1,0 @@
-Name: Cake.Liquibase
-NuGet: Cake.Liquibase
-Assemblies:
-- "/**/Cake.Liquibase.dll"
-Repository: https://github.com/papauorg/Cake.Liquibase/
-Author: Philipp Grathwohl
-Description: Addin for running liquibase database migrations with the Cake build system.
-Categories:
-- database

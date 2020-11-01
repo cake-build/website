@@ -1,0 +1,12 @@
+Type: Addin
+Name: Cake.MkDocs
+NuGet: Cake.MkDocs
+Assemblies:
+- "/**/Cake.MkDocs.dll"
+Repository: https://github.com/michalkowal/Cake.MkDocs/
+Author: Michał Kowal
+Description: Cake Addin that extends Cake with ability to run the MkDocs.
+Categories:
+- mkdocs
+- documentation
+- static site generation

@@ -1,0 +1,12 @@
+Type: Addin
+Name: Cake.NSwag
+NuGet: Cake.NSwag
+Assemblies:
+- "/**/Cake.NSwag.dll"
+Repository: https://github.com/cake-contrib/Cake.NSwag/
+Author: Alistair Chapman
+Description: Cake addin for compiling client code and API definitions (including Swagger) using the NSwag toolchain. If you have issues running this addin on .NET Core, try using Cake.NSwag.Console instead.
+Categories:
+- swagger
+- api
+- openapi

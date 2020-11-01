@@ -1,0 +1,11 @@
+Type: Addin
+Name: Cake.Powershell
+NuGet: Cake.Powershell
+Assemblies:
+- "/**/Cake.Powershell.dll"
+Repository: https://github.com/SharpeRAD/Cake.Powershell/
+Author: SharpeRAD
+Description: Cake addin that extends Cake with Powershell command support.
+Categories:
+- powershell
+- deployment

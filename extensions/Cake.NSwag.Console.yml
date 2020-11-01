@@ -1,0 +1,12 @@
+Type: Addin
+Name: Cake.NSwag.Console
+NuGet: Cake.NSwag.Console
+Assemblies:
+- "/**/Cake.NSwag.Console.dll"
+Repository: https://github.com/agc93/Cake.NSwag.Console/
+Author: agc93
+Description: A simple Cake addin powered by NSwag for compiling client code and API definitions from a variety of sources
+Categories:
+- swagger
+- api
+- openapi

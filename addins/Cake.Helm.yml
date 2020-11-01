@@ -1,9 +1,0 @@
-Name: Cake.Helm
-NuGet: Cake.Helm
-Assemblies:
-- "/**/Cake.Helm.dll"
-Repository: https://github.com/santey/Cake.Helm/
-Author: pitermarx
-Description: Cake AddIn that extends Cake with Helm
-Categories:
-- helm

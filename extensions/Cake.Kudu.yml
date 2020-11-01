@@ -1,0 +1,11 @@
+Type: Addin
+Name: Cake.Kudu
+NuGet: Cake.Kudu
+Assemblies:
+- "/**/Cake.Kudu.dll"
+Repository: https://github.com/cake-contrib/Cake.Kudu/
+Author: WCOMAB
+Description: Cake addin to help with Kudu deployments.
+Categories:
+- azure
+- kudu

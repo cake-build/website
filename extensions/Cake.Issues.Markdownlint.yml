@@ -1,0 +1,19 @@
+Type: Addin
+Name: Cake.Issues.Markdownlint
+NuGet: Cake.Issues.Markdownlint
+Assemblies:
+- "/**/Cake.Issues.Markdownlint.dll"
+Repository: https://github.com/cake-contrib/Cake.Issues.Markdownlint/
+Author: BBT Software AG
+Description: |-
+  The Markdownlint support for the Cake.Issues addin allows you to read issues logged by Markdownlint.
+
+  This addin provides the aliases for reading Markdownlint issues and providing them to the Cake.Issues addin.
+  It also requires the core Cake.Issues addin.
+
+  There are also additional addins for generating reports or posting issues to pull requests.
+
+  See cakeissues.net for an overview of the whole ecosystem of addins for working with issues in Cake scripts.
+Categories:
+- issues
+- markdown

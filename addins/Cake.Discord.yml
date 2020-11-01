@@ -1,9 +1,0 @@
-Name: Cake.Discord
-NuGet: Cake.Discord
-Assemblies:
-- "/**/Cake.Discord.dll"
-Repository: https://github.com/cake-contrib/Cake.Discord/
-Author: gep13
-Description: Cake Discord AddIn.
-Categories:
-- discord

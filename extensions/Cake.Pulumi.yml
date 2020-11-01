@@ -1,0 +1,10 @@
+Type: Addin
+Name: Cake.Pulumi
+NuGet: Cake.Pulumi
+Assemblies:
+- "/**/Cake.Pulumi.dll"
+Repository: https://github.com/cake-contrib/Cake.Pulumi/
+Author: James Connor
+Description: Cake Pulumi Addin.
+Categories:
+- pulumi

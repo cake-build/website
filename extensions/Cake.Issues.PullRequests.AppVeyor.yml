@@ -1,0 +1,18 @@
+Type: Addin
+Name: Cake.Issues.PullRequests.AppVeyor
+NuGet: Cake.Issues.PullRequests.AppVeyor
+Assemblies:
+- "/**/Cake.Issues.PullRequests.AppVeyor.dll"
+Repository: https://github.com/cake-contrib/Cake.Issues.PullRequests.AppVeyor/
+Author: Pascal Berger
+Description: |-
+  AppVeyor support for the Cake.Issues addin allows you to write found issues as message to AppVeyor builds.
+
+  This addin provides the aliases for writing to AppVeyor builds.
+  It also requires the core Cake.Issues and Cake.Issues.PullRequests addins and one or more issue providers.
+
+  See cakeissues.net for an overview of the whole ecosystem of addins for working with issues in Cake scripts.
+Categories:
+- issues
+- pull requests
+- appveyor

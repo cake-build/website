@@ -1,0 +1,10 @@
+Type: Addin
+Name: Cake.Xamarin
+NuGet: Cake.Xamarin
+Assemblies:
+- "/**/Cake.Xamarin.dll"
+Repository: https://github.com/cake-contrib/Cake.Xamarin/
+Author: Jonathan Dick
+Description: A set of aliases for Cake to help with Xamarin projects.
+Categories:
+- mobile

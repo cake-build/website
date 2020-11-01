@@ -1,0 +1,11 @@
+Type: Addin
+Name: Cake.IIS
+NuGet: Cake.IIS
+Assemblies:
+- "/**/Cake.IIS.dll"
+Repository: https://github.com/SharpeRAD/Cake.IIS/
+Author: SharpeRAD
+Description: Cake addin that extends Cake with IIS support.
+Categories:
+- iis
+- deployment

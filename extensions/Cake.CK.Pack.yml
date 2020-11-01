@@ -1,0 +1,11 @@
+Type: Addin
+Name: Cake.CK.Pack
+NuGet: Cake.CK.Pack
+Assemblies:
+- "/**/Cake.CK.Pack.dll"
+Repository: https://www.nuget.org/packages/Cake.CK.Pack/
+Author: Invenietis
+Description: Packer with globbing and file filtering for Cake.
+Categories:
+- ck
+- pack

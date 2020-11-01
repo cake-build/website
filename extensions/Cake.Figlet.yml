@@ -1,0 +1,10 @@
+Type: Addin
+Name: Cake.Figlet
+NuGet: Cake.Figlet
+Assemblies:
+- "/**/Cake.Figlet.dll"
+Repository: https://github.com/cake-contrib/Cake.Figlet/
+Author: Phil Scott
+Description: Cake build aliases and classes for adding ASCII art to your build script output.
+Categories:
+- misc

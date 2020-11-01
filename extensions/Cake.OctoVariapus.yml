@@ -1,0 +1,10 @@
+Type: Addin
+Name: Cake.OctoVariapus
+NuGet: Cake.OctoVariapus
+Assemblies:
+- "/**/Cake.OctoVariapus.dll"
+Repository: https://github.com/osoykan/Cake.OctoVariapus/
+Author: Oguzhan Soykan
+Description: Cake addin for add & modify Octopus variables
+Categories:
+- github

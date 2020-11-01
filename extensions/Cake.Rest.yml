@@ -1,0 +1,11 @@
+Type: Addin
+Name: Cake.Rest
+NuGet: Cake.Rest
+Assemblies:
+- "/**/Cake.Rest.dll"
+Repository: https://github.com/cake-contrib/Cake.Rest/
+Author: hadi77ir
+Description: Cake Addin for easily consuming REST APIs through RestSharp.
+Categories:
+- rest
+- restsharp

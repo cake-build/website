@@ -1,0 +1,10 @@
+Type: Addin
+Name: Cake.Mage
+NuGet: Cake.Mage
+Assemblies:
+- "/**/Cake.Mage.dll"
+Repository: https://github.com/cake-contrib/Cake.Mage/
+Author: Phil Scott
+Description: A Cake addin to provide support for Mage.exe.
+Categories:
+- mage

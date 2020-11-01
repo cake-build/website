@@ -1,0 +1,12 @@
+Type: Addin
+Name: Cake.Kubectl
+NuGet: Cake.Kubectl
+Assemblies:
+- "/**/Cake.Kubectl.dll"
+Repository: https://github.com/cake-contrib/Cake.Kubectl/
+Author: Miha Markic, Roman Marusyk, Cake Contributors
+Description: Kubectl Addin for Cake Deployment Automation System.
+Categories:
+- deploy
+- kubectl
+- deployment

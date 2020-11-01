@@ -1,12 +1,24 @@
 @model IEnumerable<IDocument>
 
+@{
+    var extensionType = new List<string> { "Addin" };
+
+    var extensions =
+        Model
+            .Where(x =>
+                x.String("Type") != null && 
+                extensionType.Any(y => y.Equals(x.String("Type"), StringComparison.OrdinalIgnoreCase)))
+            .OrderBy(x => x.String("Name"))
+            .ToList();
+}
+
 <div class="alert alert-info">
     <p>
         This page contains extensions for Cake.
         If you want to file an issue for any extension listed here, contact the author of the extension.
     </p>
     <p>
-        If you're an extension author and want your extension listed here, follow the instructions <a href="https://github.com/cake-build/website/blob/master/README.md#addins" target="_blank">here</a>.
+        If you're an extension author and want your extension listed here, follow the instructions <a href="https://github.com/cake-build/website/blob/master/README.md#extensions" target="_blank">here</a>.
     </p>
 </div>
 
@@ -16,20 +28,20 @@
 
     <div class="row no-margin">
         <div id="result-count" class="col-md-10 no-padding">
-            @Model.Count() extensions found
+            @extensions.Count() extensions found
         </div>
     </div>
 
     <div class="list-extensions list" role="list">
 
-    @foreach(IDocument addin in Model.OrderBy(d => d.String("Name")))
+    @foreach(IDocument extension in extensions)
     {
-        string name = addin.String("Name");
-        string description = addin.String("Description");
-        string author = addin.String("Author");
-        string repository = addin.String("Repository");
-        string version = addin.String("Version");
-        string categories = (String.Join(", ", addin.List<string>("Categories")));
+        string name = extension.String("Name");
+        string description = extension.String("Description");
+        string author = extension.String("Author");
+        string repository = extension.String("Repository");
+        string version = extension.String("Version");
+        string categories = (String.Join(", ", extension.List<string>("Categories")));
 
         <article class="extension row" data-name="@name" data-categories="@categories">
             <div class="col-sm-1 hidden-xs hidden-sm col-package-icon">

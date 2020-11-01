@@ -1,0 +1,17 @@
+Type: Addin
+Name: Cake.Issues.Reporting.Generic
+NuGet: Cake.Issues.Reporting.Generic
+Assemblies:
+- "/**/Cake.Issues.Reporting.Generic.dll"
+Repository: https://github.com/cake-contrib/Cake.Issues.Reporting.Generic/
+Author: Pascal Berger
+Description: |-
+  The generic report support for the Cake.Issues addin allows you to create issue reports in any text format (HTML, Markdown, ...).
+
+  This addin provides the aliases for any text based report format.
+  It also requires the core Cake.Issues and Cake.Issues.Reporting addins and one or more issue providers.
+
+  See cakeissues.net for an overview of the whole ecosystem of addins for working with issues in Cake scripts.
+Categories:
+- issues
+- reports

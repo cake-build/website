@@ -1,0 +1,10 @@
+Type: Addin
+Name: Cake.Unicorn
+NuGet: Cake.Unicorn
+Assemblies:
+- "/**/Cake.Unicorn.dll"
+Repository: https://www.nuget.org/packages/Cake.Unicorn/
+Author: George Chang
+Description: An add-in for the Cake Build system to execute an Unicorn sync for Sitecore.
+Categories:
+- sitecore

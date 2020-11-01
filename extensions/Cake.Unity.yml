@@ -1,0 +1,11 @@
+Type: Addin
+Name: Cake.Unity
+NuGet: Cake.Unity
+Assemblies:
+- "/**/Cake.Unity.dll"
+Repository: https://github.com/cake-contrib/Cake.Unity/
+Author: Patrik Svensson, Anatoliy Kolesnick
+Description: Unity build support for Cake.
+Categories:
+- unity
+- gaming

@@ -1,0 +1,12 @@
+Type: Addin
+Name: Cake.Jira
+NuGet: Cake.Jira
+Assemblies:
+- "/**/Cake.Jira.dll"
+Repository: https://github.com/cake-contrib/Cake.Jira/
+Author: Hugo Tavares
+Description: A Cake addin for integrating with Jira issue tracker.
+Categories:
+- atlassian
+- jira
+- issue tracking

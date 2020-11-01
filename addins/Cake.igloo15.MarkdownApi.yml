@@ -1,9 +1,0 @@
-Name: Cake.igloo15.MarkdownApi
-NuGet: Cake.igloo15.MarkdownApi
-Assemblies:
-- "/**/Cake.igloo15.MarkdownApi.dll"
-Repository: https://github.com/igloo15/Cake.igloo15/
-Author: igloo15
-Description: An addin for cake scripts that provides various markdown functions
-Categories:
-- markdown api

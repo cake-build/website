@@ -1,0 +1,11 @@
+Type: Addin
+Name: Cake.WebDeploy
+NuGet: Cake.WebDeploy
+Assemblies:
+- "/**/Cake.WebDeploy.dll"
+Repository: https://github.com/SharpeRAD/Cake.WebDeploy/
+Author: SharpeRAD
+Description: Cake addin that extends Cake with WebDeploy commands for publishing to IIS.
+Categories:
+- deployment
+- iis

@@ -1,0 +1,14 @@
+Type: Addin
+Name: Cake.EntityFramework6
+NuGet: Cake.EntityFramework6
+Assemblies:
+- "/**/Cake.EntityFramework6.dll"
+Repository: https://github.com/cake-contrib/Cake.EntityFramework6/
+Author: louisfischer, Cake-Contrib
+Description: Cake.EntityFramework6 is a set of Cake aliases for Entity Framework 6.3 or above (not .NET Core) code-first migration using the ef6.exe command line interface (cli).
+Categories:
+- entityframework
+- ef
+- code first
+- migrations
+- sql server

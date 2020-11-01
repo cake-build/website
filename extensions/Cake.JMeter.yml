@@ -1,0 +1,11 @@
+Type: Addin
+Name: Cake.JMeter
+NuGet: Cake.JMeter
+Assemblies:
+- "/**/Cake.JMeter.dll"
+Repository: https://github.com/cake-contrib/Cake.JMeter/
+Author: pitermarx
+Description: Cake Aliases for using the JMeter tool
+Categories:
+- test
+- performance

@@ -1,0 +1,10 @@
+Type: Addin
+Name: Cake.Mastodon
+NuGet: Cake.Mastodon
+Assemblies:
+- "/**/Cake.Mastodon.dll"
+Repository: https://github.com/cake-contrib/Cake.Mastodon/
+Author: Miha Markic, Cake Contributors
+Description: Cake Addin that exends Cake with ability to post messages to Mastodon, using the Mastodon REST API.
+Categories:
+- mastodon

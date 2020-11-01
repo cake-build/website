@@ -1,0 +1,13 @@
+Type: Addin
+Name: Cake.NSpec
+NuGet: Cake.NSpec
+Assemblies:
+- "/**/Cake.NSpec.dll"
+Repository: https://github.com/app-iron/Cake.NSpec/tree/master/
+Author: app-iron
+Description: Cake Adapter that enables nspec tests
+Categories:
+- nspec
+- bdd
+- tdd
+- testing

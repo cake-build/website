@@ -43,7 +43,7 @@
                                         IDocument containingAssembly = containingType.Get<IDocument>("ContainingAssembly");
                                         if(containingAssembly != null)
                                         {
-                                            IDocument addin = Documents["Addins"]
+                                            IDocument addin = Documents["Extensions"]
                                                 .FirstOrDefault(x => x.List<string>("Assemblies")
                                                     ?.Any(y => y.Contains(containingAssembly.String(CodeAnalysisKeys.DisplayName))) == true);
                                             <div><small><em>Requires the @addin.String("Name") addin</em></small></div>

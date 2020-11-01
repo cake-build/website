@@ -1,0 +1,11 @@
+Type: Addin
+Name: Cake.Warp
+NuGet: Cake.Warp
+Assemblies:
+- "/**/Cake.Warp.dll"
+Repository: https://github.com/cake-contrib/Cake.Warp/
+Author: Kim Nordmo
+Description: Cake addin for creating self-contained single binary applications using warp
+Categories:
+- compilation
+- self contained

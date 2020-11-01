@@ -1,0 +1,13 @@
+Type: Addin
+Name: Cake.XComponent
+NuGet: Cake.XComponent
+Assemblies:
+- "/**/Cake.XComponent.dll"
+Repository: https://github.com/xcomponent/Cake.XComponent/
+Author: XComponent Team
+Description: Cake build aliases for manipulating XComponent Tools.
+Categories:
+- xcomponent
+- xctools
+- xcstudio
+- micro services

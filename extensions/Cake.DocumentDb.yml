@@ -1,0 +1,11 @@
+Type: Addin
+Name: Cake.DocumentDb
+NuGet: Cake.DocumentDb
+Assemblies:
+- "/**/Cake.DocumentDb.dll"
+Repository: https://github.com/BudSystemLimited/Cake.DocumentDb/
+Author: BudSystemLimited
+Description: Cake plugin for creating documents, collections and seeding documents
+Categories:
+- document
+- db

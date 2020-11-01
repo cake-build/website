@@ -1,0 +1,12 @@
+Type: Addin
+Name: Cake.Apigee
+NuGet: Cake.Apigee
+Assemblies:
+- "/**/Cake.Apigee.dll"
+Repository: https://github.com/cake-contrib/Cake.Apigee/
+Author: Simon Ransom
+Description: Cake Aliases for Apigee
+Categories:
+- apigee
+- api gateway
+- deployment

@@ -5,7 +5,7 @@
 using System.Net.Http;
 using Polly;
 
-public static void DownloadPackages(this ICakeContext context, DirectoryPath addinDir, string[] packageIds)
+public static void DownloadPackages(this ICakeContext context, DirectoryPath extensionDir, string[] packageIds)
 {
     var retryPolicy = Policy
                         .Handle<Exception>()
@@ -18,13 +18,13 @@ public static void DownloadPackages(this ICakeContext context, DirectoryPath add
         Parallel.ForEach(
             packageIds,
             packageId => retryPolicy.Execute(
-                    () => context.DownloadPackage(addinDir, httpClient, packageId)
+                    () => context.DownloadPackage(extensionDir, httpClient, packageId)
             )
         );
     }
 }
 
-public static void DownloadPackage(this ICakeContext context, DirectoryPath addinDir, HttpClient httpClient, string packageId)
+public static void DownloadPackage(this ICakeContext context, DirectoryPath extensionDir, HttpClient httpClient, string packageId)
 {
     context.Information("[{0}] fetching meta data...", packageId);
     var packageJson = httpClient.GetStringAsync($"https://api.nuget.org/v3/registration5-semver1/{packageId.ToLowerInvariant()}/index.json")
@@ -48,7 +48,7 @@ public static void DownloadPackage(this ICakeContext context, DirectoryPath addi
     context.Verbose("[{0}] found {1}...", packageId, packageInfo);
 
 
-    var packageDir = addinDir.Combine($"{packageId}.{packageInfo.version}".ToLower());
+    var packageDir = extensionDir.Combine($"{packageId}.{packageInfo.version}".ToLower());
 
     using (var stream = httpClient.GetStreamAsync(packageInfo.packageContent).GetAwaiter().GetResult())
     {
@@ -92,7 +92,7 @@ public static void DownloadPackage(this ICakeContext context, DirectoryPath addi
         }
     }
 
-    context.FileWriteText(addinDir.CombineWithFilePath($"{packageId}.version"), packageInfo.version);
+    context.FileWriteText(extensionDir.CombineWithFilePath($"{packageId}.version"), packageInfo.version);
 
     context.Information("[{0}] done.", packageId);
 }

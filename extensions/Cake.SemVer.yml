@@ -1,0 +1,11 @@
+Type: Addin
+Name: Cake.SemVer
+NuGet: Cake.SemVer
+Assemblies:
+- "/**/Cake.SemVer.dll"
+Repository: https://github.com/cake-contrib/Cake.SemVer/
+Author: Jonathan Dick
+Description: Cake build aliases and classes for Semantic Versioning.
+Categories:
+- versioning
+- semver
