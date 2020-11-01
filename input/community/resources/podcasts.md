@@ -1,5 +1,6 @@
 ﻿Order: 30
 Description: Podcasts about Cake
+RedirectFrom: docs/resources/podcasts
 ---
 
 # 2017

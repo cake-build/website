@@ -1,5 +1,6 @@
 ﻿Order: 20
 Description: Slides from presentations about Cake
+RedirectFrom: docs/resources/presentations
 ---
 
 # 2018

@@ -1,5 +1,6 @@
 Order: 50
 Description: News pages mentioning Cake
+RedirectFrom: docs/resources/in-the-news
 ---
 
 # 2016

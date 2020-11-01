@@ -1,5 +1,6 @@
 Order: 10
 Description: Videos about Cake
+RedirectFrom: docs/resources/videos
 ---
 # 2020
 
