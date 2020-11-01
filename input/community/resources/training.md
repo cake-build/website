@@ -1,5 +1,6 @@
 Order: 15
 Description: Training courses for Cake
+RedirectFrom: docs/resources/training
 ---
 
 # 2017
