@@ -25,4 +25,4 @@ There are different runners available for running Cake scripts.
 [Cake Frosting]: cake-frosting
 [Cake runner for .NET Framework]: cake-runner-for-dotnet-framework
 [Cake runner for .NET Core]: cake-runner-for-dotnet-core
-[IntelliSense in Visual Studio Code]: ../integrations/editors/vscode/intellisense
+[IntelliSense in Visual Studio Code]: ../../integrations/editors/vscode/intellisense
