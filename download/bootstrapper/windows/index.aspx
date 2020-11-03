@@ -1,1 +1,1 @@
-<% Response.Redirect("https://raw.githubusercontent.com/cake-build/resources/master/build.ps1") %>
+<% Response.Redirect("https://raw.githubusercontent.com/cake-build/resources/master/dotnet-framework/build.ps1") %>
