@@ -1,0 +1,1 @@
+<% Response.Redirect("https://raw.githubusercontent.com/cake-build/resources/master/dotnet-tool/build.sh") %>
