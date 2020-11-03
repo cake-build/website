@@ -20,19 +20,20 @@ var target = Argument("target", "Default");
 //////////////////////////////////////////////////////////////////////
 
 // Define variables
-var isRunningOnAppVeyor = AppVeyor.IsRunningOnAppVeyor;
-var isPullRequest       = AppVeyor.Environment.PullRequest.IsPullRequest;
-var accessToken         = EnvironmentVariable("git_access_token");
-var deployRemote        = EnvironmentVariable("git_deploy_remote");
-var zipFileName         = "output.zip";
-var deployCakeFileName  = "deploy.cake";
+var isRunningOnAppVeyor  = AppVeyor.IsRunningOnAppVeyor;
+var isPullRequest        = AppVeyor.Environment.PullRequest.IsPullRequest;
+var accessToken          = EnvironmentVariable("git_access_token");
+var deployRemote         = EnvironmentVariable("git_deploy_remote");
+var zipFileName          = "output.zip";
+var deployCakeFileName   = "deploy.cake";
 
 // Define directories.
-var releaseDir          = Directory("./release");
-var sourceDir           = releaseDir + Directory("repo");
-var extensionDir        = releaseDir + Directory("extensions");
-var outputPath          = MakeAbsolute(Directory("./output"));
-var rootPublishFolder   = MakeAbsolute(Directory("publish"));
+var releaseDir           = Directory("./release");
+var cakeSourceDir        = releaseDir + Directory("cake-repo");
+var cakeContribSourceDir = releaseDir + Directory("cake-contrib-repo");
+var extensionDir         = releaseDir + Directory("extensions");
+var outputPath           = MakeAbsolute(Directory("./output"));
+var rootPublishFolder    = MakeAbsolute(Directory("publish"));
 
 // Definitions
 class ExtensionSpec
@@ -68,10 +69,19 @@ Setup(ctx =>
 Task("CleanSource")
     .Does(() =>
 {
-    if(DirectoryExists(sourceDir))
+    if(DirectoryExists(cakeSourceDir))
     {
-        CleanDirectory(sourceDir);
-        DeleteDirectory(sourceDir, new DeleteDirectorySettings {
+        CleanDirectory(cakeSourceDir);
+        DeleteDirectory(cakeSourceDir, new DeleteDirectorySettings {
+            Recursive = true,
+            Force = true
+        });
+    }
+
+    if(DirectoryExists(cakeContribSourceDir))
+    {
+        CleanDirectory(cakeContribSourceDir);
+        DeleteDirectory(cakeContribSourceDir, new DeleteDirectorySettings {
             Recursive = true,
             Force = true
         });
@@ -105,7 +115,15 @@ Task("GetSource")
 
         // Need to rename the container directory in the zip file to something consistent
         var containerDir = GetDirectories(releaseDir.Path.FullPath + "/*").First(x => x.GetDirectoryName().StartsWith("cake"));
-        MoveDirectory(containerDir, sourceDir);
+        MoveDirectory(containerDir, cakeSourceDir);
+
+        // Download cake-contrib Home repository
+        FilePath cakeContribReleaseZip = DownloadFile("https://github.com/cake-contrib/Home/archive/master.zip");
+        Unzip(cakeContribReleaseZip, releaseDir);
+
+        // Need to rename the container directory in the zip file to something consistent
+        var cakeContribContainerDir = GetDirectories(releaseDir.Path.FullPath + "/*").First(x => x.GetDirectoryName().StartsWith("Home-master"));
+        MoveDirectory(cakeContribContainerDir, cakeContribSourceDir);
     });
 
 Task("CleanExtensionPackages")
