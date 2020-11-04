@@ -1,6 +1,6 @@
 ---
 title: Email addins released
-category: Announcement
+category: Addins
 author: jericho
 ---
 
