@@ -3,7 +3,7 @@ Title: Cake runner for .NET Core
 ---
 
 :::{.alert .alert-warning}
-The Cake runner for .NET Core is deprecated and it is suggested to use [.NET Core Tool](dotnet-core-tool) for running Cake under .NET Core.
+The Cake runner for .NET Core is deprecated and it is suggested to use [.NET Tool](dotnet-tool) for running Cake under .NET Core.
 :::
 
 # Requirements
