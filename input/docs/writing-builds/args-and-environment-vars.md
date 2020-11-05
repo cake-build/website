@@ -21,7 +21,7 @@ Argument<bool>("showstuff", false);
 Execution:
 
 <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#tool2">.NET Core Tool</a></li>
+    <li class="active"><a data-toggle="tab" href="#tool2">.NET Tool</a></li>
     <li><a data-toggle="tab" href="#frosting2">Cake Frosting</a></li>
     <li><a data-toggle="tab" href="#netfx2">Cake runner for .NET Framework</a></li>
     <li><a data-toggle="tab" href="#core2">Cake runner for .NET Core</a></li>

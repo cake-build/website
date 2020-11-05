@@ -1,5 +1,6 @@
 Order: 10
-Title: .NET Core Tool
+Title: .NET Tool
+RedirectFrom: docs/running-builds/runners/dotnet-core-tool
 ---
 
 :::{.alert .alert-success}
@@ -18,7 +19,7 @@ dotnet cake [script] [switches]
 
 ^"../../../Shared/switches.txt"
 
-# Bootstrapping for .NET Core Tool
+# Bootstrapping for .NET Tool
 
 :::{.alert .alert-info}
 The following instructions require .NET Core 3.0 or newer.
@@ -27,10 +28,10 @@ See [How to manage .NET Core tools](https://docs.microsoft.com/en-us/dotnet/core
 
 ## Setup
 
-There's a one-time setup required for configuring a repository to use Cake .NET Core tool.
+There's a one-time setup required for configuring a repository to use Cake .NET tool.
 
 :::{.alert .alert-info}
-If you have .NET Core Tool already available in your environment you can skip the steps in this chapter.
+If you have .NET Tool already available in your environment you can skip the steps in this chapter.
 :::
 
 Make sure to have a tool manifest available in your repository or create one using the following command:
