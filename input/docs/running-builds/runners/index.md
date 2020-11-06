@@ -12,7 +12,7 @@ RedirectFrom:
 There are different runners available for running Cake scripts.
 
 | Runner | Minimum required .NET version  | Supported | IntelliSense |
-|-|-|-|
+|-|-|-|-|
 | [.NET Core Tool] | .NET Core 2.1 | <span class="glyphicon glyphicon-ok" style="color:green"></span> | <span class="glyphicon glyphicon-ok" style="color:orange"></span> [[1]](#1) |
 | [Cake Frosting] | .NET Framework 4.6.1 or .NET Core 3.1 | <span class="glyphicon glyphicon-ok" style="color:green"></span> | <span class="glyphicon glyphicon-ok" style="color:green"></span> |
 | [Cake runner for .NET Framework] | .NET Framework 4.6.1 or Mono 5.0.12 | <span class="glyphicon glyphicon-ok" style="color:green"></span> | <span class="glyphicon glyphicon-ok" style="color:orange"></span> [[1]](#1) |
