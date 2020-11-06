@@ -7,7 +7,7 @@ RedirectFrom: docs/editors/visualstudio
 # Syntax Highlighting
 
 <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#tool1">.NET Core Tool</a></li>
+    <li class="active"><a data-toggle="tab" href="#tool1">.NET Tool</a></li>
     <li><a data-toggle="tab" href="#frosting1">Cake Frosting</a></li>
     <li><a data-toggle="tab" href="#netfx1">Cake runner for .NET Framework</a></li>
     <li><a data-toggle="tab" href="#core1">Cake runner for .NET Core</a></li>
@@ -39,7 +39,7 @@ RedirectFrom: docs/editors/visualstudio
 # IntelliSense
 
 <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#tool2">.NET Core Tool</a></li>
+    <li class="active"><a data-toggle="tab" href="#tool2">.NET Tool</a></li>
     <li><a data-toggle="tab" href="#frosting2">Cake Frosting</a></li>
     <li><a data-toggle="tab" href="#netfx2">Cake runner for .NET Framework</a></li>
     <li><a data-toggle="tab" href="#core2">Cake runner for .NET Core</a></li>
@@ -81,7 +81,7 @@ You can also use the commands from the Build > Cake Build menu to install the de
 # Code Snippets
 
 <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#tool3">.NET Core Tool</a></li>
+    <li class="active"><a data-toggle="tab" href="#tool3">.NET Tool</a></li>
     <li><a data-toggle="tab" href="#frosting3">Cake Frosting</a></li>
     <li><a data-toggle="tab" href="#netfx3">Cake runner for .NET Framework</a></li>
     <li><a data-toggle="tab" href="#core3">Cake runner for .NET Core</a></li>
@@ -113,7 +113,7 @@ You can also use the commands from the Build > Cake Build menu to install the de
 # Task Runner
 
 <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#tool4">.NET Core Tool</a></li>
+    <li class="active"><a data-toggle="tab" href="#tool4">.NET Tool</a></li>
     <li><a data-toggle="tab" href="#frosting4">Cake Frosting</a></li>
     <li><a data-toggle="tab" href="#netfx4">Cake runner for .NET Framework</a></li>
     <li><a data-toggle="tab" href="#core4">Cake runner for .NET Core</a></li>
@@ -121,7 +121,7 @@ You can also use the commands from the Build > Cake Build menu to install the de
 
 <div class="tab-content">
     <div id="tool4" class="tab-pane fade in active">
-            Task runner is currently not supported for <a href="/docs/running-builds/runners/dotnet-core-tool">.NET Core Tool</a>.
+            Task runner is currently not supported for <a href="/docs/running-builds/runners/dotnet-tool">.NET Tool</a>.
     </div>
     <div id="frosting4" class="tab-pane fade">
         <p>

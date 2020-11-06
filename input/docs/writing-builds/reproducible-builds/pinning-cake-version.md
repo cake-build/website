@@ -5,7 +5,7 @@ Description: How to make Cake builds reproducible
 To have deterministic builds it is important that on every build the same version of Cake is used.
 
 <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#tool1">.NET Core Tool</a></li>
+    <li class="active"><a data-toggle="tab" href="#tool1">.NET Tool</a></li>
     <li><a data-toggle="tab" href="#frosting1">Cake Frosting</a></li>
     <li><a data-toggle="tab" href="#netfx1">Cake runner for .NET Framework</a></li>
     <li><a data-toggle="tab" href="#core1">Cake runner for .NET Core</a></li>
