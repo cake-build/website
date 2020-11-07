@@ -1,0 +1,40 @@
+Order: 30
+Description: Integration with Atlassian Bamboo
+---
+
+<h1 id="included-support">Out of the box support</h1>
+
+<p>
+    The <a href="/api/Cake.Common.Build/BuildSystemAliases/54316A70">Bamboo alias</a>, which returns an
+    <a href="/api/Cake.Common.Build.Bamboo/IBambooProvider/">IBambooProvider</a> instance can be used to interact with the Atlassian Bamboo environment.
+</p>
+<p>
+    The following example prints the build number if running on Atlassian Bamboo:
+</p>
+
+<pre><code class="language-csharp hljs">if (BuildSystem.Bamboo.IsRunningOnBamboo)
+{
+    Information(BuildSystem.Bamboo.Environment.Build.Number);
+}
+else
+{
+    Information("Not running on Atlassian Bamboo");
+}</code></pre>
+
+<div class="alert alert-info">
+    <p>
+        See <a href="/api/Cake.Common.Build.Bamboo/IBambooProvider/">IBambooProvider</a> for details and available methods to interact with Atlassian Bamboo.
+    </p>
+</div>
+
+<h1 id="included-support">Available 3rd party extensions</h1>
+
+@{
+    var keywords = new List<string> { "bamboo" };
+    var extensions =
+        Documents["Extensions"]
+            .Where(x =>
+                keywords.Any(y => x.String("Name").ToLowerInvariant().Contains(y)));
+}
+
+@Html.Partial("_ExtensionsList", extensions)

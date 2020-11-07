@@ -1,38 +1,19 @@
 @model IEnumerable<IDocument>
 
 @{
-    var extensionType = new List<string> { "Addin" };
-
     var extensions =
         Model
-            .Where(x =>
-                x.String("Type") != null && 
-                extensionType.Any(y => y.Equals(x.String("Type"), StringComparison.OrdinalIgnoreCase)))
             .OrderBy(x => x.String("Name"))
             .ToList();
 }
 
-<div class="alert alert-info">
-    <p>
-        This page contains extensions for Cake.
-        If you want to file an issue for any extension listed here, contact the author of the extension.
-    </p>
-    <p>
-        If you're an extension author and want your extension listed here, follow the instructions <a href="https://github.com/cake-build/website/blob/master/README.md#extensions" target="_blank">here</a>.
-    </p>
-</div>
-
-<section id="extensions">
-
-    <input id="search" type="text" class="search" aria-label="Enter extensions to search" placeholder="Search for extensions..." autocomplete="off" value>
-
-    <div class="row no-margin">
-        <div id="result-count" class="col-md-10 no-padding">
-            @extensions.Count() extensions found
-        </div>
-    </div>
-
-    <div class="list-extensions list" role="list">
+<div class="list-extensions list" role="list">
+    @if (!extensions.Any())
+    {
+        <p>
+            No extensions found
+        </p>
+    }
 
     @foreach(IDocument extension in extensions)
     {
@@ -78,21 +59,4 @@
             </div>
         </article>
     }
-    </div>
-</section>
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-<script>
-    var options = {
-      valueNames: [
-        { data: ['name'] },
-        { data: ['categories'] }
-      ]
-    };
-
-    var extensionList = new List('extensions', options);
-
-    extensionList.on('searchComplete', function() {
-        document.getElementById("result-count").innerHTML = extensionList.update().matchingItems.length + " extensions found";
-    });
-</script>
+</div>

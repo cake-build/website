@@ -59,7 +59,8 @@ The following table shows build systems for which Cake provides specific integra
 
 :::{.alert .alert-info}
 Cake can run on any build system, even if not included in this list.
-For the listed build systems Cake provides 
+For the listed build systems Cake provides out of the box integrations.
+See [Build Systems](/docs/integrations/build-systems/) for details.
 :::
 
 | Runner                           | AppVeyor | Azure Pipelines | Bamboo | Bitbucket Pipelines | Bitrise | Continua CI | GitHub Actions | GitLab CI | GoCD | Jenkins | MyGet | TeamCity | TravisCI |

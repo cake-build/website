@@ -1,9 +1,10 @@
 Order: 10
-Title: Azure DevOps
-Description: Extensions and supported features for Azure DevOps
+Title: Azure DevOps Build Task Extension
+Description: Extensions for Azure DevOps which provides a Cake build task
 RedirectFrom:
   - docs/build-systems/vso
   - docs/build-systems/azure-devops
+  - docs/integrations/build-systems/azure-devops
 ---
 
 The Cake Azure DevOps build task makes it easy to run a Cake script directly, without having to invoke PowerShell or other command line scripts. This makes it easy even for team members that are not familiar with Cake to add or adjust parameters passed to your build scripts.
