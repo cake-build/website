@@ -8,6 +8,8 @@
 <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#directive">Preprocessor directive</a></li>
     <li><a data-toggle="tab" href="#config">packages.config</a></li>
+    <li><a data-toggle="tab" href="#frosting-cli">Frosting .NET CLI</a></li>
+    <li><a data-toggle="tab" href="#frosting-packagereference">Frosting PackageReference</a></li>
 </ul>
 
 <div class="tab-content">
@@ -19,6 +21,16 @@
     <div id="config" class="tab-pane fade">
         <p>
 <pre><code class="language-xml hljs">&lt;package id="@(nuget)" version="@(version)" /&gt;</code></pre>
+        </p>
+    </div>
+    <div id="frosting-cli" class="tab-pane fade">
+        <p>
+<pre><code class="language-powershell hljs">dotnet add package @(nuget) --version @(version)</code></pre>
+        </p>
+    </div>
+    <div id="frosting-packagereference" class="tab-pane fade">
+        <p>
+<pre><code class="language-xml hljs">&lt;PackageReference Include="@(nuget)" Version="@(version)" /&gt;</code></pre>
         </p>
     </div>
 </div>
