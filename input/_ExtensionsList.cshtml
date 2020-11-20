@@ -43,6 +43,12 @@
                     <li>
                         <i class="fa fa-github"></i>
                         <a href="@repository" target="_blank">@repository.Replace("https://github.com/", string.Empty).TrimEnd('/')</a>
+                        @if (repository.StartsWith("https://github.com/cake-contrib/"))
+                        {
+                            <a href="/community/cake-contrib">
+                                <i class="fa fa-check-circle" data-toggle="tooltip" title="Source code hosted in cake-contrib organization"></i>
+                            </a>
+                        }
                     </li>
                     @if (!string.IsNullOrWhiteSpace(categories))
                     {
