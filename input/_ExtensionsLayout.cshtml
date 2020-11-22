@@ -49,6 +49,16 @@
                                     addinAssembly.Contains(
                                         aliasDocument.Document(CodeAnalysisKeys.ContainingAssembly).String("Name") + ".dll")));
 
+            // Show summary of aliases class
+            var summary =
+                aliasClasses
+                    .Select(x => x.String(CodeAnalysisKeys.Summary))
+                    .FirstOrDefault(x => !string.IsNullOrEmpty(x));
+            @if(!string.IsNullOrWhiteSpace(summary))
+            {
+                <div>@Html.Raw(summary)</div>
+            }
+
             @Html.Partial(
                 "_AliasesList",
                 aliasClasses,
