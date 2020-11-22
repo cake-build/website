@@ -298,3 +298,40 @@ cake.exe --nuget_configfile=./NuGet.config
 ```
 <hr/>
 
+# Show Process Command Line
+
+When Cake runs a tool the default behavior is to log the file name and the arguments only when the `Diagnostic` log verbosity is used. This setting will instruct Cake to always log the file name and arguments regardless of the log verbosity setting.
+
+## Default Value
+
+```sh
+false
+```
+## Valid Values
+
+```sh
+true
+or
+false
+```
+
+## Environment Variable Name
+
+```sh
+CAKE_SETTINGS_SHOWPROCESSCOMMANDLINE
+```
+
+## Config File Contents
+
+```sh
+[Settings]
+ShowProcessCommandLine=true
+```
+
+## Direct Argument
+
+```sh
+cake.exe --settings_showprocesscommandline=true
+```
+
+<hr/>
