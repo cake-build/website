@@ -1,11 +1,11 @@
 @{
-	Layout = "/_Master.cshtml";
+    Layout = "/_Master.cshtml";
 
-	ViewData[Keys.Title] = "Reference - " + Model.String(Keys.GroupKey);
+    ViewData[Keys.Title] = "Reference - " + Model.String(Keys.GroupKey);
 }
 
 @section Infobar {
-	<div id="infobar-headings"></div>
+    <div id="infobar-headings"></div>
 }
 
 @section Sidebar {
@@ -13,29 +13,70 @@
 }
 
 <section class="content-header">
-	<h1>@Model.String(Keys.GroupKey)</h1>
+    <h1>@Model.String(Keys.GroupKey) aliases</h1>
 </section>
 <section class="content">
     @{
-        IDocument containingClass = Model
-            .DocumentList(Keys.GroupDocuments)
-            .FirstOrDefault();
+        // Group aliases by addin
+        var aliasesGroupedByAssembly =
+            Model
+                .DocumentList(Keys.GroupDocuments)
+                .GroupBy(x => x.Document(CodeAnalysisKeys.ContainingAssembly)?.String(CodeAnalysisKeys.DisplayName))
+                .OrderBy(x => x.Key);
     }
-    @Html.Partial("_AddinAlert", containingClass)
 
-    @{
-        string summary = Model
-            .DocumentList(Keys.GroupDocuments)
-            .Select(x => x.String(CodeAnalysisKeys.Summary))
-            .FirstOrDefault(x => !string.IsNullOrEmpty(x));
-    }
-    @if(!string.IsNullOrWhiteSpace(summary))
+    @foreach(var group in aliasesGroupedByAssembly)
     {
-        <h1 id="Summary">Summary</h1>
-        <div>@Html.Raw(summary)</div>
-    }
+        // Determine addin name
+        var isAddin = !string.IsNullOrWhiteSpace(group.Key);
+        string addinName = null;
+        @if(isAddin)
+        {
+            IDocument extension =
+                Documents["Extensions"]
+                    .FirstOrDefault(x =>
+                        x.List<string>("Assemblies") != null &&
+                        x.List<string>("Assemblies")
+                            .Any(
+                                addinAssembly =>
+                                    addinAssembly != null &&
+                                    addinAssembly.Contains(group.Key)));
+            @if(extension != null)
+            {
+                addinName = $"{extension.String("Name")} addin";
+            }
+        }
 
-    @Html.Partial("_AliasesList", Model.DocumentList(Keys.GroupDocuments))
+        // Group heading
+        var groupHeading = addinName ?? "Built-In";
+        <h1 id='@groupHeading.Replace(" ", "-")'>@groupHeading</h1>
+
+        // Addin annotation
+        @if(isAddin)
+        {
+            @Html.Partial("_AddinAlert", group.FirstOrDefault())
+        }
+
+        // Summary
+        string summary =
+            group
+                .Select(x => x.String(CodeAnalysisKeys.Summary))
+                .FirstOrDefault(x => !string.IsNullOrEmpty(x));
+
+        @if(!string.IsNullOrWhiteSpace(summary))
+        {
+            <p>@Html.Raw(summary)</p>
+        }
+
+        // Alias list
+        @Html.Partial(
+            "_AliasesList",
+            group,
+            new ViewDataDictionary(ViewData)
+            {
+                    { "groupHeadingLevel", 2 }
+            })
+    }
 
     @RenderBody()
 </section>

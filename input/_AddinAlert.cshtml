@@ -4,24 +4,23 @@
 	IDocument containingAssembly = Model.Get<IDocument>("ContainingAssembly");
     if(containingAssembly != null)
     {
-        IDocument addin = Documents["Extensions"]
-            .FirstOrDefault(x => 
+        IDocument extension = Documents["Extensions"]
+            .FirstOrDefault(x =>
                 (
                     x.String("Type") == null ||
                     x.String("Type").Equals("Addin", StringComparison.OrdinalIgnoreCase)
-                ) && 
+                ) &&
                 x.List<string>("Assemblies")
                     ?.Any(y => y.Contains(containingAssembly.String(CodeAnalysisKeys.DisplayName))) == true);
         <div class="alert alert-info" role="alert">
-            <i class="fa fa-info-circle"></i> This content is part of a third party addin that is not supported by the Cake project.
-            @if(addin != null && !string.IsNullOrEmpty(addin.String("Repository")))
+            <i class="fa fa-info-circle"></i> This content is part of a third party extension that is not supported by the Cake project.
+            @if(extension != null && !string.IsNullOrEmpty(extension.String("Name")))
             {
-                string repository = addin.String("Repository");
-                if(!string.IsNullOrEmpty(repository))
+                string extensionName = extension.String("Name");
+                if(!string.IsNullOrEmpty(extensionName))
                 {
                     <text>
-                        For more information about this project, please visit 
-                        <a href="@(repository)" class="alert-link">@repository</a>.
+                        For more information about this extension see <a href="/extensions/@extensionName.ToLower().Replace(".", "-")/">@extensionName</a>.
                     </text>
                 }
             }
