@@ -7,7 +7,7 @@ A console application has the advantage of full IDE support, like IntelliSense, 
 
 # Requirements
 
-[Cake.Frosting](https://github.com/cake-build/frosting) is a .NET host which allows you to write your build scripts as a console application
+Cake.Frosting is a .NET host which allows you to write your build scripts as a console application
 (`netcoreapp3.1` or `net461`).
 
 # Usage
@@ -36,7 +36,7 @@ See [Arguments And Environment Variables](../../writing-builds/args-and-environm
 
 # Bootstrapping for Cake Frosting
 
-When creating a new [Cake Frosting](https://github.com/cake-build/frosting) project from the template default bootstrapping scripts for Windows, macOS and Linux are created.
+When creating a new Cake Frosting project from the template default bootstrapping scripts for Windows, macOS and Linux are created.
 
 :::{.alert .alert-info}
 The following instructions require .NET Core 3.1.301 or newer.
@@ -45,7 +45,7 @@ You can find the SDK at https://dotnet.microsoft.com/download
 
 ## Setup
 
-To create a new [Cake Frosting](https://github.com/cake-build/frosting) project you need to install the Frosting template:
+To create a new Cake Frosting project you need to install the Frosting template:
 
 ```powershell
 dotnet new --install Cake.Frosting.Template
