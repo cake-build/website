@@ -1,5 +1,5 @@
 ---
-Order: 30
+Order: 40
 Title: Frequently Asked Questions
 Description: Frequently Asked Questions about Cake
 RedirectFrom: faq
