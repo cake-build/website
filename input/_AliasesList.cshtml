@@ -38,6 +38,35 @@ else {
                     {
                         <tr>
                             <td>
+                                @* Determine if alias is from an addin *@
+                                @{
+                                    string extensionName = null;
+                                }
+                                @if(showAddinReference)
+                                {
+                                    IDocument assemblyDoc = alias.Doc.Document(CodeAnalysisKeys.ContainingAssembly);
+                                    if (assemblyDoc != null)
+                                    {
+                                        IDocument extension =
+                                            Documents["Extensions"]
+                                                .FirstOrDefault(x => 
+                                                    x.List<string>("Assemblies") != null &&
+                                                    x.List<string>("Assemblies")
+                                                        .Any(
+                                                            addinAssembly =>
+                                                                addinAssembly != null &&
+                                                                addinAssembly.Contains(
+                                                                    assemblyDoc.String(CodeAnalysisKeys.DisplayName)
+                                                                )));
+                                        extensionName = extension?.String("Name");
+                                    }
+                                }
+
+                                @if(extensionName != null)
+                                {
+                                    <i class="fa fa-puzzle-piece"></i>
+                                }
+                                
                                 @if(alias.MethodAlias)
                                 {
                                     <text>@Context.GetTypeLink(alias.Doc, false)</text>
@@ -46,20 +75,19 @@ else {
                                 {
                                     <text>@Context.GetTypeLink(alias.Doc, alias.Doc.String("Name"), false)</text>
                                 }
+
+                                @if(showAddinReference && extensionName != null)
+                                {
+                                    <text>
+                                        <br/>
+                                        <small>
+                                            <i>Alias from <a href="/extensions/@extensionName.ToLower().Replace(".", "-")/">@extensionName</a> addin</i>
+                                        </small>
+                                    </text>
+                                }
                             </td>
                             <td>
                                 @Html.Raw(alias.Doc.String(CodeAnalysisKeys.Summary))
-                               @if(showAddinReference)
-                                {
-                                    IDocument assemblyDoc = alias.Doc.Document(CodeAnalysisKeys.ContainingAssembly);
-                                    if(assemblyDoc != null)
-                                    {
-                                        <text>
-                                            <br/>
-                                            <small><i>Addin from @Context.GetTypeLink(assemblyDoc)</i></small>
-                                        </text>
-                                    }
-                                }
                             </td>
                         </tr>
                     }
