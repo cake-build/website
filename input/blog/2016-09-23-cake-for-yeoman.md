@@ -25,7 +25,7 @@ You can also install each of these individually using `yo cake:config` or `yo ca
 
 ## Frosting
 
-Finally, you can also use our (experimental) generator for [Frosting](https://github.com/cake-build/frosting) to quickly setup a new .NET Core project using Frosting:
+Finally, you can also use our (experimental) generator for [Frosting](https://cakebuild.net/docs/running-builds/runners/cake-frosting) to quickly setup a new .NET Core project using Frosting:
 
 ```
 yo cake:frosting
