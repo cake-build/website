@@ -4,6 +4,11 @@ RedirectFrom: docs/resources/videos
 ---
 # 2020
 
+## A Piece of Cake - C# Powered Cross-platform Build Automation
+### Gary Ewan Park - .NET Conf 2020
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/o38glTSZsVg" frameborder="0" allowfullscreen></iframe>
+
 ## Azure DevOps Pipelines as code using C#
 ### Mattias Karlsson - Swetugg Stockholm
 
