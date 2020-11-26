@@ -3,6 +3,12 @@ Description: Podcasts about Cake
 RedirectFrom: docs/resources/podcasts
 ---
 
+# 2020
+
+## .NET Rocks
+
+Mattias appeared on show [1712](https://www.dotnetrocks.com/?show=1712).
+
 # 2017
 
 ## Gone Mobile
