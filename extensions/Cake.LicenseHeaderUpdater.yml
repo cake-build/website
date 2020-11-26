@@ -1,0 +1,12 @@
+Type: Addin
+Name: Cake.LicenseHeaderUpdater
+NuGet: Cake.LicenseHeaderUpdater
+Assemblies:
+- "/**/Cake.LicenseHeaderUpdater.dll"
+Repository: https://github.com/xforever1313/Cake.LicenseHeaderUpdater/
+Author: xforever1313
+Description: Cake addin to update the license header of source code files.
+Categories:
+- license
+- header
+- updater
