@@ -3,6 +3,11 @@ Title: Blog Posts
 Description: Blog posts about Cake
 RedirectFrom: docs/resources/blogs
 ---
+# 2020
+
+## Daniel Hindrikes
+* [GitHub Actions and Cake for TinyMvvm](https://danielhindrikes.se/index.php/2020/11/26/github-actions-for-tinymvvm/)
+
 # 2019
 
 ## François (Frank) Boucher
