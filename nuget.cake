@@ -36,14 +36,14 @@ public static void DownloadPackage(this ICakeContext context, DirectoryPath exte
     var packageInfo = (
         from packageItem in package?.items ?? Enumerable.Empty<PackageItem>()
         from item in packageItem.items ?? Enumerable.Empty<PackageRevisions>()
-        where item?.catalogEntry?.version == packageItem.upper
+        where item?.catalogEntry?.listed ?? false
         select new
         {
             id = packageId,
-            version = packageItem?.upper,
+            version = item?.catalogEntry?.version,
             item?.packageContent
         }
-    ).FirstOrDefault();
+    ).LastOrDefault();
 
     context.Verbose("[{0}] found {1}...", packageId, packageInfo);
 
@@ -117,4 +117,5 @@ public class PackageRevisions
 public class PackageCatalogentry
 {
     public string version { get; set; }
+    public bool listed { get; set; }
 }
