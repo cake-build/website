@@ -1,8 +1,10 @@
 #addin "nuget:https://api.nuget.org/v3/index.json?package=Polly&version=7.1.0"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=LitJson&version=0.13.0"
 #addin "nuget:https://api.nuget.org/v3/index.json??package=Cake.FileHelpers&version=3.3.0"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=NuGet.Versioning&version=5.7.0"
 
 using System.Net.Http;
+using NuGet.Versioning;
 using Polly;
 
 public static void DownloadPackages(this ICakeContext context, DirectoryPath extensionDir, string[] packageIds)
@@ -37,10 +39,13 @@ public static void DownloadPackage(this ICakeContext context, DirectoryPath exte
         from packageItem in package?.items ?? Enumerable.Empty<PackageItem>()
         from item in packageItem.items ?? Enumerable.Empty<PackageRevisions>()
         where item?.catalogEntry?.listed ?? false
+        let version = item?.catalogEntry?.version
+        let nugetVersion = version is null ? null : NuGetVersion.Parse(version)
+        orderby nugetVersion
         select new
         {
             id = packageId,
-            version = item?.catalogEntry?.version,
+            version = nugetVersion?.ToNormalizedString(),
             item?.packageContent
         }
     ).LastOrDefault();
