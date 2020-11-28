@@ -41,7 +41,7 @@ public static void DownloadPackage(this ICakeContext context, DirectoryPath exte
         where item?.catalogEntry?.listed ?? false
         let version = item?.catalogEntry?.version
         let nugetVersion = version is null ? null : NuGetVersion.Parse(version)
-        orderby nugetVersion
+        orderby !(nugetVersion?.IsPrerelease ?? false), nugetVersion
         select new
         {
             id = packageId,
