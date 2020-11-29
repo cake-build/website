@@ -3,6 +3,15 @@
 @{
     string nuget = Model.String("NuGet");
     string version = Model.String("Version");
+    bool isPrerelease = Model.Bool("isPrerelease");
+    string preReleaseQueryParam = isPrerelease ? "&prerelease" : string.Empty;
+}
+
+@if (isPrerelease)
+{
+    <div class="alert alert-info" role="alert">
+      <i class="fa fa-info-circle"></i> This is a prerelease version of @(nuget).
+    </div>
 }
 
 <ul class="nav nav-tabs">
@@ -15,7 +24,7 @@
 <div class="tab-content">
     <div id="directive" class="tab-pane fade in active">
         <p>
-<pre><code class="language-csharp hljs">#addin nuget:?package=@(nuget)&version=@(version)</code></pre>
+<pre><code class="language-csharp hljs">#addin nuget:?package=@(nuget)&version=@(version + preReleaseQueryParam)</code></pre>
         </p>
     </div>
     <div id="config" class="tab-pane fade">
