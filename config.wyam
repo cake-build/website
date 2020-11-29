@@ -22,6 +22,12 @@ Pipelines.InsertBefore(Docs.Code, "Extensions",
             : null
     ),
     Meta(
+        "IsPrerelease",
+        FileSystem.GetInputFile($"../release/extensions/{@doc.String("NuGet")}.isprerelease").Exists
+            ? bool.Parse(FileSystem.GetInputFile($"../release/extensions/{@doc.String("NuGet")}.isprerelease").ReadAllText())
+            : false
+    ),
+    Meta(
         Keys.WritePath,
         new FilePath("extensions/" + @doc.String("Name").ToLower().Replace(".", "-") + "/index.html")
     ),
