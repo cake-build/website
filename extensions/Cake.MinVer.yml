@@ -3,7 +3,7 @@ Name: Cake.MinVer
 NuGet: Cake.MinVer
 Assemblies:
 - "/**/Cake.MinVer.dll"
-Repository: https://github.com/augustoproiete/Cake.MinVer/
+Repository: https://github.com/cake-contrib/Cake.MinVer/
 Author: augustoproiete
 Description: Cake add-in that makes MinVer available as a tool in Cake.
 Categories:
