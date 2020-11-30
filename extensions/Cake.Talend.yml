@@ -9,3 +9,4 @@ Description: Cake Addin for working with Talend.
 Categories:
 - talend
 - esb
+TargetCakeVersion: 0.23.0

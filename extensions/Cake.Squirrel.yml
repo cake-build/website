@@ -9,3 +9,4 @@ Description: Cake addin for Squirrel.Windows
 Categories:
 - squirrel
 - deployment
+TargetCakeVersion: 0.33.0

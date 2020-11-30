@@ -9,3 +9,4 @@ Description: Addin to convert markdown files to pdf.
 Categories:
 - documentation
 - markdown
+TargetCakeVersion: 0.34.1

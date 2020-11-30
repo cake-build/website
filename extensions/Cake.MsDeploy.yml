@@ -9,3 +9,4 @@ Description: Cake Addin that extends Cake for executing commands with the MsDepl
 Categories:
 - msdeploy
 - deployment
+TargetCakeVersion: 0.33.0

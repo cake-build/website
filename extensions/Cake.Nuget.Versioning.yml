@@ -9,3 +9,4 @@ Description: Contains functionality for creating Nuget compatible version number
 Categories:
 - nuget
 - semver
+TargetCakeVersion: 0.33.0

@@ -8,3 +8,4 @@ Author: Oskar Gewalli, SPISE MISU ApS (Ramón Soto Mathiesen)
 Description: Cake Addin to help get version from assembly differences.
 Categories:
 - versioning
+TargetCakeVersion: 0.18.0

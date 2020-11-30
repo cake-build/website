@@ -8,3 +8,4 @@ Author: Miha Markič
 Description: A Cake AddIn that extends Cake with Putty command tools.
 Categories:
 - communication
+TargetCakeVersion: 0.33.0

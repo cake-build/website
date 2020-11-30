@@ -9,3 +9,4 @@ Description: A Cake AddIn that extends Cake with ProtobufTools command tools.
 Categories:
 - code generation
 - protobuf
+TargetCakeVersion: 0.33.0

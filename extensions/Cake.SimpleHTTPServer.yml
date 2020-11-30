@@ -8,3 +8,4 @@ Author: cake-addin
 Description: Cake.SimpleHTTPServer
 Categories:
 - simplehttpserver
+TargetCakeVersion: 0.13.0

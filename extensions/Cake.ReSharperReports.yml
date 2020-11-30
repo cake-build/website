@@ -8,3 +8,4 @@ Author: Gary Ewan Park
 Description: Cake AddIn that extends Cake with ability to transform ReSharper Reports into human readable format.
 Categories:
 - reports
+TargetCakeVersion: 0.33.0

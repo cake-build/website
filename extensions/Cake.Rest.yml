@@ -9,3 +9,4 @@ Description: Cake Addin for easily consuming REST APIs through RestSharp.
 Categories:
 - rest
 - restsharp
+TargetCakeVersion: 0.33.0

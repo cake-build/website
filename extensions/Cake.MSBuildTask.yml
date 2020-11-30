@@ -8,3 +8,4 @@ Author: Mark Walker
 Description: Adds ability to run any MSBuild task from a Cake script.
 Categories:
 - msbuild
+TargetCakeVersion: 0.33.0

@@ -8,3 +8,4 @@ Author: michael-wolfenden
 Description: A set of aliases for Cake for running Npx commands
 Categories:
 - npx
+TargetCakeVersion: 0.33.0

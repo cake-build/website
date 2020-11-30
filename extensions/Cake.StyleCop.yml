@@ -9,3 +9,4 @@ Description: A Cake AddIn that allows code style 'linting' using StyleCop.
 Categories:
 - code quality
 - misc
+TargetCakeVersion: 0.17.0

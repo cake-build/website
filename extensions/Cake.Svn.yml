@@ -9,3 +9,4 @@ Description: Addin that extends the Cake build automation system with Subversion
 Categories:
 - subversion
 - svn
+TargetCakeVersion: 0.33.0

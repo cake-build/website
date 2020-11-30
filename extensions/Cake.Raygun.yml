@@ -8,3 +8,4 @@ Author: Geoffrey Huntley
 Description: Cake Build addin for uploading Xamarin.iOS / Objective-C debug symbols (dSYM) to Raygun.io.
 Categories:
 - mobile
+TargetCakeVersion: 0.17.0

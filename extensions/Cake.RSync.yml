@@ -8,3 +8,4 @@ Author: csnewman
 Description: RSync support for Cake
 Categories:
 - rsync
+TargetCakeVersion: 0.21.1

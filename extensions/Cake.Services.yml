@@ -9,3 +9,4 @@ Description: Windows Services addin for Cake.
 Categories:
 - windows
 - deployment
+TargetCakeVersion: 0.33.0

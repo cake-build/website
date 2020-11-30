@@ -8,3 +8,4 @@ Author: Phil Oyston
 Description: A set of aliases for Cake to help with running Npm (Node Package Manager) commands.
 Categories:
 - npm
+TargetCakeVersion: 0.33.0
