@@ -8,3 +8,4 @@ Author: Deniz İrgin
 Description: A Cake AddIn that extends Cake with Electron.NET command tools.
 Categories:
 - electron.net
+TargetCakeVersion: 0.36.0

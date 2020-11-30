@@ -9,3 +9,4 @@ Description: A Cake AddIn that extends Cake with AppCenter command tools.
 Categories:
 - deployment
 - test
+TargetCakeVersion: 0.33.0

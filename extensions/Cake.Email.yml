@@ -8,3 +8,4 @@ Author: jericho
 Description: Cake Addin that exends Cake with ability to send email.
 Categories:
 - email
+TargetCakeVersion: 0.33.0

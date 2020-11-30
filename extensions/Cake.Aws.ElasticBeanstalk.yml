@@ -9,3 +9,4 @@ Description: Cake-Build addin that extends Cake with AWS Elasticbeanstalk extens
 Categories:
 - amazon
 - aws
+TargetCakeVersion: 0.23.0

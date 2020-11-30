@@ -10,3 +10,4 @@ Categories:
 - code generation
 - openapi
 - nswag
+TargetCakeVersion: 0.33.0

@@ -9,3 +9,4 @@ Description: A simple coverage comparer that compares opecover html report
 Categories:
 - opencover
 - coverage
+TargetCakeVersion: 0.38.2

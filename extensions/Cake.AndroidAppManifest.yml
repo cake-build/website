@@ -9,3 +9,4 @@ Description: Cake Build addin for [de]serializing and updating an Android AppMan
 Categories:
 - android
 - mobile
+TargetCakeVersion: 0.33.0

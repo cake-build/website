@@ -8,3 +8,4 @@ Author: wk-j
 Description: Cake AddIn that provides ability to collect user input during build.
 Categories:
 - dialog
+TargetCakeVersion: 0.17.0

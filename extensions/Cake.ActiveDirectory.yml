@@ -8,3 +8,4 @@ Author: Radio Systems Corporation
 Description: Cake addin for working with Active Directory
 Categories:
 - identity
+TargetCakeVersion: 0.17.0

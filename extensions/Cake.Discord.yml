@@ -8,3 +8,4 @@ Author: gep13
 Description: Cake Discord AddIn.
 Categories:
 - discord
+TargetCakeVersion: 0.33.0

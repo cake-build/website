@@ -9,3 +9,4 @@ Description: Cake Build addin for publishing code coverage results to coveralls.
 Categories:
 - code coverage
 - testing
+TargetCakeVersion: 0.33.0

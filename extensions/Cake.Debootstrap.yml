@@ -8,3 +8,4 @@ Author: csnewman
 Description: Debootstrap support for Cake
 Categories:
 - debootstrap
+TargetCakeVersion: 0.30.0

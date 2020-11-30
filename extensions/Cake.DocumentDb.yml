@@ -9,3 +9,4 @@ Description: Cake plugin for creating documents, collections and seeding documen
 Categories:
 - document
 - db
+TargetCakeVersion: 0.26.0

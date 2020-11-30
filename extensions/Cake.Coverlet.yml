@@ -9,3 +9,4 @@ Description: Cake addin that extends Cake with the ability to use Coverlet.
 Categories:
 - code coverage
 - testing
+TargetCakeVersion: 0.36.0

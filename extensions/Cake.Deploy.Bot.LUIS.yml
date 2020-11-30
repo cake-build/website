@@ -8,3 +8,4 @@ Author: ObjectivityLtd
 Description: Cake addin for deploying LUIS app
 Categories:
 - luis
+TargetCakeVersion: 0.23.0

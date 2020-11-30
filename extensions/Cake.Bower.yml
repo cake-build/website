@@ -8,3 +8,4 @@ Author: Warren Bates
 Description: A set of aliases for Cake to run Bower commands
 Categories:
 - bower
+TargetCakeVersion: 0.33.0

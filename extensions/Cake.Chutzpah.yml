@@ -8,3 +8,4 @@ Author: James Nail
 Description: Chutzpah JS test runner addin for Cake Build.
 Categories:
 - chutzpah
+TargetCakeVersion: 0.33.0

@@ -8,3 +8,4 @@ Author: pitermarx
 Description: Cake Addin to allow the temporary change of the working directory.
 Categories:
 - io
+TargetCakeVersion: 0.33.0

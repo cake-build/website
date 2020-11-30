@@ -9,3 +9,4 @@ Description: A Cake AddIn that extends Cake with Dart command tools.
 Categories:
 - dart
 - compiler
+TargetCakeVersion: 0.33.0
