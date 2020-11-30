@@ -9,3 +9,4 @@ Description: Cake addin that extends Cake with WebDeploy commands for publishing
 Categories:
 - deployment
 - iis
+TargetCakeVersion: 0.33.0

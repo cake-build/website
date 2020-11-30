@@ -9,3 +9,4 @@ Description: An alias that generates static sites and other content using Wyam.
 Categories:
 - documentation
 - static site generation
+TargetCakeVersion: 0.33.0

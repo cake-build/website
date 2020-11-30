@@ -8,3 +8,4 @@ Author: NineTail Labs
 Description: Cake Build addon to assist with reading version numbers from an assembly
 Categories:
 - versioning
+TargetCakeVersion: 0.33.0

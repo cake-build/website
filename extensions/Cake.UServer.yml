@@ -8,3 +8,4 @@ Author: cake-addin
 Description: Cake.UServer
 Categories:
 - µhttpsharp
+TargetCakeVersion: 0.13.0

@@ -8,3 +8,4 @@ Author: Ilya Verbitskiy
 Description: Cake AddIn to upload files using WinSCP.
 Categories:
 - deployment
+TargetCakeVersion: 0.38.4

@@ -8,3 +8,4 @@ Author: Gary Ewan Park
 Description: Cake AddIn that extends Cake with ability to execute the vsce command line utility.
 Categories:
 - deployment
+TargetCakeVersion: 0.33.0

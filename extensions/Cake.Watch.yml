@@ -9,3 +9,4 @@ Description: Cake addin to watch files change.
 Categories:
 - misc
 - watch
+TargetCakeVersion: 0.30.0

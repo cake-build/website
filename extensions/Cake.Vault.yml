@@ -9,3 +9,4 @@ Description: Get vault secrets.
 Categories:
 - configs generator
 - vault
+TargetCakeVersion: 0.36.0

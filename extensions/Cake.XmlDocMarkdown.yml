@@ -9,3 +9,4 @@ Description: Generates Markdown from .NET XML documentation comments.
 Categories:
 - documentation
 - markdown
+TargetCakeVersion: 0.28.0

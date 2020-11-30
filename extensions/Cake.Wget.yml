@@ -8,3 +8,4 @@ Author: deqenq
 Description: Cake.Wget is a cross-platform add-in for Cake build automation system which encapsulates Wget tool.
 Categories:
 - wget
+TargetCakeVersion: 0.33.0

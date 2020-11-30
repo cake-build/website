@@ -9,3 +9,4 @@ Description: A simple Cake addin to compile CouchDB views from a set of .js file
 Categories:
 - couchdb
 - mycouch
+TargetCakeVersion: 0.10.1

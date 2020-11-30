@@ -9,3 +9,4 @@ Description: Cake Build addin for tweeting to Twitter.
 Categories:
 - communication
 - social media
+TargetCakeVersion: 0.33.0
