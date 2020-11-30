@@ -9,3 +9,4 @@ Description: Cake Build addin for using the .NET Core EntityFrameworkCore comman
 Categories:
 - entity framework
 - dot net core
+TargetCakeVersion: 0.33.0

@@ -9,3 +9,4 @@ Description: Cake addin for working with CSV files using the CSVHelper library
 Categories:
 - serialization
 - io
+TargetCakeVersion: 0.23.0

@@ -9,3 +9,4 @@ Description: Cake addin that extends Cake with ability to use Codecov.
 Categories:
 - code coverage
 - testing
+TargetCakeVersion: 0.33.0

@@ -9,3 +9,4 @@ Description: Packer with globbing and file filtering for Cake.
 Categories:
 - ck
 - pack
+TargetCakeVersion: 0.37.0

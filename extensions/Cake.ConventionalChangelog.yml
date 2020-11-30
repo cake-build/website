@@ -9,3 +9,4 @@ Description: Cake Addin to generate changelog file depends on git log.
 Categories:
 - changelog
 - git
+TargetCakeVersion: 0.33.0

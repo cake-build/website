@@ -9,3 +9,4 @@ Description: Cake Addin for code generation via the OpenAPI Generator (f.k.a. Sw
 Categories:
 - code generation
 - openapi
+TargetCakeVersion: 0.33.0

@@ -9,3 +9,4 @@ Description: A simple Cake addin powered by the AzCopy utility for uploading and
 Categories:
 - azure
 - io
+TargetCakeVersion: 0.28.1

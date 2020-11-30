@@ -9,3 +9,4 @@ Description: A cross-platform add-in for Cake that allows to transfer files to a
 Categories:
 - curl
 - deployment
+TargetCakeVersion: 0.33.0

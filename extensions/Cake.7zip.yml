@@ -8,3 +8,4 @@ Author: nils-a
 Description: makes 7zip available as a tool in cake
 Categories:
 - sevenzip
+TargetCakeVersion: 0.33.0

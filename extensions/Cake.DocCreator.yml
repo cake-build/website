@@ -9,3 +9,4 @@ Description: A Cake addin to generate HTML documentation from Markdown source, u
 Categories:
 - documentation
 - markdown
+TargetCakeVersion: 0.19.4

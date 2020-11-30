@@ -8,3 +8,4 @@ Author: fwinkelbauer
 Description: Cake Addin that extends Cake with the ability to manage version information in a project using bumpy.exe
 Categories:
 - versioning
+TargetCakeVersion: 0.33.0

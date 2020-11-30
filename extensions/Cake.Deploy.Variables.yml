@@ -10,3 +10,4 @@ Categories:
 - variables
 - deploy
 - release variables
+TargetCakeVersion: 0.33.0

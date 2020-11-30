@@ -8,3 +8,4 @@ Author: DixonDs
 Description: Cake plugin to manage Azure resources
 Categories:
 - azure
+TargetCakeVersion: 0.35.0

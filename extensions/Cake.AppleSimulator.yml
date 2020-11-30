@@ -8,3 +8,4 @@ Author: Geoffrey Huntley
 Description: Cake Build addin for managing (simctl) Apple iOS/watchOS/TV simulators.
 Categories:
 - mobile
+TargetCakeVersion: 0.33.0

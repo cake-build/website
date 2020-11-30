@@ -9,3 +9,4 @@ Description: Cake addin that extends Cake with ability to use Eazfuscator.Net.
 Categories:
 - eazfuscator.net
 - obfuscator
+TargetCakeVersion: 0.33.0

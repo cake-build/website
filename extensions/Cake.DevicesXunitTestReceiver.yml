@@ -8,3 +8,4 @@ Author: Benjamin Pettit
 Description: Cake Build addin for receiving test results from Devices.Xunit test hosts.
 Categories:
 - mobile
+TargetCakeVersion: 0.22.0

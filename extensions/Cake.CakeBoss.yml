@@ -8,3 +8,4 @@ Author: SharpeRAD
 Description: Cake Build addon for calling CakeBoss agents.
 Categories:
 - devops
+TargetCakeVersion: 0.6.4

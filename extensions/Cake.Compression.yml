@@ -8,3 +8,4 @@ Author: Artur Kordowski
 Description: Cake AddIn which provides compression functionality for BZip2, GZip and Zip.
 Categories:
 - compression
+TargetCakeVersion: 0.34.1

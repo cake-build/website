@@ -8,3 +8,4 @@ Author: Jonathan Dick
 Description: A set of aliases for Cake to access the AppVeyor REST API's
 Categories:
 - appveyor
+TargetCakeVersion: 0.33.0

@@ -9,3 +9,4 @@ Description: Cake add-on trying to make it easier to handle various inputs from 
 Categories:
 - environment
 - argument
+TargetCakeVersion: 0.28.1

@@ -9,3 +9,4 @@ Description: Cake AddIn for creating Windows packages.
 Categories:
 - windows
 - deployment
+TargetCakeVersion: 0.33.0

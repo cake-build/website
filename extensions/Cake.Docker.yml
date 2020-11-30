@@ -8,3 +8,4 @@ Author: Miha Markič
 Description: A Cake AddIn that extends Cake with Docker command tools.
 Categories:
 - docker
+TargetCakeVersion: 0.33.0

@@ -9,3 +9,4 @@ Description: Addin for the Cake build automation system for working with Azure D
 Categories:
 - azure devops
 - azure devops server
+TargetCakeVersion: 0.33.0

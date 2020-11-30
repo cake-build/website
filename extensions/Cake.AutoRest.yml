@@ -9,3 +9,4 @@ Description: Cake addin for generating client code from compatible API definitio
 Categories:
 - azure
 - swagger
+TargetCakeVersion: 0.18.0
