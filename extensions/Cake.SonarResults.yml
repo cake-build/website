@@ -10,3 +10,4 @@ Categories:
 - cake contrib
 - sonarqube
 - sonar
+TargetCakeVersion: 0.36.0

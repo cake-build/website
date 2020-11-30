@@ -11,3 +11,4 @@ Categories:
 - cake addin
 - cake build
 - cake contrib
+TargetCakeVersion: 0.33.0

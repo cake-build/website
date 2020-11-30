@@ -9,3 +9,4 @@ Description: Cake addin for working with Terraform
 Categories:
 - terraform
 - infrastructure as code
+TargetCakeVersion: 0.33.0

@@ -9,3 +9,4 @@ Description: Cake Build addin for executing sql scripts against a database
 Categories:
 - sql
 - database
+TargetCakeVersion: 0.33.0

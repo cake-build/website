@@ -8,3 +8,4 @@ Author: James Connor
 Description: Cake Pulumi Addin.
 Categories:
 - pulumi
+TargetCakeVersion: 0.35.0

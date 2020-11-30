@@ -9,3 +9,4 @@ Description: Converts OpenCover xml report to Cobertura format - for use with VS
 Categories:
 - code coverage
 - vsts
+TargetCakeVersion: 0.37.0

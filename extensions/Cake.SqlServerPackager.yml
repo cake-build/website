@@ -9,3 +9,4 @@ Description: Cake AddIn that packages multiple SQL Scripts into one file to spee
 Categories:
 - sql
 - database
+TargetCakeVersion: 0.28.0

@@ -8,3 +8,4 @@ Author: pitermarx
 Description: Cake Addin to run the sonnar-scanner tool.
 Categories:
 - code quality
+TargetCakeVersion: 0.27.1

@@ -8,3 +8,4 @@ Author: Radio Systems
 Description: Cake AddIn to assist building Orchard projects.
 Categories:
 - orchard
+TargetCakeVersion: 0.17.0

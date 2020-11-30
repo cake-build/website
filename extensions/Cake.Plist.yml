@@ -8,3 +8,4 @@ Author: Paul Reichelt
 Description: Cake addin for deserializing, modifying and serializing Apple OSX/iOS xml plists directly from .NET source code.
 Categories:
 - mobile
+TargetCakeVersion: 0.33.0

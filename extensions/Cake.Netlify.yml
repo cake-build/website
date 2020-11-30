@@ -9,3 +9,4 @@ Description: Cake addin for Netlify
 Categories:
 - netlify
 - deployment
+TargetCakeVersion: 0.33.0

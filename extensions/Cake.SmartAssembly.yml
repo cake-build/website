@@ -9,3 +9,4 @@ Description: A Cake AddIn that extends Cake with Redgate's SmartAssembly.
 Categories:
 - obfuscator
 - smartassembly
+TargetCakeVersion: 0.33.0

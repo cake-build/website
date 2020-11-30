@@ -8,3 +8,4 @@ Author: Oguzhan Soykan
 Description: Cake addin for add & modify Octopus variables
 Categories:
 - github
+TargetCakeVersion: 0.23.0

@@ -9,3 +9,4 @@ Description: Cake Build addin to provide aliases for using the Mono API Tools (A
 Categories:
 - mono
 - api
+TargetCakeVersion: 0.33.0

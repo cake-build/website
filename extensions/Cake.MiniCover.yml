@@ -9,3 +9,4 @@ Description: Cake addin for MiniCover
 Categories:
 - code coverage
 - testing
+TargetCakeVersion: 0.29.0

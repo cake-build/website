@@ -10,3 +10,4 @@ Categories:
 - mkdocs
 - documentation
 - static site generation
+TargetCakeVersion: 0.33.0

@@ -9,3 +9,4 @@ Description: Adds paket support to cake.
 Categories:
 - nuget
 - paket
+TargetCakeVersion: 0.28.1

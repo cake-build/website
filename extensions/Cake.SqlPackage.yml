@@ -9,3 +9,4 @@ Description: Cake AddIn that extends Cake for creating and deploying SQL Server 
 Categories:
 - sql
 - database
+TargetCakeVersion: 0.34.0

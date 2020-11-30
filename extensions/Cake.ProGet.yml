@@ -9,3 +9,4 @@ Description: Cake addin that extends Cake with Inedo ProGet support.
 Categories:
 - deployment
 - upack
+TargetCakeVersion: 0.33.0

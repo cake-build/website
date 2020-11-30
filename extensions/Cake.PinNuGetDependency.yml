@@ -8,3 +8,4 @@ Author: Geoffrey Huntley
 Description: Cake Build addin used to lock dependency versions within NuGet packages.
 Categories:
 - nuget
+TargetCakeVersion: 0.33.0

@@ -9,3 +9,4 @@ Description: Cake AddIn to embed files into .proj files
 Categories:
 - resources
 - embed
+TargetCakeVersion: 0.28.0

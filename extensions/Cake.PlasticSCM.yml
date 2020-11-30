@@ -9,3 +9,4 @@ Description: A cakebuild addin that allows you to work with PlasticSCM
 Categories:
 - plastic
 - plasticscm
+TargetCakeVersion: 0.30.0

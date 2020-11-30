@@ -8,3 +8,4 @@ Author: Alistair Chapman
 Description: Cake addin for testing Postman Collection APIs using the Newman CLI.
 Categories:
 - postman
+TargetCakeVersion: 0.28.1
