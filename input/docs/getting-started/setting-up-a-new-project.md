@@ -12,7 +12,7 @@ This is a guide to get started with Cake and to show you how Cake works.
 Choose the runner suitable for your scenario.
 See [Runners](../running-builds/runners) for other possibilities how to run Cake scripts.
 
-For this tutorial we use the recommended approach using the [.NET Tool](../running-builds/runners/dotnet-tool)
+For this tutorial we use the recommended approach using the [Cake .NET Tool](../running-builds/runners/dotnet-tool)
 on .NET Core 3.0 and newer.
 
 Make sure to have a tool manifest available in your repository or create one using the following command:
@@ -28,7 +28,7 @@ dotnet tool install Cake.Tool --version x.y.z
 ```
 
 :::{.alert .alert-info}
-See [Bootstrapping .NET Tool](../running-builds/runners/dotnet-tool#bootstrapping-for.net-tool) for details about the bootstrapping process.
+See [Bootstrapping Cake .NET Tool](../running-builds/runners/dotnet-tool#bootstrapping-for.net-tool) for details about the bootstrapping process.
 :::
 
 # Create initial build script

@@ -1,5 +1,5 @@
 Order: 10
-Title: .NET Tool
+Title: Cake .NET Tool
 RedirectFrom: docs/running-builds/runners/dotnet-core-tool
 ---
 
@@ -9,7 +9,7 @@ This is the recommended way to run Cake Scripts.
 
 # Requirements
 
-The [Cake.Tool](https://www.nuget.org/packages/Cake.Tool) NuGet package, is a .NET Core global tool compiled for .NET Core 2.1 or newer.
+The [Cake.Tool](https://www.nuget.org/packages/Cake.Tool) NuGet package, is a .NET Core tool compiled for .NET Core 2.1 or newer.
 
 # Usage
 

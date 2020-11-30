@@ -3,7 +3,7 @@ Title: Cake runner for .NET Framework
 ---
 
 This runner is mainly for backwards compatibility where scripts or addins are used which require .NET Framework.
-In all other cases it is recommended to use [.NET Tool](dotnet-tool).
+In all other cases it is recommended to use [Cake .NET Tool](dotnet-tool).
 
 # Requirements
 

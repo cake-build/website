@@ -6,7 +6,7 @@ RedirectFrom: docs/editors/atom
 # Syntax Highlighting
 
 <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#tool1">.NET Tool</a></li>
+    <li class="active"><a data-toggle="tab" href="#tool1">Cake .NET Tool</a></li>
     <li><a data-toggle="tab" href="#frosting1">Cake Frosting</a></li>
     <li><a data-toggle="tab" href="#netfx1">Cake runner for .NET Framework</a></li>
     <li><a data-toggle="tab" href="#core1">Cake runner for .NET Core</a></li>
@@ -39,7 +39,7 @@ RedirectFrom: docs/editors/atom
 # IntelliSense
 
 <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#tool2">.NET Tool</a></li>
+    <li class="active"><a data-toggle="tab" href="#tool2">Cake .NET Tool</a></li>
     <li><a data-toggle="tab" href="#frosting2">Cake Frosting</a></li>
     <li><a data-toggle="tab" href="#netfx2">Cake runner for .NET Framework</a></li>
     <li><a data-toggle="tab" href="#core2">Cake runner for .NET Core</a></li>

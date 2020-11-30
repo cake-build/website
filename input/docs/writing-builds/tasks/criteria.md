@@ -5,7 +5,7 @@ RedirectFrom: docs/fundamentals/criteria
 
 # Cake script runner
 
-When using [.NET Tool], [Cake runner for .NET Framework] or [Cake runner for .NET Core] you can control and influence the flow of the build script execution by providing criteria. This is a predicate that has to be fulfilled for the task to execute. The criteria does not affect however succeeding task will be executed.
+When using [Cake .NET Tool], [Cake runner for .NET Framework] or [Cake runner for .NET Core] you can control and influence the flow of the build script execution by providing criteria. This is a predicate that has to be fulfilled for the task to execute. The criteria does not affect however succeeding task will be executed.
 
 ```csharp
 Task("A")
@@ -158,7 +158,7 @@ public sealed class MyTask : FrostingTask<Context>
 See [Cake.Frosting.Example](https://github.com/cake-build/cake/tree/develop/src/Cake.Frosting.Example) for an example project.
 :::
 
-[.NET Tool]: /docs/running-builds/runners/dotnet-tool
+[Cake .NET Tool]: /docs/running-builds/runners/dotnet-tool
 [Cake runner for .NET Framework]: /docs/running-builds/runners/cake-runner-for-dotnet-framework
 [Cake runner for .NET Core]: /docs/running-builds/runners/cake-runner-for-dotnet-core
 [Cake.Frosting]: /docs/running-builds/runners/cake-frosting
