@@ -9,3 +9,4 @@ Description: CakeBuild extension for checking DLL's public members xml documenta
 Categories:
 - documentation
 - xmldoc
+TargetCakeVersion: 0.32.1

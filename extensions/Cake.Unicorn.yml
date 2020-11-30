@@ -8,3 +8,4 @@ Author: George Chang
 Description: An add-in for the Cake Build system to execute an Unicorn sync for Sitecore.
 Categories:
 - sitecore
+TargetCakeVersion: 0.34.1

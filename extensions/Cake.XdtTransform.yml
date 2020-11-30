@@ -9,3 +9,4 @@ Description: Cake addin for performing XDT Transformations
 Categories:
 - serialization
 - deployment
+TargetCakeVersion: 0.33.0

@@ -8,3 +8,4 @@ Author: Maxim Milovanov
 Description: A set of aliases for Cake to help with running Yarn (Node Package Manager from Facebook) commands.
 Categories:
 - yarn
+TargetCakeVersion: 0.33.0

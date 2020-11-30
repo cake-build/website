@@ -9,3 +9,4 @@ Description: Cake build addin for managing Topshelf based windows services.
 Categories:
 - windows
 - deployment
+TargetCakeVersion: 0.33.0
