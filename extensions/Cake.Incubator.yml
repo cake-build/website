@@ -8,3 +8,4 @@ Author: Scott Mackay
 Description: A set of useful extension methods and aliases for Cake
 Categories:
 - misc
+TargetCakeVersion: 0.33.0

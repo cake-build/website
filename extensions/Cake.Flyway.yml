@@ -8,3 +8,4 @@ Author: Thomas Burgener
 Description: A set of aliases for Cake to help with running Flyway scripts as part of a build.
 Categories:
 - database
+TargetCakeVersion: 0.33.0

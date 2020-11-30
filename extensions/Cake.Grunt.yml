@@ -9,3 +9,4 @@ Description: A set of aliases for Cake to help with running Grunt scripts as par
 Categories:
 - grunt
 - javascript
+TargetCakeVersion: 0.33.0

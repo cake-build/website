@@ -8,3 +8,4 @@ Author: Jamie Phillips
 Description: Cake Addin for working with FTP from a Cake script.
 Categories:
 - deployment
+TargetCakeVersion: 0.33.0

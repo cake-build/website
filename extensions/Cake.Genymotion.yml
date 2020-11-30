@@ -8,3 +8,4 @@ Author: Geoffrey Huntley
 Description: Cake Build addin managing Genymotion (Android) simulators.
 Categories:
 - mobile
+TargetCakeVersion: 0.17.0

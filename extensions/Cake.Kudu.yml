@@ -9,3 +9,4 @@ Description: Cake addin to help with Kudu deployments.
 Categories:
 - azure
 - kudu
+TargetCakeVersion: 0.33.0

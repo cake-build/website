@@ -9,3 +9,4 @@ Description: Cake addin for working with Handlebars templates
 Categories:
 - code generation
 - documentation
+TargetCakeVersion: 0.25.0

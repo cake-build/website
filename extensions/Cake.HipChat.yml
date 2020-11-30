@@ -8,3 +8,4 @@ Author: Alan Low
 Description: Cake Addin to allow message posting to HipChat.
 Categories:
 - communication
+TargetCakeVersion: 0.33.0

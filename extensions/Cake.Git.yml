@@ -8,3 +8,4 @@ Author: WCOM AB
 Description: Cake AddIn that extends Cake with Git aliases using LibGit2 and LibGit2Sharp.
 Categories:
 - git
+TargetCakeVersion: 0.33.0

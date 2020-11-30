@@ -8,3 +8,4 @@ Author: igloo15
 Description: An addin for cake scripts that provides a number of helper functions and classes
 Categories:
 - helpers
+TargetCakeVersion: 0.34.1

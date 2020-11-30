@@ -20,3 +20,4 @@ Categories:
 - codeanalysis
 - linting
 - dupfinder
+TargetCakeVersion: 0.33.0

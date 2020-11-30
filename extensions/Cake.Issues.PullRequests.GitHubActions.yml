@@ -19,3 +19,4 @@ Categories:
 - pullrequest
 - github
 - github actions
+TargetCakeVersion: 0.33.0

@@ -9,3 +9,4 @@ Description: Cake AddIn that extends Cake with Mercurial features using Mercuria
 Categories:
 - hg
 - mercurial
+TargetCakeVersion: 0.33.0

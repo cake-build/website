@@ -9,3 +9,4 @@ Description: Cake addin that extends Cake with IIS support.
 Categories:
 - iis
 - deployment
+TargetCakeVersion: 0.33.0
