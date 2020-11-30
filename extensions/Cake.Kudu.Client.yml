@@ -9,3 +9,4 @@ Description: Cake add-in to help with remotely communicating with AppServices Ku
 Categories:
 - azure
 - kudu
+TargetCakeVersion: 0.33.0

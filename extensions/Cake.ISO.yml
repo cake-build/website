@@ -8,3 +8,4 @@ Author: Austin Parker
 Description: Create an ISO as part of a Cake build.
 Categories:
 - misc
+TargetCakeVersion: 0.28.0

@@ -8,3 +8,4 @@ Author: Christopher Pink
 Description: Cake Addin to facilitate deployment with FTP.
 Categories:
 - deployment
+TargetCakeVersion: 0.33.0

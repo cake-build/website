@@ -8,3 +8,4 @@ Author: igloo15
 Description: A Cake addin used to call the changelog commands to generate a config or create a changelog file
 Categories:
 - changelog
+TargetCakeVersion: 0.34.1

@@ -9,3 +9,4 @@ Description: A set of aliases for Cake to help with running Gulp scripts as part
 Categories:
 - gulp
 - javascript
+TargetCakeVersion: 0.33.0

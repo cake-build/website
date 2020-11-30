@@ -8,3 +8,4 @@ Author: igloo15
 Description: An addin for cake scripts that provides a way of combining markdown documents into one large document for pandoc generation
 Categories:
 - markdown
+TargetCakeVersion: 0.34.1

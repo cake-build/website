@@ -8,3 +8,4 @@ Author: Jonathan Dick
 Description: Cake build aliases and classes additional NuGet functionality.
 Categories:
 - nuget
+TargetCakeVersion: 0.33.0

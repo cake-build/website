@@ -8,3 +8,4 @@ Author: Rodney Littles II
 Description: Cake addin that extends Cake with Homebrew features.
 Categories:
 - homebrew
+TargetCakeVersion: 0.34.0

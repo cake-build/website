@@ -9,3 +9,4 @@ Description: Cake addin that extends Cake with support for fastlane tools.
 Categories:
 - fastlane
 - mobile
+TargetCakeVersion: 0.34.0

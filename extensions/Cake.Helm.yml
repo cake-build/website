@@ -8,3 +8,4 @@ Author: pitermarx
 Description: Cake AddIn that extends Cake with Helm
 Categories:
 - helm
+TargetCakeVersion: 0.25.0

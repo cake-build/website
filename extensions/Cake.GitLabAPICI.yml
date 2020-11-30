@@ -9,3 +9,4 @@ Description: A cake addin for running GitLab pipelines and jobs via the GitLab A
 Categories:
 - gitlab
 - ci
+TargetCakeVersion: 0.34.1

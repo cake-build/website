@@ -8,3 +8,4 @@ Author: Gary Ewan Park
 Description: Cake Addin to allow message posting to Gitter Room.
 Categories:
 - communication
+TargetCakeVersion: 0.33.0

@@ -9,3 +9,4 @@ Description: Cake Aliases for using the JMeter tool
 Categories:
 - test
 - performance
+TargetCakeVersion: 0.33.0

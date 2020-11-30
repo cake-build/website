@@ -12,3 +12,4 @@ Categories:
 - code first
 - migrations
 - sql server
+TargetCakeVersion: 0.33.0

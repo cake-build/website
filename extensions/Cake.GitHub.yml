@@ -8,3 +8,4 @@ Author: Geert van Horrik, Cake Contributors
 Description: GitHub Addin for Cake Build Automation System.
 Categories:
 - github
+TargetCakeVersion: 0.33.0

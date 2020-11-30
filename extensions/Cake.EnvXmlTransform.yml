@@ -8,3 +8,4 @@ Author: Niklas Engberg
 Description: Cake addin that enables you to transform configuration files based on the environment or machine you're deploying to.
 Categories:
 - deployment
+TargetCakeVersion: 0.33.0
