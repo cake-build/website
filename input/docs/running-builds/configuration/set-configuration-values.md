@@ -47,7 +47,7 @@ The configuration file should be located in the same directory as your Cake scri
 Finally, you can specify an input parameter directly to Cake, in the following format:
 
 <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#tool1">.NET Tool</a></li>
+    <li class="active"><a data-toggle="tab" href="#tool1">Cake .NET Tool</a></li>
     <li><a data-toggle="tab" href="#frosting1">Cake Frosting</a></li>
     <li><a data-toggle="tab" href="#netfx1">Cake runner for .NET Framework</a></li>
     <li><a data-toggle="tab" href="#core1">Cake runner for .NET Core</a></li>
@@ -89,7 +89,7 @@ Passing a configuration value directly to Cake will override the same configurat
 When configuring NuGet sources in both `cake.config`, and via the command line, multiple sources can be supplied by joining them with a semicolon:
 
 <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#tool1">.NET Tool</a></li>
+    <li class="active"><a data-toggle="tab" href="#tool1">Cake .NET Tool</a></li>
     <li><a data-toggle="tab" href="#frosting1">Cake Frosting</a></li>
     <li><a data-toggle="tab" href="#netfx1">Cake runner for .NET Framework</a></li>
     <li><a data-toggle="tab" href="#core1">Cake runner for .NET Core</a></li>

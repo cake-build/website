@@ -15,7 +15,7 @@ Aliases are extension methods of `ICakeContext`.
 
 ## Calling aliases in a Cake script
 
-When using a Cake script with [.NET Tool](/docs/running-builds/runners/dotnet-tool),
+When using a Cake script with [Cake .NET Tool](/docs/running-builds/runners/dotnet-tool),
 [Cake runner for .NET Framework](/docs/running-builds/runners/cake-runner-for-dotnet-framework) or
 [Cake runner for .NET Core](/docs/running-builds/runners/cake-runner-for-dotnet-core)
 aliases can be called directly inside a task, without explicitly passing the context:

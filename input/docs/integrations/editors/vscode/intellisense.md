@@ -9,7 +9,7 @@ RedirectFrom: docs/editors/vscode/intellisense
 To enable IntelliSense support in Visual Studio Code follow these steps:
 
 <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#tool">.NET Tool</a></li>
+    <li class="active"><a data-toggle="tab" href="#tool">Cake .NET Tool</a></li>
     <li><a data-toggle="tab" href="#frosting">Cake Frosting</a></li>
     <li><a data-toggle="tab" href="#netfx">Cake runner for .NET Framework</a></li>
     <li><a data-toggle="tab" href="#core">Cake runner for .NET Core</a></li>
