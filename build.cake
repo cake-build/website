@@ -157,6 +157,10 @@ Task("GetExtensionPackages")
                 .Where(x => !string.IsNullOrEmpty(x.NuGet))
                 .Select(x => x.NuGet)
                 .ToArray());
+
+        context.CalcSupportedCakeVersions(extensionDir,
+            extensionSpecs
+                .ToDictionary(e => e.NuGet, e => e.TargetCakeVersion));
     });
 
 Task("Build")

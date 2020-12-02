@@ -28,6 +28,12 @@ Pipelines.InsertBefore(Docs.Code, "Extensions",
             : false
     ),
     Meta(
+        "SupportedCakeVersions",
+        FileSystem.GetInputFile($"../release/extensions/{@doc.String("NuGet")}.supportedcakeversions").Exists
+            ? FileSystem.GetInputFile($"../release/extensions/{@doc.String("NuGet")}.supportedcakeversions").ReadAllText()
+            : null
+    ),
+    Meta(
         Keys.WritePath,
         new FilePath("extensions/" + @doc.String("Name").ToLower().Replace(".", "-") + "/index.html")
     ),
