@@ -9,3 +9,4 @@ Description: An addin for cake scripts that provides various markdown functions
 Categories:
 - markdown api
 TargetCakeVersion: 0.34.1
+AnalyzedPackageVersion: 2.2.3

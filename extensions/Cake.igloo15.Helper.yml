@@ -9,3 +9,4 @@ Description: An addin for cake scripts that provides a number of helper function
 Categories:
 - helpers
 TargetCakeVersion: 0.34.1
+AnalyzedPackageVersion: 2.2.3

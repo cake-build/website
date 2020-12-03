@@ -9,3 +9,4 @@ Description: A set of Cake aliases for Entity Framework code first migrations.
 Categories:
 - entity framework
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 0.3.0

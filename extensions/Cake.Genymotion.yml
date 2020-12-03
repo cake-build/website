@@ -9,3 +9,4 @@ Description: Cake Build addin managing Genymotion (Android) simulators.
 Categories:
 - mobile
 TargetCakeVersion: 0.17.0
+AnalyzedPackageVersion: 0.0.1.1490271568

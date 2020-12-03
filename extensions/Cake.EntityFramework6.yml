@@ -13,3 +13,4 @@ Categories:
 - migrations
 - sql server
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 0.1.0

@@ -9,3 +9,4 @@ Description: Cake addin that extends Cake with Homebrew features.
 Categories:
 - homebrew
 TargetCakeVersion: 0.34.0
+AnalyzedPackageVersion: 0.3.1

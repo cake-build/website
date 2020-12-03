@@ -9,3 +9,4 @@ Description: A cake addin that allows reading from KeePass password databases. K
 Categories:
 - keepass
 TargetCakeVersion: 0.19.5
+AnalyzedPackageVersion: 1.0.0

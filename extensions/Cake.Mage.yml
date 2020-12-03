@@ -9,3 +9,4 @@ Description: A Cake addin to provide support for Mage.exe.
 Categories:
 - mage
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 0.6.1

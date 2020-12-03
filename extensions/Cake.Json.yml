@@ -9,3 +9,4 @@ Description: A set of aliases to help with JSON Serialization
 Categories:
 - serialization
 TargetCakeVersion: 0.35.0
+AnalyzedPackageVersion: 5.2.0

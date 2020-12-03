@@ -9,3 +9,4 @@ Description: A Cake addin used to call the changelog commands to generate a conf
 Categories:
 - changelog
 TargetCakeVersion: 0.34.1
+AnalyzedPackageVersion: 2.2.3

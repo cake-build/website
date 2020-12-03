@@ -9,3 +9,4 @@ Description: Create an ISO as part of a Cake build.
 Categories:
 - misc
 TargetCakeVersion: 0.28.0
+AnalyzedPackageVersion: 0.1.5-alpha

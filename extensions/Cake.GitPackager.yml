@@ -9,3 +9,4 @@ Description: Cake AddIn which copies files based on Git log.
 Categories:
 - git
 TargetCakeVersion: 0.28.0
+AnalyzedPackageVersion: 0.1.3.2

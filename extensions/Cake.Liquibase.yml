@@ -9,3 +9,4 @@ Description: Addin for running liquibase database migrations with the Cake build
 Categories:
 - database
 TargetCakeVersion: 0.36.0
+AnalyzedPackageVersion: 0.1.11-preview

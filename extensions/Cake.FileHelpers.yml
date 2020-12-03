@@ -9,3 +9,4 @@ Description: A set of aliases for Cake to help with simple file operations such 
 Categories:
 - io
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 3.3.0

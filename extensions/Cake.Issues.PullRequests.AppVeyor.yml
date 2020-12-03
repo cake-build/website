@@ -17,3 +17,4 @@ Categories:
 - pull requests
 - appveyor
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 0.9.0
