@@ -9,3 +9,4 @@ Description: Cake Aliases for auto merge Git Branches using TFS Pull Requests.
 Categories:
 - tfs
 TargetCakeVersion: 0.23.0
+AnalyzedPackageVersion: 0.1.3

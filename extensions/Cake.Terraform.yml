@@ -10,3 +10,4 @@ Categories:
 - terraform
 - infrastructure as code
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 0.11.0

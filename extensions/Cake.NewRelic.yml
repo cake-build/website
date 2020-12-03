@@ -9,3 +9,4 @@ Description: NewRelic Deployment Tool for Cake
 Categories:
 - newrelic
 TargetCakeVersion: 0.17.0
+AnalyzedPackageVersion: 0.0.22

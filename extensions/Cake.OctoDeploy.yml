@@ -9,3 +9,4 @@ Description: Cake addin for easy creation of GitHub releases
 Categories:
 - github
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 3.2.0

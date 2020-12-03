@@ -9,3 +9,4 @@ Description: ResxConverter is a tool that helps convert Resx files to any format
 Categories:
 - resx
 TargetCakeVersion: 0.19.4
+AnalyzedPackageVersion: 1.0.2

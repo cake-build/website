@@ -9,3 +9,4 @@ Description: Cake.SimpleHTTPServer
 Categories:
 - simplehttpserver
 TargetCakeVersion: 0.13.0
+AnalyzedPackageVersion: 0.1.12

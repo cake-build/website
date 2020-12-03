@@ -9,3 +9,4 @@ Description: A set of aliases for Cake to help with running Openshift commands
 Categories:
 - openshift
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 0.5.0

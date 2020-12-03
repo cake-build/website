@@ -10,4 +10,5 @@ Categories:
 - swagger
 - api
 - openapi
-TargetCakeVersion: 0.17.0
+TargetCakeVersion: 0.15.2
+AnalyzedPackageVersion: 0.4.0

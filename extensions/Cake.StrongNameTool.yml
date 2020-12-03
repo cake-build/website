@@ -9,3 +9,4 @@ Description: Cake AddIn to help with the resigning and verification of StrongNam
 Categories:
 - signing
 TargetCakeVersion: 0.25.0
+AnalyzedPackageVersion: 0.0.5

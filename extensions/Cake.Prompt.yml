@@ -9,3 +9,4 @@ Description: Cake AddIn that provides ability to collect user input during build
 Categories:
 - prompt
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 1.0.15

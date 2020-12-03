@@ -9,3 +9,4 @@ Description: Cake AddIn that extends Cake with ability to transform ReSharper Re
 Categories:
 - reports
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 0.11.1

@@ -9,3 +9,4 @@ Description: Cake addin for testing Postman Collection APIs using the Newman CLI
 Categories:
 - postman
 TargetCakeVersion: 0.28.1
+AnalyzedPackageVersion: 0.3.1

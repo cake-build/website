@@ -9,3 +9,4 @@ Description: Cake.StrongNameSigner is an Addin for Cake which allows the executi
 Categories:
 - strongnamesigner
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 0.1.0
