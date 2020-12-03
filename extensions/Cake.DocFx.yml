@@ -9,3 +9,4 @@ Description: Cake AddIn that generates documentation for .Net API reference and 
 Categories:
 - documentation
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 0.13.1

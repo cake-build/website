@@ -9,3 +9,4 @@ Description: Addin that extends Cake with CMake support.
 Categories:
 - cmake
 TargetCakeVersion: 0.34.1
+AnalyzedPackageVersion: 1.2.0

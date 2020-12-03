@@ -9,3 +9,4 @@ Description: AliaSql Script Alias for Cake.
 Categories:
 - database
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 0.7.0

@@ -9,3 +9,4 @@ Description: Cake Build addin for receiving test results from Devices.Xunit test
 Categories:
 - mobile
 TargetCakeVersion: 0.22.0
+AnalyzedPackageVersion: 1.0.1

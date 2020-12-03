@@ -9,3 +9,4 @@ Description: Cake Addin that exends Cake with ability to run the Ember CLI.
 Categories:
 - ember
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 0.4.1
