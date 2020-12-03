@@ -10,3 +10,4 @@ Categories:
 - code generation
 - protobuf
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 1.3.1

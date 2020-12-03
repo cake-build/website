@@ -9,3 +9,4 @@ Description: Cake Addin that extends Cake with Slack messaging features.
 Categories:
 - communication
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 0.13.0

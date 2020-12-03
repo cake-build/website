@@ -9,3 +9,4 @@ Description: Cake Addin for strongly typed configuration
 Categories:
 - configuration
 TargetCakeVersion: 0.23.0
+AnalyzedPackageVersion: 0.1.0-alpha004

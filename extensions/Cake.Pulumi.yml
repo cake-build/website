@@ -9,3 +9,4 @@ Description: Cake Pulumi Addin.
 Categories:
 - pulumi
 TargetCakeVersion: 0.35.0
+AnalyzedPackageVersion: 0.5.0

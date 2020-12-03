@@ -9,3 +9,4 @@ Description: Keep environment specific attributes in separate configuration file
 Categories:
 - configs generator
 TargetCakeVersion: 0.36.0
+AnalyzedPackageVersion: 1.2.6

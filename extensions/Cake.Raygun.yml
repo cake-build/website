@@ -9,3 +9,4 @@ Description: Cake Build addin for uploading Xamarin.iOS / Objective-C debug symb
 Categories:
 - mobile
 TargetCakeVersion: 0.17.0
+AnalyzedPackageVersion: 0.0.1.1485904101

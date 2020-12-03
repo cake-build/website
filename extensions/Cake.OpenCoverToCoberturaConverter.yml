@@ -10,3 +10,4 @@ Categories:
 - code coverage
 - vsts
 TargetCakeVersion: 0.37.0
+AnalyzedPackageVersion: 0.1.7.7

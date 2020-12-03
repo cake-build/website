@@ -9,3 +9,4 @@ Description: Tools to let you use Roslyn-powered C# scripts for code generation.
 Categories:
 - code generation
 TargetCakeVersion: 0.17.0
+AnalyzedPackageVersion: 0.7.4

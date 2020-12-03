@@ -9,3 +9,4 @@ Description: A Cake AddIn that extends Cake with the ability to add items to the
 Categories:
 - misc
 TargetCakeVersion: 0.19.5
+AnalyzedPackageVersion: 1.4.0

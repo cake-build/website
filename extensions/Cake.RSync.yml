@@ -9,3 +9,4 @@ Description: RSync support for Cake
 Categories:
 - rsync
 TargetCakeVersion: 0.21.1
+AnalyzedPackageVersion: 1.0.0

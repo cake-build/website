@@ -9,3 +9,4 @@ Description: Cake AddIn to assist building Orchard projects.
 Categories:
 - orchard
 TargetCakeVersion: 0.17.0
+AnalyzedPackageVersion: 0.9.9
