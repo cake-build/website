@@ -9,3 +9,4 @@ Description: An aliase for Cake to help with running Gradle commands
 Categories:
 - gradle
 TargetCakeVersion: 0.15.2
+AnalyzedPackageVersion: 0.1.1

@@ -9,3 +9,4 @@ Description: The Issues Addin for Cake allows you to run markdownlint.
 Categories:
 - markdown
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 0.3.0

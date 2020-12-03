@@ -9,3 +9,4 @@ Description: Cake AddIn that allows you to deploy your app package to HockeyApp.
 Categories:
 - deployment
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 0.10.0

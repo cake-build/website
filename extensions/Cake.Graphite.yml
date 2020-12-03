@@ -9,3 +9,4 @@ Description: A set of aliases for Cake to help with sending metrics to Graphite.
 Categories:
 - metrics
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 2.0.1

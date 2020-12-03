@@ -9,3 +9,4 @@ Description: Cake build aliases and classes for adding ASCII art to your build s
 Categories:
 - misc
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 1.3.1

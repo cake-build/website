@@ -9,3 +9,4 @@ Description: Cake Karma Addin.
 Categories:
 - karma
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 0.2.0

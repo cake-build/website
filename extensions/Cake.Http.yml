@@ -9,3 +9,4 @@ Description: Cake.Http is set of aliases that help simplify HTTP calls for GET, 
 Categories:
 - http
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 0.7.0

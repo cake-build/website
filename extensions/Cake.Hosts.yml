@@ -9,3 +9,4 @@ Description: Cake build aliases for manipulating HOSTS file.
 Categories:
 - hosts file
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 1.5.1
