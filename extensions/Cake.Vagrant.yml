@@ -8,4 +8,5 @@ Author: Alistair Chapman
 Description: Cake addin for creating and managing Vagrant virtual machines
 Categories:
 - vagrant
-TargetCakeVersion: 0.28.1
+TargetCakeVersion: 0.13.0
+AnalyzedPackageVersion: 0.3.0

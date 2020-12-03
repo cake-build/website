@@ -10,3 +10,4 @@ Categories:
 - configs generator
 - vault
 TargetCakeVersion: 0.36.0
+AnalyzedPackageVersion: 0.0.6-alpha

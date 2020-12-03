@@ -9,3 +9,4 @@ Description: An add-in for the Cake Build system to execute an Unicorn sync for 
 Categories:
 - sitecore
 TargetCakeVersion: 0.34.1
+AnalyzedPackageVersion: 1.0.15

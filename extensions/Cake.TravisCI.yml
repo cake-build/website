@@ -9,3 +9,4 @@ Description: Cake addin that extends the DSL with TravisCI aliases.
 Categories:
 - travisci
 TargetCakeVersion: 0.34.0
+AnalyzedPackageVersion: 0.4.1

@@ -9,3 +9,4 @@ Description: Aliases to assist with running Webpack from Cake build scripts.
 Categories:
 - webpack
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 0.3.0
