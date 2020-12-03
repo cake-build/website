@@ -27,7 +27,7 @@
             @description
         </p>
 
-        @switch (type) { 
+        @switch (type) {
             case "Addin":
                 @Html.Partial("_UsageAddin");
                 break;
@@ -81,6 +81,7 @@
             {
             <li>
                 Supported Cake versions: @supportedCakeVersions
+                <i class="fa fa-info-circle" data-toggle="tooltip" title="These are the versions of Cake with an API compatible with the latest version of this addin. Depending on the API used in the extension it might also work with other versions of Cake. An earlier version of the addin might be compatible with other versions of Cake."></i>
             </li>
             }
             <li>
