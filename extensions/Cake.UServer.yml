@@ -9,3 +9,4 @@ Description: Cake.UServer
 Categories:
 - µhttpsharp
 TargetCakeVersion: 0.13.0
+AnalyzedPackageVersion: 0.1.3

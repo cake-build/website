@@ -9,3 +9,4 @@ Description: A set of aliases for Cake to help with running Yarn (Node Package M
 Categories:
 - yarn
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 0.4.6

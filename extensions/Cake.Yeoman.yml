@@ -9,3 +9,4 @@ Description: The Yeoman Addin for Cake allows you to call Yeoman generators from
 Categories:
 - yeoman
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 0.5.0

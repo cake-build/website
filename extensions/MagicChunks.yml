@@ -4,11 +4,13 @@ NuGet: MagicChunks
 Assemblies:
 - "/**/MagicChunks.dll"
 - "/**/MagicChunks.Cake.dll"
-Repository: https://github.com/sergeyzwezdin/magic-chunks
+Repository: https://github.com/sergeyzwezdin/magic-chunks/
 Author: Sergey Zwezdin
-Description: "Easy to use tool to config transformations for JSON, XML and YAML."
+Description: Easy to use tool to config transformations for JSON, XML and YAML.
 Categories:
 - serialization
 - io
 - deployment
 - configuration
+TargetCakeVersion: 0.23.0
+AnalyzedPackageVersion: 2.0.0.119
