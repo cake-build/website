@@ -9,3 +9,4 @@ Description: Debootstrap support for Cake
 Categories:
 - debootstrap
 TargetCakeVersion: 0.30.0
+AnalyzedPackageVersion: 1.0.0

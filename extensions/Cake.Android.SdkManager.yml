@@ -9,3 +9,4 @@ Description: Cake Aliases for Android's sdkmanager command line tool
 Categories:
 - android
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 3.0.2

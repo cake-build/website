@@ -8,4 +8,5 @@ Author: wexman
 Description: Cake addin for retrieving assembly info from an existing assembly.
 Categories:
 - assembly info
-TargetCakeVersion: 0.26.1
+TargetCakeVersion: 0.18.0
+AnalyzedPackageVersion: 1.0.7

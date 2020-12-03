@@ -9,3 +9,4 @@ Description: CakeBuild extension for uploading Api references to specified URL.
 Categories:
 - api reference
 TargetCakeVersion: 0.37.0
+AnalyzedPackageVersion: 1.3.7

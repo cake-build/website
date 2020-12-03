@@ -11,3 +11,4 @@ Categories:
 - dependencies analyser
 - reports
 TargetCakeVersion: 0.27.1
+AnalyzedPackageVersion: 2.0.0

@@ -9,3 +9,4 @@ Description: Cake Aliases for Android's adb command line tool
 Categories:
 - android
 TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 3.2.0
