@@ -21,6 +21,9 @@ dotnet cake [script] [switches]
 
 # Bootstrapping for .NET Tool
 
+Bootstrapping scripts ensure you have Cake and other required dependencies installed.
+The bootstrapper scripts are also responsible for invoking Cake.
+
 :::{.alert .alert-info}
 The following instructions require .NET Core 3.0 or newer.
 See [How to manage .NET Core tools](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools) for details and other options.
@@ -45,25 +48,141 @@ Install Cake as a local tool using the `dotnet tool` command:
 ```powershell
 dotnet tool install Cake.Tool --version x.y.z
 ```
+## Getting the bootstrapper
+
+:::{.alert .alert-info}
+Use of a bootstrapper is optional.
+You can also directly call the .NET CLI if you prefer.
+:::
+
+A Bootstrapper for Cake .NET Tool is available in the [Cake Resources repository](https://github.com/cake-build/resources)
+and can be installed using the command for your operating system from below:
+
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#windows1">Windows</a></li>
+    <li><a data-toggle="tab" href="#linux1">Linux</a></li>
+    <li><a data-toggle="tab" href="#macos1">MacOS</a></li>
+</ul>
+
+<div class="tab-content">
+    <div id="windows1" class="tab-pane fade in active">
+        <p>
+            Open a new PowerShell window and run the following command:
+        </p>
+        <p>
+<pre><code class="language-powershell hljs">Invoke-WebRequest https://cakebuild.net/download/bootstrapper/dotnet-tool/windows -OutFile build.ps1</code></pre>
+        </p>
+        <p>
+            <div class="alert alert-info" role="alert">
+                <p>
+                    Sometimes PowerShell might prevent you from running <code>build.ps1</code>.
+                    Make sure to have <code>RemoteSigned</code> policy enabled.
+                    See <a href="http://go.microsoft.com/fwlink/?LinkID=135170">About Execution Policies</a> for details.
+                </p>
+                <p>
+                    If you have <code>RemoteSigned</code> policy enabled and still an error occurrs it might be because
+                    the file was downloaded from the internet and is blocked.
+                    The following command will unblock the file:
+                </p>
+                <p>
+<pre><code class="language-powershell hljs">Unblock-File path\to\build.ps1</code></pre>
+                </p>
+                <p>
+                    See <a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/unblock-file">Unblock-File</a> for details.
+                </p>
+            </div>
+        </p>
+    </div>
+    <div id="linux1" class="tab-pane fade">
+        <p>
+            Open a new shell and run the following command:
+        </p>
+        <p>
+<pre><code class="language-bash hljs">curl -Lsfo build.sh https://cakebuild.net/download/bootstrapper/dotnet-tool/linux</code></pre>
+        </p>
+        <p>
+            <div class="alert alert-info" role="alert">
+                <p>
+                    If you are downloading the <code>build.sh</code> file on a Windows machine you can give the script permission to execute using the following command:
+                </p>
+                <p>
+<pre><code class="language-bash hljs">git update-index --add --chmod=+x build.sh</code></pre>
+                </p>
+                <p>
+                    This assumes that you have the Git command line installed.
+                </p>
+            </div>
+        </p>
+    </div>
+    <div id="macos1" class="tab-pane fade">
+        <p>
+            Open a new shell and run the following command:
+        </p>
+        <p>
+<pre><code class="language-bash hljs">curl -Lsfo build.sh https://cakebuild.net/download/bootstrapper/dotnet-tool/osx</code></pre>
+        </p>
+        <p>
+            <div class="alert alert-info" role="alert">
+                <p>
+                    If you are downloading the <code>build.sh</code> file on a Windows machine you can give the script permission to execute using the following command:
+                </p>
+                <p>
+<pre><code class="language-bash hljs">git update-index --add --chmod=+x build.sh</code></pre>
+                </p>
+                <p>
+                    This assumes that you have the Git command line installed.
+                </p>
+            </div>
+        </p>
+    </div>
+</div>
 
 ## Running build script
 
-Make sure tools are restored:
+To launch Cake run the bootstrapper:
 
-```powershell
-dotnet tool restore
-```
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#windows2">Windows</a></li>
+    <li><a data-toggle="tab" href="#linux2">Linux</a></li>
+    <li><a data-toggle="tab" href="#macos2">MacOS</a></li>
+</ul>
 
-Once installed, you can launch Cake using the .NET CLI:
-
-```powershell
-dotnet cake
-```
+<div class="tab-content">
+    <div id="windows2" class="tab-pane fade in active">
+        <p>
+            Open a new PowerShell window and run the following command:
+        </p>
+        <p>
+            <pre><code class="language-powershell hljs">./build.ps1</code></pre>
+        </p>
+    </div>
+    <div id="linux2" class="tab-pane fade">
+        <p>
+            Open a new shell and run the following command:
+        </p>
+        <p>
+            <pre><code class="language-bash hljs">build.sh</code></pre>
+        </p>
+    </div>
+    <div id="macos2" class="tab-pane fade">
+        <p>
+            Open a new shell and run the following command:
+        </p>
+        <p>
+            <pre><code class="language-bash hljs">build.sh</code></pre>
+        </p>
+    </div>
+</div>
 
 :::{.alert .alert-info}
 By convention this will execute the build script named `build.cake`.
 You can override this behavior by additionally passing the name of the build script.
 :::
+
+## Extending the bootstrapper
+
+The bootstrapper that you can get directly from [cakebuild.net](https://cakebuild.net) is intended as a starting point for what can be done.
+It is the developer's discretion to extend the bootstrapper to solve for your own requirements.
 
 # Using pre-release versions
 
