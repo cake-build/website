@@ -1,0 +1,16 @@
+Type: Addin
+Name: Cake.Addins.Sample
+NuGet: Cake.Addins.Sample
+Assemblies:
+- "/**/Cake.Addins.Sample.dll"
+Repository: https://github.com/augustoproiete/cake-addins-sample/
+Author: augustoproiete
+Description: Cake add-in for testing the Cake.Extensions meta-package.
+Categories:
+- sample
+- cake extensions
+- cake addin
+- cake build
+- cake contrib
+TargetCakeVersion: 1.0.0
+AnalyzedPackageVersion: 0.0.1-preview
