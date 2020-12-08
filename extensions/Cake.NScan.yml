@@ -13,5 +13,5 @@ Categories:
 - gate
 - dependency
 - management
-TargetCakeVersion: 0.38.1
-AnalyzedPackageVersion: 0.50.3
+TargetCakeVersion: 0.38.5
+AnalyzedPackageVersion: 0.60.0
