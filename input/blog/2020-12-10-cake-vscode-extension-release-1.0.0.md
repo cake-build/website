@@ -29,7 +29,7 @@ There is a [short video](https://youtu.be/7Ba-pAHzO9w) discussing the main aspec
 
 ### Thanks
 
-I personally wanted to say a huge thank you to everyone who joined in on my weekly [Twitch](https://www.twitch.tv/gep13) stream, where I have been working on this extension for the last 6 weeks.  Without all of your input and guidance, this release wouldn't have happened.  Also, a huge thank you to [Nils Andersen](https://github.com/nils-a) who has made a number of contributions to the extension.  Thank you all!
+I personally wanted to say a huge thank you to everyone who joined in on my weekly [Twitch](https://www.twitch.tv/gep13) stream, where I have been working on this extension for the last 6 weeks.  Without all of your input and guidance, this release wouldn't have happened.  Also, a huge thank you to [Nils Andresen](https://github.com/nils-a) who has made a number of contributions to the extension.  Thank you all!
 
 ### Contribute
 
