@@ -5,8 +5,10 @@ Assemblies:
 - "/**/Cake.DeployParams.dll"
 Repository: https://github.com/wooboo/Cake.DeployParams/
 Author: wooboo
-Description: DeployParams extension for Cake.
+Description: Cake addin for generating WebDeploy parameters.
 Categories:
-
+- deployment
+- iis
+- webdeploy
 TargetCakeVersion: 0.27.1
 AnalyzedPackageVersion: 0.27.0
