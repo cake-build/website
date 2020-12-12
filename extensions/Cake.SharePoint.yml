@@ -9,4 +9,4 @@ Description: Cake AddIn to upload build artifacts to SharePoint.
 Categories:
 - sharepoint
 TargetCakeVersion: 0.38.5
-AnalyzedPackageVersion: 1.1.0
+AnalyzedPackageVersion: 1.1.1
