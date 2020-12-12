@@ -1,4 +1,4 @@
-Order: 30
+Order: 40
 Title: Visual Studio Code resources
 Description: Resources about Visual Studio Code support
 RedirectFrom: docs/editors/vscode/resources
