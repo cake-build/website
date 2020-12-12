@@ -7,6 +7,7 @@ Repository: https://github.com/kolletzki/Cake.UncUtils/
 Author: kolletzki
 Description: A collection of UNC aliases for Cake
 Categories:
-
+- unc
+- mount
 TargetCakeVersion: 0.17.0
 AnalyzedPackageVersion: 1.0.1
