@@ -7,6 +7,6 @@ Repository: https://github.com/cake-contrib/Cake.BrowserStack/
 Author: dlbroadfoot
 Description: Cake Build addin for BrowserStack API's.
 Categories:
-
+- browserstack
 TargetCakeVersion: 0.33.0
 AnalyzedPackageVersion: 2.0.0
