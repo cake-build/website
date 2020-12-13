@@ -8,7 +8,7 @@ Author: ObjectivityLtd
 Description: Cake addin to use Azure Resource Manager template.
 Categories:
 - azure
-- resource-manager
+- resource manager
 - deployment
 TargetCakeVersion: 0.19.4
 AnalyzedPackageVersion: 0.1.3
