@@ -1,4 +1,4 @@
-Order: 10
+Order: 20
 Title: IntelliSense in Visual Studio Code
 Description: Support for IntelliSense
 RedirectFrom: docs/editors/vscode/intellisense
