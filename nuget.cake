@@ -103,7 +103,6 @@ public static void DownloadPackage(this ICakeContext context, DirectoryPath exte
         }
     }
 
-    context.FileWriteText(extensionDir.CombineWithFilePath($"{packageId}.version"), packageInfo.version);
     context.FileWriteText(extensionDir.CombineWithFilePath($"{packageId}.isprerelease"), packageInfo.isPrerelease.GetValueOrDefault().ToString());
 
     context.Information("[{0}] done.", packageId);

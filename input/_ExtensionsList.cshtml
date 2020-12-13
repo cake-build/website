@@ -21,7 +21,7 @@
         string description = extension.String("Description");
         string author = extension.String("Author");
         string repository = extension.String("Repository");
-        string version = extension.String("Version");
+        string version = extension.String("AnalyzedPackageVersion");
         string categories = (String.Join(", ", extension.List<string>("Categories")));
 
         <article class="extension row" data-name="@name" data-categories="@categories">
