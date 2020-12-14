@@ -1,3 +1,4 @@
+@using Microsoft.AspNetCore.Html
 @model IEnumerable<IDocument>
 
 @{
@@ -69,7 +70,7 @@ else {
                                 
                                 @if(alias.MethodAlias)
                                 {
-                                    <text>@Context.GetTypeLink(alias.Doc, false)</text>
+                                    <text>@GetAliasTypeLink(alias.Doc, false)</text>
                                 }
                                 else
                                 {
@@ -94,5 +95,16 @@ else {
                 </table>
             </div>
         </div>
+    }
+}
+
+@functions
+{
+    public HtmlString GetAliasTypeLink(IMetadata metadata, bool linkTypeArguments)
+    {
+        var link = Context.GetTypeLink(metadata, linkTypeArguments);
+        var encodedHtml = link.Value?.Replace("(ICakeContext, <wbr>", "(");
+
+        return new HtmlString(encodedHtml);
     }
 }
