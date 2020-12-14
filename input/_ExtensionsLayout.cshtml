@@ -11,7 +11,7 @@
     string description = Model.String("Description");
     string author = Model.String("Author");
     string repository = Model.String("Repository");
-    string version = Model.String("Version");
+    string version = Model.String("AnalyzedPackageVersion");
     string supportedCakeVersions = Model.String("SupportedCakeVersions");
     string categories = (String.Join(" ", Model.List<string>("Categories").Select(x => $"<span class=\"badge badge-secondary\">{x}</span>")));
     var assemblies = Model.List<string>("Assemblies");

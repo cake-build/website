@@ -16,12 +16,6 @@ Pipelines.InsertBefore(Docs.Code, "Extensions",
     ReadFiles("../extensions/*.yml"),
     Yaml(),
     Meta(
-        "Version",
-        FileSystem.GetInputFile($"../release/extensions/{@doc.String("NuGet")}.version").Exists
-            ? FileSystem.GetInputFile($"../release/extensions/{@doc.String("NuGet")}.version").ReadAllText()
-            : null
-    ),
-    Meta(
         "IsPrerelease",
         FileSystem.GetInputFile($"../release/extensions/{@doc.String("NuGet")}.isprerelease").Exists
             ? bool.Parse(FileSystem.GetInputFile($"../release/extensions/{@doc.String("NuGet")}.isprerelease").ReadAllText())

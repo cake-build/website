@@ -2,7 +2,7 @@
 
 @{
     string nuget = Model.String("NuGet");
-    string version = Model.String("Version");
+    string version = Model.String("AnalyzedPackageVersion");
     bool isPrerelease = Model.Bool("isPrerelease");
     string preReleaseQueryParam = isPrerelease ? "&prerelease" : string.Empty;
 }
