@@ -103,7 +103,9 @@ else {
     public HtmlString GetAliasTypeLink(IMetadata metadata, bool linkTypeArguments)
     {
         var link = Context.GetTypeLink(metadata, linkTypeArguments);
-        var encodedHtml = link.Value?.Replace("(ICakeContext, <wbr>", "(");
+        var encodedHtml = link.Value?
+            .Replace("(ICakeContext, <wbr>", "(")
+            .Replace("(ICakeContext)", "()");
 
         return new HtmlString(encodedHtml);
     }
