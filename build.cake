@@ -50,6 +50,7 @@ class ExtensionSpec
     public string AnalyzedPackageVersion { get; set; }
     public string TargetCakeVersion { get; set; }
     public List<string> TargetFrameworks { get; set; }
+    public int ComplianceScore { get; set; }
 }
 
 // Variables
