@@ -53,6 +53,7 @@ class ExtensionSpec
     public string TargetCakeVersion { get; set; }
     public List<string> TargetFrameworks { get; set; }
     public int ComplianceScore { get; set; }
+    public List<string> ComplianceNotes { get; set; }
 }
 
 // Variables
