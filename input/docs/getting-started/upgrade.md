@@ -12,6 +12,34 @@ Cake 1.0 is a major version containing breaking changes.
 Members marked as obsolete in previous versions have been removed in Cake 1.0.
 Update to the member suggested in the obsolete message.
 
+## Cake Frosting
+
+`CakeHostBuilder` has been removed.
+With Cake.Frosting 1.0 `CakeHost` can be used directly to create the `CakeHost` object.
+
+With Cake.Frosting 0.38.x:
+
+```csharp
+// Create the host.
+var host =
+    new CakeHostBuilder()
+       .WithArguments(args)
+       .UseStartup<Program>()
+       .Build();
+
+// Run the host.
+return host.Run();
+```
+
+With Cake.Frosting 1.0:
+
+```csharp
+// Create and run the host.
+return
+    new CakeHost()
+        .UseContext<BuildContext>()
+        .Run(args);
+```
 ## Cake CLI updates
 
 As part of the rewrite of the  CLI of Cake for Cake 1.0 parsing of switches is now stricter.
