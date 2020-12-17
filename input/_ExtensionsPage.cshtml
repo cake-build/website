@@ -6,20 +6,16 @@
     var extensions =
         Model
             .Where(x =>
-                x.String("Type") != null && 
+                x.String("Type") != null &&
                 extensionType.Any(y => y.Equals(x.String("Type"), StringComparison.OrdinalIgnoreCase)))
             .OrderBy(x => x.String("Name"))
             .ToList();
 }
 
 <div class="alert alert-info">
-    <p>
-        This page contains extensions for Cake.
-        If you want to file an issue for any extension listed here, contact the author of the extension.
-    </p>
-    <p>
-        If you're an extension author and want your extension listed here, follow the instructions <a href="https://github.com/cake-build/website/blob/master/README.md#extensions" target="_blank">here</a>.
-    </p>
+    <i class="fa fa-bug" style="margin-right:20px;" aria-hidden="true"></i>If you want to file an issue for any extension listed here please contact the author of the extension.<br/>
+    <i class="fa fa-hand-pointer-o" style="margin-right:20px;" aria-hidden="true"></i>If you have requests for additional addins <a href="https://github.com/cake-build/cake/discussions?discussions_q=category%3A%22Extension+requests%22" target="_blank">start a discussion</a>.<br/>
+    <i class="fa fa-plus" style="margin-right:20px;" aria-hidden="true"></i>If you are an extension author and want to have your extension listed, follow the <a href="https://github.com/cake-build/website/blob/master/README.md#extensions" target="_blank">instructions</a>.<br/>
 </div>
 
 <section id="extensions">
@@ -31,7 +27,7 @@
             @extensions.Count() extensions found
         </div>
     </div>
-    
+
     @Html.Partial("_ExtensionsList", extensions)
 </section>
 
