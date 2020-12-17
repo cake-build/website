@@ -48,6 +48,7 @@ class ExtensionSpec
     public string Description { get; set; }
     public List<string> Categories { get; set; }
     public string AnalyzedPackageVersion { get; set; }
+    public string AnalyzedPackagePublishDate { get; set; }
     public string TargetCakeVersion { get; set; }
     public List<string> TargetFrameworks { get; set; }
     public int ComplianceScore { get; set; }
