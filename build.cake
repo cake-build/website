@@ -49,6 +49,7 @@ class ExtensionSpec
     public List<string> Categories { get; set; }
     public string AnalyzedPackageVersion { get; set; }
     public string AnalyzedPackagePublishDate { get; set; }
+    public bool AnalyzedPackageIsPrerelease { get; set; }
     public string TargetCakeVersion { get; set; }
     public List<string> TargetFrameworks { get; set; }
     public int ComplianceScore { get; set; }
