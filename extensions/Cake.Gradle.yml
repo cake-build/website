@@ -8,5 +8,5 @@ Author: abeggchr
 Description: An aliase for Cake to help with running Gradle commands
 Categories:
 - gradle
-TargetCakeVersion: 0.24.0
-AnalyzedPackageVersion: 0.2.0
+TargetCakeVersion: 0.33.0
+AnalyzedPackageVersion: 0.3.0
