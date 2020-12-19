@@ -3,11 +3,17 @@ Name: Cake.ConventionalChangelog
 NuGet: Cake.ConventionalChangelog
 Assemblies:
 - "/**/Cake.ConventionalChangelog.dll"
-Repository: https://github.com/AdhamAwadhi/Cake.ConventionalChangelog/
+Repository: https://github.com/AdhamAwadhi/Cake.ConventionalChangelog.git
+ProjectUrl: https://github.com/AdhamAwadhi/Cake.ConventionalChangelog/
 Author: AdhamAwadhi
 Description: Cake Addin to generate changelog file depends on git log.
 Categories:
 - changelog
 - git
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net46
+- netstandard2.0
 AnalyzedPackageVersion: 0.3.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-10-30T16:23:51.9130000Z

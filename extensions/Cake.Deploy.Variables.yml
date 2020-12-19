@@ -3,7 +3,8 @@ Name: Cake.Deploy.Variables
 NuGet: Cake.Deploy.Variables
 Assemblies:
 - "/**/Cake.Deploy.Variables.dll"
-Repository: https://github.com/ObjectivityLtd/Cake.Deploy.Variables/
+Repository: https://github.com/ObjectivityLtd/Cake.Deploy.Variables.git
+ProjectUrl: https://github.com/ObjectivityLtd/Cake.Deploy.Variables/
 Author: ObjectivityLtd
 Description: Cake addin for the deployment variables management.
 Categories:
@@ -11,4 +12,8 @@ Categories:
 - deploy
 - release variables
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.3.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-05-30T17:46:57.8000000Z

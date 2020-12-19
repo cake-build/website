@@ -3,10 +3,15 @@ Name: Cake.DocFx
 NuGet: Cake.DocFx
 Assemblies:
 - "/**/Cake.DocFx.dll"
-Repository: https://github.com/cake-contrib/Cake.DocFx/
+Repository: https://github.com/cake-contrib/Cake.DocFx.git
+ProjectUrl: https://github.com/cake-contrib/Cake.DocFx/
 Author: Paul Reichelt
 Description: Cake AddIn that generates documentation for .Net API reference and markdown files using DocFx.
 Categories:
 - documentation
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.13.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-09-07T21:16:38.2100000Z

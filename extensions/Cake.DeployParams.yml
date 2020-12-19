@@ -3,7 +3,8 @@ Name: Cake.DeployParams
 NuGet: Cake.DeployParams
 Assemblies:
 - "/**/Cake.DeployParams.dll"
-Repository: https://github.com/wooboo/Cake.DeployParams/
+Repository: https://github.com/wooboo/Cake.DeployParams.git
+ProjectUrl: https://github.com/wooboo/Cake.DeployParams/
 Author: wooboo
 Description: Cake addin for generating WebDeploy parameters.
 Categories:
@@ -11,4 +12,8 @@ Categories:
 - iis
 - webdeploy
 TargetCakeVersion: 0.27.1
+TargetFrameworks:
+- net46
 AnalyzedPackageVersion: 0.27.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2018-04-27T19:54:10.1400000Z

@@ -3,10 +3,15 @@ Name: Cake.DevicesXunitTestReceiver
 NuGet: Cake.DevicesXunitTestReceiver
 Assemblies:
 - "/**/Cake.DevicesXunitTestReceiver.dll"
-Repository: https://github.com/pellet/Cake.DevicesXunitTestReceiver/
+Repository: https://github.com/pellet/Cake.DevicesXunitTestReceiver.git
+ProjectUrl: https://github.com/pellet/Cake.DevicesXunitTestReceiver/
 Author: Benjamin Pettit
 Description: Cake Build addin for receiving test results from Devices.Xunit test hosts.
 Categories:
 - mobile
 TargetCakeVersion: 0.22.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 1.0.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2018-01-10T01:15:35.5600000Z

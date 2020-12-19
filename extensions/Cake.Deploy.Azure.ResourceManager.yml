@@ -3,7 +3,8 @@ Name: Cake.Deploy.Azure.ResourceManager
 NuGet: Cake.Deploy.Azure.ResourceManager
 Assemblies:
 - "/**/Cake.Daploy.Azure.ResourceManager.dll"
-Repository: https://github.com/ObjectivityLtd/Cake.Deploy.Azure.ResourceManager/
+Repository: https://github.com/ObjectivityLtd/Cake.Deploy.Azure.ResourceManager.git
+ProjectUrl: https://github.com/ObjectivityLtd/Cake.Deploy.Azure.ResourceManager/
 Author: ObjectivityLtd
 Description: Cake addin to use Azure Resource Manager template.
 Categories:
@@ -11,4 +12,8 @@ Categories:
 - resource-manager
 - deployment
 TargetCakeVersion: 0.19.4
+TargetFrameworks:
+
 AnalyzedPackageVersion: 0.1.3
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2017-09-11T12:03:27.6770000Z

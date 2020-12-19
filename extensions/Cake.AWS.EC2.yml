@@ -3,11 +3,17 @@ Name: Cake.AWS.EC2
 NuGet: Cake.AWS.EC2
 Assemblies:
 - "/**/Cake.AWS.EC2.dll"
-Repository: https://github.com/SharpeRAD/Cake.AWS.EC2/
+Repository: https://github.com/SharpeRAD/Cake.AWS.EC2.git
+ProjectUrl: https://github.com/SharpeRAD/Cake.AWS.EC2/
 Author: SharpeRAD
 Description: Amazon EC2 addon for Cake.
 Categories:
 - amazon
 - aws
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net46
+- netstandard2.0
 AnalyzedPackageVersion: 0.3.4
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-04-28T17:13:06.9730000Z

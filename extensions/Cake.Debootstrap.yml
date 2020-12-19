@@ -3,10 +3,15 @@ Name: Cake.Debootstrap
 NuGet: Cake.Debootstrap
 Assemblies:
 - "/**/Cake.Debootstrap.dll"
-Repository: https://github.com/cake-contrib/Cake.Debootstrap/
+Repository: https://github.com/cake-contrib/Cake.Debootstrap.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Debootstrap/
 Author: csnewman
 Description: Debootstrap support for Cake
 Categories:
 - debootstrap
 TargetCakeVersion: 0.30.0
+TargetFrameworks:
+- net46
 AnalyzedPackageVersion: 1.0.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2018-12-02T15:41:42.9600000Z

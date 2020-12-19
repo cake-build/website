@@ -3,10 +3,15 @@ Name: Cake.Discord
 NuGet: Cake.Discord
 Assemblies:
 - "/**/Cake.Discord.dll"
-Repository: https://github.com/cake-contrib/Cake.Discord/
+Repository: https://github.com/cake-contrib/Cake.Discord.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Discord/
 Author: gep13
 Description: Cake Discord AddIn.
 Categories:
 - discord
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.2.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-09-06T18:46:04.3230000Z

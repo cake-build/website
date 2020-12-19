@@ -3,11 +3,17 @@ Name: Cake.Codecov
 NuGet: Cake.Codecov
 Assemblies:
 - "/**/Cake.Codecov.dll"
-Repository: https://github.com/cake-contrib/Cake.Codecov/
+Repository: https://github.com/cake-contrib/Cake.Codecov.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Codecov/
 Author: Larz White
 Description: Cake addin that extends Cake with ability to use Codecov.
 Categories:
 - code coverage
 - testing
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net46
+- netstandard2.0
 AnalyzedPackageVersion: 0.9.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 0001-01-01T00:00:00.0000000Z

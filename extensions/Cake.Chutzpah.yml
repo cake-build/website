@@ -3,10 +3,16 @@ Name: Cake.Chutzpah
 NuGet: Cake.Chutzpah
 Assemblies:
 - "/**/Cake.Chutzpah.dll"
-Repository: https://github.com/cake-contrib/Cake.Chutzpah/
+Repository: https://github.com/cake-contrib/Cake.Chutzpah.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Chutzpah/
 Author: James Nail
 Description: Chutzpah JS test runner addin for Cake Build.
 Categories:
 - chutzpah
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net46
+- netstandard2.0
 AnalyzedPackageVersion: 0.3.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-07-26T22:06:27.4600000Z

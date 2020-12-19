@@ -3,11 +3,16 @@ Name: Cake.CK.Pack
 NuGet: Cake.CK.Pack
 Assemblies:
 - "/**/Cake.CK.Pack.dll"
-Repository: https://www.nuget.org/packages/Cake.CK.Pack/
+Repository: https://github.com/Invenietis/CK-Globbing.git
+ProjectUrl: https://www.nuget.org/packages/Cake.CK.Pack/
 Author: Invenietis
 Description: Packer with globbing and file filtering for Cake.
 Categories:
 - ck
 - pack
 TargetCakeVersion: 0.37.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.9.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-05-09T21:03:47.9130000Z

@@ -3,10 +3,15 @@ Name: Cake.DoInDirectory
 NuGet: Cake.DoInDirectory
 Assemblies:
 - "/**/Cake.DoInDirectory.dll"
-Repository: https://github.com/cake-contrib/Cake.DoInDirectory/
+Repository: https://github.com/cake-contrib/Cake.DoInDirectory.git
+ProjectUrl: https://github.com/cake-contrib/Cake.DoInDirectory/
 Author: pitermarx
 Description: Cake Addin to allow the temporary change of the working directory.
 Categories:
 - io
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 3.3.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-04-22T08:31:51.2030000Z
