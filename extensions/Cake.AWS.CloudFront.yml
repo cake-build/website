@@ -3,7 +3,8 @@ Name: Cake.AWS.CloudFront
 NuGet: Cake.AWS.CloudFront
 Assemblies:
 - "/**/Cake.AWS.CloudFront.dll"
-Repository: https://github.com/SharpeRAD/Cake.AWS.CloudFront/
+Repository: https://github.com/SharpeRAD/Cake.AWS.CloudFront.git
+ProjectUrl: https://github.com/SharpeRAD/Cake.AWS.CloudFront/
 Author: SharpeRAD
 Description: AWS CloudFront addin for Cake.
 Categories:
@@ -12,4 +13,9 @@ Categories:
 - deployment
 - cdn
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net46
+- netstandard2.0
 AnalyzedPackageVersion: 0.2.4
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-04-28T17:32:37.0430000Z

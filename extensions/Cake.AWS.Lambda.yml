@@ -3,7 +3,8 @@ Name: Cake.AWS.Lambda
 NuGet: Cake.AWS.Lambda
 Assemblies:
 - "/**/Cake.AWS.Lambda.dll"
-Repository: https://github.com/SharpeRAD/Cake.AWS.Lambda/
+Repository: https://github.com/SharpeRAD/Cake.AWS.Lambda.git
+ProjectUrl: https://github.com/SharpeRAD/Cake.AWS.Lambda/
 Author: SharpeRAD
 Description: Cake Build addon for Amazon Lambda.
 Categories:
@@ -11,4 +12,9 @@ Categories:
 - aws
 - lambda
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net46
+- netstandard2.0
 AnalyzedPackageVersion: 0.0.9
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-08-28T17:48:26.7400000Z

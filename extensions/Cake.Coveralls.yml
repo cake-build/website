@@ -3,11 +3,16 @@ Name: Cake.Coveralls
 NuGet: Cake.Coveralls
 Assemblies:
 - "/**/Cake.Coveralls.dll"
-Repository: https://github.com/cake-contrib/Cake.Coveralls/
+Repository: https://github.com/cake-contrib/Cake.Coveralls.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Coveralls/
 Author: Gary Ewan Park
 Description: Cake Build addin for publishing code coverage results to coveralls.io.
 Categories:
 - code coverage
 - testing
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.10.2
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-07-10T20:42:04.2030000Z

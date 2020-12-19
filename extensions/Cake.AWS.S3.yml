@@ -3,7 +3,8 @@ Name: Cake.AWS.S3
 NuGet: Cake.AWS.S3
 Assemblies:
 - "/**/Cake.AWS.S3.dll"
-Repository: https://github.com/SharpeRAD/Cake.AWS.S3/
+Repository: https://github.com/SharpeRAD/Cake.AWS.S3.git
+ProjectUrl: https://github.com/SharpeRAD/Cake.AWS.S3/
 Author: SharpeRAD
 Description: AWS S3 addin for Cake.
 Categories:
@@ -12,4 +13,9 @@ Categories:
 - deployment
 - cdn
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net46
+- netstandard2.0
 AnalyzedPackageVersion: 0.6.9
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-11-17T08:58:04.8470000Z

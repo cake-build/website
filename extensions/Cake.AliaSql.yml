@@ -3,10 +3,16 @@ Name: Cake.AliaSql
 NuGet: Cake.AliaSql
 Assemblies:
 - "/**/Cake.AliaSql.dll"
-Repository: https://github.com/cake-contrib/Cake.AliaSql/
+Repository: https://github.com/cake-contrib/Cake.AliaSql.git
+ProjectUrl: https://github.com/cake-contrib/Cake.AliaSql/
 Author: RichieCoder1
 Description: AliaSql Script Alias for Cake.
 Categories:
 - database
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net46
+- netstandard2.0
 AnalyzedPackageVersion: 0.7.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-07-24T21:03:33.6800000Z

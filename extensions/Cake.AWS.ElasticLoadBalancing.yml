@@ -3,7 +3,8 @@ Name: Cake.AWS.ElasticLoadBalancing
 NuGet: Cake.AWS.ElasticLoadBalancing
 Assemblies:
 - "/**/Cake.AWS.ElasticLoadBalancing.dll"
-Repository: https://github.com/SharpeRAD/Cake.AWS.ElasticLoadBalancing/
+Repository: https://github.com/SharpeRAD/Cake.AWS.ElasticLoadBalancing.git
+ProjectUrl: https://github.com/SharpeRAD/Cake.AWS.ElasticLoadBalancing/
 Author: SharpeRAD
 Description: AWS ElasticLoadBalancing addin for Cake.
 Categories:
@@ -11,4 +12,9 @@ Categories:
 - aws
 - deployment
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net46
+- netstandard2.0
 AnalyzedPackageVersion: 0.3.4
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-04-28T17:07:40.3500000Z

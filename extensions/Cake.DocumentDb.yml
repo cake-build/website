@@ -3,11 +3,16 @@ Name: Cake.DocumentDb
 NuGet: Cake.DocumentDb
 Assemblies:
 - "/**/Cake.DocumentDb.dll"
-Repository: https://github.com/BudSystemLimited/Cake.DocumentDb/
+Repository: https://github.com/BudSystemLimited/Cake.DocumentDb.git
+ProjectUrl: https://github.com/BudSystemLimited/Cake.DocumentDb/
 Author: BudSystemLimited
 Description: Cake plugin for creating documents, collections and seeding documents
 Categories:
 - document
 - db
 TargetCakeVersion: 0.26.0
+TargetFrameworks:
+- net461
 AnalyzedPackageVersion: 8.1.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-09-02T08:13:13.9000000Z

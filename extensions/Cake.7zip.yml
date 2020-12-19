@@ -3,10 +3,16 @@ Name: Cake.7zip
 NuGet: Cake.7zip
 Assemblies:
 - "/**/Cake.7zip.dll"
-Repository: https://github.com/cake-contrib/Cake.7zip/
+Repository: https://github.com/cake-contrib/Cake.7zip.git
+ProjectUrl: https://github.com/cake-contrib/Cake.7zip/
 Author: nils-a
 Description: makes 7zip available as a tool in cake
 Categories:
 - sevenzip
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net461
+- netstandard2.0
 AnalyzedPackageVersion: 0.7.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-10-07T21:27:57.9230000Z

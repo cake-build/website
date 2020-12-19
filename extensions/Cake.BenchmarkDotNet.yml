@@ -3,10 +3,15 @@ Name: Cake.BenchmarkDotNet
 NuGet: Cake.BenchmarkDotNet
 Assemblies:
 - "/**/Cake.BenchmarkDotNet.dll"
-Repository: https://github.com/rfleming71/cake-benchmarkdotnet/
+Repository: https://github.com/rfleming71/cake-benchmarkdotnet.git
+ProjectUrl: https://github.com/rfleming71/cake-benchmarkdotnet/
 Author: rfleming71
 Description: Cake addin for working with BenchmarkDotNet
 Categories:
 - benchmarkdotnet
 TargetCakeVersion: 0.38.4
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.1.12
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-09-08T19:06:46.0730000Z

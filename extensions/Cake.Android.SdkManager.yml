@@ -3,10 +3,15 @@ Name: Cake.Android.SdkManager
 NuGet: Cake.Android.SdkManager
 Assemblies:
 - "/**/Cake.Android.SdkManager.dll"
-Repository: https://github.com/cake-contrib/Cake.Android.SdkManager/
+Repository: https://github.com/cake-contrib/Cake.Android.SdkManager.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Android.SdkManager/
 Author: Jonathan Dick
 Description: Cake Aliases for Android's sdkmanager command line tool
 Categories:
 - android
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 3.0.2
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-08-06T20:35:34.4270000Z

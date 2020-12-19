@@ -3,11 +3,16 @@ Name: Cake.DotNetVersionDetector
 NuGet: Cake.DotNetVersionDetector
 Assemblies:
 - "/**/Cake.DotNetVersionDetector.dll"
-Repository: https://github.com/cake-contrib/Cake.DotNetVersionDetector/
+Repository: https://github.com/cake-contrib/Cake.DotNetVersionDetector.git
+ProjectUrl: https://github.com/cake-contrib/Cake.DotNetVersionDetector/
 Author: gep13
 Description: Cake addin providing support for the .Net Version Detector application
 Categories:
 - version
 - detector
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.2.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-09-06T19:07:35.9030000Z

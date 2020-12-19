@@ -3,11 +3,16 @@ Name: Cake.ArgumentHelpers
 NuGet: Cake.ArgumentHelpers
 Assemblies:
 - "/**/Cake.ArgumentHelpers.dll"
-Repository: https://github.com/cake-contrib/Cake.ArgumentHelpers/
+Repository: https://github.com/cake-contrib/Cake.ArgumentHelpers.git
+ProjectUrl: https://github.com/cake-contrib/Cake.ArgumentHelpers/
 Author: Adam Patridge
 Description: Cake add-on trying to make it easier to handle various inputs from arguments and environment variable.
 Categories:
 - environment
 - argument
 TargetCakeVersion: 0.28.1
+TargetFrameworks:
+- net45
 AnalyzedPackageVersion: 0.3.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2018-06-21T18:52:07.3030000Z

@@ -3,7 +3,8 @@ Name: Cake.CodeGen.NSwag
 NuGet: Cake.CodeGen.NSwag
 Assemblies:
 - "/**/Cake.CodeGen.NSwag.dll"
-Repository: https://github.com/lukoerfer/cake-codegen-nswag/
+Repository: https://github.com/lukoerfer/cake-codegen-nswag.git
+ProjectUrl: https://github.com/lukoerfer/cake-codegen-nswag/
 Author: lukoerfer
 Description: Cake Addin for code generation from OpenAPI specifications via NSwag
 Categories:
@@ -11,4 +12,8 @@ Categories:
 - openapi
 - nswag
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 1.2.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-08-05T23:45:27.5670000Z

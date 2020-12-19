@@ -3,7 +3,8 @@ Name: Cake.DependencyCheck
 NuGet: Cake.DependencyCheck
 Assemblies:
 - "/**/Cake.DependencyCheck.dll"
-Repository: https://github.com/burakince/Cake.DependencyCheck/
+Repository: https://github.com/burakince/Cake.DependencyCheck.git
+ProjectUrl: https://github.com/burakince/Cake.DependencyCheck/
 Author: Burak İnce
 Description: A Cake AddIn that allows will run the OWASP Dependency-Check utility.
 Categories:
@@ -12,4 +13,10 @@ Categories:
 - dependency check
 - utility
 TargetCakeVersion: 0.22.0
+TargetFrameworks:
+- net45
+- net46
+- netstandard1.6
 AnalyzedPackageVersion: 1.2.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2018-02-13T14:54:58.7300000Z

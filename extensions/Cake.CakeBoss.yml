@@ -3,10 +3,15 @@ Name: Cake.CakeBoss
 NuGet: Cake.CakeBoss
 Assemblies:
 - "/**/Cake.CakeBoss.dll"
-Repository: https://github.com/SharpeRAD/CakeBoss/
+Repository: https://github.com/SharpeRAD/CakeBoss.git
+ProjectUrl: https://github.com/SharpeRAD/CakeBoss/
 Author: SharpeRAD
 Description: Cake Build addon for calling CakeBoss agents.
 Categories:
 - devops
 TargetCakeVersion: 0.6.4
+TargetFrameworks:
+- net45
 AnalyzedPackageVersion: 0.1.5
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2016-02-29T22:00:07.5470000Z

@@ -3,11 +3,16 @@ Name: Cake.DocCreator
 NuGet: Cake.DocCreator
 Assemblies:
 - "/**/Cake.DocCreator.dll"
-Repository: https://www.nuget.org/packages/Cake.DocCreator/
+Repository: 
+ProjectUrl: https://www.nuget.org/packages/Cake.DocCreator/
 Author: agc93
 Description: A Cake addin to generate HTML documentation from Markdown source, using DocCreator
 Categories:
 - documentation
 - markdown
 TargetCakeVersion: 0.10.1
+TargetFrameworks:
+- net45
 AnalyzedPackageVersion: 0.4.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2016-06-21T06:13:15.7900000Z

@@ -3,7 +3,8 @@ Name: Cake.AWS.Route53
 NuGet: Cake.AWS.Route53
 Assemblies:
 - "/**/Cake.AWS.Route53.dll"
-Repository: https://github.com/SharpeRAD/Cake.AWS.Route53/
+Repository: https://github.com/SharpeRAD/Cake.AWS.Route53.git
+ProjectUrl: https://github.com/SharpeRAD/Cake.AWS.Route53/
 Author: SharpeRAD
 Description: AWS Route53 addin for Cake.
 Categories:
@@ -11,4 +12,9 @@ Categories:
 - aws
 - deployment
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net46
+- netstandard2.0
 AnalyzedPackageVersion: 0.1.5
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-04-28T17:00:10.0270000Z
