@@ -3,7 +3,8 @@ Name: Cake.EntityFramework6
 NuGet: Cake.EntityFramework6
 Assemblies:
 - "/**/Cake.EntityFramework6.dll"
-Repository: https://github.com/cake-contrib/Cake.EntityFramework6/
+Repository: https://github.com/cake-contrib/Cake.EntityFramework6.git
+ProjectUrl: https://github.com/cake-contrib/Cake.EntityFramework6/
 Author: louisfischer, Cake-Contrib
 Description: Cake.EntityFramework6 is a set of Cake aliases for Entity Framework 6.3 or above (not .NET Core) code-first migration using the ef6.exe command line interface (cli).
 Categories:
@@ -13,4 +14,8 @@ Categories:
 - migrations
 - sql server
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.1.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-10-11T03:19:17.1430000Z

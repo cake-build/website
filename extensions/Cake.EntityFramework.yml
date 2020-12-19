@@ -3,10 +3,15 @@ Name: Cake.EntityFramework
 NuGet: Cake.EntityFramework
 Assemblies:
 - "/**/Cake.EntityFramework.dll"
-Repository: https://github.com/cake-contrib/Cake.EntityFramework/
+Repository: https://github.com/cake-contrib/Cake.EntityFramework.git
+ProjectUrl: https://github.com/cake-contrib/Cake.EntityFramework/
 Author: louisfischer
 Description: A set of Cake aliases for Entity Framework code first migrations.
 Categories:
 - entity framework
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net461
 AnalyzedPackageVersion: 0.3.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-08-30T19:49:32.8830000Z

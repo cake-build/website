@@ -3,10 +3,15 @@ Name: Cake.FileSet
 NuGet: Cake.FileSet
 Assemblies:
 - "/**/Cake.FileSet.dll"
-Repository: https://github.com/CleanKludge/Cake.FileSet/
+Repository: https://github.com/Korthax/Cake.FileSet.git
+ProjectUrl: https://github.com/CleanKludge/Cake.FileSet/
 Author: Steve Phillips
 Description: FileSet alias which uses Microsoft.Extensions.FileSystemGlobbing to find files based on include and exclude patterns.
 Categories:
 - io
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 2.0.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-04-09T16:17:28.3070000Z

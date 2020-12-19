@@ -3,11 +3,16 @@ Name: Cake.Hg
 NuGet: Cake.Hg
 Assemblies:
 - "/**/Cake.Hg.dll"
-Repository: https://github.com/cake-contrib/Cake.Hg/
+Repository: https://github.com/cake-contrib/Cake.Hg.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Hg/
 Author: vCipher
 Description: Cake AddIn that extends Cake with Mercurial features using Mercurial.Net
 Categories:
 - hg
 - mercurial
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net461
 AnalyzedPackageVersion: 0.2.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-09-06T08:56:25.7470000Z

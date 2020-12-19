@@ -3,7 +3,8 @@ Name: Cake.Issues.DupFinder
 NuGet: Cake.Issues.DupFinder
 Assemblies:
 - "/**/Cake.Issues.DupFinder.dll"
-Repository: https://github.com/cake-contrib/Cake.Issues.DupFinder/
+Repository: https://github.com/cake-contrib/Cake.Issues.DupFinder.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Issues.DupFinder/
 Author: janniksam
 Description: |-
   The JetBrains dupFinder support for the Cake.Issues addin allows you to read issues logged by JetBrains dupFinder.
@@ -21,4 +22,9 @@ Categories:
 - linting
 - dupfinder
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net461
+- netstandard2.0
 AnalyzedPackageVersion: 0.9.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-08-22T20:05:05.7730000Z

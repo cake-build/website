@@ -3,7 +3,8 @@ Name: Cake.Graph
 NuGet: Cake.Graph
 Assemblies:
 - "/**/Cake.Graph.dll"
-Repository: https://github.com/cake-contrib/Cake.Graph/
+Repository: https://github.com/cake-contrib/Cake.Graph.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Graph/
 Author: wozzo
 Description: An alias for Cake to help with displaying Task dependencies
 Categories:
@@ -12,4 +13,8 @@ Categories:
 - dependencies
 - tasks
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.8.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-05-11T20:45:57.0500000Z

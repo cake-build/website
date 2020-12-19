@@ -3,10 +3,15 @@ Name: Cake.Graphite
 NuGet: Cake.Graphite
 Assemblies:
 - "/**/Cake.Graphite.dll"
-Repository: https://github.com/cake-contrib/Cake.Graphite/
+Repository: https://github.com/cake-contrib/Cake.Graphite.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Graphite/
 Author: Nicolai Brogaard
 Description: A set of aliases for Cake to help with sending metrics to Graphite.
 Categories:
 - metrics
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 2.0.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-09-10T20:03:29.9070000Z

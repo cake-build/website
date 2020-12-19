@@ -3,7 +3,8 @@ Name: Cake.Issues.PullRequests.GitHubActions
 NuGet: Cake.Issues.PullRequests.GitHubActions
 Assemblies:
 - "/**/Cake.Issues.PullRequests.GitHubActions.dll"
-Repository: https://github.com/cake-contrib/Cake.Issues.PullRequests.GitHubActions/
+Repository: https://github.com/cake-contrib/Cake.Issues.PullRequests.GitHubActions.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Issues.PullRequests.GitHubActions/
 Author: Pascal Berger
 Description: |-
   GitHub Actions support for the Cake.Issues addin allows you to report to GitHub Actions builds.
@@ -20,4 +21,8 @@ Categories:
 - github
 - github actions
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.9.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-09-26T19:57:50.7700000Z

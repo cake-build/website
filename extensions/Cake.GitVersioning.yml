@@ -3,7 +3,8 @@ Name: Cake.GitVersioning
 NuGet: Cake.GitVersioning
 Assemblies:
 - "/**/Cake.GitVersioning.dll"
-Repository: https://github.com/dotnet/Nerdbank.GitVersioning/
+Repository: https://github.com/dotnet/Nerdbank.GitVersioning.git
+ProjectUrl: https://github.com/dotnet/Nerdbank.GitVersioning/
 Author: AArnott
 Description: Cake wrapper for Nerdbank.GitVersioning.  Stamps your assemblies with semver 2.0 compliant git commit specific version information and provides NuGet versioning information as well.
 Categories:
@@ -13,4 +14,8 @@ Categories:
 - version
 - assembly info
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 3.3.37
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-10-07T02:31:04.3530000Z

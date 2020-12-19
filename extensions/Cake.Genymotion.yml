@@ -3,10 +3,15 @@ Name: Cake.Genymotion
 NuGet: Cake.Genymotion
 Assemblies:
 - "/**/Cake.Genymotion.dll"
-Repository: https://github.com/cake-contrib/Cake.Genymotion/
+Repository: https://github.com/cake-contrib/Cake.Genymotion.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Genymotion/
 Author: Geoffrey Huntley
 Description: Cake Build addin managing Genymotion (Android) simulators.
 Categories:
 - mobile
 TargetCakeVersion: 0.17.0
+TargetFrameworks:
+- net45
 AnalyzedPackageVersion: 0.0.1.1490271568
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2017-03-23T12:19:54.5470000Z

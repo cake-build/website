@@ -3,7 +3,8 @@ Name: Cake.Issues.EsLint
 NuGet: Cake.Issues.EsLint
 Assemblies:
 - "/**/Cake.Issues.EsLint.dll"
-Repository: https://github.com/cake-contrib/Cake.Issues.EsLint/
+Repository: https://github.com/cake-contrib/Cake.Issues.EsLint.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Issues.EsLint/
 Author: BBT Software AG
 Description: |-
   The EsLint support for the Cake.Issues addin allows you to read issues logged by ESLint.
@@ -18,4 +19,8 @@ Categories:
 - issues
 - eslint
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.9.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-08-22T18:33:06.9070000Z

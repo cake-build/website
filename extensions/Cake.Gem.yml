@@ -3,11 +3,16 @@ Name: Cake.Gem
 NuGet: Cake.Gem
 Assemblies:
 - "/**/Cake.Gem.dll"
-Repository: https://github.com/cake-contrib/Cake.Gem/
+Repository: https://github.com/cake-contrib/Cake.Gem.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Gem/
 Author: Gary Ewan Park
 Description: Cake Build addin for using gem cli.
 Categories:
 - rubygems
 - deployment
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.8.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-09-07T07:37:43.3270000Z
