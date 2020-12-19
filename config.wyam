@@ -1,3 +1,7 @@
+#n Humanizer.Core
+
+System.Globalization.CultureInfo.DefaultThreadCurrentCulture = System.Globalization.CultureInfo.CreateSpecificCulture("en-GB");
+
 ContentStreamFactory = new MemoryContentStreamFactory();
 
 Settings[Keys.Host] = "cakebuild.net";

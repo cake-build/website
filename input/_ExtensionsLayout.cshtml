@@ -1,3 +1,5 @@
+@using Humanizer;
+
 @{
     Layout = "/_Master.cshtml";
 
@@ -12,6 +14,7 @@
     string author = Model.String("Author");
     string repository = Model.String("Repository");
     string version = Model.String("AnalyzedPackageVersion");
+    string publishDate = Model.String("AnalyzedPackagePublishDate");
     string supportedCakeVersions = Model.String("SupportedCakeVersions");
     string categories = (String.Join(" ", Model.List<string>("Categories").Select(x => $"<span class=\"badge badge-secondary\">{x}</span>")));
     var assemblies = Model.List<string>("Assemblies");
@@ -77,6 +80,17 @@
             <li>
                 Latest version: @version
             </li>
+            @if (!string.IsNullOrWhiteSpace(publishDate))
+            {
+                var parsedPublishDate = @DateTime.Parse(publishDate, null, System.Globalization.DateTimeStyles.RoundtripKind);
+
+                <li>
+                    <span title="@parsedPublishDate.ToOrdinalWords()">
+                        <i class="fa fa-clock-o"></i>
+                        Last updated @parsedPublishDate.Humanize()
+                    </span>
+                </li>
+            }
             @if (!string.IsNullOrWhiteSpace(supportedCakeVersions))
             {
             <li>

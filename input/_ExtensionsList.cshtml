@@ -1,4 +1,7 @@
+
 @model IEnumerable<IDocument>
+
+@using Humanizer;
 
 @{
     var extensions =
@@ -21,6 +24,7 @@
         string description = extension.String("Description");
         string author = extension.String("Author");
         string version = extension.String("AnalyzedPackageVersion");
+        string publishDate = extension.String("AnalyzedPackagePublishDate");
         string categories = (String.Join(", ", extension.List<string>("Categories")));
 
         <article class="extension row" data-name="@name" data-categories="@categories">
@@ -39,6 +43,17 @@
                     <li>
                         Latest version: @version
                     </li>
+                    @if (!string.IsNullOrWhiteSpace(publishDate))
+                    {
+                        var parsedPublishDate = @DateTime.Parse(publishDate, null, System.Globalization.DateTimeStyles.RoundtripKind);
+
+                        <li>
+                            <span title="@parsedPublishDate.ToOrdinalWords()">
+                                <i class="fa fa-clock-o"></i>
+                                Last updated @parsedPublishDate.Humanize()
+                            </span>
+                        </li>
+                    }
                     @if (!string.IsNullOrWhiteSpace(categories))
                     {
                         <li>
