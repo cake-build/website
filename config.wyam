@@ -20,12 +20,6 @@ Pipelines.InsertBefore(Docs.Code, "Extensions",
     ReadFiles("../extensions/*.yml"),
     Yaml(),
     Meta(
-        "IsPrerelease",
-        FileSystem.GetInputFile($"../release/extensions/{@doc.String("NuGet")}.isprerelease").Exists
-            ? bool.Parse(FileSystem.GetInputFile($"../release/extensions/{@doc.String("NuGet")}.isprerelease").ReadAllText())
-            : false
-    ),
-    Meta(
         "SupportedCakeVersions",
         FileSystem.GetInputFile($"../release/extensions/{@doc.String("NuGet")}.supportedcakeversions").Exists
             ? FileSystem.GetInputFile($"../release/extensions/{@doc.String("NuGet")}.supportedcakeversions").ReadAllText()
