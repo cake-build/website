@@ -162,8 +162,7 @@ Task("GetExtensionPackages")
         context.DownloadPackages(extensionDir,
             extensionSpecs
                 .Where(x => !string.IsNullOrEmpty(x.NuGet))
-                .Select(x => x.NuGet)
-                .ToArray());
+                .ToDictionary(e => e.NuGet, e => e.AnalyzedPackageVersion));
 
         context.CalcSupportedCakeVersions(extensionDir,
             extensionSpecs
