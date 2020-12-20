@@ -3,10 +3,15 @@ Name: Cake.Helm
 NuGet: Cake.Helm
 Assemblies:
 - "/**/Cake.Helm.dll"
-Repository: https://github.com/santey/Cake.Helm/
+Repository: https://github.com/santey/Cake.Helm.git
+ProjectUrl: https://github.com/santey/Cake.Helm/
 Author: pitermarx
 Description: Cake AddIn that extends Cake with Helm
 Categories:
 - helm
 TargetCakeVersion: 0.25.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 1.0.1-beta
+AnalyzedPackageIsPrerelease: true
+AnalyzedPackagePublishDate: 2018-03-01T05:23:43.2430000Z

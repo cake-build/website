@@ -4,7 +4,7 @@ NuGet: Cake.CodeGen.OpenAPI
 Assemblies:
 - "/**/Cake.CodeGen.OpenAPI.dll"
 Repository: https://github.com/lukoerfer/cake-openapi-generator.git
-ProjectUrl: https://github.com/lukoerfer/cake-codegen-openapi/
+ProjectUrl: https://github.com/lukoerfer/cake-openapi-generator/
 Author: lukoerfer
 Description: Cake Addin for code generation via the OpenAPI Generator (f.k.a. Swagger Codegen)
 Categories:

@@ -4,7 +4,7 @@ NuGet: Cake.Coverlet
 Assemblies:
 - "/**/Cake.Coverlet.dll"
 Repository: https://github.com/Romanx/Cake.Coverlet.git
-ProjectUrl: https://github.com/romanx/Cake.Coverlet/
+ProjectUrl: https://github.com/Romanx/Cake.Coverlet/
 Author: Alex McAuliffe
 Description: Cake addin that extends Cake with the ability to use Coverlet.
 Categories:

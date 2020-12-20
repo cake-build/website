@@ -3,10 +3,16 @@ Name: Cake.FileHelpers
 NuGet: Cake.FileHelpers
 Assemblies:
 - "/**/Cake.FileHelpers.dll"
-Repository: https://github.com/cake-contrib/Cake.FileHelpers/
+Repository: https://github.com/cake-contrib/Cake.FileHelpers.git
+ProjectUrl: https://github.com/cake-contrib/Cake.FileHelpers/
 Author: Jonathan Dick
 Description: A set of aliases for Cake to help with simple file operations such as Reading, Writing and Replacing text.
 Categories:
 - io
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net46
+- netstandard2.0
 AnalyzedPackageVersion: 3.3.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-06-29T19:33:20.1270000Z

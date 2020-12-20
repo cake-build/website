@@ -4,7 +4,7 @@ NuGet: Cake.ClickTwice
 Assemblies:
 - "/**/Cake.ClickTwice.dll"
 Repository: https://github.com/agc93/ClickTwice.git
-ProjectUrl: https://github.com/agc93/clicktwice/
+ProjectUrl: https://github.com/agc93/ClickTwice/
 Author: agc93
 Description: Cake host for ClickTwice publishing, including the addin and all required libraries
 Categories:
@@ -18,4 +18,4 @@ TargetFrameworks:
 - net45
 AnalyzedPackageVersion: 0.1.1
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 0001-01-01T00:00:00.0000000Z
+AnalyzedPackagePublishDate: 2017-05-08T04:07:04.3770000Z

@@ -4,7 +4,7 @@ NuGet: Cake.AsciiDoctorJ
 Assemblies:
 - "/**/Cake.AsciiDoctorJ.dll"
 Repository: https://github.com/cake-contrib/cake.asciidoctorj.git
-ProjectUrl: https://github.com/cake-contrib/cake.asciidoctorj/
+ProjectUrl: https://cake-contrib.github.io/cake.asciidoctorj/
 Author: Nils Andresen
 Description: An alias for Cake to help with running AsciiDoctorJ.
 Categories:
@@ -15,6 +15,6 @@ TargetCakeVersion: 0.33.0
 TargetFrameworks:
 - net461
 - netstandard2.0
-AnalyzedPackageVersion: 1.0.5
+AnalyzedPackageVersion: 1.0.6
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2020-09-10T08:58:31.0800000Z
+AnalyzedPackagePublishDate: 2020-12-19T22:57:19.9400000Z

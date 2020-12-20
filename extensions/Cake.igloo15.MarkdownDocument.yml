@@ -3,10 +3,15 @@ Name: Cake.igloo15.MarkdownDocument
 NuGet: Cake.igloo15.MarkdownDocument
 Assemblies:
 - "/**/Cake.igloo15.MarkdownDocument.dll"
-Repository: https://github.com/igloo15/Cake.igloo15/
+Repository: https://github.com/igloo15/Cake.igloo15.git
+ProjectUrl: https://github.com/igloo15/Cake.igloo15/
 Author: igloo15
 Description: An addin for cake scripts that provides a way of combining markdown documents into one large document for pandoc generation
 Categories:
 - markdown
 TargetCakeVersion: 0.34.1
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 2.2.3
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-08-12T16:09:38.8700000Z

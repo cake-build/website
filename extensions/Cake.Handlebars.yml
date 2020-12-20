@@ -3,11 +3,16 @@ Name: Cake.Handlebars
 NuGet: Cake.Handlebars
 Assemblies:
 - "/**/Cake.Handlebars.dll"
-Repository: https://github.com/agc93/Cake.Handlebars/
+Repository: https://github.com/agc93/Cake.Handlebars.git
+ProjectUrl: https://github.com/agc93/Cake.Handlebars/
 Author: Alistair Chapman
 Description: A simple Cake addin for rendering and compiling Handlebars templates.
 Categories:
 - code generation
 - documentation
 TargetCakeVersion: 0.28.1
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.3.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2018-06-26T01:37:10.9630000Z

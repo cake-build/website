@@ -3,7 +3,8 @@ Name: Cake.Issues.Reporting.Sarif
 NuGet: Cake.Issues.Reporting.Sarif
 Assemblies:
 - "/**/Cake.Issues.Reporting.Sarif.dll"
-Repository: https://github.com/cake-contrib/Cake.Issues.Reporting.Sarif/
+Repository: https://github.com/cake-contrib/Cake.Issues.Reporting.Sarif.git
+ProjectUrl: https://cakeissues.net/
 Author: Pascal Berger
 Description: |-
   The SARIF support for the Cake.Issues addin allows you to create SARIF compatible files.
@@ -19,4 +20,8 @@ Categories:
 - reporting
 - sarif
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.9.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-08-22T19:03:15.9700000Z

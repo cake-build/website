@@ -3,10 +3,15 @@ Name: Cake.ISO
 NuGet: Cake.ISO
 Assemblies:
 - "/**/Cake.ISO.dll"
-Repository: https://github.com/cake-contrib/Cake.ISO/
+Repository: https://github.com/cake-contrib/Cake.ISO.git
+ProjectUrl: https://github.com/cake-contrib/Cake.ISO/
 Author: Austin Parker
 Description: Create an ISO as part of a Cake build.
 Categories:
 - misc
 TargetCakeVersion: 0.28.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.1.5-alpha
+AnalyzedPackageIsPrerelease: true
+AnalyzedPackagePublishDate: 2018-06-14T18:51:52.3770000Z

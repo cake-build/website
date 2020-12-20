@@ -3,10 +3,16 @@ Name: Cake.GitHub
 NuGet: Cake.GitHub
 Assemblies:
 - "/**/Cake.GitHub.dll"
-Repository: https://github.com/cake-contrib/Cake.GitHub/
+Repository: https://github.com/cake-contrib/Cake.GitHub.git
+ProjectUrl: https://github.com/cake-contrib/Cake.GitHub/
 Author: Geert van Horrik, Cake Contributors
 Description: GitHub Addin for Cake Build Automation System.
 Categories:
 - github
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net46
+- netstandard2.0
 AnalyzedPackageVersion: 0.1.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-11-03T16:25:11.8030000Z

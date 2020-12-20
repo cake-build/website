@@ -3,10 +3,15 @@ Name: Cake.Gitter
 NuGet: Cake.Gitter
 Assemblies:
 - "/**/Cake.Gitter.dll"
-Repository: https://github.com/cake-contrib/Cake.Gitter/
+Repository: https://github.com/cake-contrib/Cake.Gitter.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Gitter/
 Author: Gary Ewan Park
 Description: Cake Addin to allow message posting to Gitter Room.
 Categories:
 - communication
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.11.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-09-07T13:18:55.1970000Z

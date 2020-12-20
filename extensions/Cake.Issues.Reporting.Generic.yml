@@ -3,7 +3,8 @@ Name: Cake.Issues.Reporting.Generic
 NuGet: Cake.Issues.Reporting.Generic
 Assemblies:
 - "/**/Cake.Issues.Reporting.Generic.dll"
-Repository: https://github.com/cake-contrib/Cake.Issues.Reporting.Generic/
+Repository: https://github.com/cake-contrib/Cake.Issues.Reporting.Generic.git
+ProjectUrl: https://cakeissues.net/
 Author: Pascal Berger
 Description: |-
   The generic report support for the Cake.Issues addin allows you to create issue reports in any text format (HTML, Markdown, ...).
@@ -16,4 +17,11 @@ Categories:
 - issues
 - reports
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netcoreapp2.0
+- netcoreapp2.1
+- netcoreapp3.0
+- netstandard2.0
 AnalyzedPackageVersion: 0.9.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-08-22T19:58:36.0800000Z

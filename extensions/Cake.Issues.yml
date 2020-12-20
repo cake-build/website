@@ -3,7 +3,8 @@ Name: Cake.Issues
 NuGet: Cake.Issues
 Assemblies:
 - "/**/Cake.Issues.dll"
-Repository: https://github.com/cake-contrib/Cake.Issues/
+Repository: https://github.com/cake-contrib/Cake.Issues.git
+ProjectUrl: https://cakeissues.net/
 Author: BBT Software AG
 Description: |-
   The issues addin allows you to read issue from any code analyzer or linter.
@@ -17,4 +18,8 @@ Description: |-
 Categories:
 - issues
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.9.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-09-19T09:45:03.2330000Z
