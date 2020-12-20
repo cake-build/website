@@ -14,6 +14,8 @@ Update to the member suggested in the obsolete message.
 
 ## Cake Frosting
 
+### Removal of CakeHostBuilder
+
 `CakeHostBuilder` has been removed.
 With Cake.Frosting 1.0 `CakeHost` can be used directly to create the `CakeHost` object.
 
@@ -40,6 +42,58 @@ return
         .UseContext<BuildContext>()
         .Run(args);
 ```
+
+### Removal of ICakeServices
+
+`ICakeServices` has been removed.
+With Cake.Frosting 1.0 you no longer need to implement the `IFrostingStartup` interface in the `Program` class.
+Configuration can be done directly on the `CakeHost` object instead.
+
+With Cake.Frosting 0.38.x:
+
+```csharp
+public class Program : IFrostingStartup
+{
+    public static int Main(string[] args)
+    {
+        // Create the host.
+        var host =
+            new CakeHostBuilder()
+                .WithArguments(args)
+                .UseStartup<Program>()
+                .Build();
+
+        // Run the host.
+        return host.Run();
+    }
+
+    public void Configure(ICakeServices services)
+    {
+        services.UseContext<BuildContext>();
+        services.UseLifetime<Lifetime>();
+        services.UseWorkingDirectory("..");
+    }
+}
+```
+
+With Cake.Frosting 1.0:
+
+```csharp
+public class Program : IFrostingStartup
+{
+    public static int Main(string[] args)
+    {
+        // Create and run the host.
+        return
+            new CakeHost()
+                .UseContext<BuildContext>()
+                .UseLifetime<Lifetime>()
+                .UseWorkingDirectory("..")
+                .Run(args);
+    }
+}
+```
+
 ## Cake CLI updates
 
 As part of the rewrite of the  CLI of Cake for Cake 1.0 parsing of switches is now stricter.
