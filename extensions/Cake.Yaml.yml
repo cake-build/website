@@ -3,10 +3,15 @@ Name: Cake.Yaml
 NuGet: Cake.Yaml
 Assemblies:
 - "/**/Cake.Yaml.dll"
-Repository: https://github.com/cake-contrib/Cake.Yaml/
+Repository: https://github.com/cake-contrib/Cake.Yaml.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Yaml/
 Author: Jonathan Dick
 Description: A set of aliases to help with YAML Serialization
 Categories:
 - serialization
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 3.1.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-08-20T19:53:41.7100000Z

@@ -3,7 +3,8 @@ Name: Cake.SSRS
 NuGet: Cake.SSRS
 Assemblies:
 - "/**/Cake.SSRS.dll"
-Repository: https://github.com/cake-contrib/Cake.SSRS/
+Repository: https://github.com/cake-contrib/Cake.SSRS.git
+ProjectUrl: https://www.nuget.org/packages/Cake.SSRS/
 Author: Louis Fischer
 Description: Cake.SSRS is set of aliases that help simplify deploying objects to SQL Server Reporting Services (SSRS).
 Categories:
@@ -11,4 +12,9 @@ Categories:
 - sql
 - database
 TargetCakeVersion: 0.35.0
+TargetFrameworks:
+- net461
+- netstandard2.1
 AnalyzedPackageVersion: 0.6.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-10-16T13:02:24.1800000Z

@@ -3,11 +3,16 @@ Name: Cake.ViewCompiler
 NuGet: Cake.ViewCompiler
 Assemblies:
 - "/**/Cake.ViewCompiler.dll"
-Repository: https://github.com/agc93/Cake.ViewCompiler/
+Repository: https://github.com/agc93/Cake.ViewCompiler.git
+ProjectUrl: https://github.com/agc93/Cake.ViewCompiler/
 Author: agc93
 Description: A simple Cake addin to compile CouchDB views from a set of .js files.
 Categories:
 - couchdb
 - mycouch
 TargetCakeVersion: 0.10.1
+TargetFrameworks:
+- net45
 AnalyzedPackageVersion: 0.2.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2016-05-09T08:40:15.2930000Z

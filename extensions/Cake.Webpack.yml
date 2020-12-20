@@ -3,10 +3,15 @@ Name: Cake.Webpack
 NuGet: Cake.Webpack
 Assemblies:
 - "/**/Cake.Webpack.dll"
-Repository: https://github.com/cake-contrib/Cake.Webpack/
+Repository: https://github.com/cake-contrib/Cake.Webpack.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Webpack/
 Author: Phil Oyston
 Description: Aliases to assist with running Webpack from Cake build scripts.
 Categories:
 - webpack
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net461
 AnalyzedPackageVersion: 0.3.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-09-01T20:32:06.3000000Z

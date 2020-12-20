@@ -3,11 +3,16 @@ Name: Cake.Svn
 NuGet: Cake.Svn
 Assemblies:
 - "/**/Cake.Svn.dll"
-Repository: https://github.com/cake-contrib/Cake.Svn/
+Repository: https://github.com/cake-contrib/Cake.Svn.git
+ProjectUrl: https://cake-contrib.github.io/Cake.Svn/
 Author: Martin Björkström, Pascal Berger and contributors
 Description: Addin that extends the Cake build automation system with Subversion features using SharpSvn.
 Categories:
 - subversion
 - svn
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net46
 AnalyzedPackageVersion: 0.9.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-10-10T18:16:58.8800000Z
