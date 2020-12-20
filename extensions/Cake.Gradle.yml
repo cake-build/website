@@ -3,10 +3,16 @@ Name: Cake.Gradle
 NuGet: Cake.Gradle
 Assemblies:
 - "/**/Cake.Gradle.dll"
-Repository: https://github.com/cake-contrib/Cake.Gradle/
+Repository: https://github.com/cake-contrib/Cake.Gradle.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Gradle/
 Author: abeggchr
 Description: An aliase for Cake to help with running Gradle commands
 Categories:
 - gradle
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net461
+- netstandard2.0
 AnalyzedPackageVersion: 0.3.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-12-17T22:42:01.3000000Z

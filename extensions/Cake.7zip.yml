@@ -4,7 +4,7 @@ NuGet: Cake.7zip
 Assemblies:
 - "/**/Cake.7zip.dll"
 Repository: https://github.com/cake-contrib/Cake.7zip.git
-ProjectUrl: https://github.com/cake-contrib/Cake.7zip/
+ProjectUrl: https://cake-contrib.github.io/Cake.7zip/
 Author: nils-a
 Description: makes 7zip available as a tool in cake
 Categories:

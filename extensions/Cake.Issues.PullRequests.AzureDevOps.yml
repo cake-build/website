@@ -3,7 +3,8 @@ Name: Cake.Issues.PullRequests.AzureDevOps
 NuGet: Cake.Issues.PullRequests.AzureDevOps
 Assemblies:
 - "/**/Cake.Issues.PullRequests.AzureDevOps.dll"
-Repository: https://github.com/cake-contrib/Cake.Issues.PullRequests.AzureDevOps/
+Repository: https://github.com/cake-contrib/Cake.Issues.PullRequests.AzureDevOps.git
+ProjectUrl: https://cakeissues.net/
 Author: BBT Software AG and contributors
 Description: |-
   The Azure DevOps support for the Cake.Issues addin allows you to
@@ -22,4 +23,8 @@ Categories:
 - azure devops
 - azure devops server
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.9.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-09-18T21:06:43.2000000Z

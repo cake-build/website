@@ -3,10 +3,15 @@ Name: Cake.ExtendedNuGet
 NuGet: Cake.ExtendedNuGet
 Assemblies:
 - "/**/Cake.ExtendedNuGet.dll"
-Repository: https://github.com/cake-contrib/Cake.ExtendedNuGet/
+Repository: https://github.com/cake-contrib/Cake.ExtendedNuGet.git
+ProjectUrl: https://github.com/cake-contrib/Cake.ExtendedNuGet/
 Author: Jonathan Dick
 Description: Cake build aliases and classes additional NuGet functionality.
 Categories:
 - nuget
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 2.1.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-08-06T20:05:22.4730000Z

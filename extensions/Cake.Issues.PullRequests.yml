@@ -3,7 +3,8 @@ Name: Cake.Issues.PullRequests
 NuGet: Cake.Issues.PullRequests
 Assemblies:
 - "/**/Cake.Issues.PullRequests.dll"
-Repository: https://github.com/cake-contrib/Cake.Issues.PullRequests/
+Repository: https://github.com/cake-contrib/Cake.Issues.PullRequests.git
+ProjectUrl: https://cakeissues.net/
 Author: BBT Software AG
 Description: |-
   The pull requests issues addin allows you to write issue from any code analyzer or linter as comments to pull requests.
@@ -16,4 +17,8 @@ Categories:
 - issues
 - pull requests
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.9.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-10-08T23:42:02.9370000Z

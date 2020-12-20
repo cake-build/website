@@ -3,7 +3,8 @@ Name: Cake.Issues.InspectCode
 NuGet: Cake.Issues.InspectCode
 Assemblies:
 - "/**/Cake.Issues.InspectCode.dll"
-Repository: https://github.com/cake-contrib/Cake.Issues.InspectCode/
+Repository: https://github.com/cake-contrib/Cake.Issues.InspectCode.git
+ProjectUrl: https://cakeissues.net/
 Author: BBT Software AG
 Description: |-
   The JetBrains Inspect Code support for the Cake.Issues addin allows you to read issues logged by JetBrains Inspect Code.
@@ -18,4 +19,9 @@ Categories:
 - issues
 - inspectcode
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net461
+- netstandard2.0
 AnalyzedPackageVersion: 0.9.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-08-22T18:38:48.4700000Z

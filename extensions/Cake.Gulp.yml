@@ -3,11 +3,17 @@ Name: Cake.Gulp
 NuGet: Cake.Gulp
 Assemblies:
 - "/**/Cake.Gulp.dll"
-Repository: https://github.com/cake-contrib/Cake.Gulp/
+Repository: https://github.com/cake-contrib/Cake.Gulp.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Gulp/
 Author: Phil Oyston
 Description: A set of aliases for Cake to help with running Gulp scripts as part of a build.
 Categories:
 - gulp
 - javascript
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net461
+- netstandard2.0
 AnalyzedPackageVersion: 0.12.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-04-24T19:10:32.2730000Z

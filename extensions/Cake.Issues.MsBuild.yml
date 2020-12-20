@@ -3,7 +3,8 @@ Name: Cake.Issues.MsBuild
 NuGet: Cake.Issues.MsBuild
 Assemblies:
 - "/**/Cake.Issues.MsBuild.dll"
-Repository: https://github.com/cake-contrib/Cake.Issues.MsBuild/
+Repository: https://github.com/cake-contrib/Cake.Issues.MsBuild.git
+ProjectUrl: https://cakeissues.net/
 Author: BBT Software AG
 Description: |-
   The MsBuild support for the Cake.Issues addin allows you to read issues logged as warnings in a MsBuild log.
@@ -18,4 +19,8 @@ Categories:
 - issues
 - msbuild
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.9.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-10-20T18:43:46.2570000Z
