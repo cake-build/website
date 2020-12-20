@@ -3,11 +3,16 @@ Name: Cake.SqlServer
 NuGet: Cake.SqlServer
 Assemblies:
 - "/**/Cake.SqlServer.dll"
-Repository: https://github.com/AMVSoftware/Cake.SqlServer/
+Repository: https://github.com/AMVSoftware/Cake.SqlServer.git
+ProjectUrl: https://github.com/AMVSoftware/Cake.SqlServer/
 Author: Max Vasilyev
 Description: Cake build aliases for manipulating SQL Server databases and executing inline SQL and script files.
 Categories:
 - sql
 - database
 TargetCakeVersion: 0.35.0
+TargetFrameworks:
+- net45
 AnalyzedPackageVersion: 2.2.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-01-18T23:34:52.1530000Z

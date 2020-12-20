@@ -3,10 +3,16 @@ Name: Cake.Json
 NuGet: Cake.Json
 Assemblies:
 - "/**/Cake.Json.dll"
-Repository: https://github.com/cake-contrib/Cake.Json/
+Repository: https://github.com/cake-contrib/Cake.Json.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Json/
 Author: Jonathan Dick
 Description: A set of aliases to help with JSON Serialization
 Categories:
 - serialization
 TargetCakeVersion: 0.35.0
+TargetFrameworks:
+- net46
+- netstandard2.0
 AnalyzedPackageVersion: 5.2.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-07-06T20:14:36.8830000Z

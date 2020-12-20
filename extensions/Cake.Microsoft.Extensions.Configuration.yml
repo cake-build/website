@@ -3,10 +3,15 @@ Name: Cake.Microsoft.Extensions.Configuration
 NuGet: Cake.Microsoft.Extensions.Configuration
 Assemblies:
 - "/**/Cake.Microsoft.Extensions.Configuration.dll"
-Repository: https://www.nuget.org/packages/Cake.Microsoft.Extensions.Configuration/
+Repository: https://github.com/JonCubed/cake-microsoft-extensions-configuration.git
+ProjectUrl: https://www.nuget.org/packages/Cake.Microsoft.Extensions.Configuration/
 Author: Jonathan Kuleff
 Description: Cake Addin for strongly typed configuration
 Categories:
 - configuration
 TargetCakeVersion: 0.23.0
+TargetFrameworks:
+- netstandard1.6
 AnalyzedPackageVersion: 0.1.0-alpha004
+AnalyzedPackageIsPrerelease: true
+AnalyzedPackagePublishDate: 2018-01-16T11:18:38.5600000Z

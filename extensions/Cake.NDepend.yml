@@ -3,7 +3,8 @@ Name: Cake.NDepend
 NuGet: Cake.NDepend
 Assemblies:
 - "/**/Cake.NDepend.dll"
-Repository: https://github.com/cake-contrib/cake-ndepend/
+Repository: https://github.com/cake-contrib/cake-ndepend.git
+ProjectUrl: https://github.com/cake-contrib/cake-ndepend/
 Author: João Rosa
 Description: An alias wrapping the NDepend.Console command line tool.
 Categories:
@@ -11,4 +12,8 @@ Categories:
 - ndepend
 - reports
 TargetCakeVersion: 0.35.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 1.5.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-11-10T11:04:43.1030000Z

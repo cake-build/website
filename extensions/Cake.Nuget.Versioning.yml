@@ -3,11 +3,16 @@ Name: Cake.Nuget.Versioning
 NuGet: Cake.Nuget.Versioning
 Assemblies:
 - "/**/Cake.Nuget.Versioning.dll"
-Repository: https://github.com/Kemyke/Cake.Nuget.Versioning/
+Repository: https://github.com/Kemyke/Cake.Nuget.Versioning.git
+ProjectUrl: https://github.com/Kemyke/Cake.Nuget.Versioning/
 Author: Attila Kemeny
 Description: Contains functionality for creating Nuget compatible version numbers
 Categories:
 - nuget
 - semver
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.0.15
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-06-25T11:58:41.5270000Z

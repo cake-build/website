@@ -3,11 +3,16 @@ Name: Cake.Paket
 NuGet: Cake.Paket
 Assemblies:
 - "/**/Cake.Paket.Addin.dll"
-Repository: https://github.com/cake-contrib/Cake.Paket/
+Repository: https://github.com/cake-contrib/Cake.Paket.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Paket/
 Author: Larz White
 Description: Adds paket support to cake.
 Categories:
 - nuget
 - paket
 TargetCakeVersion: 0.28.1
+TargetFrameworks:
+- net45
 AnalyzedPackageVersion: 4.0.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2018-07-08T23:56:12.1530000Z

@@ -3,7 +3,8 @@ Name: Cake.NSwag.Console
 NuGet: Cake.NSwag.Console
 Assemblies:
 - "/**/Cake.NSwag.Console.dll"
-Repository: https://github.com/agc93/Cake.NSwag.Console/
+Repository: https://github.com/agc93/Cake.NSwag.Console.git
+ProjectUrl: https://github.com/agc93/Cake.NSwag.Console/
 Author: agc93
 Description: A simple Cake addin powered by NSwag for compiling client code and API definitions from a variety of sources
 Categories:
@@ -11,4 +12,9 @@ Categories:
 - api
 - openapi
 TargetCakeVersion: 0.19.5
+TargetFrameworks:
+- net45
+- netstandard1.6
 AnalyzedPackageVersion: 0.1.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2017-05-11T14:30:29.0600000Z

@@ -3,10 +3,15 @@ Name: Cake.Openshift
 NuGet: Cake.Openshift
 Assemblies:
 - "/**/Cake.Openshift.dll"
-Repository: https://github.com/cake-contrib/Cake.Openshift/
+Repository: https://github.com/cake-contrib/Cake.Openshift.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Openshift/
 Author: Meir Blachman
 Description: A set of aliases for Cake to help with running Openshift commands
 Categories:
 - openshift
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.5.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-09-06T08:15:04.4600000Z

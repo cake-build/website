@@ -3,7 +3,8 @@ Name: Cake.NSpec
 NuGet: Cake.NSpec
 Assemblies:
 - "/**/Cake.NSpec.dll"
-Repository: https://github.com/app-iron/Cake.NSpec/tree/master/
+Repository: https://github.com/app-iron/Cake.NSpec.git
+ProjectUrl: https://github.com/app-iron/Cake.NSpec/
 Author: app-iron
 Description: Cake Adapter that enables nspec tests
 Categories:
@@ -12,4 +13,8 @@ Categories:
 - tdd
 - testing
 TargetCakeVersion: 0.17.0
+TargetFrameworks:
+- net45
 AnalyzedPackageVersion: 0.2.4
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2016-12-04T05:06:39.1070000Z

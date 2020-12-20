@@ -3,10 +3,15 @@ Name: Cake.NewRelic
 NuGet: Cake.NewRelic
 Assemblies:
 - "/**/Cake.NewRelic.dll"
-Repository: https://github.com/BMWilding/Cake.NewRelic/
+Repository: https://github.com/BMWilding/Cake.NewRelic.git
+ProjectUrl: https://github.com/BMWilding/Cake.NewRelic/
 Author: BMWilding
 Description: NewRelic Deployment Tool for Cake
 Categories:
 - newrelic
 TargetCakeVersion: 0.17.0
+TargetFrameworks:
+- net45
 AnalyzedPackageVersion: 0.0.22
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2017-02-02T22:51:47.5000000Z

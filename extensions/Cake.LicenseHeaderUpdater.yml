@@ -3,7 +3,8 @@ Name: Cake.LicenseHeaderUpdater
 NuGet: Cake.LicenseHeaderUpdater
 Assemblies:
 - "/**/Cake.LicenseHeaderUpdater.dll"
-Repository: https://github.com/cake-contrib/Cake.LicenseHeaderUpdater/
+Repository: https://github.com/cake-contrib/Cake.LicenseHeaderUpdater.git
+ProjectUrl: https://github.com/cake-contrib/Cake.LicenseHeaderUpdater/
 Author: xforever1313
 Description: Cake addin to update the license header of source code files.
 Categories:
@@ -11,4 +12,8 @@ Categories:
 - header
 - updater
 TargetCakeVersion: 0.38.5
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.0.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-11-25T21:18:44.3630000Z

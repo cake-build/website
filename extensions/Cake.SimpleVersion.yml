@@ -3,7 +3,8 @@ Name: Cake.SimpleVersion
 NuGet: Cake.SimpleVersion
 Assemblies:
 - "/**/Cake.SimpleVersion.dll"
-Repository: https://github.com/Kieranties/SimpleVersion/
+Repository: https://github.com/Kieranties/SimpleVersion.git
+ProjectUrl: https://github.com/Kieranties/SimpleVersion/
 Author: Kieranties
 Description: SimpleVersion - A simple tool to version your code
 Categories:
@@ -11,4 +12,8 @@ Categories:
 - versioning
 - git
 TargetCakeVersion: 0.30.0
+TargetFrameworks:
+- net461
 AnalyzedPackageVersion: 0.1.2
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-04-29T19:20:12.0000000Z

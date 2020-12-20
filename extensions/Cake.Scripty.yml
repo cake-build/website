@@ -3,10 +3,15 @@ Name: Cake.Scripty
 NuGet: Cake.Scripty
 Assemblies:
 - "/**/Cake.Scripty.dll"
-Repository: https://github.com/daveaglick/Scripty/
+Repository: https://github.com/daveaglick/Scripty.git
+ProjectUrl: https://github.com/daveaglick/Scripty/
 Author: Dave Glick
 Description: Tools to let you use Roslyn-powered C# scripts for code generation.
 Categories:
 - code generation
 TargetCakeVersion: 0.17.0
+TargetFrameworks:
+- net45
 AnalyzedPackageVersion: 0.7.4
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2017-04-25T19:50:54.4730000Z

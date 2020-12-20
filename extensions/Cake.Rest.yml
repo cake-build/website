@@ -3,11 +3,16 @@ Name: Cake.Rest
 NuGet: Cake.Rest
 Assemblies:
 - "/**/Cake.Rest.dll"
-Repository: https://github.com/cake-contrib/Cake.Rest/
+Repository: https://github.com/cake-contrib/Cake.Rest.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Rest/
 Author: hadi77ir
 Description: Cake Addin for easily consuming REST APIs through RestSharp.
 Categories:
 - rest
 - restsharp
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.1.2
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-08-15T20:20:37.5630000Z

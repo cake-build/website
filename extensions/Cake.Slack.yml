@@ -3,10 +3,16 @@ Name: Cake.Slack
 NuGet: Cake.Slack
 Assemblies:
 - "/**/Cake.Slack.dll"
-Repository: https://github.com/cake-contrib/Cake.Slack/
+Repository: https://github.com/cake-contrib/Cake.Slack.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Slack/
 Author: WCOMAB
 Description: Cake Addin that extends Cake with Slack messaging features.
 Categories:
 - communication
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net46
+- netstandard2.0
 AnalyzedPackageVersion: 0.13.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-04-21T21:20:46.3130000Z

@@ -3,11 +3,17 @@ Name: Cake.Sonar
 NuGet: Cake.Sonar
 Assemblies:
 - "/**/Cake.Sonar.dll"
-Repository: https://github.com/AgileArchitect/Cake.Sonar/
+Repository: https://github.com/AgileArchitect/Cake.Sonar.git
+ProjectUrl: https://github.com/AgileArchitect/Cake.Sonar/
 Author: Tom Staijen
 Description: A Cake AddIn that allows will run the Sonar MSBuild Runner for csharp projects.
 Categories:
 - code quality
 - misc
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net46
+- netstandard2.0
 AnalyzedPackageVersion: 1.1.25
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-02-02T12:51:49.6600000Z
