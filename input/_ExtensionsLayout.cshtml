@@ -13,6 +13,7 @@
     string description = Model.String("Description");
     string author = Model.String("Author");
     string repository = Model.String("Repository");
+    string projectUrl = Model.String("ProjectUrl");
     string version = Model.String("AnalyzedPackageVersion");
     string publishDate = Model.String("AnalyzedPackagePublishDate");
     string supportedCakeVersions = Model.String("SupportedCakeVersions");
@@ -97,6 +98,13 @@
                 Supported Cake versions: @supportedCakeVersions
                 <i class="fa fa-info-circle" data-toggle="tooltip" title="These are the versions of Cake with an API compatible with the latest version of this addin. Depending on the API used in the extension it might also work with other versions of Cake. An earlier version of the addin might be compatible with other versions of Cake."></i>
             </li>
+            }
+            @if (!string.IsNullOrWhiteSpace(projectUrl))
+            {
+                <li>
+                    <i class="fa fa-globe"></i>
+                    <a href="@projectUrl" target="_blank">@projectUrl</a>
+                </li>
             }
             <li>
                 <img src="/assets/img/nuget.png">
