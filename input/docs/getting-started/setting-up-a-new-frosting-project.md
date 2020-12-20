@@ -4,14 +4,14 @@ Description: Guide on how to get started with writing a build pipeline in a cons
 
 This is a guide to get started with [Cake Frosting] and to show you how [Cake Frosting] works.
 
-# Choose your runner
+# Installation and scaffolding
 
 This tutorial uses [Cake Frosting], which allows you to write builds as standard console applications as part of your solution.
 See [Runners](../running-builds/runners) for other possibilities of how to run Cake scripts.
 
 :::{.alert .alert-info}
-The following instructions require .NET Core 3.1.301 or newer.
-You can find the SDK at https://dotnet.microsoft.com/download
+The following instructions require Cake Frosting 1.0.0-rc0001 or newer running on .NET Core 3.1.301 or newer.
+You can find the .NET SDK at https://dotnet.microsoft.com/download
 :::
 
 To create a new [Cake Frosting] project you need to install the Frosting template:
@@ -34,176 +34,124 @@ See [Bootstrapping for Cake Frosting](/docs/running-builds/runners/cake-frosting
 
 # Initial build project
 
-`Program.cs` contains code to configure and run the Cake host:
+The `Program` class contains code to configure and run the Cake host:
 
 ```csharp
-using Cake.Core;
-using Cake.Frosting;
-
-public class Program : IFrostingStartup
+public static class Program
 {
     public static int Main(string[] args)
     {
-        // Create the host.
-        var host = new CakeHostBuilder()
-            .WithArguments(args)
-            .UseStartup<Program>()
-            .Build();
-
-        // Run the host.
-        return host.Run();
-    }
-
-    public void Configure(ICakeServices services)
-    {
-        services.UseContext<Context>();
-        services.UseLifetime<Lifetime>();
-        services.UseWorkingDirectory("..");
+        return new CakeHost()
+            .UseContext<BuildContext>()
+            .Run(args);
     }
 }
 ```
 
-`Context.cs` can be used to enhance the context class with custom properties:
+The `BuildContext` class can be used to add additional custom properties.
+The default template contains an example property `Delay` which can be set through a `--delay` argument.
+You can remove this property and customize the properties to your specific needs.
 
 ```csharp
-using Cake.Core;
-using Cake.Frosting;
-
-public class Context : FrostingContext
+public class BuildContext : FrostingContext
 {
-    public Context(ICakeContext context)
+    public bool Delay { get; set; }
+
+    public BuildContext(ICakeContext context)
         : base(context)
     {
+        Delay = context.Arguments.HasArgument("delay");
     }
 }
 ```
 
-`Lifetime.cs` can be used to define setup and teardown methods which are run when build or tasks are started and stopped:
+The file also contains three classes for [tasks](/docs/writing-builds/tasks):
 
 ```csharp
-using Cake.Common.Diagnostics;
-using Cake.Core;
-using Cake.Frosting;
-
-public sealed class Lifetime : FrostingLifetime<Context>
-{
-    public override void Setup(Context context)
-    {
-        context.Information("Setting things up...");
-    }
-
-    public override void Teardown(Context context, ITeardownContext info)
-    {
-        context.Information("Tearing things down...");
-    }
-}
-```
-
-`/Tasks/Default.cs` contains the code for the default task which has a dependency on the `Hello` task:
-
-```csharp
-using Cake.Frosting;
-
-[Dependency(typeof(Hello))]
-public sealed class Default : FrostingTask<Context>
-{
-}
-```
-
-`/Tasks/Hello.cs` contains the code for the `Hello` task:
-
-```csharp
-using Cake.Common.Diagnostics;
-using Cake.Frosting;
-
 [TaskName("Hello")]
-public sealed class Hello : FrostingTask<Context>
+public sealed class HelloTask : FrostingTask<BuildContext>
 {
-    public override void Run(Context context)
+    public override void Run(BuildContext context)
     {
-        context.Information("Hello World");
+        context.Log.Information("Hello");
     }
 }
+
+[TaskName("World")]
+[IsDependentOn(typeof(HelloTask))]
+public sealed class WorldTask : AsyncFrostingTask<BuildContext>
+{
+    // Tasks can be asynchronous
+    public override async Task RunAsync(BuildContext context)
+    {
+        if (context.Delay)
+        {
+            context.Log.Information("Waiting...");
+            await Task.Delay(1500);
+        }
+
+        context.Log.Information("World");
+    }
+}
+
+[TaskName("Default")]
+[IsDependentOn(typeof(WorldTask))]
+public class DefaultTask : FrostingTask
+{
+}
 ```
+
+The `Default` task has a dependency to the `World` world, and the `World` task has a dependency on the `Hello` task.
+The `World` task is an [asynchronous tasks](/docs/writing-builds/tasks/asynchronous-tasks) which waits for
+one and a half seconds if the `Delay` property is set.
 
 # Example build pipeline
 
-The following example creates a simple build pipeline consisting of a clean task, a task compiling MsBuild solution and a task testing the solution.
+The following example creates a simple build pipeline consisting of a clean task, a task compiling an MsBuild solution and a task which tests the solution.
 
 :::{.alert .alert-info}
 The following example expects a Visual Studio solution `/src/Example.sln`.
 You need to adapt the path to your solution.
 :::
 
-First create an additional property `MsBuildConfiguration` to the context in the `Context.cs` file, which stores the configuration of the solution which should be built:
+Remove the `Delay` property from the `BuildContext` class and add a property `MsBuildConfiguration`, which stores the configuration of the solution which should be built:
 
 ```csharp
-using Cake.Core;
-using Cake.Frosting;
-
-public class Context : FrostingContext
+public class BuildContext : FrostingContext
 {
     public string MsBuildConfiguration { get; set; }
 
-    public Context(ICakeContext context)
+    public BuildContext(ICakeContext context)
         : base(context)
     {
+        MsBuildConfiguration = context.Argument("configuration", "Release");
     }
 }
 ```
 
-In the `Setup` method in the `Lifetime.cs` file set the configuration based on the arguments passed to the build:
+The `HelloTask` and `WorldTask` class can be deleted.
+
+Create a new class `CleanTask` for the task for cleaning the directory:
 
 ```csharp
-using Cake.Common;
-using Cake.Common.Diagnostics;
-using Cake.Core;
-using Cake.Frosting;
-
-public sealed class Lifetime : FrostingLifetime<Context>
+[TaskName("Clean")]
+public sealed class CleanTask : FrostingTask<BuildContext>
 {
-    public override void Setup(Context context)
-    {
-        context.Information("Setting things up...");
-
-        context.MsBuildConfiguration = context.Argument("configuration", "Release");
-    }
-
-    public override void Teardown(Context context, ITeardownContext info)
-    {
-        context.Information("Tearing things down...");
-    }
-}
-```
-
-The `/Tasks/Hello.cs` file from the template can be deleted.
-
-Create a new file `/Tasks/Clean.cs` for the task for cleaning the directory with the following content:
-
-```csharp
-using Cake.Common.IO;
-using Cake.Frosting;
-
-public sealed class Clean : FrostingTask<Context>
-{
-    public override void Run(Context context)
+    public override void Run(BuildContext context)
     {
         context.CleanDirectory($"./src/Example/bin/{context.MsBuildConfiguration}");
     }
 }
 ```
 
-Create a new file `/Tasks/Build.cs` for building the solution with the following content:
+Create a new class `BuildTask` for building the solution:
 
 ```csharp
-using Cake.Common.Tools.DotNetCore;
-using Cake.Common.Tools.DotNetCore.Build;
-using Cake.Frosting;
-
-[Dependency(typeof(Clean))]
-public sealed class Build : FrostingTask<Context>
+[TaskName("Build")]
+[IsDependentOn(typeof(Clean))]
+public sealed class BuildTask : FrostingTask<BuildContext>
 {
-    public override void Run(Context context)
+    public override void Run(BuildContext context)
     {
         context.DotNetCoreBuild("./src/Example.sln", new DotNetCoreBuildSettings
         {
@@ -213,17 +161,14 @@ public sealed class Build : FrostingTask<Context>
 }
 ```
 
-Create a new file `/Tasks/Test.cs` for testing the solution with the following content:
+Create a new class `TestTask` for testing the solution:
 
 ```csharp
-using Cake.Common.Tools.DotNetCore;
-using Cake.Common.Tools.DotNetCore.Test;
-using Cake.Frosting;
-
-[Dependency(typeof(Build))]
-public sealed class Test : FrostingTask<Context>
+[TaskName("Test")]
+[IsDependentOn(typeof(Build))]
+public sealed class TestTaks : FrostingTask<BuildContext>
 {
-    public override void Run(Context context)
+    public override void Run(BuildContext context)
     {
         context.DotNetCoreTest("./src/Example.sln", new DotNetCoreTestSettings
         {
@@ -234,13 +179,11 @@ public sealed class Test : FrostingTask<Context>
 }
 ```
 
-Finally update the file `/Tasks/Default.cs` to call the new tasks:
+Finally update the `DefaultTask` class to call the new tasks:
 
 ```csharp
-using Cake.Frosting;
-
-[Dependency(typeof(Test))]
-public sealed class Default : FrostingTask<Context>
+[IsDependentOn(typeof(Test))]
+public sealed class Default : FrostingTask<BuildContext>
 {
 }
 ```
