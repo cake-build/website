@@ -3,11 +3,17 @@ Name: Cake.Unity
 NuGet: Cake.Unity
 Assemblies:
 - "/**/Cake.Unity.dll"
-Repository: https://github.com/cake-contrib/Cake.Unity/
+Repository: https://github.com/cake-contrib/Cake.Unity.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Unity/
 Author: Patrik Svensson, Anatoliy Kolesnick
 Description: Unity build support for Cake.
 Categories:
 - unity
 - gaming
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net46
+- netstandard2.0
 AnalyzedPackageVersion: 0.7.2
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-10-23T15:08:04.9700000Z

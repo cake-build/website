@@ -3,11 +3,17 @@ Name: Cake.Unity3D
 NuGet: Cake.Unity3D
 Assemblies:
 - "/**/Cake.Unity3D.dll"
-Repository: https://github.com/samoatesgames/Cake.Unity3D/
+Repository: https://github.com/samoatesgames/Cake.Unity3D.git
+ProjectUrl: https://github.com/samoatesgames/Cake.Unity3D/
 Author: Sam Oates
 Description: Unity build support for Cake.
 Categories:
 - unity
 - gaming
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net46
+- netstandard2.0
 AnalyzedPackageVersion: 0.8.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-05-02T08:42:03.3270000Z

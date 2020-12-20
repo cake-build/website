@@ -3,10 +3,15 @@ Name: Cake.VersionReader
 NuGet: Cake.VersionReader
 Assemblies:
 - "/**/Cake.VersionReader.dll"
-Repository: https://github.com/NinetailLabs/Cake.VersionReader/
+Repository: https://github.com/NinetailLabs/Cake.VersionReader.git
+ProjectUrl: https://github.com/NinetailLabs/Cake.VersionReader/
 Author: NineTail Labs
 Description: Cake Build addon to assist with reading version numbers from an assembly
 Categories:
 - versioning
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 5.1.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-04-27T09:59:52.1170000Z

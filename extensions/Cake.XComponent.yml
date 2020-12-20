@@ -3,7 +3,8 @@ Name: Cake.XComponent
 NuGet: Cake.XComponent
 Assemblies:
 - "/**/Cake.XComponent.dll"
-Repository: https://github.com/xcomponent/Cake.XComponent/
+Repository: https://github.com/xcomponent/Cake.XComponent.git
+ProjectUrl: https://github.com/xcomponent/Cake.XComponent/
 Author: XComponent Team
 Description: Cake build aliases for manipulating XComponent Tools.
 Categories:
@@ -12,4 +13,8 @@ Categories:
 - xcstudio
 - micro services
 TargetCakeVersion: 0.38.2
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 7.0.5
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-06-17T12:35:35.0330000Z

@@ -3,11 +3,16 @@ Name: Cake.Talend
 NuGet: Cake.Talend
 Assemblies:
 - "/**/Cake.Talend.dll"
-Repository: https://github.com/RadioSystems/Cake.Talend/
+Repository: https://github.com/RadioSystems/Cake.Talend.git
+ProjectUrl: https://github.com/RadioSystems/Cake.Talend/
 Author: Radio Systems Corporation
 Description: Cake Addin for working with Talend.
 Categories:
 - talend
 - esb
 TargetCakeVersion: 0.23.0
+TargetFrameworks:
+- net45
 AnalyzedPackageVersion: 0.2.6
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2018-03-19T19:48:42.3800000Z

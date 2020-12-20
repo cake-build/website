@@ -3,11 +3,16 @@ Name: Cake.StyleCop
 NuGet: Cake.StyleCop
 Assemblies:
 - "/**/Cake.StyleCop.dll"
-Repository: https://github.com/ashthos/Cake.StyleCop/
+Repository: https://github.com/Ashthos/Cake.StyleCop.git
+ProjectUrl: https://github.com/Ashthos/Cake.StyleCop/
 Author: Ash Beeson
 Description: A Cake AddIn that allows code style 'linting' using StyleCop.
 Categories:
 - code quality
 - misc
 TargetCakeVersion: 0.17.0
+TargetFrameworks:
+- net45
 AnalyzedPackageVersion: 1.1.3
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2017-02-18T00:46:27.4130000Z

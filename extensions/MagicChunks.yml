@@ -4,7 +4,8 @@ NuGet: MagicChunks
 Assemblies:
 - "/**/MagicChunks.dll"
 - "/**/MagicChunks.Cake.dll"
-Repository: https://github.com/sergeyzwezdin/magic-chunks/
+Repository: https://github.com/magic-chunks/magic-chunks-dotnetcore.git
+ProjectUrl: https://github.com/magic-chunks/magic-chunks-dotnetcore/
 Author: Sergey Zwezdin
 Description: Easy to use tool to config transformations for JSON, XML and YAML.
 Categories:
@@ -13,4 +14,9 @@ Categories:
 - deployment
 - configuration
 TargetCakeVersion: 0.23.0
+TargetFrameworks:
+- netstandard1.3
+- netstandard1.6
 AnalyzedPackageVersion: 2.0.0.119
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2017-12-19T03:24:27.0670000Z

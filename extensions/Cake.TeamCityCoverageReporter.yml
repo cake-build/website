@@ -3,11 +3,16 @@ Name: Cake.TeamCityCoverageReporter
 NuGet: Cake.TeamCityCoverageReporter
 Assemblies:
 - "/**/Cake.TeamCityCoverageReporter.dll"
-Repository: https://github.com/cake-contrib/Cake.TeamCityCoverageReporter/
+Repository: https://github.com/cake-contrib/Cake.TeamCityCoverageReporter.git
+ProjectUrl: https://github.com/cake-contrib/Cake.TeamCityCoverageReporter/
 Author: wozzo17, thnk2wn
 Description: Addin to enable code coverage reporting from an OpenCover result XML file to TeamCity
 Categories:
 - teamcity
 - opencover
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.2.2
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-08-24T20:25:19.6370000Z

@@ -3,7 +3,8 @@ Name: Cake.Systemctl
 NuGet: Cake.Systemctl
 Assemblies:
 - "/**/Cake.Systemctl.dll"
-Repository: https://github.com/vhatsura/Cake.Systemctl/
+Repository: https://github.com/vhatsura/Cake.Systemctl.git
+ProjectUrl: https://github.com/vhatsura/Cake.Systemctl/
 Author: Vadim Hatsura
 Description: An addin for the Cake Build System to manage services via systemctl service manager.
 Categories:
@@ -11,4 +12,8 @@ Categories:
 - deployment
 - service management
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.2.2
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-08-29T10:40:37.4800000Z

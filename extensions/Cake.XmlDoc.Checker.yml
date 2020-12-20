@@ -3,11 +3,16 @@ Name: Cake.XmlDoc.Checker
 NuGet: Cake.XmlDoc.Checker
 Assemblies:
 - "/**/Cake.XmlDoc.Checker.dll"
-Repository: https://github.com/dotnetaddicted/cake-xmldoc-checker/
+Repository: https://github.com/dotnetaddicted/cake-xmldoc-checker.git
+ProjectUrl: https://github.com/dotnetaddicted/cake-xmldoc-checker/
 Author: dotnetaddicted
 Description: CakeBuild extension for checking DLL's public members xml documentation completeness.
 Categories:
 - documentation
 - xmldoc
 TargetCakeVersion: 0.32.1
+TargetFrameworks:
+- any
 AnalyzedPackageVersion: 1.0.2
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-02-14T07:45:10.8170000Z

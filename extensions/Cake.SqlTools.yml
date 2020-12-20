@@ -3,11 +3,17 @@ Name: Cake.SqlTools
 NuGet: Cake.SqlTools
 Assemblies:
 - "/**/Cake.SqlTools.dll"
-Repository: https://github.com/SharpeRAD/Cake.SqlTools/
+Repository: https://github.com/SharpeRAD/Cake.SqlTools.git
+ProjectUrl: https://github.com/SharpeRAD/Cake.SqlTools/
 Author: SharpeRAD
 Description: Cake Build addin for executing sql scripts against a database
 Categories:
 - sql
 - database
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net46
+- netstandard2.0
 AnalyzedPackageVersion: 0.2.3
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-05-12T09:59:59.9170000Z

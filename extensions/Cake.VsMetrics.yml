@@ -3,10 +3,15 @@ Name: Cake.VsMetrics
 NuGet: Cake.VsMetrics
 Assemblies:
 - "/**/Cake.VsMetrics.dll"
-Repository: https://github.com/cake-contrib/Cake.VsMetrics/
+Repository: https://github.com/cake-contrib/Cake.VsMetrics.git
+ProjectUrl: https://github.com/cake-contrib/Cake.VsMetrics/
 Author: fwinkelbauer
 Description: Cake Addin that extends Cake with the ability to use Visual Studio's metrics.exe
 Categories:
 - metrics
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net461
 AnalyzedPackageVersion: 0.5.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-09-08T20:21:19.8470000Z

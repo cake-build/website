@@ -3,10 +3,15 @@ Name: Cake.Tfs.Build.Variables
 NuGet: Cake.Tfs.Build.Variables
 Assemblies:
 - "/**/Cake.Tfs.Build.Variables.dll"
-Repository: https://github.com/Kemyke/Cake.Tfs.Build.Variables/
+Repository: https://github.com/Kemyke/Cake.Tfs.Build.Variables.git
+ProjectUrl: https://github.com/Kemyke/Cake.Tfs.Build.Variables/
 Author: Attila Kemeny
 Description: Retrieving TFS variable from arguments or environment variables
 Categories:
 - tfs
 TargetCakeVersion: 0.26.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.0.8
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2018-03-15T20:22:53.6500000Z

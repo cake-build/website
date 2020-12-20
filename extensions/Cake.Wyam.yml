@@ -3,11 +3,16 @@ Name: Cake.Wyam
 NuGet: Cake.Wyam
 Assemblies:
 - "/**/Cake.Wyam.dll"
-Repository: https://wyam.io/
+Repository: https://github.com/Wyamio/Wyam.git
+ProjectUrl: https://wyam.io/
 Author: Dave Glick, Gary Ewan Park
 Description: An alias that generates static sites and other content using Wyam.
 Categories:
 - documentation
 - static site generation
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 2.2.9
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-10-11T20:10:49.5230000Z

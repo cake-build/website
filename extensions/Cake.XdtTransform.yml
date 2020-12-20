@@ -3,11 +3,16 @@ Name: Cake.XdtTransform
 NuGet: Cake.XdtTransform
 Assemblies:
 - "/**/Cake.XdtTransform.dll"
-Repository: https://github.com/cake-contrib/Cake.XdtTransform/
+Repository: https://github.com/cake-contrib/Cake.XdtTransform.git
+ProjectUrl: https://github.com/cake-contrib/Cake.XdtTransform/
 Author: Jamie Phillips
 Description: Cake addin for performing XDT Transformations
 Categories:
 - serialization
 - deployment
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.18.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-08-03T00:06:16.0470000Z

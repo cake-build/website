@@ -3,11 +3,16 @@ Name: Cake.Squirrel
 NuGet: Cake.Squirrel
 Assemblies:
 - "/**/Cake.Squirrel.dll"
-Repository: https://github.com/cake-contrib/Cake.Squirrel/
+Repository: https://github.com/cake-contrib/Cake.Squirrel.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Squirrel/
 Author: Jamie Phillips
 Description: Cake addin for Squirrel.Windows
 Categories:
 - squirrel
 - deployment
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.15.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-08-03T00:17:44.5130000Z
