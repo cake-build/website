@@ -3,10 +3,15 @@ Name: Cake.Prompt
 NuGet: Cake.Prompt
 Assemblies:
 - "/**/Cake.Prompt.dll"
-Repository: https://github.com/cake-contrib/Cake.Prompt/
+Repository: https://github.com/cake-contrib/Cake.Prompt.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Prompt/
 Author: James Connor, Yves Schmid
 Description: Cake AddIn that provides ability to collect user input during build.
 Categories:
 - prompt
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 1.0.15
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-04-30T22:44:58.1000000Z

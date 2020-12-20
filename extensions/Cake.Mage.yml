@@ -3,10 +3,16 @@ Name: Cake.Mage
 NuGet: Cake.Mage
 Assemblies:
 - "/**/Cake.Mage.dll"
-Repository: https://github.com/cake-contrib/Cake.Mage/
+Repository: https://github.com/cake-contrib/Cake.Mage.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Mage/
 Author: Phil Scott
 Description: A Cake addin to provide support for Mage.exe.
 Categories:
 - mage
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net461
+- netstandard2.0
 AnalyzedPackageVersion: 0.6.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-08-11T14:38:26.2700000Z

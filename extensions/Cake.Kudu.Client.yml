@@ -3,11 +3,17 @@ Name: Cake.Kudu.Client
 NuGet: Cake.Kudu.Client
 Assemblies:
 - "/**/Cake.Kudu.Client.dll"
-Repository: https://github.com/cake-contrib/Cake.Kudu.Client/
+Repository: https://github.com/cake-contrib/Cake.Kudu.Client.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Kudu.Client/
 Author: WCOMAB
 Description: Cake add-in to help with remotely communicating with AppServices Kudu engine.
 Categories:
 - azure
 - kudu
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net461
+- netstandard2.0
 AnalyzedPackageVersion: 0.9.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-10-26T10:49:53.6670000Z

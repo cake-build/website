@@ -3,7 +3,8 @@ Name: Cake.MkDocs
 NuGet: Cake.MkDocs
 Assemblies:
 - "/**/Cake.MkDocs.dll"
-Repository: https://github.com/michalkowal/Cake.MkDocs/
+Repository: https://github.com/michalkowal/Cake.MkDocs.git
+ProjectUrl: https://github.com/michalkowal/Cake.MkDocs/
 Author: Michał Kowal
 Description: Cake Addin that extends Cake with ability to run the MkDocs.
 Categories:
@@ -11,4 +12,8 @@ Categories:
 - documentation
 - static site generation
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 2.1.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-08-21T14:14:54.0470000Z

@@ -3,11 +3,16 @@ Name: Cake.PlasticSCM
 NuGet: Cake.PlasticSCM
 Assemblies:
 - "/**/Cake.PlasticSCM.dll"
-Repository: https://github.com/unatecict/Cake.PlasticSCM/
+Repository: https://github.com/unatecict/Cake.PlasticSCM.git
+ProjectUrl: https://github.com/unatecict/Cake.PlasticSCM/
 Author: unatecict
 Description: A cakebuild addin that allows you to work with PlasticSCM
 Categories:
 - plastic
 - plasticscm
 TargetCakeVersion: 0.30.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.2.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2018-10-16T17:40:59.0970000Z

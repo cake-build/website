@@ -3,10 +3,15 @@ Name: Cake.Liquibase
 NuGet: Cake.Liquibase
 Assemblies:
 - "/**/Cake.Liquibase.dll"
-Repository: https://github.com/papauorg/Cake.Liquibase/
+Repository: https://github.com/papauorg/Cake.Liquibase.git
+ProjectUrl: https://github.com/papauorg/Cake.Liquibase/
 Author: Philipp Grathwohl
 Description: Addin for running liquibase database migrations with the Cake build system.
 Categories:
 - database
 TargetCakeVersion: 0.36.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.1.11-preview
+AnalyzedPackageIsPrerelease: true
+AnalyzedPackagePublishDate: 2020-01-27T08:13:06.2300000Z

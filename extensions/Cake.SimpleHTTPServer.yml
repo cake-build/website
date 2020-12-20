@@ -3,10 +3,15 @@ Name: Cake.SimpleHTTPServer
 NuGet: Cake.SimpleHTTPServer
 Assemblies:
 - "/**/Cake.SimpleHTTPServer.dll"
-Repository: https://github.com/cake-addin/cake-server/
+Repository: https://github.com/wk-j/cake-server.git
+ProjectUrl: https://github.com/wk-j/cake-server/
 Author: cake-addin
 Description: Cake.SimpleHTTPServer
 Categories:
 - simplehttpserver
 TargetCakeVersion: 0.13.0
+TargetFrameworks:
+
 AnalyzedPackageVersion: 0.1.12
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2016-11-13T09:56:40.3200000Z

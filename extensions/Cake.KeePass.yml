@@ -3,10 +3,15 @@ Name: Cake.KeePass
 NuGet: Cake.KeePass
 Assemblies:
 - "/**/Cake.KeePass.dll"
-Repository: https://github.com/ashthos/Cake.KeePass/
+Repository: https://github.com/Ashthos/Cake.KeePass.git
+ProjectUrl: https://github.com/Ashthos/Cake.KeePass/
 Author: Ash Beeson
 Description: A cake addin that allows reading from KeePass password databases. Keep plaintext passwords out of your source control!
 Categories:
 - keepass
 TargetCakeVersion: 0.19.5
+TargetFrameworks:
+- net45
 AnalyzedPackageVersion: 1.0.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2017-06-01T14:13:46.6770000Z

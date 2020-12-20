@@ -3,10 +3,16 @@ Name: Cake.Pulumi
 NuGet: Cake.Pulumi
 Assemblies:
 - "/**/Cake.Pulumi.dll"
-Repository: https://github.com/cake-contrib/Cake.Pulumi/
+Repository: https://github.com/cake-contrib/Cake.Pulumi.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Pulumi/
 Author: James Connor
 Description: Cake Pulumi Addin.
 Categories:
 - pulumi
 TargetCakeVersion: 0.35.0
+TargetFrameworks:
+- net461
+- netstandard2.0
 AnalyzedPackageVersion: 0.5.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-01-04T23:58:54.5600000Z

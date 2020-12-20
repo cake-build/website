@@ -3,11 +3,16 @@ Name: Cake.Kudu
 NuGet: Cake.Kudu
 Assemblies:
 - "/**/Cake.Kudu.dll"
-Repository: https://github.com/cake-contrib/Cake.Kudu/
+Repository: https://github.com/cake-contrib/Cake.Kudu.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Kudu/
 Author: WCOMAB
 Description: Cake addin to help with Kudu deployments.
 Categories:
 - azure
 - kudu
 TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.11.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-09-10T20:43:18.1930000Z

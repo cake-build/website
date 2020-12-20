@@ -3,10 +3,15 @@ Name: Cake.RSync
 NuGet: Cake.RSync
 Assemblies:
 - "/**/Cake.RSync.dll"
-Repository: https://github.com/cake-contrib/Cake.RSync/
+Repository: https://github.com/cake-contrib/Cake.RSync.git
+ProjectUrl: https://github.com/cake-contrib/Cake.RSync/
 Author: csnewman
 Description: RSync support for Cake
 Categories:
 - rsync
 TargetCakeVersion: 0.21.1
+TargetFrameworks:
+- net46
 AnalyzedPackageVersion: 1.0.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2018-12-01T22:27:42.9030000Z

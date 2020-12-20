@@ -3,11 +3,17 @@ Name: Cake.OpenCoverToCoberturaConverter
 NuGet: Cake.OpenCoverToCoberturaConverter
 Assemblies:
 - "/**/Cake.OpenCoverToCoberturaConverter.dll"
-Repository: https://github.com/volak/Cake.OpenCoverToCoberturaConverter/
+Repository: https://github.com/charlessolar/Cake.OpenCoverToCoberturaConverter.git
+ProjectUrl: https://github.com/charlessolar/Cake.OpenCoverToCoberturaConverter/
 Author: Charles Solar
 Description: Converts OpenCover xml report to Cobertura format - for use with VSTS
 Categories:
 - code coverage
 - vsts
 TargetCakeVersion: 0.37.0
+TargetFrameworks:
+- net46
+- netstandard2.0
 AnalyzedPackageVersion: 0.1.7.7
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-02-14T11:35:42.1500000Z

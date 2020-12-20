@@ -3,10 +3,16 @@ Name: Cake.Path
 NuGet: Cake.Path
 Assemblies:
 - "/**/Cake.Path.dll"
-Repository: https://github.com/CleanKludge/Cake.Path/
+Repository: https://github.com/Korthax/Cake.Path.git
+ProjectUrl: https://github.com/Korthax/Cake.Path/
 Author: Steve Phillips
 Description: A Cake AddIn that extends Cake with the ability to add items to the PATH.
 Categories:
 - misc
 TargetCakeVersion: 0.19.5
+TargetFrameworks:
+- net45
+- netstandard1.6
 AnalyzedPackageVersion: 1.4.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2017-05-18T01:32:44.4330000Z

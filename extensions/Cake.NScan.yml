@@ -3,7 +3,8 @@ Name: Cake.NScan
 NuGet: Cake.NScan
 Assemblies:
 - "/**/Cake.NScan.dll"
-Repository: https://grzesiek-galezowski.github.io/nscan/
+Repository: https://github.com/grzesiek-galezowski/nscan.git
+ProjectUrl: https://grzesiek-galezowski.github.io/nscan/
 Author: grzesiek-galezowski
 Description: A tool for enforcing project dependency conventions - library
 Categories:
@@ -14,4 +15,8 @@ Categories:
 - dependency
 - management
 TargetCakeVersion: 0.38.5
+TargetFrameworks:
+- netstandard2.1
 AnalyzedPackageVersion: 0.61.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-12-13T21:59:47.0030000Z

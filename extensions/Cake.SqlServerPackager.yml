@@ -3,11 +3,16 @@ Name: Cake.SqlServerPackager
 NuGet: Cake.SqlServerPackager
 Assemblies:
 - "/**/Cake.SqlServerPackager.dll"
-Repository: https://github.com/ilich/Cake.SqlServerPackager/
+Repository: https://github.com/ilich/Cake.SqlServerPackager.git
+ProjectUrl: https://github.com/ilich/Cake.SqlServerPackager/
 Author: Ilya Verbitskiy
 Description: Cake AddIn that packages multiple SQL Scripts into one file to speed up deployment and minimize the probability of errors.
 Categories:
 - sql
 - database
 TargetCakeVersion: 0.28.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 0.1.3
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2018-06-07T11:15:25.5200000Z

@@ -3,10 +3,15 @@ Name: Cake.PickAndRoll
 NuGet: Cake.PickAndRoll
 Assemblies:
 - "/**/Cake.PickAndRoll.dll"
-Repository: https://github.com/jincod/PickAndRoll.git/
+Repository: https://github.com/jincod/PickAndRoll.git
+ProjectUrl: https://github.com/jincod/PickAndRoll/
 Author: jincod
 Description: Keep environment specific attributes in separate configuration files and build desired config on demand.
 Categories:
 - configs generator
 TargetCakeVersion: 0.36.0
+TargetFrameworks:
+- netstandard2.0
 AnalyzedPackageVersion: 1.2.6
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-01-17T08:05:41.8600000Z
