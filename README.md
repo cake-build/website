@@ -38,7 +38,7 @@ Categories:
 - Static Site Generation
 ```
 
-`Type` can be one of the following values: `API` (extensions only added to API documentation), `Addin`, `Module`, `Recipe`.
+`Type` can be one of the following values: `Addin`, `Module`, `Recipe`.
 
 ## Search
 
