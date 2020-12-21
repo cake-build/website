@@ -36,38 +36,6 @@ RedirectFrom: docs/editors/visualstudio
     </div>
 </div>
 
-# IntelliSense
-
-<ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#tool2">Cake .NET Tool</a></li>
-    <li><a data-toggle="tab" href="#frosting2">Cake Frosting</a></li>
-    <li><a data-toggle="tab" href="#netfx2">Cake runner for .NET Framework</a></li>
-    <li><a data-toggle="tab" href="#core2">Cake runner for .NET Core</a></li>
-</ul>
-
-<div class="tab-content">
-    <div id="tool2" class="tab-pane fade in active">
-        <p>
-            There is currently no support for Intellisense in <code>.cake</code> script files within Visual Studio.
-        </p>
-    </div>
-    <div id="frosting2" class="tab-pane fade">
-        <p>
-            <a href="/docs/running-builds/runners/cake-frosting">Cake Frosting</a> projects have all features of a .NET Console application, including IntelliSense.
-        </p>
-    </div>
-    <div id="netfx2" class="tab-pane fade">
-        <p>
-            There is currently no support for Intellisense in <code>.cake</code> script files within Visual Studio.
-        </p>
-    </div>
-    <div id="core2" class="tab-pane fade">
-        <p>
-            There is currently no support for Intellisense in <code>.cake</code> script files within Visual Studio.
-        </p>
-    </div>
-</div>
-
 # Templates
 
 Choose the "Cake" category from the File > New > Project menu to quickly create a new Cake [addin](/docs/extending/addins/),
@@ -77,38 +45,6 @@ Choose the "Cake" category from the File > New > Project menu to quickly create 
 
 You can also use the commands from the Build > Cake Build menu to install the default bootstrapper scripts for
 [Cake runner for .NET Framework](/docs/running-builds/runners/cake-runner-for-dotnet-framework) or Cake configuration files into an open solution.
-
-# Code Snippets
-
-<ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#tool3">Cake .NET Tool</a></li>
-    <li><a data-toggle="tab" href="#frosting3">Cake Frosting</a></li>
-    <li><a data-toggle="tab" href="#netfx3">Cake runner for .NET Framework</a></li>
-    <li><a data-toggle="tab" href="#core3">Cake runner for .NET Core</a></li>
-</ul>
-
-<div class="tab-content">
-    <div id="tool3" class="tab-pane fade in active">
-        <p>
-            Code snippets for <code>.cake</code> files are provided by the <a href="https://marketplace.visualstudio.com/items?itemName=vs-publisher-1392591.CakeforVisualStudio">Cake for Visual Studio extension</a>.
-        </p>
-    </div>
-    <div id="frosting3" class="tab-pane fade">
-        <p>
-            Code snippets are currently not supported for <a href="/docs/running-builds/runners/cake-frosting">Cake Frosting</a> projects.
-        </p>
-    </div>
-    <div id="netfx3" class="tab-pane fade">
-        <p>
-            Code snippets for <code>.cake</code> files are provided by the <a href="https://marketplace.visualstudio.com/items?itemName=vs-publisher-1392591.CakeforVisualStudio">Cake for Visual Studio extension</a>.
-        </p>
-    </div>
-    <div id="core3" class="tab-pane fade">
-        <p>
-            Code snippets for <code>.cake</code> files are provided by the <a href="https://marketplace.visualstudio.com/items?itemName=vs-publisher-1392591.CakeforVisualStudio">Cake for Visual Studio extension</a>.
-        </p>
-    </div>
-</div>
 
 # Task Runner
 
