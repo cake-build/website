@@ -93,13 +93,6 @@
                     </span>
                 </li>
             }
-            @if (!string.IsNullOrWhiteSpace(supportedCakeVersions))
-            {
-            <li>
-                Supported Cake versions: @supportedCakeVersions
-                <i class="fa fa-info-circle" data-toggle="tooltip" title="These are the versions of Cake with an API compatible with the latest version of this addin. Depending on the API used in the extension it might also work with other versions of Cake. An earlier version of the addin might be compatible with other versions of Cake."></i>
-            </li>
-            }
             @if (!string.IsNullOrWhiteSpace(projectUrl) && HasProjectUrlDifferentFromRepoUrl(projectUrl, repository))
             {
                 <li>
@@ -125,6 +118,19 @@
                 </li>
             }
         </ul>
+
+        @if (!string.IsNullOrWhiteSpace(supportedCakeVersions))
+        {
+            <h2 class="no-anchor">Supported Cake Versions</h2>
+            <p>
+                <ul class="list-unstyled">
+                    <li>
+                        Versions: @supportedCakeVersions
+                        <i class="fa fa-info-circle" data-toggle="tooltip" title="These are the versions of Cake with an API compatible with the latest version of this addin. Depending on the API used in the extension it might also work with other versions of Cake. An earlier version of the addin might be compatible with other versions of Cake."></i>
+                    </li>
+                </ul>
+            </p>
+        }
 
         @if (targetFrameworks.Count > 0)
         {
