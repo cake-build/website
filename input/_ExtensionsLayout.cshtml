@@ -99,7 +99,7 @@
                 <i class="fa fa-info-circle" data-toggle="tooltip" title="These are the versions of Cake with an API compatible with the latest version of this addin. Depending on the API used in the extension it might also work with other versions of Cake. An earlier version of the addin might be compatible with other versions of Cake."></i>
             </li>
             }
-            @if (!string.IsNullOrWhiteSpace(projectUrl))
+            @if (!string.IsNullOrWhiteSpace(projectUrl) && HasProjectUrlDifferentFromRepoUrl(projectUrl, repository))
             {
                 <li>
                     <i class="fa fa-globe"></i>
@@ -136,3 +136,23 @@
         </p>
     </aside>
 </section>
+
+@functions
+{
+    public bool HasProjectUrlDifferentFromRepoUrl(string projectUrl, string repositoryUrl)
+    {
+        return !NormalizeUrl(projectUrl).Equals(NormalizeUrl(repositoryUrl));
+    }
+
+    public string NormalizeUrl(string url)
+    {
+        var result = url.TrimEnd('/');
+
+        if (result.EndsWith(".git"))
+        {
+            result = result.Remove(result.LastIndexOf(".git"));
+        }
+
+        return result;
+    }
+}
