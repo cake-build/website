@@ -1,5 +1,4 @@
 #addin "nuget:https://api.nuget.org/v3/index.json?package=Polly&version=7.1.0"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=LitJson&version=0.13.0"
 #addin "nuget:https://api.nuget.org/v3/index.json??package=Cake.FileHelpers&version=3.3.0"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=NuGet.Protocol&version=5.7.0"
 
@@ -12,7 +11,7 @@ using NuGetRepository = NuGet.Protocol.Core.Types.Repository;
 using NuGet.Versioning;
 using Polly;
 
-public static void DownloadPackages(this ICakeContext context, DirectoryPath extensionDir, string[] packageIds)
+public static void DownloadPackages(this ICakeContext context, DirectoryPath extensionDir, IDictionary<string, string> packageIdAndVersionLookup)
 {
     var retryPolicy = Policy
                         .Handle<Exception>()
@@ -23,45 +22,36 @@ public static void DownloadPackages(this ICakeContext context, DirectoryPath ext
     using (var httpClient = new HttpClient())
     {
         Parallel.ForEach(
-            packageIds,
-            packageId => retryPolicy.Execute(
-                    () => context.DownloadPackage(extensionDir, httpClient, packageId)
+            packageIdAndVersionLookup,
+            packageIdAndVersion => retryPolicy.Execute(
+                () => context.DownloadPackage(extensionDir, httpClient, packageIdAndVersion)
             )
         );
     }
 }
 
-public static void DownloadPackage(this ICakeContext context, DirectoryPath extensionDir, HttpClient httpClient, string packageId)
+public static void DownloadPackage(this ICakeContext context, DirectoryPath extensionDir, HttpClient httpClient, KeyValuePair<string, string> packageIdAndVersion)
 {
-    context.Information("[{0}] fetching meta data...", packageId);
-    var packageJson = httpClient.GetStringAsync($"https://api.nuget.org/v3/registration5-semver1/{packageId.ToLowerInvariant()}/index.json")
-                    .GetAwaiter()
-                    .GetResult();
+    var packageId = packageIdAndVersion.Key;
+    var packageVersion = packageIdAndVersion.Value;
 
-    var package = LitJson.JsonMapper.ToObject<Package>(packageJson);
+    if (string.IsNullOrWhiteSpace(packageVersion))
+    {
+        context.Warning($"[{{0}}] Skipping download of {packageId} - AnalyzedPackageVersion not specified in metadata", packageId);
+        return;
+    }
 
-    var packageInfo = (
-        from packageItem in package?.items ?? Enumerable.Empty<PackageItem>()
-        from item in packageItem.items ?? Enumerable.Empty<PackageRevisions>()
-        where item?.catalogEntry?.listed ?? false
-        let version = item?.catalogEntry?.version
-        let nugetVersion = version is null ? null : NuGetVersion.Parse(version)
-        orderby !(nugetVersion?.IsPrerelease ?? false), nugetVersion
-        select new
-        {
-            id = packageId,
-            version = nugetVersion?.ToNormalizedString(),
-            isPrerelease = nugetVersion?.IsPrerelease,
-            item?.packageContent
-        }
-    ).LastOrDefault();
+    context.Information($"[{{0}}] Downloading NuGet package {packageId} v{packageVersion}...", packageId);
 
-    context.Verbose("[{0}] found {1}...", packageId, packageInfo);
+    var packageIdLower = packageId.ToLowerInvariant();
+    var packageVersionLower = packageVersion.ToLowerInvariant();
+    var packageDownloadUrl = $"https://api.nuget.org/v3-flatcontainer/{packageIdLower}/{packageVersionLower}/{packageIdLower}.{packageVersionLower}.nupkg";
 
+    context.Verbose($"[{{0}}] GET {packageDownloadUrl}", packageId);
 
-    var packageDir = extensionDir.Combine($"{packageId}.{packageInfo.version}".ToLower());
+    var packageDir = extensionDir.Combine($"{packageId}.{packageVersion}".ToLowerInvariant());
 
-    using (var stream = httpClient.GetStreamAsync(packageInfo.packageContent).GetAwaiter().GetResult())
+    using (var stream = httpClient.GetStreamAsync(packageDownloadUrl).GetAwaiter().GetResult())
     {
         using (var zipStream = new System.IO.Compression.ZipArchive(stream))
         {
@@ -102,8 +92,6 @@ public static void DownloadPackage(this ICakeContext context, DirectoryPath exte
             }
         }
     }
-
-    context.FileWriteText(extensionDir.CombineWithFilePath($"{packageId}.isprerelease"), packageInfo.isPrerelease.GetValueOrDefault().ToString());
 
     context.Information("[{0}] done.", packageId);
 }
