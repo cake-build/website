@@ -41,7 +41,11 @@ There's an option to fetch and load NuGet dependencies
 or
 #addin nuget:?package=foo.bar&loaddependencies=false
 ```
-This feature requires Cake to be [configured](/docs/fundamentals/configuration) to not use `nuget.exe` but instead let Cake handle NuGet installation in-process.
+
+:::{.alert .alert-warning}
+This feature requires Cake to be [configured to use in-process NuGet client](/docs/running-builds/configuration/default-configuration-values#in-process-nuget-installation)
+instead of external `nuget.exe`.
+:::
 
 ### Include and Exclude Options:
 
