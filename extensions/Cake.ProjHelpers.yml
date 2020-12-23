@@ -11,8 +11,7 @@ Categories:
 - resources
 - embed
 TargetCakeVersion: 0.28.0
-TargetFrameworks:
-
+TargetFrameworks: []
 AnalyzedPackageVersion: 0.0.3
 AnalyzedPackageIsPrerelease: false
 AnalyzedPackagePublishDate: 2018-06-06T08:19:35.2170000Z
