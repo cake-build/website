@@ -10,8 +10,7 @@ Description: Cake.SimpleHTTPServer
 Categories:
 - simplehttpserver
 TargetCakeVersion: 0.13.0
-TargetFrameworks:
-
+TargetFrameworks: []
 AnalyzedPackageVersion: 0.1.12
 AnalyzedPackageIsPrerelease: false
 AnalyzedPackagePublishDate: 2016-11-13T09:56:40.3200000Z
