@@ -12,8 +12,7 @@ Categories:
 - resource-manager
 - deployment
 TargetCakeVersion: 0.19.4
-TargetFrameworks:
-
+TargetFrameworks: []
 AnalyzedPackageVersion: 0.1.3
 AnalyzedPackageIsPrerelease: false
 AnalyzedPackagePublishDate: 2017-09-11T12:03:27.6770000Z
