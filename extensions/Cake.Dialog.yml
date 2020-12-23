@@ -10,8 +10,7 @@ Description: Cake AddIn that provides ability to collect user input during build
 Categories:
 - dialog
 TargetCakeVersion: 0.17.0
-TargetFrameworks:
-
+TargetFrameworks: []
 AnalyzedPackageVersion: 0.0.2
 AnalyzedPackageIsPrerelease: false
 AnalyzedPackagePublishDate: 2017-02-06T07:28:56.5400000Z
