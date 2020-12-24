@@ -11,8 +11,7 @@ Categories:
 - documentation
 - xmldoc
 TargetCakeVersion: 0.32.1
-TargetFrameworks:
-- any
+TargetFrameworks: []
 AnalyzedPackageVersion: 1.0.2
 AnalyzedPackageIsPrerelease: false
 AnalyzedPackagePublishDate: 2019-02-14T07:45:10.8170000Z
