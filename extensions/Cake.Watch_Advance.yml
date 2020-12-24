@@ -10,8 +10,7 @@ Description: Cake_Watch_Advance
 Categories:
 - watch
 TargetCakeVersion: 0.26.1
-TargetFrameworks:
-
+TargetFrameworks: []
 AnalyzedPackageVersion: 0.1.11
 AnalyzedPackageIsPrerelease: false
 AnalyzedPackagePublishDate: 2018-03-22T03:41:37.7830000Z
