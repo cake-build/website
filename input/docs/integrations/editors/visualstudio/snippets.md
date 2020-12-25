@@ -5,7 +5,7 @@ Description: Support for code snippets
 
 # Configuring snippets
 
-Project templates are provided by the [Cake extension for Visual Studio](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1392591.CakeforVisualStudio).
+Snippets in Visual Studio are provided by the [Cake extension for Visual Studio](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1392591.CakeforVisualStudio).
 
 ## Supported runners
 
