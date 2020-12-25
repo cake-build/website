@@ -21,8 +21,9 @@ In order to use the task runner you must have Cake installed on your machine or 
 <div class="tab-content">
     <div id="tool" class="tab-pane fade in active">
         <p>
-            There is currently no support for task runner for Cake .NET Tool.
+            To use Cake .NET Tool it needs to be installed globally:
         </p>
+        <pre><code class="language-cmd hljs">dotnet tool install --global Cake.Tool</code></pre>
     </div>
     <div id="frosting" class="tab-pane fade">
         <p>
@@ -62,7 +63,7 @@ In order to use the task runner you must have Cake installed on your machine or 
 
 | Runner                           | Supported                                       | Remarks                                            |
 |----------------------------------|-------------------------------------------------|----------------------------------------------------|
-| [Cake .NET Tool]                 | <i class="fa fa-times" style="color:red"></i>   |                                                    |
+| [Cake .NET Tool]                 | <i class="fa fa-check" style="color:green"></i> | Only for global installations.                     |
 | [Cake Frosting]                  | <i class="fa fa-times" style="color:red"></i>   |                                                    |
 | [Cake runner for .NET Framework] | <i class="fa fa-check" style="color:green"></i> | `build.cake` needs to be included in the solution. |
 | [Cake runner for .NET Core]      | <i class="fa fa-times" style="color:red"></i>   |                                                    |
