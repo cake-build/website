@@ -23,18 +23,18 @@ dotnet Cake.Frosting.dll [switches]
 
 ## Switches
 
-| Switch                    | Description                                                                                        | Available Since |
-|---------------------------|----------------------------------------------------------------------------------------------------|-----------------|
-| --target &lt;target&gt;   | Sets the build target.                                                                             | [0.30.0]        |
-| --working &lt;dir&gt;     | Sets the working directory.                                                                        | [0.30.0]        |
-| --verbosity &lt;value&gt; | Specifies the amount of information to be displayed (quiet, minimal, normal, verbose, diagnostic). | [0.30.0]        |
-| --descriptions            | Shows description about tasks.                                                                     | [1.0.0-rc0002]  |
-| --tree                    | Shows the task dependency tree                                                                     | [1.0.0-rc0002]  |
-| --dryrun                  | Performs a dry run.                                                                                | [0.30.0]        |
-| --exclusive               | Execute a single task without any dependencies.                                                    | [1.0.0-rc0002]  |
-| --version                 | Displays Cake.Frosting version number.                                                             | [0.30.0]        |
-| --info                    | Displays additional information about Cake execution.                                              | [1.0.0-rc0002]  |
-| --help                    | Prints help information.                                                                           | [0.30.0]        |
+| Switch                            | Description                                                                                        | Available Since |
+|-----------------------------------|----------------------------------------------------------------------------------------------------|-----------------|
+| --description                     | Shows description about tasks.                                                                     | [1.0.0-rc0002]  |
+| --dryrun                          | Performs a dry run.                                                                                | [0.30.0]        |
+| -e, --exclusive                   | Execute a single task without any dependencies.                                                    | [1.0.0-rc0002]  |
+| -h, --help                        | Prints help information.                                                                           | [0.30.0]        |
+| --info                            | Displays additional information about Cake execution.                                              | [1.0.0-rc0002]  |
+| -t, --target &lt;TARGET&gt;       | Sets the build target.                                                                             | [0.30.0]        |
+| --tree                            | Shows the task dependency tree                                                                     | [1.0.0-rc0002]  |
+| -v, --verbosity &lt;VERBOSITY&gt; | Specifies the amount of information to be displayed (quiet, minimal, normal, verbose, diagnostic). | [0.30.0]        |
+| --version                         | Displays Cake.Frosting version number.                                                             | [0.30.0]        |
+| -w, --working &lt;PATH&gt;        | Sets the working directory.                                                                        | [0.30.0]        |
 
 [0.30.0]: https://github.com/cake-build/cake/releases/tag/v0.30.0
 [1.0.0-rc0002]: https://github.com/cake-build/cake/releases/tag/v1.0.0-rc0002
