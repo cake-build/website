@@ -21,61 +21,6 @@ RedirectFrom: docs/editors/vscode
 
 See <a href="https://marketplace.visualstudio.com/items/cake-build.cake-vscode" target="_blank">Cake extension for Visual Studio Code</a> for instructions how to install and configure the extension.
 
-<h1>Commands</h1>
-
-<p>
-    In addition to integrated editing features, the extension also provides the following commands in the Command Palette for working with Cake files:
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>Command</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Cake: Install a bootstrapper</td>
-            <td>Installs a Cake bootstrapper for Windows, macOS or Linux in the root folder.</td>
-        </tr>
-        <tr>
-            <td>Cake: Install to workspace</td>
-            <td>Will run through all of the available commands at once, to save having to run them one by one.</td>
-        </tr>
-        <tr>
-            <td>Cake: Install debug dependencies</td>
-            <td>Installs either the <a href="/docs/running-builds/runners/dotnet-tool">Cake .NET tool</a> globally or alternatively download the <a href="/docs/running-builds/runners/cake-runner-for-dotnet-core">Cake runner for .NET Core</a> into the <code>tools</code> folder.</td>
-        </tr>
-        <tr>
-            <td>Cake: Install sample build file</td>
-            <td>Installs a sample Cake file that contains setup and teardown actions, a sample task, and argument parsing.</td>
-        </tr>
-        <tr>
-            <td>Cake: Add addin from NuGet</td>
-            <td>Add or update an addin from NuGet in the specified Cake file.</td>
-        </tr>
-        <tr>
-            <td>Cake: Add tool from NuGet</td>
-            <td>Add or update a tool from NuGet in the specified Cake file.</td>
-        </tr>
-        <tr>
-            <td>Cake: Add module from NuGet</td>
-            <td>Add or update a module from NuGet in the modules <code>package.config</code>.</td>
-        </tr>
-        <tr>
-            <td>Cake: Install a configuration file</td>
-            <td>Installs the default Cake configuration file for controlling internal components of Cake.</td>
-        </tr>
-        <tr>
-            <td>Cake: Install intellisense support</td>
-            <td>
-                Downloads the Cake.Bakery NuGet Package into the tools folder, which in conjunction with OmniSharp provides IntelliSense support for Cake Files.
-                See <a href="/docs/integrations/editors/vscode/intellisense">IntelliSense in Visual Studio Code</a> for details.
-            </td>
-        </tr>
-    </tbody>
-</table>
-
 <h1>Child pages</h1>
 
 @Html.Partial("_ChildPages")
