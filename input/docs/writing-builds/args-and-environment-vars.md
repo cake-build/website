@@ -8,55 +8,17 @@ This page explains how settings can be passed to Cake file.
 
 # Passing And Reading Arguments
 
-Call the [Argument alias](/dsl/arguments/) in your Cake file to read arguments from the command line.
-
-## Example
-
-Build script:
+Call the [Argument alias](/dsl/arguments/) in your Cake file to read arguments from the command line:
 
 ```csharp
 Argument<bool>("myargument", false);
 ```
 
-Execution:
+The argument can be passed while running Cake:
 
-<ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#tool1">Cake .NET Tool</a></li>
-    <li><a data-toggle="tab" href="#frosting1">Cake Frosting</a></li>
-    <li><a data-toggle="tab" href="#netfx1">Cake runner for .NET Framework</a></li>
-    <li><a data-toggle="tab" href="#core1">Cake runner for .NET Core</a></li>
-</ul>
-
-<div class="tab-content">
-    <div id="tool1" class="tab-pane fade in active">
-        <p>
-            <code class="language-powershell hljs">
-                dotnet cake --myargument=true
-            </code>
-        </p>
-    </div>
-    <div id="frosting1" class="tab-pane fade">
-        <p>
-            <code class="language-powershell hljs">
-                dotnet Cake.Frosting.dll --myargument=true
-            </code>
-        </p>
-    </div>
-    <div id="netfx1" class="tab-pane fade">
-        <p>
-            <code class="language-powershell hljs">
-                Cake.exe --myargument=true
-            </code>
-        </p>
-    </div>
-    <div id="core1" class="tab-pane fade">
-        <p>
-            <code class="language-powershell hljs">
-                Cake.exe --myargument=true
-            </code>
-        </p>
-    </div>
-</div>
+```powershell
+--myargument=true
+```
 
 :::{.alert .alert-info}
 The conversion uses [type converters](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.typeconverter) under the hood to convert the string value to the desired type.

@@ -46,82 +46,8 @@ The configuration file should be located in the same directory as your Cake scri
 
 Finally, you can specify an input parameter directly to Cake, in the following format:
 
-<ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#tool1">Cake .NET Tool</a></li>
-    <li><a data-toggle="tab" href="#frosting1">Cake Frosting</a></li>
-    <li><a data-toggle="tab" href="#netfx1">Cake runner for .NET Framework</a></li>
-    <li><a data-toggle="tab" href="#core1">Cake runner for .NET Core</a></li>
-</ul>
-
-<div class="tab-content">
-    <div id="tool1" class="tab-pane fade in active">
-        <p>
-            <code class="language-powershell hljs">
-                dotnet cake --nuget_source=http://mycustomurl
-            </code>
-        </p>
-    </div>
-    <div id="frosting1" class="tab-pane fade">
-        <p>
-            <code class="language-powershell hljs">
-                ./build.ps1 --nuget_source=http://mycustomurl
-            </code>
-        </p>
-    </div>
-    <div id="netfx1" class="tab-pane fade">
-        <p>
-            <code class="language-powershell hljs">
-                cake.exe --nuget_source=http://mycustomurl
-            </code>
-        </p>
-    </div>
-    <div id="core1" class="tab-pane fade">
-        <p>
-            <code class="language-powershell hljs">
-                cake.exe --nuget_source=http://mycustomurl
-            </code>
-        </p>
-    </div>
-</div>
+```powershell
+--nuget_source=http://mycustomurl
+```
 
 Passing a configuration value directly to Cake will override the same configuration value stored within an environment variable and also any stored in a local configuration file.
-
-When configuring NuGet sources in both `cake.config`, and via the command line, multiple sources can be supplied by joining them with a semicolon:
-
-<ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#tool2">Cake .NET Tool</a></li>
-    <li><a data-toggle="tab" href="#frosting2">Cake Frosting</a></li>
-    <li><a data-toggle="tab" href="#netfx2">Cake runner for .NET Framework</a></li>
-    <li><a data-toggle="tab" href="#core2">Cake runner for .NET Core</a></li>
-</ul>
-
-<div class="tab-content">
-    <div id="tool2" class="tab-pane fade in active">
-        <p>
-            <code class="language-powershell hljs">
-                dotnet cake --nuget_source=http://mycustomurl;http://myothercustomurl
-            </code>
-        </p>
-    </div>
-    <div id="frosting2" class="tab-pane fade">
-        <p>
-            <code class="language-powershell hljs">
-                ./build.ps1 --nuget_source=http://mycustomurl;http://myothercustomurl
-            </code>
-        </p>
-    </div>
-    <div id="netfx2" class="tab-pane fade">
-        <p>
-            <code class="language-powershell hljs">
-                cake.exe --nuget_source=http://mycustomurl;http://myothercustomurl
-            </code>
-        </p>
-    </div>
-    <div id="core2" class="tab-pane fade">
-        <p>
-            <code class="language-powershell hljs">
-                cake.exe --nuget_source=http://mycustomurl;http://myothercustomurl
-            </code>
-        </p>
-    </div>
-</div>
