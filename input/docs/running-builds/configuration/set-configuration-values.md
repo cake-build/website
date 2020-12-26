@@ -64,7 +64,7 @@ Finally, you can specify an input parameter directly to Cake, in the following f
     <div id="frosting1" class="tab-pane fade">
         <p>
             <code class="language-powershell hljs">
-                ./build.ps1 --target=Publish
+                ./build.ps1 --nuget_source=http://mycustomurl
             </code>
         </p>
     </div>
@@ -106,7 +106,7 @@ When configuring NuGet sources in both `cake.config`, and via the command line, 
     <div id="frosting2" class="tab-pane fade">
         <p>
             <code class="language-powershell hljs">
-                ./build.ps1 --target=Publish
+                ./build.ps1 --nuget_source=http://mycustomurl;http://myothercustomurl
             </code>
         </p>
     </div>
