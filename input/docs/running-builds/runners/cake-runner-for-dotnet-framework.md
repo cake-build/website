@@ -124,6 +124,43 @@ and can be installed using the command for your operating system from below:
     </div>
 </div>
 
+## Running build script
+
+To launch Cake run the bootstrapper:
+
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#windows2">Windows</a></li>
+    <li><a data-toggle="tab" href="#linux2">Linux</a></li>
+    <li><a data-toggle="tab" href="#macos2">MacOS</a></li>
+</ul>
+
+<div class="tab-content">
+    <div id="windows2" class="tab-pane fade in active">
+        <p>
+            Open a new PowerShell window and run the following command:
+        </p>
+        <p>
+            <pre><code class="language-powershell hljs">./build.ps1</code></pre>
+        </p>
+    </div>
+    <div id="linux2" class="tab-pane fade">
+        <p>
+            Open a new shell and run the following command:
+        </p>
+        <p>
+            <pre><code class="language-bash hljs">build.sh</code></pre>
+        </p>
+    </div>
+    <div id="macos2" class="tab-pane fade">
+        <p>
+            Open a new shell and run the following command:
+        </p>
+        <p>
+            <pre><code class="language-bash hljs">build.sh</code></pre>
+        </p>
+    </div>
+</div>
+
 ## Extending the bootstrapper
 
 The bootstrapper that you can get directly from [cakebuild.net](https://cakebuild.net) is intended as a starting point for what can be done.
@@ -142,13 +179,13 @@ or [default bootstrapper for macOS & Linux](https://github.com/cake-build/resour
 1. Update the bootstrapper
 
    <ul class="nav nav-tabs">
-       <li class="active"><a data-toggle="tab" href="#windows2">Windows</a></li>
-       <li><a data-toggle="tab" href="#linux2">Linux</a></li>
-       <li><a data-toggle="tab" href="#macos2">MacOS</a></li>
+       <li class="active"><a data-toggle="tab" href="#windows3">Windows</a></li>
+       <li><a data-toggle="tab" href="#linux3">Linux</a></li>
+       <li><a data-toggle="tab" href="#macos3">MacOS</a></li>
    </ul>
 
    <div class="tab-content">
-       <div id="windows2" class="tab-pane fade in active">
+       <div id="windows3" class="tab-pane fade in active">
            <p>
                Replace the following line in the bootstrapper:
            </p>
@@ -166,7 +203,7 @@ or [default bootstrapper for macOS & Linux](https://github.com/cake-build/resour
                </code>
            </p>
        </div>
-       <div id="linux2" class="tab-pane fade">
+       <div id="linux3" class="tab-pane fade">
            <p>
                Replace the following line in the bootstrapper:
            </p>
@@ -184,7 +221,7 @@ or [default bootstrapper for macOS & Linux](https://github.com/cake-build/resour
                </code>
            </p>
        </div>
-       <div id="macos2" class="tab-pane fade">
+       <div id="macos3" class="tab-pane fade">
            <p>
                Replace the following line in the bootstrapper:
            </p>
