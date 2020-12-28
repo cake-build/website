@@ -22,17 +22,25 @@
 
     <input id="search" type="text" class="search" aria-label="Enter extensions to search" placeholder="Search for extensions..." autocomplete="off" value>
 
-    <div class="form-group row">
-        <label class="col-sm-1 col-form-label">Sort by</label>
-        <div class="col-sm-10">
-            <button class="sort btn btn-default asc" data-sort="name">Name</button>
-            <button class="sort btn btn-default" data-sort="analyzedpackagepublishdate" data-default-order="desc">Publish Date</button>
-        </div>
-    </div>
-
     <div class="row no-margin">
         <div id="result-count" class="col-md-10 no-padding">
             @extensions.Count() extensions found
+        </div>
+        <div class="col-md-2 col-xs-3 col-sm-1 text-right no-padding">
+            <button class="btn-filter" data-toggle="collapse" data-target="#extension-filter" aria-expanded="false" aria-controls="extension-filter">
+                <i class="fa fa-filter"></i>
+                Sort &amp; Filter
+            </button>
+        </div>
+    </div>
+
+    <div class="panel panel-default collapse" id="extension-filter">
+        <div class="row panel-body">
+            <div class="col-md-2">
+                <div>Sort by</div>
+                <button class="sort btn btn-default asc" data-sort="name">Name</button>
+                <button class="sort btn btn-default" data-sort="analyzedpackagepublishdate" data-default-order="desc">Publish Date</button>
+            </div>
         </div>
     </div>
 

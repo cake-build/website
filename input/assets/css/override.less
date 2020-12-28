@@ -128,6 +128,31 @@ ul.share-buttons img{
   margin-bottom: 15px;
 }
 
+.btn-filter {
+  background-color: transparent;
+  border: none;
+}
+
+.sort {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.sort.asc::after {
+  content: "\002B06";
+  padding-left: 3px;
+}
+
+.sort.desc::after {
+  content: "\002B07";
+  padding-left: 3px;
+}
+
+#extension-filter {
+  margin-top: 15px;
+}
+
 .list-extensions .extension {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -189,16 +214,4 @@ ul.share-buttons img{
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
-}
-
-// Sort buttons
-
-.sort.asc::after {
-  content: "\002B06";
-  padding-left: 3px;
-}
-
-.sort.desc::after {
-  content: "\002B07";
-  padding-left: 3px;
 }
