@@ -6,6 +6,7 @@
 #addin "nuget:https://api.nuget.org/v3/index.json?package=Octokit&version=0.32.0"
 
 #load "nuget.cake"
+#load "github.cake"
 
 using Octokit;
 
@@ -171,8 +172,10 @@ Task("GetExtensionPackages")
 
 Task("Build")
     .IsDependentOn("GetArtifacts")
-    .Does(() =>
+    .Does(context =>
     {
+        var releaseInfo = context.GetCakeGitHubReleaseInfo(releaseDir);
+
         Wyam(new WyamSettings
         {
             Recipe = "Docs",
@@ -180,7 +183,9 @@ Task("Build")
             UpdatePackages = true,
             Settings = new Dictionary<string, object>
             {
-                { "AssemblyFiles",  extensionSpecs.Where(x => x.Assemblies != null).SelectMany(x => x.Assemblies).Select(x => "../release/extensions" + x) }
+                { "AssemblyFiles",  extensionSpecs.Where(x => x.Assemblies != null).SelectMany(x => x.Assemblies).Select(x => "../release/extensions" + x) },
+                { "CakeLatestReleaseName", releaseInfo.LatestReleaseName },
+                { "CakeLatestReleaseUrl", releaseInfo.LatestReleaseUrl },
             }
         });
     });
@@ -188,8 +193,10 @@ Task("Build")
 // Does not download artifacts (run Build or GetArtifacts target first)
 Task("Preview")
     .IsDependentOn("GetExtensionSpecs")
-    .Does(() =>
+    .Does(context =>
     {
+        var releaseInfo = context.GetCakeGitHubReleaseInfo(releaseDir);
+
         Wyam(new WyamSettings
         {
             Recipe = "Docs",
@@ -199,7 +206,9 @@ Task("Preview")
             Watch = true,
             Settings = new Dictionary<string, object>
             {
-                { "AssemblyFiles",  extensionSpecs.Where(x => x.Assemblies != null).SelectMany(x => x.Assemblies).Select(x => "../release/extensions" + x) }
+                { "AssemblyFiles",  extensionSpecs.Where(x => x.Assemblies != null).SelectMany(x => x.Assemblies).Select(x => "../release/extensions" + x) },
+                { "CakeLatestReleaseName", releaseInfo.LatestReleaseName },
+                { "CakeLatestReleaseUrl", releaseInfo.LatestReleaseUrl },
             }
         });
     });
