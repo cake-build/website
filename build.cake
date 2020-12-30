@@ -3,7 +3,6 @@
 #addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Wyam&version=2.2.9"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Yaml&version=3.1.1"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=YamlDotNet&version=6.1.2"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=Octokit&version=0.32.0"
 
 #load "nuget.cake"
 #load "github.cake"
@@ -107,19 +106,11 @@ Task("CleanSource")
 
 Task("GetSource")
     .IsDependentOn("CleanSource")
-    .Does(() =>
+    .Does(context =>
     {
-        GitHubClient github = new GitHubClient(new ProductHeaderValue("CakeDocs"));
+        var releaseInfo = context.GetCakeGitHubReleaseInfo(releaseDir);
 
-        if (!string.IsNullOrEmpty(accessToken))
-        {
-            github.Credentials = new Credentials(accessToken);
-        }
-
-        // The GitHub releases API returns Not Found if all are pre-release, so need workaround below
-        //Release release = github.Repository.Release.GetLatest("cake-build", "cake").Result;
-        Release release = github.Repository.Release.GetAll("cake-build", "cake").Result.First( r =>r.PublishedAt.HasValue);
-        FilePath releaseZip = DownloadFile(release.ZipballUrl);
+        FilePath releaseZip = DownloadFile(releaseInfo.LatestReleaseZipUrl);
         Unzip(releaseZip, releaseDir);
 
         // Need to rename the container directory in the zip file to something consistent

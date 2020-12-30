@@ -1,4 +1,4 @@
-#addin "nuget:https://api.nuget.org/v3/index.json?package=Octokit&version=0.32.0"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=Octokit&version=0.48.0"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=NuGet.Versioning&version=5.7.0"
 
 using Octokit;
@@ -51,6 +51,7 @@ public static CakeGitHubReleaseInfo GetCakeGitHubReleaseInfo(this ICakeContext c
     {
         LatestReleaseName = latestCakeRelease.Name,
         LatestReleaseUrl = latestCakeRelease.HtmlUrl,
+        LatestReleaseZipUrl = latestCakeRelease.ZipballUrl,
     };
 
     LogGitHubReleaseInfo(context, _cakeGitHubReleaseInfo);
@@ -65,10 +66,12 @@ private static void LogGitHubReleaseInfo(ICakeContext context, CakeGitHubRelease
 {
     context.Information("Cake Latest Release Name: {0}", releaseInfo.LatestReleaseName);
     context.Information("Cake Latest Release Url: {0}", releaseInfo.LatestReleaseUrl);
+    context.Information("Cake Latest Release Zip Url: {0}", releaseInfo.LatestReleaseZipUrl);
 }
 
 public class CakeGitHubReleaseInfo
 {
     public string LatestReleaseName { get; set; }
     public string LatestReleaseUrl { get; set; }
+    public string LatestReleaseZipUrl { get; set; }
 }
