@@ -46,8 +46,11 @@ dotnet new tool-manifest
 Install Cake as a local tool using the `dotnet tool` command:
 
 ```powershell
-dotnet tool install Cake.Tool --version x.y.z
+dotnet tool install Cake.Tool --version <?! Meta CakeLatestReleaseName /?>
 ```
+
+You can replace `<?! Meta CakeLatestReleaseName /?>` with a different version of Cake you want to use.
+
 ## Getting the bootstrapper
 
 :::{.alert .alert-info}
