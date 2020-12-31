@@ -3,6 +3,28 @@ NoSidebar: true
 NoContainer: true
 NoGutter: true
 ---
+@{
+    // Latest Cake release name from GitHub e.g. v1.0.0-rc0002
+    var latestReleaseName = Model.String("CakeLatestReleaseName") ?? "x.y.z";
+
+    // All documents in the "Release Notes" category
+    var releaseBlogPosts = Documents
+        .Where(d => "Release Notes".Equals(d.String("category"), StringComparison.Ordinal));
+
+    // Attempt to locate a corresponding blog post for the latest Cake release
+    // NB: Blog posts need to have `releaseName` in the front matter matching the GitHub release name
+    var latestReleaseBlogPost = releaseBlogPosts
+        .Where(p => latestReleaseName.Equals(p.String("releaseName"), StringComparison.Ordinal))
+        .FirstOrDefault();
+
+    // Use link to blog post if found, otherwise fallback to link to GitHub release
+    var latestReleaseUrl = latestReleaseBlogPost is null
+        ? Model.String("CakeLatestReleaseUrl") ?? "#"
+        : Context.GetLink(latestReleaseBlogPost);
+}
+<div class="alert-latest-version">
+    <a href="@latestReleaseUrl">Cake @latestReleaseName is now available</a>
+</div>
 <div class="jumbotron">
     <div class="container">
         <div class="row">
