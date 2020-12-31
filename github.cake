@@ -49,7 +49,7 @@ public static CakeGitHubReleaseInfo GetCakeGitHubReleaseInfo(this ICakeContext c
 
     _cakeGitHubReleaseInfo = new CakeGitHubReleaseInfo
     {
-        LatestReleaseName = latestCakeRelease.Name,
+        LatestReleaseName = latestCakeRelease.Name.TrimStart('v'),
         LatestReleaseUrl = latestCakeRelease.HtmlUrl,
         LatestReleaseZipUrl = latestCakeRelease.ZipballUrl,
     };
