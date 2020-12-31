@@ -21,10 +21,10 @@ Make sure to have a tool manifest available in your repository or create one usi
 dotnet new tool-manifest
 ```
 
-Install Cake as a local tool using the `dotnet tool` command (replace `x.y.z` with the version of Cake you want to use, e.g. 0.38.5):
+Install Cake as a local tool using the `dotnet tool` command (you can replace `<?! Meta CakeLatestReleaseName /?>` with a different version of Cake you want to use):
 
 ```powershell
-dotnet tool install Cake.Tool --version x.y.z
+dotnet tool install Cake.Tool --version <?! Meta CakeLatestReleaseName /?>
 ```
 
 :::{.alert .alert-info}
