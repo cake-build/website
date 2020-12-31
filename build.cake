@@ -22,7 +22,6 @@ var target = Argument("target", "Default");
 // Define variables
 var isRunningOnAppVeyor  = AppVeyor.IsRunningOnAppVeyor;
 var isPullRequest        = AppVeyor.Environment.PullRequest.IsPullRequest;
-var accessToken          = EnvironmentVariable("git_access_token");
 var deployRemote         = EnvironmentVariable("git_deploy_remote");
 var zipFileName          = "output.zip";
 var deployCakeFileName   = "deploy.cake";
