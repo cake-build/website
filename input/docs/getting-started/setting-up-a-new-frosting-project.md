@@ -110,9 +110,19 @@ one and a half seconds if the `Delay` property is set.
 The following example creates a simple build pipeline consisting of a clean task, a task compiling an MsBuild solution and a task which tests the solution.
 
 :::{.alert .alert-info}
-The following example expects a Visual Studio solution `/src/Example.sln`.
+The following example expects a Visual Studio solution `src/Example.sln` in the repository root folder.
 You need to adapt the path to your solution.
 :::
+
+Add the required using statements:
+
+```csharp
+using Cake.Common;
+using Cake.Common.IO;
+using Cake.Common.Tools.DotNetCore;
+using Cake.Common.Tools.DotNetCore.Build;
+using Cake.Common.Tools.DotNetCore.Test;
+```
 
 Remove the `Delay` property from the `BuildContext` class and add a property `MsBuildConfiguration`, which stores the configuration of the solution which should be built:
 
@@ -148,7 +158,7 @@ Create a new class `BuildTask` for building the solution:
 
 ```csharp
 [TaskName("Build")]
-[IsDependentOn(typeof(Clean))]
+[IsDependentOn(typeof(CleanTask))]
 public sealed class BuildTask : FrostingTask<BuildContext>
 {
     public override void Run(BuildContext context)
@@ -165,8 +175,8 @@ Create a new class `TestTask` for testing the solution:
 
 ```csharp
 [TaskName("Test")]
-[IsDependentOn(typeof(Build))]
-public sealed class TestTaks : FrostingTask<BuildContext>
+[IsDependentOn(typeof(BuildTask))]
+public sealed class TestTask : FrostingTask<BuildContext>
 {
     public override void Run(BuildContext context)
     {
@@ -179,12 +189,27 @@ public sealed class TestTaks : FrostingTask<BuildContext>
 }
 ```
 
-Finally update the `DefaultTask` class to call the new tasks:
+Update the `DefaultTask` class to call the new tasks:
 
 ```csharp
-[IsDependentOn(typeof(Test))]
-public sealed class Default : FrostingTask<BuildContext>
+[IsDependentOn(typeof(TestTask))]
+public sealed class Default : FrostingTask
 {
+}
+```
+
+Finally define the working directory on the `CakeHost` in the `Program` class using the `UseWorkingDirectory` extension:
+
+```csharp
+public static class Program
+{
+    public static int Main(string[] args)
+    {
+        return new CakeHost()
+            .UseContext<BuildContext>()
+            .UseWorkingDirectory("..")
+            .Run(args);
+    }
 }
 ```
 
