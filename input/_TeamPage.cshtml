@@ -1,0 +1,65 @@
+@model IEnumerable<IDocument>
+
+<p>
+    Meet the core Cake maintainer team.
+    Cake would not be possible though without our <a href="/community/thanks/">Sponsors, Backers and Contributors</a>.
+</p>
+
+<div class="row">
+    @foreach(IDocument maintainer in Model.OrderBy(x => Guid.NewGuid()))
+    {
+        string name = maintainer.String("Name");
+        string gitHubUserName = maintainer.String("GitHubUserName");
+        string gitHubID = maintainer.String("GitHubID");
+        string website = maintainer.String("Website");
+        string twitter = maintainer.String("Twitter");
+        string linkedin = maintainer.String("LinkedIn");
+
+        <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+                <a title="@name" target="_blank" href="https://github.com/@gitHubUserName">
+                    <img class="team-member-image" src="https://avatars1.githubusercontent.com/u/@gitHubID?v=4">
+                </a>
+                <div class="caption team-member-caption">
+                    <a title="@name" target="_blank" href="https://github.com/@gitHubUserName">
+                        <h3 class="no-anchor">@name</h3>
+                    </a>
+                    <p>
+                        @if (!string.IsNullOrWhiteSpace(website))
+                        {
+                            <a title="Website of @name" target="_blank" href="@website">
+                                <i class="fa fa-globe"></i>
+                            </a>
+                        }
+                        <a title="@name on GitHub" target="_blank" href="https://github.com/@gitHubUserName">
+                            <i class="fa fa-github"></i>
+                        </a>
+                        @if (!string.IsNullOrWhiteSpace(twitter))
+                        {
+                            <a title="@name on Twitter" target="_blank" href="https://twitter.com/@twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        }
+                        @if (!string.IsNullOrWhiteSpace(linkedin))
+                        {
+                            <a title="@name on LinkedIn" target="_blank" href="https://www.linkedin.com/in/@linkedin">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        }
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<style>
+    .team-member-caption {
+        text-align: center;
+    }
+    .team-member-image {
+        width: 169px;
+        border-radius: 730px;
+        margin: 10px 10px 0 0;
+    }
+</style>

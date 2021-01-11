@@ -35,6 +35,16 @@ var outputPath           = MakeAbsolute(Directory("./output"));
 var rootPublishFolder    = MakeAbsolute(Directory("publish"));
 
 // Definitions
+class MaintainerSpec
+{
+    public string Name { get; set; }
+    public string GitHubUserName { get; set; }
+    public string GitHubID { get; set; }
+    public string Website { get; set; }
+    public string Twitter { get; set; }
+    public string LinkedIn { get; set; }
+}
+
 class ExtensionSpec
 {
     public string Type { get; set; }
@@ -56,6 +66,7 @@ class ExtensionSpec
 }
 
 // Variables
+List<MaintainerSpec> maintainerSpecs = new List<MaintainerSpec>();
 List<ExtensionSpec> extensionSpecs = new List<ExtensionSpec>();
 
 //////////////////////////////////////////////////////////////////////
@@ -131,6 +142,20 @@ Task("CleanExtensionPackages")
     CleanDirectory(extensionDir);
 });
 
+Task("GetMaintainerSpecs")
+    .Does(() =>
+{
+    var maintainerSpecFiles = GetFiles("./maintainers/*.yml");
+    maintainerSpecs
+        .AddRange(maintainerSpecFiles
+            .Select(x =>
+            {
+                Verbose("Deserializing maintainer YAML from " + x);
+                return DeserializeYamlFromFile<MaintainerSpec>(x);
+            })
+        );
+});
+
 Task("GetExtensionSpecs")
     .Does(() =>
 {
@@ -182,6 +207,7 @@ Task("Build")
 
 // Does not download artifacts (run Build or GetArtifacts target first)
 Task("Preview")
+    .IsDependentOn("GetMaintainerSpecs")
     .IsDependentOn("GetExtensionSpecs")
     .Does(context =>
     {
@@ -256,6 +282,7 @@ Task("Default")
 
 Task("GetArtifacts")
     .IsDependentOn("GetSource")
+    .IsDependentOn("GetMaintainerSpecs")
     .IsDependentOn("GetExtensionPackages");
 
 Task("AppVeyor")

@@ -15,6 +15,12 @@ Settings[DocsKeys.IncludeDateInPostPath] = true;
 Settings[DocsKeys.BlogAtomPath] = "blog/feed/atom/index.xml";
 Settings[DocsKeys.BlogRssPath] = "blog/feed/rss/index.xml";
 
+// Reads maintainer metadata
+Pipelines.InsertBefore(Docs.Code, "Maintainers",
+    ReadFiles("../maintainers/*.yml"),
+    Yaml()
+);
+
 // Reads extension metadata
 Pipelines.InsertBefore(Docs.Code, "Extensions",
     ReadFiles("../extensions/*.yml"),
