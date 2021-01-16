@@ -88,14 +88,29 @@ All settings are project - specific and stored in the `.idea` folder. To share s
 ### Generic settings
 
 * *Cake file extension*
-  This setting is used to find all Cake files and display them in the tool window.
+  This setting is used to find all Cake files and display them in the Cake Tasks window.
   Default: `cake`
 * *Task Regex*
   This regular expression is used to parse tasks from the Cake files.
   Default: `Task\s*?\(\s*?"(.*?)"\s*?\)`
 * *Verbosity*
-  This is the default verbosity to use, when running a task directly from the tool window or when creating a new run configuration.
+  This is the default verbosity to use, when running a task directly from the Cake Tasks window or when creating a new run configuration.
   Default: `normal`
+
+### Search paths
+
+Allows to modify search paths that are used to find all Cake files that are displayed
+in the [Cake Tasks window](#running-builds-directly).
+
+* *Search paths*
+  One or multiple starting points to search for Cake files.
+  The paths are relative to the project root and should use `/` as separator between directories.
+  Default: `.` (root of the project directory.)
+* *Exclude expressions*
+  Regular expressions to exclude search paths.
+  Each path that is found during the search is matched against all configured expressions.
+  Matches will be excluded.
+  Default: `.*/tools/.*`
 
 ### Runner settings
 
@@ -109,7 +124,7 @@ Default value is `dotnet-cake` and `dotnet-cake.exe` for Windows.
 ## Creating run configurations
 
 The configurations can either be created from an existing Cake task,
-using the [tool window](#cake-tasks-tool-window) or created manually using the run [configuration editor](#editing-run-configurations).
+using the [Cake Tasks window](#running-builds-directly) or created manually using the run [configuration editor](#editing-run-configurations).
 
 ## Editing run configurations
 
@@ -117,16 +132,26 @@ An editor for run configurations is available:
 
 ![Run configuration editor](/assets/img/cake-rider/docs/runConfiguration-editor.png){.img-responsive}
 
-## Running builds
+### Settings in the run configuration
 
-The Cake tasks tool window lists all Cake scripts and their tasks:
+* *Script path*
+  Path to the Cake file. (This is passed as first argument to the runner.)
+* *Task*
+  Name of the task to run (This is passed to the runner using `--task=<Task>`.)
+* *Verbosity*
+  Verbosity of the Cake output. (This is passed to the runner using `--verbosity=<Verbosity>`.)
+* *Arguments*
+  Arbitrary additional arguments to the runner.
 
-![Cake Tasks tool window](/assets/img/cake-rider/docs/toolWindow.png){.img-responsive}
+## Running builds directly
+
+The Cake Tasks window lists all Cake scripts and their tasks:
+
+![Cake Tasks window](/assets/img/cake-rider/docs/toolWindow.png){.img-responsive}
 
 Using a double click on a task will run that task immediately:
 
-![Cake Tasks tool window](/assets/img/cake-rider/docs/cake-run.png){.img-responsive}
+![Cake task run](/assets/img/cake-rider/docs/cake-run.png){.img-responsive}
 
-Alternatively, the buttons at the top of the tool window can be used to either run the task immediately,
+Alternatively, the buttons at the top of the Cake Tasks window can be used to either run the task immediately,
 or create a new [run configuration](#creating-run-configurations).
-
