@@ -1,4 +1,4 @@
-Order: 20
+Order: 30
 Title: Rider run configurations
 Description: Run configurations for Cake tasks
 ---
@@ -87,19 +87,19 @@ All settings are project - specific and stored in the `.idea` folder. To share s
 
 ### Generic settings
 
-* *Cake file extension*  
-  This setting is used to find all Cake files and display them in the tool window.  
+* *Cake file extension*
+  This setting is used to find all Cake files and display them in the tool window.
   Default: `cake`
-* *Task Regex*  
-  This regular expression is used to parse tasks from the Cake files.  
+* *Task Regex*
+  This regular expression is used to parse tasks from the Cake files.
   Default: `Task\s*?\(\s*?"(.*?)"\s*?\)`
-* *Verbosity*  
-  This is the default verbosity to use, when running a task directly from the tool window or when creating a new run configuration.  
+* *Verbosity*
+  This is the default verbosity to use, when running a task directly from the tool window or when creating a new run configuration.
   Default: `normal`
 
 ### Runner settings
 
-Allows to define the runner to use. 
+Allows to define the runner to use.
 Different runners for different operating systems can be set by defining a regular expression which is matched against the system property `os.name`.
 
 Default value is `dotnet-cake` and `dotnet-cake.exe` for Windows.
@@ -108,7 +108,7 @@ Default value is `dotnet-cake` and `dotnet-cake.exe` for Windows.
 
 ## Creating run configurations
 
-The configurations can either be created from an existing Cake task, 
+The configurations can either be created from an existing Cake task,
 using the [tool window](#cake-tasks-tool-window) or created manually using the run [configuration editor](#editing-run-configurations).
 
 ## Editing run configurations
