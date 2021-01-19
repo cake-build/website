@@ -10,9 +10,6 @@ Description: Cake add-in that makes ExcelDnaPack available as a tool in Cake.
 Categories:
 - exceldnapack
 - exceldna
-- cake-addin
-- cake-build
-- augustoproiete
 TargetCakeVersion: 0.33.0
 TargetFrameworks:
 - net5.0
