@@ -1,0 +1,20 @@
+Type: Addin
+Name: Cake.Tools.ReadyAPI.TestRunner
+NuGet: Cake.Tools.ReadyAPI.TestRunner
+Assemblies:
+- "/**/Cake.Tools.ReadyAPI.TestRunner.dll"
+Repository: https://github.com/waxtell/Cake.Tools.ReadyAPI.TestRunner.git
+ProjectUrl: https://github.com/waxtell/Cake.Tools.ReadyAPI.TestRunner/
+Author: waxtell
+Description: Cake.Tools.ReadyAPI.TestRunner allows for the build time integration of ReadyAPI automated testing.
+Categories:
+- readyapi
+- testrunner
+- smartbear
+TargetCakeVersion: 0.38.5
+TargetFrameworks:
+- net46
+- netstandard2.0
+AnalyzedPackageVersion: 1.0.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2021-01-18T19:09:28.4030000Z
