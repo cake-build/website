@@ -8,7 +8,6 @@ ProjectUrl: https://github.com/rhtnr/Cake.Gerrit/
 Author: rhtnr
 Description: Cake addin to post a review/label/comment on Gerrit
 Categories:
-- cake contrib
 - gerrit
 - code
 - review

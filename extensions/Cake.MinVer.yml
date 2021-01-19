@@ -9,9 +9,6 @@ Author: augustoproiete
 Description: Cake add-in that makes MinVer available as a tool in Cake.
 Categories:
 - minver
-- cake addin
-- cake build
-- cake contrib
 TargetCakeVersion: 0.33.0
 TargetFrameworks:
 - netstandard2.0
