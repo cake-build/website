@@ -8,7 +8,6 @@ ProjectUrl: https://github.com/rhtnr/Cake.SonarResults/
 Author: rhtnr
 Description: Package Description
 Categories:
-- cake contrib
 - sonarqube
 - sonar
 TargetCakeVersion: 0.36.0
