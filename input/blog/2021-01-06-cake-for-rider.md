@@ -27,7 +27,7 @@ It is possible to have Cake tasks as run configurations:
 
 ![Run configurations](/assets/img/cake-rider/blog-0.1.0/runConfigurations.png){.img-responsive}
 
-The configurations can either be created from an existing Cake task, using the tool window or 
+The configurations can either be created from an existing Cake task, using the tool window or
 created manually using the run configuration editor:
 
 ![Run configuration editor](/assets/img/cake-rider/blog-0.1.0/runConfiguration-editor.png){.img-responsive}
@@ -38,9 +38,15 @@ In Rider, go to File -> Settings -> Plugins -> Marketplace and search for *Cake 
 
 ![Cake for Rider Plugin](/assets/img/cake-rider/blog-0.1.0/riderPlugin.png){.img-responsive}
 
+### Release Video
+
+There is a [short video](https://youtu.be/dbLnpaZ2FtQ) discussing the main aspects of this release.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dbLnpaZ2FtQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Feedback and contributions
 
-Feedback and contributions (as well as ideas and feature requests) are [always welcome](https://github.com/cake-build/cake-rider). 
+Feedback and contributions (as well as ideas and feature requests) are [always welcome](https://github.com/cake-build/cake-rider).
 
 ### Thanks
 
