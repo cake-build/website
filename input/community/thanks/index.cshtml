@@ -49,6 +49,7 @@ We would like to say thank you to the following people and organizations without
   <a href="https://github.com/cake-build/bitrise-cake-step">bitrise-cake-step</a>,
   <a href="https://github.com/cake-build/cake">cake</a>,
   <a href="https://github.com/cake-build/cake-action">cake-action</a>,
+  <a href="https://github.com/cake-build/cake-rider">cake-rider</a>,
   <a href="https://github.com/cake-build/cake-teamcity">cake-teamcity</a>,
   <a href="https://github.com/cake-build/cake-vs">cake-vs</a>,
   <a href="https://github.com/cake-build/cake-vscode">cake-vscode</a>,
@@ -67,6 +68,7 @@ We would like to say thank you to the following people and organizations without
     $.ajax('https://api.github.com/repos/cake-build/bitrise-cake-step/contributors?per_page=250'),
     $.ajax('https://api.github.com/repos/cake-build/cake/contributors?per_page=250'),
     $.ajax('https://api.github.com/repos/cake-build/cake-action/contributors?per_page=250'),
+    $.ajax('https://api.github.com/repos/cake-build/cake-rider/contributors?per_page=250'),
     $.ajax('https://api.github.com/repos/cake-build/cake-teamcity/contributors?per_page=250'),
     $.ajax('https://api.github.com/repos/cake-build/cake-vs/contributors?per_page=250'),
     $.ajax('https://api.github.com/repos/cake-build/cake-vscode/contributors?per_page=250'),
@@ -75,13 +77,14 @@ We would like to say thank you to the following people and organizations without
     $.ajax('https://api.github.com/repos/cake-build/pantry/contributors?per_page=250'),
     $.ajax('https://api.github.com/repos/cake-build/resources/contributors?per_page=250'),
     $.ajax('https://api.github.com/repos/cake-build/website/contributors?per_page=250'))
-  .then(function(bakeryData, bitriseData, cakeData, actionData, teamcityData, vsData, vscodeData, vsoData, yeomanData, pantryData, resourcesData, websiteData) {
+  .then(function(bakeryData, bitriseData, cakeData, actionData, riderData, teamcityData, vsData, vscodeData, vsoData, yeomanData, pantryData, resourcesData, websiteData) {
     var persons = {};
     var allData =
       bakeryData[0].
         concat(bitriseData[0]).
         concat(cakeData[0]).
         concat(actionData[0]).
+        concat(riderData[0]).
         concat(teamcityData[0]).
         concat(vsData[0]).
         concat(vscodeData[0]).
