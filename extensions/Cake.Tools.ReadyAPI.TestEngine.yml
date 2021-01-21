@@ -1,0 +1,20 @@
+Type: Addin
+Name: Cake.Tools.ReadyAPI.TestEngine
+NuGet: Cake.Tools.ReadyAPI.TestEngine
+Assemblies:
+- "/**/Cake.Tools.ReadyAPI.TestEngine.dll"
+Repository: https://github.com/waxtell/Cake.Tools.ReadyAPI.TestEngine.git
+ProjectUrl: https://github.com/waxtell/Cake.Tools.ReadyAPI.TestEngine/
+Author: waxtell
+Description: Cake.Tools.ReadyAPI.TestEngine allows for the build time integration of ReadyAPI automated testing via TestEngine.
+Categories:
+- readyapi
+- testengine
+- smartbear
+TargetCakeVersion: 0.38.5
+TargetFrameworks:
+- net46
+- netstandard2.0
+AnalyzedPackageVersion: 1.0.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2021-01-20T19:02:42.0030000Z
