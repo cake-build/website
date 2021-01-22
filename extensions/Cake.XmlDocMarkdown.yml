@@ -10,9 +10,9 @@ Description: Generates Markdown from .NET XML documentation comments.
 Categories:
 - documentation
 - markdown
-TargetCakeVersion: 0.28.0
+TargetCakeVersion: 0.33.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 2.3.1
+AnalyzedPackageVersion: 2.3.2
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2020-11-15T21:44:25.0470000Z
+AnalyzedPackagePublishDate: 2021-01-21T16:09:34.5130000Z
