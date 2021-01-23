@@ -3,8 +3,8 @@ Name: Cake.ExcelDnaPack
 NuGet: Cake.ExcelDnaPack
 Assemblies:
 - "/**/Cake.ExcelDnaPack.dll"
-Repository: https://github.com/augustoproiete/Cake.ExcelDnaPack.git
-ProjectUrl: https://github.com/augustoproiete/Cake.ExcelDnaPack/
+Repository: https://github.com/cake-contrib/Cake.ExcelDnaPack.git
+ProjectUrl: https://github.com/cake-contrib/Cake.ExcelDnaPack/
 Author: augustoproiete
 Description: Cake add-in that makes ExcelDnaPack available as a tool in Cake.
 Categories:
