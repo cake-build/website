@@ -5,7 +5,12 @@ RedirectFrom:
   - docs/fundamentals/default-configuration-values
 ---
 
-The following shows all of the configuration options currently available within Cake, as well as their default values.
+:::{.alert .alert-warning}
+Configuration is currently not supported for [Cake Frosting].
+:::
+
+The following shows all of the configuration options currently available in [Cake .NET Tool], [Cake runner for .NET Framework] and [Cake runner for .NET Core],
+as well as their default values.
 
 Refer to [set configuration values](/docs/running-builds/configuration/set-configuration-values) for instructions on using a config file.
 
@@ -337,3 +342,8 @@ Tools=./tools</code></pre>
         </p>
     </div>
 </div>
+
+[Cake .NET Tool]: /docs/running-builds/runners/dotnet-tool
+[Cake runner for .NET Framework]: /docs/running-builds/runners/cake-runner-for-dotnet-framework
+[Cake runner for .NET Core]: /docs/running-builds/runners/cake-runner-for-dotnet-core
+[Cake Frosting]: /docs/running-builds/runners/cake-frosting
