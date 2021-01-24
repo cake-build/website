@@ -137,7 +137,7 @@ RunTarget(target);
 
 # Cake Frosting
 
-To implement conditional execution of tasks in [Cake.Frosting] the `ShouldRun` method in the task can be overriden:
+To implement conditional execution of tasks in [Cake Frosting] the `ShouldRun` method in the task can be overriden:
 
 ```csharp
 public sealed class MyTask : FrostingTask<Context>
@@ -161,4 +161,4 @@ See [Cake.Frosting.Example](https://github.com/cake-build/cake/tree/develop/src/
 [Cake .NET Tool]: /docs/running-builds/runners/dotnet-tool
 [Cake runner for .NET Framework]: /docs/running-builds/runners/cake-runner-for-dotnet-framework
 [Cake runner for .NET Core]: /docs/running-builds/runners/cake-runner-for-dotnet-core
-[Cake.Frosting]: /docs/running-builds/runners/cake-frosting
+[Cake Frosting]: /docs/running-builds/runners/cake-frosting
