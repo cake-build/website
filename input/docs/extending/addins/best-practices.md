@@ -102,17 +102,17 @@ The wording of each guideline indicates how strong the recommendation is:
 
 ## .NET target version
 
-**_§2.4_** **Consider** to multi-target `netstandard2.0` and `net461`.
+**_§2.4_** **Consider** to multi-target `net5.0`, `netstandard2.0` and `net461`.
 
 > **Why?** Since .NET Framework < 4.7.2 has issues with running .NET Standard assemblies, and Cake itself can run on .NET Framework 4.6.1
-> multi-target addins to `netstandard2.0` and `net461` will give the maximum compatibility.
+> multi-target addins to `net5.0`, `netstandard2.0` and `net461` will give the maximum compatibility.
 >
 > Multi-targeting was suggested by Microsoft in [this .NET Conf 2018 talk](https://www.youtube.com/watch?v=hLFyycJVo0I#t=44m48s) and the underlying issues
 > are explained in [this tweet](https://twitter.com/terrajobst/status/1031999730320986112)
 
 :::{.alert .alert-info}
 This replaces the previous suggestion to only target `netstandard2.0` starting with Cake 0.26.0 as since then issues were found with running `netstandard2.0`
-on .NET Framwork < 4.7.2.
+on .NET Framework < 4.7.2.
 :::
 
 # Package metadata
