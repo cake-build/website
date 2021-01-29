@@ -9,9 +9,9 @@ Author: Jonathan Dick
 Description: Cake build aliases and classes additional NuGet functionality.
 Categories:
 - nuget
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 0.36.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 2.1.1
+AnalyzedPackageVersion: 3.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2019-08-06T20:05:22.4730000Z
+AnalyzedPackagePublishDate: 2021-01-28T14:37:11.2800000Z
