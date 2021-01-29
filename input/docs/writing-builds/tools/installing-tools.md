@@ -1,42 +1,97 @@
 Order: 10
-Description: How to install external tools
+Title: Installing and using tools
+Description: How to install and use external tools
 RedirectFrom: docs/tools/installing-tools
 ---
 
-This guide will demonstrate how to install tool executables to make sure
-they are discovered by your build script.
+# Installing tools from NuGet
 
-# Installing Tools From NuGet
+Cake provides different ways to install tool executables available as NuGet packages as part of a build.
 
-## Via Script
+| Installation method              | Cake .NET Tool | Cake Frosting | Cake runner for .NET Framework | Cake runner for .NET Core |
+|----------------------------------|----------------|---------------|--------------------------------|---------------------------|
+| [Pre-processor directive]        | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-times" style="color:red"></i>   | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> |
+| [InstallTool]                    | <i class="fa fa-times" style="color:red"></i>   | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-times" style="color:red"></i>   | <i class="fa fa-times" style="color:red"></i>   |
+| [Bootstrapper]                   | <i class="fa fa-times" style="color:red"></i>   | <i class="fa fa-times" style="color:red"></i>   | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> |
 
-:::{.alert .alert-success}
-This is the recommended way to install tools.
+## Installing tools via pre-processor directive
+
+The `#tools` pre-processor directive can be used to automatically download a tool and install it in the `tools` folder.
+
+:::{.alert .alert-info}
+Out of the box NuGet is supported as provider.
+More providers are available through [Modules](/extensions/).
 :::
 
-Cake extends the C# language with custom pre-processor directives, and we've added one
-to automatically download a tool from NuGet and install it in the `tools` folder.
-
-To download the [xunit.runner.console package](https://www.nuget.org/packages/xunit.runner.console)
-as part of executing your build script, simply use the `#tool` directive.
+The following example downloads the [xunit.runner.console package](https://www.nuget.org/packages/xunit.runner.console)
+as part of executing your build script:
 
 ```csharp
-#tool "xunit.runner.console"
+#tool "nuget:?package=xunit.runner.console&version=2.4.1"
 ```
 
-For more information see [preprocessor directives](../preprocessor-directives)
-
-## Via Bootstrapper
-
-:::{.alert .alert-warning}
-This option is only available when using [Cake runner for .NET Framework](/docs/running-builds/runners/cake-runner-for-dotnet-framework) or
-[Cake runner for .NET Core](/docs/running-builds/runners/cake-runner-for-dotnet-core).
+:::{.alert .alert-info}
+For more information see [preprocessor directives](/docs/writing-builds/preprocessor-directives).
 :::
 
+## Installing tools with InstallTool
+
+[Cake Frosting] provides a `InstallTool` method to download a tool and install it:
+
+:::{.alert .alert-info}
+Out of the box NuGet is supported as provider.
+More providers are available through [Modules](/extensions/).
+:::
+
+The following example downloads the [xunit.runner.console package](https://www.nuget.org/packages/xunit.runner.console)
+as part of executing your build script:
+
+```csharp
+public class Program : IFrostingStartup
+{
+    public static int Main(string[] args)
+    {
+        // Create and run the host.
+        return
+            new CakeHost()
+                .InstallTool(new Uri("nuget:?package=xunit.runner.console&version=2.4.1"));
+                .Run(args);
+    }
+}
+```
+
+## Installing tools via bootstrapper
+
 The [default bootstrapper for Cake runner for .NET Framework](/docs/running-builds/runners/cake-runner-for-dotnet-framework#bootstrapping-for-cake-runner-for.net-framework)
-supports restoring of tools listed in the `tools\packages.config` file before running the Cake script.
+supports restoring of tools which are available as NuGet packages.
+The tools need to be listed in the `tools\packages.config` file and are restored before running the Cake script.
 
-# Installing Tools From Disk
+# Installing tools from other providers
 
-If you want to install a tool that's not available via NuGet or if you prefer to store
-the tool locally, you want to take a look at the [tool resolution conventions](tool-resolution).
+Out of the box NuGet is supported as provider for [Pre-processor directive] and [InstallTool].
+More providers are available through [Modules](/extensions/).
+
+# Using tools from disk
+
+To use a tool that's not available via NuGet or if you prefer to store the tool locally,
+Cakes [tool resolution conventions](tool-resolution) can be used to resolve the path to the tool and call it through a [process alias](/dsl/process/):
+
+```csharp
+Task("Install-XUnit")
+    .Does(()=> {
+    FilePath nugetPath = Context.Tools.Resolve("nuget.exe");
+    StartProcess(nugetPath, new ProcessSettings {
+        Arguments = new ProcessArgumentBuilder()
+            .Append("install")
+            .Append("xunit.runner.console")
+        });
+});
+```
+
+[Cake .NET Tool]: dotnet-tool
+[Cake Frosting]: cake-frosting
+[Cake runner for .NET Framework]: cake-runner-for-dotnet-framework
+[Cake runner for .NET Core]: cake-runner-for-dotnet-core
+[Pre-processor directive]: #installing-tools-via-pre-processor-directive
+[InstallTool]: #installing-tools-with-installtool
+[Bootstrapper]: #installing-tools-via-bootstrapper
