@@ -1,18 +1,18 @@
 ## Switches
 
-| Switch                    | Description                                                                                                                                               | Available Since |
-|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-| --verbosity=&lt;value&gt; | Specifies the amount of information to be displayed (quiet, minimal, normal, verbose, diagnostic).                                                        | [0.1.1]         |
-| --debug                   | Launches script in debug mode.                                                                                                                            | [0.12.0]        |
-| --showdescription         | Shows description about tasks.                                                                                                                            | [0.1.10]        |
-| --showtree, --tree        | Shows the task dependency tree.                                                                                                                           | [0.31.0]        |
-| --dryrun                  | Performs a dry run.                                                                                                                                       | [0.2.0]         |
-| --exclusive               | Execute a single task without any dependencies.                                                                                                           | [0.29.0]        |
-| --bootstrap               | Download/install modules defined by `#module` directives, but do not run build. Since [1.0.0-rc0001] bootstrapping is done by default when running build. | [0.24.0]        |
-| --skip-bootstrap          | Skips bootstrapping when running build.                                                                                                                   | [1.0.0-rc0001]  |
-| --version                 | Displays version information.                                                                                                                             | [0.1.12]        |
-| --info                    | Displays additional information about Cake execution.                                                                                                     | [0.31.0]        |
-| --help                    | Prints help information.                                                                                                                                  | [0.1.12]        |
+| Switch                            | Description                                                                                                                                               | Available Since |
+|-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
+| --bootstrap                       | Download/install modules defined by `#module` directives, but do not run build. Since [1.0.0-rc0001] bootstrapping is done by default when running build. | [0.24.0]        |
+| -d, --debug                       | Launches script in debug mode.                                                                                                                            | [0.12.0]        |
+| --description                     | Shows description about tasks.                                                                                                                            | [0.1.10]        |
+| --dryrun                          | Performs a dry run.                                                                                                                                       | [0.2.0]         |
+| -e, --exclusive                   | Execute a single task without any dependencies.                                                                                                           | [0.29.0]        |
+| -h, --help                        | Prints help information.                                                                                                                                  | [0.1.12]        |
+| --info                            | Displays additional information about Cake execution.                                                                                                     | [0.31.0]        |
+| --skip-bootstrap                  | Skips bootstrapping when running build.                                                                                                                   | [1.0.0-rc0001]  |
+| --tree                            | Shows the task dependency tree.                                                                                                                           | [0.31.0]        |
+| -v, --verbosity &lt;VERBOSITY&gt; | Specifies the amount of information to be displayed (quiet, minimal, normal, verbose, diagnostic).                                                        | [0.1.1]         |
+| --version                         | Displays version information.                                                                                                                             | [0.1.12]        |
 
 [0.1.1]: https://github.com/cake-build/cake/releases/tag/v0.1.1
 [0.1.10]: https://github.com/cake-build/cake/releases/tag/v0.1.10
