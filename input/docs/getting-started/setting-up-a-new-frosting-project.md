@@ -149,7 +149,7 @@ public sealed class CleanTask : FrostingTask<BuildContext>
 {
     public override void Run(BuildContext context)
     {
-        context.CleanDirectory($"./src/Example/bin/{context.MsBuildConfiguration}");
+        context.CleanDirectory($"../src/Example/bin/{context.MsBuildConfiguration}");
     }
 }
 ```
@@ -163,7 +163,7 @@ public sealed class BuildTask : FrostingTask<BuildContext>
 {
     public override void Run(BuildContext context)
     {
-        context.DotNetCoreBuild("./src/Example.sln", new DotNetCoreBuildSettings
+        context.DotNetCoreBuild("../src/Example.sln", new DotNetCoreBuildSettings
         {
             Configuration = context.MsBuildConfiguration,
         });
@@ -180,7 +180,7 @@ public sealed class TestTask : FrostingTask<BuildContext>
 {
     public override void Run(BuildContext context)
     {
-        context.DotNetCoreTest("./src/Example.sln", new DotNetCoreTestSettings
+        context.DotNetCoreTest("../src/Example.sln", new DotNetCoreTestSettings
         {
             Configuration = context.MsBuildConfiguration,
             NoBuild = true,
@@ -195,21 +195,6 @@ Update the `DefaultTask` class to call the new tasks:
 [IsDependentOn(typeof(TestTask))]
 public sealed class Default : FrostingTask
 {
-}
-```
-
-Finally define the working directory on the `CakeHost` in the `Program` class using the `UseWorkingDirectory` extension:
-
-```csharp
-public static class Program
-{
-    public static int Main(string[] args)
-    {
-        return new CakeHost()
-            .UseContext<BuildContext>()
-            .UseWorkingDirectory("..")
-            .Run(args);
-    }
 }
 ```
 
