@@ -36,6 +36,27 @@
 
     <div class="panel panel-default collapse" id="extension-filter">
         <div class="row panel-body">
+            <div class="col-md-2" id="type-filter">
+                <div>Extension types</div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" class="filterType" name="filterType" id="filterTypeAll" value="" checked>
+                        All
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" class="filterType" name="filterType" id="filterTypeAddins" value="Addin">
+                        Addins
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" class="filterType" name="filterType" id="filterTypeModules" value="Module">
+                        Modules
+                    </label>
+                </div>
+            </div>
             <div class="col-md-2">
                 <div>Sort by</div>
                 <button class="sort btn btn-default asc" data-sort="name">Name</button>
@@ -51,6 +72,7 @@
 <script>
     var options = {
       valueNames: [
+        { data: ['type'] },
         { data: ['name'] },
         { data: ['analyzedpackagepublishdate'] },
         { data: ['categories'] }
@@ -61,5 +83,18 @@
 
     extensionList.on('searchComplete', function() {
         document.getElementById("result-count").innerHTML = extensionList.update().matchingItems.length + " extensions found";
+    });
+
+    $('.filterType').on('change', function() {
+        var $type = this.value;
+
+        if (!$type) {
+            extensionList.filter();
+        }
+        else {
+            extensionList.filter(function(item) {
+                return (item.values().type == $type);
+            });
+        }
     });
 </script>
