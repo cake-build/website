@@ -36,6 +36,9 @@
             case "Addin":
                 @Html.Partial("_UsageAddin");
                 break;
+            case "Module":
+                @Html.Partial("_UsageModule");
+                break;
         }
 
         @if (type != null && type.Equals("Addin", StringComparison.OrdinalIgnoreCase) && assemblies != null)
