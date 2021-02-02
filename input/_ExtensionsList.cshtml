@@ -28,7 +28,7 @@
         string publishDate = extension.String("AnalyzedPackagePublishDate");
         string categories = (String.Join(", ", extension.List<string>("Categories")));
 
-        <article class="extension row" data-name="@name" data-analyzedpackagepublishdate="@publishDate" data-categories="@categories">
+        <article class="extension row" data-type="@type" data-name="@name" data-analyzedpackagepublishdate="@publishDate" data-categories="@categories">
             <div class="col-sm-1 hidden-xs hidden-sm col-package-icon">
                 @switch (type) {
                     case "Addin":
