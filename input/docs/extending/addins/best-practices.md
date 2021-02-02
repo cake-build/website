@@ -175,3 +175,9 @@ This recommendation changed once again in the fall of 2019 when NuGet started su
 **_§4.2_** **Do** add documentation XML files to the NuGet package.
 
 > **Why?** XML documentation XML files are used to show documentation for the aliases and API provided by the addin on the Cake website.
+
+# Testing
+
+**_§5.1_** **Do** test the addin with the different [runners](/docs/running-builds/runners).
+
+> **Why?** .NET Tool, script runners and Cake Frosting have slight differences on what dependencies are loaded by the runner and how dependencies are loaded.
