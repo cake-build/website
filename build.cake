@@ -68,6 +68,7 @@ class ExtensionSpec
 // Variables
 List<MaintainerSpec> maintainerSpecs = new List<MaintainerSpec>();
 List<ExtensionSpec> extensionSpecs = new List<ExtensionSpec>();
+List<string> assemblies = new List<string>();
 
 //////////////////////////////////////////////////////////////////////
 // SETUP
@@ -168,6 +169,23 @@ Task("GetExtensionSpecs")
                 return DeserializeYamlFromFile<ExtensionSpec>(x);
             })
         );
+
+    assemblies
+        .AddRange(
+            extensionSpecs
+                .Where(x => x.Assemblies != null)
+                .SelectMany(
+                    extensionSpec =>
+                        extensionSpec
+                            .Assemblies
+                            .Select(
+                                assembly =>
+                                    $"../release/extensions/{extensionSpec.NuGet.ToLower()}.{extensionSpec.AnalyzedPackageVersion}{assembly}")));
+    Verbose("Extension assemblies:");
+    foreach (var assembly in assemblies)
+    {
+        Verbose($"  {assembly}");
+    }
 });
 
 Task("GetExtensionPackages")
@@ -198,7 +216,7 @@ Task("Build")
             UpdatePackages = true,
             Settings = new Dictionary<string, object>
             {
-                { "AssemblyFiles",  extensionSpecs.Where(x => x.Assemblies != null).SelectMany(x => x.Assemblies).Select(x => "../release/extensions" + x) },
+                { "AssemblyFiles",  assemblies },
                 { "CakeLatestReleaseName", releaseInfo.LatestReleaseName },
                 { "CakeLatestReleaseUrl", releaseInfo.LatestReleaseUrl },
             }
@@ -222,7 +240,7 @@ Task("Preview")
             Watch = true,
             Settings = new Dictionary<string, object>
             {
-                { "AssemblyFiles",  extensionSpecs.Where(x => x.Assemblies != null).SelectMany(x => x.Assemblies).Select(x => "../release/extensions" + x) },
+                { "AssemblyFiles",  assemblies },
                 { "CakeLatestReleaseName", releaseInfo.LatestReleaseName },
                 { "CakeLatestReleaseUrl", releaseInfo.LatestReleaseUrl },
             }
@@ -245,7 +263,7 @@ Task("Debug-Extensions")
         StartProcess("../Wyam/src/clients/Wyam/bin/Debug/net462/wyam.exe",
             "-a \"../Wyam/tests/integration/Wyam.Examples.Tests/bin/Debug/net462/**/*.dll\" -r \"docs -i\" -t \"../Wyam/themes/Docs/Samson\" -p --attach"
             + " --setting \"AssemblyFiles=["
-            + String.Join(",", extensionSpecs.Where(x => x.Assemblies != null).SelectMany(x => x.Assemblies).Select(x => "../release/extensions" + x))
+            + String.Join(",", assemblies)
             + "]\"");
     });
 
