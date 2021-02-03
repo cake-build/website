@@ -1,0 +1,20 @@
+Type: Module
+Name: Cake.Npm.Module
+NuGet: Cake.Npm.Module
+Assemblies:
+- "/**/*.dll"
+Repository: https://github.com/cake-contrib/Cake.Npm.Module.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Npm.Module/
+Author: Alistair Chapman
+Description: This Cake module adds support for the npm package manager when installing tools in your Cake build scripts.
+Categories:
+- ci
+- npm
+- node
+TargetCakeVersion: 
+TargetFrameworks:
+- net461
+- netstandard2.0
+AnalyzedPackageVersion: 0.1.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-10-25T16:31:47.6100000Z
