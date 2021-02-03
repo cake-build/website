@@ -26,7 +26,7 @@
 							string reducedName = reducedSymbol?.ToDisplayString(new SymbolDisplayFormat(
 								typeQualificationStyle: SymbolDisplayTypeQualificationStyle.NameAndContainingTypes,
 								genericsOptions: SymbolDisplayGenericsOptions.IncludeTypeParameters,
-								parameterOptions: SymbolDisplayParameterOptions.IncludeType, 
+								parameterOptions: SymbolDisplayParameterOptions.IncludeType,
 								memberOptions: SymbolDisplayMemberOptions.IncludeParameters,
 								miscellaneousOptions: SymbolDisplayMiscellaneousOptions.UseSpecialTypes));
 							IDocument returnType = method.Get<IDocument>("ReturnType");
@@ -46,7 +46,10 @@
                                             IDocument addin = Documents["Extensions"]
                                                 .FirstOrDefault(x => x.List<string>("Assemblies")
                                                     ?.Any(y => y.Contains(containingAssembly.String(CodeAnalysisKeys.DisplayName))) == true);
-                                            <div><small><em>Requires the @addin.String("Name") addin</em></small></div>
+											if (addin != null)
+											{
+                                            	<div><small><em>Requires the @addin.String("Name") addin</em></small></div>
+											}
                                         }
 									}
 								</td>
