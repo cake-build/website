@@ -1,0 +1,17 @@
+Type: Module
+Name: Cake.BuildSystems.Module
+NuGet: Cake.BuildSystems.Module
+Assemblies:
+- "/**/*.dll"
+Repository: https://github.com/cake-contrib/Cake.BuildSystems.Module.git
+ProjectUrl: https://github.com/cake-contrib/Cake.BuildSystems.Module/
+Author: Alistair Chapman
+Description: This Cake module will introduce a number of features for running in hosted CI build environments to tightly integrate with the host environment/tools.
+Categories:
+- ci
+TargetCakeVersion: 
+TargetFrameworks:
+- netstandard2.0
+AnalyzedPackageVersion: 0.3.2
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-09-04T05:59:22.4530000Z
