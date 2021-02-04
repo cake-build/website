@@ -1,0 +1,17 @@
+Type: Module
+Name: Cake.LightModeConsole.Module
+NuGet: Cake.LightModeConsole.Module
+Assemblies:
+- "/**/*.dll"
+Repository: https://github.com/devlead/Cake.LightModeConsole.Module.git
+ProjectUrl: https://github.com/devlead/Cake.LightModeConsole.Module/
+Author: devlead
+Description: Cake module that will use a console palette suitable for light background colors.
+Categories:
+- devops
+TargetCakeVersion: 
+TargetFrameworks:
+- netstandard2.0
+AnalyzedPackageVersion: 0.1.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-01-27T17:00:08.4930000Z
