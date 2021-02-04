@@ -1,0 +1,17 @@
+Type: Module
+Name: Cake.Paket.Module
+NuGet: Cake.Paket.Module
+Assemblies:
+- "/**/*.dll"
+Repository: https://github.com/cake-contrib/Cake.Paket.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Paket/
+Author: Larz White
+Description: Paket module for cake.
+Categories:
+- paket
+TargetCakeVersion: 
+TargetFrameworks:
+- net45
+AnalyzedPackageVersion: 4.0.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2018-07-08T23:56:25.8570000Z
