@@ -42,7 +42,7 @@ The wording of each guideline indicates how strong the recommendation is:
 
 ## Cake reference
 
-**_§2.1_** **Do** reference the lowest version of Cake with API compatibility to the latest version (currently `0.33.0`).
+**_§2.1_** **Do** reference the lowest version of Cake with API compatibility to the latest version (currently `1.0.0`).
 
 > **Why?** This gives the best support for different versions of Cake.
 > Addins built against newer versions of Cake might not be compatible with previous versions of Cake and vice-versa,
@@ -52,7 +52,7 @@ The wording of each guideline indicates how strong the recommendation is:
 
 ----------------------------------------------------------------------------------------------------
 
-**_§2.2_** **Do** reference a newer version than Cake `0.33.0` if the addin requires a specific functionality.
+**_§2.2_** **Do** reference a newer version than Cake `1.0.0` if the addin requires a specific functionality.
 
 > **Why?** If a specific feature of Cake is required in an addin the lowest version of Cake which introduces this feature should be referenced
 > to have access to the feature and the best support for different versions of Cake.
@@ -86,8 +86,8 @@ The wording of each guideline indicates how strong the recommendation is:
           </p>
           <p>
 <pre><code class="language-xml hljs">&lt;ItemGroup&gt;
-  &lt;PackageReference Include="Cake.Core" Version="0.33.0" PrivateAssets="All" /&gt;
-  &lt;PackageReference Include="Cake.Common" Version="0.33.0" PrivateAssets="All" /&gt;
+  &lt;PackageReference Include="Cake.Core" Version="1.0.0" PrivateAssets="All" /&gt;
+  &lt;PackageReference Include="Cake.Common" Version="1.0.0" PrivateAssets="All" /&gt;
 &lt;/ItemGroup&gt;
 </code></pre>
           </p>
