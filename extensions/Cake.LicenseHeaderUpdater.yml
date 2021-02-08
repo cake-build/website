@@ -11,9 +11,9 @@ Categories:
 - license
 - header
 - updater
-TargetCakeVersion: 0.38.5
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 0.0.1
+AnalyzedPackageVersion: 0.2.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2020-11-25T21:18:44.3630000Z
+AnalyzedPackagePublishDate: 2021-02-08T02:34:18.4630000Z
