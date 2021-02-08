@@ -12,9 +12,9 @@ Categories:
 - binder
 - reflection
 - attributes
-TargetCakeVersion: 0.38.5
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 0.2.3
+AnalyzedPackageVersion: 0.3.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2020-10-31T19:59:36.0900000Z
+AnalyzedPackagePublishDate: 2021-02-08T02:13:48.9630000Z
