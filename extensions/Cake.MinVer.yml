@@ -9,9 +9,10 @@ Author: augustoproiete
 Description: Cake add-in that makes MinVer available as a tool in Cake.
 Categories:
 - minver
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
+- net5.0
 - netstandard2.0
-AnalyzedPackageVersion: 0.2.0
+AnalyzedPackageVersion: 1.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2020-11-27T07:28:30.6100000Z
+AnalyzedPackagePublishDate: 2021-02-07T23:38:06.1070000Z
