@@ -43,7 +43,8 @@ The following table shows the supported platforms for each runner.
 
 :::{.alert .alert-info}
 Note that the platform under which a build is running doesn't limit its build capabilities.
-It's absolutely possible to build a .NET Core application with Cake running on .NET Framework or vice-versa.
+It's absolutely possible to build a .NET Framework application with Cake running on .NET 5 / .NET Core or vice-versa.
+
 :::
 
 | Runner                           | .NET 5 | .NET Core 3.1 | .NET Core 3.0 | .NET Core 2.1 | .NET Core 2.0 | .NET Framework 4.6.1 or newer | Mono 5.0.12 or newer|
