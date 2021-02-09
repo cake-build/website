@@ -9,9 +9,9 @@ Author: BBT Software AG
 Description: The Yeoman Addin for Cake allows you to call Yeoman generators from Cake.
 Categories:
 - yeoman
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 0.5.0
+AnalyzedPackageVersion: 1.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2019-05-11T20:08:50.2330000Z
+AnalyzedPackagePublishDate: 2021-02-08T22:51:42.9370000Z
