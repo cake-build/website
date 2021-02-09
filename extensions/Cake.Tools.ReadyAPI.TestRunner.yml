@@ -11,10 +11,11 @@ Categories:
 - readyapi
 - testrunner
 - smartbear
-TargetCakeVersion: 0.38.5
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
+- net5.0
 - net46
 - netstandard2.0
-AnalyzedPackageVersion: 1.0.0
+AnalyzedPackageVersion: 1.1.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-01-18T19:09:28.4030000Z
+AnalyzedPackagePublishDate: 2021-02-09T15:40:58.3830000Z
