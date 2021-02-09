@@ -6,7 +6,7 @@ Assemblies:
 Repository: https://github.com/cake-contrib/Cake.7zip.git
 ProjectUrl: https://cake-contrib.github.io/Cake.7zip/
 Author: nils-a
-Description: makes 7zip available as a tool in cake
+Description: Makes 7zip available as a tool in Cake
 Categories:
 - sevenzip
 TargetCakeVersion: 1.0.0
