@@ -120,3 +120,9 @@ Error: Expected an option value.
 ```
 
 This syntax is no longer supported with Cake 1.0.
+
+If you use this syntax for passing variables from a CI system you can use a space as separator between argument and value:
+
+```
+--foo %myvariable%
+```
