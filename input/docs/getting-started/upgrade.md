@@ -126,3 +126,8 @@ If you use this syntax for passing variables from a CI system you can use a spac
 ```
 --foo %myvariable%
 ```
+
+## Azure DevOps Build Task Extension
+
+Make sure to use at least version 2.1 of [Azure DevOps Build Task Extension](/docs/integrations/build-systems/azure-pipelines/azure-devops-build-task-extension)
+and version `2.*` of the task with Cake 1.0.
