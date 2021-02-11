@@ -3,6 +3,12 @@ Title: Blog Posts
 Description: Blog posts about Cake
 RedirectFrom: docs/resources/blogs
 ---
+# 2021
+
+## Lee Richardson
+* [Cake Frosting: More Maintainable C# DevOps](http://www.leerichardson.com/2021/02/cake-frosting-more-maintainable-c-devops.html)
+* [The One Thing I Wish I'd Known Before Using Cake](http://www.leerichardson.com/2021/02/he-one-thing-i-wish-id-known-before.html)
+
 # 2020
 
 ## Daniel Hindrikes
