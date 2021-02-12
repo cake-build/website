@@ -10,9 +10,9 @@ Description: Cake.LibMan is an Addin that extends Cake for executing commands wi
 Categories:
 - libman
 - library manager
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 0.1.0
+AnalyzedPackageVersion: 1.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2019-09-27T03:18:15.1470000Z
+AnalyzedPackagePublishDate: 2021-02-12T05:29:46.1170000Z
