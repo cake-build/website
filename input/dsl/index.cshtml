@@ -16,3 +16,20 @@ NoSidebar: false
 <p>
     Listed are aliases which are shipped with Cake, but also aliases which are part of community maintained <a href="/extensions">addins</a>.
 </p>
+
+<p>
+    <input type="text" class="form-control" id="search-query-dsl" placeholder="Search aliases" autocomplete="off" autofocus>
+</p>
+
+<script type="text/javascript">
+    docsearch({
+        apiKey: '7c45d75e5cd2fddcb761d830d2b8ee27',
+        indexName: 'cakebuild',
+        inputSelector: '#search-query-dsl',
+        debug: false,
+        algoliaOptions: {
+            facetFilters: ["tags:dsl"],
+            hitsPerPage: 10
+        }
+    });
+</script>
