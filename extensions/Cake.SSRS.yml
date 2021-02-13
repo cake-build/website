@@ -11,10 +11,10 @@ Categories:
 - ssrs
 - sql
 - database
-TargetCakeVersion: 0.35.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
 - net461
 - netstandard2.1
-AnalyzedPackageVersion: 0.6.0
+AnalyzedPackageVersion: 1.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2019-10-16T13:02:24.1800000Z
+AnalyzedPackagePublishDate: 2021-02-12T15:45:01.7600000Z
