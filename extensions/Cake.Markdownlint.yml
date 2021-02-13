@@ -4,14 +4,14 @@ NuGet: Cake.Markdownlint
 Assemblies:
 - "/**/Cake.Markdownlint.dll"
 Repository: https://github.com/cake-contrib/Cake.Markdownlint.git
-ProjectUrl: https://www.nuget.org/packages/Cake.Markdownlint/
+ProjectUrl: https://cakebuild.net/extensions/cake-markdownlint/
 Author: BBT Software AG
 Description: The Issues Addin for Cake allows you to run markdownlint.
 Categories:
 - markdown
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 0.3.0
+AnalyzedPackageVersion: 1.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2019-08-13T18:07:18.6870000Z
+AnalyzedPackagePublishDate: 2021-02-12T19:34:54.8070000Z
