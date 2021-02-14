@@ -17,9 +17,9 @@ Update to the member suggested in the obsolete message.
 ### Removal of CakeHostBuilder
 
 `CakeHostBuilder` has been removed.
-With Cake.Frosting 1.0 `CakeHost` can be used directly to create the `CakeHost` object.
+With [Cake Frosting] 1.0 `CakeHost` can be used directly to create the `CakeHost` object.
 
-With Cake.Frosting 0.38.x:
+With [Cake Frosting] 0.38.x:
 
 ```csharp
 // Create the host.
@@ -33,7 +33,7 @@ var host =
 return host.Run();
 ```
 
-With Cake.Frosting 1.0:
+With [Cake Frosting] 1.0:
 
 ```csharp
 // Create and run the host.
@@ -46,10 +46,10 @@ return
 ### Removal of ICakeServices
 
 `ICakeServices` has been removed.
-With Cake.Frosting 1.0 you no longer need to implement the `IFrostingStartup` interface in the `Program` class.
+With [Cake Frosting] 1.0 you no longer need to implement the `IFrostingStartup` interface in the `Program` class.
 Configuration can be done directly on the `CakeHost` object instead.
 
-With Cake.Frosting 0.38.x:
+With [Cake Frosting] 0.38.x:
 
 ```csharp
 public class Program : IFrostingStartup
@@ -76,7 +76,7 @@ public class Program : IFrostingStartup
 }
 ```
 
-With Cake.Frosting 1.0:
+With [Cake Frosting] 1.0:
 
 ```csharp
 public class Program : IFrostingStartup
@@ -89,6 +89,57 @@ public class Program : IFrostingStartup
                 .UseContext<BuildContext>()
                 .UseLifetime<Lifetime>()
                 .UseWorkingDirectory("..")
+                .Run(args);
+    }
+}
+```
+
+### Tool installation improvements
+
+It is no longer required to manually register the `nuget` module with [Cake Frosting].
+The method to install tools in [Cake Frosting] has also been renamed from `UseTool` to `InstallTool`:
+
+With [Cake Frosting] 0.38.x:
+
+```csharp
+public class Program : IFrostingStartup
+{
+    public static int Main(string[] args)
+    {
+        // Create the host.
+        var host =
+            new CakeHostBuilder()
+                .WithArguments(args)
+                .UseStartup<Program>()
+                .Build();
+
+        // Run the host.
+        return host.Run();
+    }
+
+    public void Configure(ICakeServices services)
+    {
+        // Register the NuGet module.
+        var module = new NuGetModule(new CakeConfiguration(new Dictionary<string, string>()));
+        module.Register(services);
+
+        // Register tools.
+        services.UseTool(new Uri("nuget:?package=NUnit.ConsoleRunner&version=3.11.1"));
+    }
+}
+```
+
+With [Cake Frosting] 1.0:
+
+```csharp
+public class Program : IFrostingStartup
+{
+    public static int Main(string[] args)
+    {
+        // Create and run the host.
+        return
+            new CakeHost()
+                .InstallTool(new Uri("nuget:?package=NUnit.ConsoleRunner&version=3.11.1"));
                 .Run(args);
     }
 }
@@ -131,3 +182,5 @@ If you use this syntax for passing variables from a CI system you can use a spac
 
 Make sure to use at least version 2.1 of [Azure DevOps Build Task Extension](/docs/integrations/build-systems/azure-pipelines/azure-devops-build-task-extension)
 and version `2.*` of the task with Cake 1.0.
+
+[Cake Frosting]: /docs/running-builds/runners/cake-frosting
