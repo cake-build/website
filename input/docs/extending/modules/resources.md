@@ -1,4 +1,4 @@
-Order: 30
+Order: 20
 Title: Modules resources
 Description: Resources for developing custom modules
 ---
