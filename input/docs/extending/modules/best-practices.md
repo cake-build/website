@@ -1,4 +1,4 @@
-Order: 30
+Order: 10
 Title: Best practices for writing modules
 Description: Best practices for writing modules
 ---
