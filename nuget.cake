@@ -67,15 +67,13 @@ public static void DownloadPackage(this ICakeContext context, DirectoryPath exte
                 extractedFiles.Add(entry.Name);
 
                 var entryPath = packageDir.CombineWithFilePath(entry.FullName);
-
-                switch (entryPath.GetExtension().ToLowerInvariant())
+                var fileExtension = entryPath.GetExtension().ToLowerInvariant();
+                var fileName = entryPath.GetFilename().FullPath.ToLowerInvariant();
+                var extractedExtensions = new List <string> { ".xml", ".dll" };
+                var ignoredFiles = new List<string> { "cake.core.dll", "cake.common.dll" };
+                if (!extractedExtensions.Contains(fileExtension) || ignoredFiles.Contains(fileName))
                 {
-                    case ".xml":
-                    case ".dll":
-                        break;
-
-                    default:
-                        continue;
+                    continue;
                 }
 
                 context.Verbose("[{0}] {1}", packageId, entry.FullName);
