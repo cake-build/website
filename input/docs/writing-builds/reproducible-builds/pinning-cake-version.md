@@ -20,7 +20,7 @@ To have deterministic builds it is important that on every build the same versio
     <div id="frosting1" class="tab-pane fade">
         <p>
             Make sure to use a fixed version number for <code>Cake.Frosting</code> in the <code>*.csproj</code> file:<br/>
-<pre><code class="language-xml hljs">&lt;PackageReference Include="Cake.Frosting" Version="0.38.4" /&gt;</code></pre>
+<pre><code class="language-xml hljs">&lt;PackageReference Include="Cake.Frosting" Version="<?! Meta CakeLatestReleaseName /?>" /&gt;</code></pre>
         </p>
         <p>
           To update the version of Cake you are using after you have pinned it, all you need to do is update the <code>Cake.Frosting</code> NuGet package to the newer version you would like to use.
@@ -33,7 +33,7 @@ To have deterministic builds it is important that on every build the same versio
                     Pin version of Cake in the <code>tools/packages.config</code> file:<br/>
 <pre><code class="language-xml hljs">&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;packages&gt;
-    &lt;package id="Cake" version="0.38.5" /&gt;
+    &lt;package id="Cake" version="<?! Meta CakeLatestReleaseName /?>" /&gt;
 &lt;/packages&gt;</code></pre>
                 </p>
             </li>
@@ -62,7 +62,7 @@ To have deterministic builds it is important that on every build the same versio
                     Pin version of Cake in the <code>tools/packages.config</code> file:<br/>
 <pre><code class="language-xml hljs">&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;packages&gt;
-    &lt;package id="Cake.CoreCLR" version="0.38.5" /&gt;
+    &lt;package id="Cake.CoreCLR" version="<?! Meta CakeLatestReleaseName /?>" /&gt;
 &lt;/packages&gt;</code></pre>
                 </p>
             </li>
