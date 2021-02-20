@@ -1,0 +1,28 @@
+Type: Addin
+Name: Cake.Issues.Terraform
+NuGet: Cake.Issues.Terraform
+Assemblies:
+- "/**/Cake.Issues.Terraform.dll"
+Repository: https://github.com/cake-contrib/Cake.Issues.Terraform.git
+ProjectUrl: https://cakeissues.net/
+Author: Pascal Berger
+Description: |-
+  The Terraform support for the Cake.Issues addin for Cake allows you to read issues logged by terraform validate.
+
+  This addin provides the aliases for reading terraform validate output and providing them to the Cake.Issues addin.
+  It also requires the core Cake.Issues addin.
+
+  There are also additional addins for generating reports or posting issues to pull requests.
+
+  See the Project Site for an overview of the whole ecosystem of addins for working with issues in Cake scripts.
+Categories:
+- cake-issues
+- cake-issueprovider
+- linting
+- terraform
+TargetCakeVersion: 1.0.0
+TargetFrameworks:
+- netstandard2.0
+AnalyzedPackageVersion: 1.0.0-beta0001
+AnalyzedPackageIsPrerelease: true
+AnalyzedPackagePublishDate: 2021-02-19T23:34:49.2400000Z
