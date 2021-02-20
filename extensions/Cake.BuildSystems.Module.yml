@@ -10,9 +10,7 @@ Description: This Cake module will introduce a number of features for running in
 Categories:
 - ci
 TargetCakeVersion: 
-TargetFrameworks:
-- net461
-- netstandard2.0
-AnalyzedPackageVersion: 2.0.1
+TargetFrameworks: []
+AnalyzedPackageVersion: 3.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-02-18T21:57:43.2970000Z
+AnalyzedPackagePublishDate: 2021-02-19T21:53:47.0830000Z
