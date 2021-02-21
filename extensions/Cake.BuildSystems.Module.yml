@@ -11,8 +11,7 @@ Categories:
 - ci
 TargetCakeVersion: 
 TargetFrameworks:
-- net461
 - netstandard2.0
-AnalyzedPackageVersion: 2.0.1
+AnalyzedPackageVersion: 3.0.1
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-02-18T21:57:43.2970000Z
+AnalyzedPackagePublishDate: 2021-02-20T19:39:55.3830000Z
