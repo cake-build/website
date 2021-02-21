@@ -9,9 +9,10 @@ Author: Gary Ewan Park
 Description: Cake Addin to allow message posting to Gitter Room.
 Categories:
 - communication
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
+- net5.0
 - netstandard2.0
-AnalyzedPackageVersion: 0.12.0
+AnalyzedPackageVersion: 1.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-02-20T10:51:08.2130000Z
+AnalyzedPackagePublishDate: 2021-02-20T18:01:41.7430000Z
