@@ -12,7 +12,8 @@ Categories:
 - module
 TargetCakeVersion: 
 TargetFrameworks:
+- net5.0
 - netstandard2.0
-AnalyzedPackageVersion: 0.5.0
+AnalyzedPackageVersion: 1.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-02-19T22:44:35.1300000Z
+AnalyzedPackagePublishDate: 2021-02-20T15:24:43.1900000Z
