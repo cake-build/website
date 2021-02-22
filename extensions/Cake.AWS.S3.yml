@@ -12,10 +12,10 @@ Categories:
 - aws
 - deployment
 - cdn
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
-- net46
+- net5.0
 - netstandard2.0
-AnalyzedPackageVersion: 0.6.9
+AnalyzedPackageVersion: 1.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2019-11-17T08:58:04.8470000Z
+AnalyzedPackagePublishDate: 2021-02-21T19:52:07.9900000Z
