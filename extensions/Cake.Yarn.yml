@@ -9,9 +9,9 @@ Author: Maxim Milovanov
 Description: A set of aliases for Cake to help with running Yarn (Node Package Manager from Facebook) commands.
 Categories:
 - yarn
-TargetCakeVersion: 0.38.5
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 0.4.7
+AnalyzedPackageVersion: 0.4.8
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-01-15T10:56:25.6030000Z
+AnalyzedPackagePublishDate: 2021-02-22T10:40:43.2700000Z
