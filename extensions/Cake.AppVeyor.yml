@@ -9,10 +9,11 @@ Author: Jonathan Dick
 Description: A set of aliases for Cake to access the AppVeyor REST API's
 Categories:
 - appveyor
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
+- net5.0
 - net461
 - netstandard2.0
-AnalyzedPackageVersion: 4.1.0
+AnalyzedPackageVersion: 5.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-02-21T18:27:57.2830000Z
+AnalyzedPackagePublishDate: 2021-02-22T22:07:44.1670000Z
