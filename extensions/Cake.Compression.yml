@@ -11,7 +11,9 @@ Categories:
 - compression
 TargetCakeVersion: 1.0.0
 TargetFrameworks:
-- netstandard2.1
-AnalyzedPackageVersion: 0.2.5
+- net5.0
+- net461
+- netstandard2.0
+AnalyzedPackageVersion: 0.2.6
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-02-21T14:43:17.2930000Z
+AnalyzedPackagePublishDate: 2021-02-24T11:07:15.7030000Z
