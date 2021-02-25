@@ -162,7 +162,7 @@ Error: Unknown command 'Foo'.
 
 ### Passing empty arguments
 
-With previous versions of Cake it was possible to define an empty argument (e.g. `--foo=`).
+With previous versions of Cake it was possible to define an empty argument (e.g. `--foo=`) or pass an empty value (e.g. `--foo=""`).
 
 With Cake 1.0 an error message similar to the following will be shown:
 
@@ -170,7 +170,14 @@ With Cake 1.0 an error message similar to the following will be shown:
 Error: Expected an option value.
 ```
 
-This syntax is no longer supported with Cake 1.0.
+One key difference with Cake 1.0 is that beyond key/value arguments (`--key=value`), it supports flags (`--flag`),
+and multiple arguments with the same name (`--key=value1 --key=value2`), which allows for much more flexibility than before.
+
+In Cake 1.0 use a space instead of `=` if the value can be empty or null:
+
+```
+--foo ""
+```
 
 If you use this syntax for passing variables from a CI system you can use a space as separator between argument and value:
 

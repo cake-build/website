@@ -44,6 +44,14 @@ dotnet Cake.Frosting.dll [switches]
 All switches not recognized by Cake will be added to an argument list that is passed to the build script.
 See [Arguments And Environment Variables](../../writing-builds/args-and-environment-vars#arguments) how to read arguments in your script.
 
+:::{.alert .alert-info}
+Use a space instead of `=` if the value of a switch can be empty or null:
+
+```
+--foo ""
+```
+:::
+
 # Bootstrapping for Cake Frosting
 
 When creating a new Cake Frosting project from the template default bootstrapping scripts for Windows, macOS and Linux are created.
