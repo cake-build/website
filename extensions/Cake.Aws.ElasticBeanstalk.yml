@@ -3,8 +3,8 @@ Name: Cake.AWS.ElasticBeanstalk
 NuGet: Cake.Aws.ElasticBeanstalk
 Assemblies:
 - "/**/Cake.AWS.ElasticBeanstalk.dll"
-Repository: https://github.com/mathieukempe/Cake.AWS.ElasticBeanstalk.git
-ProjectUrl: https://github.com/mathieukempe/Cake.AWS.ElasticBeanstalk/
+Repository: https://github.com/cake-contrib/Cake.AWS.ElasticBeanstalk.git
+ProjectUrl: https://github.com/cake-contrib/Cake.AWS.ElasticBeanstalk/
 Author: mathieukempe
 Description: Cake-Build addin that extends Cake with AWS Elasticbeanstalk extensions.
 Categories:
