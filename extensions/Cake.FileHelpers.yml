@@ -9,10 +9,11 @@ Author: Jonathan Dick
 Description: A set of aliases for Cake to help with simple file operations such as Reading, Writing and Replacing text.
 Categories:
 - io
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
+- net5.0
 - net46
 - netstandard2.0
-AnalyzedPackageVersion: 3.3.0
+AnalyzedPackageVersion: 4.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2020-06-29T19:33:20.1270000Z
+AnalyzedPackagePublishDate: 2021-02-25T21:14:12.5900000Z
