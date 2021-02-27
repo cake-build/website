@@ -9,10 +9,11 @@ Author: Jonathan Dick
 Description: A set of aliases to help with JSON Serialization
 Categories:
 - serialization
-TargetCakeVersion: 0.35.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
+- net5.0
 - net46
 - netstandard2.0
-AnalyzedPackageVersion: 5.2.0
+AnalyzedPackageVersion: 6.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2020-07-06T20:14:36.8830000Z
+AnalyzedPackagePublishDate: 2021-02-26T22:14:05.9030000Z
