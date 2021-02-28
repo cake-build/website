@@ -102,12 +102,12 @@ The wording of each guideline indicates how strong the recommendation is:
 
 ## .NET target version
 
-**_§2.4_** **Do** target at least `netstandard2.0`.
+**_§2.5_** **Do** target at least `netstandard2.0`.
 
 > **Why?** Targeting to `netstandard2.0` should work for most addins to support all available Cake runners, operating systems and platforms.
 > Depending on the addin it might be required to target additional platforms.
 
-**_§2.5_** **Consider** to additionally target `net461`.
+**_§2.6_** **Consider** to additionally target `net461`.
 
 > **Why?** Since .NET Framework < 4.7.2 has issues with running .NET Standard assemblies, and Cake itself can run on .NET Framework 4.6.1
 > multi-target addins to `netstandard2.0` and `net461` will give the maximum compatibility.
@@ -115,7 +115,7 @@ The wording of each guideline indicates how strong the recommendation is:
 > Multi-targeting was suggested by Microsoft in [this .NET Conf 2018 talk](https://www.youtube.com/watch?v=hLFyycJVo0I#t=44m48s) and the underlying issues
 > are explained in [this tweet](https://twitter.com/terrajobst/status/1031999730320986112).
 
-**_§2.6_** **Consider** to additionally target `net5.0`.
+**_§2.7_** **Consider** to additionally target `net5.0`.
 
 > **Why?** Targeting `net5.0` additionally to `netstandard2.0` allows you to use features provided by newer platforms when running on .NET 5.
 
@@ -168,6 +168,12 @@ The wording of each guideline indicates how strong the recommendation is:
 Until early 2019, the recommendation was to reference the Cake Contrib icon hosted on the rawgit CDN but rawgit announced that it would shutdown in October 2019 therefore the recommendation changed to reference the Cake Contrib icon hosted on the jsDelivr CDN.
 This recommendation changed once again in the fall of 2019 when NuGet started supporting embedded icons.
 :::
+
+## Tags
+
+**_§3.5_** **Do** add `cake-addin` to the NuGet-Tags.
+
+> **Why?** NuGet can show instructions on how to install a package in Cake since [NuGet/NuGetGallery#8381](https://github.com/NuGet/NuGetGallery/issues/8381). Only if the correct tag is used, the correct installation instructions can be shown.
 
 # Documentation
 
