@@ -274,9 +274,16 @@ Task("Copy-Bootstrapper-Download")
         CopyDirectory("./download/bootstrapper", outputPath.Combine("bootstrapper"));
     });
 
+Task("Copy-Support-Redirect")
+    .Does(()=>
+    {
+        CopyDirectory("./support/nuget", outputPath.Combine("support/nuget"));
+    });
+
 Task("ZipArtifacts")
     .IsDependentOn("Build")
     .IsDependentOn("Copy-Bootstrapper-Download")
+    .IsDependentOn("Copy-Support-Redirect")
     .Does(() =>
 {
     Zip(outputPath, zipFileName);
