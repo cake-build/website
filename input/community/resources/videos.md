@@ -2,6 +2,13 @@ Order: 10
 Description: Videos about Cake
 RedirectFrom: docs/resources/videos
 ---
+# 2021
+
+## Code Frosting, More Maintainable C# DevOps
+### Lee Richardson - Code Hour Episode #34
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/k7EwcKnQ46M" frameborder="0" allowfullscreen></iframe>
+
 # 2020
 
 ## A Piece of Cake - C# Powered Cross-platform Build Automation
