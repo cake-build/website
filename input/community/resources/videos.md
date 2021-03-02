@@ -9,6 +9,11 @@ RedirectFrom: docs/resources/videos
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/k7EwcKnQ46M" frameborder="0" allowfullscreen></iframe>
 
+## Building C# Applications with Cake - Make Your DevOps Process Better
+### Tim Corey (IAmTimCorey)
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/ZCA4CNloep8" frameborder="0" allowfullscreen></iframe>
+
 # 2020
 
 ## A Piece of Cake - C# Powered Cross-platform Build Automation
