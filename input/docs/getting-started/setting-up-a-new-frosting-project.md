@@ -10,7 +10,7 @@ This tutorial uses [Cake Frosting], which allows you to write builds as standard
 See [Runners](../running-builds/runners) for other possibilities of how to run Cake scripts.
 
 :::{.alert .alert-info}
-The following instructions require Cake Frosting 1.0.0-rc0002 or newer running on .NET Core 3.1.301 or newer.
+The following instructions require Cake Frosting 1.0.0 or newer running on .NET Core 3.1.301 or newer.
 You can find the .NET SDK at https://dotnet.microsoft.com/download
 :::
 
