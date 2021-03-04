@@ -10,9 +10,10 @@ Description: Cake addin for performing XDT Transformations
 Categories:
 - serialization
 - deployment
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
+- net5.0
 - netstandard2.0
-AnalyzedPackageVersion: 0.18.1
+AnalyzedPackageVersion: 1.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2019-08-03T00:06:16.0470000Z
+AnalyzedPackagePublishDate: 2021-03-04T03:32:32.0770000Z
