@@ -162,6 +162,12 @@ Until early 2019, the recommendation was to reference the Cake Contrib icon host
 This recommendation changed once again in the fall of 2019 when NuGet started supporting embedded icons.
 :::
 
+## Tags
+
+**_§3.5_** **Do** add `cake-module` to the NuGet-Tags.
+
+> **Why?** NuGet can show instructions on how to install a package in Cake since [NuGet/NuGetGallery#8381](https://github.com/NuGet/NuGetGallery/issues/8381). Only if the correct tag is used, the correct installation instructions can be shown.
+
 # Documentation
 
 **_§4.1_** **Do** follow the [Cake Documentation Guidelines](/community/contributing/documentation).
