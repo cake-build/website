@@ -54,7 +54,7 @@ public class Program : IFrostingStartup
         // Create and run the host.
         return
             new CakeHost()
-                .InstallTool(new Uri("nuget:?package=xunit.runner.console&version=2.4.1"));
+                .InstallTool(new Uri("nuget:?package=xunit.runner.console&version=2.4.1"))
                 .Run(args);
     }
 }
