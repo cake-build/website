@@ -4,7 +4,7 @@ NuGet: Cake.DotNetTool.Module
 Assemblies:
 - "/**/*.dll"
 Repository: https://github.com/cake-contrib/Cake.DotNetTool.Module.git
-ProjectUrl: https://github.com/cake-contrib/Cake.DotNetTool.Module/
+ProjectUrl: https://cakebuild.net/
 Author: gep13
 Description: Cake DotNetTool Module.
 Categories:
@@ -12,7 +12,9 @@ Categories:
 - module
 TargetCakeVersion: 
 TargetFrameworks:
+- net5.0
+- net461
 - netstandard2.0
-AnalyzedPackageVersion: 1.0.1
+AnalyzedPackageVersion: 1.1.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-02-22T20:53:19.0970000Z
+AnalyzedPackagePublishDate: 2021-03-06T06:37:35.9600000Z
