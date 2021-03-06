@@ -3,6 +3,47 @@ Title: Upgrade instructions
 Description: Upgrade instructions between different versions of Cake
 ---
 
+To update Cake follow these instructions
+
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#tool1">Cake .NET Tool</a></li>
+    <li><a data-toggle="tab" href="#frosting1">Cake Frosting</a></li>
+    <li><a data-toggle="tab" href="#netfx1">Cake runner for .NET Framework</a></li>
+    <li><a data-toggle="tab" href="#core1">Cake runner for .NET Core</a></li>
+</ul>
+
+<div class="tab-content">
+    <div id="tool1" class="tab-pane fade in active">
+        <p>
+        When using the <a href="/docs/running-builds/runners/dotnet-tool">.NET tool</a> as a local tool:
+        </p>
+        <p>
+<pre><code class="language-powershell hljs">dotnet tool install --local Cake.Tool</code></pre>
+        </p>
+        <p>
+        When using the <a href="/docs/running-builds/runners/dotnet-tool">.NET tool</a> as a global tool:
+        </p>
+        <p>
+<pre><code class="language-powershell hljs">dotnet tool install --global Cake.Tool</code></pre>
+        </p>
+    </div>
+    <div id="frosting1" class="tab-pane fade">
+        <p>
+        Update version for the <code>Cake.Frosting</code> NuGet package.
+        </p>
+    </div>
+    <div id="netfx1" class="tab-pane fade">
+        <p>
+        Update version for <code>Cake</code> package in <code>tools\packages.config</code> file.
+        </p>
+    </div>
+    <div id="core1" class="tab-pane fade">
+        <p>
+        Update version for <code>Cake.CoreCLR</code> package in <code>tools\packages.config</code> file.
+        </p>
+    </div>
+</div>
+
 # Cake 1.0.0 to Cake 1.1.0
 
 ## Cake.DotNetTool.Module
