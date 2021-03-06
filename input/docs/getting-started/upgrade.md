@@ -3,42 +3,26 @@ Title: Upgrade instructions
 Description: Upgrade instructions between different versions of Cake
 ---
 
-If you are using the [.NET tool as we recommend](/docs/running-builds/runners/dotnet-tool), all you need to do is to update the Cake .NET tool:
+# Cake 1.0.0 to Cake 1.1.0
 
-```powershell
-# If you are using the .NET tool as a local tool for the repository
-dotnet tool install --local Cake.Tool
+## Cake.DotNetTool.Module
 
-# or
+Starting with this release, `Cake.DotNetTool.Module` will always be released together with Cake and will only be compatible with the current release.
 
-# If you are using the .NET tool as a global tool for the user
-dotnet tool install --global Cake.Tool
-```
+If you use `Cake.DotNetTool.Module` already on your builds remove the `Cake.DotNetTool.Module` from your build script as it's no longer needed.
 
-## Cake 1.0 to Cake 1.1.0
-
-### Cake.DotNetTool.Module
-
-If you use `Cake.DotNetTool.Module` already on your builds do *one* of the following:
-
-- Upgrade Cake to version 1.1.0, and _remove_ the `Cake.DotNetTool.Module` from your build script (as it's no longer needed).
-
-or
-
-- Pin `Cake.DotNetTool.Module` to a version compatible with the Cake version that you use. `Cake.DotNetTool.Module` version 1.0.1 is the last version compatible with Cake 1.0.0. Starting with this release, `Cake.DotNetTool.Module` will always be released together with Cake and will only be compatible with the current release.
-
-## Cake 0.38.x to Cake 1.0
+# Cake 0.38.x to Cake 1.0.0
 
 Cake 1.0 is a major version containing breaking changes.
 
-### Replace obsolete members
+## Replace obsolete members
 
 Members marked as obsolete in previous versions have been removed in Cake 1.0.
 Update to the member suggested in the obsolete message.
 
-### Cake Frosting
+## Cake Frosting
 
-#### Removal of CakeHostBuilder
+### Removal of CakeHostBuilder
 
 `CakeHostBuilder` has been removed.
 With [Cake Frosting] 1.0 `CakeHost` can be used directly to create the `CakeHost` object.
@@ -67,7 +51,7 @@ return
         .Run(args);
 ```
 
-#### Removal of ICakeServices
+### Removal of ICakeServices
 
 `ICakeServices` has been removed.
 With [Cake Frosting] 1.0 you no longer need to implement the `IFrostingStartup` interface in the `Program` class.
@@ -118,7 +102,7 @@ public class Program : IFrostingStartup
 }
 ```
 
-#### Tool installation improvements
+### Tool installation improvements
 
 It is no longer required to manually register the `nuget` module with [Cake Frosting].
 The method to install tools in [Cake Frosting] has also been renamed from `UseTool` to `InstallTool`:
@@ -169,11 +153,11 @@ public class Program : IFrostingStartup
 }
 ```
 
-### Cake CLI updates
+## Cake CLI updates
 
 As part of the rewrite of the  CLI of Cake for Cake 1.0 parsing of switches is now stricter.
 
-#### Argument syntax
+### Argument syntax
 
 With Cake 1.0 arguments should always be called with multi-dash syntax (e.g. `--target=Foo`).
 When using single-dash syntax (e.g. `-target=Foo`) an error message similar to the following will be shown:
@@ -184,7 +168,7 @@ Error: Unknown command 'Foo'.
                           ^^^^^^ No such command
 ```
 
-#### Passing empty arguments
+### Passing empty arguments
 
 With previous versions of Cake it was possible to define an empty argument (e.g. `--foo=`) or pass an empty value (e.g. `--foo=""`).
 
@@ -209,7 +193,7 @@ If you use this syntax for passing variables from a CI system you can use a spac
 --foo %myvariable%
 ```
 
-### Azure DevOps Build Task Extension
+## Azure DevOps Build Task Extension
 
 Make sure to use at least version 2.1 of [Azure DevOps Build Task Extension](/docs/integrations/build-systems/azure-pipelines/azure-devops-build-task-extension)
 and version `2.*` of the task with Cake 1.0.
