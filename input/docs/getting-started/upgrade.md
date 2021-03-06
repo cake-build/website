@@ -3,7 +3,15 @@ Title: Upgrade instructions
 Description: Upgrade instructions between different versions of Cake
 ---
 
-# Cake 0.38.x to Cake 1.0
+# Cake 1.0.0 to Cake 1.1.0
+
+## Cake.DotNetTool.Module
+
+Starting with this release, `Cake.DotNetTool.Module` will always be released together with Cake and will only be compatible with the current release.
+
+If you use `Cake.DotNetTool.Module` already on your builds remove the `Cake.DotNetTool.Module` from your build script as it's no longer needed.
+
+# Cake 0.38.x to Cake 1.0.0
 
 Cake 1.0 is a major version containing breaking changes.
 
