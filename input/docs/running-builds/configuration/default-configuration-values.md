@@ -343,6 +343,28 @@ Tools=./tools</code></pre>
     </div>
 </div>
 
+# Disable Colors in output text
+
+:::{.alert .alert-info}
+Available since Cake `1.1.0`.
+:::
+
+By default, Cake outputs colored text when it detects it is running on an environment that supports ANSI escape codes.
+
+To disable output of colored text, set an environment variable with the name [`NO_COLOR`](https://no-color.org) with any value.
+
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#env10">Environment variable name</a></li>
+</ul>
+
+<div class="tab-content">
+    <div id="env10" class="tab-pane fade in active">
+        <p>
+            <pre><code class="language-sh hljs">NO_COLOR</code></pre>
+        </p>
+    </div>
+</div>
+
 [Cake .NET Tool]: /docs/running-builds/runners/dotnet-tool
 [Cake runner for .NET Framework]: /docs/running-builds/runners/cake-runner-for-dotnet-framework
 [Cake runner for .NET Core]: /docs/running-builds/runners/cake-runner-for-dotnet-core
