@@ -16,10 +16,10 @@ Cake provides different ways to install tool executables available as NuGet pack
 
 ## Installing tools via pre-processor directive
 
-The `#tools` pre-processor directive can be used to automatically download a tool and install it in the `tools` folder.
+The [#tool pre-processor directive] can be used to automatically download a tool and install it in the `tools` folder.
 
 :::{.alert .alert-info}
-Out of the box NuGet is supported as provider.
+Out of the box NuGet and .NET Tools (since Cake 1.1) are supported as provider.
 More providers are available through [Modules](/extensions/).
 :::
 
@@ -31,7 +31,7 @@ as part of executing your build script:
 ```
 
 :::{.alert .alert-info}
-For more information see [preprocessor directives](/docs/writing-builds/preprocessor-directives).
+For more information see [#tool pre-processor directive].
 :::
 
 ## Installing tools with InstallTool
@@ -95,3 +95,4 @@ Task("Install-XUnit")
 [Pre-processor directive]: #installing-tools-via-pre-processor-directive
 [InstallTool]: #installing-tools-with-installtool
 [Bootstrapper]: #installing-tools-via-bootstrapper
+[#tool pre-processor directive]: /docs/writing-builds/preprocessor-directives/tool/
