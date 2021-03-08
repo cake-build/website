@@ -8,12 +8,13 @@ ProjectUrl: https://github.com/agc93/Cake.APT.Module/
 Author: agc93
 Description: This Cake module adds support for the APT package manager when installing tools in your Cake build scripts.
 Categories:
+- tool-provider
 - ci
 - apt
 - linux
 - debian
 - ubuntu
-TargetCakeVersion: 
+TargetCakeVersion:
 TargetFrameworks:
 - netstandard2.0
 AnalyzedPackageVersion: 0.2.0
