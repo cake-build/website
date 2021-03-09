@@ -1,5 +1,5 @@
 Order: 20
-Title: nuget Provider
+Title: NuGet Provider
 Description: Package installer for installing tools packaged as NuGet packages
 ---
 
