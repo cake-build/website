@@ -88,15 +88,15 @@ By default, the .NET Core SDK tries to choose the most appropriate target framew
 
 Logging verbosity of the underlying `dotnet` command can be altered through the verbosity of the Cake execution.
 
+:::{.alert .alert-info}
+Alternatively the [Show Process Command Line configuration value]
+can be set to show the executed command, even without diagnostic verbosity.
+:::
+
 ## Example
 
 ```bash
 ./build.sh --verbosity=diagnostic
 ```
-
-:::{.alert .alert-info}
-Alternatively the [Show Process Command Line configuration value]
-can be set to show the executed command, even without diagnostic verbosity.
-:::
 
 [Show Process Command Line configuration value]: /docs/running-builds/configuration/default-configuration-values#show-process-command-line

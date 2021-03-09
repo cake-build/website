@@ -94,16 +94,16 @@ The `exclude` parameter allows exclude specific files.
 
 Logging verbosity can be altered through the verbosity of the Cake execution.
 
+:::{.alert .alert-info}
+When using the [out of process NuGet client], the [Show Process Command Line configuration value]
+can be set to show the executed command, even without diagnostic verbosity.
+:::
+
 ## Example
 
 ```bash
 ./build.sh --verbosity=diagnostic
 ```
-
-:::{.alert .alert-info}
-When using the [out of process NuGet client], the [Show Process Command Line configuration value]
-can be set to show the executed command, even without diagnostic verbosity.
-:::
 
 [out of process NuGet client]: /docs/running-builds/configuration/default-configuration-values#in-process-nuget-installation
 [Show Process Command Line configuration value]: /docs/running-builds/configuration/default-configuration-values#show-process-command-line
