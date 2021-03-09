@@ -30,7 +30,7 @@ dotnet Cake.Frosting.dll [switches]
 | -e, --exclusive                   | Execute a single task without any dependencies.                                                    | [1.0.0-rc0002]  |
 | -h, --help                        | Prints help information.                                                                           | [0.30.0]        |
 | --info                            | Displays additional information about Cake execution.                                              | [1.0.0-rc0002]  |
-| -t, --target &lt;TARGET&gt;       | Sets the build target.                                                                             | [0.30.0]        |
+| -t, --target &lt;TARGET&gt;       | Sets the build target. Default value is `Default`.                                                 | [0.30.0]        |
 | --tree                            | Shows the task dependency tree                                                                     | [1.0.0-rc0002]  |
 | -v, --verbosity &lt;VERBOSITY&gt; | Specifies the amount of information to be displayed (quiet, minimal, normal, verbose, diagnostic). | [0.30.0]        |
 | --version                         | Displays Cake.Frosting version number.                                                             | [0.30.0]        |
@@ -79,7 +79,6 @@ This will create the Cake Frosting project and bootstrapping scripts.
 
 ## Running build script
 
-
 Run the build script:
 
 <ul class="nav nav-tabs">
@@ -111,6 +110,8 @@ Run the build script:
         </p>
     </div>
 </div>
+
+The `Default` target will run when the build script is started without an explicit target.
 
 # Using pre-release versions
 
