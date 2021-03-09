@@ -106,4 +106,4 @@ can be set to show the executed command, even without diagnostic verbosity.
 :::
 
 [out of process NuGet client]: /docs/running-builds/configuration/default-configuration-values#in-process-nuget-installation
-[Show Process Command Line configuration value] /docs/running-builds/configuration/default-configuration-values#show-process-command-line
+[Show Process Command Line configuration value]: /docs/running-builds/configuration/default-configuration-values#show-process-command-line

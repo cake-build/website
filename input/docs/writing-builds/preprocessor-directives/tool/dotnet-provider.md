@@ -99,4 +99,4 @@ Alternatively the [Show Process Command Line configuration value]
 can be set to show the executed command, even without diagnostic verbosity.
 :::
 
-[Show Process Command Line configuration value] /docs/running-builds/configuration/default-configuration-values#show-process-command-line
+[Show Process Command Line configuration value]: /docs/running-builds/configuration/default-configuration-values#show-process-command-line
