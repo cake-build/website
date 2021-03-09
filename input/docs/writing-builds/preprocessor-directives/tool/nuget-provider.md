@@ -39,7 +39,7 @@ The name of the NuGet package that should be installed.
 
 # Version
 
-The specific version of the .NuGet package that should be installed.
+The specific version of the NuGet package that should be installed.
 If not provided, the latest version package that is available will be installed.
 
 ## Example
