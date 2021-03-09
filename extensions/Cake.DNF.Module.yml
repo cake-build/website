@@ -12,7 +12,7 @@ Categories:
 - ci
 - dnf
 - linux
-TargetCakeVersion:
+TargetCakeVersion: 
 TargetFrameworks:
 - net46
 - netstandard1.6
