@@ -50,7 +50,7 @@ If not provided, the latest version package that is available will be installed.
 
 # Prerelease
 
-To install prerelease tools without defining a specific `version` (i.e. latest prerelease version available), the `prerelease` parameter needs to be passed.
+To install prerelease tools without defining a specific `version` (`#tool nuget:?package=Cake.Foo&version=1.2.3-beta`), the `prerelease` parameter needs to be passed.
 
 ## Example
 
@@ -90,7 +90,7 @@ The `exclude` parameter allows exclude specific files.
 #tool nuget:?package=Cake.Foo&exclude=/**/Foo.exe
 ```
 
-# Verbosity
+# Diagnostic
 
 Logging verbosity can be altered through the verbosity of the Cake execution.
 
@@ -99,3 +99,11 @@ Logging verbosity can be altered through the verbosity of the Cake execution.
 ```bash
 ./build.sh --verbosity=diagnostic
 ```
+
+:::{.alert .alert-info}
+When using the [out of process NuGet client], the [Show Process Command Line configuration value]
+can be set to show the executed command, even without diagnostic verbosity.
+:::
+
+[out of process NuGet client]: /docs/running-builds/configuration/default-configuration-values#in-process-nuget-installation
+[Show Process Command Line configuration value] /docs/running-builds/configuration/default-configuration-values#show-process-command-line
