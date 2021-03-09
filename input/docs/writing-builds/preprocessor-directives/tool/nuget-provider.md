@@ -50,7 +50,7 @@ If not provided, the latest version package that is available will be installed.
 
 # Prerelease
 
-To install prerelease tools the `prerelease` parameter needs to be passed.
+To install prerelease tools without defining a specific `version` (i.e. latest prerelease version available), the `prerelease` parameter needs to be passed.
 
 ## Example
 
