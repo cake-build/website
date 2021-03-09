@@ -79,7 +79,7 @@ By default, the .NET Core SDK tries to choose the most appropriate target framew
 ## Example
 
 ```csharp
-#tool dotnet:?package=Octopus.DotNet.Cli&version=4.41.0&framework="net472"
+#tool dotnet:?package=Octopus.DotNet.Cli&version=4.41.0&framework=net472
 ```
 
 [target framework]: https://docs.microsoft.com/en-us/dotnet/standard/frameworks
