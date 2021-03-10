@@ -1,0 +1,20 @@
+Type: Addin
+Name: Cake.EntityFrameworkCore
+NuGet: Cake.EntityFrameworkCore
+Assemblies:
+- "/**/Cake.EntityFrameworkCore.dll"
+Repository: https://github.com/louisfischer/Cake.EntityFrameworkCore.git
+ProjectUrl: https://github.com/louisfischer/Cake.EntityFrameworkCore/
+Author: louisfischer
+Description: Cake.EntityFrameworkCore is a set of Cake aliases for working with Entity Framework Core Migrations from an assembly instead of project source files.
+Categories:
+- ef
+- core
+- entity
+- framework
+TargetCakeVersion: 1.1.0
+TargetFrameworks:
+- netstandard2.0
+AnalyzedPackageVersion: 2.0.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2021-03-09T21:17:54.9130000Z
