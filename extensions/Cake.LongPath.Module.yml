@@ -4,13 +4,13 @@ NuGet: Cake.LongPath.Module
 Assemblies:
 - "/**/*.dll"
 Repository: https://github.com/cake-contrib/Cake.LongPath.Module.git
-ProjectUrl: https://github.com/cake-contrib/Cake.LongPath.Module/
+ProjectUrl: https://cakebuild.net/extensions/cake-longpath-module
 Author: Mattias Karlsson
 Description: The Cake long path module.
 Categories: []
 TargetCakeVersion: 
 TargetFrameworks:
 - net46
-AnalyzedPackageVersion: 1.0.0
+AnalyzedPackageVersion: 1.0.1
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-02-09T13:14:09.7170000Z
+AnalyzedPackagePublishDate: 2021-03-12T00:18:20.6670000Z
