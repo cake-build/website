@@ -9,9 +9,9 @@ Author: engelbert-strauss GmbH & Co. KG
 Description: Cake Addin that exends Cake with the ability to perform json based endpoint orchestration.
 Categories:
 - deployment
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 3.1.0
+AnalyzedPackageVersion: 4.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-01-07T14:42:15.5030000Z
+AnalyzedPackagePublishDate: 2021-03-11T15:01:07.1070000Z
