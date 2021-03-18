@@ -1,0 +1,24 @@
+Type: Addin
+Name: Cake.AWS.ElasticBeanstalk
+NuGet: Cake.AWS.ElasticBeanstalk
+Assemblies:
+- "/**/Cake.AWS.ElasticBeanstalk.dll"
+Repository: https://github.com/cake-contrib/Cake.AWS.ElasticBeanstalk.git
+ProjectUrl: https://github.com/cake-contrib/Cake.AWS.ElasticBeanstalk/
+Author: mkempe, WilliamABradley, augustoproiete
+Description: Cake-Build addin that extends Cake with AWS Elasticbeanstalk extensions
+Categories:
+- aws
+- elastic-beanstalk
+- awssdk
+- beanstalk
+- elastic
+- cake-build
+TargetCakeVersion: 1.0.0
+TargetFrameworks:
+- net5.0
+- net461
+- netstandard2.0
+AnalyzedPackageVersion: 3.0.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2021-03-18T06:30:32.2430000Z
