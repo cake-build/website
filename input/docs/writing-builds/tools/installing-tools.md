@@ -39,7 +39,7 @@ For more information see [#tool pre-processor directive].
 [Cake Frosting] provides a `InstallTool` method to download a tool and install it:
 
 :::{.alert .alert-info}
-Out of the box NuGet is supported as provider.
+Out of the box NuGet and .NET Tools (since Cake 1.1) are supported as provider.
 More providers are available through [Modules](/extensions/).
 :::
 
@@ -60,6 +60,10 @@ public class Program : IFrostingStartup
 }
 ```
 
+:::{.alert .alert-info}
+For more information about supported URI string parameters see [#tool pre-processor directive].
+:::
+
 ## Installing tools via bootstrapper
 
 The [default bootstrapper for Cake runner for .NET Framework](/docs/running-builds/runners/cake-runner-for-dotnet-framework#bootstrapping-for-cake-runner-for.net-framework)
@@ -68,7 +72,7 @@ The tools need to be listed in the `tools\packages.config` file and are restored
 
 # Installing tools from other providers
 
-Out of the box NuGet is supported as provider for [Pre-processor directive] and [InstallTool].
+Out of the box NuGet and .NET Tools (since Cake 1.1) is supported as provider for [Pre-processor directive] and [InstallTool].
 More providers are available through [Modules](/extensions/).
 
 # Using tools from disk
