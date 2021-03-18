@@ -3,8 +3,8 @@ Name: Cake.Orchard
 NuGet: Cake.Orchard
 Assemblies:
 - "/**/Cake.Orchard.dll"
-Repository: https://github.com/RadioSystems/Cake.Orchard.git
-ProjectUrl: https://github.com/RadioSystems/Cake.Orchard/
+Repository: https://github.com/cake-contrib/Cake.Orchard.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Orchard/
 Author: Radio Systems
 Description: Cake AddIn to assist building Orchard projects.
 Categories:
