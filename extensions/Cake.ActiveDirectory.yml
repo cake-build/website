@@ -3,8 +3,8 @@ Name: Cake.ActiveDirectory
 NuGet: Cake.ActiveDirectory
 Assemblies:
 - "/**/Cake.ActiveDirectory.dll"
-Repository: https://github.com/RadioSystems/Cake.ActiveDirectory.git
-ProjectUrl: https://github.com/RadioSystems/Cake.ActiveDirectory/
+Repository: https://github.com/cake-contrib/Cake.ActiveDirectory.git
+ProjectUrl: https://github.com/cake-contrib/Cake.ActiveDirectory/
 Author: Radio Systems Corporation
 Description: Cake addin for working with Active Directory
 Categories:
