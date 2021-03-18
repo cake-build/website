@@ -3,8 +3,8 @@ Name: Cake.Talend
 NuGet: Cake.Talend
 Assemblies:
 - "/**/Cake.Talend.dll"
-Repository: https://github.com/RadioSystems/Cake.Talend.git
-ProjectUrl: https://github.com/RadioSystems/Cake.Talend/
+Repository: https://github.com/cake-contrib/Cake.Talend.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Talend/
 Author: Radio Systems Corporation
 Description: Cake Addin for working with Talend.
 Categories:
