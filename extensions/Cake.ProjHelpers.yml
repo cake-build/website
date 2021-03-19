@@ -10,8 +10,8 @@ Description: Cake AddIn to embed files into .proj files
 Categories:
 - resources
 - embed
-TargetCakeVersion: 0.28.0
+TargetCakeVersion: 0.33.0
 TargetFrameworks: []
-AnalyzedPackageVersion: 0.0.3
+AnalyzedPackageVersion: 0.0.4
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2018-06-06T08:19:35.2170000Z
+AnalyzedPackagePublishDate: 2021-03-18T17:07:25.3200000Z
