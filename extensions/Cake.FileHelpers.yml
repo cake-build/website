@@ -14,6 +14,6 @@ TargetFrameworks:
 - net5.0
 - net46
 - netstandard2.0
-AnalyzedPackageVersion: 4.0.0
+AnalyzedPackageVersion: 4.0.1
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-02-25T21:14:12.5900000Z
+AnalyzedPackagePublishDate: 2021-03-18T21:03:23.6430000Z
