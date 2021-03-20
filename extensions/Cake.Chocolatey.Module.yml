@@ -11,7 +11,7 @@ Categories:
 - tool-provider
 - chocolatey
 - module
-TargetCakeVersion:
+TargetCakeVersion: 
 TargetFrameworks:
 - netstandard2.0
 AnalyzedPackageVersion: 0.6.1
