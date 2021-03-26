@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Android.Adb
 NuGet: Cake.Android.Adb
 Assemblies:
-- "/**/Cake.Android.Adb.dll"
+- /**/Cake.Android.Adb.dll
 Repository: https://github.com/cake-contrib/Cake.Android.Adb.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Android.Adb/
 Author: Jonathan Dick

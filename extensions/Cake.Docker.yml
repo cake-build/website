@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Docker
 NuGet: Cake.Docker
 Assemblies:
-- "/**/Cake.Docker.dll"
+- /**/Cake.Docker.dll
 Repository: https://github.com/MihaMarkic/Cake.Docker.git
 ProjectUrl: https://github.com/MihaMarkic/Cake.Docker/
 Author: Miha Markič

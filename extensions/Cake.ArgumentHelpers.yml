@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.ArgumentHelpers
 NuGet: Cake.ArgumentHelpers
 Assemblies:
-- "/**/Cake.ArgumentHelpers.dll"
+- /**/Cake.ArgumentHelpers.dll
 Repository: https://github.com/cake-contrib/Cake.ArgumentHelpers.git
 ProjectUrl: https://github.com/cake-contrib/Cake.ArgumentHelpers/
 Author: Adam Patridge

@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Coveralls
 NuGet: Cake.Coveralls
 Assemblies:
-- "/**/Cake.Coveralls.dll"
+- /**/Cake.Coveralls.dll
 Repository: https://github.com/cake-contrib/Cake.Coveralls.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Coveralls/
 Author: Gary Ewan Park

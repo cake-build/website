@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.AppPackager
 NuGet: Cake.AppPackager
 Assemblies:
-- "/**/Cake.AppPackager.dll"
+- /**/Cake.AppPackager.dll
 Repository: https://github.com/cake-contrib/Cake.AppPackager.git
 ProjectUrl: https://github.com/cake-contrib/Cake.AppPackager/
 Author: Jamie Phillips

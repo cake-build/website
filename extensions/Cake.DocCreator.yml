@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.DocCreator
 NuGet: Cake.DocCreator
 Assemblies:
-- "/**/Cake.DocCreator.dll"
+- /**/Cake.DocCreator.dll
 Repository: 
 ProjectUrl: https://www.nuget.org/packages/Cake.DocCreator/
 Author: agc93

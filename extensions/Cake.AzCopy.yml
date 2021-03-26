@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.AzCopy
 NuGet: Cake.AzCopy
 Assemblies:
-- "/**/Cake.AzCopy.dll"
+- /**/Cake.AzCopy.dll
 Repository: https://github.com/agc93/Cake.AzCopy.git
 ProjectUrl: https://github.com/agc93/Cake.AzCopy/
 Author: Alistair Chapman

@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.AWS.S3
 NuGet: Cake.AWS.S3
 Assemblies:
-- "/**/Cake.AWS.S3.dll"
+- /**/Cake.AWS.S3.dll
 Repository: https://github.com/SharpeRAD/Cake.AWS.S3.git
 ProjectUrl: https://github.com/SharpeRAD/Cake.AWS.S3/
 Author: SharpeRAD

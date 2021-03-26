@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.CodeGen.NSwag
 NuGet: Cake.CodeGen.NSwag
 Assemblies:
-- "/**/Cake.CodeGen.NSwag.dll"
+- /**/Cake.CodeGen.NSwag.dll
 Repository: https://github.com/lukoerfer/cake-codegen-nswag.git
 ProjectUrl: https://github.com/lukoerfer/cake-codegen-nswag/
 Author: lukoerfer

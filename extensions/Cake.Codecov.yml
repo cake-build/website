@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Codecov
 NuGet: Cake.Codecov
 Assemblies:
-- "/**/Cake.Codecov.dll"
+- /**/Cake.Codecov.dll
 Repository: https://github.com/cake-contrib/Cake.Codecov.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Codecov/
 Author: Larz White
