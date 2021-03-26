@@ -1,0 +1,16 @@
+Type: Addin
+Name: Cake.ReportPortal
+NuGet: Cake.ReportPortal
+Assemblies:
+- /**/Cake.ReportPortal.dll
+Repository: 
+ProjectUrl: https://www.nuget.org/packages/Cake.ReportPortal/
+Author: Aleh Yanushkevich
+Description: Alias for merging RP launches
+Categories: []
+TargetCakeVersion: 0.32.1
+TargetFrameworks:
+- net46
+AnalyzedPackageVersion: 1.0.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-02-14T08:06:39.4770000Z

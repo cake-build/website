@@ -1,0 +1,16 @@
+Type: Addin
+Name: Cake.XunitDeviceTestReceiver
+NuGet: Cake.XunitDeviceTestReceiver
+Assemblies:
+- /**/Cake.XunitDeviceTestReceiver.dll
+Repository: 
+ProjectUrl: https://www.nuget.org/packages/Cake.XunitDeviceTestReceiver/
+Author: alexandrfadeev
+Description: Package Description
+Categories: []
+TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
+AnalyzedPackageVersion: 1.0.2
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-06-23T21:07:48.0100000Z

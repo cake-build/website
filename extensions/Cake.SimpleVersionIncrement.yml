@@ -1,0 +1,16 @@
+Type: Addin
+Name: Cake.SimpleVersionIncrement
+NuGet: Cake.SimpleVersionIncrement
+Assemblies:
+- /**/Cake.SimpleVersionIncrement.dll
+Repository: 
+ProjectUrl: https://www.nuget.org/packages/Cake.SimpleVersionIncrement/
+Author: David Lavender
+Description: Description
+Categories: []
+TargetCakeVersion: 0.26.0
+TargetFrameworks:
+- net46
+AnalyzedPackageVersion: 1.0.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2018-02-27T11:39:55.5630000Z

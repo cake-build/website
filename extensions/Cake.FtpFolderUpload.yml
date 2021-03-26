@@ -1,0 +1,16 @@
+Type: Addin
+Name: Cake.FtpFolderUpload
+NuGet: Cake.FtpFolderUpload
+Assemblies:
+- /**/Cake.FtpFolderUpload.dll
+Repository: https://github.com/cake-contrib/cake-ftpfolderupload.git
+ProjectUrl: https://www.nuget.org/packages/Cake.FtpFolderUpload/
+Author: Jeppe Roi Kristensen
+Description: This is a cake add in for publishing a folder and it's content to a ftp server
+Categories: []
+TargetCakeVersion: 0.37.0
+TargetFrameworks:
+- netstandard2.0
+AnalyzedPackageVersion: 0.1.2
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-02-17T22:56:35.4430000Z

@@ -1,0 +1,16 @@
+Type: Addin
+Name: Cake.Xrm.Spkl
+NuGet: Cake.Xrm.Spkl
+Assemblies:
+- /**/Cake.Xrm.Spkl.dll
+Repository: 
+ProjectUrl: https://www.nuget.org/packages/Cake.Xrm.Spkl/
+Author: Max Ewing
+Description: Spkl addin for Cake.
+Categories: []
+TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net461
+AnalyzedPackageVersion: 0.2.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-02-17T14:34:10.4370000Z

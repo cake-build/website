@@ -1,0 +1,16 @@
+Type: Addin
+Name: Cake.Addin3
+NuGet: Cake.Addin3
+Assemblies:
+- /**/Cake.Addin3.dll
+Repository: 
+ProjectUrl: https://www.nuget.org/packages/Cake.Addin3/
+Author: Daryl
+Description: TestPackage
+Categories: []
+TargetCakeVersion: 0.37.0
+TargetFrameworks:
+- net48
+AnalyzedPackageVersion: 1.0.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-04-20T09:46:10.8730000Z
