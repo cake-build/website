@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.igloo15.MarkdownDocument
 NuGet: Cake.igloo15.MarkdownDocument
 Assemblies:
-- "/**/Cake.igloo15.MarkdownDocument.dll"
+- /**/Cake.igloo15.MarkdownDocument.dll
 Repository: https://github.com/igloo15/Cake.igloo15.git
 ProjectUrl: https://github.com/igloo15/Cake.igloo15/
 Author: igloo15

@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.ImageOptimizer
 NuGet: Cake.ImageOptimizer
 Assemblies:
-- "/**/Cake.ImageOptimizer.dll"
+- /**/Cake.ImageOptimizer.dll
 Repository: https://github.com/SharpeRAD/Cake.ImageOptimizer.git
 ProjectUrl: https://github.com/SharpeRAD/Cake.ImageOptimizer/
 Author: SharpeRAD

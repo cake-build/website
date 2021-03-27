@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Incubator
 NuGet: Cake.Incubator
 Assemblies:
-- "/**/Cake.Incubator.dll"
+- /**/Cake.Incubator.dll
 Repository: https://github.com/cake-contrib/Cake.Incubator.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Incubator/
 Author: Scott Mackay

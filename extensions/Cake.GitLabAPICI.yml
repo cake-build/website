@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.GitLabAPICI
 NuGet: Cake.GitLabAPICI
 Assemblies:
-- "/**/Cake.GitLabAPICI.dll"
+- /**/Cake.GitLabAPICI.dll
 Repository: https://github.com/absolutebandit/Cake.GitLabAPICI.git
 ProjectUrl: https://github.com/absolutebandit/Cake.GitLabAPICI/
 Author: absolutebandit

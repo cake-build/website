@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Json
 NuGet: Cake.Json
 Assemblies:
-- "/**/Cake.Json.dll"
+- /**/Cake.Json.dll
 Repository: https://github.com/cake-contrib/Cake.Json.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Json/
 Author: Jonathan Dick

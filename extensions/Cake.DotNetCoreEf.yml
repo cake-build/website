@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.DotNetCoreEf
 NuGet: Cake.DotNetCoreEf
 Assemblies:
-- "/**/Cake.DotNetCoreEf.dll"
+- /**/Cake.DotNetCoreEf.dll
 Repository: https://github.com/cake-contrib/Cake.DotNetCoreEf.git
 ProjectUrl: https://github.com/cake-contrib/Cake.DotNetCoreEf/
 Author: mvput

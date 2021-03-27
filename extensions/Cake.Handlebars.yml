@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Handlebars
 NuGet: Cake.Handlebars
 Assemblies:
-- "/**/Cake.Handlebars.dll"
+- /**/Cake.Handlebars.dll
 Repository: https://github.com/agc93/Cake.Handlebars.git
 ProjectUrl: https://github.com/agc93/Cake.Handlebars/
 Author: Alistair Chapman

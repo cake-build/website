@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.EntityFrameworkCore
 NuGet: Cake.EntityFrameworkCore
 Assemblies:
-- "/**/Cake.EntityFrameworkCore.dll"
+- /**/Cake.EntityFrameworkCore.dll
 Repository: https://github.com/cake-contrib/Cake.EntityFrameworkCore.git
 ProjectUrl: https://github.com/cake-contrib/Cake.EntityFrameworkCore/
 Author: louisfischer

@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Ftp
 NuGet: Cake.Ftp
 Assemblies:
-- "/**/Cake.Ftp.dll"
+- /**/Cake.Ftp.dll
 Repository: https://github.com/cake-contrib/Cake.Ftp.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Ftp/
 Author: Jamie Phillips

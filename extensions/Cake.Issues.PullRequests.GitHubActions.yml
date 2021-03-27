@@ -2,15 +2,18 @@ Type: Addin
 Name: Cake.Issues.PullRequests.GitHubActions
 NuGet: Cake.Issues.PullRequests.GitHubActions
 Assemblies:
-- "/**/Cake.Issues.PullRequests.GitHubActions.dll"
+- /**/Cake.Issues.PullRequests.GitHubActions.dll
 Repository: https://github.com/cake-contrib/Cake.Issues.PullRequests.GitHubActions.git
 ProjectUrl: https://cakeissues.net/
 Author: Pascal Berger
-Description: |-
+Description: >-
   GitHub Actions support for the Cake.Issues addin allows you to report to GitHub Actions builds.
 
+
   This addin provides the aliases for writing to GitHub Actions builds.
+
   It also requires the core Cake.Issues and Cake.Issues.PullRequests addins and one or more issue providers.
+
 
   See cakeissues.net for an overview of the whole ecosystem of addins for working with issues in Cake scripts.
 Categories:

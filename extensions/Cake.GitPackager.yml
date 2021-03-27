@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.GitPackager
 NuGet: Cake.GitPackager
 Assemblies:
-- "/**/Cake.GitPackager.dll"
+- /**/Cake.GitPackager.dll
 Repository: https://github.com/ilich/Cake.GitPackager.git
 ProjectUrl: https://github.com/ilich/Cake.GitPackager/
 Author: Ilya Verbitskiy

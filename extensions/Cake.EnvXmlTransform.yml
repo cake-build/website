@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.EnvXmlTransform
 NuGet: Cake.EnvXmlTransform
 Assemblies:
-- "/**/Cake.EnvXmlTransform.dll"
+- /**/Cake.EnvXmlTransform.dll
 Repository: https://github.com/nengberg/cake-envxmltransform.git
 ProjectUrl: https://github.com/nengberg/cake-envxmltransform/
 Author: Niklas Engberg

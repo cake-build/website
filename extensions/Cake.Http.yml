@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Http
 NuGet: Cake.Http
 Assemblies:
-- "/**/Cake.Http.dll"
+- /**/Cake.Http.dll
 Repository: https://github.com/cake-contrib/Cake.Http.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Http/
 Author: Louis Fischer

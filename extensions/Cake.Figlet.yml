@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Figlet
 NuGet: Cake.Figlet
 Assemblies:
-- "/**/Cake.Figlet.dll"
+- /**/Cake.Figlet.dll
 Repository: https://github.com/cake-contrib/Cake.Figlet.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Figlet/
 Author: Phil Scott
