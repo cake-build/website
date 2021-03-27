@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.AppVeyor
 NuGet: Cake.AppVeyor
 Assemblies:
-- "/**/Cake.AppVeyor.dll"
+- /**/Cake.AppVeyor.dll
 Repository: https://github.com/cake-contrib/Cake.AppVeyor.git
 ProjectUrl: https://github.com/cake-contrib/Cake.AppVeyor/
 Author: Jonathan Dick

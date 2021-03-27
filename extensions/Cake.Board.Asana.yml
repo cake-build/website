@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Board.Asana
 NuGet: Cake.Board.Asana
 Assemblies:
-- "/**/Cake.Board.Asana.dll"
+- /**/Cake.Board.Asana.dll
 Repository: https://github.com/cake-contrib/Cake.Board.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Board/
 Author: Nicola Biancolini

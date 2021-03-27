@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Boots
 NuGet: Cake.Boots
 Assemblies:
-- "/**/Cake.Boots.dll"
+- /**/Cake.Boots.dll
 Repository: https://github.com/jonathanpeppers/boots.git
 ProjectUrl: https://github.com/jonathanpeppers/boots/
 Author: jonathanpeppers

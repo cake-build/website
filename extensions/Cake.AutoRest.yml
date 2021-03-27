@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.AutoRest
 NuGet: Cake.AutoRest
 Assemblies:
-- "/**/Cake.AutoRest.dll"
+- /**/Cake.AutoRest.dll
 Repository: https://github.com/agc93/Cake.AutoRest.git
 ProjectUrl: https://github.com/agc93/Cake.AutoRest/
 Author: Alistair Chapman

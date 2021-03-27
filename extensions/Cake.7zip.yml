@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.7zip
 NuGet: Cake.7zip
 Assemblies:
-- "/**/Cake.7zip.dll"
+- /**/Cake.7zip.dll
 Repository: https://github.com/cake-contrib/Cake.7zip.git
 ProjectUrl: https://cake-contrib.github.io/Cake.7zip/
 Author: nils-a

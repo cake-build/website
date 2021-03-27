@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.CsvHelper
 NuGet: Cake.CsvHelper
 Assemblies:
-- "/**/Cake.CsvHelper.dll"
+- /**/Cake.CsvHelper.dll
 Repository: https://github.com/cake-contrib/Cake.CsvHelper.git
 ProjectUrl: https://github.com/cake-contrib/Cake.CsvHelper/
 Author: Radio Systems Corporation

@@ -1,0 +1,19 @@
+Type: Addin
+Name: Cake.SitecoreCodegen
+NuGet: Cake.SitecoreCodegen
+Assemblies:
+- /**/Cake.SitecoreCodegen.dll
+Repository: https://github.com/fpodshivadlov/SitecoreCodeGen.git
+ProjectUrl: https://www.nuget.org/packages/Cake.SitecoreCodegen/
+Author: fpodshivadlov
+Description: Cake Addin for Sitecore code generation
+Categories:
+- sitecore
+- codegeneration
+- helix
+TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- net46
+AnalyzedPackageVersion: 0.1.45-alpha
+AnalyzedPackageIsPrerelease: true
+AnalyzedPackagePublishDate: 2019-07-30T12:01:46.0200000Z

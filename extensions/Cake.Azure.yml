@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Azure
 NuGet: Cake.Azure
 Assemblies:
-- "/**/Cake.Azure.dll"
+- /**/Cake.Azure.dll
 Repository: https://github.com/cake-contrib/Cake.Azure.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Azure/
 Author: DixonDs

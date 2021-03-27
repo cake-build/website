@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Board.AzureBoards
 NuGet: Cake.Board.AzureBoards
 Assemblies:
-- "/**/Cake.Board.AzureBoards.dll"
+- /**/Cake.Board.AzureBoards.dll
 Repository: https://github.com/binick/Cake.Board.git
 ProjectUrl: https://github.com/binick/Cake.Board/
 Author: Nicola Biancolini
