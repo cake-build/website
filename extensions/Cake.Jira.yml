@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Jira
 NuGet: Cake.Jira
 Assemblies:
-- "/**/Cake.Jira.dll"
+- /**/Cake.Jira.dll
 Repository: https://github.com/cake-contrib/Cake.Jira.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Jira/
 Author: Hugo Tavares

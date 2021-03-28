@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Homebrew
 NuGet: Cake.Homebrew
 Assemblies:
-- "/**/Cake.Homebrew.dll"
+- /**/Cake.Homebrew.dll
 Repository: https://github.com/cake-contrib/Cake.Homebrew.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Homebrew/
 Author: Rodney Littles II

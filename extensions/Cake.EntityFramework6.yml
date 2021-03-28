@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.EntityFramework6
 NuGet: Cake.EntityFramework6
 Assemblies:
-- "/**/Cake.EntityFramework6.dll"
+- /**/Cake.EntityFramework6.dll
 Repository: https://github.com/cake-contrib/Cake.EntityFramework6.git
 ProjectUrl: https://www.nuget.org/packages/Cake.EntityFramework6/
 Author: louisfischer, Cake-Contrib

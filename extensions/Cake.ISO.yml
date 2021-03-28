@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.ISO
 NuGet: Cake.ISO
 Assemblies:
-- "/**/Cake.ISO.dll"
+- /**/Cake.ISO.dll
 Repository: https://github.com/cake-contrib/Cake.ISO.git
 ProjectUrl: https://github.com/cake-contrib/Cake.ISO/
 Author: Austin Parker

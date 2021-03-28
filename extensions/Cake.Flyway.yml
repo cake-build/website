@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Flyway
 NuGet: Cake.Flyway
 Assemblies:
-- "/**/Cake.Flyway.dll"
+- /**/Cake.Flyway.dll
 Repository: https://github.com/buthomas/Cake.Flyway.git
 ProjectUrl: https://github.com/buthomas/Cake.Flyway/
 Author: Thomas Burgener

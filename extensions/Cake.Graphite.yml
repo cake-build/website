@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Graphite
 NuGet: Cake.Graphite
 Assemblies:
-- "/**/Cake.Graphite.dll"
+- /**/Cake.Graphite.dll
 Repository: https://github.com/cake-contrib/Cake.Graphite.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Graphite/
 Author: Nicolai Brogaard

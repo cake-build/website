@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Endpoint
 NuGet: Cake.Endpoint
 Assemblies:
-- "/**/Cake.Endpoint.dll"
+- /**/Cake.Endpoint.dll
 Repository: https://github.com/cake-contrib/Cake.Endpoint.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Endpoint/
 Author: engelbert-strauss GmbH & Co. KG

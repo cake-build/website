@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.igloo15.MarkdownApi
 NuGet: Cake.igloo15.MarkdownApi
 Assemblies:
-- "/**/Cake.igloo15.MarkdownApi.dll"
+- /**/Cake.igloo15.MarkdownApi.dll
 Repository: https://github.com/igloo15/Cake.igloo15.git
 ProjectUrl: https://github.com/igloo15/Cake.igloo15/
 Author: igloo15

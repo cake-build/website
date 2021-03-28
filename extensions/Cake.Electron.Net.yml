@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Electron.Net
 NuGet: Cake.Electron.Net
 Assemblies:
-- "/**/Cake.Electron.Net.dll"
+- /**/Cake.Electron.Net.dll
 Repository: https://github.com/Blind-Striker/Cake.Electron.Net.git
 ProjectUrl: https://github.com/Blind-Striker/Cake.Electron.Net/
 Author: Deniz İrgin

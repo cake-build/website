@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.DoInDirectory
 NuGet: Cake.DoInDirectory
 Assemblies:
-- "/**/Cake.DoInDirectory.dll"
+- /**/Cake.DoInDirectory.dll
 Repository: https://github.com/cake-contrib/Cake.DoInDirectory.git
 ProjectUrl: https://github.com/cake-contrib/Cake.DoInDirectory/
 Author: pitermarx

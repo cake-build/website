@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Gerrit
 NuGet: Cake.Gerrit
 Assemblies:
-- "/**/Cake.Gerrit.dll"
+- /**/Cake.Gerrit.dll
 Repository: https://github.com/rhtnr/Cake.Gerrit.git
 ProjectUrl: https://github.com/rhtnr/Cake.Gerrit/
 Author: rhtnr

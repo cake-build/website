@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.IIS
 NuGet: Cake.IIS
 Assemblies:
-- "/**/Cake.IIS.dll"
+- /**/Cake.IIS.dll
 Repository: https://github.com/SharpeRAD/Cake.IIS.git
 ProjectUrl: https://github.com/SharpeRAD/Cake.IIS/
 Author: SharpeRAD

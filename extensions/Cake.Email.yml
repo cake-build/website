@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Email
 NuGet: Cake.Email
 Assemblies:
-- "/**/Cake.Email.dll"
+- /**/Cake.Email.dll
 Repository: https://github.com/cake-contrib/Cake.Email.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Email/
 Author: jericho

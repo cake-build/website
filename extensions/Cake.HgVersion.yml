@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.HgVersion
 NuGet: Cake.HgVersion
 Assemblies:
-- "/**/Cake.HgVersion.dll"
+- /**/Cake.HgVersion.dll
 Repository: https://github.com/cake-contrib/Cake.HgVersion.git
 ProjectUrl: https://github.com/cake-contrib/Cake.HgVersion/
 Author: vCipher

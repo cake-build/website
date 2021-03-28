@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.FtpDeploy
 NuGet: Cake.FtpDeploy
 Assemblies:
-- "/**/Cake.FtpDeploy.dll"
+- /**/Cake.FtpDeploy.dll
 Repository: 
 ProjectUrl: https://www.nuget.org/packages/Cake.FtpDeploy/
 Author: Christopher Pink
