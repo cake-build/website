@@ -6,7 +6,7 @@ Assemblies:
 Repository: https://github.com/cake-contrib/Cake.UrlLoadDirective.Module.git
 ProjectUrl: https://github.com/cake-contrib/Cake.UrlLoadDirective.Module/
 Author: Redth
-Description: Cake module for supporting downloading files from url's in the
+Description: "Cake module for supporting downloading files from url's in the #load directive."
 Categories:
 - module
 TargetCakeVersion: 
