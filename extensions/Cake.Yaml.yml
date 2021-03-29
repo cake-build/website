@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Yaml
 NuGet: Cake.Yaml
 Assemblies:
-- "/**/Cake.Yaml.dll"
+- /**/Cake.Yaml.dll
 Repository: https://github.com/cake-contrib/Cake.Yaml.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Yaml/
 Author: Jonathan Dick

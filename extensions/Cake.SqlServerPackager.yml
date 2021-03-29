@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.SqlServerPackager
 NuGet: Cake.SqlServerPackager
 Assemblies:
-- "/**/Cake.SqlServerPackager.dll"
+- /**/Cake.SqlServerPackager.dll
 Repository: https://github.com/ilich/Cake.SqlServerPackager.git
 ProjectUrl: https://github.com/ilich/Cake.SqlServerPackager/
 Author: Ilya Verbitskiy

@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.SqlServer
 NuGet: Cake.SqlServer
 Assemblies:
-- "/**/Cake.SqlServer.dll"
+- /**/Cake.SqlServer.dll
 Repository: https://github.com/AMVSoftware/Cake.SqlServer.git
 ProjectUrl: https://github.com/AMVSoftware/Cake.SqlServer/
 Author: Max Vasilyev

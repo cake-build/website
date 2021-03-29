@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.UncUtils
 NuGet: Cake.UncUtils
 Assemblies:
-- "/**/Cake.UncUtils.dll"
+- /**/Cake.UncUtils.dll
 Repository: https://github.com/kolletzki/Cake.UncUtils.git
 ProjectUrl: https://github.com/kolletzki/Cake.UncUtils/
 Author: kolletzki

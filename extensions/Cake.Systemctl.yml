@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Systemctl
 NuGet: Cake.Systemctl
 Assemblies:
-- "/**/Cake.Systemctl.dll"
+- /**/Cake.Systemctl.dll
 Repository: https://github.com/vhatsura/Cake.Systemctl.git
 ProjectUrl: https://github.com/vhatsura/Cake.Systemctl/
 Author: Vadim Hatsura

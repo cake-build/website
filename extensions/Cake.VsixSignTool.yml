@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.VsixSignTool
 NuGet: Cake.VsixSignTool
 Assemblies:
-- "/**/Cake.VsixSignTool.dll"
+- /**/Cake.VsixSignTool.dll
 Repository: https://github.com/MihaMarkic/Cake.VsixSignTool.git
 ProjectUrl: https://github.com/MihaMarkic/Cake.VsixSignTool/
 Author: Miha Markiè

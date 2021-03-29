@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.XmlDoc.Checker
 NuGet: Cake.XmlDoc.Checker
 Assemblies:
-- "/**/Cake.XmlDoc.Checker.dll"
+- /**/Cake.XmlDoc.Checker.dll
 Repository: https://github.com/dotnetaddicted/cake-xmldoc-checker.git
 ProjectUrl: https://github.com/dotnetaddicted/cake-xmldoc-checker/
 Author: dotnetaddicted

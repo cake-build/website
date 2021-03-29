@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Unicorn
 NuGet: Cake.Unicorn
 Assemblies:
-- "/**/Cake.Unicorn.dll"
+- /**/Cake.Unicorn.dll
 Repository: 
 ProjectUrl: https://www.nuget.org/packages/Cake.Unicorn/
 Author: George Chang

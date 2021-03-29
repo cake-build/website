@@ -2,16 +2,16 @@ Type: Addin
 Name: Cake.Wget
 NuGet: Cake.Wget
 Assemblies:
-- "/**/Cake.Wget.dll"
+- /**/Cake.Wget.dll
 Repository: https://github.com/cake-contrib/Cake.Wget.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Wget/
 Author: deqenq
 Description: Cake.Wget is a cross-platform add-in for Cake build automation system which encapsulates Wget tool.
 Categories:
 - wget
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 1.0.0
+AnalyzedPackageVersion: 1.1.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2019-06-22T19:19:34.2600000Z
+AnalyzedPackagePublishDate: 2021-03-28T19:10:27.7300000Z

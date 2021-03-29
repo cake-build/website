@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.UServer
 NuGet: Cake.UServer
 Assemblies:
-- "/**/Cake.UServer.dll"
+- /**/Cake.UServer.dll
 Repository: https://github.com/wk-j/cake-u-server.git
 ProjectUrl: https://github.com/wk-j/cake-u-server/
 Author: cake-addin

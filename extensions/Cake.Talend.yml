@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Talend
 NuGet: Cake.Talend
 Assemblies:
-- "/**/Cake.Talend.dll"
+- /**/Cake.Talend.dll
 Repository: https://github.com/cake-contrib/Cake.Talend.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Talend/
 Author: Radio Systems Corporation

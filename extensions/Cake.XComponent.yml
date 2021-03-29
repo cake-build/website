@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.XComponent
 NuGet: Cake.XComponent
 Assemblies:
-- "/**/Cake.XComponent.dll"
+- /**/Cake.XComponent.dll
 Repository: https://github.com/xcomponent/Cake.XComponent.git
 ProjectUrl: https://github.com/xcomponent/Cake.XComponent/
 Author: XComponent Team

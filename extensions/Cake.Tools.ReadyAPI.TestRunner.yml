@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Tools.ReadyAPI.TestRunner
 NuGet: Cake.Tools.ReadyAPI.TestRunner
 Assemblies:
-- "/**/Cake.Tools.ReadyAPI.TestRunner.dll"
+- /**/Cake.Tools.ReadyAPI.TestRunner.dll
 Repository: https://github.com/waxtell/Cake.Tools.ReadyAPI.TestRunner.git
 ProjectUrl: https://github.com/waxtell/Cake.Tools.ReadyAPI.TestRunner/
 Author: waxtell

@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.WindowsAppStore
 NuGet: Cake.WindowsAppStore
 Assemblies:
-- "/**/Cake.WindowsAppStore.dll"
+- /**/Cake.WindowsAppStore.dll
 Repository: https://github.com/cake-contrib/Cake.WindowsAppStore.git
 ProjectUrl: https://github.com/cake-contrib/Cake.WindowsAppStore/
 Author: Geert van Horrik, Cake Contributors

@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.XmlConfigStructureBuilder
 NuGet: Cake.XmlConfigStructureBuilder
 Assemblies:
-- "/**/Cake.XmlConfigStructureBuilder.dll"
+- /**/Cake.XmlConfigStructureBuilder.dll
 Repository: https://github.com/graph-uk/Cake.XmlConfigStructureBuilder.git
 ProjectUrl: https://github.com/graph-uk/Cake.XmlConfigStructureBuilder/
 Author: BggClr

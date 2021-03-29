@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.SqlTools
 NuGet: Cake.SqlTools
 Assemblies:
-- "/**/Cake.SqlTools.dll"
+- /**/Cake.SqlTools.dll
 Repository: https://github.com/SharpeRAD/Cake.SqlTools.git
 ProjectUrl: https://github.com/SharpeRAD/Cake.SqlTools/
 Author: SharpeRAD

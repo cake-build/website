@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Tfs.AutoMerge
 NuGet: Cake.Tfs.AutoMerge
 Assemblies:
-- "/**/Cake.Tfs.AutoMerge.dll"
+- /**/Cake.Tfs.AutoMerge.dll
 Repository: https://github.com/mabreuortega/Cake.Tfs.git
 ProjectUrl: https://github.com/mabreuortega/Cake.Tfs/
 Author: mabreu

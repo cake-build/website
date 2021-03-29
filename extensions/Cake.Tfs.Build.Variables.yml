@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Tfs.Build.Variables
 NuGet: Cake.Tfs.Build.Variables
 Assemblies:
-- "/**/Cake.Tfs.Build.Variables.dll"
+- /**/Cake.Tfs.Build.Variables.dll
 Repository: https://github.com/Kemyke/Cake.Tfs.Build.Variables.git
 ProjectUrl: https://github.com/Kemyke/Cake.Tfs.Build.Variables/
 Author: Attila Kemeny

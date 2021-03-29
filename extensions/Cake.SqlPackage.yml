@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.SqlPackage
 NuGet: Cake.SqlPackage
 Assemblies:
-- "/**/Cake.SqlPackage.dll"
+- /**/Cake.SqlPackage.dll
 Repository: https://github.com/cake-contrib/Cake.SqlPackage.git
 ProjectUrl: https://github.com/cake-contrib/Cake.SqlPackage/
 Author: Rodney Littles II

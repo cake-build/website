@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Yarn
 NuGet: Cake.Yarn
 Assemblies:
-- "/**/Cake.Yarn.dll"
+- /**/Cake.Yarn.dll
 Repository: https://github.com/MilovanovM/cake-yarn.git
 ProjectUrl: https://github.com/MilovanovM/cake-yarn/
 Author: Maxim Milovanov

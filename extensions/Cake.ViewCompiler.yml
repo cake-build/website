@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.ViewCompiler
 NuGet: Cake.ViewCompiler
 Assemblies:
-- "/**/Cake.ViewCompiler.dll"
+- /**/Cake.ViewCompiler.dll
 Repository: https://github.com/agc93/Cake.ViewCompiler.git
 ProjectUrl: https://github.com/agc93/Cake.ViewCompiler/
 Author: agc93

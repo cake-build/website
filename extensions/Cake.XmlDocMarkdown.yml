@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.XmlDocMarkdown
 NuGet: Cake.XmlDocMarkdown
 Assemblies:
-- "/**/Cake.XmlDocMarkdown.dll"
+- /**/Cake.XmlDocMarkdown.dll
 Repository: https://github.com/ejball/XmlDocMarkdown.git
 ProjectUrl: https://ejball.com/XmlDocMarkdown
 Author: Ed Ball

@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.WinSCP
 NuGet: Cake.WinSCP
 Assemblies:
-- "/**/Cake.WinSCP.dll"
+- /**/Cake.WinSCP.dll
 Repository: https://github.com/cake-contrib/Cake.WinSCP.git
 ProjectUrl: https://github.com/cake-contrib/Cake.WinSCP/
 Author: Ilya Verbitskiy

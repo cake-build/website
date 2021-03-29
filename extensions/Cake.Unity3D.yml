@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Unity3D
 NuGet: Cake.Unity3D
 Assemblies:
-- "/**/Cake.Unity3D.dll"
+- /**/Cake.Unity3D.dll
 Repository: https://github.com/samoatesgames/Cake.Unity3D.git
 ProjectUrl: https://github.com/samoatesgames/Cake.Unity3D/
 Author: Sam Oates

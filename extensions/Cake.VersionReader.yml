@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.VersionReader
 NuGet: Cake.VersionReader
 Assemblies:
-- "/**/Cake.VersionReader.dll"
+- /**/Cake.VersionReader.dll
 Repository: https://github.com/NinetailLabs/Cake.VersionReader.git
 ProjectUrl: https://github.com/NinetailLabs/Cake.VersionReader/
 Author: NineTail Labs
