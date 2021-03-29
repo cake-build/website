@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.OctoDeploy
 NuGet: Cake.OctoDeploy
 Assemblies:
-- "/**/Cake.OctoDeploy.dll"
+- /**/Cake.OctoDeploy.dll
 Repository: https://github.com/NinetailLabs/Cake.OctoDeploy.git
 ProjectUrl: https://github.com/NinetailLabs/Cake.OctoDeploy/
 Author: NineTail Labs

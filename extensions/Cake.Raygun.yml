@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Raygun
 NuGet: Cake.Raygun
 Assemblies:
-- "/**/Cake.Raygun.dll"
+- /**/Cake.Raygun.dll
 Repository: https://github.com/cake-contrib/Cake.Raygun.git
 ProjectUrl: https://ghuntley.com/
 Author: Geoffrey Huntley

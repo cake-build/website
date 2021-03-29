@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.KeePass
 NuGet: Cake.KeePass
 Assemblies:
-- "/**/Cake.KeePass.dll"
+- /**/Cake.KeePass.dll
 Repository: https://github.com/Ashthos/Cake.KeePass.git
 ProjectUrl: https://github.com/Ashthos/Cake.KeePass/
 Author: Ash Beeson

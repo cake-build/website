@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Netlify
 NuGet: Cake.Netlify
 Assemblies:
-- "/**/Cake.Netlify.dll"
+- /**/Cake.Netlify.dll
 Repository: https://github.com/cake-contrib/Cake.Netlify.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Netlify/
 Author: Jamie Phillips

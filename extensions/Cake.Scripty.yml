@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Scripty
 NuGet: Cake.Scripty
 Assemblies:
-- "/**/Cake.Scripty.dll"
+- /**/Cake.Scripty.dll
 Repository: https://github.com/daveaglick/Scripty.git
 ProjectUrl: https://github.com/daveaglick/Scripty/
 Author: Dave Glick

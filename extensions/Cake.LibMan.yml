@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.LibMan
 NuGet: Cake.LibMan
 Assemblies:
-- "/**/Cake.LibMan.dll"
+- /**/Cake.LibMan.dll
 Repository: https://github.com/cake-contrib/Cake.LibMan.git
 ProjectUrl: https://www.nuget.org/packages/Cake.LibMan/
 Author: louisfischer, Cake-Contrib

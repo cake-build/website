@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.SonarResults
 NuGet: Cake.SonarResults
 Assemblies:
-- "/**/Cake.SonarResults.dll"
+- /**/Cake.SonarResults.dll
 Repository: https://github.com/rhtnr/Cake.SonarResults.git
 ProjectUrl: https://github.com/rhtnr/Cake.SonarResults/
 Author: rhtnr

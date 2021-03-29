@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.PathTildeHelper
 NuGet: Cake.PathTildeHelper
 Assemblies:
-- "/**/Cake.PathTildeHelper.dll"
+- /**/Cake.PathTildeHelper.dll
 Repository: https://github.com/cake-contrib/Cake.PathTildeHelper.git
 ProjectUrl: https://github.com/cake-contrib/Cake.PathTildeHelper/
 Author: Adam Patridge

@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.PickAndRoll
 NuGet: Cake.PickAndRoll
 Assemblies:
-- "/**/Cake.PickAndRoll.dll"
+- /**/Cake.PickAndRoll.dll
 Repository: https://github.com/jincod/PickAndRoll.git
 ProjectUrl: https://github.com/jincod/PickAndRoll/
 Author: jincod

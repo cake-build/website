@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Slack
 NuGet: Cake.Slack
 Assemblies:
-- "/**/Cake.Slack.dll"
+- /**/Cake.Slack.dll
 Repository: https://github.com/cake-contrib/Cake.Slack.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Slack/
 Author: WCOMAB
