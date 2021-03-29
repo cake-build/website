@@ -2,7 +2,7 @@ Type: Module
 Name: Cake.LongPath.Module
 NuGet: Cake.LongPath.Module
 Assemblies:
-- "/**/*.dll"
+- /**/*.dll
 Repository: https://github.com/cake-contrib/Cake.LongPath.Module.git
 ProjectUrl: https://cakebuild.net/extensions/cake-longpath-module
 Author: Mattias Karlsson

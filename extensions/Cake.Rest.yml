@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Rest
 NuGet: Cake.Rest
 Assemblies:
-- "/**/Cake.Rest.dll"
+- /**/Cake.Rest.dll
 Repository: https://github.com/cake-contrib/Cake.Rest.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Rest/
 Author: hadi77ir

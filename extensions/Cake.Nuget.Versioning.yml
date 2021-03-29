@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Nuget.Versioning
 NuGet: Cake.Nuget.Versioning
 Assemblies:
-- "/**/Cake.Nuget.Versioning.dll"
+- /**/Cake.Nuget.Versioning.dll
 Repository: https://github.com/Kemyke/Cake.Nuget.Versioning.git
 ProjectUrl: https://github.com/Kemyke/Cake.Nuget.Versioning/
 Author: Attila Kemeny

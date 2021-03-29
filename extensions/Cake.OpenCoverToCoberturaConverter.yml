@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.OpenCoverToCoberturaConverter
 NuGet: Cake.OpenCoverToCoberturaConverter
 Assemblies:
-- "/**/Cake.OpenCoverToCoberturaConverter.dll"
+- /**/Cake.OpenCoverToCoberturaConverter.dll
 Repository: https://github.com/charlessolar/Cake.OpenCoverToCoberturaConverter.git
 ProjectUrl: https://github.com/charlessolar/Cake.OpenCoverToCoberturaConverter/
 Author: Charles Solar

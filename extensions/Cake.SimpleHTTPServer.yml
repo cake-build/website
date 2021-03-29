@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.SimpleHTTPServer
 NuGet: Cake.SimpleHTTPServer
 Assemblies:
-- "/**/Cake.SimpleHTTPServer.dll"
+- /**/Cake.SimpleHTTPServer.dll
 Repository: https://github.com/wk-j/cake-server.git
 ProjectUrl: https://github.com/wk-j/cake-server/
 Author: cake-addin

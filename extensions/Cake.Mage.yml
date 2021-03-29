@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Mage
 NuGet: Cake.Mage
 Assemblies:
-- "/**/Cake.Mage.dll"
+- /**/Cake.Mage.dll
 Repository: https://github.com/cake-contrib/Cake.Mage.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Mage/
 Author: Phil Scott

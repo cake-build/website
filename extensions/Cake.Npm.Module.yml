@@ -2,7 +2,7 @@ Type: Module
 Name: Cake.Npm.Module
 NuGet: Cake.Npm.Module
 Assemblies:
-- "/**/*.dll"
+- /**/*.dll
 Repository: https://github.com/cake-contrib/Cake.Npm.Module.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Npm.Module/
 Author: Alistair Chapman

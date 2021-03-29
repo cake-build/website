@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Liquibase
 NuGet: Cake.Liquibase
 Assemblies:
-- "/**/Cake.Liquibase.dll"
+- /**/Cake.Liquibase.dll
 Repository: https://github.com/papauorg/Cake.Liquibase.git
 ProjectUrl: https://github.com/papauorg/Cake.Liquibase/
 Author: Philipp Grathwohl

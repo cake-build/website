@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.MarkdownToPdf
 NuGet: Cake.MarkdownToPdf
 Assemblies:
-- "/**/Cake.MarkdownToPdf.dll"
+- /**/Cake.MarkdownToPdf.dll
 Repository: https://github.com/twenzel/Cake.MarkdownToPdf.git
 ProjectUrl: https://github.com/twenzel/Cake.MarkdownToPdf/
 Author: Toni Wenzel

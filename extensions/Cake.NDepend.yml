@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.NDepend
 NuGet: Cake.NDepend
 Assemblies:
-- "/**/Cake.NDepend.dll"
+- /**/Cake.NDepend.dll
 Repository: https://github.com/cake-contrib/cake-ndepend.git
 ProjectUrl: https://github.com/cake-contrib/cake-ndepend/
 Author: João Rosa

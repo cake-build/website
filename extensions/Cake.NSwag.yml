@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.NSwag
 NuGet: Cake.NSwag
 Assemblies:
-- "/**/Cake.NSwag.dll"
+- /**/Cake.NSwag.dll
 Repository: https://github.com/cake-contrib/Cake.NSwag.git
 ProjectUrl: https://github.com/cake-contrib/Cake.NSwag/
 Author: Alistair Chapman

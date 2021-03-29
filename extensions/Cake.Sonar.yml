@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Sonar
 NuGet: Cake.Sonar
 Assemblies:
-- "/**/Cake.Sonar.dll"
+- /**/Cake.Sonar.dll
 Repository: https://github.com/AgileArchitect/Cake.Sonar.git
 ProjectUrl: https://github.com/AgileArchitect/Cake.Sonar/
 Author: Tom Staijen

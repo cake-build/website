@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.SimpleVersion
 NuGet: Cake.SimpleVersion
 Assemblies:
-- "/**/Cake.SimpleVersion.dll"
+- /**/Cake.SimpleVersion.dll
 Repository: https://github.com/Kieranties/SimpleVersion.git
 ProjectUrl: https://github.com/Kieranties/SimpleVersion/
 Author: Kieranties

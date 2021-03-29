@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.ResxConverter
 NuGet: Cake.ResxConverter
 Assemblies:
-- "/**/Cake.ResxConverter.dll"
+- /**/Cake.ResxConverter.dll
 Repository: https://github.com/cake-contrib/Cake.ResxConverter.git
 ProjectUrl: https://github.com/cake-contrib/Cake.ResxConverter/
 Author: jzeferino, Luís Gonçalves

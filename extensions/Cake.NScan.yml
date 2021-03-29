@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.NScan
 NuGet: Cake.NScan
 Assemblies:
-- "/**/Cake.NScan.dll"
+- /**/Cake.NScan.dll
 Repository: https://github.com/grzesiek-galezowski/nscan.git
 ProjectUrl: https://grzesiek-galezowski.github.io/nscan/
 Author: grzesiek-galezowski

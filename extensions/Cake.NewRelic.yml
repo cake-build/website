@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.NewRelic
 NuGet: Cake.NewRelic
 Assemblies:
-- "/**/Cake.NewRelic.dll"
+- /**/Cake.NewRelic.dll
 Repository: https://github.com/BMWilding/Cake.NewRelic.git
 ProjectUrl: https://github.com/BMWilding/Cake.NewRelic/
 Author: BMWilding

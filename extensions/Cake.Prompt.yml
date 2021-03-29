@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Prompt
 NuGet: Cake.Prompt
 Assemblies:
-- "/**/Cake.Prompt.dll"
+- /**/Cake.Prompt.dll
 Repository: https://github.com/cake-contrib/Cake.Prompt.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Prompt/
 Author: James Connor, Yves Schmid
