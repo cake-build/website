@@ -2,7 +2,7 @@ Type: Module
 Name: Cake.BuildSystems.Module
 NuGet: Cake.BuildSystems.Module
 Assemblies:
-- "/**/*.dll"
+- /**/*.dll
 Repository: https://github.com/cake-contrib/Cake.BuildSystems.Module.git
 ProjectUrl: https://github.com/cake-contrib/Cake.BuildSystems.Module/
 Author: Alistair Chapman

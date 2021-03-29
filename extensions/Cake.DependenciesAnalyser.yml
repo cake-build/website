@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.DependenciesAnalyser
 NuGet: Cake.DependenciesAnalyser
 Assemblies:
-- "/**/Cake.DependenciesAnalyser.dll"
+- /**/Cake.DependenciesAnalyser.dll
 Repository: https://github.com/joaoasrosa/dotnet-project-dependencies-analyser.git
 ProjectUrl: https://github.com/joaoasrosa/dotnet-project-dependencies-analyser/
 Author: João Rosa

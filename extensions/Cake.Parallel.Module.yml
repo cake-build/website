@@ -1,0 +1,16 @@
+Type: Module
+Name: Cake.Parallel.Module
+NuGet: Cake.Parallel.Module
+Assemblies:
+- /**/*.dll
+Repository: 
+ProjectUrl: https://www.nuget.org/packages/Cake.Parallel.Module/
+Author: Cake.Parallel.Module
+Description: Package Description
+Categories: []
+TargetCakeVersion: 
+TargetFrameworks:
+- netstandard2.0
+AnalyzedPackageVersion: 0.21.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2018-10-16T15:44:15.3800000Z

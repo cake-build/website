@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.BitDiffer
 NuGet: Cake.BitDiffer
 Assemblies:
-- "/**/Cake.BitDiffer.dll"
+- /**/Cake.BitDiffer.dll
 Repository: https://github.com/cake-contrib/Cake.BitDiffer.git
 ProjectUrl: https://github.com/cake-contrib/Cake.BitDiffer/
 Author: Eugen [WebDucer] Richter

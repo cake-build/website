@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.BrowserStack
 NuGet: Cake.BrowserStack
 Assemblies:
-- "/**/Cake.BrowserStack.dll"
+- /**/Cake.BrowserStack.dll
 Repository: https://github.com/cake-contrib/Cake.BrowserStack.git
 ProjectUrl: https://github.com/cake-contrib/Cake.BrowserStack/
 Author: dlbroadfoot

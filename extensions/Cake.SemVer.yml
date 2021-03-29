@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.SemVer
 NuGet: Cake.SemVer
 Assemblies:
-- "/**/Cake.SemVer.dll"
+- /**/Cake.SemVer.dll
 Repository: https://github.com/cake-contrib/Cake.SemVer.git
 ProjectUrl: https://github.com/cake-contrib/Cake.SemVer/
 Author: Jonathan Dick

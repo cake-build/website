@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.AWS.ElasticLoadBalancing
 NuGet: Cake.AWS.ElasticLoadBalancing
 Assemblies:
-- "/**/Cake.AWS.ElasticLoadBalancing.dll"
+- /**/Cake.AWS.ElasticLoadBalancing.dll
 Repository: https://github.com/SharpeRAD/Cake.AWS.ElasticLoadBalancing.git
 ProjectUrl: https://github.com/SharpeRAD/Cake.AWS.ElasticLoadBalancing/
 Author: SharpeRAD

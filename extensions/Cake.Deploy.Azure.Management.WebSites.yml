@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Deploy.Azure.Management.WebSites
 NuGet: Cake.Deploy.Azure.Management.WebSites
 Assemblies:
-- "/**/Cake.Deploy.Azure.Management.WebSites.dll"
+- /**/Cake.Deploy.Azure.Management.WebSites.dll
 Repository: https://github.com/ObjectivityLtd/Cake.Deploy.Azure.Management.WebSites.git
 ProjectUrl: https://github.com/ObjectivityLtd/Cake.Deploy.Azure.Management.WebSites/
 Author: ObjectivityLtd

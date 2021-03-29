@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Markdownlint
 NuGet: Cake.Markdownlint
 Assemblies:
-- "/**/Cake.Markdownlint.dll"
+- /**/Cake.Markdownlint.dll
 Repository: https://github.com/cake-contrib/Cake.Markdownlint.git
 ProjectUrl: https://cakebuild.net/extensions/cake-markdownlint/
 Author: BBT Software AG

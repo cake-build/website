@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Gradle
 NuGet: Cake.Gradle
 Assemblies:
-- "/**/Cake.Gradle.dll"
+- /**/Cake.Gradle.dll
 Repository: https://github.com/cake-contrib/Cake.Gradle.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Gradle/
 Author: abeggchr

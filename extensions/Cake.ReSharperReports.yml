@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.ReSharperReports
 NuGet: Cake.ReSharperReports
 Assemblies:
-- "/**/Cake.ReSharperReports.dll"
+- /**/Cake.ReSharperReports.dll
 Repository: https://github.com/cake-contrib/Cake.ReSharperReports.git
 ProjectUrl: https://github.com/cake-contrib/Cake.ReSharperReports/
 Author: Gary Ewan Park

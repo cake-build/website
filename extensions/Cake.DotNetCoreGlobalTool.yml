@@ -1,0 +1,16 @@
+Type: Addin
+Name: Cake.DotNetCoreGlobalTool
+NuGet: Cake.DotNetCoreGlobalTool
+Assemblies:
+- /**/Cake.DotNetCoreGlobalTool.dll
+Repository: 
+ProjectUrl: https://www.nuget.org/packages/Cake.DotNetCoreGlobalTool/
+Author: Jens-Christian Skibakk
+Description: Package Description
+Categories: []
+TargetCakeVersion: 0.33.0
+TargetFrameworks:
+- netstandard2.0
+AnalyzedPackageVersion: 0.1.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-06-12T08:46:58.7200000Z

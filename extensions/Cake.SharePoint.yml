@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.SharePoint
 NuGet: Cake.SharePoint
 Assemblies:
-- "/**/Cake.SharePoint.dll"
+- /**/Cake.SharePoint.dll
 Repository: https://github.com/cake-contrib/Cake.SharePoint.git
 ProjectUrl: https://github.com/cake-contrib/Cake.SharePoint/
 Author: JeroenVandezande

@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.SonarScanner
 NuGet: Cake.SonarScanner
 Assemblies:
-- "/**/Cake.SonarScanner.dll"
+- /**/Cake.SonarScanner.dll
 Repository: https://github.com/cake-contrib/Cake.SonarScanner.git
 ProjectUrl: https://github.com/cake-contrib/Cake.SonarScanner/
 Author: pitermarx

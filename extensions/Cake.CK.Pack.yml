@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.CK.Pack
 NuGet: Cake.CK.Pack
 Assemblies:
-- "/**/Cake.CK.Pack.dll"
+- /**/Cake.CK.Pack.dll
 Repository: https://github.com/Invenietis/CK-Globbing.git
 ProjectUrl: https://www.nuget.org/packages/Cake.CK.Pack/
 Author: Invenietis

@@ -2,7 +2,7 @@ Type: Module
 Name: Cake.APT.Module
 NuGet: Cake.APT.Module
 Assemblies:
-- "/**/*.dll"
+- /**/*.dll
 Repository: https://github.com/agc93/Cake.APT.Module.git
 ProjectUrl: https://github.com/agc93/Cake.APT.Module/
 Author: agc93

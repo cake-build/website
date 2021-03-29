@@ -2,7 +2,7 @@ Type: Module
 Name: Cake.Npm.Module
 NuGet: Cake.Npm.Module
 Assemblies:
-- "/**/*.dll"
+- /**/*.dll
 Repository: https://github.com/cake-contrib/Cake.Npm.Module.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Npm.Module/
 Author: Alistair Chapman
@@ -15,6 +15,6 @@ Categories:
 TargetCakeVersion: 
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 2.0.0
+AnalyzedPackageVersion: 2.0.1
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-02-19T22:00:45.0970000Z
+AnalyzedPackagePublishDate: 2021-03-12T21:39:22.1200000Z

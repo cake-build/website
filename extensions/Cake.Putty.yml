@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Putty
 NuGet: Cake.Putty
 Assemblies:
-- "/**/Cake.Putty.dll"
+- /**/Cake.Putty.dll
 Repository: https://github.com/MihaMarkic/Cake.Putty.git
 ProjectUrl: https://github.com/MihaMarkic/Cake.Putty/
 Author: Miha Markič

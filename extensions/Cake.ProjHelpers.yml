@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.ProjHelpers
 NuGet: Cake.ProjHelpers
 Assemblies:
-- "/**/Cake.ProjHelpers.dll"
+- /**/Cake.ProjHelpers.dll
 Repository: https://github.com/orialmog/Cake.ProjHelpers.git
 ProjectUrl: https://github.com/orialmog/Cake.ProjHelpers/
 Author: orialmog

@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.MSBuildTask
 NuGet: Cake.MSBuildTask
 Assemblies:
-- "/**/Cake.MSBuildTask.dll"
+- /**/Cake.MSBuildTask.dll
 Repository: https://github.com/cake-contrib/Cake.MSBuildTask.git
 ProjectUrl: https://github.com/cake-contrib/Cake.MSBuildTask/
 Author: Mark Walker

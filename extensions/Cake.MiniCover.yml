@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.MiniCover
 NuGet: Cake.MiniCover
 Assemblies:
-- "/**/Cake.MiniCover.dll"
+- /**/Cake.MiniCover.dll
 Repository: https://github.com/nlowe/Cake.MiniCover.git
 ProjectUrl: https://github.com/nlowe/Cake.MiniCover/
 Author: Nathan Lowe

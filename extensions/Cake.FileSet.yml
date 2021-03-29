@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.FileSet
 NuGet: Cake.FileSet
 Assemblies:
-- "/**/Cake.FileSet.dll"
+- /**/Cake.FileSet.dll
 Repository: https://github.com/Korthax/Cake.FileSet.git
 ProjectUrl: https://github.com/Korthax/Cake.FileSet/
 Author: Steve Phillips

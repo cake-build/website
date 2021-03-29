@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Eazfuscator.Net
 NuGet: Cake.Eazfuscator.Net
 Assemblies:
-- "/**/Cake.Eazfuscator.Net.dll"
+- /**/Cake.Eazfuscator.Net.dll
 Repository: https://github.com/cake-contrib/Cake.Eazfuscator.Net.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Eazfuscator.Net/
 Author: gep13

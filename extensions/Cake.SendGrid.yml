@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.SendGrid
 NuGet: Cake.SendGrid
 Assemblies:
-- "/**/Cake.SendGrid.dll"
+- /**/Cake.SendGrid.dll
 Repository: https://github.com/cake-contrib/Cake.SendGrid.git
 ProjectUrl: https://github.com/cake-contrib/Cake.SendGrid/
 Author: jericho

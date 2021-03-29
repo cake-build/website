@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.GitVersioning
 NuGet: Cake.GitVersioning
 Assemblies:
-- "/**/Cake.GitVersioning.dll"
+- /**/Cake.GitVersioning.dll
 Repository: https://github.com/dotnet/Nerdbank.GitVersioning.git
 ProjectUrl: https://github.com/dotnet/Nerdbank.GitVersioning/
 Author: AArnott

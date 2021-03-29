@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.MsDeploy
 NuGet: Cake.MsDeploy
 Assemblies:
-- "/**/Cake.MsDeploy.dll"
+- /**/Cake.MsDeploy.dll
 Repository: https://github.com/cake-contrib/Cake.MsDeploy.git
 ProjectUrl: https://github.com/cake-contrib/Cake.MsDeploy/
 Author: Louis Fischer

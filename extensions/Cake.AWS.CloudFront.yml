@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.AWS.CloudFront
 NuGet: Cake.AWS.CloudFront
 Assemblies:
-- "/**/Cake.AWS.CloudFront.dll"
+- /**/Cake.AWS.CloudFront.dll
 Repository: https://github.com/SharpeRAD/Cake.AWS.CloudFront.git
 ProjectUrl: https://github.com/SharpeRAD/Cake.AWS.CloudFront/
 Author: SharpeRAD

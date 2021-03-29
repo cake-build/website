@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.MonoApiTools
 NuGet: Cake.MonoApiTools
 Assemblies:
-- "/**/Cake.MonoApiTools.dll"
+- /**/Cake.MonoApiTools.dll
 Repository: https://github.com/Redth/Cake.MonoApiTools.git
 ProjectUrl: https://github.com/Redth/Cake.MonoApiTools/
 Author: Redth

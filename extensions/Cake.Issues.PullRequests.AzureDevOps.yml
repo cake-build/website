@@ -2,16 +2,20 @@ Type: Addin
 Name: Cake.Issues.PullRequests.AzureDevOps
 NuGet: Cake.Issues.PullRequests.AzureDevOps
 Assemblies:
-- "/**/Cake.Issues.PullRequests.AzureDevOps.dll"
+- /**/Cake.Issues.PullRequests.AzureDevOps.dll
 Repository: https://github.com/cake-contrib/Cake.Issues.PullRequests.AzureDevOps.git
 ProjectUrl: https://cakeissues.net/
 Author: BBT Software AG and contributors
-Description: |-
+Description: >-
   The Azure DevOps support for the Cake.Issues addin allows you to
+
   write found issues as comments to Azure DevOps pull requests.
 
+
   This addin provides the aliases for writing to Azure DevOps pull requests.
+
   It also requires the core Cake.Issues and Cake.Issues.PullRequests addins and one or more issue providers.
+
 
   See cakeissues.net for an overview of the whole ecosystem of addins for working with issues in Cake scripts.
 Categories:

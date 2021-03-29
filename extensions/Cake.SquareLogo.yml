@@ -1,0 +1,16 @@
+Type: Addin
+Name: Cake.SquareLogo
+NuGet: Cake.SquareLogo
+Assemblies:
+- /**/Cake.SquareLogo.dll
+Repository: 
+ProjectUrl: https://www.nuget.org/packages/Cake.SquareLogo/
+Author: Cake.SquareLogo
+Description: Package Description
+Categories: []
+TargetCakeVersion: 0.32.1
+TargetFrameworks:
+- netstandard2.0
+AnalyzedPackageVersion: 19.8.2.833
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2019-08-02T08:34:17.5570000Z

@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.MinVer
 NuGet: Cake.MinVer
 Assemblies:
-- "/**/Cake.MinVer.dll"
+- /**/Cake.MinVer.dll
 Repository: https://github.com/cake-contrib/Cake.MinVer.git
 ProjectUrl: https://github.com/cake-contrib/Cake.MinVer/
 Author: augustoproiete

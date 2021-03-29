@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.AzureDevOps
 NuGet: Cake.AzureDevOps
 Assemblies:
-- "/**/Cake.AzureDevOps.dll"
+- /**/Cake.AzureDevOps.dll
 Repository: https://github.com/cake-contrib/Cake.AzureDevOps.git
 ProjectUrl: https://cake-contrib.github.io/Cake.AzureDevOps/
 Author: Pascal Berger

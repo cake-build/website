@@ -1,0 +1,16 @@
+Type: Addin
+Name: Cake.Packages
+NuGet: Cake.Packages
+Assemblies:
+- /**/Cake.Packages.dll
+Repository: 
+ProjectUrl: https://www.nuget.org/packages/Cake.Packages/
+Author: Tom Staijen
+Description: Generated Dashboard Controllers
+Categories: []
+TargetCakeVersion: 0.18.0
+TargetFrameworks:
+- net45
+AnalyzedPackageVersion: 0.1.2
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2017-04-21T09:31:45.9400000Z

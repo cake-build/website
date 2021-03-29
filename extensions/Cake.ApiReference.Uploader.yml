@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.ApiReference.Uploader
 NuGet: Cake.ApiReference.Uploader
 Assemblies:
-- "/**/Cake.ApiReference.Uploader.dll"
+- /**/Cake.ApiReference.Uploader.dll
 Repository: https://github.com/dotnetaddicted/cake-apireference-uploader.git
 ProjectUrl: https://github.com/dotnetaddicted/cake-apireference-uploader/
 Author: dotnetaddicted

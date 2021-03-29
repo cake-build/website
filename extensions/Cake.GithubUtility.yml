@@ -1,0 +1,16 @@
+Type: Addin
+Name: Cake.GithubUtility
+NuGet: Cake.GithubUtility
+Assemblies:
+- /**/Cake.GitHubUtility.dll
+Repository: 
+ProjectUrl: https://www.nuget.org/packages/Cake.GithubUtility/
+Author: Cake.GitHubUtility
+Description: Package Description
+Categories: []
+TargetCakeVersion: 0.28.1
+TargetFrameworks:
+- netstandard2.0
+AnalyzedPackageVersion: 0.4.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2018-06-22T09:07:51.6600000Z

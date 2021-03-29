@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Path
 NuGet: Cake.Path
 Assemblies:
-- "/**/Cake.Path.dll"
+- /**/Cake.Path.dll
 Repository: https://github.com/Korthax/Cake.Path.git
 ProjectUrl: https://github.com/Korthax/Cake.Path/
 Author: Steve Phillips

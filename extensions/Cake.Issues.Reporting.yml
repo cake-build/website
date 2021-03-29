@@ -2,15 +2,18 @@ Type: Addin
 Name: Cake.Issues.Reporting
 NuGet: Cake.Issues.Reporting
 Assemblies:
-- "/**/Cake.Issues.Reporting.dll"
+- /**/Cake.Issues.Reporting.dll
 Repository: https://github.com/cake-contrib/Cake.Issues.Reporting.git
 ProjectUrl: https://cake-contrib.github.io/Cake.Issues.Website/
 Author: Pascal Berger
-Description: |-
+Description: >-
   The issues reporting addin allows you to create reports for issue from any code analyzer or linter.
 
+
   This addin provides the aliases for creating reports.
+
   It requires the core Cake.Issues addin, addins for reading issues and one or more reporting format addin for the specific report format.
+
 
   See cakeissues.net for an overview of the whole ecosystem of addins for working with issues in Cake scripts.
 Categories:

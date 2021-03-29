@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Deploy.Bot.LUIS
 NuGet: Cake.Deploy.Bot.LUIS
 Assemblies:
-- "/**/Cake.Deploy.Bot.LUIS.dll"
+- /**/Cake.Deploy.Bot.LUIS.dll
 Repository: https://github.com/ObjectivityLtd/Cake.Deploy.Bot.LUIS.git
 ProjectUrl: https://github.com/ObjectivityLtd/Cake.Deploy.Bot.LUIS/
 Author: ObjectivityLtd

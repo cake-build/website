@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.ClickTwice
 NuGet: Cake.ClickTwice
 Assemblies:
-- "/**/Cake.ClickTwice.dll"
+- /**/Cake.ClickTwice.dll
 Repository: https://github.com/agc93/ClickTwice.git
 ProjectUrl: https://github.com/agc93/ClickTwice/
 Author: agc93

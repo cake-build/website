@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.PinNuGetDependency
 NuGet: Cake.PinNuGetDependency
 Assemblies:
-- "/**/Cake.PinNuGetDependency.dll"
+- /**/Cake.PinNuGetDependency.dll
 Repository: https://github.com/cake-contrib/Cake.PinNuGetDependency.git
 ProjectUrl: https://github.com/cake-contrib/Cake.PinNuGetDependency/
 Author: Geoffrey Huntley

@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Bower
 NuGet: Cake.Bower
 Assemblies:
-- "/**/Cake.Bower.dll"
+- /**/Cake.Bower.dll
 Repository: https://github.com/cake-contrib/Cake.Bower.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Bower/
 Author: Warren Bates

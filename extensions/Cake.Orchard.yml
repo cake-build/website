@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Orchard
 NuGet: Cake.Orchard
 Assemblies:
-- "/**/Cake.Orchard.dll"
+- /**/Cake.Orchard.dll
 Repository: https://github.com/cake-contrib/Cake.Orchard.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Orchard/
 Author: Radio Systems

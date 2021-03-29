@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.AWS.Route53
 NuGet: Cake.AWS.Route53
 Assemblies:
-- "/**/Cake.AWS.Route53.dll"
+- /**/Cake.AWS.Route53.dll
 Repository: https://github.com/SharpeRAD/Cake.AWS.Route53.git
 ProjectUrl: https://github.com/SharpeRAD/Cake.AWS.Route53/
 Author: SharpeRAD

@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.ArgumentBinder
 NuGet: Cake.ArgumentBinder
 Assemblies:
-- "/**/Cake.ArgumentBinder.dll"
+- /**/Cake.ArgumentBinder.dll
 Repository: https://github.com/cake-contrib/Cake.ArgumentBinder.git
 ProjectUrl: https://github.com/cake-contrib/Cake.ArgumentBinder/
 Author: xforever1313

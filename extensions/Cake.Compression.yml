@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Compression
 NuGet: Cake.Compression
 Assemblies:
-- "/**/Cake.Compression.dll"
+- /**/Cake.Compression.dll
 Repository: https://github.com/akordowski/Cake.Compression.git
 ProjectUrl: https://github.com/akordowski/Cake.Compression/
 Author: Artur Kordowski

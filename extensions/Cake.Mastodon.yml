@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Mastodon
 NuGet: Cake.Mastodon
 Assemblies:
-- "/**/Cake.Mastodon.dll"
+- /**/Cake.Mastodon.dll
 Repository: https://github.com/cake-contrib/Cake.Mastodon.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Mastodon/
 Author: Miha Markic, Cake Contributors

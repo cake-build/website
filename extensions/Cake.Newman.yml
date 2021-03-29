@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Newman
 NuGet: Cake.Newman
 Assemblies:
-- "/**/Cake.Newman.dll"
+- /**/Cake.Newman.dll
 Repository: https://github.com/cake-contrib/Cake.Newman.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Newman/
 Author: Alistair Chapman

@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Plist
 NuGet: Cake.Plist
 Assemblies:
-- "/**/Cake.Plist.dll"
+- /**/Cake.Plist.dll
 Repository: https://github.com/cake-contrib/Cake.Plist.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Plist/
 Author: Paul Reichelt

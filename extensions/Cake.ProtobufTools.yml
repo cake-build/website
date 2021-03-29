@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.ProtobufTools
 NuGet: Cake.ProtobufTools
 Assemblies:
-- "/**/Cake.ProtobufTools.dll"
+- /**/Cake.ProtobufTools.dll
 Repository: https://github.com/cake-contrib/Cake.ProtobufTools.git
 ProjectUrl: https://github.com/cake-contrib/Cake.ProtobufTools/
 Author: Miha Markic

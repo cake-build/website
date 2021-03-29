@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.igloo15.ChangelogGenerator
 NuGet: Cake.igloo15.ChangelogGenerator
 Assemblies:
-- "/**/Cake.igloo15.ChangelogGenerator.dll"
+- /**/Cake.igloo15.ChangelogGenerator.dll
 Repository: https://github.com/igloo15/Cake.igloo15.git
 ProjectUrl: https://github.com/igloo15/Cake.igloo15/
 Author: igloo15

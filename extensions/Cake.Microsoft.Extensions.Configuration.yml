@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Microsoft.Extensions.Configuration
 NuGet: Cake.Microsoft.Extensions.Configuration
 Assemblies:
-- "/**/Cake.Microsoft.Extensions.Configuration.dll"
+- /**/Cake.Microsoft.Extensions.Configuration.dll
 Repository: https://github.com/JonCubed/cake-microsoft-extensions-configuration.git
 ProjectUrl: https://www.nuget.org/packages/Cake.Microsoft.Extensions.Configuration/
 Author: Jonathan Kuleff
