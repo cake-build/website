@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Tools.ReadyAPI.TestEngine
 NuGet: Cake.Tools.ReadyAPI.TestEngine
 Assemblies:
-- "/**/Cake.Tools.ReadyAPI.TestEngine.dll"
+- /**/Cake.Tools.ReadyAPI.TestEngine.dll
 Repository: https://github.com/waxtell/Cake.Tools.ReadyAPI.TestEngine.git
 ProjectUrl: https://github.com/waxtell/Cake.Tools.ReadyAPI.TestEngine/
 Author: waxtell

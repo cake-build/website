@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Wyam
 NuGet: Cake.Wyam
 Assemblies:
-- "/**/Cake.Wyam.dll"
+- /**/Cake.Wyam.dll
 Repository: https://github.com/Wyamio/Wyam.git
 ProjectUrl: https://wyam.io/
 Author: Dave Glick, Gary Ewan Park

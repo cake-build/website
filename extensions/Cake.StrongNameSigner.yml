@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.StrongNameSigner
 NuGet: Cake.StrongNameSigner
 Assemblies:
-- "/**/Cake.StrongNameSigner.dll"
+- /**/Cake.StrongNameSigner.dll
 Repository: https://github.com/cake-contrib/Cake.StrongNameSigner.git
 ProjectUrl: https://www.nuget.org/packages/Cake.StrongNameSigner/
 Author: Gary Ewan Park

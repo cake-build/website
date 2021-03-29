@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.VSforMac
 NuGet: Cake.VSforMac
 Assemblies:
-- "/**/Cake.Xamarin.dll"
+- /**/Cake.Xamarin.dll
 Repository: https://github.com/osamarabea/Cake.Xamarin.git
 ProjectUrl: https://github.com/osamarabea/Cake.Xamarin/
 Author: osamarabea

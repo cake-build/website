@@ -2,8 +2,8 @@ Type: Addin
 Name: MagicChunks
 NuGet: MagicChunks
 Assemblies:
-- "/**/MagicChunks.dll"
-- "/**/MagicChunks.Cake.dll"
+- /**/MagicChunks.dll
+- /**/MagicChunks.Cake.dll
 Repository: https://github.com/magic-chunks/magic-chunks-dotnetcore.git
 ProjectUrl: https://github.com/magic-chunks/magic-chunks-dotnetcore/
 Author: Sergey Zwezdin

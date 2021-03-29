@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Terraform
 NuGet: Cake.Terraform
 Assemblies:
-- "/**/Cake.Terraform.dll"
+- /**/Cake.Terraform.dll
 Repository: https://github.com/cake-contrib/Cake.Terraform.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Terraform/
 Author: Erik van Brakel

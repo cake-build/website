@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Xamarin.Binding.Util
 NuGet: Cake.Xamarin.Binding.Util
 Assemblies:
-- "/**/Cake.Xamarin.Binding.Util.dll"
+- /**/Cake.Xamarin.Binding.Util.dll
 Repository: 
 ProjectUrl: https://go.microsoft.com/fwlink/?linkid=864959
 Author: Microsoft, Xamarin

@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.WebDeploy
 NuGet: Cake.WebDeploy
 Assemblies:
-- "/**/Cake.WebDeploy.dll"
+- /**/Cake.WebDeploy.dll
 Repository: https://github.com/SharpeRAD/Cake.WebDeploy.git
 ProjectUrl: https://github.com/SharpeRAD/Cake.WebDeploy/
 Author: SharpeRAD

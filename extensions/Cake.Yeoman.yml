@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Yeoman
 NuGet: Cake.Yeoman
 Assemblies:
-- "/**/Cake.Yeoman.dll"
+- /**/Cake.Yeoman.dll
 Repository: https://github.com/cake-contrib/Cake.Yeoman.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Yeoman/
 Author: BBT Software AG

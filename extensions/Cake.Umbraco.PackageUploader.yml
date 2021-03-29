@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Umbraco.PackageUploader
 NuGet: Cake.Umbraco.PackageUploader
 Assemblies:
-- "/**/Cake.Umbraco.PackageUploader.dll"
+- /**/Cake.Umbraco.PackageUploader.dll
 Repository: https://github.com/ObjectivityLtd/Cake.Umbraco.PackageUploader.git
 ProjectUrl: https://github.com/ObjectivityLtd/Cake.Umbraco.PackageUploader/
 Author: ObjectivityLtd

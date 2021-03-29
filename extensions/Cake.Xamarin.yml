@@ -2,7 +2,7 @@ Type: Addin
 Name: Cake.Xamarin
 NuGet: Cake.Xamarin
 Assemblies:
-- "/**/Cake.Xamarin.dll"
+- /**/Cake.Xamarin.dll
 Repository: https://github.com/cake-contrib/Cake.Xamarin.git
 ProjectUrl: https://github.com/cake-contrib/Cake.Xamarin/
 Author: Jonathan Dick
