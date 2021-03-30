@@ -9,9 +9,9 @@ Author: Paul Reichelt
 Description: Cake AddIn that generates documentation for .Net API reference and markdown files using DocFx.
 Categories:
 - documentation
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 0.13.1
+AnalyzedPackageVersion: 1.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2019-09-07T21:16:38.2100000Z
+AnalyzedPackagePublishDate: 2021-03-29T22:10:28.7670000Z
