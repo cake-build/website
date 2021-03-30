@@ -2,7 +2,7 @@ Type: Module
 Name: Cake.UrlLoadDirective.Module
 NuGet: Cake.UrlLoadDirective.Module
 Assemblies:
-- "/**/*.dll"
+- /**/*.dll
 Repository: https://github.com/cake-contrib/Cake.UrlLoadDirective.Module.git
 ProjectUrl: https://github.com/cake-contrib/Cake.UrlLoadDirective.Module/
 Author: Redth
