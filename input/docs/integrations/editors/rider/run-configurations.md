@@ -81,7 +81,7 @@ In order to use the run configurations you must have Cake installed on your mach
 
 ## Settings
 
-There are multiple configuration settings available under File -> Settings -> Build, Execution, Deployment -> Cake.
+There are multiple configuration settings available under **File | Settings | Build, Execution, Deployment | Cake**.
 
 All settings are project - specific and stored in the `.idea` folder. To share settings across developers, make sure to put `CakeRider.xml` under source control.
 
@@ -117,7 +117,9 @@ in the [Cake Tasks window](#running-builds-directly).
 Allows to define the runner to use.
 Different runners for different operating systems can be set by defining a regular expression which is matched against the system property `os.name`.
 
-Default value is `dotnet-cake` and `dotnet-cake.exe` for Windows.
+The Cake runner settings are able to process environment variables: Use a specific variable like `${VARIABLE}` and the environment variable will be expanded when the runner is called.
+
+Default value is `~/.dotnet/tools/dotnet-cake` and `${USERPROFILE}\.dotnet\tools\dotnet-cake.exe` for Windows.
 
 # Using run configurations
 
@@ -134,14 +136,21 @@ An editor for run configurations is available:
 
 ### Settings in the run configuration
 
-* *Script path*
+* *Script path*:
   Path to the Cake file. (This is passed as first argument to the runner.)
-* *Task*
+* *Task*:
   Name of the task to run (This is passed to the runner using `--task=<Task>`.)
-* *Verbosity*
+* *Verbosity*:
   Verbosity of the Cake output. (This is passed to the runner using `--verbosity=<Verbosity>`.)
-* *Arguments*
+* *Arguments*:
   Arbitrary additional arguments to the runner.
+
+### Before launch activity
+
+* *Ensure .NET Tool (Global)*:
+  Ensures the Cake .NET tool is installed globally before running Cake.
+
+![Run Actions](/assets/img/cake-rider/docs/beforeRunAction-ensureTool.png){.img-responsive}
 
 ## Running builds directly
 
