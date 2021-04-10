@@ -3,8 +3,8 @@ Name: Cake.Jekyll
 NuGet: Cake.Jekyll
 Assemblies:
 - /**/Cake.Jekyll.dll
-Repository: https://github.com/augustoproiete/Cake.Jekyll.git
-ProjectUrl: https://github.com/augustoproiete/Cake.Jekyll/
+Repository: https://github.com/cake-contrib/Cake.Jekyll.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Jekyll/
 Author: augustoproiete
 Description: Cake addin that makes Jekyll available in Cake builds. Jekyll is a blog-aware, static site generator in Ruby.
 Categories:
@@ -16,6 +16,6 @@ TargetFrameworks:
 - net5.0
 - net461
 - netstandard2.0
-AnalyzedPackageVersion: 1.0.0-alpha2
-AnalyzedPackageIsPrerelease: true
-AnalyzedPackagePublishDate: 2021-03-31T05:23:03.9600000Z
+AnalyzedPackageVersion: 1.0.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2021-04-06T03:14:57.5000000Z
