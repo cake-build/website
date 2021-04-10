@@ -10,9 +10,9 @@ Description: Cake addin that extends Cake with WebDeploy commands for publishing
 Categories:
 - deployment
 - iis
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
-- net46
-AnalyzedPackageVersion: 0.3.4
+- net461
+AnalyzedPackageVersion: 1.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2019-07-29T17:43:54.6430000Z
+AnalyzedPackagePublishDate: 2021-04-05T19:07:08.7900000Z
