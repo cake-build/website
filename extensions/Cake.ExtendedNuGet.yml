@@ -11,7 +11,8 @@ Categories:
 - nuget
 TargetCakeVersion: 1.0.0
 TargetFrameworks:
+- net5.0
 - netstandard2.0
-AnalyzedPackageVersion: 4.0.1
+AnalyzedPackageVersion: 4.0.2
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-03-16T15:09:03.2230000Z
+AnalyzedPackagePublishDate: 2021-04-11T20:23:17.2000000Z
