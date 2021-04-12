@@ -13,8 +13,9 @@ Categories:
 - documentation
 TargetCakeVersion: 1.0.0
 TargetFrameworks:
+- net5.0
 - net461
 - netstandard2.0
-AnalyzedPackageVersion: 2.0.2
+AnalyzedPackageVersion: 2.0.3
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-03-12T10:32:28.0830000Z
+AnalyzedPackagePublishDate: 2021-04-11T19:24:31.6300000Z
