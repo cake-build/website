@@ -11,8 +11,9 @@ Categories:
 - gradle
 TargetCakeVersion: 1.0.0
 TargetFrameworks:
+- net5.0
 - net461
 - netstandard2.0
-AnalyzedPackageVersion: 1.0.1
+AnalyzedPackageVersion: 1.0.2
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-03-12T20:14:53.5600000Z
+AnalyzedPackagePublishDate: 2021-04-11T19:41:31.2970000Z
