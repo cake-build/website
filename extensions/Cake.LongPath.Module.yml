@@ -8,7 +8,7 @@ ProjectUrl: https://cakebuild.net/extensions/cake-longpath-module
 Author: Mattias Karlsson
 Description: The Cake long path module.
 Categories: []
-TargetCakeVersion: 
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
 - net46
 AnalyzedPackageVersion: 1.0.1
