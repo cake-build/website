@@ -9,7 +9,7 @@ Author: devlead
 Description: Cake module that will use a console palette suitable for light background colors.
 Categories:
 - devops
-TargetCakeVersion: 
+TargetCakeVersion: 0.36.0
 TargetFrameworks:
 - netstandard2.0
 AnalyzedPackageVersion: 0.1.0
