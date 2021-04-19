@@ -9,7 +9,7 @@ Author: Redth
 Description: "Cake module for supporting downloading files from url's in the #load directive."
 Categories:
 - module
-TargetCakeVersion: 
+TargetCakeVersion: 0.33.0
 TargetFrameworks:
 - netstandard2.0
 AnalyzedPackageVersion: 1.0.4
