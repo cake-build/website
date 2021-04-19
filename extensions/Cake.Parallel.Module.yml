@@ -8,7 +8,7 @@ ProjectUrl: https://www.nuget.org/packages/Cake.Parallel.Module/
 Author: Cake.Parallel.Module
 Description: Package Description
 Categories: []
-TargetCakeVersion: 
+TargetCakeVersion: 0.26.1
 TargetFrameworks:
 - netstandard2.0
 AnalyzedPackageVersion: 0.21.0
