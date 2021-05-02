@@ -8,6 +8,7 @@ RedirectFrom: docs/resources/blogs
 ## Lee Richardson
 * [Cake Frosting: More Maintainable C# DevOps](http://www.leerichardson.com/2021/02/cake-frosting-more-maintainable-c-devops.html)
 * [The One Thing I Wish I'd Known Before Using Cake](http://www.leerichardson.com/2021/02/he-one-thing-i-wish-id-known-before.html)
+* [Extending build.cake with your (enterprise) functionality](http://localhost:1314/post/extending-build.cake-with-your-enterprise-functionality/)
 
 # 2020
 
