@@ -11,6 +11,7 @@ RedirectFrom: docs/resources/blogs
 
 ## Tim Schaeps
 * [Extending build.cake with your (enterprise) functionality](https://www.timschaeps.be/post/extending-build.cake-with-your-enterprise-functionality/)
+* [Running Cake in Azure Pipelines and accounting for optional build-process-variables](https://www.timschaeps.be/post/running-cake-in-azure-pipelines-and-accounting-for-build-process-variables/)
 
 # 2020
 
