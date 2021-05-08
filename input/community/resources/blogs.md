@@ -8,10 +8,10 @@ RedirectFrom: docs/resources/blogs
 ## Lee Richardson
 * [Cake Frosting: More Maintainable C# DevOps](http://www.leerichardson.com/2021/02/cake-frosting-more-maintainable-c-devops.html)
 * [The One Thing I Wish I'd Known Before Using Cake](http://www.leerichardson.com/2021/02/he-one-thing-i-wish-id-known-before.html)
-* [Extending build.cake with your (enterprise) functionality](https://www.timschaeps.be/post/extending-build.cake-with-your-enterprise-functionality/)
 
 ## Tim Schaeps
 * [Extending build.cake with your (enterprise) functionality](https://www.timschaeps.be/post/extending-build.cake-with-your-enterprise-functionality/)
+* [Running Cake in Azure Pipelines and accounting for optional build-process-variables](https://www.timschaeps.be/post/running-cake-in-azure-pipelines-and-accounting-for-build-process-variables/)
 
 # 2020
 
