@@ -10,6 +10,9 @@ RedirectFrom: docs/resources/blogs
 * [The One Thing I Wish I'd Known Before Using Cake](http://www.leerichardson.com/2021/02/he-one-thing-i-wish-id-known-before.html)
 * [Extending build.cake with your (enterprise) functionality](https://www.timschaeps.be/post/extending-build.cake-with-your-enterprise-functionality/)
 
+## Tim Schaeps
+* [Extending build.cake with your (enterprise) functionality](https://www.timschaeps.be/post/extending-build.cake-with-your-enterprise-functionality/)
+
 # 2020
 
 ## Daniel Hindrikes
