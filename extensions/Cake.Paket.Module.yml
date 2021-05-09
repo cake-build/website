@@ -10,7 +10,7 @@ Description: Paket module for cake.
 Categories:
 - tool-provider
 - paket
-TargetCakeVersion: 
+TargetCakeVersion: 0.29.0
 TargetFrameworks:
 - net45
 AnalyzedPackageVersion: 4.0.0
