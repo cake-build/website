@@ -10,9 +10,12 @@ Description: Windows Services addin for Cake.
 Categories:
 - windows
 - deployment
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
+- netcoreapp3.1
+- net5.0
 - net46
-AnalyzedPackageVersion: 0.3.6
+- net461
+AnalyzedPackageVersion: 1.0.1
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2019-08-28T18:30:32.1470000Z
+AnalyzedPackagePublishDate: 2021-04-05T19:11:58.2330000Z
