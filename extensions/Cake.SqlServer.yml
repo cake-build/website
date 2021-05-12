@@ -10,9 +10,11 @@ Description: Cake build aliases for manipulating SQL Server databases and execut
 Categories:
 - sql
 - database
-TargetCakeVersion: 0.35.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
-- net45
-AnalyzedPackageVersion: 2.2.0
+- net5.0
+- net461
+- netstandard2.0
+AnalyzedPackageVersion: 3.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2020-01-18T23:34:52.1530000Z
+AnalyzedPackagePublishDate: 2021-05-12T00:10:22.4770000Z
