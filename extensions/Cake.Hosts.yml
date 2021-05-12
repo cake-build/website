@@ -3,8 +3,8 @@ Name: Cake.Hosts
 NuGet: Cake.Hosts
 Assemblies:
 - /**/Cake.Hosts.dll
-Repository: https://github.com/AMVSoftware/Cake.Hosts.git
-ProjectUrl: https://github.com/AMVSoftware/Cake.Hosts/
+Repository: https://github.com/cake-contrib/Cake.Hosts.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Hosts/
 Author: Max Vasilyev
 Description: Cake build aliases for manipulating HOSTS file.
 Categories:
