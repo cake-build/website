@@ -9,9 +9,9 @@ Author: Adam Patridge
 Description: Cake add-in to provide aliases to help translate tilde (~) characters to absolute paths usable in locations requiring a full path.
 Categories:
 - path
-TargetCakeVersion: 0.29.0
+TargetCakeVersion: 0.33.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 1.0.0
+AnalyzedPackageVersion: 2.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2018-07-26T20:00:53.7200000Z
+AnalyzedPackagePublishDate: 2021-05-13T06:00:53.1200000Z
