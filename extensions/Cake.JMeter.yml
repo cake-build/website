@@ -13,6 +13,6 @@ Categories:
 TargetCakeVersion: 0.33.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 2.2.0
+AnalyzedPackageVersion: 2.2.1
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2019-04-22T08:38:01.7270000Z
+AnalyzedPackagePublishDate: 2021-05-16T20:08:30.0000000Z
