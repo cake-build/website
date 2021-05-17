@@ -9,9 +9,9 @@ Author: pitermarx
 Description: Cake Addin to run the sonnar-scanner tool.
 Categories:
 - code quality
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 1.1.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 2.0.0
+AnalyzedPackageVersion: 2.0.1
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-03-10T17:42:51.0630000Z
+AnalyzedPackagePublishDate: 2021-05-16T19:27:21.4170000Z
