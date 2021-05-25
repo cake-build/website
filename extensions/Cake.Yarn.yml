@@ -3,8 +3,8 @@ Name: Cake.Yarn
 NuGet: Cake.Yarn
 Assemblies:
 - /**/Cake.Yarn.dll
-Repository: https://github.com/MilovanovM/cake-yarn.git
-ProjectUrl: https://github.com/MilovanovM/cake-yarn/
+Repository: https://github.com/cake-contrib/cake-yarn.git
+ProjectUrl: https://github.com/cake-contrib/cake-yarn/
 Author: Maxim Milovanov
 Description: A set of aliases for Cake to help with running Yarn (Node Package Manager from Facebook) commands.
 Categories:
