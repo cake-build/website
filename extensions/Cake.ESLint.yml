@@ -1,0 +1,20 @@
+Type: Addin
+Name: Cake.ESLint
+NuGet: Cake.ESLint
+Assemblies:
+- /**/Cake.ESLint.dll
+Repository: https://github.com/nils-a/Cake.ESLint.git
+ProjectUrl: https://github.com/nils-a/Cake.ESLint/
+Author: nils-a
+Description: Makes [ESLint](https://eslint.org/docs/user-guide/command-line-interface) available as a tool in [Cake](https://cakebuild.net/)
+Categories:
+- eslint
+- cake-build
+TargetCakeVersion: 1.0.0
+TargetFrameworks:
+- net5.0
+- net461
+- netstandard2.0
+AnalyzedPackageVersion: 0.1.0-beta0001
+AnalyzedPackageIsPrerelease: true
+AnalyzedPackagePublishDate: 2021-05-31T11:40:38.6800000Z
