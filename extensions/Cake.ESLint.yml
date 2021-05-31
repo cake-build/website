@@ -9,7 +9,6 @@ Author: nils-a
 Description: Makes [ESLint](https://eslint.org/docs/user-guide/command-line-interface) available as a tool in [Cake](https://cakebuild.net/)
 Categories:
 - eslint
-- cake-build
 TargetCakeVersion: 1.0.0
 TargetFrameworks:
 - net5.0
