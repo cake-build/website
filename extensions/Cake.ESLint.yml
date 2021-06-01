@@ -3,8 +3,8 @@ Name: Cake.ESLint
 NuGet: Cake.ESLint
 Assemblies:
 - /**/Cake.ESLint.dll
-Repository: https://github.com/nils-a/Cake.ESLint.git
-ProjectUrl: https://github.com/nils-a/Cake.ESLint/
+Repository: https://github.com/cake-contrib/Cake.ESLint.git
+ProjectUrl: https://github.com/cake-contrib/Cake.ESLint/
 Author: nils-a
 Description: Makes [ESLint](https://eslint.org/docs/user-guide/command-line-interface) available as a tool in [Cake](https://cakebuild.net/)
 Categories:
