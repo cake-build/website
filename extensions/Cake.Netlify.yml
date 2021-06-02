@@ -3,8 +3,8 @@ Name: Cake.Netlify
 NuGet: Cake.Netlify
 Assemblies:
 - /**/Cake.Netlify.dll
-Repository: https://github.com/cake-contrib/Cake.Netlify.git
-ProjectUrl: https://github.com/cake-contrib/Cake.Netlify/
+Repository: https://github.com/phillipsj/Cake.Netlify.git
+ProjectUrl: https://github.com/phillipsj/Cake.Netlify/
 Author: Jamie Phillips
 Description: Cake addin for Netlify
 Categories:
@@ -13,6 +13,6 @@ Categories:
 TargetCakeVersion: 0.33.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 0.12.1
+AnalyzedPackageVersion: 0.12.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-05-16T15:28:05.2470000Z
+AnalyzedPackagePublishDate: 2019-08-03T00:28:54.7700000Z
