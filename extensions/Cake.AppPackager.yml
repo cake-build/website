@@ -3,8 +3,8 @@ Name: Cake.AppPackager
 NuGet: Cake.AppPackager
 Assemblies:
 - /**/Cake.AppPackager.dll
-Repository: https://github.com/cake-contrib/Cake.AppPackager.git
-ProjectUrl: https://github.com/cake-contrib/Cake.AppPackager/
+Repository: https://github.com/phillipsj/Cake.AppPackager.git
+ProjectUrl: https://github.com/phillipsj/Cake.AppPackager/
 Author: Jamie Phillips
 Description: Cake AddIn for creating Windows packages.
 Categories:
@@ -13,6 +13,6 @@ Categories:
 TargetCakeVersion: 0.33.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 0.12.1
+AnalyzedPackageVersion: 0.12.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-05-16T19:10:39.2470000Z
+AnalyzedPackagePublishDate: 2019-08-24T17:18:20.3670000Z

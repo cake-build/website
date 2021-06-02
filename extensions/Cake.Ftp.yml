@@ -3,15 +3,15 @@ Name: Cake.Ftp
 NuGet: Cake.Ftp
 Assemblies:
 - /**/Cake.Ftp.dll
-Repository: https://github.com/cake-contrib/Cake.Ftp.git
-ProjectUrl: https://github.com/cake-contrib/Cake.Ftp/
+Repository: https://github.com/phillipsj/Cake.Ftp.git
+ProjectUrl: https://github.com/phillipsj/Cake.Ftp/
 Author: Jamie Phillips
 Description: Cake Addin for working with FTP from a Cake script.
 Categories:
 - deployment
-TargetCakeVersion: 0.37.0
+TargetCakeVersion: 0.33.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 1.4.1
+AnalyzedPackageVersion: 1.4.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-05-16T18:56:17.4770000Z
+AnalyzedPackagePublishDate: 2019-08-03T00:44:15.1030000Z
