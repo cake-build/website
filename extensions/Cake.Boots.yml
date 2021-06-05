@@ -13,9 +13,9 @@ Categories:
 - xamarin
 - azure
 - devops
-TargetCakeVersion: 0.34.1
+TargetCakeVersion: 1.1.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 1.0.3.556
+AnalyzedPackageVersion: 1.0.4.624
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-01-12T20:14:02.8600000Z
+AnalyzedPackagePublishDate: 2021-06-04T19:10:17.9630000Z
