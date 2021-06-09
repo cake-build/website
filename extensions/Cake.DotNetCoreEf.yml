@@ -10,9 +10,11 @@ Description: Cake Build addin for using the .NET Core EntityFrameworkCore comman
 Categories:
 - entity framework
 - dot net core
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
+- net5.0
+- net461
 - netstandard2.0
-AnalyzedPackageVersion: 0.10.0
+AnalyzedPackageVersion: 1.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2019-09-01T19:22:21.9270000Z
+AnalyzedPackagePublishDate: 2021-06-08T20:27:00.6330000Z
