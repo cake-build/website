@@ -9,9 +9,9 @@ Author: JeroenVandezande
 Description: Cake AddIn to upload build artifacts to SharePoint.
 Categories:
 - sharepoint
-TargetCakeVersion: 1.1.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 1.2.0
+AnalyzedPackageVersion: 2.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-05-25T12:41:16.3770000Z
+AnalyzedPackagePublishDate: 2021-06-15T10:19:50.8600000Z
