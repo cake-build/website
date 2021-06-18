@@ -8,10 +8,7 @@ To define a `DoesForEach` use the Task-method.
 
 ```csharp
 Task("A")
-    .Does(() =>
-{
-})
-.DoesForEach(GetFiles("**/*.txt"), (file) =>
+    .DoesForEach(GetFiles("**/*.txt"), (file) =>
 {
     // Take action on the file.
 });
