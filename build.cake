@@ -219,7 +219,11 @@ Task("Build")
                 { "AssemblyFiles",  assemblies },
                 { "CakeLatestReleaseName", releaseInfo.LatestReleaseName },
                 { "CakeLatestReleaseUrl", releaseInfo.LatestReleaseUrl },
-            }
+            },
+            EnvironmentVariables = new Dictionary<string, string>
+            {
+                { "DOTNET_ROLL_FORWARD", "Major" },
+            },
         });
     });
 
@@ -243,7 +247,11 @@ Task("Preview")
                 { "AssemblyFiles",  assemblies },
                 { "CakeLatestReleaseName", releaseInfo.LatestReleaseName },
                 { "CakeLatestReleaseUrl", releaseInfo.LatestReleaseUrl },
-            }
+            },
+            EnvironmentVariables = new Dictionary<string, string>
+            {
+                { "DOTNET_ROLL_FORWARD", "Major" },
+            },
         });
     });
 
