@@ -26,6 +26,6 @@ TargetCakeVersion: 0.33.0
 TargetFrameworks:
 - net461
 - netstandard2.0
-AnalyzedPackageVersion: 0.9.0
+AnalyzedPackageVersion: 0.9.1
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2020-08-22T18:38:48.4700000Z
+AnalyzedPackagePublishDate: 2021-07-12T19:58:36.6730000Z
