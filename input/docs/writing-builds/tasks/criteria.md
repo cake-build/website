@@ -135,6 +135,35 @@ Task("Default")
 RunTarget(target);
 ```
 
+### Print message from Criteria
+
+It's possible to pass a message to a criteria which will be shown in the output when a criteria
+is not satisfied and a task is skipped.
+
+Example:
+
+```csharp
+Task("A")
+    .WithCriteria(() => DateTime.Now.Second % 2 == 0, "Need even seconds.")
+    .Does(() => {
+
+    });
+
+RunTarget("A");
+```
+Output:
+
+```powershell
+========================================
+A
+========================================
+Skipping task: Need even seconds.
+````
+
+:::{.alert .alert-info}
+For the message to be shown `Verbosity` needs be set to `Verbose` or `Diagnostic`.
+:::
+
 # Cake Frosting
 
 To implement conditional execution of tasks in [Cake Frosting] the `ShouldRun` method in the task can be overriden:
