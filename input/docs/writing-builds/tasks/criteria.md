@@ -137,10 +137,12 @@ RunTarget(target);
 
 ### Print message from Criteria
 
-Criteria's also takes message to print additional information when task is skipped.
+It's possible to pass a message to a criteria which will be shown in the output when a criteria
+is not satisfied and a task is skipped.
+
+Example:
 
 ```csharp
-
 Task("A")
     .WithCriteria(() => DateTime.Now.Second % 2 == 0, "Need even seconds.")
     .Does(() => {
@@ -148,9 +150,8 @@ Task("A")
     });
 
 RunTarget("A");
-
 ```
-Terminal
+Output:
 
 ```powershell
 ========================================
@@ -159,9 +160,9 @@ A
 Skipping task: Need even seconds.
 ````
 
-_Note -_
-1. The message is printed **ONLY IF** criteria is not satisfied (i.e task is skippped).
-2. For printing message, `Verbosity` needs be **`Verbose`** or **`Diagnostic`**.
+:::{.alert .alert-info}
+For the message to be shown `Verbosity` needs be set to `Verbose` or `Diagnostic`.
+:::
 
 # Cake Frosting
 
