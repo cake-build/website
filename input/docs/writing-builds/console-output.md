@@ -17,10 +17,10 @@ Use the `AnsiConsole` class to render advanced widgets to the console.
 
 See [Spectre.Console] documentation for details.
 
-[Spectre.Console]: https://spectresystems.github.io/spectre.console/
-[progress bars]: https://spectresystems.github.io/spectre.console/progress
-[spinners]: https://spectresystems.github.io/spectre.console/status
-[tables]: https://spectresystems.github.io/spectre.console/widgets/table
-[trees]: https://spectresystems.github.io/spectre.console/widgets/tree
-[bar charts]: https://spectresystems.github.io/spectre.console/widgets/barchart
-[FIGlet text]: https://spectresystems.github.io/spectre.console/widgets/figlet
+[Spectre.Console]: https://spectreconsole.net/
+[progress bars]: https://spectreconsole.net/live/progress
+[spinners]: https://spectreconsole.net/live/status
+[tables]: https://spectreconsole.net/widgets/table
+[trees]: https://spectreconsole.net/widgets/tree
+[bar charts]: https://spectreconsole.net/widgets/barchart
+[FIGlet text]: https://spectreconsole.net/widgets/figlet
