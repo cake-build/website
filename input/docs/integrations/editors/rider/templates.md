@@ -45,6 +45,12 @@ Available live templates:
 * `cake-load-nuget-full`
   * Provides a more complex `#load` pre-processor directive, where source, package name and version can be changed
   * _Default Value:_ `#load "nuget:https://www.nuget.org/api/v2?package=Cake.Foo&version=1.2.3"`
+* `cake-module-nuget`
+  * Provides a `#module` pre-processor directive, where package name and version can be changed
+  * _Default Value:_ `#module "nuget:?package=Cake.Foo.module&version=1.2.3"`
+* `cake-module-nuget-full`
+  * Provides a more complex `#module` pre-processor directive, where source, package name and version can be changed
+  * _Default Value:_ `#module "nuget:https://www.nuget.org/api/v2?package=Cake.Foo.module&version=1.2.3"`
 * `cake-reference`
   * Provides a basic `#reference` pre-processor directive, where path to the assembly can be changed
   * _Default Value:_ `#reference "bin/myassembly.dll"`
