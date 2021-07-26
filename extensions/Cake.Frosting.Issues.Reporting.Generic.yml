@@ -1,0 +1,39 @@
+Type: Addin
+Name: Cake.Frosting.Issues.Reporting.Generic
+NuGet: Cake.Frosting.Issues.Reporting.Generic
+Assemblies:
+- /**/Cake.Issues.Reporting.Generic.dll
+Repository: https://github.com/cake-contrib/Cake.Issues.Reporting.Generic.git
+ProjectUrl: https://cakeissues.net/
+Author: Pascal Berger
+Description: >-
+  The generic report support for the Cake.Issues addin for Cake Frosting allows you to create issue reports in any text format (HTML, Markdown, ...).
+
+
+  This addin provides the aliases for any text based report format.
+
+  It also requires the core Cake.Issues and Cake.Issues.Reporting addins and one or more issue providers.
+
+
+  See the Project Site for an overview of the whole ecosystem of addins for working with issues in Cake scripts.
+
+
+  NOTE:
+
+  This is the version of the addin compatible with Cake Frosting.
+
+  For addin compatible with Cake Script Runners see Cake.Issues.Reporting.Generic.
+Categories:
+- cake-issues
+- cake-reportformat
+- issues
+- reporting
+- html
+- markdown
+- razor
+TargetCakeVersion: 1.0.0
+TargetFrameworks:
+- netstandard2.0
+AnalyzedPackageVersion: 1.0.0-beta0001
+AnalyzedPackageIsPrerelease: true
+AnalyzedPackagePublishDate: 2021-07-25T13:33:56.2700000Z
