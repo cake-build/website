@@ -5,6 +5,9 @@ RedirectFrom: docs/resources/blogs
 ---
 # 2021
 
+## Damian Antonowicz
+* [Creating Cake script for building and deploying Xamarin app: Part 1 running unit tests](https://damianantonowicz.pl/2021/06/24/creating-cake-script-for-building-and-deploying-xamarin-app-part-1-running-unit-tests/)
+
 ## Lee Richardson
 * [Cake Frosting: More Maintainable C# DevOps](http://www.leerichardson.com/2021/02/cake-frosting-more-maintainable-c-devops.html)
 * [The One Thing I Wish I'd Known Before Using Cake](http://www.leerichardson.com/2021/02/he-one-thing-i-wish-id-known-before.html)
