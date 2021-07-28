@@ -19,12 +19,12 @@ Description: >-
 Categories:
 - issues
 - reports
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
 - netcoreapp2.0
 - netcoreapp2.1
 - netcoreapp3.0
 - netstandard2.0
-AnalyzedPackageVersion: 0.9.0
+AnalyzedPackageVersion: 1.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2020-08-22T19:58:36.0800000Z
+AnalyzedPackagePublishDate: 2021-07-27T22:17:47.2330000Z
