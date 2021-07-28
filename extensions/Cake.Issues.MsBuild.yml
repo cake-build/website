@@ -22,9 +22,9 @@ Description: >-
 Categories:
 - issues
 - msbuild
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 0.9.1
+AnalyzedPackageVersion: 1.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2020-10-20T18:43:46.2570000Z
+AnalyzedPackagePublishDate: 2021-07-27T19:15:58.9100000Z
