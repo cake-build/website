@@ -22,10 +22,10 @@ Description: >-
 Categories:
 - issues
 - markdown
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
 - net461
 - netstandard2.0
-AnalyzedPackageVersion: 0.9.0
+AnalyzedPackageVersion: 1.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2020-08-22T18:48:53.1230000Z
+AnalyzedPackagePublishDate: 2021-07-27T21:26:52.5600000Z
