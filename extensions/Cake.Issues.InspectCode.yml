@@ -22,10 +22,10 @@ Description: >-
 Categories:
 - issues
 - inspectcode
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
 - net461
 - netstandard2.0
-AnalyzedPackageVersion: 0.9.1
+AnalyzedPackageVersion: 1.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-07-12T19:58:36.6730000Z
+AnalyzedPackagePublishDate: 2021-07-27T19:59:34.1970000Z
