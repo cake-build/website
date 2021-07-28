@@ -19,9 +19,9 @@ Description: >-
 Categories:
 - issues
 - pull requests
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 0.9.1
+AnalyzedPackageVersion: 1.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2020-10-08T23:42:02.9370000Z
+AnalyzedPackagePublishDate: 2021-07-27T18:54:14.7100000Z
