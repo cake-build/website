@@ -25,6 +25,6 @@ Categories:
 TargetCakeVersion: 1.0.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 1.0.0
+AnalyzedPackageVersion: 1.0.1
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-07-27T20:35:16.8030000Z
+AnalyzedPackagePublishDate: 2021-07-30T08:18:49.7470000Z
