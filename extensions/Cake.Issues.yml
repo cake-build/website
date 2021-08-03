@@ -21,9 +21,9 @@ Description: >-
   See cakeissues.net for an overview of the whole ecosystem of addins for working with issues in Cake scripts.
 Categories:
 - issues
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 0.9.1
+AnalyzedPackageVersion: 1.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2020-09-19T09:45:03.2330000Z
+AnalyzedPackagePublishDate: 2021-07-27T18:54:13.2130000Z

@@ -23,9 +23,9 @@ Categories:
 - pullrequest
 - github
 - github actions
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 0.9.0
+AnalyzedPackageVersion: 1.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2020-09-26T19:57:50.7700000Z
+AnalyzedPackagePublishDate: 2021-07-28T18:22:34.3770000Z

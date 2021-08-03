@@ -4,7 +4,7 @@ NuGet: Cake.Issues.Reporting
 Assemblies:
 - /**/Cake.Issues.Reporting.dll
 Repository: https://github.com/cake-contrib/Cake.Issues.Reporting.git
-ProjectUrl: https://cake-contrib.github.io/Cake.Issues.Website/
+ProjectUrl: https://cakeissues.net/
 Author: Pascal Berger
 Description: >-
   The issues reporting addin allows you to create reports for issue from any code analyzer or linter.
@@ -19,9 +19,9 @@ Description: >-
 Categories:
 - issues
 - reports
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 0.9.0
+AnalyzedPackageVersion: 1.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2020-08-22T18:10:08.2770000Z
+AnalyzedPackagePublishDate: 2021-07-27T18:54:16.0830000Z
