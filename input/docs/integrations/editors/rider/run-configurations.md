@@ -87,9 +87,6 @@ All settings are project - specific and stored in the `.idea` folder. To share s
 
 ### Generic settings
 
-* *Cake file extension*
-  This setting is used to find all Cake files and display them in the Cake Tasks window.
-  Default: `cake`
 * *Task Regex*
   This regular expression is used to parse tasks from the Cake files.
   Default: `Task\s*?\(\s*?"(.*?)"\s*?\)`
