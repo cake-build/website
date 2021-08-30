@@ -1,0 +1,40 @@
+Type: Addin
+Name: Cake.Issues.Reporting.Console
+NuGet: Cake.Issues.Reporting.Console
+Assemblies:
+- /**/Cake.Issues.Reporting.Console.dll
+Repository: https://github.com/cake-contrib/Cake.Issues.Reporting.Console.git
+ProjectUrl: https://cakeissues.net/
+Author: Pascal Berger
+Description: >-
+  This addin for the Cake.Issues addin for Cake .NET Tool allows you to print issues to the console.
+
+
+  This addin provides the aliases for reporting issues to the console.
+
+  It also requires the core Cake.Issues and Cake.Issues.Reporting addins and one or more issue providers.
+
+
+  See the Project Site for an overview of the whole ecosystem of addins for working with issues in Cake scripts.
+
+
+  NOTE:
+
+  This is the version of the addin compatible with Cake .NET Tool.
+
+  For addin compatible with Cake Frosting see Cake.Frosting.Issues.Reporting.Console.
+
+
+  The addin requires Cake .NET Tool 1.2.0 or higher running on .NET 5.0 or higher.
+Categories:
+- cake-issues
+- cake-reportformat
+- issues
+- reporting
+- console
+TargetCakeVersion: 1.2.0
+TargetFrameworks:
+- net5.0
+AnalyzedPackageVersion: 0.1.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2021-08-29T20:20:58.3200000Z
