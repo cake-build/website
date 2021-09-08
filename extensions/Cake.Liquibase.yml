@@ -9,9 +9,9 @@ Author: Philipp Grathwohl
 Description: Addin for running liquibase database migrations with the Cake build system.
 Categories:
 - database
-TargetCakeVersion: 0.36.0
+TargetCakeVersion: 1.1.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 0.1.11-preview
+AnalyzedPackageVersion: 0.1.12-preview
 AnalyzedPackageIsPrerelease: true
-AnalyzedPackagePublishDate: 2020-01-27T08:13:06.2300000Z
+AnalyzedPackagePublishDate: 2021-09-08T06:34:11.8300000Z
