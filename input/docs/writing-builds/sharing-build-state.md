@@ -51,8 +51,8 @@ Setup<BuildData>(setupContext => {
     ) {
         Frameworks = IsRunningOnUnix()
             ? new List<string> { "netcoreapp2.1" }
-            : new List<string> { "net472", "netcoreapp2.1" ;}
-    }
+            : new List<string> { "net472", "netcoreapp2.1" }
+    };
 });
 ```
 
