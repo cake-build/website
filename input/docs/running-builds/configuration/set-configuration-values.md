@@ -47,20 +47,21 @@ The configuration file should be located in the same directory as your Cake scri
 Specifying a configuration value within a configuration file will override the same configuration value stored within an equivalent environment variable.
 
 ## Environment variable substitution
-The config file also supports environment variable substitution for values(the right hand side of the equal sign).  Sections and keys cannot be substituted 
-for environment variables.  Example below:
+
+The configuration file supports environment variable substitution for values (the right hand side of the equal sign).
+Sections and keys cannot be substituted for environment variables.
+
+In the following example, if `NUGET_REPOSITORY` is set as an environment variable, the value of it will replace `%NUGET_REPOSITORY%` in when Cake reads the
+configuration file:
 
 ```sh
 Source=https://%NUGET_REPOSITORY%/api/v2
 ```
-If `NUGET_REPOSITORY` is set as an environment variable, the value of it will replace `%NUGET_REPOSITORY%` in example above when cake reads the config file.
 
 :::{.alert .alert-info}
-Environment variable substitution only work for values, and must use windows annotation syntax with a % sign before and after environment variables, regardless of 
+Environment variable substitution only work for values, and must use Windows annotation syntax with a % sign before and after environment variables, regardless of
 operating system.
 :::
-
-
 
 # Command Line
 
