@@ -9,10 +9,11 @@ Author: RichieCoder1
 Description: AliaSql Script Alias for Cake.
 Categories:
 - database
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
+- net5.0
 - net46
 - netstandard2.0
-AnalyzedPackageVersion: 0.7.0
+AnalyzedPackageVersion: 1.0.1
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2019-07-24T21:03:33.6800000Z
+AnalyzedPackagePublishDate: 2021-09-30T20:02:47.7900000Z
