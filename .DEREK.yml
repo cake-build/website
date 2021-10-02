@@ -8,10 +8,12 @@ maintainers:
   - mholo65
   - pascalberger
   - patriksvensson
+  - augustoproiete
+  - nils-a
 
 features:
   - comments
   - pr_description_required
-#  - no_newbies # Enable for Hacktoberfest
+  - no_newbies # Derek will consider this rule only during October for Hacktoberfest
 
 contributing_url: https://github.com/cake-build/website#contributing
