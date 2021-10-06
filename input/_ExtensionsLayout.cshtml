@@ -27,6 +27,13 @@
 </section>
 
 <section class="content">
+    @{
+        if (name == "Cake.DotNetTool.Module") 
+        {
+            @Html.Partial("_ExtensionDotNetToolModule");
+        }
+    }
+
     <article class="col-sm-8 extension-details no-padding">
         <p class="extension-description">
             @description
