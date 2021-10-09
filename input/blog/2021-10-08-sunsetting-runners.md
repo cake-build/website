@@ -4,7 +4,7 @@ category: Announcement
 author: Pascal Berger
 ---
 
-The Cake project started 2014 with [Cake runner for .NET Framework] which was downloaded more than 10 million times.
+The Cake project started in 2014 with the [Cake runner for .NET Framework] which has since been downloaded more than 10 million times.
 Since then [Cake runner for .NET Core], [Cake .NET Tool] and [Cake Frosting] have been added as officially supported runners.
 Across these runners, Cake runs on Mono, .NET Framework and .NET Core 2.0 and newer up to .NET 6.
 
@@ -12,10 +12,10 @@ This [broad range of supported runners and platforms] comes also with a cost.
 On one hand it limits the usage of new features available in newer platforms in Cake itself,
 on the other hand it is also reflected in our best practices, that extensions should be supported on all runners and platforms,
 leading to additional maintenance work in the whole ecosystem.
-Having to choose between different runners could also lead to confusion for users, which is the best choice for their use-case.
+Having to choose between different runners could also lead to confusion for users, regarding which is the best choice for their use-case.
 
 To allow Cake to make use of modern platform features, make life easier for extension authors and simplify decision process of users
-we decided to stop shipping [Cake runner for .NET Framework] and the already deprecated [Cake runner for .NET Core] with 2.0.
+we have decided to stop shipping [Cake runner for .NET Framework] and the already deprecated [Cake runner for .NET Core] with 2.0.
 Additionally we will drop support to run on .NET Core 2.1 and .NET Core 3.0 for [Cake .NET Tool] and [Cake Frosting].
 
 This means that, starting with Cake 2.0, you will need to have the .NET SDK installed on your build machine, at a minimum .NET Core 3.1,
