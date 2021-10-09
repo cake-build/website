@@ -1,6 +1,6 @@
 #tool "dotnet:https://api.nuget.org/v3/index.json?package=Wyam.Tool&version=2.2.9"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Wyam&version=2.2.9"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Yaml&version=3.1.1"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Wyam&version=2.2.12"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Yaml&version=4.0.0"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=YamlDotNet&version=6.1.2"
 
 #load "nuget.cake"

@@ -1,6 +1,6 @@
-#addin nuget:?package=Polly&version=7.1.0
-#addin nuget:?package=Cake.Kudu.Client&version=0.8.0
-#addin nuget:?package=Cake.Http&version=0.7.0
+#addin nuget:?package=Polly&version=7.2.2
+#addin nuget:?package=Cake.Kudu.Client&version=1.0.1
+#addin nuget:?package=Cake.Http&version=1.2.2
 
 using Polly;
 

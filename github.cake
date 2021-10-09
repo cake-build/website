@@ -1,5 +1,5 @@
-#addin "nuget:https://api.nuget.org/v3/index.json?package=Octokit&version=0.48.0"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=NuGet.Versioning&version=5.7.0"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=Octokit&version=0.50.0"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=NuGet.Versioning&version=5.11.0"
 
 using Octokit;
 using NuGet.Versioning;
