@@ -1,6 +1,6 @@
-#addin "nuget:https://api.nuget.org/v3/index.json?package=Polly&version=7.1.0"
-#addin "nuget:https://api.nuget.org/v3/index.json??package=Cake.FileHelpers&version=3.3.0"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=NuGet.Protocol&version=5.7.0"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=Polly&version=7.2.2"
+#addin "nuget:https://api.nuget.org/v3/index.json??package=Cake.FileHelpers&version=4.0.1"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=NuGet.Protocol&version=5.11.0"
 
 using System.Net.Http;
 using System.Threading;
