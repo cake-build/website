@@ -10,7 +10,7 @@ Across these runners, Cake runs on Mono, .NET Framework and .NET Core 2.0 and ne
 
 This [broad range of supported runners and platforms] comes also with a cost.
 On one hand it limits the usage of new features available in newer platforms in Cake itself,
-on the other hand it is also  reflected in our best practices, that extension should be supported on all runners and platforms,
+on the other hand it is also reflected in our best practices, that extensions should be supported on all runners and platforms,
 leading to additional maintenance work in the whole ecosystem.
 Having to choose between different runners could also lead to confusion for users, which is the best choice for their use-case.
 
