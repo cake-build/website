@@ -34,6 +34,9 @@ Supported platform matrix for Cake 2.0 will look like this:
 | [Cake .NET Tool]                 | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> |
 | [Cake Frosting]                  | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> |
 
+As a consequence of no longer shipping [Cake runner for .NET Framework] we will also stop shipping the [Cake.Portable Chocolatey package]
+and [Homebrew Cake formulae].
+
 [Cake runner for .NET Core] has been deprecated since version 1.0 with [Cake .NET Tool] as the suggested replacement.
 For users of [Cake runner for .NET Framework] it is also suggested to switch to [Cake .NET Tool] and run builds on .NET Core 3.1 or newer.
 For users which rely on extension or other dependencies which require .NET Framework or .NET Core 3.0 or older, suggestion is to stay on Cake 1.x.
@@ -44,5 +47,7 @@ If you have any questions please join the [discussion].
 [Cake runner for .NET Core]: https://www.nuget.org/packages/Cake.CoreCLR/
 [Cake .NET Tool]: https://www.nuget.org/packages/Cake.Tool/
 [Cake Frosting]: https://www.nuget.org/packages/Cake.Frosting/
+[Cake.Portable Chocolatey package]: https://community.chocolatey.org/packages/cake.portable
+[Homebrew Cake formulae]: https://formulae.brew.sh/formula/cake
 [broad range of supported runners and platforms]: /docs/running-builds/runners/
 [discussion]: https://github.com/cake-build/cake/discussions/???
