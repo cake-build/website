@@ -16,8 +16,16 @@ Having to choose between different runners could also lead to confusion for user
 
 To allow Cake to make use of modern platform features, make life easier for extension authors and simplify decision process of users
 we decided to stop shipping [Cake runner for .NET Framework] and the already deprecated [Cake runner for .NET Core] with 2.0.
-This will mean that starting with 2.0, Cake no longer will run on .NET Framework, Mono and .NET Core 2.0.
 Additionally we will drop support to run on .NET Core 2.1 and .NET Core 3.0 for [Cake .NET Tool] and [Cake Frosting].
+
+This means that, starting with Cake 2.0, you will need to have the .NET SDK installed on your build machine, at a minimum .NET Core 3.1,
+but .NET 6 is recommended, in order to **run** Cake.
+In other words, Cake itself will no longer **run** on .NET Framework, Mono and .NET Core 3.0 or older.
+
+:::{.alert .alert-info}
+Note that only support for running Cake on .NET Framework and older versions of .NET Core will be dropped.
+Cake will continue to support building of .NET Framework projects as well as projects targeting .NET Core 3.0 or older.
+:::
 
 Supported platform matrix for Cake 2.0 will look like this:
 
@@ -29,11 +37,6 @@ Supported platform matrix for Cake 2.0 will look like this:
 [Cake runner for .NET Core] has been deprecated since version 1.0 with [Cake .NET Tool] as the suggested replacement.
 For users of [Cake runner for .NET Framework] it is also suggested to switch to [Cake .NET Tool] and run builds on .NET Core 3.1 or newer.
 For users which rely on extension or other dependencies which require .NET Framework or .NET Core 3.0 or older, suggestion is to stay on Cake 1.x.
-
-:::{.alert .alert-info}
-Note that only support for running Cake on .NET Framework and older versions of .NET Core will be dropped.
-Cake will continue to support building of .NET Framework projects as well as projects targeting .NET Core 3.0 or older.
-:::
 
 If you have any questions please join the [discussion].
 
