@@ -1,8 +1,13 @@
 ﻿---
-title: Sunsetting of .NET Framework and .NET Core runners
+title: Sunsetting of .NET Framework and .NET Core runners in Cake 2.0
 category: Announcement
 author: Pascal Berger
 ---
+
+:::{.alert .alert-info}
+Note that the following explanations are only about required platforms to run Cake.
+Cake will continue to support building of .NET Framework and .NET Core projects.
+:::
 
 The Cake project started in 2014 with the [Cake runner for .NET Framework] which has since been downloaded more than 10 million times.
 Since then [Cake runner for .NET Core], [Cake .NET Tool] and [Cake Frosting] have been added as officially supported runners.
@@ -21,11 +26,7 @@ Additionally we will drop support to run on .NET Core 2.1 and .NET Core 3.0 for 
 This means that, starting with Cake 2.0, you will need to have the .NET SDK installed on your build machine, at a minimum .NET Core 3.1,
 but .NET 6 is recommended, in order to **run** Cake.
 In other words, Cake itself will no longer **run** on .NET Framework, Mono and .NET Core 3.0 or older.
-
-:::{.alert .alert-info}
-Note that only support for running Cake on .NET Framework and older versions of .NET Core will be dropped.
 Cake will continue to support building of .NET Framework projects as well as projects targeting .NET Core 3.0 or older.
-:::
 
 Supported platform matrix for Cake 2.0 will look like this:
 
@@ -50,4 +51,4 @@ If you have any questions please join the [discussion].
 [Cake.Portable Chocolatey package]: https://community.chocolatey.org/packages/cake.portable
 [Homebrew Cake formulae]: https://formulae.brew.sh/formula/cake
 [broad range of supported runners and platforms]: /docs/running-builds/runners/
-[discussion]: https://github.com/cake-build/cake/discussions/???
+[discussion]: https://github.com/cake-build/cake/discussions/3575
