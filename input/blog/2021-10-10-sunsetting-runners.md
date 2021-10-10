@@ -31,7 +31,7 @@ Cake will continue to support building of .NET Framework projects as well as pro
 Supported platform matrix for Cake 2.0 will look like this:
 
 | Runner                           | .NET 6 | .NET 5 | .NET Core 3.1 |
-|----------------------------------|--------|--------|---------------|
+| -------------------------------- |:------:|:------:|:-------------:|
 | [Cake .NET Tool]                 | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> |
 | [Cake Frosting]                  | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> |
 
