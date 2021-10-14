@@ -1,0 +1,17 @@
+Type: Module
+Name: Cake.DotNetLocalTools.Module
+NuGet: Cake.DotNetLocalTools.Module
+Assemblies:
+- /**/Cake.DotNetLocalTools.Module.dll
+Repository: https://github.com/ap0llo/Cake.DotNetLocalTools.Module.git
+ProjectUrl: https://github.com/ap0llo/Cake.DotNetLocalTools.Module/
+Author: ap0llo
+Description: A Cake module to install tools from a .NET local tool manifest
+Categories:
+- cake-build
+TargetCakeVersion: 1.0.0
+TargetFrameworks:
+- netstandard2.0
+AnalyzedPackageVersion: 1.0.2
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2021-10-13T13:20:36.1800000Z
