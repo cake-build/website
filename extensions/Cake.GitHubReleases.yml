@@ -1,0 +1,18 @@
+Type: Addin
+Name: Cake.GitHubReleases
+NuGet: Cake.GitHubReleases
+Assemblies:
+- /**/Cake.GitHubReleases.dll
+Repository: https://github.com/ap0llo/Cake.GitHubReleases.git
+ProjectUrl: https://github.com/ap0llo/Cake.GitHubReleases/
+Author: ap0llo
+Description: A Cake addin for creating GitHub Releases
+Categories:
+- cake-build
+- github
+TargetCakeVersion: 1.0.0
+TargetFrameworks:
+- netstandard2.0
+AnalyzedPackageVersion: 1.0.10
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2021-10-13T12:42:51.1070000Z
