@@ -38,12 +38,15 @@
     <hr>
 
     <div id="aliasCategories">
+        <i id="aliasCategorySearchIcon" class="fa fa-filter"></i>
+        <input id="aliasCategorySearch" type="text" class="search" aria-label="Enter categories to which should be filtered" placeholder="Filter categories..." autocomplete="off" value>
+
         <ul class="list sidebar-menu" style="display:none;">
             @foreach(Tuple<string, IDocument> category in categories)
             {
                 string selectedClass = category.Item1 == Model.String(Keys.GroupKey) ? "selected" : null;
                 bool containsBuiltInAliases = category.Item2.Bool("ContainsBuiltInAliases");
-                <li class="@selectedClass" data-builtin="@containsBuiltInAliases"><a href="@Context.GetLink(category.Item2)">@category.Item1</a></li>
+                <li class="@selectedClass" data-name="@category.Item1" data-builtin="@containsBuiltInAliases"><a href="@Context.GetLink(category.Item2)">@category.Item1</a></li>
             }
         </ul>
     </div>
@@ -80,7 +83,8 @@
     // Initialize list.js
     var options = {
       valueNames: [
-        { data: ['builtin'] }
+          { data: ['name'] },
+          { data: ['builtin'] }
       ]
     };
     var categoryList = new List('aliasCategories', options);
