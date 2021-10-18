@@ -8,7 +8,7 @@ ProjectUrl: https://github.com/ap0llo/Cake.DotNetLocalTools.Module/
 Author: ap0llo
 Description: A Cake module to install tools from a .NET local tool manifest
 Categories:
-- cake-build
+- dotnettool
 TargetCakeVersion: 1.0.0
 TargetFrameworks:
 - netstandard2.0
