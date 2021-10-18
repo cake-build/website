@@ -47,35 +47,45 @@
             }
         }
 
-        // Group heading
-        var groupHeading = addinName ?? "Built-In";
-        <h1 id='@groupHeading.Replace(" ", "-")'>@groupHeading</h1>
+        var aliasClass = isAddin ? "addinAliases" : "builtinAliases";
+        var aliasStyle = isAddin ? "style=display:none;" : null;
+        <div class="aliasList @aliasClass" @aliasStyle>
+            @{
+                // Group heading
+                var groupHeading = addinName ?? "Built-In";
+            }
+            <h1 id='@groupHeading.Replace(" ", "-")'>@groupHeading</h1>
 
-        // Addin annotation
-        @if(isAddin)
-        {
-            @Html.Partial("_AddinAlert", group.FirstOrDefault())
-        }
-
-        // Summary
-        string summary =
-            group
-                .Select(x => x.String(CodeAnalysisKeys.Summary))
-                .FirstOrDefault(x => !string.IsNullOrEmpty(x));
-
-        @if(!string.IsNullOrWhiteSpace(summary))
-        {
-            <p>@Html.Raw(summary)</p>
-        }
-
-        // Alias list
-        @Html.Partial(
-            "_AliasesList",
-            group,
-            new ViewDataDictionary(ViewData)
+            @if(isAddin)
             {
+                // Addin annotation
+                @Html.Partial("_AddinAlert", group.FirstOrDefault());
+            }
+
+            @{
+                // Summary
+                string summary =
+                    group
+                        .Select(x => x.String(CodeAnalysisKeys.Summary))
+                        .FirstOrDefault(x => !string.IsNullOrEmpty(x));
+            }
+
+            @if(!string.IsNullOrWhiteSpace(summary))
+            {
+                <p>@Html.Raw(summary)</p>
+            }
+
+            @{
+                // Alias list
+            }
+            @Html.Partial(
+                "_AliasesList",
+                group,
+                new ViewDataDictionary(ViewData)
+                {
                     { "groupHeadingLevel", 2 }
-            })
+                })
+        </div>
     }
 
     @RenderBody()

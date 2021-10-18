@@ -57,6 +57,13 @@ Pipelines.InsertAfter("Aliases", "DslAliases",
             .Distinct(),
         Documents("Aliases")
     ),
+    Meta(
+        "ContainsBuiltInAliases",
+        @doc
+            .DocumentList(Keys.GroupDocuments)
+            .Any(x => string.IsNullOrWhiteSpace(x.Document(CodeAnalysisKeys.ContainingAssembly)?.String(CodeAnalysisKeys.DisplayName)))
+            ? true
+            : false),
     Meta(Keys.WritePath, new FilePath("dsl/" + @doc.String(Keys.GroupKey).ToLower().Replace(" ", "-") + "/index.html")),
     Meta(Keys.RelativeFilePath, @doc.FilePath(Keys.WritePath)),
     OrderBy(@doc.String(Keys.GroupKey))

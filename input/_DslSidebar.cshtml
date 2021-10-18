@@ -11,10 +11,93 @@
                 group
         ));
     }
+
+    // Flag indicating if current page is for a category containing only aliases from addins.
+    bool isCategoryFromAddin = false;
+    var selectedItem = categories.SingleOrDefault(x => x.Item1 == Model.String(Keys.GroupKey));
+    if (selectedItem != null)
+    {
+        isCategoryFromAddin = !selectedItem.Item2.Bool("ContainsBuiltInAliases");
+    }
+
+    // String to disable filter when current page contains only aliases from addins,
+    // since otherwise page will become empty and be hidden from navigation
+    string showAddinAliasesDisabled = isCategoryFromAddin ? "disabled" : null;
 }
 
-@foreach(Tuple<string, IDocument> category in categories)
-{
-    string selectedClass = category.Item1 == Model.String(Keys.GroupKey) ? "selected" : null;
-    <li class="@selectedClass"><a href="@Context.GetLink(category.Item2)">@category.Item1</a></li>
-}
+<li>
+    <div id="category-filter">
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" class="showAddinAliases" data-toggle="toggle" @showAddinAliasesDisabled checked>
+                <span>Aliases from addins<span>
+            </label>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="aliasCategories">
+        <ul class="list sidebar-menu" style="display:none;">
+            @foreach(Tuple<string, IDocument> category in categories)
+            {
+                string selectedClass = category.Item1 == Model.String(Keys.GroupKey) ? "selected" : null;
+                bool containsBuiltInAliases = category.Item2.Bool("ContainsBuiltInAliases");
+                <li class="@selectedClass" data-builtin="@containsBuiltInAliases"><a href="@Context.GetLink(category.Item2)">@category.Item1</a></li>
+            }
+        </ul>
+    </div>
+</li>
+
+<link href="//cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+<script src="//cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.js"></script>
+<script>
+    function showAddinAliases()
+    {
+        // Show categories which only contain aliases from addins
+        categoryList.filter();
+        // List aliases from addins
+        $('div .addinAliases').fadeIn();
+        $.AdminLTE.layout.fix();
+    }
+
+    function hideAddinAliases()
+    {
+        // Hide categories which only contain aliases from addins
+        categoryList.filter(function(item) {
+            return (item.values().builtin == "True");
+        });
+        // Hide aliases from addins
+        $('div .addinAliases').fadeOut();
+        $.AdminLTE.layout.fix();
+    }
+
+    function setAddinAliasesVisibility(visible) {
+        visible ? showAddinAliases() : hideAddinAliases();
+    }
+
+    // Initialize list.js
+    var options = {
+      valueNames: [
+        { data: ['builtin'] }
+      ]
+    };
+    var categoryList = new List('aliasCategories', options);
+
+    var $showAddinAliases = $('.showAddinAliases');
+    $showAddinAliases.on('change', function() {
+        sessionStorage.showAddinAliases = this.checked;
+        setAddinAliasesVisibility(this.checked);
+    });
+
+    // Read initial state for filter from storage.
+    // If currenty category contains only aliases from addins we ignore state (e.g. when direct link to addin category, but toggle previously disabled)
+    var isCategoryFromAddin = @isCategoryFromAddin.ToString().ToLower()
+    $showAddinAliases.prop('checked', isCategoryFromAddin || (( typeof sessionStorage.showAddinAliases !== 'undefined' ) ? (sessionStorage.showAddinAliases === 'true') : true ));
+    $( document ).ready(function() {
+        setAddinAliasesVisibility($showAddinAliases.prop('checked'));
+        $('.sidebar-menu').show();
+        $.AdminLTE.layout.fix();
+    });
+</script>
