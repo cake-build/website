@@ -1,0 +1,21 @@
+Type: Addin
+Name: Cake.Tyrannoport
+NuGet: Cake.Tyrannoport
+Assemblies:
+- /**/Cake.Tyrannoport.dll
+Repository: https://github.com/iwillspeak/Tyrannoport.git
+ProjectUrl: https://www.nuget.org/packages/Cake.Tyrannoport/
+Author: iwillspeak
+Description: "🦖 For processing TRX files into something more enjoyable 🦖"
+Categories:
+- test
+- report
+- html
+- generator
+TargetCakeVersion: 1.0.0
+TargetFrameworks:
+- net5.0
+- netstandard2.0
+AnalyzedPackageVersion: 0.3.14
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2021-07-28T15:51:41.9230000Z
