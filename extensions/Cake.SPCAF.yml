@@ -8,7 +8,7 @@ ProjectUrl: https://github.com/juro-org/Cake.SPCAF/
 Author: juro-org
 Description: Alias to assist with running SPCAF from Cake build scripts
 Categories:
-- cake-build
+- sharepoint
 - spcaf
 TargetCakeVersion: 1.0.0
 TargetFrameworks:
