@@ -6,7 +6,7 @@ Assemblies:
 Repository: https://github.com/iwillspeak/Tyrannoport.git
 ProjectUrl: https://www.nuget.org/packages/Cake.Tyrannoport/
 Author: iwillspeak
-Description: "\U0001F996 For processing TRX files into something more enjoyable \U0001F996"
+Description: "🦖 For processing TRX files into something more enjoyable 🦖"
 Categories:
 - test
 - report
