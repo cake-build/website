@@ -111,6 +111,11 @@ The data type of `AzurePipelinesBuildInfo.ArtifactStagingDirectory`, `AzurePipel
 
 `TFBuildProvider`, which has been replaced by `AzurePipelinsProvider` since Cake 1.0 has been removed.
 
+## Cake Frosting
+
+The deprecated `ReverseDependencyAttribute` and `DependencyAttribute` have been removed.
+`ReverseDependencyAttribute` can be replaced with `IsDependeeOffAttribute` and `DependencyAttribute` with `IsDependentOnAttribute`.
+
 [Cake runner for .NET Framework]: /docs/running-builds/runners/cake-runner-for-dotnet-framework
 [Cake runner for .NET Core]: /docs/running-builds/runners/cake-runner-for-dotnet-core
 [Cake .NET Tool]: /docs/running-builds/runners/dotnet-tool
