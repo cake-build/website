@@ -109,7 +109,18 @@ The data type of `AzurePipelinesBuildInfo.ArtifactStagingDirectory`, `AzurePipel
 
 ### Removal of TFBuildProvider
 
-`TFBuildProvider`, which has been replaced by `AzurePipelinsProvider` since Cake 1.0 has been removed.
+Deprecated `TFBuildProvider` has been removed.
+It can be replaced with `AzurePipelinsProvider`.
+
+## MsBuild & dotnet support
+
+### New aliases for dotnet
+
+The existing `DotNetCore*` aliases have been made obsolete and should be replaced with new `DotNet*` aliases.
+
+### Xamarin.iOS platform target support
+
+`PlatformTarget.ARMv6`, `PlatformTarget.ARMv7` and `PlatformTarget.ARMv7s` have been added to `MSBuildSettings.PlatformTarget` for Xamarin.iOS support.
 
 ## Cake Frosting
 
