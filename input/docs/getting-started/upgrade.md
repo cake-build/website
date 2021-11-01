@@ -75,6 +75,11 @@ For users which rely on extension or other dependencies which require .NET Frame
 
 See [Sunsetting of .NET Framework and .NET Core runners in Cake 2.0] for details.
 
+## Cake Frosting
+
+The deprecated `ReverseDependencyAttribute` and `DependencyAttribute` have been removed.
+`ReverseDependencyAttribute` can be replaced with `IsDependeeOffAttribute` and `DependencyAttribute` with `IsDependentOnAttribute`.
+
 ## Azure Pipelines build provider updates
 
 ### IsRunningOnAzurePipelines and IsRunningOnAzurePipelinesHosted properties
@@ -122,10 +127,43 @@ The existing `DotNetCore*` aliases have been made obsolete and should be replace
 
 `PlatformTarget.ARMv6`, `PlatformTarget.ARMv7` and `PlatformTarget.ARMv7s` have been added to `MSBuildSettings.PlatformTarget` for Xamarin.iOS support.
 
-## Cake Frosting
+## Tool support
 
-The deprecated `ReverseDependencyAttribute` and `DependencyAttribute` have been removed.
-`ReverseDependencyAttribute` can be replaced with `IsDependeeOffAttribute` and `DependencyAttribute` with `IsDependentOnAttribute`.
+### GitVersion
+
+`GitVersionVerbosity` has been updated to match the verbosity in current versions of GitVersion.
+
+### OpenCover
+
+With Cake 1.x `OpenCoverSettings` had a `Register` property of type string, which could be empty for admin-mode, the string `user` for user-mode
+or the path to a DLL:
+
+```csharp
+OpenCover(x => {
+    x.NUnit3(tests);
+},
+    coverageFile,
+    new OpenCoverSettings{
+        Register = "some-path-to-dll"
+    }
+);
+```
+
+With Cake 2.0 `OpenCoverSettings.Register` has been changed to type `OpenCoverRegisterOption`.
+There are also additional extension methods `OpenCoverSettings`:
+
+```csharp
+OpenCover(x => {
+    x.NUnit3(tests);
+},
+    coverageFile,
+    new OpenCoverSettings()
+        .WithoutRegister() // to omit the register-settings
+        .WithRegisterAdmin() // -register
+        .WithRegisterUser() // -register:user <-- this is the default
+        .WithRegisterDll(someFilePath) // -register:path-to-dll
+);
+```
 
 [Cake runner for .NET Framework]: /docs/running-builds/runners/cake-runner-for-dotnet-framework
 [Cake runner for .NET Core]: /docs/running-builds/runners/cake-runner-for-dotnet-core
