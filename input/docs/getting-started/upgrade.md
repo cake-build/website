@@ -75,6 +75,42 @@ For users which rely on extension or other dependencies which require .NET Frame
 
 See [Sunsetting of .NET Framework and .NET Core runners in Cake 2.0] for details.
 
+## Azure Pipelines build provider updates
+
+### IsRunningOnAzurePipelines and IsRunningOnAzurePipelinesHosted properties
+
+With Cake 1.x `IAzurePipelinesProvider.IsRunningOnAzurePipelines` returned `true` if a build was running on Azure Pipelines **and** on
+a self-hosted agent.
+To check if a build was running on Azure Pipelines, regardless on which type of agent, two properties needed to be checked:
+
+```csharp
+var isRunningOnAzurePipelines =
+    BuildSystem.AzurePipelines.IsRunningOnAzurePipelines || BuildSystem.AzurePipelines.IsRunningOnAzurePipelinesHosted;
+```
+
+With Cake 2.0 the meaning of the `IAzurePipelinesProvider.IsRunningOnAzurePipelines` and `BuildSystem.IsRunningOnAzurePipelines` properties
+have changed to only check if the build is running on Azure Pipelines or not.
+
+To check if a build is running on a Microsoft-hosted or self-hosted agent, the `IsHosted` property can be used:
+
+```csharp
+var isMicrosoftHostedAgent =
+    BuildSystem.AzurePipelines.Environment.Agent.IsHosted;
+```
+
+The `IAzurePipelinesProvider.IsRunningOnAzurePipelinesHosted` and `BuildSystem.IsRunningOnAzurePipelinesHosted` properties have been removed and
+need to be replaced with the above code.
+Additionally the `BuildProvider.AzurePipelinesHosted` enumeration value has been removed.
+
+### AzurePipelinesBuildInfo properties data type
+
+The data type of `AzurePipelinesBuildInfo.ArtifactStagingDirectory`, `AzurePipelinesBuildInfo.BinariesDirectory`, `AzurePipelinesBuildInfo.SourcesDirectory`,
+`AzurePipelinesBuildInfo.StagingDirectory` and `AzurePipelinesBuildInfo.TestResultsDirectory` has been changed from `FilePath` to `DirectoryPath`.
+
+### Removal of TFBuildProvider
+
+`TFBuildProvider`, which has been replaced by `AzurePipelinsProvider` since Cake 1.0 has been removed.
+
 [Cake runner for .NET Framework]: /docs/running-builds/runners/cake-runner-for-dotnet-framework
 [Cake runner for .NET Core]: /docs/running-builds/runners/cake-runner-for-dotnet-core
 [Cake .NET Tool]: /docs/running-builds/runners/dotnet-tool
