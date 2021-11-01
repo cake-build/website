@@ -80,6 +80,8 @@ See [Sunsetting of .NET Framework and .NET Core runners in Cake 2.0] for details
 The deprecated `ReverseDependencyAttribute` and `DependencyAttribute` have been removed.
 `ReverseDependencyAttribute` can be replaced with `IsDependeeOffAttribute` and `DependencyAttribute` with `IsDependentOnAttribute`.
 
+See [#3003](https://github.com/cake-build/cake/issues/3003) and [#3577](https://github.com/cake-build/cake/issues/3577) for details.
+
 ## Azure Pipelines build provider updates
 
 ### IsRunningOnAzurePipelines and IsRunningOnAzurePipelinesHosted properties
@@ -107,15 +109,21 @@ The `IAzurePipelinesProvider.IsRunningOnAzurePipelinesHosted` and `BuildSystem.I
 need to be replaced with the above code.
 Additionally the `BuildProvider.AzurePipelinesHosted` enumeration value has been removed.
 
+See [#3654](https://github.com/cake-build/cake/issues/3654) for details.
+
 ### AzurePipelinesBuildInfo properties data type
 
 The data type of `AzurePipelinesBuildInfo.ArtifactStagingDirectory`, `AzurePipelinesBuildInfo.BinariesDirectory`, `AzurePipelinesBuildInfo.SourcesDirectory`,
 `AzurePipelinesBuildInfo.StagingDirectory` and `AzurePipelinesBuildInfo.TestResultsDirectory` has been changed from `FilePath` to `DirectoryPath`.
 
+See [#3590](https://github.com/cake-build/cake/issues/3590) for details.
+
 ### Removal of TFBuildProvider
 
 Deprecated `TFBuildProvider` has been removed.
 It can be replaced with `AzurePipelinsProvider`.
+
+See [#3610](https://github.com/cake-build/cake/issues/3610) for details.
 
 ## MsBuild & dotnet support
 
@@ -123,15 +131,21 @@ It can be replaced with `AzurePipelinsProvider`.
 
 The existing `DotNetCore*` aliases have been made obsolete and should be replaced with new `DotNet*` aliases.
 
+See [#3341](https://github.com/cake-build/cake/issues/3341) for details.
+
 ### Xamarin.iOS platform target support
 
 `PlatformTarget.ARMv6`, `PlatformTarget.ARMv7` and `PlatformTarget.ARMv7s` have been added to `MSBuildSettings.PlatformTarget` for Xamarin.iOS support.
+
+See [#3222](https://github.com/cake-build/cake/issues/3222) for details.
 
 ## Tool support
 
 ### GitVersion
 
 `GitVersionVerbosity` has been updated to match the verbosity in current versions of GitVersion.
+
+See [#3282](https://github.com/cake-build/cake/issues/3282) for details.
 
 ### OpenCover
 
@@ -164,6 +178,8 @@ OpenCover(x => {
         .WithRegisterDll(someFilePath) // -register:path-to-dll
 );
 ```
+
+See [#2788](https://github.com/cake-build/cake/issues/2788) for details.
 
 [Cake runner for .NET Framework]: /docs/running-builds/runners/cake-runner-for-dotnet-framework
 [Cake runner for .NET Core]: /docs/running-builds/runners/cake-runner-for-dotnet-core
