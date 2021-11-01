@@ -9,9 +9,9 @@ Author: michael-wolfenden
 Description: A set of aliases for Cake for running Npx commands
 Categories:
 - npx
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 1.6.0
+AnalyzedPackageVersion: 1.7.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2019-08-25T07:26:18.1130000Z
+AnalyzedPackagePublishDate: 2021-11-01T10:46:47.4600000Z
