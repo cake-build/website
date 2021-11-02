@@ -42,7 +42,7 @@ The wording of each guideline indicates how strong the recommendation is:
 
 ## Cake reference
 
-**_§2.1_** **Do** reference the lowest version of Cake with API compatibility to the latest version (currently `1.0.0`).
+**_§2.1_** **Do** reference the lowest version of Cake with API compatibility to the latest version (currently `2.0.0`).
 
 > **Why?** This gives the best support for different versions of Cake.
 > Modules built against newer versions of Cake might not be compatible with previous versions of Cake and vice-versa,
@@ -52,7 +52,7 @@ The wording of each guideline indicates how strong the recommendation is:
 
 ----------------------------------------------------------------------------------------------------
 
-**_§2.2_** **Do** reference a newer version than Cake `1.0.0` if the module requires a specific functionality.
+**_§2.2_** **Do** reference a newer version than Cake `2.0.0` if the module requires a specific functionality.
 
 > **Why?** If a specific feature of Cake is required in a module the lowest version of Cake which introduces this feature should be referenced
 > to have access to the feature and the best support for different versions of Cake.
@@ -102,12 +102,11 @@ The wording of each guideline indicates how strong the recommendation is:
 
 ## .NET target version
 
-**_§2.5_** **Do** target `netstandard2.0`.
+**_§2.5_** **Do** target `netcoreapp3.1`.
 
-> **Why?** Targeting to `netstandard2.0` should work for most modules to support all available Cake runners, operating systems and platforms.
-> Depending on the module it might be required to target additional platforms.
+> **Why?** Targeting to `netcoreapp3.1` should work for most modules to support the latest version of available Cake runners, operating systems and platforms.
 
-**_§2.6_** **Avoid** targeting additional frameworks such as `net461` or `net5.0`.
+**_§2.6_** **Avoid** targeting additional frameworks such as `net5.0` or `net6.0`.
 
 > **Why?** Due to current limitations ([1](https://github.com/cake-build/cake/issues/2256), [2](https://github.com/cake-build/cake/issues/2525)) on how modules are loaded, Cake attempts to load all assemblies included in the NuGet package of the module (of all targets) which causes warnings to be displayed and the impression that the module was not loaded and/or is not working.
 > Once those limitations are fixed, we'll update this recommendation to align with the recommendations for [Cake Addins](/docs/extending/addins/best-practices#net-target-version).

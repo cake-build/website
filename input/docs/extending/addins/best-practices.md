@@ -42,7 +42,7 @@ The wording of each guideline indicates how strong the recommendation is:
 
 ## Cake reference
 
-**_§2.1_** **Do** reference the lowest version of Cake with API compatibility to the latest version (currently `1.0.0`).
+**_§2.1_** **Do** reference the lowest version of Cake with API compatibility to the latest version (currently `2.0.0`).
 
 > **Why?** This gives the best support for different versions of Cake.
 > Addins built against newer versions of Cake might not be compatible with previous versions of Cake and vice-versa,
@@ -52,7 +52,7 @@ The wording of each guideline indicates how strong the recommendation is:
 
 ----------------------------------------------------------------------------------------------------
 
-**_§2.2_** **Do** reference a newer version than Cake `1.0.0` if the addin requires a specific functionality.
+**_§2.2_** **Do** reference a newer version than Cake `2.0.0` if the addin requires a specific functionality.
 
 > **Why?** If a specific feature of Cake is required in an addin the lowest version of Cake which introduces this feature should be referenced
 > to have access to the feature and the best support for different versions of Cake.
@@ -102,22 +102,9 @@ The wording of each guideline indicates how strong the recommendation is:
 
 ## .NET target version
 
-**_§2.5_** **Do** target at least `netstandard2.0`.
+**_§2.5_** **Do** multi-target `netcoreapp3.1`, `net5.0`, `net6.0`.
 
-> **Why?** Targeting to `netstandard2.0` should work for most addins to support all available Cake runners, operating systems and platforms.
-> Depending on the addin it might be required to target additional platforms.
-
-**_§2.6_** **Consider** to additionally target `net461`.
-
-> **Why?** Since .NET Framework < 4.7.2 has issues with running .NET Standard assemblies, and Cake itself can run on .NET Framework 4.6.1
-> multi-target addins to `netstandard2.0` and `net461` will give the maximum compatibility.
->
-> Multi-targeting was suggested by Microsoft in [this .NET Conf 2018 talk](https://www.youtube.com/watch?v=hLFyycJVo0I#t=44m48s) and the underlying issues
-> are explained in [this tweet](https://twitter.com/terrajobst/status/1031999730320986112).
-
-**_§2.7_** **Consider** to additionally target `net5.0`.
-
-> **Why?** Targeting `net5.0` additionally to `netstandard2.0` allows you to use features provided by newer platforms when running on .NET 5.
+> **Why?** Multi-targeting to `netcoreapp3.1`, `net5.0`, `net6.0` should work for most addins to support the latest version of available Cake runners, operating systems and platforms.
 
 # Package metadata
 
@@ -190,7 +177,7 @@ This recommendation changed once again in the fall of 2019 when NuGet started su
 
 **_§5.1_** **Do** test the addin with the different [runners](/docs/running-builds/runners).
 
-> **Why?** .NET Tool, script runners and Cake Frosting have slight differences on what dependencies are loaded by the runner and how dependencies are loaded.
+> **Why?** .NET Tool and Cake Frosting have slight differences on what dependencies are loaded by the runner and how dependencies are loaded.
 
 :::{.alert .alert-info}
 Runners with which an addin is not compatible should be documented in the XML comment of the class containing the aliases.
@@ -205,9 +192,6 @@ Operating systems with which an addin is not compatible should be documented in 
 :::
 
 **_§5.3_** **Do** test the addin on all [platforms](/docs/running-builds/runners/#supported-platforms) supported by the different Cake runners.
-
-> **Why?** Different platforms have slight differences in implementation and might break an addin.
-> If required, targeting additional frameworks (e.g. `net5.0`) might be required.
 
 :::{.alert .alert-info}
 Platforms, supported by Cake, with which an addin is not compatible should be documented in the XML comment of the class containing the aliases.
