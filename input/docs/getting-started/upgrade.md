@@ -71,7 +71,7 @@ and [Homebrew Cake formulae].
 
 [Cake runner for .NET Core] has been deprecated since version 1.0 with [Cake .NET Tool] as the suggested replacement.
 For users of [Cake runner for .NET Framework] it is also suggested to switch to [Cake .NET Tool] and run builds on .NET Core 3.1 or newer.
-For users which rely on extension or other dependencies which require .NET Framework or .NET Core 3.0 or older, suggestion is to stay on Cake 1.x.
+For users which rely on an extension, or other dependencies, which require .NET Framework or .NET Core 3.0 or older, suggestion is to stay on Cake 1.x.
 
 See [Sunsetting of .NET Framework and .NET Core runners in Cake 2.0] for details.
 
