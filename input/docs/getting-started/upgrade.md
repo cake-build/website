@@ -78,7 +78,7 @@ See [Sunsetting of .NET Framework and .NET Core runners in Cake 2.0] for details
 ## Cake Frosting
 
 The deprecated `ReverseDependencyAttribute` and `DependencyAttribute` have been removed.
-`ReverseDependencyAttribute` can be replaced with `IsDependeeOffAttribute` and `DependencyAttribute` with `IsDependentOnAttribute`.
+`ReverseDependencyAttribute` can be replaced with `IsDependeeOfAttribute` and `DependencyAttribute` with `IsDependentOnAttribute`.
 
 See [#3003](https://github.com/cake-build/cake/issues/3003) and [#3577](https://github.com/cake-build/cake/issues/3577) for details.
 
@@ -121,7 +121,7 @@ See [#3590](https://github.com/cake-build/cake/issues/3590) for details.
 ### Removal of TFBuildProvider
 
 Deprecated `TFBuildProvider` has been removed.
-It can be replaced with `AzurePipelinsProvider`.
+It can be replaced with `AzurePipelinesProvider`.
 
 See [#3610](https://github.com/cake-build/cake/issues/3610) for details.
 
