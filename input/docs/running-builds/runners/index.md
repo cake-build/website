@@ -9,21 +9,27 @@ RedirectFrom:
   - docs/running-builds/using-cake-pre-release
 ---
 
-There are different runners available for running Cake scripts.
+Cake comes in two different flavors, which require different runners:
 
-## Feature overview
+| Flavor | Runner |
+|-|-|
+| Cake Scripting | [Cake .NET Tool] |
+| Standard .NET console application | [Cake Frosting] |
+
+A console application has the advantage of full IDE support, like IntelliSense, refactoring and debugging, but requires a full .NET project.
+A scripting approach can be an easier solution for simple build scenarios, as it allows to use a single file.
+
+# Feature overview
 
 | Runner | Minimum required .NET version  | Supported | IntelliSense |
 |-|-|-|-|
-| [Cake .NET Tool] | .NET Core 2.1 | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:orange"></i> [[1]](#1) |
-| [Cake Frosting] | .NET Framework 4.6.1 or .NET Core 3.1 | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> |
-| [Cake runner for .NET Framework] | .NET Framework 4.6.1 or Mono 5.0.12 | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:orange"></i> [[1]](#1) |
-| [Cake runner for .NET Core] | .NET Core 2.0 | <i class="fa fa-times" style="color:red"></i> | <i class="fa fa-check" style="color:orange"></i> [[1]](#1) |
+| [Cake .NET Tool] | .NET Core 3.1 | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:orange"></i> [[1]](#1) |
+| [Cake Frosting] | .NET Core 3.1 | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> |
 
 <a id="1"></a>
 [1]: Limited support in Visual Studio Code. See [IntelliSense in Visual Studio Code]
 
-## Supported operating systems
+# Supported operating systems
 
 The following table shows the supported operating systems for each runner.
 
@@ -31,30 +37,22 @@ The following table shows the supported operating systems for each runner.
 |----------------------------------|---------|-------|-------|
 | [Cake .NET Tool]                 | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> |
 | [Cake Frosting]                  | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> |
-| [Cake runner for .NET Framework] | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:orange"></i> [[2]](#footnote2) | <i class="fa fa-check" style="color:orange"></i> [[2]](#footnote2) |
-| [Cake runner for .NET Core]      | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> |
 
-<a id="footnote2"></a>
-[2]: Requiring Mono 5.0.12 or newer
-
-## Supported platforms
+# Supported platforms
 
 The following table shows the supported platforms for each runner.
 
 :::{.alert .alert-info}
 Note that the platform under which a build is running doesn't limit its build capabilities.
-It's absolutely possible to build a .NET Framework application with Cake running on .NET 6 / .NET Core or vice-versa.
-
+It's absolutely possible for example to build a .NET Framework application with Cake running on .NET 6.
 :::
 
-| Runner                           | .NET 6 | .NET 5 | .NET Core 3.1 | .NET Core 3.0 | .NET Core 2.1 | .NET Core 2.0 | .NET Framework 4.6.1 or newer | Mono 5.0.12 or newer|
-|----------------------------------|--------|--------|---------------|---------------|---------------|---------------|-------------------------------|---------------------|
-| [Cake .NET Tool]                 | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-times" style="color:red"></i> | <i class="fa fa-times" style="color:red"></i> | <i class="fa fa-times" style="color:red"></i> |
-| [Cake Frosting]                  | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> |
-| [Cake runner for .NET Framework] | <i class="fa fa-times" style="color:red"></i> | <i class="fa fa-times" style="color:red"></i> | <i class="fa fa-times" style="color:red"></i> | <i class="fa fa-times" style="color:red"></i> | <i class="fa fa-times" style="color:red"></i> | <i class="fa fa-times" style="color:red"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> |
-| [Cake runner for .NET Core]      | <i class="fa fa-times" style="color:red"></i> | <i class="fa fa-times" style="color:red"></i> | <i class="fa fa-times" style="color:red"></i> | <i class="fa fa-times" style="color:red"></i> | <i class="fa fa-times" style="color:red"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-times" style="color:red"></i> | <i class="fa fa-times" style="color:red"></i> |
+| Runner                           | .NET 6 | .NET 5 | .NET Core 3.1 |
+|----------------------------------|--------|--------|---------------|
+| [Cake .NET Tool]                 | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> |
+| [Cake Frosting]                  | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> |
 
-## Supported Build Systems
+# Supported Build Systems
 
 The following table shows build systems for which Cake provides specific integrations.
 
@@ -68,11 +66,9 @@ See [Build Systems](/docs/integrations/build-systems/) for details.
 |----------------------------------| - | - | - | - | - | - | - | - | - | - | - | - | - |
 | [Cake .NET Tool]                 | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> |
 | [Cake Frosting]                  | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> |
-| [Cake runner for .NET Framework] | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> |
-| [Cake runner for .NET Core]      | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> |
 
 [Cake .NET Tool]: dotnet-tool
 [Cake Frosting]: cake-frosting
 [Cake runner for .NET Framework]: cake-runner-for-dotnet-framework
 [Cake runner for .NET Core]: cake-runner-for-dotnet-core
-[IntelliSense in Visual Studio Code]: ../../integrations/editors/vscode/intellisense
+[IntelliSense in Visual Studio Code]: /docs/integrations/editors/vscode/intellisense

@@ -25,43 +25,30 @@ To create a Recipe NuGet package add the `.cake` files to the `Content` folder i
 
 ## Consuming Recipe NuGet packages
 
-<ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#load">Load directive</a></li>
-    <li><a data-toggle="tab" href="#packages">packages.config</a></li>
-</ul>
+:::{.alert .alert-warning}
+Make sure to pick a Recipe NuGet package compatible with your runner.
+:::
 
-<div class="tab-content">
-    <div id="load" class="tab-pane fade in active">
-        <p>
-            The <a href="/docs/writing-builds/preprocessor-directives#load-directive">load directive</a> can be used with the <code>nuget</code> scheme
-            to download the Recipe NuGet packages and load all <code>.cake</code> files in the <code>content</code> folder.
-            The following example loads version 1.0.0 of the <code>MyRecipePackage</code> NuGet package:
-        </p>
-        <p>
-<pre><code class="language-csharp hljs">#load nuget:?package=MyRecipePackage&version=1.0.0</code></pre>
-        </p>
-    </div>
-    <div id="packages" class="tab-pane fade">
-        <p>
-            The package can be added to the <code>packages.config</code> file.
-            The following example loads version 1.0.0 of the <code>MyRecipePackage</code> NuGet package:
-        </p>
-        <p>
-<pre><code class="language-xml hljs">&lt;package id="MyRecipePackage" version="1.0.0" /&gt;</code></pre>
-        </p>
-        <p>
-            Additionally the required files need to be loaded using the <a href="/docs/writing-builds/preprocessor-directives#load-directive">load directive</a>.
-            The following example loads the <code>MyScript</code> file which is part of the <code>MyRecipePackage</code> package:
-        </p>
-        <p>
-<pre><code class="language-csharp hljs">#load tools/MyRecipePackage/content/MyScript.cake</code></pre>
-        </p>
-    </div>
-</div>
+### Cake .NET Tool
+
+When using [Cake .NET Tool], the [load directive] can be used with the `nuget` scheme
+to download the Recipe NuGet packages and load all `.cake` files in the `content` folder.
+The following example loads version 1.0.0 of the `MyRecipePackage` NuGet package:
+
+```csharp
+#load nuget:?package=MyRecipePackage&version=1.0.0
+```
+### Cake Frosting
+
+When using [Cake Frosting], Recipe NuGet package can be referenced like any other NuGet package:
+
+```csharp
+<PackageReference Include="MyRecipePackage" Version="1.0.0" />
+```
 
 # Addins
 
-Code can be shared as a [Cake addin](/docs/extending/addins/) which provides [script aliases](/docs/fundamentals/aliases)
+Code can be shared as a [Cake addin](/docs/extending/addins/) which provides [aliases](/docs/fundamentals/aliases)
 that can be used in Cake builds.
 
 ## Writing addins
@@ -80,4 +67,7 @@ Classes can be shared in .NET assemblies deployed in NuGet packages.
 
 NuGet packages can be loaded using the [addin directive].
 
+[Cake .NET Tool]: /docs/running-builds/runners/dotnet-tool
+[Cake Frosting]: /docs/running-builds/runners/cake-frosting
 [addin directive]: /docs/writing-builds/preprocessor-directives#add-in-directive
+[load directive]: /docs/writing-builds/preprocessor-directives#load-directive

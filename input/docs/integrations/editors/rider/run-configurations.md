@@ -18,8 +18,6 @@ In order to use the run configurations you must have Cake installed on your mach
 <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#tool">Cake .NET Tool</a></li>
     <li><a data-toggle="tab" href="#frosting">Cake Frosting</a></li>
-    <li><a data-toggle="tab" href="#netfx">Cake runner for .NET Framework</a></li>
-    <li><a data-toggle="tab" href="#core">Cake runner for .NET Core</a></li>
 </ul>
 
 <div class="tab-content">
@@ -37,32 +35,6 @@ In order to use the run configurations you must have Cake installed on your mach
             There is currently no support for run configurations for Cake Frosting.
         </p>
     </div>
-    <div id="netfx" class="tab-pane fade">
-        <p>
-            Install Cake using any of the following options:
-        </p>
-        <ul>
-            <li>
-                <p>
-                    On Windows using <a href="https://chocolatey.org/">Chocolatey to install it globally</a>:
-                </p>
-                <pre><code class="language-cmd hljs">choco install cake.portable</code></pre>
-            </li>
-            <li>
-                <p>
-                    Use a <a href="/docs/running-builds/runners/cake-runner-for-dotnet-framework#bootstrapping-for-cake-runner-for.net-framework">bootstrapper</a>.
-                </p>
-                <p>
-                    This requires to setup the bootstrapper(s) under <a href="#runner-settings">settings</a>
-                </p>
-            </li>
-        </ul>
-    </div>
-    <div id="core" class="tab-pane fade">
-        <p>
-            There is currently no support for task runner for Cake runner for .NET Core.
-        </p>
-    </div>
 </div>
 
 ## Supported runners
@@ -71,13 +43,9 @@ In order to use the run configurations you must have Cake installed on your mach
 |----------------------------------|-------------------------------------------------|----------------------------------------------------|
 | [Cake .NET Tool]                 | <i class="fa fa-check" style="color:green"></i> |                                                    |
 | [Cake Frosting]                  | <i class="fa fa-times" style="color:red"></i>   |                                                    |
-| [Cake runner for .NET Framework] | <i class="fa fa-check" style="color:green"></i> |                                                    |
-| [Cake runner for .NET Core]      | <i class="fa fa-times" style="color:red"></i>   |                                                    |
 
 [Cake .NET Tool]: dotnet-tool
 [Cake Frosting]: cake-frosting
-[Cake runner for .NET Framework]: cake-runner-for-dotnet-framework
-[Cake runner for .NET Core]: cake-runner-for-dotnet-core
 
 ## Settings
 

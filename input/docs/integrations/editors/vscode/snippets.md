@@ -18,8 +18,6 @@ For instructions how to install an extension in Visual Studio Code see [Extensio
 |----------------------------------|-------------------------------------------------|----------------------------------------------------|
 | [Cake .NET Tool]                 | <i class="fa fa-check" style="color:green"></i> | Available for all `.cake` files.                   |
 | [Cake Frosting]                  | <i class="fa fa-times" style="color:red"></i>   |                                                    |
-| [Cake runner for .NET Framework] | <i class="fa fa-check" style="color:green"></i> | Available for all `.cake` files.                   |
-| [Cake runner for .NET Core]      | <i class="fa fa-check" style="color:green"></i> | Available for all `.cake` files.                   |
 
 [Cake .NET Tool]: dotnet-tool
 [Cake Frosting]: cake-frosting
