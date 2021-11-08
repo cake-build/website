@@ -94,12 +94,13 @@ public static void DownloadPackage(this ICakeContext context, DirectoryPath exte
     context.Information("[{0}] done.", packageId);
 }
 
-// Cake compatilibity ranges derived from `LatestPotentialBreakingChange`
+// Cake compatibility ranges derived from `LatestPotentialBreakingChange`
 // Version range values use interval notation
 // https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#version-ranges
 static VersionRange[] _compatibilityVersionRanges = new []
 {
-    "[1.0.0, )",
+    "[2.0.0, )",
+    "[1.0.0, 2.0.0)",
     "[0.33.0, 1.0.0)",
     "[0.28.0, 0.33.0)",
     "[0.26.0, 0.28.0)",
