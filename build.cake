@@ -298,7 +298,7 @@ Task("ZipArtifacts")
 
 Task("UploadArtifacts")
     .IsDependentOn("ZipArtifacts")
-    .WithCriteria(BuildSystem.IsRunningOnAzurePipelinesHosted)
+    .WithCriteria(BuildSystem.IsRunningOnAzurePipelines)
     .Does(() =>
 {
     AzurePipelines.Commands.UploadArtifact("website", zipFileName, "website");
