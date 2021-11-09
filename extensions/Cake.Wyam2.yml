@@ -1,0 +1,23 @@
+Type: Addin
+Name: Cake.Wyam2
+NuGet: Cake.Wyam2
+Assemblies:
+- /**/Cake.Wyam.dll
+Repository: https://github.com/Wyam2/wyam.git
+ProjectUrl: https://wyam2.github.io/
+Author: Wyam2
+Description: Wyam2 is a simple to use, highly modular, and extremely configurable static content generator and is a continuation of the awesome project Wyam created by Dave Glick. This library contains an addin for Cake for interacting with Wyam.
+Categories:
+- wyam
+- wyam2
+- static
+- staticcontent
+- staticsite
+- blog
+- blogengine
+TargetCakeVersion: 1.1.0
+TargetFrameworks:
+- netstandard2.0
+AnalyzedPackageVersion: 3.0.0-rc1
+AnalyzedPackageIsPrerelease: true
+AnalyzedPackagePublishDate: 2021-11-06T00:35:35.3970000Z
