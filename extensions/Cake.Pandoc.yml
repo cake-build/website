@@ -3,7 +3,7 @@ Name: Cake.Pandoc
 NuGet: Cake.Pandoc
 Assemblies:
 - /**/Cake.Pandoc.dll
-Repository: https://github.com/JuergenRB/Cake.Pandoc.git
+Repository: https://github.com/juro-org/Cake.Pandoc.git
 ProjectUrl: https://www.nuget.org/packages/Cake.Pandoc/
 Author: JuergenRB
 Description: Cake addin to convert files from one markup format into another with pandoc.
