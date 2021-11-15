@@ -9,9 +9,9 @@ Author: Jonathan Dick
 Description: A set of aliases for Cake to help with Xamarin projects.
 Categories:
 - mobile
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 1.0.0
 TargetFrameworks:
 - netstandard2.0
-AnalyzedPackageVersion: 3.1.0
+AnalyzedPackageVersion: 4.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2020-06-29T20:46:15.0730000Z
+AnalyzedPackagePublishDate: 2021-11-15T01:53:11.2530000Z
