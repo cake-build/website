@@ -25,5 +25,5 @@ The [Cake extension for Visual Studio Code] provides the following commands in t
 
 [Cake extension for Visual Studio Code]: https://marketplace.visualstudio.com/items/cake-build.cake-vscode
 [Cake .NET tool]: /docs/running-builds/runners/dotnet-tool
-[Cake runner for .NET Core]: /docs/running-builds/runners/cake-runner-for-dotnet-core
+[Cake runner for .NET Core]: /docs/running-builds/runners/deprecated/cake-runner-for-dotnet-core
 [IntelliSense in Visual Studio Code]: /docs/integrations/editors/vscode/intellisense

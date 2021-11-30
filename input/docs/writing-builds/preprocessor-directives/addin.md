@@ -131,8 +131,8 @@ can be set to show the executed command, even without diagnostic verbosity.
 
 [Cake .NET Tool]: /docs/running-builds/runners/dotnet-tool
 [Cake Frosting]: /docs/running-builds/runners/cake-frosting
-[Cake runner for .NET Framework]: /docs/running-builds/runners/cake-runner-for-dotnet-framework
-[Cake runner for .NET Core]: /docs/running-builds/runners/cake-runner-for-dotnet-core
+[Cake runner for .NET Framework]: /docs/running-builds/runners/deprecated/cake-runner-for-dotnet-framework
+[Cake runner for .NET Core]: /docs/running-builds/runners/deprecated/cake-runner-for-dotnet-core
 [configured to use in-process NuGet client]: /docs/running-builds/configuration/default-configuration-values#in-process-nuget-installation
 [out of process NuGet client]: /docs/running-builds/configuration/default-configuration-values#in-process-nuget-installation
 [Show Process Command Line configuration value]: /docs/running-builds/configuration/default-configuration-values#show-process-command-line

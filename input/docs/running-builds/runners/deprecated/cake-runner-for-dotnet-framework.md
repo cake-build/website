@@ -1,13 +1,16 @@
-Order: 30
+Order: 10
 Title: Cake runner for .NET Framework
+RedirectFrom: docs/running-builds/runners/cake-runner-for-dotnet-framework
 ---
 
-This runner is mainly for backwards compatibility where scripts or addins are used which require .NET Framework.
-In all other cases it is recommended to use [Cake .NET Tool](dotnet-tool).
+:::{.alert .alert-danger}
+The Cake runner for .NET Framework is deprecated and no longer updated since Cake 2.0.
+It is suggested to use [Cake .NET Tool] for running Cake scripts.
+:::
 
 # Requirements
 
-The [Cake](https://www.nuget.org/packages/Cake) NuGet package is a runner requiring [.NET Framework 4.6.1](https://www.microsoft.com/net/download/dotnet-framework/net461)
+The [Cake](https://www.nuget.org/packages/Cake) NuGet package was a runner requiring [.NET Framework 4.6.1](https://www.microsoft.com/net/download/dotnet-framework/net461)
 or newer on Windows and Mono `5.12.0` or newer on Mac or Linux.
 
 :::{.alert .alert-warning}
@@ -21,7 +24,7 @@ which are using addins targeting .NET Standard 2.0 only.
 Cake.exe [script] [switches]
 ```
 
-^"../../../Shared/switches.txt"
+^"../../../../Shared/switches-1-0.txt"
 
 # Bootstrapping for Cake runner for .NET Framework
 
@@ -248,3 +251,5 @@ or [default bootstrapper for macOS & Linux](https://github.com/cake-build/resour
        <package id="Cake" version="1.0.0-alpha0079" />
    </packages>
    ```
+
+[Cake .NET Tool]: /docs/running-builds/runners/dotnet-tool

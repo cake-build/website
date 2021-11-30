@@ -8,7 +8,7 @@ RedirectFrom:
 Configuration is currently not supported for [Cake Frosting].
 :::
 
-[Cake .NET Tool], [Cake runner for .NET Framework] and [Cake runner for .NET Core] support the concept of external configuration, to allow the internals of how Cake operates to be controlled, based on a specified priority, from either:
+[Cake .NET Tool] supports the concept of external configuration, to allow the internals of how Cake operates to be controlled, based on a specified priority, from either:
 
 * Environment variables
 * A configuration file
@@ -74,6 +74,6 @@ Finally, you can specify an input parameter directly to Cake, in the following f
 Passing a configuration value directly to Cake will override the same configuration value stored within an environment variable and also any stored in a local configuration file.
 
 [Cake .NET Tool]: /docs/running-builds/runners/dotnet-tool
-[Cake runner for .NET Framework]: /docs/running-builds/runners/cake-runner-for-dotnet-framework
-[Cake runner for .NET Core]: /docs/running-builds/runners/cake-runner-for-dotnet-core
+[Cake runner for .NET Framework]: /docs/running-builds/runners/deprecated/cake-runner-for-dotnet-framework
+[Cake runner for .NET Core]: /docs/running-builds/runners/deprecated/cake-runner-for-dotnet-core
 [Cake Frosting]: /docs/running-builds/runners/cake-frosting

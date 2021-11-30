@@ -15,7 +15,7 @@ With the upcoming release of Cake 1.0.0, and the transition in our documentation
 If the Cake .Net Tool isn't installed, it will be installed for you.
 :::
 
-In all of these cases, you can override the default options to revert to using either the [Cake runner for .NET Framework](/docs/running-builds/runners/cake-runner-for-dotnet-framework) or the [Cake runner for .NET Core](/docs/running-builds/runners/cake-runner-for-dotnet-core).
+In all of these cases, you can override the default options to revert to using either the [Cake runner for .NET Framework](/docs/running-builds/runners/deprecated/cake-runner-for-dotnet-framework) or the [Cake runner for .NET Core](/docs/running-builds/runners/deprecated/cake-runner-for-dotnet-core).
 
 ### Release Notes
 

@@ -3,9 +3,9 @@ Description: How to run targets and tasks
 RedirectFrom: docs/fundamentals/running-targets
 ---
 
-# Cake script runner
+# Cake .NET Tool
 
-When using [Cake .NET Tool], [Cake runner for .NET Framework] or [Cake runner for .NET Core] you can use the `RunTarget` method to run a target.
+When using [Cake .NET Tool] you can use the `RunTarget` method to run a target.
 The `RunTarget` method should be placed at the end of the script.
 
 ```csharp
@@ -77,6 +77,4 @@ The following arguments will run the `Publish` target without running the `Build
 ```
 
 [Cake .NET Tool]: /docs/running-builds/runners/dotnet-tool
-[Cake runner for .NET Framework]: /docs/running-builds/runners/cake-runner-for-dotnet-framework
-[Cake runner for .NET Core]: /docs/running-builds/runners/cake-runner-for-dotnet-core
 [Cake Frosting]: /docs/running-builds/runners/cake-frosting

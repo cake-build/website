@@ -3,17 +3,13 @@ Order: 20
 
 Cake Frosting is a .NET host which allows you to write your build scripts as a console application.
 
-:::{.alert .alert-success}
-A console application has the advantage of full IDE support, like IntelliSense, refactoring and debugging.
-:::
-
 :::{.alert .alert-info}
-See [Setting Up A New Frosting Project](/docs/getting-started/setting-up-a-new-frosting-project) tutorial for how to get started with Cake Frosting.
+See [Setting Up A New Cake Frosting Project](/docs/getting-started/setting-up-a-new-frosting-project) tutorial for how to get started with Cake Frosting.
 :::
 
 # Requirements
 
-Cake.Frosting can be used to write console applications targeting `netcoreapp3.1` or `net461`.
+Cake.Frosting can be used to write console applications targeting `netcoreapp3.1` or newer.
 
 # Usage
 

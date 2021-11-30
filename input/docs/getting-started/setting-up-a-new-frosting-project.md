@@ -1,4 +1,5 @@
 Order: 30
+Title: Setting Up A New Cake Frosting Project
 Description: Guide on how to get started with writing a build pipeline in a console application using Cake Frosting
 ---
 
@@ -7,7 +8,7 @@ This is a guide to get started with [Cake Frosting] and to show you how [Cake Fr
 # Installation and scaffolding
 
 This tutorial uses [Cake Frosting], which allows you to write builds as standard console applications as part of your solution.
-See [Runners](../running-builds/runners) for other possibilities of how to run Cake scripts.
+See [Runners](../running-builds/runners) for other possibilities of how to run Cake builds.
 
 :::{.alert .alert-info}
 The following instructions require Cake Frosting 1.0.0 or newer running on .NET Core 3.1.301 or newer.

@@ -44,8 +44,8 @@ For users which rely on extension or other dependencies which require .NET Frame
 
 If you have any questions please join the [discussion].
 
-[Cake runner for .NET Framework]: /docs/running-builds/runners/cake-runner-for-dotnet-framework
-[Cake runner for .NET Core]: /docs/running-builds/runners/cake-runner-for-dotnet-core
+[Cake runner for .NET Framework]: /docs/running-builds/runners/deprecated/cake-runner-for-dotnet-framework
+[Cake runner for .NET Core]: /docs/running-builds/runners/deprecated/cake-runner-for-dotnet-core
 [Cake .NET Tool]: /docs/running-builds/runners/dotnet-tool
 [Cake Frosting]: /docs/running-builds/runners/cake-frosting
 [Cake.Portable Chocolatey package]: https://community.chocolatey.org/packages/cake.portable

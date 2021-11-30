@@ -181,8 +181,8 @@ OpenCover(x => {
 
 See [#2788](https://github.com/cake-build/cake/issues/2788) for details.
 
-[Cake runner for .NET Framework]: /docs/running-builds/runners/cake-runner-for-dotnet-framework
-[Cake runner for .NET Core]: /docs/running-builds/runners/cake-runner-for-dotnet-core
+[Cake runner for .NET Framework]: /docs/running-builds/runners/deprecated/cake-runner-for-dotnet-framework
+[Cake runner for .NET Core]: /docs/running-builds/runners/deprecated/cake-runner-for-dotnet-core
 [Cake .NET Tool]: /docs/running-builds/runners/dotnet-tool
 [Cake Frosting]: /docs/running-builds/runners/cake-frosting
 [Cake.Portable Chocolatey package]: https://community.chocolatey.org/packages/cake.portable

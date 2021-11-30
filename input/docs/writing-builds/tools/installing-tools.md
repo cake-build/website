@@ -8,15 +8,14 @@ RedirectFrom: docs/tools/installing-tools
 
 Cake provides different ways to install tool executables available as NuGet packages as part of a build.
 
-| Installation method              | Cake .NET Tool | Cake Frosting | Cake runner for .NET Framework | Cake runner for .NET Core |
-|----------------------------------|----------------|---------------|--------------------------------|---------------------------|
-| [Pre-processor directive]        | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-times" style="color:red"></i>   | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> |
-| [InstallTool]                    | <i class="fa fa-times" style="color:red"></i>   | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-times" style="color:red"></i>   | <i class="fa fa-times" style="color:red"></i>   |
-| [Bootstrapper]                   | <i class="fa fa-times" style="color:red"></i>   | <i class="fa fa-times" style="color:red"></i>   | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> |
+| Installation method              | Cake .NET Tool | Cake Frosting |
+|----------------------------------|----------------|---------------|
+| [Pre-processor directive]        | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-times" style="color:red"></i>   |
+| [InstallTool]                    | <i class="fa fa-times" style="color:red"></i>   | <i class="fa fa-check" style="color:green"></i> |
 
 ## Installing tools via pre-processor directive
 
-The [#tool pre-processor directive] can be used to automatically download a tool and install it in the `tools` folder.
+The [#tool pre-processor directive] for [Cake .NET Tool] can be used to automatically download a tool and install it in the `tools` folder.
 
 :::{.alert .alert-info}
 Out of the box NuGet and .NET Tools (since Cake 1.1) are supported as provider.
@@ -64,12 +63,6 @@ public class Program : IFrostingStartup
 For more information about supported URI string parameters see [#tool pre-processor directive].
 :::
 
-## Installing tools via bootstrapper
-
-The [default bootstrapper for Cake runner for .NET Framework](/docs/running-builds/runners/cake-runner-for-dotnet-framework#bootstrapping-for-cake-runner-for.net-framework)
-supports restoring of tools which are available as NuGet packages.
-The tools need to be listed in the `tools\packages.config` file and are restored before running the Cake script.
-
 # Installing tools from other providers
 
 Out of the box NuGet and .NET Tools (since Cake 1.1) is supported as provider for [Pre-processor directive] and [InstallTool].
@@ -92,10 +85,8 @@ Task("Install-XUnit")
 });
 ```
 
-[Cake .NET Tool]: dotnet-tool
-[Cake Frosting]: cake-frosting
-[Cake runner for .NET Framework]: cake-runner-for-dotnet-framework
-[Cake runner for .NET Core]: cake-runner-for-dotnet-core
+[Cake .NET Tool]: /docs/running-builds/runners/dotnet-tool
+[Cake Frosting]: /docs/running-builds/runners/cake-frosting
 [Pre-processor directive]: #installing-tools-via-pre-processor-directive
 [InstallTool]: #installing-tools-with-installtool
 [Bootstrapper]: #installing-tools-via-bootstrapper

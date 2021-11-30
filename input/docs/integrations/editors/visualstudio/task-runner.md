@@ -14,8 +14,6 @@ In order to use the task runner you must have Cake installed on your machine or 
 <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#tool">Cake .NET Tool</a></li>
     <li><a data-toggle="tab" href="#frosting">Cake Frosting</a></li>
-    <li><a data-toggle="tab" href="#netfx">Cake runner for .NET Framework</a></li>
-    <li><a data-toggle="tab" href="#core">Cake runner for .NET Core</a></li>
 </ul>
 
 <div class="tab-content">
@@ -30,33 +28,6 @@ In order to use the task runner you must have Cake installed on your machine or 
             There is currently no support for task runner for Cake Frosting.
         </p>
     </div>
-    <div id="netfx" class="tab-pane fade">
-        <p>
-            Install Cake using any of the following options:
-        </p>
-        <ul>
-            <li>
-                <p>
-                    On Windows using <a href="https://chocolatey.org/">Chocolatey to install it globally</a>:
-                </p>
-                <pre><code class="language-cmd hljs">choco install cake.portable</code></pre>
-            </li>
-            <li>
-                <p>
-                    Run bootstrapper.
-                </p>
-                <p>
-                    The task runner will automatically use a project-local copy of Cake if it is already present in the current directory or one of the default paths.
-                    However, at this time, it will not automatically download Cake for you.
-                </p>
-            </li>
-        </ul>
-    </div>
-    <div id="core" class="tab-pane fade">
-        <p>
-            There is currently no support for task runner for Cake runner for .NET Core.
-        </p>
-    </div>
 </div>
 
 ## Supported runners
@@ -65,13 +36,9 @@ In order to use the task runner you must have Cake installed on your machine or 
 |----------------------------------|-------------------------------------------------|----------------------------------------------------|
 | [Cake .NET Tool]                 | <i class="fa fa-check" style="color:green"></i> | Only for global installations.                     |
 | [Cake Frosting]                  | <i class="fa fa-times" style="color:red"></i>   |                                                    |
-| [Cake runner for .NET Framework] | <i class="fa fa-check" style="color:green"></i> | `build.cake` needs to be included in the solution. |
-| [Cake runner for .NET Core]      | <i class="fa fa-times" style="color:red"></i>   |                                                    |
 
 [Cake .NET Tool]: /docs/running-builds/runners/dotnet-tool
 [Cake Frosting]: /docs/running-builds/runners/cake-frosting
-[Cake runner for .NET Framework]: /docs/running-builds/runners/cake-runner-for-dotnet-framework
-[Cake runner for .NET Core]: /docs/running-builds/runners/cake-runner-for-dotnet-core
 
 # Using task runner
 

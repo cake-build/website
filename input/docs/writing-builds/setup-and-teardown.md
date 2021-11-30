@@ -3,9 +3,9 @@ Description: Setup and teardown events
 RedirectFrom: docs/fundamentals/setup-and-teardown
 ---
 
-# Cake script runner
+# Cake .NET Tool
 
-When using [Cake .NET Tool], [Cake runner for .NET Framework] or [Cake runner for .NET Core] you can use the following methods to control setup and teardown.
+When using [Cake .NET Tool] you can use the following methods to control setup and teardown.
 
 ## Global lifetime
 
@@ -119,6 +119,4 @@ public class TaskLifetime : FrostingTaskLifetime<BuildContext>
 ```
 
 [Cake .NET Tool]: /docs/running-builds/runners/dotnet-tool
-[Cake runner for .NET Framework]: /docs/running-builds/runners/cake-runner-for-dotnet-framework
-[Cake runner for .NET Core]: /docs/running-builds/runners/cake-runner-for-dotnet-core
 [Cake Frosting]: /docs/running-builds/runners/cake-frosting

@@ -1,19 +1,20 @@
 Order: 20
-Description: Guide on how to get started with Cake
+Title: Setting Up A New Cake .NET Tool Project
+Description: Guide on how to get started with writing a build pipeline in a Cake script using Cake .NET Tool
 RedirectFrom:
   - docs/tutorials/getting-started
   - docs/tutorials/setting-up-a-new-project
+  - docs/getting-started/setting-up-a-new-project
 ---
 
-This is a guide to get started with Cake and to show you how Cake works.
+This is a guide to get started with Cake using the Cake .NET Tool and to show you how Cake works.
 
 # Choose your runner
 
 Choose the runner suitable for your scenario.
-See [Runners](../running-builds/runners) for other possibilities how to run Cake scripts.
+See [Runners](../running-builds/runners) for other possibilities how to run Cake builds.
 
-For this tutorial we use the recommended approach using the [Cake .NET Tool](../running-builds/runners/dotnet-tool)
-on .NET Core 3.0 and newer.
+For this tutorial we use the [Cake .NET Tool](../running-builds/runners/dotnet-tool) on .NET Core 3.1 and newer.
 
 Make sure to have a tool manifest available in your repository or create one using the following command:
 

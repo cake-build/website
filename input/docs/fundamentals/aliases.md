@@ -1,9 +1,10 @@
 Order: 10
-Title: Script Aliases
-Description: Convenience methods for Cake scripts
+Title: Aliases
+Description: Convenience methods for using in Cake builds
 ---
 
-Cake supports something called script aliases. Script aliases are convenience methods that are easily accessible directly from a Cake script. Every single [DSL method](/dsl) in Cake is implemented like an alias method.
+Cake supports something called aliases. Aliases are convenience methods that are easily accessible directly from a Cake build.
+Every single [DSL method](/dsl) in Cake is implemented like an alias method.
 
 :::{.alert .alert-info}
 See [Reference](/dsl) for a list of available aliases.
@@ -13,11 +14,9 @@ See [Reference](/dsl) for a list of available aliases.
 
 Aliases are extension methods of `ICakeContext`.
 
-## Calling aliases in a Cake script
+## Calling aliases in Cake .NET Tool
 
-When using a Cake script with [Cake .NET Tool](/docs/running-builds/runners/dotnet-tool),
-[Cake runner for .NET Framework](/docs/running-builds/runners/cake-runner-for-dotnet-framework) or
-[Cake runner for .NET Core](/docs/running-builds/runners/cake-runner-for-dotnet-core)
+When using a Cake script with [Cake .NET Tool](/docs/running-builds/runners/dotnet-tool)
 aliases can be called directly inside a task, without explicitly passing the context:
 
 ```csharp
@@ -32,7 +31,7 @@ Task("Clean")
 });
 ```
 
-## Calling aliases in Frosting
+## Calling aliases in Cake Frosting
 
 Inside a [Cake Frosting](/docs/running-builds/runners/cake-frosting) project aliases can be
 called as extension methods of the context passed to the `Run` method of the task:
@@ -54,4 +53,4 @@ public sealed class Clean : FrostingTask<Context>
 
 # Custom aliases
 
-Additional aliases can be defined in [addins](../extending/addins).
+Additional aliases can be defined in [addins](/docs/extending/addins).

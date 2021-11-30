@@ -3,13 +3,15 @@ Title: Cake .NET Tool
 RedirectFrom: docs/running-builds/runners/dotnet-core-tool
 ---
 
-:::{.alert .alert-success}
-This is the recommended way to run Cake Scripts.
+Cake .NET Tool is a runner which allows to run Cake scripts.
+
+:::{.alert .alert-info}
+See [Setting Up A New Cake .NET Tool Project](/docs/getting-started/setting-up-a-new-scripting-project) tutorial for how to get started with Cake .NET Tool.
 :::
 
 # Requirements
 
-The [Cake.Tool](https://www.nuget.org/packages/Cake.Tool) NuGet package, is a .NET Core tool compiled for .NET Core 2.1 or newer.
+The [Cake.Tool](https://www.nuget.org/packages/Cake.Tool) NuGet package, is a .NET Core tool compiled for .NET Core 3.1 or newer.
 
 # Usage
 

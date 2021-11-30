@@ -9,8 +9,7 @@ RedirectFrom:
 Configuration is currently not supported for [Cake Frosting].
 :::
 
-The following shows all of the configuration options currently available in [Cake .NET Tool], [Cake runner for .NET Framework] and [Cake runner for .NET Core],
-as well as their default values.
+The following shows all of the configuration options currently available in [Cake .NET Tool] as well as their default values.
 
 Refer to [set configuration values](/docs/running-builds/configuration/set-configuration-values) for instructions on using a config file.
 
@@ -366,6 +365,6 @@ To disable output of colored text, set an environment variable with the name [`N
 </div>
 
 [Cake .NET Tool]: /docs/running-builds/runners/dotnet-tool
-[Cake runner for .NET Framework]: /docs/running-builds/runners/cake-runner-for-dotnet-framework
-[Cake runner for .NET Core]: /docs/running-builds/runners/cake-runner-for-dotnet-core
+[Cake runner for .NET Framework]: /docs/running-builds/runners/deprecated/cake-runner-for-dotnet-framework
+[Cake runner for .NET Core]: /docs/running-builds/runners/deprecated/cake-runner-for-dotnet-core
 [Cake Frosting]: /docs/running-builds/runners/cake-frosting
