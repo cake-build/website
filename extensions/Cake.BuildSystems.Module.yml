@@ -9,9 +9,9 @@ Author: Alistair Chapman
 Description: This Cake module will introduce a number of features for running in hosted CI build environments to tightly integrate with the host environment/tools.
 Categories:
 - ci
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 2.0.0
 TargetFrameworks:
-- netstandard2.0
-AnalyzedPackageVersion: 3.1.0
+- netcoreapp3.1
+AnalyzedPackageVersion: 4.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-11-16T08:05:58.3800000Z
+AnalyzedPackagePublishDate: 2021-11-30T21:37:37.5100000Z
