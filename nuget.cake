@@ -149,7 +149,7 @@ static IReadOnlyList<NuGetVersion> GetAllListedCakeVersions()
 
         var resource = repository.GetResourceAsync<PackageMetadataResource>().GetAwaiter().GetResult();
 
-        var packages = resource.GetMetadataAsync("Cake", includePrerelease: true,
+        var packages = resource.GetMetadataAsync("Cake.Core", includePrerelease: true,
             includeUnlisted: true, cacheContext, NullLogger.Instance, CancellationToken.None).GetAwaiter().GetResult();
 
         var allVersionsOfCake = packages.OfType<PackageSearchMetadataRegistration>()
