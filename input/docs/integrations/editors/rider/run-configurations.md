@@ -27,7 +27,7 @@ In order to use the run configurations you must have Cake installed on your mach
         </p>
         <pre><code class="language-cmd hljs">dotnet tool install --global Cake.Tool</code></pre>
         <p>
-            This is the default setup in Cake for Rider.
+            This is the default setup in Cake for Rider. Alternatively it is also possible to use a project local installation of the Cake .NET Tool.
         </p>
     </div>
     <div id="frosting" class="tab-pane fade">
@@ -80,6 +80,14 @@ in the [Cake Tasks window](#running-builds-directly).
 ### Runner settings
 
 Allows to define the runner to use.
+
+The first option, *Use 'dotnet cake' instead of executable*, will use `dotnet cake` as the runner.
+The `dotnet` executable must be in available in the path and the Cake .NET Tool must either be globally installed to the machine
+or locally installed to the project. If this option is set, all other options on the settings page are ignored.
+
+Alternatively, when *Use 'dotnet cake' instead of executable* is not set,
+a path to the Cake executable (either `dotnet-cake.exe`, or `cake.exe`) has to be supplied:
+
 Different runners for different operating systems can be set by defining a regular expression which is matched against the system property `os.name`.
 
 The Cake runner settings are able to process environment variables: Use a specific variable like `${VARIABLE}` and the environment variable will be expanded when the runner is called.
@@ -114,8 +122,10 @@ An editor for run configurations is available:
 
 * *Ensure .NET Tool (Global)*:
   Ensures the Cake .NET tool is installed globally before running Cake.
-
-![Run Actions](/assets/img/cake-rider/docs/beforeRunAction-ensureTool.png){.img-responsive}
+* *Restore .NET Tools*:
+  Restores the .NET tools, effectively calling `dotnet tool restore` before running the build.
+  
+![Run Actions](/assets/img/cake-rider/docs/beforeRunActions.png){.img-responsive}
 
 ## Running builds directly
 
