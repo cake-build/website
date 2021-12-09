@@ -10,10 +10,11 @@ Description: A Cake AddIn that allows will run the Sonar MSBuild Runner for csha
 Categories:
 - code quality
 - misc
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 2.0.0
 TargetFrameworks:
-- net46
-- netstandard2.0
-AnalyzedPackageVersion: 1.1.25
+- netcoreapp3.1
+- net5.0
+- net6.0
+AnalyzedPackageVersion: 1.1.29
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2020-02-02T12:51:49.6600000Z
+AnalyzedPackagePublishDate: 2021-12-08T19:35:51.6770000Z
