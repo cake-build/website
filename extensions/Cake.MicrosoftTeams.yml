@@ -9,10 +9,11 @@ Author: WCOMAB
 Description: Cake Addin that extends Cake with Microsoft Teams messaging capabilities
 Categories:
 - communication
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 2.0.0
 TargetFrameworks:
-- net46
-- netstandard2.0
-AnalyzedPackageVersion: 1.0.1
+- netcoreapp3.1
+- net5.0
+- net6.0
+AnalyzedPackageVersion: 2.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-03-12T00:56:05.3600000Z
+AnalyzedPackagePublishDate: 2021-12-11T23:54:57.1030000Z
