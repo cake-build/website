@@ -9,9 +9,11 @@ Author: Miha Markič
 Description: A Cake AddIn that extends Cake with Docker command tools.
 Categories:
 - docker
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 2.0.0
 TargetFrameworks:
-- netstandard2.0
-AnalyzedPackageVersion: 1.0.0
+- netcoreapp3.1
+- net5.0
+- net6.0
+AnalyzedPackageVersion: 1.1.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-02-15T09:04:19.9700000Z
+AnalyzedPackagePublishDate: 2021-12-18T17:37:40.5500000Z
