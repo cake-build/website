@@ -12,6 +12,6 @@ Categories:
 TargetCakeVersion: 2.0.0
 TargetFrameworks:
 - netcoreapp3.1
-AnalyzedPackageVersion: 4.0.0
+AnalyzedPackageVersion: 4.1.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-11-30T21:37:37.5100000Z
+AnalyzedPackagePublishDate: 2022-01-04T10:18:08.3170000Z
