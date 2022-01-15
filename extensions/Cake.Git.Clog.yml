@@ -1,0 +1,16 @@
+Type: Addin
+Name: Cake.Git.Clog
+NuGet: Cake.Git.Clog
+Assemblies:
+- /**/Cake.Git.Clog.dll
+Repository: 
+ProjectUrl: https://www.nuget.org/packages/Cake.Git.Clog/
+Author: Float
+Description: A plugin for Cake that integrates git-clog.
+Categories: []
+TargetCakeVersion: 1.1.0
+TargetFrameworks:
+- netstandard2.0
+AnalyzedPackageVersion: 1.0.0.2
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2022-01-14T19:49:24.9930000Z
