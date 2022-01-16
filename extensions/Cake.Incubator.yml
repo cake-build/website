@@ -9,10 +9,11 @@ Author: Scott Mackay
 Description: A set of useful extension methods and aliases for Cake
 Categories:
 - misc
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 2.0.0
 TargetFrameworks:
+- netcoreapp3.1
 - net5.0
-- netstandard2.0
-AnalyzedPackageVersion: 6.0.0
+- net6.0
+AnalyzedPackageVersion: 7.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-02-26T22:18:04.7330000Z
+AnalyzedPackagePublishDate: 2022-01-15T21:08:35.8570000Z
