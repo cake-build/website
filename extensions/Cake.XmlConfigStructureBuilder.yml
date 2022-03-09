@@ -3,8 +3,8 @@ Name: Cake.XmlConfigStructureBuilder
 NuGet: Cake.XmlConfigStructureBuilder
 Assemblies:
 - /**/Cake.XmlConfigStructureBuilder.dll
-Repository: https://github.com/graphuk/Cake.XmlConfigStructureBuilder.git
-ProjectUrl: https://github.com/graphuk/Cake.XmlConfigStructureBuilder/
+Repository: 
+ProjectUrl: https://www.nuget.org/packages/Cake.XmlConfigStructureBuilder/
 Author: BggClr
 Description: The project compiles multiple xml configs to single one using the CTT.
 Categories:
