@@ -97,7 +97,7 @@ RedirectFrom: docs/resources/videos
 ### Scott Hanselman - .NET Conf Day 3 Keynote
 #### Cake mentioned at 20:52 in below video
 
-<iframe src="https://channel9.msdn.com/Events/dotnetConf/2016/NET-Conf-Day-3-Keynote-Scott-Hanselman/player" width="640" height="360" allowFullScreen frameBorder="0"></iframe>
+<iframe src="https://www.youtube.com/embed/QVjbXrR-81M" width="640" height="360" allowFullScreen frameBorder="0"></iframe>
 
 ## Motz Codes Live
 ### Continuous Integration for Libraries with Jon Dick aka Redth
