@@ -120,9 +120,9 @@ Add the required using statements:
 ```csharp
 using Cake.Common;
 using Cake.Common.IO;
-using Cake.Common.Tools.DotNetCore;
-using Cake.Common.Tools.DotNetCore.Build;
-using Cake.Common.Tools.DotNetCore.Test;
+using Cake.Common.Tools.DotNet;
+using Cake.Common.Tools.DotNet.Build;
+using Cake.Common.Tools.DotNet.Test;
 ```
 
 Remove the `Delay` property from the `BuildContext` class and add a property `MsBuildConfiguration`, which stores the configuration of the solution which should be built:
@@ -164,7 +164,7 @@ public sealed class BuildTask : FrostingTask<BuildContext>
 {
     public override void Run(BuildContext context)
     {
-        context.DotNetCoreBuild("../src/Example.sln", new DotNetCoreBuildSettings
+        context.DotNetBuild("../src/Example.sln", new DotNetBuildSettings
         {
             Configuration = context.MsBuildConfiguration,
         });
@@ -181,7 +181,7 @@ public sealed class TestTask : FrostingTask<BuildContext>
 {
     public override void Run(BuildContext context)
     {
-        context.DotNetCoreTest("../src/Example.sln", new DotNetCoreTestSettings
+        context.DotNetTest("../src/Example.sln", new DotNetTestSettings
         {
             Configuration = context.MsBuildConfiguration,
             NoBuild = true,
