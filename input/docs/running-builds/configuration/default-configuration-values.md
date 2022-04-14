@@ -364,7 +364,77 @@ To disable output of colored text, set an environment variable with the name [`N
     </div>
 </div>
 
+#  Cache compiled script on disk
+
+:::{.alert .alert-info}
+Available since Cake `2.2.0`.
+:::
+
+This enables [Cake .NET Tool] to cache script compilation for significantly faster subsequent executions of unchanged scripts.
+
+_Default value:_ `false`
+
+_Valid values:_ `true`, `false`
+
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#env11">Environment variable name</a></li>
+    <li><a data-toggle="tab" href="#config11">Config file contents</a></li>
+    <li><a data-toggle="tab" href="#arg11">Argument name</a></li>
+</ul>
+
+<div class="tab-content">
+    <div id="env11" class="tab-pane fade in active">
+        <p>
+            <pre><code class="language-sh hljs">CAKE_SETTINGS_ENABLESCRIPTCACHE</code></pre>
+        </p>
+    </div>
+    <div id="config11" class="tab-pane fade">
+        <p>
+            <pre><code class="language-sh hljs">[Settings]
+EnableScriptCache=true</code></pre>
+        </p>
+    </div>
+    <div id="arg11" class="tab-pane fade">
+        <p>
+            <pre><code class="language-sh hljs">--settings_enablescriptcache=true</code></pre>
+        </p>
+    </div>
+</div>
+
+# Cache Location Path
+
+:::{.alert .alert-info}
+Available since Cake `2.2.0`.
+:::
+
+This allows the configuration of the folder which is used by [Cake .NET Tool] when caching compiled scrips.
+
+_Default value:_ `./tools/cache`
+
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#env12">Environment variable name</a></li>
+    <li><a data-toggle="tab" href="#config12">Config file contents</a></li>
+    <li><a data-toggle="tab" href="#arg12">Argument name</a></li>
+</ul>
+
+<div class="tab-content">
+    <div id="env12" class="tab-pane fade in active">
+        <p>
+            <pre><code class="language-sh hljs">CAKE_PATHS_CACHE</code></pre>
+        </p>
+    </div>
+    <div id="config12" class="tab-pane fade">
+        <p>
+            <pre><code class="language-sh hljs">[Paths]
+Cache=./tools/cache</code></pre>
+        </p>
+    </div>
+    <div id="arg12" class="tab-pane fade">
+        <p>
+            <pre><code class="language-sh hljs">--paths_cache=./tools/cache</code></pre>
+        </p>
+    </div>
+</div>
+
 [Cake .NET Tool]: /docs/running-builds/runners/dotnet-tool
-[Cake runner for .NET Framework]: /docs/running-builds/runners/deprecated/cake-runner-for-dotnet-framework
-[Cake runner for .NET Core]: /docs/running-builds/runners/deprecated/cake-runner-for-dotnet-core
 [Cake Frosting]: /docs/running-builds/runners/cake-frosting
