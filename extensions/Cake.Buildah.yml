@@ -1,0 +1,18 @@
+Type: Addin
+Name: Cake.Buildah
+NuGet: Cake.Buildah
+Assemblies:
+- /**/Cake.Buildah.dll
+Repository: https://github.com/SimCubeLtd/cake-buildah.git
+ProjectUrl: https://github.com/SimCubeLtd/cake-buildah/
+Author: SimCubeLtd
+Description: Cake Build addin for Buildah.
+Categories:
+- buildah
+- cake-build
+TargetCakeVersion: 2.1.0
+TargetFrameworks:
+- net6.0
+AnalyzedPackageVersion: 1.0.2
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2022-04-18T01:07:51.0930000Z
