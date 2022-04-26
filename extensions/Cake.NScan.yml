@@ -14,9 +14,9 @@ Categories:
 - gate
 - dependency
 - management
-TargetCakeVersion: 2.1.0
+TargetCakeVersion: 2.2.0
 TargetFrameworks:
 - net6.0
-AnalyzedPackageVersion: 0.100.1
+AnalyzedPackageVersion: 0.101.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2022-03-29T08:52:05.5700000Z
+AnalyzedPackagePublishDate: 2022-04-25T21:42:27.3070000Z
