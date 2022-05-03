@@ -55,7 +55,7 @@ Task("Build")
     .IsDependentOn("Clean")
     .Does(() =>
 {
-    DotNetCoreBuild("./src/Example.sln", new DotNetCoreBuildSettings
+    DotNetBuild("./src/Example.sln", new DotNetBuildSettings
     {
         Configuration = configuration,
     });
@@ -65,7 +65,7 @@ Task("Test")
     .IsDependentOn("Build")
     .Does(() =>
 {
-    DotNetCoreTest("./src/Example.sln", new DotNetCoreTestSettings
+    DotNetTest("./src/Example.sln", new DotNetTestSettings
     {
         Configuration = configuration,
         NoBuild = true,
