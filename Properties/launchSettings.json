@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Website": {
+      "commandName": "Project",
+      "commandLineArgs": "preview"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+SiteTitle: Cake
+Host: cakebuild.net
+LinksUseHttps: true
+MirrorResources: true
+EditRoot: https://github.com/cake-build/website/edit/master/input
+sass-primary: "#925713"
+sass-secondary: "#F8DF69"
