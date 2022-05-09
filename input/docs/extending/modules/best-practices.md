@@ -1,6 +1,6 @@
 Order: 10
 Title: Best practices for writing modules
-Description: Best practices for writing modules
+Excerpt: Best practices for writing modules
 ---
 
 This page gives some best practices for writing Cake modules.

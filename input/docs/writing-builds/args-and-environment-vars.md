@@ -1,6 +1,6 @@
 ﻿Order: 40
 Title: Arguments And Environment Variables
-Description: How to work with arguments and environment variables
+Excerpt: How to work with arguments and environment variables
 RedirectFrom: docs/fundamentals/args-and-environment-vars
 ---
 

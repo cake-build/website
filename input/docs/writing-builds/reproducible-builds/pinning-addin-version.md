@@ -1,5 +1,5 @@
 Order: 20
-Description: How to make builds reproducible when using addins
+Excerpt: How to make builds reproducible when using addins
 ---
 
 # Cake .NET Tool

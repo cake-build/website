@@ -1,5 +1,5 @@
 Order: 80
-Description: How to reuse build code in different projects and repositories
+Excerpt: How to reuse build code in different projects and repositories
 ---
 
 Cake supports different ways to share build code across multiple projects and repositories.

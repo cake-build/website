@@ -1,5 +1,5 @@
 Order: 20
-Description: Setup and teardown events
+Excerpt: Setup and teardown events
 RedirectFrom: docs/fundamentals/setup-and-teardown
 ---
 

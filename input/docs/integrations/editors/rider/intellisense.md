@@ -1,6 +1,6 @@
 Order: 20
 Title: IntelliSense in Rider
-Description: Support for IntelliSense
+Excerpt: Support for IntelliSense
 ---
 
 # Enabling IntelliSense

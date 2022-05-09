@@ -1,6 +1,6 @@
 Order: 30
 Title: Best practices for writing addins
-Description: Best practices for writing addins
+Excerpt: Best practices for writing addins
 ---
 
 This page gives some best practices for writing Cake addins.

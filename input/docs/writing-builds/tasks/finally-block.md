@@ -1,5 +1,5 @@
 Order: 60
-Description: How to make sure an arbritrary piece of code is always executed
+Excerpt: How to make sure an arbritrary piece of code is always executed
 RedirectFrom: docs/fundamentals/finally-block
 ---
 

@@ -1,5 +1,5 @@
 Order: 55
-Description: How to output content to console
+Excerpt: How to output content to console
 ---
 
 # Logging

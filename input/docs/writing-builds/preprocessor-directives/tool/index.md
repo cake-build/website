@@ -1,6 +1,6 @@
 Order: 40
 Title: Tool directive
-Description: Directive to install external command-line tools
+Excerpt: Directive to install external command-line tools
 ---
 
 The tool directive installs external command-line tools.

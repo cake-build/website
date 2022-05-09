@@ -1,6 +1,6 @@
 Order: 30
 Title: Rider run configurations
-Description: Run configurations for Cake tasks
+Excerpt: Run configurations for Cake tasks
 ---
 
 It is possible to have Cake tasks as run configurations:

@@ -1,6 +1,6 @@
 Order: 20
 Title: Load directive
-Description: Directive to reference external Cake scripts
+Excerpt: Directive to reference external Cake scripts
 ---
 
 The load directive is used to reference external Cake scripts. Useful i.e. if you have common utility functions.

@@ -1,6 +1,7 @@
 Order: 70
-Description: Maintainer team which brings you Cake
 ---
-@*
+The maintainer team that brings you Cake
+
+<!--
 @Html.Partial("_TeamPage", Documents["Maintainers"])
-*@
+-->

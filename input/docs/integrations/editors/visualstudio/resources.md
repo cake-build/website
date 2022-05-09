@@ -1,6 +1,6 @@
 Order: 70
 Title: Visual Studio resources
-Description: Resources about Visual Studio support
+Excerpt: Resources about Visual Studio support
 ---
 
 There is a playlist of videos showing off the new features in each release of the [Cake extension for Visual Studio] here:

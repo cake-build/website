@@ -1,5 +1,5 @@
 Order: 30
-Description: How to make builds reproducible when using external tools
+Excerpt: How to make builds reproducible when using external tools
 ---
 
 # Cake .NET Tool

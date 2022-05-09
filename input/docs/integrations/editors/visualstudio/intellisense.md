@@ -1,6 +1,6 @@
 Order: 20
 Title: IntelliSense in Visual Studio
-Description: Support for IntelliSense
+Excerpt: Support for IntelliSense
 ---
 
 # Enabling IntelliSense

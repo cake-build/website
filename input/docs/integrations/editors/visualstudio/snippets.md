@@ -1,6 +1,6 @@
 Order: 50
 Title: Visual Studio snippets
-Description: Support for code snippets
+Excerpt: Support for code snippets
 ---
 
 # Configuring snippets

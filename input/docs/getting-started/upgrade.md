@@ -1,6 +1,6 @@
 Order: 60
 Title: Upgrade instructions
-Description: Upgrade instructions between different versions of Cake
+Excerpt: Upgrade instructions between different versions of Cake
 ---
 
 To update Cake follow these instructions

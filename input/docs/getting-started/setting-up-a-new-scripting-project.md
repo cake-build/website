@@ -1,6 +1,6 @@
 Order: 20
 Title: Setting Up A New Cake .NET Tool Project
-Description: Guide on how to get started with writing a build pipeline in a Cake script using Cake .NET Tool
+Excerpt: Guide on how to get started with writing a build pipeline in a Cake script using Cake .NET Tool
 RedirectFrom:
   - docs/tutorials/getting-started
   - docs/tutorials/setting-up-a-new-project

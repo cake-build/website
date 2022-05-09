@@ -1,6 +1,6 @@
 Order: 20
 Title: Modules resources
-Description: Resources for developing custom modules
+Excerpt: Resources for developing custom modules
 ---
 
 Currently, the most comprehensive resource available is the following video from Alistair Chapman walking through the process of building a new Cake module from scratch.

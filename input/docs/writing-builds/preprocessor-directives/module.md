@@ -1,6 +1,6 @@
 Order: 70
 Title: Module directive
-Description: Directive to add Cake modules
+Excerpt: Directive to add Cake modules
 ---
 
 The module directive lets you boostrap Cake modules by downloading them from a NuGet source.

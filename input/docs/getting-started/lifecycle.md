@@ -1,6 +1,6 @@
 Order: 50
 Title: Support lifecycle
-Description: Cake versioning and support lifecycle
+Excerpt: Cake versioning and support lifecycle
 ---
 
 # Versioning

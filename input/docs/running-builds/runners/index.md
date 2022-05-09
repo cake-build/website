@@ -1,5 +1,5 @@
 Order: 10
-Description: Information about different build runners
+Excerpt: Information about different build runners
 RedirectFrom:
   - docs/tutorials/extending-the-bootstrapper
   - docs/tutorials/powershell-security

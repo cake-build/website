@@ -1,6 +1,6 @@
 Order: 10
 Title: .NET Tool Provider
-Description: Package installer for installing tools using the dotnet CLI
+Excerpt: Package installer for installing tools using the dotnet CLI
 ---
 
 Package installer for installing tools using the dotnet CLI.

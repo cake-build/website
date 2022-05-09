@@ -1,6 +1,6 @@
 Order: 30
 Title: Visual Studio templates
-Description: Support for templates
+Excerpt: Support for templates
 ---
 
 # Configuring templates

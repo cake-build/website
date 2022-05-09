@@ -1,5 +1,5 @@
 Order: 30
-Description: Deprecated build runners
+Excerpt: Deprecated build runners
 ---
 
 Previous versions of Cake shipped with the following additional runners:

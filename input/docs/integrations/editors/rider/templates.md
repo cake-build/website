@@ -1,6 +1,6 @@
 Order: 50
 Title: Rider templates
-Description: Support for templates
+Excerpt: Support for templates
 ---
 
 # Configuring templates

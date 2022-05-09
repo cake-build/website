@@ -1,5 +1,5 @@
 Order: 10
-Description: Supported features for Atom editor
+Excerpt: Supported features for Atom editor
 RedirectFrom: docs/editors/atom
 ---
 

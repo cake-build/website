@@ -1,5 +1,5 @@
 Order: 10
-Description: How to make Cake builds reproducible
+Excerpt: How to make Cake builds reproducible
 ---
 
 To have deterministic builds it is important that on every build the same version of Cake is used.

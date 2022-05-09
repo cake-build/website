@@ -1,6 +1,6 @@
 Order: 10
 Title: Aliases
-Description: Convenience methods for using in Cake builds
+Excerpt: Convenience methods for using in Cake builds
 ---
 
 Cake supports something called aliases. Aliases are convenience methods that are easily accessible directly from a Cake build.

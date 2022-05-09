@@ -1,6 +1,6 @@
 Order: 60
 Title: Visual Studio task runner
-Description: Visual Studio task runner integration
+Excerpt: Visual Studio task runner integration
 ---
 
 # Configuring task runner

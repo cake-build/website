@@ -1,5 +1,5 @@
 Order: 10
-Description: Ways to set configuration values
+Excerpt: Ways to set configuration values
 RedirectFrom:
   - docs/fundamentals/configuration
 ---

@@ -1,6 +1,6 @@
 Order: 50
 Title: Visual Studio Code resources
-Description: Resources about Visual Studio Code support
+Excerpt: Resources about Visual Studio Code support
 RedirectFrom: docs/editors/vscode/resources
 ---
 

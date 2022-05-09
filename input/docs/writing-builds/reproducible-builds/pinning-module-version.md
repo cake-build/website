@@ -1,5 +1,5 @@
 Order: 40
-Description: How to make builds reproducible when using modules
+Excerpt: How to make builds reproducible when using modules
 ---
 
 # Cake .NET Tool

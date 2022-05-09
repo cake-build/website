@@ -1,5 +1,5 @@
 Order: 10
-Description: How to define tasks
+Excerpt: How to define tasks
 ---
 
 # Defining tasks in Cake .NET Tool

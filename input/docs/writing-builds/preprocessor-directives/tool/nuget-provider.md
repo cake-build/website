@@ -1,6 +1,6 @@
 Order: 20
 Title: NuGet Provider
-Description: Package installer for installing tools packaged as NuGet packages
+Excerpt: Package installer for installing tools packaged as NuGet packages
 ---
 
 Package installer for installing tools packaged as NuGet packages.

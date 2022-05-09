@@ -1,6 +1,6 @@
 Order: 40
 Title: Rider resources
-Description: Resources about JetBrains Rider support
+Excerpt: Resources about JetBrains Rider support
 ---
 
 There is a playlist of videos showing off the new features in each release of the [Cake plugin for Rider] here:

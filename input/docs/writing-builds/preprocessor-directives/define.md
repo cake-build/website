@@ -1,6 +1,6 @@
 Order: 80
 Title: Define directive
-Description: Directive for conditional code execution
+Excerpt: Directive for conditional code execution
 ---
 
 The define directive - `#define` creates a symbol, it can be later use to decide, what Cake will execute. You use it like `#define` in C#.

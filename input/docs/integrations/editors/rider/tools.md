@@ -1,6 +1,6 @@
 Order: 60
 Title: Tools in Rider
-Description: Tools for working with Rider
+Excerpt: Tools for working with Rider
 ---
 
 # Configuring tools

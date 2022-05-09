@@ -1,6 +1,6 @@
 Order: 30
 Title: Setting Up A New Cake Frosting Project
-Description: Guide on how to get started with writing a build pipeline in a console application using Cake Frosting
+Excerpt: Guide on how to get started with writing a build pipeline in a console application using Cake Frosting
 ---
 
 This is a guide to get started with [Cake Frosting] and to show you how [Cake Frosting] works.

@@ -1,7 +1,7 @@
 ---
 Order: 40
 Title: Frequently Asked Questions
-Description: Frequently Asked Questions about Cake
+Excerpt: Frequently Asked Questions about Cake
 RedirectFrom: faq
 ---
 

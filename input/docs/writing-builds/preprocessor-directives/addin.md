@@ -1,6 +1,6 @@
 Order: 10
 Title: Addin directive
-Description: Directive to install and reference addins using NuGet
+Excerpt: Directive to install and reference addins using NuGet
 ---
 
 Supported in: **[Cake .NET Tool] | [Cake runner for .NET Framework] | [Cake runner for .NET Core]**

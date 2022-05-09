@@ -1,6 +1,6 @@
 Order: 10
 Title: Azure DevOps Build Task Extension
-Description: Extensions for Azure DevOps which provides a Cake build task
+Excerpt: Extensions for Azure DevOps which provides a Cake build task
 RedirectFrom:
   - docs/build-systems/vso
   - docs/build-systems/azure-devops

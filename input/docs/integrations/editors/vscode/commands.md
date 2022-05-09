@@ -1,6 +1,6 @@
 Order: 40
 Title: Visual Studio code commands
-Description: Commands available to work with Cake
+Excerpt: Commands available to work with Cake
 ---
 
 # Configuring commands
