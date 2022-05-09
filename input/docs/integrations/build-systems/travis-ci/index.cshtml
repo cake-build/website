@@ -1,0 +1,43 @@
+Order: 130
+Title: Travis CI
+Description: Integration with Travis CI
+---
+
+<h1 id="included-support">Out of the box support</h1>
+
+<p>
+    The <a href="/api/Cake.Common.Build/BuildSystemAliases/BF67471C">TravisCI alias</a>, which returns an
+    <a href="/api/Cake.Common.Build.TravisCI/ITravisCIProvider">ITravisCIProvider</a> instance can be used to interact with the Travis CI environment.
+</p>
+<p>
+    The following example prints the build number if running on Travis CI:
+</p>
+
+<pre><code class="language-csharp hljs">if (BuildSystem.TravisCI.IsRunningOnTravisCI)
+{
+    Information(BuildSystem.TravisCI.Environment.Build.BuildId);
+}
+else
+{
+    Information("Not running on Travis CI");
+}</code></pre>
+
+<div class="alert alert-info">
+    <p>
+        See <a href="/api/Cake.Common.Build.TravisCI/ITravisCIProvider">ITravisCIProvider</a> for details and available methods to interact with Travis CI.
+    </p>
+</div>
+
+<h1 id="included-support">Available 3rd party extensions</h1>
+
+@*
+@{
+    var keywords = new List<string> { "travis" };
+    var extensions =
+        Documents["Extensions"]
+            .Where(x =>
+                keywords.Any(y => x.String("Name").ToLowerInvariant().Contains(y)));
+}
+
+@Html.Partial("_ExtensionsList", extensions)
+*@

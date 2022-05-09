@@ -1,0 +1,47 @@
+Order: 10
+Title: AppVeyor
+Description: Integration with AppVeyor
+---
+
+<h1 id="included-support">Out of the box support</h1>
+
+<p>
+    The <a href="/api/Cake.Common.Build/BuildSystemAliases/24BFB813">AppVeyor alias</a>, which returns an
+    <a href="/api/Cake.Common.Build.AppVeyor/IAppVeyorProvider">IAppVeyorProvider</a> instance can be used to interact with the AppVeyor environment.
+</p>
+<p>
+    The following example writes an error message if running on AppVeyor:
+</p>
+
+<pre><code class="language-csharp hljs">if (BuildSystem.AppVeyor.IsRunningOnAppVeyor)
+{
+    BuildSystem.AppVeyor.AddMessage(
+            "This is a error message.",
+            AppVeyorMessageCategoryType.Error,
+            "Error details."
+        );
+}
+else
+{
+    Information("Not running on AppVeyor");
+}</code></pre>
+
+<div class="alert alert-info">
+    <p>
+        See <a href="/api/Cake.Common.Build.AppVeyor/IAppVeyorProvider">IAppVeyorProvider</a> for details and available methods to interact with AppVeyor.
+    </p>
+</div>
+
+<h1 id="included-support">Available 3rd party extensions</h1>
+
+@*
+@{
+    var keywords = new List<string> { "appveyor" };
+    var extensions =
+        Documents["Extensions"]
+            .Where(x =>
+                keywords.Any(y => x.String("Name").ToLowerInvariant().Contains(y)));
+}
+
+@Html.Partial("_ExtensionsList", extensions)
+*@

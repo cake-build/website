@@ -1,0 +1,43 @@
+Order: 90
+Title: GoCD
+Description: Integration with GoCD
+---
+
+<h1 id="included-support">Out of the box support</h1>
+
+<p>
+    The <a href="/api/Cake.Common.Build/BuildSystemAliases/315AF6B4">GoCD alias</a>, which returns an
+    <a href="/api/Cake.Common.Build.GoCD/IGoCDProvider">IGoCDProvider</a> instance can be used to interact with the GoCD environment.
+</p>
+<p>
+    The following example prints how many times the pipeline has been run if running on GoCD:
+</p>
+
+<pre><code class="language-csharp hljs">if (BuildSystem.GoCD.IsRunningOnGoCD)
+{
+    Information(BuildSystem.GoCD.Environment.Pipeline.Counter);
+}
+else
+{
+    Information("Not running on GoCD");
+}</code></pre>
+
+<div class="alert alert-info">
+    <p>
+        See <a href="/api/Cake.Common.Build.GoCD/IGoCDProvider">IGoCDProvider</a> for details and available methods to interact with GoCD.
+    </p>
+</div>
+
+<h1 id="included-support">Available 3rd party extensions</h1>
+
+@*
+@{
+    var keywords = new List<string> { "gocd" };
+    var extensions =
+        Documents["Extensions"]
+            .Where(x =>
+                keywords.Any(y => x.String("Name").ToLowerInvariant().Contains(y)));
+}
+
+@Html.Partial("_ExtensionsList", extensions)
+*@

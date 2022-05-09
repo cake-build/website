@@ -1,0 +1,43 @@
+Order: 70
+Title: GitHub Actions
+Description: Integration with GitHub Actions
+---
+
+<h1 id="included-support">Out of the box support</h1>
+
+<p>
+    The <a href="/api/Cake.Common.Build/BuildSystemAliases/6C2FCAF0">GitHubActions alias</a>, which returns an
+    <a href="/api/Cake.Common.Build.GitHubActions/IGitHubActionsProvider">IGitHubActionsProvider</a> instance can be used to interact with the GitHub Actions environment.
+</p>
+<p>
+    The following example prints if the build is for a pull request running on GitHub Actions:
+</p>
+
+<pre><code class="language-csharp hljs">if (BuildSystem.GitHubActions.IsRunningOnGitHubActions)
+{
+    Information(BuildSystem.GitHubActions.Environment.PullRequest.IsPullRequest);
+}
+else
+{
+    Information("Not running on GitHub Actions");
+}</code></pre>
+
+<div class="alert alert-info">
+    <p>
+        See <a href="/api/Cake.Common.Build.GitHubActions/IGitHubActionsProvider">IGitHubActionsProvider</a> for details and available methods to interact with GitHub Actions.
+    </p>
+</div>
+
+<h1 id="included-support">Available 3rd party extensions</h1>
+
+@*
+@{
+    var keywords = new List<string> { "githubactions", "github" };
+    var extensions =
+        Documents["Extensions"]
+            .Where(x =>
+                keywords.Any(y => x.String("Name").ToLowerInvariant().Contains(y)));
+}
+
+@Html.Partial("_ExtensionsList", extensions)
+*@

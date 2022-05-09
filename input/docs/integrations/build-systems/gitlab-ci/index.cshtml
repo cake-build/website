@@ -1,0 +1,43 @@
+Order: 80
+Title: GitLab CI/CD
+Description: Integration with GitLab CI/CD
+---
+
+<h1 id="included-support">Out of the box support</h1>
+
+<p>
+    The <a href="/api/Cake.Common.Build/BuildSystemAliases/701ECBFA">GitLabCI alias</a>, which returns an
+    <a href="/api/Cake.Common.Build.GitLabCI/IGitLabCIProvider">IGitLabCIProvider</a> instance can be used to interact with the GitLab CI/CD environment.
+</p>
+<p>
+    The following example prints the build number if running on GitLab CI/CD:
+</p>
+
+<pre><code class="language-csharp hljs">if (BuildSystem.GitLabCI.IsRunningOnGitLabCI)
+{
+    Information(BuildSystem.GitLabCI.Environment.Build.Id);
+}
+else
+{
+    Information("Not running on GitLab CI/CD");
+}</code></pre>
+
+<div class="alert alert-info">
+    <p>
+        See <a href="/api/Cake.Common.Build.GitLabCI/IGitLabCIProvider">IGitLabCIProvider</a> for details and available methods to interact with GitLab CI/CD.
+    </p>
+</div>
+
+<h1 id="included-support">Available 3rd party extensions</h1>
+
+@*
+@{
+    var keywords = new List<string> { "gitlab" };
+    var extensions =
+        Documents["Extensions"]
+            .Where(x =>
+                keywords.Any(y => x.String("Name").ToLowerInvariant().Contains(y)));
+}
+
+@Html.Partial("_ExtensionsList", extensions)
+*@

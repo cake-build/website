@@ -1,0 +1,47 @@
+Order: 110
+Title: MyGet
+Description: Integration with MyGet build services
+---
+
+<h1 id="included-support">Out of the box support</h1>
+
+<p>
+    The <a href="/api/Cake.Common.Build/BuildSystemAliases/EE6E221A">MyGet alias</a>, which returns an
+    <a href="/api/Cake.Common.Build.MyGet/IMyGetProvider">IMyGetProvider</a> instance can be used to interact with the MyGet environment.
+</p>
+<p>
+    The following example writes an error message if running on MyGet:
+</p>
+
+<pre><code class="language-csharp hljs">if (BuildSystem.MyGet.IsRunningOnMyGet)
+{
+    BuildSystem.MyGet.WriteStatus(
+            "This is a error message.",
+            MyGetBuildStatus.Error,
+            "Error details."
+        );
+}
+else
+{
+    Information("Not running on MyGet");
+}</code></pre>
+
+<div class="alert alert-info">
+    <p>
+        See <a href="/api/Cake.Common.Build.MyGet/IMyGetProvider">IMyGetProvider</a> for details and available methods to interact with MyGet.
+    </p>
+</div>
+
+<h1 id="included-support">Available 3rd party extensions</h1>
+
+@*
+@{
+    var keywords = new List<string> { "myget" };
+    var extensions =
+        Documents["Extensions"]
+            .Where(x =>
+                keywords.Any(y => x.String("Name").ToLowerInvariant().Contains(y)));
+}
+
+@Html.Partial("_ExtensionsList", extensions)
+*@

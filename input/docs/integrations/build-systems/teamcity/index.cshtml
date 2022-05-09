@@ -1,0 +1,47 @@
+Order: 120
+Title: TeamCity
+Description: Integration with TeamCity
+---
+
+<h1 id="included-support">Out of the box support</h1>
+
+<p>
+    The <a href="/api/Cake.Common.Build/BuildSystemAliases/21507A3B">TeamCity alias</a>, which returns an
+    <a href="/api/Cake.Common.Build.TeamCity/ITeamCityProvider/">ITeamCityProvider</a> instance can be used to interact with the TeamCity environment.
+</p>
+<p>
+    The following example writes an error message if running on TeamCity:
+</p>
+
+<pre><code class="language-csharp hljs">if (BuildSystem.TeamCity.IsRunningOnTeamCity)
+{
+    BuildSystem.TeamCity.WriteStatus(
+            "This is a error message.",
+            "error",
+            "Error details."
+        );
+}
+else
+{
+    Information("Not running on TeamCity");
+}</code></pre>
+
+<div class="alert alert-info">
+    <p>
+        See <a href="/api/Cake.Common.Build.TeamCity/ITeamCityProvider/">ITeamCityProvider</a> for details and available methods to interact with TeamCity.
+    </p>
+</div>
+
+<h1 id="included-support">Available 3rd party extensions</h1>
+
+@*
+@{
+    var keywords = new List<string> { "teamcity" };
+    var extensions =
+        Documents["Extensions"]
+            .Where(x =>
+                keywords.Any(y => x.String("Name").ToLowerInvariant().Contains(y)));
+}
+
+@Html.Partial("_ExtensionsList", extensions)
+*@

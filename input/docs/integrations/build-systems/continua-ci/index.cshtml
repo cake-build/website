@@ -1,0 +1,46 @@
+Order: 60
+Title: Continua CI
+Description: Integration with Continua CI
+---
+
+<h1 id="included-support">Out of the box support</h1>
+
+<p>
+    The <a href="/api/Cake.Common.Build/BuildSystemAliases/BA7AF6E4">ContinuaCI alias</a>, which returns an
+    <a href="/api/Cake.Common.Build.ContinuaCI/IContinuaCIProvider">IContinuaCIProvider</a> instance can be used to interact with the Continua CI environment.
+</p>
+<p>
+    The following example writes an error message if running on Continua CI:
+</p>
+
+<pre><code class="language-csharp hljs">if (BuildSystem.ContinuaCI.IsRunningOnContinuaCI)
+{
+    BuildSystem.ContinuaCI.WriteMessage(
+            "This is a error message.",
+            ContinuaCIMessageType.Error
+        );
+}
+else
+{
+    Information("Not running on Continua CI");
+}</code></pre>
+
+<div class="alert alert-info">
+    <p>
+        See <a href="/api/Cake.Common.Build.ContinuaCI/IContinuaCIProvider">IContinuaCIProvider</a> for details and available methods to interact with Continua CI.
+    </p>
+</div>
+
+<h1 id="included-support">Available 3rd party extensions</h1>
+
+@*
+@{
+    var keywords = new List<string> { "continua" };
+    var extensions =
+        Documents["Extensions"]
+            .Where(x =>
+                keywords.Any(y => x.String("Name").ToLowerInvariant().Contains(y)));
+}
+
+@Html.Partial("_ExtensionsList", extensions)
+*@
