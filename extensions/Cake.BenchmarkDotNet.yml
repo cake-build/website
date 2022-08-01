@@ -9,9 +9,9 @@ Author: rfleming71
 Description: Cake addin for working with BenchmarkDotNet
 Categories:
 - benchmarkdotnet
-TargetCakeVersion: 0.38.4
+TargetCakeVersion: 2.2.0
 TargetFrameworks:
-- netstandard2.0
-AnalyzedPackageVersion: 0.1.12
+- netcoreapp3.1
+AnalyzedPackageVersion: 0.2.23
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2020-09-08T19:06:46.0730000Z
+AnalyzedPackagePublishDate: 2022-07-29T17:55:01.1130000Z
