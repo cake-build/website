@@ -53,4 +53,4 @@ public sealed class Clean : FrostingTask<Context>
 
 # Custom aliases
 
-Additional aliases can be defined in [addins](/docs/extending/addins).
+Additional aliases can be defined in [addins](/docs/fundamentals/extensions/addins).
