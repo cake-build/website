@@ -10,11 +10,11 @@ Description: Cake addin that extends Cake with Powershell command support.
 Categories:
 - powershell
 - deployment
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 2.0.0
 TargetFrameworks:
 - netcoreapp3.1
 - net5.0
-- net46
-AnalyzedPackageVersion: 1.0.1
+- net6.0
+AnalyzedPackageVersion: 2.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-04-05T16:31:55.5370000Z
+AnalyzedPackagePublishDate: 2022-08-07T16:11:08.7770000Z
