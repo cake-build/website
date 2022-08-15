@@ -26,7 +26,7 @@ var value = Context.Configuration.GetValue("MySection_MyKey");
     <li><a data-toggle="tab" href="#command-line">command line</a></li>
 </ul>
 
-<div class="tab-access">
+<div class="tab-content">
     <div id="environment" class="tab-pane fade in active">
         <p>
             <pre><code class="language-sh hljs"># Set an Environment variable by prefixing 'CAKE_'
