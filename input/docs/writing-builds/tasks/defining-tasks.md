@@ -13,6 +13,23 @@ Task("A")
 });
 ```
 
+In script for [Cake .NET Tool], each task can have one or more actions to be executed when the task is executed.
+Those actions are defined using the `Does` (see above) and `DoesForEach` (see [tasks for collections](./running-task-for-collections)) methods.
+Both methods can be chained to define more than one action per task. As an example:
+
+```csharp
+Task("A")
+.Does(() => 
+{
+   Information("This action runs first.");
+}).DoesForEach(GetFiles("./**/*"), f => 
+{
+   Information("Found file: "+f);
+}).Does(() => {
+   Information("This action runs last.");
+});
+```
+
 # Defining tasks in Cake Frosting
 
 To define a task in [Cake Frosting] create a class inheriting from [FrostingTask]:
@@ -21,6 +38,19 @@ To define a task in [Cake Frosting] create a class inheriting from [FrostingTask
 [TaskName("A")]
 public class TaskA : FrostingTask
 {
+}
+```
+
+To define the action of a task in [Cake Frosting], override the `Run` method:
+
+```csharp
+[TaskName("A")]
+public class TaskA : FrostingTask<Context>
+{
+    public override void Run(Context context)
+    {
+        context.Information("This task runs...");
+    }
 }
 ```
 
