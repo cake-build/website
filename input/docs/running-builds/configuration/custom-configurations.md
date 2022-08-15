@@ -14,7 +14,7 @@ Like the built-in configurations, custom configurations are also separated in se
 Configurations can be accessed by using [IConfiguration.GetValue](https://cakebuild.net/api/Cake.Core.Configuration/ICakeConfiguration/4007C3B8).
 The section and the key need to be separated by an underscore (`_`). Access to configurations is case insensitive.
 
-```cs
+```csharp
 var value = Context.Configuration.GetValue("MySection_MyKey");
 ```
 
