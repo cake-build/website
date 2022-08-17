@@ -1,0 +1,16 @@
+Type: Addin
+Name: Cake.XCodeWithTesting
+NuGet: Cake.XCodeWithTesting
+Assemblies:
+- /**/Cake.XCode.dll
+Repository: https://github.com/cake-contrib/Cake.XCode.git
+ProjectUrl: https://github.com/cake-contrib/Cake.XCode/
+Author: Nikita Romanov
+Description: This package has been removed after updating original version
+Categories: []
+TargetCakeVersion: 1.0.0
+TargetFrameworks:
+- netstandard2.0
+AnalyzedPackageVersion: 1.0.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2022-08-16T18:33:56.8030000Z
