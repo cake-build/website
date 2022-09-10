@@ -3,8 +3,8 @@ Name: Cake.UncUtils
 NuGet: Cake.UncUtils
 Assemblies:
 - /**/Cake.UncUtils.dll
-Repository: https://github.com/kolletzki/Cake.UncUtils.git
-ProjectUrl: https://github.com/kolletzki/Cake.UncUtils/
+Repository: 
+ProjectUrl: https://www.nuget.org/packages/Cake.UncUtils/
 Author: kolletzki
 Description: A collection of UNC aliases for Cake
 Categories:
@@ -13,6 +13,6 @@ Categories:
 TargetCakeVersion: 0.17.0
 TargetFrameworks:
 - net45
-AnalyzedPackageVersion: 1.0.1
+AnalyzedPackageVersion: 1.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2017-06-01T19:47:33.2830000Z
+AnalyzedPackagePublishDate: 2017-04-13T14:01:18.7670000Z
