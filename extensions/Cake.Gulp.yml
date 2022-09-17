@@ -10,10 +10,11 @@ Description: A set of aliases for Cake to help with running Gulp scripts as part
 Categories:
 - gulp
 - javascript
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 2.0.0
 TargetFrameworks:
-- net461
-- netstandard2.0
-AnalyzedPackageVersion: 1.0.0
+- netcoreapp3.1
+- net5.0
+- net6.0
+AnalyzedPackageVersion: 2.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-03-29T20:22:12.5730000Z
+AnalyzedPackagePublishDate: 2022-09-16T19:38:04.7400000Z
