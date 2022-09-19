@@ -12,6 +12,11 @@ Any contributions are appreciated, no matter how big or small. The Cake site con
 
 The basic documentation pages can be found under `./input/docs`. The directory structure mirrors what's on the site. Most pages are written in Markdown. To add a new page, just add a new file.
 
+Documentation for this project can be found at these links, with descriptions for each section noted in-line!
+Main: [Link to Main Docs Area](https://github.com/cake-build/website/tree/master/input/docs)
+Extending: [Extensions Link](https://github.com/cake-build/website/tree/master/input/docs/extending)
+  -Test
+
 ## Blog
 
 The Cake site contains a blog where important announcements and other relevant information are posted. The blog posts can be found under `./input/blog`. As with documentation pages, blog posts are written in Markdown. The file name for each blog post contains its published date in the format `YYYY-MM-DD-title.md`.
