@@ -10,12 +10,35 @@ Any contributions are appreciated, no matter how big or small. The Cake site con
 
 ## Documentation
 
-The basic documentation pages can be found under `./input/docs`. The directory structure mirrors what's on the site. Most pages are written in Markdown. To add a new page, just add a new file.
-
 Documentation for this project can be found at these links, with descriptions for each section noted in-line!
-Main: [Link to Main Docs Area](https://github.com/cake-build/website/tree/master/input/docs)
-Extending: [Extensions Link](https://github.com/cake-build/website/tree/master/input/docs/extending)
-  -Test
+
+**Main**: [Main Docs](https://github.com/cake-build/website/tree/master/input/docs)
+
+>Main Docs area contains documentation for addins and module best practices, extensions and tools for fundamentals, information on setting up new scripting projects, running and configurations, as well as documentation on different build features of Cake. 
+
+**Extending**: [Extensions](https://github.com/cake-build/website/tree/master/input/docs/extending)
+
+>Contains documentation for addins and module best practices for Cake 2.0.
+
+**Fundamentals**: [Fundamentals](https://github.com/cake-build/website/tree/master/input/docs/fundamentals)
+
+>The Fundamentals section contains documentation relating to aliases and their importance to Cake, as well as extension information relating to addins modules and recipes.
+
+**Getting Started**: [Getting Started](https://github.com/cake-build/website/tree/master/input/docs/getting-started)
+
+>The Getting Started part of the documentation highlights Frequently Asked Questions (FAQ's), lifecycle and versioning information, version control between different versions of Cake (information on how to update/upgrade), and additional information on setting up frosting and scripting projects. 
+
+**Integrations**: [Integrations](https://github.com/cake-build/website/tree/master/input/docs/integrations)
+
+>The Integrations section of the documentation provides several versions of editors and build systems that can be configured with Cake. Each one has its own series of documentation(s).
+
+**Running Builds**: [Running Builds](https://github.com/cake-build/website/tree/master/input/docs/running-builds)
+
+>The Running Builds section has information on prior and current builds and configurations (Flavors) of Cake. This includes documentation related to their installations, and setup. 
+
+**Writing Builds** [Writing Builds](https://github.com/cake-build/website/tree/master/input/docs/writing-builds)
+
+>This section has detailed documentation on preprocessing directives, builds that are reproducible, tasks concurrent with the existing version of Cake, as well as tools and runners that outline different aspects of usage for Cake 2.0.
 
 ## Blog
 
