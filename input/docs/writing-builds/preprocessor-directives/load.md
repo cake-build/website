@@ -19,7 +19,7 @@ or
 ```
 Attempts to load `utilities.cake` from `scripts` directory.
 
-## Local schem:
+## Local scheme:
 
 ```csharp
 #l "local:?path=scripts/utilities.cake"
