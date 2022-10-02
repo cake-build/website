@@ -28,7 +28,7 @@ or
 ```
 Attempts to load `utilities.cake` from `scripts` directory
 
-## Nuget scheme
+## NuGet scheme
 
 ```csharp
 #l "nuget:?package=utilities.cake"
