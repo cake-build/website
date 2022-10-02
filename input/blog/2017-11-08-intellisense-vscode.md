@@ -67,4 +67,4 @@ No, at the moment `Cake.CoreCLR` wont work.
 
 **Q: I tried everything above, I still don't get intellisense.**
 
-Submit an issue in the [bakery](https://github.com/cake-build/bakery) repository on Github or reach out to us on [Gitter](https://gitter.im/cake-build/cake).
+Submit an issue in the [bakery](https://github.com/cake-build/bakery) repository on GitHub or reach out to us on [Gitter](https://gitter.im/cake-build/cake).

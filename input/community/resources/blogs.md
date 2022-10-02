@@ -109,7 +109,7 @@ RedirectFrom: docs/resources/blogs
 
 ## Dariusz Pawlukiewicz
 
-* [Integrating Codecov with .NET Core app, AppVeyor and Github](http://foreverframe.net/integrating-codecov-with-net-core-app-appveyor-and-github/)
+* [Integrating Codecov with .NET Core app, AppVeyor and GitHub](http://foreverframe.net/integrating-codecov-with-net-core-app-appveyor-and-github/)
 
 ## Enrico Campidoglio
 
