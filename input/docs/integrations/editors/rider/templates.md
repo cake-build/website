@@ -23,9 +23,15 @@ select **Add | Cake File** to create a new Cake file containing some sample code
 
 # Live templates (sometimes called code snippets)
 
-Live templates are only available in Cake files.
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#tool">Cake</a></li>
+    <li><a data-toggle="tab" href="#frosting">Cake Frosting</a></li>
+</ul>
 
-Available live templates:
+<div class="tab-content">
+    <div id="tool" class="tab-pane fade in active">
+
+Available live templates in Cake:
 
 * `cake-addin`
   * Provides a basic `#addin` pre-processor directive, where the package name and version can be changed
@@ -71,3 +77,20 @@ Available live templates:
   * Provides a more complex task definition, including a `.Does` body, where the name of the task can be changed
 * `teardown`
   * Provides a sample teardown definition
+   
+   </div>
+    <div id="frosting" class="tab-pane fade">
+
+Available live templates in Cake Frosting:
+
+* `cake-task`
+  * Provides a basic task definition class
+* `cake-task-ctx`
+  * Provides a basic task definition class, using a custom `Context`
+* `cake-async-task`
+  * Provides an async task definition class
+* `cake-async-task-ctx`
+  * Provides an async task definition class, using a custom `Context`
+
+    </div>
+</div>
