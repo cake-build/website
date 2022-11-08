@@ -44,6 +44,25 @@ To update Cake follow these instructions
     </div>
 </div>
 
+# Cake 2.x to Cake 3.0
+
+Cake 3.0 is a major version containing breaking changes.
+
+## Required .NET version
+
+Cake will no longer run on .NET Core 3.1 or .NET 5, but Cake will continue to support the building of .NET Framework projects, as well as projects targeting .NET 5.0 or older.
+
+The supported platform matrix for Cake 3.0.0 will look like this:
+
+| Runner                           | .NET 7                                          | .NET 6                                          |
+| -------------------------------- |:-----------------------------------------------:|:-----------------------------------------------:|
+| [Cake .NET Tool]                 | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> |
+| [Cake Frosting]                  | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> |
+
+## DotNet aliases
+
+`DotNetCore*` aliases have been removed and replaced with `DotNet*` aliases.
+
 # Cake 1.x to Cake 2.0
 
 Cake 2.0 is a major version containing breaking changes.
