@@ -73,12 +73,12 @@ public static class Program
 
 public class BuildLifetime : FrostingLifetime<BuildContext>
 {
-    public override void Setup(BuildContext context)
+    public override void Setup(BuildContext context, ISetupContext info)
     {
         // Executed BEFORE the first task.
     }
 
-    public override void Teardown(BuildContext context)
+    public override void Teardown(BuildContext context, ITeardownContext info)
     {
         // Executed AFTER the last task.
     }

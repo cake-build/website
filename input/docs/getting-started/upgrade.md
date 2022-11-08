@@ -63,6 +63,30 @@ The supported platform matrix for Cake 3.0.0 will look like this:
 
 `DotNetCore*` aliases have been removed and replaced with `DotNet*` aliases.
 
+## Frosting lifecycle
+
+[Cake Frosting] lifetime expects now additionally an `ISetupContext` instance.
+
+Change `FrostingLifetime` implementation from
+
+```csharp
+public class BuildLifetime : FrostingLifetime<BuildContext>
+{
+    public override void Setup(BuildContext context)
+    {}
+}
+```
+
+to
+
+```csharp
+public class BuildLifetime : FrostingLifetime<BuildContext>
+{
+    public override void Setup(BuildContext context, ISetupContext info)
+    {}
+}
+```
+
 # Cake 1.x to Cake 2.0
 
 Cake 2.0 is a major version containing breaking changes.
