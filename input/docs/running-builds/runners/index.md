@@ -23,8 +23,8 @@ A scripting approach can be an easier solution for simple build scenarios, as it
 
 | Runner | Minimum required .NET version  | Supported | IntelliSense |
 |-|-|-|-|
-| [Cake .NET Tool] | .NET Core 3.1 | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:orange"></i> [[1]](#1) |
-| [Cake Frosting] | .NET Core 3.1 | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> |
+| [Cake .NET Tool] | .NET 6 | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:orange"></i> [[1]](#1) |
+| [Cake Frosting] | .NET 6 | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> |
 
 <a id="1"></a>
 [1]: Limited support in Visual Studio Code. See [IntelliSense in Visual Studio Code]
