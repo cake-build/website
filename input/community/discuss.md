@@ -15,6 +15,10 @@ Description: Where to discuss about Cake
 
 Follow and talk about us on Twitter [@cakebuildnet](https://twitter.com/cakebuildnet).
 
+# Mastodon / Fediverse
+
+Follow and talk about us on Mastodon [@cakebuild@botsin.space](https://botsin.space/@cakebuild).
+
 # Gitter Channel Archive
 
 :::{.alert .alert-warning}
