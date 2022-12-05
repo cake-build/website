@@ -4,16 +4,16 @@ NuGet: Cake.Pandoc
 Assemblies:
 - /**/Cake.Pandoc.dll
 Repository: https://github.com/juro-org/Cake.Pandoc.git
-ProjectUrl: https://www.nuget.org/packages/Cake.Pandoc/
+ProjectUrl: https://github.com/juro-org/Cake.Pandoc/
 Author: JuergenRB
 Description: Cake addin to convert files from one markup format into another with pandoc.
 Categories:
 - pandoc
-TargetCakeVersion: 1.2.0
+TargetCakeVersion: 1.3.0
 TargetFrameworks:
 - net5.0
 - net461
 - netstandard2.0
-AnalyzedPackageVersion: 0.1.0
+AnalyzedPackageVersion: 1.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-08-30T21:57:29.6500000Z
+AnalyzedPackagePublishDate: 2022-10-25T13:32:22.6570000Z

@@ -10,9 +10,10 @@ Description: Cake Build addin for Buildah.
 Categories:
 - buildah
 - cake-build
-TargetCakeVersion: 2.2.0
+TargetCakeVersion: 3.0.0
 TargetFrameworks:
 - net6.0
-AnalyzedPackageVersion: 1.0.26
+- net7.0
+AnalyzedPackageVersion: 3.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2022-09-07T19:47:12.6230000Z
+AnalyzedPackagePublishDate: 2022-11-10T20:59:50.8600000Z

@@ -10,9 +10,9 @@ Description: Contains functionality for creating NuGet compatible version number
 Categories:
 - nuget
 - semver
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 3.0.0
 TargetFrameworks:
-- netstandard2.0
-AnalyzedPackageVersion: 0.0.15
+- net6.0
+AnalyzedPackageVersion: 0.0.16
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2020-06-25T11:58:41.5270000Z
+AnalyzedPackagePublishDate: 2022-11-23T16:19:56.6770000Z

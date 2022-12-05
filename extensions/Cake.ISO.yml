@@ -9,9 +9,11 @@ Author: Austin Parker
 Description: Create an ISO as part of a Cake build.
 Categories:
 - misc
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 2.0.0
 TargetFrameworks:
-- netstandard2.0
-AnalyzedPackageVersion: 1.0.2
+- netcoreapp3.1
+- net5.0
+- net6.0
+AnalyzedPackageVersion: 2.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-05-11T16:32:59.2830000Z
+AnalyzedPackagePublishDate: 2022-11-18T00:43:48.3700000Z

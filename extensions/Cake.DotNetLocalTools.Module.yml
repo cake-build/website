@@ -9,9 +9,10 @@ Author: ap0llo
 Description: A Cake module to install tools from a .NET local tool manifest
 Categories:
 - dotnettool
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 3.0.0
 TargetFrameworks:
-- netstandard2.0
-AnalyzedPackageVersion: 1.0.2
+- net6.0
+- net7.0
+AnalyzedPackageVersion: 3.0.12
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-10-13T13:20:36.1800000Z
+AnalyzedPackagePublishDate: 2022-11-24T20:57:20.5700000Z
