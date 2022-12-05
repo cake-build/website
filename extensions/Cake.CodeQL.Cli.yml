@@ -1,0 +1,24 @@
+Type: Addin
+Name: Cake.CodeQL.Cli
+NuGet: Cake.CodeQL.Cli
+Assemblies:
+- /**/Cake.CodeQL.Cli.dll
+Repository: https://github.com/cake-contrib/Cake.CodeQL.Cli.git
+ProjectUrl: https://github.com/cake-contrib/Cake.CodeQL.Cli/
+Author: louisfischer, cake-contrib
+Description: Cake.CodeQL.Clie is a set of Cake aliases that integrate with GitHub Advanced Security (GAS). GAS uses CodeQL to find vulnerabilities in your code. The code must be hosted GitHub or GitHub Enterprise.
+Categories:
+- codeql
+- scan
+- scanning
+- github
+- enterprise
+- advanced
+- security
+- gas
+TargetCakeVersion: 2.3.0
+TargetFrameworks:
+- net6.0
+AnalyzedPackageVersion: 1.0.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2022-10-18T18:18:49.9930000Z
