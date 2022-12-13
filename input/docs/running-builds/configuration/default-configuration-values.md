@@ -284,7 +284,7 @@ This can be useful when it is necessary to work in an offline mode, where direct
 Multiple sources can be passed separated by a semicolon.
 :::
 
-_Default value:_ `https://packages.nuget.org/api/v2`
+_Default value:_ `https://api.nuget.org/v3/index.json`
 
 <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#env6">Environment variable name</a></li>
