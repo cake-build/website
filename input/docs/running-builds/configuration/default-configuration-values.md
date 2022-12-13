@@ -81,6 +81,100 @@ Addins=./tools/Addins</code></pre>
     </div>
 </div>
 
+#  Cache compiled script on disk
+
+:::{.alert .alert-info}
+Available since Cake `2.2.0`.
+:::
+
+This enables [Cake .NET Tool] to cache script compilation for significantly faster subsequent executions of unchanged scripts.
+
+_Default value:_ `false`
+
+_Valid values:_ `true`, `false`
+
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#env11">Environment variable name</a></li>
+    <li><a data-toggle="tab" href="#config11">Config file contents</a></li>
+    <li><a data-toggle="tab" href="#arg11">Argument name</a></li>
+</ul>
+
+<div class="tab-content">
+    <div id="env11" class="tab-pane fade in active">
+        <p>
+            <pre><code class="language-sh hljs">CAKE_SETTINGS_ENABLESCRIPTCACHE</code></pre>
+        </p>
+    </div>
+    <div id="config11" class="tab-pane fade">
+        <p>
+            <pre><code class="language-sh hljs">[Settings]
+EnableScriptCache=true</code></pre>
+        </p>
+    </div>
+    <div id="arg11" class="tab-pane fade">
+        <p>
+            <pre><code class="language-sh hljs">--settings_enablescriptcache=true</code></pre>
+        </p>
+    </div>
+</div>
+
+# Cache Location Path
+
+:::{.alert .alert-info}
+Available since Cake `2.2.0`.
+:::
+
+This allows the configuration of the folder which is used by [Cake .NET Tool] when caching compiled scrips.
+
+_Default value:_ `./tools/cache`
+
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#env12">Environment variable name</a></li>
+    <li><a data-toggle="tab" href="#config12">Config file contents</a></li>
+    <li><a data-toggle="tab" href="#arg12">Argument name</a></li>
+</ul>
+
+<div class="tab-content">
+    <div id="env12" class="tab-pane fade in active">
+        <p>
+            <pre><code class="language-sh hljs">CAKE_PATHS_CACHE</code></pre>
+        </p>
+    </div>
+    <div id="config12" class="tab-pane fade">
+        <p>
+            <pre><code class="language-sh hljs">[Paths]
+Cache=./tools/cache</code></pre>
+        </p>
+    </div>
+    <div id="arg12" class="tab-pane fade">
+        <p>
+            <pre><code class="language-sh hljs">--paths_cache=./tools/cache</code></pre>
+        </p>
+    </div>
+</div>
+
+# Disable Colors in output text
+
+:::{.alert .alert-info}
+Available since Cake `1.1.0`.
+:::
+
+By default, Cake outputs colored text when it detects it is running on an environment that supports ANSI escape codes.
+
+To disable output of colored text, set an environment variable with the name [`NO_COLOR`](https://no-color.org) with any value.
+
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#env10">Environment variable name</a></li>
+</ul>
+
+<div class="tab-content">
+    <div id="env10" class="tab-pane fade in active">
+        <p>
+            <pre><code class="language-sh hljs">NO_COLOR</code></pre>
+        </p>
+    </div>
+</div>
+
 # In-Process NuGet installation
 
 :::{.alert .alert-info}
@@ -342,96 +436,39 @@ Tools=./tools</code></pre>
     </div>
 </div>
 
-# Disable Colors in output text
+# Enable advanced console output
 
 :::{.alert .alert-info}
-Available since Cake `1.1.0`.
+Available since Cake `3.0.0`.
 :::
 
-By default, Cake outputs colored text when it detects it is running on an environment that supports ANSI escape codes.
-
-To disable output of colored text, set an environment variable with the name [`NO_COLOR`](https://no-color.org) with any value.
-
-<ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#env10">Environment variable name</a></li>
-</ul>
-
-<div class="tab-content">
-    <div id="env10" class="tab-pane fade in active">
-        <p>
-            <pre><code class="language-sh hljs">NO_COLOR</code></pre>
-        </p>
-    </div>
-</div>
-
-#  Cache compiled script on disk
-
-:::{.alert .alert-info}
-Available since Cake `2.2.0`.
-:::
-
-This enables [Cake .NET Tool] to cache script compilation for significantly faster subsequent executions of unchanged scripts.
+When enabled (i.e. set to `true`), the console output from Cake is rendered via [Spectre.Console](https://spectreconsole.net/) library. This includes an additional column in the Task Summary table at the end of a build, which lists the reason (if available), on why a task was skipped during the build.
 
 _Default value:_ `false`
 
 _Valid values:_ `true`, `false`
 
 <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#env11">Environment variable name</a></li>
-    <li><a data-toggle="tab" href="#config11">Config file contents</a></li>
-    <li><a data-toggle="tab" href="#arg11">Argument name</a></li>
+    <li class="active"><a data-toggle="tab" href="#env13">Environment variable name</a></li>
+    <li><a data-toggle="tab" href="#config13">Config file contents</a></li>
+    <li><a data-toggle="tab" href="#arg13">Argument name</a></li>
 </ul>
 
 <div class="tab-content">
-    <div id="env11" class="tab-pane fade in active">
+    <div id="env9" class="tab-pane fade in active">
         <p>
-            <pre><code class="language-sh hljs">CAKE_SETTINGS_ENABLESCRIPTCACHE</code></pre>
+            <pre><code class="language-sh hljs">CAKE_SETTINGS_USESPECTRECONSOLEFORCONSOLEOUTPUT</code></pre>
         </p>
     </div>
-    <div id="config11" class="tab-pane fade">
+    <div id="config9" class="tab-pane fade">
         <p>
             <pre><code class="language-sh hljs">[Settings]
-EnableScriptCache=true</code></pre>
+UseSpectreConsoleForConsoleOutput=true</code></pre>
         </p>
     </div>
-    <div id="arg11" class="tab-pane fade">
+    <div id="arg9" class="tab-pane fade">
         <p>
-            <pre><code class="language-sh hljs">--settings_enablescriptcache=true</code></pre>
-        </p>
-    </div>
-</div>
-
-# Cache Location Path
-
-:::{.alert .alert-info}
-Available since Cake `2.2.0`.
-:::
-
-This allows the configuration of the folder which is used by [Cake .NET Tool] when caching compiled scrips.
-
-_Default value:_ `./tools/cache`
-
-<ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#env12">Environment variable name</a></li>
-    <li><a data-toggle="tab" href="#config12">Config file contents</a></li>
-    <li><a data-toggle="tab" href="#arg12">Argument name</a></li>
-</ul>
-
-<div class="tab-content">
-    <div id="env12" class="tab-pane fade in active">
-        <p>
-            <pre><code class="language-sh hljs">CAKE_PATHS_CACHE</code></pre>
-        </p>
-    </div>
-    <div id="config12" class="tab-pane fade">
-        <p>
-            <pre><code class="language-sh hljs">[Paths]
-Cache=./tools/cache</code></pre>
-        </p>
-    </div>
-    <div id="arg12" class="tab-pane fade">
-        <p>
-            <pre><code class="language-sh hljs">--paths_cache=./tools/cache</code></pre>
+            <pre><code class="language-sh hljs">--settings_usespectresonsolesorsonsolesutput=true</code></pre>
         </p>
     </div>
 </div>
