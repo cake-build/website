@@ -3,15 +3,16 @@ Name: Cake.Yarn
 NuGet: Cake.Yarn
 Assemblies:
 - /**/Cake.Yarn.dll
-Repository: https://github.com/cake-contrib/cake-yarn.git
-ProjectUrl: https://github.com/cake-contrib/cake-yarn/
+Repository: https://github.com/cake-contrib/Cake.Yarn.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Yarn/
 Author: Maxim Milovanov
 Description: A set of aliases for Cake to help with running Yarn (Node Package Manager from Facebook) commands.
 Categories:
 - yarn
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 3.0.0
 TargetFrameworks:
-- netstandard2.0
-AnalyzedPackageVersion: 0.4.8
+- net6.0
+- net7.0
+AnalyzedPackageVersion: 2.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-02-22T10:40:43.2700000Z
+AnalyzedPackagePublishDate: 2022-12-24T21:56:56.2730000Z

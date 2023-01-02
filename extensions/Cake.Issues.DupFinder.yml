@@ -25,10 +25,11 @@ Categories:
 - codeanalysis
 - linting
 - dupfinder
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 2.0.0
 TargetFrameworks:
-- net461
-- netstandard2.0
-AnalyzedPackageVersion: 1.0.0
+- netcoreapp3.1
+- net5.0
+- net6.0
+AnalyzedPackageVersion: 2.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-07-30T18:24:11.3400000Z
+AnalyzedPackagePublishDate: 2022-12-08T21:23:46.1470000Z

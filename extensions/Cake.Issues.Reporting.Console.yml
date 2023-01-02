@@ -32,9 +32,11 @@ Categories:
 - issues
 - reporting
 - console
-TargetCakeVersion: 1.2.0
+TargetCakeVersion: 2.0.0
 TargetFrameworks:
-- netstandard2.0
-AnalyzedPackageVersion: 1.0.0
+- netcoreapp3.1
+- net5.0
+- net6.0
+AnalyzedPackageVersion: 2.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2022-07-27T18:12:27.3800000Z
+AnalyzedPackagePublishDate: 2022-12-09T22:30:25.3400000Z

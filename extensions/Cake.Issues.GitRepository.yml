@@ -22,9 +22,11 @@ Description: >-
 Categories:
 - issues
 - git
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 2.0.0
 TargetFrameworks:
-- netstandard2.0
-AnalyzedPackageVersion: 1.0.1
+- netcoreapp3.1
+- net5.0
+- net6.0
+AnalyzedPackageVersion: 2.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-10-07T20:43:54.9270000Z
+AnalyzedPackagePublishDate: 2022-12-09T23:01:11.5430000Z

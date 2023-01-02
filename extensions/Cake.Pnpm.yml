@@ -1,0 +1,18 @@
+Type: Addin
+Name: Cake.Pnpm
+NuGet: Cake.Pnpm
+Assemblies:
+- /**/Cake.Pnpm.dll
+Repository: https://github.com/cake-contrib/Cake.Pnpm.git
+ProjectUrl: https://github.com/cake-contrib/Cake.Pnpm/
+Author: Potapy4, aivanov@oneinc.com
+Description: A wrapper around pnpm functionality within a Cake build script.
+Categories:
+- pnpm
+TargetCakeVersion: 1.1.0
+TargetFrameworks:
+- net46
+- netstandard2.0
+AnalyzedPackageVersion: 1.0.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2022-12-26T23:46:47.7500000Z
