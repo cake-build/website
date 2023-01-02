@@ -3,7 +3,7 @@ Name: Cake.SitecoreCodegen
 NuGet: Cake.SitecoreCodegen
 Assemblies:
 - /**/Cake.SitecoreCodegen.dll
-Repository: https://github.com/fpodshivadlov/SitecoreCodeGen.git
+Repository: https://github.com/fpodshivadlov/SitecoreCodeGen/
 ProjectUrl: https://www.nuget.org/packages/Cake.SitecoreCodegen/
 Author: fpodshivadlov
 Description: Cake Addin for Sitecore code generation

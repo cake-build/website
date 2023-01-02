@@ -9,9 +9,9 @@ Author: Attila Kemeny
 Description: Retrieving TFS variable from arguments or environment variables
 Categories:
 - tfs
-TargetCakeVersion: 0.26.0
+TargetCakeVersion: 3.0.0
 TargetFrameworks:
-- netstandard2.0
-AnalyzedPackageVersion: 0.0.8
+- net6.0
+AnalyzedPackageVersion: 0.0.9
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2018-03-15T20:22:53.6500000Z
+AnalyzedPackagePublishDate: 2022-11-11T16:13:07.8500000Z
