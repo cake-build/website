@@ -24,9 +24,11 @@ Categories:
 - cake-issueprovider
 - linting
 - terraform
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 2.0.0
 TargetFrameworks:
-- netstandard2.0
-AnalyzedPackageVersion: 1.0.0
+- netcoreapp3.1
+- net5.0
+- net6.0
+AnalyzedPackageVersion: 2.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-07-27T21:46:35.0630000Z
+AnalyzedPackagePublishDate: 2022-12-09T22:10:36.2930000Z

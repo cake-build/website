@@ -9,9 +9,10 @@ Author: Jonathan Dick
 Description: A set of aliases to help with YAML Serialization
 Categories:
 - serialization
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 3.0.0
 TargetFrameworks:
-- netstandard2.0
-AnalyzedPackageVersion: 4.0.0
+- net6.0
+- net7.0
+AnalyzedPackageVersion: 6.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-10-09T20:04:10.2170000Z
+AnalyzedPackagePublishDate: 2022-12-24T19:05:09.9970000Z

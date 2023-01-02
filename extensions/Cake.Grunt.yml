@@ -10,9 +10,10 @@ Description: A set of aliases for Cake to help with running Grunt scripts as par
 Categories:
 - grunt
 - javascript
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 3.0.0
 TargetFrameworks:
-- netstandard2.0
-AnalyzedPackageVersion: 0.5.2
+- net6.0
+- net7.0
+AnalyzedPackageVersion: 1.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2019-08-21T19:42:17.7800000Z
+AnalyzedPackagePublishDate: 2022-12-07T08:44:26.0770000Z

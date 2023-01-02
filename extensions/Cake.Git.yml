@@ -9,11 +9,10 @@ Author: WCOM AB
 Description: Cake AddIn that extends Cake with Git aliases using LibGit2 and LibGit2Sharp.
 Categories:
 - git
-TargetCakeVersion: 2.0.0
+TargetCakeVersion: 3.0.0
 TargetFrameworks:
-- netcoreapp3.1
-- net5.0
 - net6.0
-AnalyzedPackageVersion: 2.0.0
+- net7.0
+AnalyzedPackageVersion: 3.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-12-13T15:41:25.2400000Z
+AnalyzedPackagePublishDate: 2022-12-14T20:39:11.1330000Z
