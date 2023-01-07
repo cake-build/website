@@ -99,7 +99,8 @@ public static void DownloadPackage(this ICakeContext context, DirectoryPath exte
 // https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#version-ranges
 static VersionRange[] _compatibilityVersionRanges = new []
 {
-    "[2.0.0, )",
+    "[3.0.0, )",
+    "[2.0.0, 3.0.0)",
     "[1.0.0, 2.0.0)",
     "[0.33.0, 1.0.0)",
     "[0.28.0, 0.33.0)",
