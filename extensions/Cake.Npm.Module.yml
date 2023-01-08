@@ -12,9 +12,9 @@ Categories:
 - ci
 - npm
 - node
-TargetCakeVersion: 2.0.0
+TargetCakeVersion: 3.0.0
 TargetFrameworks:
-- netcoreapp3.1
-AnalyzedPackageVersion: 3.0.0
+- net6.0
+AnalyzedPackageVersion: 4.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-11-30T22:26:38.9330000Z
+AnalyzedPackagePublishDate: 2023-01-07T21:06:04.1400000Z
