@@ -10,9 +10,10 @@ Description: Addin to convert markdown files to pdf.
 Categories:
 - documentation
 - markdown
-TargetCakeVersion: 0.34.1
+TargetCakeVersion: 3.0.0
 TargetFrameworks:
-- netstandard2.0
-AnalyzedPackageVersion: 2.5.2
+- net6.0
+- net7.0
+AnalyzedPackageVersion: 3.0.2
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2019-08-13T11:38:57.4930000Z
+AnalyzedPackagePublishDate: 2023-01-23T11:33:30.9030000Z
