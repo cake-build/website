@@ -14,6 +14,6 @@ TargetCakeVersion: 3.0.0
 TargetFrameworks:
 - net6.0
 - net7.0
-AnalyzedPackageVersion: 3.0.2
+AnalyzedPackageVersion: 3.0.4
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2023-01-23T11:33:30.9030000Z
+AnalyzedPackagePublishDate: 2023-01-23T23:05:30.6570000Z
