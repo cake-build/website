@@ -1,0 +1,17 @@
+Type: Addin
+Name: Cake.CloudFormation
+NuGet: Cake.CloudFormation
+Assemblies:
+- /**/Cake.CloudFormation.dll
+Repository: https://github.com/epbloxx/cake-cloudformation.git
+ProjectUrl: https://github.com/epbloxx/cake-cloudformation/
+Author: epbloxx
+Description: CakeBuild plug-in to execute AWS cloud fromation CLI commands
+Categories: []
+TargetCakeVersion: 2.0.0
+TargetFrameworks:
+- netcoreapp3.1
+- net6.0
+AnalyzedPackageVersion: 0.1.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2022-01-25T12:39:53.7070000Z
