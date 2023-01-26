@@ -8,10 +8,10 @@ ProjectUrl: https://github.com/epbloxx/cake-cloudformation/
 Author: epbloxx
 Description: CakeBuild plug-in to execute AWS cloud fromation CLI commands
 Categories: []
-TargetCakeVersion: 2.0.0
+TargetCakeVersion: 2.2.0
 TargetFrameworks:
 - netcoreapp3.1
 - net6.0
-AnalyzedPackageVersion: 0.1.0
+AnalyzedPackageVersion: 0.7.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2022-01-25T12:39:53.7070000Z
+AnalyzedPackagePublishDate: 2022-04-15T14:51:38.2430000Z
