@@ -10,9 +10,9 @@ Description: Packer with globbing and file filtering for Cake.
 Categories:
 - ck
 - pack
-TargetCakeVersion: 2.2.0
+TargetCakeVersion: 3.0.0
 TargetFrameworks:
 - net6.0
-AnalyzedPackageVersion: 0.17.2
+AnalyzedPackageVersion: 0.18.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2023-02-07T08:37:01.2500000Z
+AnalyzedPackagePublishDate: 2023-02-23T22:56:28.4570000Z
