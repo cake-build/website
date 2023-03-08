@@ -4,7 +4,7 @@ NuGet: Cake.Deploy.Variables
 Assemblies:
 - /**/Cake.Deploy.Variables.dll
 Repository: https://github.com/ObjectivityLtd/Cake.Deploy.Variables.git
-ProjectUrl: https://github.com/ObjectivityLtd/Cake.Deploy.Variables/
+ProjectUrl: https://www.nuget.org/packages/Cake.Deploy.Variables/
 Author: ObjectivityLtd
 Description: Cake addin for the deployment variables management.
 Categories:
