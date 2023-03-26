@@ -1,0 +1,16 @@
+Type: Module
+Name: Cake.Sprinkles.Module
+NuGet: Cake.Sprinkles.Module
+Assemblies:
+- /**/Cake.Sprinkles.Module.dll
+Repository: https://github.com/EdLichtman/Cake.Sprinkles.Module.git
+ProjectUrl: https://github.com/EdLichtman/Cake.Sprinkles.Module/
+Author: EdLichtman
+Description: A module to be used with Cake Frosting. It automatically injects arguments from the CLI, Cake.Config file, or Environment Variables into C# properties through Decorator attributes, and uses those same decorator attributes to enhance documentation and reduce the scope of messaging you need to include for users of your Cake Frosting application.
+Categories: []
+TargetCakeVersion: 3.0.0
+TargetFrameworks:
+- net6.0
+AnalyzedPackageVersion: 1.0.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2023-03-26T01:42:19.8830000Z
