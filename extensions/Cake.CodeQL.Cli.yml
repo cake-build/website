@@ -16,9 +16,9 @@ Categories:
 - advanced
 - security
 - gas
-TargetCakeVersion: 2.3.0
+TargetCakeVersion: 3.0.0
 TargetFrameworks:
 - net6.0
-AnalyzedPackageVersion: 1.0.0
+AnalyzedPackageVersion: 3.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2022-10-18T18:18:49.9930000Z
+AnalyzedPackagePublishDate: 2023-03-29T04:29:22.2270000Z
