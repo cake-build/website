@@ -12,9 +12,9 @@ Categories:
 - core
 - entity
 - framework
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 3.0.0
 TargetFrameworks:
-- netstandard2.0
-AnalyzedPackageVersion: 2.1.2
+- net6.0
+AnalyzedPackageVersion: 3.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-03-22T21:43:24.2570000Z
+AnalyzedPackagePublishDate: 2023-03-30T18:59:04.8970000Z
