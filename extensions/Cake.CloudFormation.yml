@@ -3,8 +3,8 @@ Name: Cake.CloudFormation
 NuGet: Cake.CloudFormation
 Assemblies:
 - /**/Cake.CloudFormation.dll
-Repository: https://github.com/cake-contrib/cake-cloudformation.git
-ProjectUrl: https://github.com/cake-contrib/cake-cloudformation/
+Repository: https://github.com/epbloxx/cake-cloudformation.git
+ProjectUrl: https://github.com/epbloxx/cake-cloudformation/
 Author: epbloxx
 Description: CakeBuild plug-in to execute AWS cloud fromation CLI commands
 Categories: []
