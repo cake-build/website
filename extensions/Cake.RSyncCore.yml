@@ -1,0 +1,17 @@
+Type: Addin
+Name: Cake.RSyncCore
+NuGet: Cake.RSyncCore
+Assemblies:
+- /**/Cake.RSyncCore.dll
+Repository: 
+ProjectUrl: https://www.nuget.org/packages/Cake.RSyncCore/
+Author: David Browne based on original work from csnewman
+Description: Cake rsync extension for .net core
+Categories:
+- rsync
+TargetCakeVersion: 2.2.0
+TargetFrameworks:
+- net6.0
+AnalyzedPackageVersion: 1.0.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2022-09-26T21:52:06.0570000Z
