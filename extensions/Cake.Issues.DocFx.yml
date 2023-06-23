@@ -23,10 +23,11 @@ Categories:
 - issues
 - documentation
 - docfx
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 2.0.0
 TargetFrameworks:
-- net461
-- netstandard2.0
-AnalyzedPackageVersion: 1.0.0
+- netcoreapp3.1
+- net5.0
+- net6.0
+AnalyzedPackageVersion: 2.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-07-27T20:19:07.5930000Z
+AnalyzedPackagePublishDate: 2023-06-22T18:59:18.8770000Z
