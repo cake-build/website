@@ -14,7 +14,7 @@ Cake was born out of a vision to simplify software development processes. Throug
 
 ### 123 Releases and Counting
 
-With 123 releases, we have continuously improved Cake's feature set and capabilities. The core team's dedication and perseverance have been instrumental in ensuring a seamless experience for our users.
+With [123 releases](https://github.com/cake-build/cake/releases), we have continuously improved Cake's feature set and capabilities. The core team's dedication and perseverance have been instrumental in ensuring a seamless experience for our users.
 
 ### Community Add-ins: Expanding the Power of Cake
 
