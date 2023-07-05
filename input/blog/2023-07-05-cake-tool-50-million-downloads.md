@@ -18,7 +18,7 @@ With 123 releases, we have continuously improved Cake's feature set and capabili
 
 ### Community Add-ins: Expanding the Power of Cake
 
-The vibrant ecosystem around Cake boasts over 300 third-party add-ins. These community-driven contributions have significantly enhanced the tool's capabilities, making it adaptable to a wide range of use cases. We extend our gratitude to the creators of these add-ins for their innovative contributions.
+The vibrant ecosystem around Cake boasts over [300 third-party add-ins](/extensions/). These community-driven contributions have significantly enhanced the tool's capabilities, making it adaptable to a wide range of use cases. We extend our gratitude to the creators of these add-ins for their innovative contributions.
 
 ### Gratitude and Future Endeavors
 
