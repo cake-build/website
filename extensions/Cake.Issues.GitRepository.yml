@@ -22,11 +22,10 @@ Description: >-
 Categories:
 - issues
 - git
-TargetCakeVersion: 2.0.0
+TargetCakeVersion: 3.0.0
 TargetFrameworks:
-- netcoreapp3.1
-- net5.0
 - net6.0
-AnalyzedPackageVersion: 2.0.0
+- net7.0
+AnalyzedPackageVersion: 3.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2022-12-09T23:01:11.5430000Z
+AnalyzedPackagePublishDate: 2023-07-16T16:23:16.3730000Z
