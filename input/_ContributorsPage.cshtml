@@ -1,0 +1,31 @@
+@model IEnumerable<IDocument>
+
+<div class="row">
+    @foreach(IDocument contributor in Model.OrderBy(x => Guid.NewGuid()))
+    {
+        string contributorName = contributor.String("Name");
+        string contributorUrl = contributor.String("HtmlUrl");
+        string contributorImage = contributor.String("AvatarUrl");
+        string commitLink = $"https://github.com/search?q=org%3Acake-build+author%3A{contributorName}&type=commits";
+
+        <div class="col-6 col-md-2">
+            <div class="thumbnail contributor-thumbnail">
+                <a title="@contributorName" target="_blank" href="@commitLink">
+                    <img class="contributor-image" src="@contributorImage">
+                </a>
+            </div>
+        </div>
+    }
+</div>
+
+<style>
+    .contributor-image {
+        width: 80px;
+        border-radius: 730px;
+        margin: 10px 10px 0 0;
+    }
+    .contributor-thumbnail {
+        border: none;
+        background-color: transparent;
+    }
+</style>
