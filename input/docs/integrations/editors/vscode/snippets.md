@@ -14,10 +14,10 @@ For instructions how to install an extension in Visual Studio Code see [Extensio
 
 ## Supported runners
 
-| Runner                           | Supported                                       | Remarks                                            |
-|----------------------------------|-------------------------------------------------|----------------------------------------------------|
-| [Cake .NET Tool]                 | <i class="fa fa-check" style="color:green"></i> | Available for all `.cake` files.                   |
-| [Cake Frosting]                  | <i class="fa fa-times" style="color:red"></i>   |                                                    |
+| Runner                           | Supported                                             | Remarks                                            |
+|----------------------------------|-------------------------------------------------------|----------------------------------------------------|
+| [Cake .NET Tool]                 | <i class="fa-solid fa-check" style="color:green"></i> | Available for all `.cake` files.                   |
+| [Cake Frosting]                  | <i class="fa-solid fa-xmark" style="color:red"></i>   |                                                    |
 
 [Cake .NET Tool]: dotnet-tool
 [Cake Frosting]: cake-frosting

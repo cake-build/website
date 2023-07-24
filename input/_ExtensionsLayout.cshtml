@@ -98,7 +98,7 @@
 
                 <li>
                     <span title="@parsedPublishDate.ToOrdinalWords()">
-                        <i class="fa fa-clock-o"></i>
+                        <i class="fa-solid fa-clock-one"></i>
                         Last updated @parsedPublishDate.Humanize()
                     </span>
                 </li>
@@ -106,7 +106,7 @@
             @if (!string.IsNullOrWhiteSpace(projectUrl) && HasProjectUrlDifferentFromRepoUrl(projectUrl, repository))
             {
                 <li>
-                    <i class="fa fa-globe"></i>
+                    <i class="fa-solid fa-globe"></i>
                     <a href="@projectUrl" target="_blank">Project Site</a>
                 </li>
             }
@@ -117,12 +117,12 @@
             @if (!string.IsNullOrWhiteSpace(repository))
             {
                 <li>
-                    <i class="fa fa-code-fork"></i>
+                    <i class="fa-solid fa-code-fork"></i>
                     <a href="@repository" target="_blank">Source repository</a>
                     @if (repository.StartsWith("https://github.com/cake-contrib/"))
                     {
                         <a href="/community/cake-contrib">
-                            <i class="fa fa-check-circle" data-toggle="tooltip" title="Source code hosted in cake-contrib organization"></i>
+                            <i class="fa-solid fa-circle-check" data-toggle="tooltip" title="Source code hosted in cake-contrib organization"></i>
                         </a>
                     }
                 </li>
@@ -136,7 +136,7 @@
                 <ul class="list-unstyled">
                     <li>
                         Versions: @supportedCakeVersions
-                        <i class="fa fa-info-circle" data-toggle="tooltip" title="These are the versions of Cake with an API compatible with the latest version of this addin. Depending on the API used in the extension it might also work with other versions of Cake. An earlier version of the addin might be compatible with other versions of Cake."></i>
+                        <i class="fa-solid fa-circle-info" data-toggle="tooltip" title="These are the versions of Cake with an API compatible with the latest version of this addin. Depending on the API used in the extension it might also work with other versions of Cake. An earlier version of the addin might be compatible with other versions of Cake."></i>
                     </li>
                 </ul>
             </p>

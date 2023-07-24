@@ -8,7 +8,7 @@ Description: Where to discuss about Cake
 [GitHub Discussions](https://github.com/cake-build/cake/discussions) is the place to connect with other community members about Cake.
 
 <a class="btn btn-primary btn-lg" href="https://github.com/cake-build/cake/discussions" target="_blank" role="button">
-    <i class="fa fa-comment"></i> Go to discussions
+    <i class="fa-solid fa-comment"></i> Go to discussions
 </a>
 
 # Twitter

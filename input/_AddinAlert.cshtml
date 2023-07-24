@@ -13,7 +13,7 @@
                 x.List<string>("Assemblies")
                     ?.Any(y => y.Contains(containingAssembly.String(CodeAnalysisKeys.DisplayName))) == true);
         <div class="alert alert-info" role="alert">
-            <i class="fa fa-info-circle"></i> This content is part of a third party extension that is not supported by the Cake project.
+            <i class="fa-solid fa-circle-info"></i> This content is part of a third party extension that is not supported by the Cake project.
             @if(extension != null && !string.IsNullOrEmpty(extension.String("Name")))
             {
                 string extensionName = extension.String("Name");
