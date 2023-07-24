@@ -21,6 +21,12 @@ Pipelines.InsertBefore(Docs.Code, "Maintainers",
     Yaml()
 );
 
+// Reads contributor metadata
+Pipelines.InsertBefore(Docs.Code, "Contributors",
+    ReadFiles("../contributors/*.yml"),
+    Yaml()
+);
+
 // Reads extension metadata
 Pipelines.InsertBefore(Docs.Code, "Extensions",
     ReadFiles("../extensions/*.yml"),
