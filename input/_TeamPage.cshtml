@@ -12,6 +12,7 @@
         string gitHubUserName = maintainer.String("GitHubUserName");
         string gitHubID = maintainer.String("GitHubID");
         string website = maintainer.String("Website");
+        string mastodon = maintainer.String("Mastodon");
         string twitter = maintainer.String("Twitter");
         string linkedin = maintainer.String("LinkedIn");
 
@@ -34,6 +35,12 @@
                         <a title="@name on GitHub" target="_blank" href="https://github.com/@gitHubUserName">
                             <i class="fa-brands fa-github"></i>
                         </a>
+                        @if (!string.IsNullOrWhiteSpace(mastodon))
+                        {
+                            <a title="@name on Mastodon" target="_blank" href="https://@mastodon">
+                                <i class="fa fa-mastodon"></i>
+                            </a>
+                        }
                         @if (!string.IsNullOrWhiteSpace(twitter))
                         {
                             <a title="@name on Twitter" target="_blank" href="https://twitter.com/@twitter">
