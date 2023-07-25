@@ -10,8 +10,8 @@ Cake provides different ways to install tool executables available as NuGet pack
 
 | Installation method              | Cake .NET Tool | Cake Frosting |
 |----------------------------------|----------------|---------------|
-| [Pre-processor directive]        | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-times" style="color:red"></i>   |
-| [InstallTool]                    | <i class="fa fa-times" style="color:red"></i>   | <i class="fa fa-check" style="color:green"></i> |
+| [Pre-processor directive]        | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-xmark" style="color:red"></i>   |
+| [InstallTool]                    | <i class="fa-solid fa-xmark" style="color:red"></i>   | <i class="fa-solid fa-check" style="color:green"></i> |
 
 ## Installing tools via pre-processor directive
 

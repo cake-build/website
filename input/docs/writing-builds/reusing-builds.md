@@ -4,11 +4,11 @@ Description: How to reuse build code in different projects and repositories
 
 Cake supports different ways to share build code across multiple projects and repositories.
 
-| Method                         | Sharing of classes                              | Sharing of aliases                              | Sharing of tasks                                |
-|--------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
-| [Recipe NuGet packages]        | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-times" style="color:red"></i>   | <i class="fa fa-check" style="color:green"></i> |
-| [Addins]                       | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-times" style="color:red"></i>   |
-| [Assemblies in NuGet packages] | <i class="fa fa-check" style="color:green"></i> | <i class="fa fa-times" style="color:red"></i>   | <i class="fa fa-times" style="color:red"></i>   |
+| Method                         | Sharing of classes                                    | Sharing of aliases                                    | Sharing of tasks                                      |
+|--------------------------------|-------------------------------------------------------|-------------------------------------------------------|-------------------------------------------------------|
+| [Recipe NuGet packages]        | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-xmark" style="color:red"></i>   | <i class="fa-solid fa-check" style="color:green"></i> |
+| [Addins]                       | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-xmark" style="color:red"></i>   |
+| [Assemblies in NuGet packages] | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-xmark" style="color:red"></i>   | <i class="fa-solid fa-xmark" style="color:red"></i>   |
 
 [Recipe NuGet packages]: #recipe-nuget-packages
 [Addins]: #addins

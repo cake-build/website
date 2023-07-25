@@ -32,10 +32,10 @@ In order to use the task runner you must have Cake installed on your machine or 
 
 ## Supported runners
 
-| Runner                           | Supported                                       | Remarks                                            |
-|----------------------------------|-------------------------------------------------|----------------------------------------------------|
-| [Cake .NET Tool]                 | <i class="fa fa-check" style="color:green"></i> | Only for global installations.                     |
-| [Cake Frosting]                  | <i class="fa fa-times" style="color:red"></i>   |                                                    |
+| Runner                           | Supported                                             | Remarks                                            |
+|----------------------------------|-------------------------------------------------------|----------------------------------------------------|
+| [Cake .NET Tool]                 | <i class="fa-solid fa-check" style="color:green"></i> | Only for global installations.                     |
+| [Cake Frosting]                  | <i class="fa-solid fa-xmark" style="color:red"></i>   |                                                    |
 
 [Cake .NET Tool]: /docs/running-builds/runners/dotnet-tool
 [Cake Frosting]: /docs/running-builds/runners/cake-frosting
