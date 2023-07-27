@@ -10,9 +10,10 @@ Description: An alias that generates static sites and other content using Wyam.
 Categories:
 - documentation
 - static site generation
-TargetCakeVersion: 2.0.0
+TargetCakeVersion: 3.0.0
 TargetFrameworks:
-- netcoreapp3.1
-AnalyzedPackageVersion: 2.2.13
+- net6.0
+- net7.0
+AnalyzedPackageVersion: 2.2.14
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-12-06T19:41:02.0400000Z
+AnalyzedPackagePublishDate: 2023-07-26T19:39:55.7270000Z
