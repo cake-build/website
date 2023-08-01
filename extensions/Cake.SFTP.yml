@@ -1,0 +1,19 @@
+Type: Addin
+Name: Cake.SFTP
+NuGet: Cake.SFTP
+Assemblies:
+- /**/Cake.SFTP.dll
+Repository: https://github.com/JeroenVandezande/Cake.SFTP.git
+ProjectUrl: https://github.com/JeroenVandezande/Cake.SFTP/
+Author: JeroenVandezande
+Description: a plug-in for Cake Build that allows you to upload, download and delete files on an SFT server.
+Categories:
+- sftp
+TargetCakeVersion: 3.0.0
+TargetFrameworks:
+- net6.0
+- net7.0
+- net8.0
+AnalyzedPackageVersion: 1.2.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2023-07-31T16:08:21.1830000Z
