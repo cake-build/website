@@ -3,8 +3,8 @@ Name: Cake.SFTP
 NuGet: Cake.SFTP
 Assemblies:
 - /**/Cake.SFTP.dll
-Repository: https://github.com/JeroenVandezande/Cake.SFTP.git
-ProjectUrl: https://github.com/JeroenVandezande/Cake.SFTP/
+Repository: https://github.com/cake-contrib/Cake.SFTP.git
+ProjectUrl: https://cakebuild.net/extensions/cake-sftp/
 Author: JeroenVandezande
 Description: a plug-in for Cake Build that allows you to upload, download and delete files on an SFT server.
 Categories:
@@ -14,6 +14,6 @@ TargetFrameworks:
 - net6.0
 - net7.0
 - net8.0
-AnalyzedPackageVersion: 1.5.0
+AnalyzedPackageVersion: 1.6.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2023-08-02T07:59:45.6600000Z
+AnalyzedPackagePublishDate: 2023-08-03T17:27:43.4630000Z
