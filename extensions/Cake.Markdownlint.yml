@@ -9,9 +9,11 @@ Author: BBT Software AG
 Description: The Issues Addin for Cake allows you to run markdownlint.
 Categories:
 - markdown
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 2.0.0
 TargetFrameworks:
-- netstandard2.0
-AnalyzedPackageVersion: 1.1.0
+- netcoreapp3.1
+- net5.0
+- net6.0
+AnalyzedPackageVersion: 2.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2023-08-07T23:03:28.3800000Z
+AnalyzedPackagePublishDate: 2023-08-09T22:36:24.7370000Z
