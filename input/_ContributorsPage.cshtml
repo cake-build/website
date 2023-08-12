@@ -6,7 +6,7 @@
         string contributorName = contributor.String("Name");
         string contributorUrl = contributor.String("HtmlUrl");
         string contributorImage = contributor.String("AvatarUrl");
-        string commitLink = $"https://github.com/search?q=org%3Acake-build+author%3A{contributorName}&type=commits";
+        string commitLink = $"https://github.com/search?q=org%3Acake-build+org%3Acake-contrib+author%3A{contributorName}&type=commits";
 
         <div class="col-6 col-md-2">
             <div class="thumbnail contributor-thumbnail">
