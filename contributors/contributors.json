@@ -188,20 +188,6 @@
     ]
   },
   {
-    "Name": "allcontributors[bot]",
-    "AvatarUrl": "https://avatars.githubusercontent.com/in/23186?v=4",
-    "HtmlUrl": "https://github.com/apps/allcontributors",
-    "Repositories": [
-      "cake-contrib/Cake.Transifex",
-      "cake-contrib/Cake.Codecov",
-      "cake-contrib/Cake.Warp",
-      "cake-contrib/cake.asciidoctorj",
-      "cake-contrib/Cake.7zip",
-      "cake-contrib/CakeContrib.Guidelines",
-      "cake-contrib/Cake.ESLint"
-    ]
-  },
-  {
     "Name": "alowsmlrfid",
     "AvatarUrl": "https://avatars.githubusercontent.com/u/67106947?v=4",
     "HtmlUrl": "https://github.com/alowsmlrfid",
@@ -1015,37 +1001,6 @@
     ]
   },
   {
-    "Name": "dependabot-preview[bot]",
-    "AvatarUrl": "https://avatars.githubusercontent.com/in/2141?v=4",
-    "HtmlUrl": "https://github.com/apps/dependabot-preview",
-    "Repositories": [
-      "cake-build/cake-vscode",
-      "cake-contrib/Cake.Yeoman",
-      "cake-contrib/Cake.Transifex",
-      "cake-contrib/Cake.Codecov",
-      "cake-contrib/Cake.Markdownlint",
-      "cake-contrib/Cake.Issues",
-      "cake-contrib/Cake.Issues.PullRequests",
-      "cake-contrib/Cake.Issues.Reporting",
-      "cake-contrib/Cake.Issues.InspectCode",
-      "cake-contrib/Cake.Issues.PullRequests.AzureDevOps",
-      "cake-contrib/Cake.Issues.MsBuild",
-      "cake-contrib/Cake.Issues.DocFx",
-      "cake-contrib/Cake.Issues.EsLint",
-      "cake-contrib/Cake.Issues.Markdownlint",
-      "cake-contrib/Cake.Issues.Reporting.Generic",
-      "cake-contrib/Cake.AzureDevOps",
-      "cake-contrib/Cake.Issues.PullRequests.AppVeyor",
-      "cake-contrib/Cake.Issues.PullRequests.GitHubActions",
-      "cake-contrib/Cake.DotNetVersionDetector",
-      "cake-contrib/Cake.Warp",
-      "cake-contrib/Cake.Issues.Sarif",
-      "cake-contrib/Cake.Issues.Reporting.Sarif",
-      "cake-contrib/Cake.Issues.GitRepository",
-      "cake-contrib/Cake.Issues.DupFinder"
-    ]
-  },
-  {
     "Name": "dependabot-support",
     "AvatarUrl": "https://avatars.githubusercontent.com/u/112581971?v=4",
     "HtmlUrl": "https://github.com/dependabot-support",
@@ -1067,74 +1022,6 @@
       "cake-contrib/Cake.Issues.PullRequests.GitHubActions",
       "cake-contrib/Cake.DotNetVersionDetector",
       "cake-contrib/Cake.Warp"
-    ]
-  },
-  {
-    "Name": "dependabot[bot]",
-    "AvatarUrl": "https://avatars.githubusercontent.com/in/29110?v=4",
-    "HtmlUrl": "https://github.com/apps/dependabot",
-    "Repositories": [
-      "cake-build/cake-vscode",
-      "cake-build/cake-rider",
-      "cake-build/cake-action",
-      "cake-contrib/Cake.AliaSql",
-      "cake-contrib/Cake.FileHelpers",
-      "cake-contrib/Cake.Gitter",
-      "cake-contrib/Cake.Yaml",
-      "cake-contrib/Cake.Json",
-      "cake-contrib/Cake.AppVeyor",
-      "cake-contrib/Cake.ExtendedNuGet",
-      "cake-contrib/Cake.Twitter",
-      "cake-contrib/Cake.Coveralls",
-      "cake-contrib/Cake.AWS.ElasticBeanstalk",
-      "cake-contrib/Cake.Incubator",
-      "cake-contrib/Cake.Recipe",
-      "cake-contrib/Cake.Gradle",
-      "cake-contrib/Cake.BuildSystems.Module",
-      "cake-contrib/Cake.Yeoman",
-      "cake-contrib/Cake.Azure",
-      "cake-contrib/Cake.Transifex",
-      "cake-contrib/Cake.Npm.Module",
-      "cake-contrib/Cake.Codecov",
-      "cake-contrib/Cake.WindowsAppStore",
-      "cake-contrib/Cake.Markdownlint",
-      "cake-contrib/Cake.Issues",
-      "cake-contrib/Cake.Issues.PullRequests",
-      "cake-contrib/Cake.Issues.Reporting",
-      "cake-contrib/Cake.ISO",
-      "cake-contrib/Cake.Issues.InspectCode",
-      "cake-contrib/Cake.Issues.PullRequests.AzureDevOps",
-      "cake-contrib/Cake.Issues.MsBuild",
-      "cake-contrib/Cake.Issues.DocFx",
-      "cake-contrib/Cake.Issues.EsLint",
-      "cake-contrib/Cake.Issues.Markdownlint",
-      "cake-contrib/Cake.Issues.Reporting.Generic",
-      "cake-contrib/Cake.HgVersion",
-      "cake-contrib/Cake.AzureDevOps",
-      "cake-contrib/Cake.AddinDiscoverer",
-      "cake-contrib/Cake.PathTildeHelper",
-      "cake-contrib/Cake.Issues.PullRequests.AppVeyor",
-      "cake-contrib/Cake.Issues.PullRequests.GitHubActions",
-      "cake-contrib/Cake.Issues.Recipe",
-      "cake-contrib/Cake.Rest",
-      "cake-contrib/Cake.Recipe.Tests",
-      "cake-contrib/Cake.Warp",
-      "cake-contrib/Cake.Issues.Sarif",
-      "cake-contrib/Cake.Issues.Reporting.Sarif",
-      "cake-contrib/Cake.Issues.GitRepository",
-      "cake-contrib/cake.asciidoctorj",
-      "cake-contrib/Cake.GitHub",
-      "cake-contrib/Cake.Issues.DupFinder",
-      "cake-contrib/Cake.7zip",
-      "cake-contrib/Cake.MinVer",
-      "cake-contrib/CakeContrib.Guidelines",
-      "cake-contrib/Cake.ExcelDnaPack",
-      "cake-contrib/Cake.IntelliJ.Recipe",
-      "cake-contrib/Cake.Jekyll",
-      "cake-contrib/Cake.Issues.Terraform",
-      "cake-contrib/Cake.Issues.Reporting.Console",
-      "cake-contrib/cake-dotnet-vulnerability-scanner",
-      "cake-contrib/cake-cloudformation"
     ]
   },
   {
@@ -1945,29 +1832,6 @@
       "cake-contrib/Cake.Http",
       "cake-contrib/Cake.Codecov",
       "cake-contrib/Cake.DotNetTool.Module"
-    ]
-  },
-  {
-    "Name": "github-actions[bot]",
-    "AvatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-    "HtmlUrl": "https://github.com/apps/github-actions",
-    "Repositories": [
-      "cake-build/cake-rider",
-      "cake-contrib/Cake.Json",
-      "cake-contrib/Cake.ExtendedNuGet",
-      "cake-contrib/Cake.Twitter",
-      "cake-contrib/Cake.AWS.ElasticBeanstalk",
-      "cake-contrib/Cake.Incubator",
-      "cake-contrib/Cake.Gradle",
-      "cake-contrib/Cake.BuildSystems.Module",
-      "cake-contrib/Cake.Npm.Module",
-      "cake-contrib/cake.asciidoctorj",
-      "cake-contrib/Cake.7zip",
-      "cake-contrib/Cake.MinVer",
-      "cake-contrib/CakeContrib.Guidelines",
-      "cake-contrib/Cake.ExcelDnaPack",
-      "cake-contrib/Cake.IntelliJ.Recipe",
-      "cake-contrib/Cake.Jekyll"
     ]
   },
   {
@@ -3273,15 +3137,6 @@
     ]
   },
   {
-    "Name": "mergify[bot]",
-    "AvatarUrl": "https://avatars.githubusercontent.com/in/10562?v=4",
-    "HtmlUrl": "https://github.com/apps/mergify",
-    "Repositories": [
-      "cake-contrib/Cake.Transifex",
-      "cake-contrib/Cake.Codecov"
-    ]
-  },
-  {
     "Name": "mgnslndh",
     "AvatarUrl": "https://avatars.githubusercontent.com/u/1139118?v=4",
     "HtmlUrl": "https://github.com/mgnslndh",
@@ -4157,37 +4012,6 @@
       "cake-contrib/Cake.7zip",
       "cake-contrib/CakeContrib.Guidelines",
       "cake-contrib/Cake.ESLint"
-    ]
-  },
-  {
-    "Name": "renovate[bot]",
-    "AvatarUrl": "https://avatars.githubusercontent.com/in/2740?v=4",
-    "HtmlUrl": "https://github.com/apps/renovate",
-    "Repositories": [
-      "cake-contrib/Cake.Gradle",
-      "cake-contrib/Cake.Npm.Module",
-      "cake-contrib/Cake.Markdownlint",
-      "cake-contrib/Cake.Issues",
-      "cake-contrib/Cake.Issues.InspectCode",
-      "cake-contrib/Cake.Issues.PullRequests.AzureDevOps",
-      "cake-contrib/Cake.Issues.MsBuild",
-      "cake-contrib/Cake.Issues.DocFx",
-      "cake-contrib/Cake.Issues.EsLint",
-      "cake-contrib/Cake.Issues.Website",
-      "cake-contrib/Cake.Issues.Markdownlint",
-      "cake-contrib/Cake.Issues.Reporting.Generic",
-      "cake-contrib/Cake.AzureDevOps",
-      "cake-contrib/Cake.Issues.PullRequests.AppVeyor",
-      "cake-contrib/Cake.Issues.PullRequests.GitHubActions",
-      "cake-contrib/Cake.Issues.Recipe",
-      "cake-contrib/Cake.Issues.Reporting.Sarif",
-      "cake-contrib/Cake.Issues.GitRepository",
-      "cake-contrib/cake.asciidoctorj",
-      "cake-contrib/Cake.7zip",
-      "cake-contrib/CakeContrib.Guidelines",
-      "cake-contrib/Cake.Issues.Terraform",
-      "cake-contrib/Cake.ESLint",
-      "cake-contrib/Cake.Issues.Reporting.Console"
     ]
   },
   {
