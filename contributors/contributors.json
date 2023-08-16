@@ -608,16 +608,6 @@
     ]
   },
   {
-    "Name": "cake-contrib-bot",
-    "AvatarUrl": "https://avatars.githubusercontent.com/u/21146888?v=4",
-    "HtmlUrl": "https://github.com/cake-contrib-bot",
-    "Repositories": [
-      "cake-build/website",
-      "cake-contrib/Cake.Recipe",
-      "cake-contrib/Home"
-    ]
-  },
-  {
     "Name": "CaptainCow95",
     "AvatarUrl": "https://avatars.githubusercontent.com/u/4804954?v=4",
     "HtmlUrl": "https://github.com/CaptainCow95",
@@ -741,14 +731,6 @@
     "HtmlUrl": "https://github.com/coder2213",
     "Repositories": [
       "cake-build/cake"
-    ]
-  },
-  {
-    "Name": "codetriage-readme-bot",
-    "AvatarUrl": "https://avatars.githubusercontent.com/u/35302948?v=4",
-    "HtmlUrl": "https://github.com/codetriage-readme-bot",
-    "Repositories": [
-      "cake-contrib/Cake.Transifex"
     ]
   },
   {
@@ -998,30 +980,6 @@
     "HtmlUrl": "https://github.com/Delpire",
     "Repositories": [
       "cake-build/cake"
-    ]
-  },
-  {
-    "Name": "dependabot-support",
-    "AvatarUrl": "https://avatars.githubusercontent.com/u/112581971?v=4",
-    "HtmlUrl": "https://github.com/dependabot-support",
-    "Repositories": [
-      "cake-build/cake-vscode",
-      "cake-contrib/Cake.Codecov",
-      "cake-contrib/Cake.Issues",
-      "cake-contrib/Cake.Issues.PullRequests",
-      "cake-contrib/Cake.Issues.Reporting",
-      "cake-contrib/Cake.Issues.InspectCode",
-      "cake-contrib/Cake.Issues.PullRequests.AzureDevOps",
-      "cake-contrib/Cake.Issues.MsBuild",
-      "cake-contrib/Cake.Issues.DocFx",
-      "cake-contrib/Cake.Issues.EsLint",
-      "cake-contrib/Cake.Issues.Markdownlint",
-      "cake-contrib/Cake.Issues.Reporting.Generic",
-      "cake-contrib/Cake.AzureDevOps",
-      "cake-contrib/Cake.Issues.PullRequests.AppVeyor",
-      "cake-contrib/Cake.Issues.PullRequests.GitHubActions",
-      "cake-contrib/Cake.DotNetVersionDetector",
-      "cake-contrib/Cake.Warp"
     ]
   },
   {
@@ -1832,19 +1790,6 @@
       "cake-contrib/Cake.Http",
       "cake-contrib/Cake.Codecov",
       "cake-contrib/Cake.DotNetTool.Module"
-    ]
-  },
-  {
-    "Name": "gitter-badger",
-    "AvatarUrl": "https://avatars.githubusercontent.com/u/8518239?v=4",
-    "HtmlUrl": "https://github.com/gitter-badger",
-    "Repositories": [
-      "cake-build/cake",
-      "cake-contrib/Cake.ReSharperReports",
-      "cake-contrib/Cake.VsCode",
-      "cake-contrib/Cake.Tfx",
-      "cake-contrib/Cake.Twitter",
-      "cake-contrib/Cake.Board"
     ]
   },
   {
@@ -4000,18 +3945,6 @@
     "HtmlUrl": "https://github.com/remingtron",
     "Repositories": [
       "cake-contrib/Cake.SqlPackage"
-    ]
-  },
-  {
-    "Name": "renovate-bot",
-    "AvatarUrl": "https://avatars.githubusercontent.com/u/25180681?v=4",
-    "HtmlUrl": "https://github.com/renovate-bot",
-    "Repositories": [
-      "cake-contrib/Cake.Gradle",
-      "cake-contrib/cake.asciidoctorj",
-      "cake-contrib/Cake.7zip",
-      "cake-contrib/CakeContrib.Guidelines",
-      "cake-contrib/Cake.ESLint"
     ]
   },
   {
