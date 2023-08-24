@@ -20,6 +20,28 @@
     string categories = (String.Join(" ", Model.List<string>("Categories").Select(x => $"<span class=\"badge badge-secondary\">{x}</span>")));
     var targetFrameworks = Model.List<string>("TargetFrameworks")?.Where(tfm => !string.IsNullOrWhiteSpace(tfm)).ToList() ?? new List<string>();
     var assemblies = Model.List<string>("Assemblies");
+
+    IEnumerable<IDocument> contributors = new List<IDocument>();
+    if (!string.IsNullOrWhiteSpace(repository))
+    {
+        var repositoryUri = new Uri(repository);
+        if (repositoryUri.Host == "github.com")
+        {
+            if (repositoryUri.Segments.Length >= 3)
+            {
+                var gitHubOrganization = repositoryUri.Segments[1].TrimEnd('/');
+                var secondSegment = repositoryUri.Segments[2].TrimEnd('/');
+                var gitHubRepository =
+                    secondSegment.EndsWith(".git") ?
+                        secondSegment.Remove(secondSegment.LastIndexOf(".git", StringComparison.Ordinal)) : 
+                        secondSegment;
+                contributors =
+                    Documents["Contributors"]
+                        .Where(x => x.List<string>("Repositories").Contains(gitHubOrganization + "/" + gitHubRepository))
+                        .ToList();
+            }
+        }
+    }
 }
 
 <section class="content-header">
@@ -158,11 +180,35 @@
             @author
         </p>
 
+        @if (contributors.Any())
+        {
+            <h2 class="no-anchor">Contributors</h2>
+            <p>
+                <ul class="list-unstyled">
+                    @foreach (var contributor in contributors)
+                    {
+                        <li>
+                            <img class="contributor-image" src='@contributor.String("AvatarUrl")'>
+                            <a href='@contributor.String("HtmlUrl")' target="_blank">@contributor.String("Name")</a>
+                        </li>
+                    }
+                </ul>
+            </p>
+        }
+
         <h2 class="no-anchor">Categories</h2>
         <p>
             @Html.Raw(categories)
         </p>
     </aside>
+
+    <style>
+    .contributor-image {
+        width: 12px;
+        border-radius: 6px;
+        vertical-align: middle !important;
+    }
+    </style>
 </section>
 
 @functions
