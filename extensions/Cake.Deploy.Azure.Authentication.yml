@@ -3,8 +3,8 @@ Name: Cake.Deploy.Azure.Authentication
 NuGet: Cake.Deploy.Azure.Authentication
 Assemblies:
 - /**/Cake.Deploy.Azure.Authentication.dll
-Repository: https://github.com/ObjectivityLtd/Cake.Deploy.Azure.Authentication.git
-ProjectUrl: https://github.com/ObjectivityLtd/Cake.Deploy.Azure.Authentication/
+Repository: 
+ProjectUrl: https://www.nuget.org/packages/Cake.Deploy.Azure.Authentication/
 Author: ObjectivityLtd
 Description: Cake addin for loging in to Azure Resource Manager.
 Categories:
