@@ -3,8 +3,8 @@ Name: Cake.Deploy.Azure.Management.WebSites
 NuGet: Cake.Deploy.Azure.Management.WebSites
 Assemblies:
 - /**/Cake.Deploy.Azure.Management.WebSites.dll
-Repository: https://github.com/ObjectivityLtd/Cake.Deploy.Azure.Management.WebSites.git
-ProjectUrl: https://github.com/ObjectivityLtd/Cake.Deploy.Azure.Management.WebSites/
+Repository: 
+ProjectUrl: https://www.nuget.org/packages/Cake.Deploy.Azure.Management.WebSites/
 Author: ObjectivityLtd
 Description: Cake addin to get Azure WebApp Publishing Credentials.
 Categories:
