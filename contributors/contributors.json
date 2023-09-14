@@ -726,14 +726,6 @@
     ]
   },
   {
-    "Name": "coder2213",
-    "AvatarUrl": "https://avatars.githubusercontent.com/u/29541956?v=4",
-    "HtmlUrl": "https://github.com/coder2213",
-    "Repositories": [
-      "cake-build/cake"
-    ]
-  },
-  {
     "Name": "codewing",
     "AvatarUrl": "https://avatars.githubusercontent.com/u/12066466?v=4",
     "HtmlUrl": "https://github.com/codewing",
@@ -3854,6 +3846,14 @@
     "Repositories": [
       "cake-build/cake",
       "cake-contrib/Cake.DotNetTool.Module"
+    ]
+  },
+  {
+    "Name": "ptvbnk",
+    "AvatarUrl": "https://avatars.githubusercontent.com/u/29541956?v=4",
+    "HtmlUrl": "https://github.com/ptvbnk",
+    "Repositories": [
+      "cake-build/cake"
     ]
   },
   {
