@@ -3409,7 +3409,8 @@
       "cake-contrib/Cake.7zip",
       "cake-contrib/CakeContrib.Guidelines",
       "cake-contrib/Cake.IntelliJ.Recipe",
-      "cake-contrib/Cake.ESLint"
+      "cake-contrib/Cake.ESLint",
+      "cake-contrib/renovate-presets"
     ]
   },
   {
