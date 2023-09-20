@@ -2367,6 +2367,7 @@
   - cake-contrib/CakeContrib.Guidelines
   - cake-contrib/Cake.IntelliJ.Recipe
   - cake-contrib/Cake.ESLint
+  - cake-contrib/renovate-presets
 - Name: nilsgs
   AvatarUrl: https://avatars.githubusercontent.com/u/2202382?v=4
   HtmlUrl: https://github.com/nilsgs
