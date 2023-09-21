@@ -3625,8 +3625,7 @@
       "cake-contrib/Cake.IntelliJ.Recipe",
       "cake-contrib/Cake.Issues.Terraform",
       "cake-contrib/Cake.ESLint",
-      "cake-contrib/Cake.Issues.Reporting.Console",
-      "cake-contrib/renovate-presets"
+      "cake-contrib/Cake.Issues.Reporting.Console"
     ]
   },
   {

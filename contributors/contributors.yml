@@ -2538,7 +2538,6 @@
   - cake-contrib/Cake.Issues.Terraform
   - cake-contrib/Cake.ESLint
   - cake-contrib/Cake.Issues.Reporting.Console
-  - cake-contrib/renovate-presets
 - Name: patridge
   AvatarUrl: https://avatars.githubusercontent.com/u/713665?v=4
   HtmlUrl: https://github.com/patridge
