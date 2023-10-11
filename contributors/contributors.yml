@@ -471,6 +471,7 @@
   - cake-contrib/Cake.Svn
   - cake-contrib/Cake.Markdownlint
   - cake-contrib/Cake.Issues.Markdownlint
+  - cake-contrib/Cake.AzureDevOps
 - Name: citizenmatt
   AvatarUrl: https://avatars.githubusercontent.com/u/222659?v=4
   HtmlUrl: https://github.com/citizenmatt
