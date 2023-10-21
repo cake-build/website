@@ -420,13 +420,6 @@
   HtmlUrl: https://github.com/CaptainCow95
   Repositories:
   - cake-build/cake
-- Name: cgourlay
-  AvatarUrl: https://avatars.githubusercontent.com/u/8118214?v=4
-  HtmlUrl: https://github.com/cgourlay
-  Repositories:
-  - cake-build/cake
-  - cake-contrib/Cake.SemVer
-  - cake-contrib/Cake.Figlet
 - Name: charlessolar
   AvatarUrl: https://avatars.githubusercontent.com/u/1750226?v=4
   HtmlUrl: https://github.com/charlessolar
@@ -492,6 +485,11 @@
   HtmlUrl: https://github.com/codewing
   Repositories:
   - cake-contrib/Cake.Unity
+- Name: colin-gourlay
+  AvatarUrl: https://avatars.githubusercontent.com/u/8118214?v=4
+  HtmlUrl: https://github.com/colin-gourlay
+  Repositories:
+  - cake-build/cake
 - Name: corbob
   AvatarUrl: https://avatars.githubusercontent.com/u/30301021?v=4
   HtmlUrl: https://github.com/corbob
