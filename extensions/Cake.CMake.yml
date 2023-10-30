@@ -9,9 +9,10 @@ Author: Patrik Svensson
 Description: Addin that extends Cake with CMake support.
 Categories:
 - cmake
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 3.0.0
 TargetFrameworks:
-- netstandard2.0
-AnalyzedPackageVersion: 1.3.1
+- net6.0
+- net7.0
+AnalyzedPackageVersion: 1.4.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-11-06T16:36:34.6100000Z
+AnalyzedPackagePublishDate: 2023-10-30T08:46:04.1630000Z
