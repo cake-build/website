@@ -3053,7 +3053,8 @@
     "AvatarUrl": "https://avatars.githubusercontent.com/u/1139118?v=4",
     "HtmlUrl": "https://github.com/mgnslndh",
     "Repositories": [
-      "cake-build/website"
+      "cake-build/website",
+      "cake-contrib/Cake.DotMemoryUnit"
     ]
   },
   {
