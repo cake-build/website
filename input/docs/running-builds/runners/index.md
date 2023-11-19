@@ -47,8 +47,8 @@ Note that the platform under which a build is running doesn't limit its build ca
 It's absolutely possible for example to build a .NET Framework application with Cake running on .NET 6.
 :::
 
-| Runner                           | .NET 6 | .NET 5 | .NET Core 3.1 |
-|----------------------------------|--------|--------|---------------|
+| Runner                           | .NET 8 | .NET 7 | .NET 6 |
+|----------------------------------|--------|--------|--------|
 | [Cake .NET Tool]                 | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> |
 | [Cake Frosting]                  | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> |
 
