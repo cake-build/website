@@ -44,6 +44,15 @@ To update Cake follow these instructions
     </div>
 </div>
 
+# Cake 3.x to Cake 4.0
+
+Cake 4.0 is a major version containing breaking changes.
+
+## IFile interface
+
+[IFile](/api/Cake.Core.IO/IFile/) has added methods for setting timestamps (see [#4132](https://github.com/cake-build/cake/issues/4132)).
+While the interface has default implementations it can still break ABI which is why we've marked this change as breaking.
+
 # Cake 2.x to Cake 3.0
 
 Cake 3.0 is a major version containing breaking changes.
