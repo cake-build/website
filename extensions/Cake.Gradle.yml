@@ -9,10 +9,11 @@ Author: abeggchr
 Description: An aliase for Cake to help with running Gradle commands
 Categories:
 - gradle
-TargetCakeVersion: 3.0.0
+TargetCakeVersion: 4.0.0
 TargetFrameworks:
 - net6.0
 - net7.0
-AnalyzedPackageVersion: 3.0.0
+- net8.0
+AnalyzedPackageVersion: 4.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2022-12-06T22:13:22.1000000Z
+AnalyzedPackagePublishDate: 2023-11-23T21:26:40.2800000Z
