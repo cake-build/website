@@ -9,11 +9,11 @@ Author: jericho
 Description: Cake Addin that exends Cake with ability to utilize SendGrid.
 Categories:
 - email
-TargetCakeVersion: 2.0.0
+TargetCakeVersion: 4.0.0
 TargetFrameworks:
-- netcoreapp3.1
-- net5.0
 - net6.0
-AnalyzedPackageVersion: 2.0.0
+- net7.0
+- net8.0
+AnalyzedPackageVersion: 3.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-12-16T14:42:01.3270000Z
+AnalyzedPackagePublishDate: 2023-11-23T20:27:23.4700000Z
