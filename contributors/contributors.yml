@@ -160,6 +160,7 @@
   HtmlUrl: https://github.com/ap0llo
   Repositories:
   - cake-contrib/Cake.FileHelpers
+  - cake-contrib/Cake.BuildSystems.Module
   - cake-contrib/Cake.GitHub
   - cake-contrib/Cake.DotNetLocalTools.Module
 - Name: arledesma
