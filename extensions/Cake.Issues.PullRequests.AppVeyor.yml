@@ -20,10 +20,11 @@ Categories:
 - issues
 - pull requests
 - appveyor
-TargetCakeVersion: 3.0.0
+TargetCakeVersion: 4.0.0
 TargetFrameworks:
 - net6.0
 - net7.0
-AnalyzedPackageVersion: 3.0.0
+- net8.0
+AnalyzedPackageVersion: 4.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2023-07-16T18:07:37.7430000Z
+AnalyzedPackagePublishDate: 2023-12-23T23:37:16.7900000Z
