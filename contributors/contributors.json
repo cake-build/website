@@ -669,6 +669,7 @@
     "Repositories": [
       "cake-contrib/Cake.Svn",
       "cake-contrib/Cake.Markdownlint",
+      "cake-contrib/Cake.Issues",
       "cake-contrib/Cake.Issues.Markdownlint",
       "cake-contrib/Cake.AzureDevOps"
     ]
