@@ -261,6 +261,7 @@
     "AvatarUrl": "https://avatars.githubusercontent.com/u/15351380?v=4",
     "HtmlUrl": "https://github.com/arnaudmaichac",
     "Repositories": [
+      "cake-contrib/Cake.Issues",
       "cake-contrib/Cake.Issues.DocFx"
     ]
   },
@@ -565,6 +566,7 @@
     "AvatarUrl": "https://avatars.githubusercontent.com/u/1063445?v=4",
     "HtmlUrl": "https://github.com/brianfeucht",
     "Repositories": [
+      "cake-contrib/Cake.Issues",
       "cake-contrib/Cake.Issues.MsBuild"
     ]
   },
@@ -639,6 +641,7 @@
     "AvatarUrl": "https://avatars.githubusercontent.com/u/48789991?v=4",
     "HtmlUrl": "https://github.com/cho-trackman",
     "Repositories": [
+      "cake-contrib/Cake.Issues",
       "cake-contrib/Cake.Issues.MsBuild"
     ]
   },
@@ -1898,6 +1901,7 @@
     "AvatarUrl": "https://avatars.githubusercontent.com/u/2670916?v=4",
     "HtmlUrl": "https://github.com/Hekku2",
     "Repositories": [
+      "cake-contrib/Cake.Issues",
       "cake-contrib/Cake.Issues.InspectCode"
     ]
   },
@@ -2142,6 +2146,7 @@
       "cake-contrib/Cake.Bumpy",
       "cake-contrib/Cake.SSRS",
       "cake-contrib/Cake.Endpoint",
+      "cake-contrib/Cake.Issues",
       "cake-contrib/Cake.ISO",
       "cake-contrib/Cake.Issues.EsLint",
       "cake-contrib/Cake.Graph",
@@ -2611,6 +2616,7 @@
     "AvatarUrl": "https://avatars.githubusercontent.com/u/679326?v=4",
     "HtmlUrl": "https://github.com/KirillOsenkov",
     "Repositories": [
+      "cake-contrib/Cake.Issues",
       "cake-contrib/Cake.Issues.MsBuild"
     ]
   },
@@ -2915,6 +2921,7 @@
     "AvatarUrl": "https://avatars.githubusercontent.com/u/7021413?v=4",
     "HtmlUrl": "https://github.com/MartinEgli",
     "Repositories": [
+      "cake-contrib/Cake.Issues",
       "cake-contrib/Cake.Issues.MsBuild"
     ]
   },
@@ -3989,6 +3996,7 @@
     "AvatarUrl": "https://avatars.githubusercontent.com/u/804848?v=4",
     "HtmlUrl": "https://github.com/rinukkusu",
     "Repositories": [
+      "cake-contrib/Cake.Issues",
       "cake-contrib/Cake.Issues.DocFx"
     ]
   },
