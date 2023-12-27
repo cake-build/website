@@ -102,8 +102,8 @@ public class DefaultTask : FrostingTask
 }
 ```
 
-The `Default` task has a dependency to the `World` world, and the `World` task has a dependency on the `Hello` task.
-The `World` task is an [asynchronous tasks](/docs/writing-builds/tasks/asynchronous-tasks) which waits for
+The `Default` task has a dependency to the `World` task, and the `World` task has a dependency on the `Hello` task.
+The `World` task is an [asynchronous task](/docs/writing-builds/tasks/asynchronous-tasks) which waits for
 one and a half seconds if the `Delay` property is set.
 
 # Example build pipeline
@@ -142,7 +142,7 @@ public class BuildContext : FrostingContext
 
 The `HelloTask` and `WorldTask` class can be deleted.
 
-Create a new class `CleanTask` for the task for cleaning the directory:
+Create a new class `CleanTask` for cleaning the directory:
 
 ```csharp
 [TaskName("Clean")]
