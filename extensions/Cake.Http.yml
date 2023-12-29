@@ -9,10 +9,11 @@ Author: Louis Fischer
 Description: Cake.Http is set of aliases that help simplify HTTP calls for GET, POST, PUT, DELETE, PATCH, etc.
 Categories:
 - http
-TargetCakeVersion: 3.0.0
+TargetCakeVersion: 4.0.0
 TargetFrameworks:
 - net6.0
 - net7.0
-AnalyzedPackageVersion: 3.0.2
+- net8.0
+AnalyzedPackageVersion: 4.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2023-04-04T04:01:34.3700000Z
+AnalyzedPackagePublishDate: 2023-12-29T03:59:10.9100000Z
