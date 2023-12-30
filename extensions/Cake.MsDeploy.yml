@@ -10,9 +10,11 @@ Description: Cake Addin that extends Cake for executing commands with the MsDepl
 Categories:
 - msdeploy
 - deployment
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 4.0.0
 TargetFrameworks:
-- netstandard2.0
-AnalyzedPackageVersion: 1.0.2
+- net6.0
+- net7.0
+- net8.0
+AnalyzedPackageVersion: 4.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-10-26T01:35:09.4770000Z
+AnalyzedPackagePublishDate: 2023-12-29T19:38:05.0400000Z
