@@ -1,0 +1,20 @@
+Type: Addin
+Name: Cake.grate
+NuGet: Cake.grate
+Assemblies:
+- /**/Cake.grate.dll
+Repository: https://github.com/cake-contrib/Cake.grate.git
+ProjectUrl: https://github.com/cake-contrib/Cake.grate/
+Author: Fran Hoey
+Description: Makes grate available as a tool in Cake.
+Categories:
+- grate
+- cake-build
+TargetCakeVersion: 4.0.0
+TargetFrameworks:
+- net6.0
+- net7.0
+- net8.0
+AnalyzedPackageVersion: 0.0.3-preview
+AnalyzedPackageIsPrerelease: true
+AnalyzedPackagePublishDate: 2024-01-18T16:34:31.4100000Z
