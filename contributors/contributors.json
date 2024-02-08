@@ -359,6 +359,7 @@
       "cake-contrib/Cake.Npm.Module",
       "cake-contrib/Cake.Codecov",
       "cake-contrib/Home",
+      "cake-contrib/Cake.SignClient",
       "cake-contrib/Cake.WindowsAppStore",
       "cake-contrib/Cake.DotEnv.Module",
       "cake-contrib/Cake.Hosts",
