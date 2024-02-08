@@ -11,11 +11,11 @@ Categories:
 - deploy
 - kubectl
 - deployment
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 4.0.0
 TargetFrameworks:
-- net5.0
-- net46
-- netstandard2.0
-AnalyzedPackageVersion: 1.0.0
+- net6.0
+- net7.0
+- net8.0
+AnalyzedPackageVersion: 1.1.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-03-14T12:49:11.3300000Z
+AnalyzedPackagePublishDate: 2024-02-07T19:34:25.9900000Z
