@@ -10,11 +10,11 @@ Description: A Cake AddIn that extends Cake with ProtobufTools command tools.
 Categories:
 - code generation
 - protobuf
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 4.0.0
 TargetFrameworks:
-- net5.0
-- net46
-- netstandard2.0
-AnalyzedPackageVersion: 1.4.1
+- net6.0
+- net7.0
+- net8.0
+AnalyzedPackageVersion: 1.5.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-03-14T14:25:18.9400000Z
+AnalyzedPackagePublishDate: 2024-02-08T10:26:43.2630000Z
