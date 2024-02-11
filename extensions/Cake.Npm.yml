@@ -9,10 +9,11 @@ Author: Phil Oyston
 Description: A set of aliases for Cake to help with running Npm (Node Package Manager) commands.
 Categories:
 - npm
-TargetCakeVersion: 3.0.0
+TargetCakeVersion: 4.0.0
 TargetFrameworks:
 - net6.0
 - net7.0
-AnalyzedPackageVersion: 3.0.0
+- net8.0
+AnalyzedPackageVersion: 4.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2023-07-03T22:11:57.7300000Z
+AnalyzedPackagePublishDate: 2024-02-10T20:02:29.9330000Z
