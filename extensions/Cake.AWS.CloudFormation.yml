@@ -1,0 +1,19 @@
+Type: Addin
+Name: Cake.AWS.CloudFormation
+NuGet: Cake.AWS.CloudFormation
+Assemblies:
+- /**/Cake.AWS.CloudFormation.dll
+Repository: https://github.com/SARAVANA1501/Cake.AWS.CloudFormation.git
+ProjectUrl: https://www.nuget.org/packages/Cake.AWS.CloudFormation/
+Author: SARAVANA1501
+Description: Thin wrapper around AWS Cloudformation SDK. This package helps to easily create the Cloudformation stack in AWS cloud.
+Categories: []
+TargetCakeVersion: 1.0.0
+TargetFrameworks:
+- net6.0
+- net7.0
+- net461
+- netstandard2.0
+AnalyzedPackageVersion: 0.0.1-alpha3
+AnalyzedPackageIsPrerelease: true
+AnalyzedPackagePublishDate: 2023-10-09T10:33:08.9800000Z
