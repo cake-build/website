@@ -3325,6 +3325,11 @@
   HtmlUrl: https://github.com/VSerykh
   Repositories:
   - cake-build/cake
+- Name: vzh-pl
+  AvatarUrl: https://avatars.githubusercontent.com/u/165010972?v=4
+  HtmlUrl: https://github.com/vzh-pl
+  Repositories:
+  - cake-contrib/Cake.FluentMigrator
 - Name: waelemara
   AvatarUrl: https://avatars.githubusercontent.com/u/4891878?v=4
   HtmlUrl: https://github.com/waelemara
