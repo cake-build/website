@@ -1449,6 +1449,11 @@
   HtmlUrl: https://github.com/jenscski
   Repositories:
   - cake-build/cake
+- Name: jenscski-lexit
+  AvatarUrl: https://avatars.githubusercontent.com/u/165994964?v=4
+  HtmlUrl: https://github.com/jenscski-lexit
+  Repositories:
+  - cake-contrib/Cake.Figlet
 - Name: jenshorn
   AvatarUrl: https://avatars.githubusercontent.com/u/1868780?v=4
   HtmlUrl: https://github.com/jenshorn
