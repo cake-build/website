@@ -4416,6 +4416,7 @@
     "AvatarUrl": "https://avatars.githubusercontent.com/u/9464631?v=4",
     "HtmlUrl": "https://github.com/stffabi",
     "Repositories": [
+      "cake-contrib/Cake.Issues",
       "cake-contrib/Cake.Issues.PullRequests.AzureDevOps"
     ]
   },
@@ -4694,6 +4695,7 @@
       "cake-contrib/Cake.Json",
       "cake-contrib/Cake.Sonar",
       "cake-contrib/Cake.Http",
+      "cake-contrib/Cake.Issues",
       "cake-contrib/Cake.Issues.PullRequests.AzureDevOps",
       "cake-contrib/Cake.AzureDevOps"
     ]
