@@ -361,6 +361,7 @@
   - cake-contrib/Cake.Svn
   - cake-contrib/Cake.ServiceFabric
   - cake-contrib/Cake.Recipe
+  - cake-contrib/Cake.Issues
   - cake-contrib/Cake.Issues.Reporting.Generic
 - Name: Blind-Striker
   AvatarUrl: https://avatars.githubusercontent.com/u/1965259?v=4
@@ -737,6 +738,7 @@
   AvatarUrl: https://avatars.githubusercontent.com/u/45682415?v=4
   HtmlUrl: https://github.com/DiDoHH
   Repositories:
+  - cake-contrib/Cake.Issues
   - cake-contrib/Cake.Issues.Website
   - cake-contrib/Cake.Issues.Reporting.Generic
 - Name: Diogomrol
@@ -1010,6 +1012,7 @@
   AvatarUrl: https://avatars.githubusercontent.com/u/49935123?v=4
   HtmlUrl: https://github.com/gavinjonesnz
   Repositories:
+  - cake-contrib/Cake.Issues
   - cake-contrib/Cake.Issues.Reporting.Generic
 - Name: GeertvanHorrik
   AvatarUrl: https://avatars.githubusercontent.com/u/1246444?v=4
@@ -1297,6 +1300,7 @@
   AvatarUrl: https://avatars.githubusercontent.com/u/25045290?v=4
   HtmlUrl: https://github.com/GusAV
   Repositories:
+  - cake-contrib/Cake.Issues
   - cake-contrib/Cake.Issues.GitRepository
 - Name: hadi77ir
   AvatarUrl: https://avatars.githubusercontent.com/u/2587570?v=4
@@ -2311,6 +2315,7 @@
   HtmlUrl: https://github.com/nardin
   Repositories:
   - cake-build/cake
+  - cake-contrib/Cake.Issues
   - cake-contrib/Cake.Issues.Reporting.Generic
 - Name: nathansoz
   AvatarUrl: https://avatars.githubusercontent.com/u/6821708?v=4
@@ -3441,6 +3446,7 @@
   AvatarUrl: https://avatars.githubusercontent.com/u/3975939?v=4
   HtmlUrl: https://github.com/yansklyarenko
   Repositories:
+  - cake-contrib/Cake.Issues
   - cake-contrib/Cake.AzureDevOps
   - cake-contrib/Cake.Issues.GitRepository
 - Name: yvschmid
