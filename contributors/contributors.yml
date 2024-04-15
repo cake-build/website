@@ -305,6 +305,11 @@
   HtmlUrl: https://github.com/Bartmax
   Repositories:
   - cake-build/cake-vs
+- Name: baynezy
+  AvatarUrl: https://avatars.githubusercontent.com/u/1049999?v=4
+  HtmlUrl: https://github.com/baynezy
+  Repositories:
+  - cake-build/cake-action
 - Name: bdukes
   AvatarUrl: https://avatars.githubusercontent.com/u/59507?v=4
   HtmlUrl: https://github.com/bdukes
