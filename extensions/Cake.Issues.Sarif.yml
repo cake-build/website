@@ -1,0 +1,41 @@
+Type: Addin
+Name: Cake.Issues.Sarif
+NuGet: Cake.Issues.Sarif
+Assemblies:
+- /**/Cake.Issues.Sarif.dll
+Repository: https://github.com/cake-contrib/Cake.Issues.Sarif.git
+ProjectUrl: https://cakeissues.net/
+Author: Cake Issues contributors
+Description: >-
+  The SARIF support for the Cake.Issues addin for Cake allows you to read SARIF compatible files.
+
+
+  This addin provides the aliases for reading issues from SARIF compatible files and providing them to the Cake.Issues addin.
+
+  It also requires the core Cake.Issues addin.
+
+
+  There are also additional addins for generating reports or posting issues to pull requests.
+
+
+  See the Project Site for an overview of the whole ecosystem of addins for working with issues in Cake scripts.
+
+
+  NOTE:
+
+  This is the version of the addin compatible with Cake Script Runners.
+
+  For addin compatible with Cake Frosting see Cake.Frosting.Issues.Sarif.
+Categories:
+- cake-issues
+- cake-issueprovider
+- linting
+- sarif
+TargetCakeVersion: 4.0.0
+TargetFrameworks:
+- net6.0
+- net7.0
+- net8.0
+AnalyzedPackageVersion: 4.2.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2024-04-14T22:59:45.7000000Z
