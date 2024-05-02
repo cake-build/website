@@ -3427,6 +3427,7 @@
       "cake-contrib/Cake.Gradle",
       "cake-contrib/Cake.BuildSystems.Module",
       "cake-contrib/Cake.Npm.Module",
+      "cake-contrib/Cake.Codecov",
       "cake-contrib/Home",
       "cake-contrib/Cake.AddinDiscoverer",
       "cake-contrib/Cake.VsCode.Recipe",
