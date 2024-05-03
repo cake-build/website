@@ -2489,6 +2489,7 @@
   - cake-build/.github
   - cake-contrib/Cake.AliaSql
   - cake-contrib/Cake.Slack
+  - cake-contrib/Cake.Kudu
   - cake-contrib/Cake.Yaml
   - cake-contrib/Cake_Git
   - cake-contrib/Cake.VsCode
