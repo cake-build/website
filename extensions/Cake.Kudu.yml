@@ -10,11 +10,10 @@ Description: Cake addin to help with Kudu deployments.
 Categories:
 - azure
 - kudu
-TargetCakeVersion: 2.0.0
+TargetCakeVersion: 3.0.0
 TargetFrameworks:
-- netcoreapp3.1
-- net5.0
 - net6.0
-AnalyzedPackageVersion: 2.0.0
+- net7.0
+AnalyzedPackageVersion: 3.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-12-10T13:31:43.9330000Z
+AnalyzedPackagePublishDate: 2024-05-03T08:50:49.4170000Z
