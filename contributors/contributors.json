@@ -892,6 +892,14 @@
     ]
   },
   {
+    "Name": "david-obee",
+    "AvatarUrl": "https://avatars.githubusercontent.com/u/35892395?v=4",
+    "HtmlUrl": "https://github.com/david-obee",
+    "Repositories": [
+      "cake-contrib/Cake.Terraform"
+    ]
+  },
+  {
     "Name": "DavidBrower",
     "AvatarUrl": "https://avatars.githubusercontent.com/u/8066997?v=4",
     "HtmlUrl": "https://github.com/DavidBrower",
@@ -2610,6 +2618,14 @@
     ]
   },
   {
+    "Name": "kevbite",
+    "AvatarUrl": "https://avatars.githubusercontent.com/u/5544715?v=4",
+    "HtmlUrl": "https://github.com/kevbite",
+    "Repositories": [
+      "cake-contrib/Cake.Terraform"
+    ]
+  },
+  {
     "Name": "khellang",
     "AvatarUrl": "https://avatars.githubusercontent.com/u/582487?v=4",
     "HtmlUrl": "https://github.com/khellang",
@@ -4214,6 +4230,14 @@
     ]
   },
   {
+    "Name": "sergJozee",
+    "AvatarUrl": "https://avatars.githubusercontent.com/u/15928490?v=4",
+    "HtmlUrl": "https://github.com/sergJozee",
+    "Repositories": [
+      "cake-contrib/Cake.Terraform"
+    ]
+  },
+  {
     "Name": "sgaulding",
     "AvatarUrl": "https://avatars.githubusercontent.com/u/2135515?v=4",
     "HtmlUrl": "https://github.com/sgaulding",
@@ -4492,6 +4516,14 @@
       "cake-contrib/Cake.Issues",
       "cake-contrib/Cake.Issues.MsBuild",
       "cake-contrib/Cake.Issues.EsLint"
+    ]
+  },
+  {
+    "Name": "tannerwatson",
+    "AvatarUrl": "https://avatars.githubusercontent.com/u/545701?v=4",
+    "HtmlUrl": "https://github.com/tannerwatson",
+    "Repositories": [
+      "cake-contrib/Cake.Terraform"
     ]
   },
   {
