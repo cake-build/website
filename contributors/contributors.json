@@ -4783,19 +4783,6 @@
     ]
   },
   {
-    "Name": "vhatsura",
-    "AvatarUrl": "https://avatars.githubusercontent.com/u/10338692?v=4",
-    "HtmlUrl": "https://github.com/vhatsura",
-    "Repositories": [
-      "cake-build/website",
-      "cake-contrib/Cake.Recipe",
-      "cake-contrib/Cake.AssemblyInfoReflector",
-      "cake-contrib/Cake.Issues",
-      "cake-contrib/Cake.Issues.Reporting",
-      "cake-contrib/Cake.Graph"
-    ]
-  },
-  {
     "Name": "viktorbenei",
     "AvatarUrl": "https://avatars.githubusercontent.com/u/430618?v=4",
     "HtmlUrl": "https://github.com/viktorbenei",
