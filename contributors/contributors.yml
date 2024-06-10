@@ -1229,11 +1229,6 @@
   HtmlUrl: https://github.com/giansalex
   Repositories:
   - cake-contrib/Cake.SonarScanner
-- Name: GimmeDaKitty
-  AvatarUrl: https://avatars.githubusercontent.com/u/46991222?v=4
-  HtmlUrl: https://github.com/GimmeDaKitty
-  Repositories:
-  - cake-contrib/Cake.Newman
 - Name: Giorgi
   AvatarUrl: https://avatars.githubusercontent.com/u/580749?v=4
   HtmlUrl: https://github.com/Giorgi
