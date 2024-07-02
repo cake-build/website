@@ -3430,6 +3430,7 @@
       "cake-contrib/Cake.Npm",
       "cake-contrib/Cake.Gulp",
       "cake-contrib/Cake.SemVer",
+      "cake-contrib/Cake.Coveralls",
       "cake-contrib/Cake.Incubator",
       "cake-contrib/Cake.Recipe",
       "cake-contrib/Cake.Gradle",
