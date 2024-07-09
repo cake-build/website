@@ -2733,6 +2733,11 @@
   HtmlUrl: https://github.com/qayshp
   Repositories:
   - cake-build/website
+- Name: raman-m
+  AvatarUrl: https://avatars.githubusercontent.com/u/10501504?v=4
+  HtmlUrl: https://github.com/raman-m
+  Repositories:
+  - cake-contrib/Cake.Coveralls
 - Name: RaringCoder
   AvatarUrl: https://avatars.githubusercontent.com/u/2183058?v=4
   HtmlUrl: https://github.com/RaringCoder
@@ -3149,6 +3154,11 @@
   HtmlUrl: https://github.com/Tanzy
   Repositories:
   - cake-contrib/Cake.Grunt
+- Name: tapika
+  AvatarUrl: https://avatars.githubusercontent.com/u/3228645?v=4
+  HtmlUrl: https://github.com/tapika
+  Repositories:
+  - cake-contrib/Cake.Coveralls
 - Name: tb-rules10
   AvatarUrl: https://avatars.githubusercontent.com/u/58645688?v=4
   HtmlUrl: https://github.com/tb-rules10
