@@ -16,9 +16,7 @@ Categories:
 - management
 TargetCakeVersion: 4.0.0
 TargetFrameworks:
-- net6.0
-- net7.0
 - net8.0
-AnalyzedPackageVersion: 0.130.0
+AnalyzedPackageVersion: 0.201.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2023-12-17T19:26:35.2200000Z
+AnalyzedPackagePublishDate: 2024-07-10T21:49:36.0630000Z
