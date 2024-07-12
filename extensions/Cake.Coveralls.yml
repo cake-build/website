@@ -10,10 +10,11 @@ Description: Cake Build addin for publishing code coverage results to coveralls.
 Categories:
 - code coverage
 - testing
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 4.0.0
 TargetFrameworks:
-- net5.0
-- netstandard2.0
-AnalyzedPackageVersion: 1.1.0
+- net6.0
+- net7.0
+- net8.0
+AnalyzedPackageVersion: 4.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-06-07T20:35:11.9030000Z
+AnalyzedPackagePublishDate: 2024-07-09T18:47:53.3300000Z

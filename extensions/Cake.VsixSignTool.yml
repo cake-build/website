@@ -3,15 +3,17 @@ Name: Cake.VsixSignTool
 NuGet: Cake.VsixSignTool
 Assemblies:
 - /**/Cake.VsixSignTool.dll
-Repository: https://github.com/MihaMarkic/Cake.VsixSignTool.git
-ProjectUrl: https://github.com/MihaMarkic/Cake.VsixSignTool/
+Repository: https://github.com/cake-contrib/Cake.VsixSignTool.git
+ProjectUrl: https://www.nuget.org/packages/Cake.VsixSignTool/
 Author: Miha Markiè
 Description: Cake AddIn that extends Cake with VsixSignTool.
 Categories:
 - signing
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 4.0.0
 TargetFrameworks:
-- net461
-AnalyzedPackageVersion: 1.3.0
+- net6.0
+- net7.0
+- net8.0
+AnalyzedPackageVersion: 1.4.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2019-04-18T11:25:29.4800000Z
+AnalyzedPackagePublishDate: 2024-02-08T09:37:02.1930000Z

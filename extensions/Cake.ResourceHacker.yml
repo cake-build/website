@@ -9,11 +9,11 @@ Author: Miha Markic, Cake Contributors
 Description: ResourceHacker Addin for Cake Build.
 Categories:
 - resourcehacker
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 4.0.0
 TargetFrameworks:
-- net5.0
-- net46
-- netstandard2.0
-AnalyzedPackageVersion: 1.2.0
+- net6.0
+- net7.0
+- net8.0
+AnalyzedPackageVersion: 1.3.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-03-14T14:53:01.8670000Z
+AnalyzedPackagePublishDate: 2024-02-08T11:07:53.8930000Z

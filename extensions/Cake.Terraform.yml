@@ -10,10 +10,11 @@ Description: Cake addin for working with Terraform
 Categories:
 - terraform
 - infrastructure as code
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 4.0.0
 TargetFrameworks:
-- net461
-- netstandard2.0
-AnalyzedPackageVersion: 0.11.0
+- net6.0
+- net7.0
+- net8.0
+AnalyzedPackageVersion: 0.15.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2019-09-01T16:08:06.6870000Z
+AnalyzedPackagePublishDate: 2024-05-28T20:35:11.4870000Z

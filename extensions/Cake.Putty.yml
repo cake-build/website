@@ -9,11 +9,11 @@ Author: Miha Markič
 Description: A Cake AddIn that extends Cake with Putty command tools.
 Categories:
 - communication
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 4.0.0
 TargetFrameworks:
-- net5.0
-- net46
-- netstandard2.0
-AnalyzedPackageVersion: 1.6.0
+- net6.0
+- net7.0
+- net8.0
+AnalyzedPackageVersion: 1.7.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-03-14T15:20:26.7730000Z
+AnalyzedPackagePublishDate: 2024-01-28T09:38:33.8400000Z

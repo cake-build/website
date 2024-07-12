@@ -23,10 +23,11 @@ Categories:
 - pullrequest
 - github
 - github actions
-TargetCakeVersion: 3.0.0
+TargetCakeVersion: 4.0.0
 TargetFrameworks:
 - net6.0
 - net7.0
-AnalyzedPackageVersion: 3.0.0
+- net8.0
+AnalyzedPackageVersion: 4.6.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2023-07-17T09:07:46.9170000Z
+AnalyzedPackagePublishDate: 2024-06-24T22:02:39.9770000Z

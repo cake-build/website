@@ -10,11 +10,11 @@ Description: A Cake AddIn that extends Cake with Redgate's SmartAssembly.
 Categories:
 - obfuscator
 - smartassembly
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 4.0.0
 TargetFrameworks:
-- net5.0
-- net46
-- netstandard2.0
-AnalyzedPackageVersion: 1.4.0
+- net6.0
+- net7.0
+- net8.0
+AnalyzedPackageVersion: 1.5.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-03-14T15:15:29.7870000Z
+AnalyzedPackagePublishDate: 2024-02-08T11:32:10.2800000Z

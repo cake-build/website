@@ -23,10 +23,11 @@ Categories:
 - issues
 - documentation
 - docfx
-TargetCakeVersion: 3.0.0
+TargetCakeVersion: 4.0.0
 TargetFrameworks:
 - net6.0
 - net7.0
-AnalyzedPackageVersion: 3.0.0
+- net8.0
+AnalyzedPackageVersion: 4.6.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2023-07-16T17:22:53.9800000Z
+AnalyzedPackagePublishDate: 2024-06-24T22:02:26.1400000Z

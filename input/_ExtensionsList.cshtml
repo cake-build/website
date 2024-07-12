@@ -58,7 +58,7 @@
                         <li>
                             <span title="@parsedPublishDate.ToOrdinalWords()">
                                 <i class="fa-solid fa-clock-one"></i>
-                                Last updated @parsedPublishDate.Humanize()
+                                Last updated @DateHumanizeExtensions.Humanize(parsedPublishDate)
                             </span>
                         </li>
                     }

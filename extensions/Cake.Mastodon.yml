@@ -9,11 +9,11 @@ Author: Miha Markic, Cake Contributors
 Description: Cake Addin that exends Cake with ability to post messages to Mastodon, using the Mastodon REST API.
 Categories:
 - mastodon
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 4.0.0
 TargetFrameworks:
-- net5.0
-- net46
-- netstandard2.0
-AnalyzedPackageVersion: 1.1.0
+- net6.0
+- net7.0
+- net8.0
+AnalyzedPackageVersion: 1.2.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-03-14T13:44:00.7200000Z
+AnalyzedPackagePublishDate: 2024-02-07T21:17:58.5800000Z
