@@ -11,7 +11,8 @@ Categories:
 - discord
 TargetCakeVersion: 0.33.0
 TargetFrameworks:
+- net46
 - netstandard2.0
-AnalyzedPackageVersion: 0.2.1
+AnalyzedPackageVersion: 0.3.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2019-09-06T18:46:04.3230000Z
+AnalyzedPackagePublishDate: 2024-07-15T20:42:56.8000000Z
