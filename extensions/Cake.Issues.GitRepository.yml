@@ -27,6 +27,6 @@ TargetFrameworks:
 - net6.0
 - net7.0
 - net8.0
-AnalyzedPackageVersion: 4.7.0
+AnalyzedPackageVersion: 4.7.1
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2024-07-16T13:44:30.7830000Z
+AnalyzedPackagePublishDate: 2024-07-17T20:19:47.9730000Z
