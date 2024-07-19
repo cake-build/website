@@ -3441,6 +3441,7 @@
       "cake-contrib/Home",
       "cake-contrib/Cake.AddinDiscoverer",
       "cake-contrib/Cake.Discord",
+      "cake-contrib/Cake.DotNetVersionDetector",
       "cake-contrib/Cake.VsCode.Recipe",
       "cake-contrib/Cake.Board",
       "cake-contrib/cake.asciidoctorj",
