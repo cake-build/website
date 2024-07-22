@@ -10,10 +10,11 @@ Description: Cake addin providing support for the .Net Version Detector applicat
 Categories:
 - version
 - detector
-TargetCakeVersion: 3.0.0
+TargetCakeVersion: 4.0.0
 TargetFrameworks:
 - net6.0
 - net7.0
-AnalyzedPackageVersion: 3.0.0
+- net8.0
+AnalyzedPackageVersion: 4.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2024-07-21T22:11:46.5970000Z
+AnalyzedPackagePublishDate: 2024-07-22T04:57:42.9400000Z
