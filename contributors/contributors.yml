@@ -2386,6 +2386,7 @@
   - cake-contrib/Cake.Recipe
   - cake-contrib/Cake.Gradle
   - cake-contrib/Cake.BuildSystems.Module
+  - cake-contrib/Cake.Chocolatey.Module
   - cake-contrib/Cake.Terraform
   - cake-contrib/Cake.Npm.Module
   - cake-contrib/Cake.Codecov
