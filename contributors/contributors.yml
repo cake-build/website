@@ -2110,6 +2110,12 @@
   HtmlUrl: https://github.com/maurelio1234
   Repositories:
   - cake-contrib/Cake.Yarn
+- Name: MaxSolabAzb
+  AvatarUrl: https://avatars.githubusercontent.com/u/176671613?v=4
+  HtmlUrl: https://github.com/MaxSolabAzb
+  Repositories:
+  - cake-contrib/Cake.SqlServer
+  - cake-contrib/Cake.Hosts
 - Name: McDoit
   AvatarUrl: https://avatars.githubusercontent.com/u/16723686?v=4
   HtmlUrl: https://github.com/McDoit
