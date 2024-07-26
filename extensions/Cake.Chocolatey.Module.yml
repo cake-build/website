@@ -13,7 +13,7 @@ Categories:
 - module
 TargetCakeVersion: 
 TargetFrameworks:
-- netstandard2.0
-AnalyzedPackageVersion: 1.0.0
+- net6.0
+AnalyzedPackageVersion: 3.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2024-07-24T22:19:30.5570000Z
+AnalyzedPackagePublishDate: 2024-07-25T18:38:47.5200000Z
