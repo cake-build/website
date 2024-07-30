@@ -11,9 +11,9 @@ Categories:
 - tool-provider
 - chocolatey
 - module
-TargetCakeVersion: 
+TargetCakeVersion: 3.0.0
 TargetFrameworks:
 - net6.0
-AnalyzedPackageVersion: 3.0.0
+AnalyzedPackageVersion: 3.0.1
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2024-07-25T18:38:47.5200000Z
+AnalyzedPackagePublishDate: 2024-07-29T21:13:21.6200000Z
