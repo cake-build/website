@@ -2064,6 +2064,7 @@
       "cake-build/cake",
       "cake-contrib/Cake.Issues",
       "cake-contrib/Cake.Issues.PullRequests",
+      "cake-contrib/Cake.Issues.PullRequests.AzureDevOps",
       "cake-contrib/Cake.Issues.DupFinder"
     ]
   },
