@@ -2385,6 +2385,7 @@
   - cake-build/bakery
   - cake-build/processes
   - cake-contrib/Cake.AliaSql
+  - cake-contrib/Cake.Slack
   - cake-contrib/Cake.FileHelpers
   - cake-contrib/Cake.CMake
   - cake-contrib/Cake.Json
@@ -2396,6 +2397,7 @@
   - cake-contrib/Cake.Coveralls
   - cake-contrib/Cake.Incubator
   - cake-contrib/Cake.Recipe
+  - cake-contrib/Cake.MicrosoftTeams
   - cake-contrib/Cake.Gradle
   - cake-contrib/Cake.BuildSystems.Module
   - cake-contrib/Cake.Chocolatey.Module
