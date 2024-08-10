@@ -16,6 +16,6 @@ Categories:
 TargetCakeVersion: 2.3.0
 TargetFrameworks:
 - net6.0
-AnalyzedPackageVersion: 3.6.139
+AnalyzedPackageVersion: 3.6.141
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2024-06-03T22:43:06.4500000Z
+AnalyzedPackagePublishDate: 2024-08-10T03:23:56.0770000Z
