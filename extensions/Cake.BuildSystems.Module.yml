@@ -12,6 +12,6 @@ Categories:
 TargetCakeVersion: 4.0.0
 TargetFrameworks:
 - net6.0
-AnalyzedPackageVersion: 7.0.0
+AnalyzedPackageVersion: 7.1.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2024-02-19T21:44:01.7570000Z
+AnalyzedPackagePublishDate: 2024-09-30T20:05:21.2700000Z
