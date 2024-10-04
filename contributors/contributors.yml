@@ -3403,6 +3403,11 @@
   HtmlUrl: https://github.com/WebDucer
   Repositories:
   - cake-build/website
+- Name: WeihanLi
+  AvatarUrl: https://avatars.githubusercontent.com/u/7604648?v=4
+  HtmlUrl: https://github.com/WeihanLi
+  Repositories:
+  - cake-build/cake
 - Name: wexman
   AvatarUrl: https://avatars.githubusercontent.com/u/1536266?v=4
   HtmlUrl: https://github.com/wexman
