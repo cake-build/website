@@ -325,6 +325,11 @@
   HtmlUrl: https://github.com/BenHall
   Repositories:
   - cake-build/cake
+- Name: bernarden
+  AvatarUrl: https://avatars.githubusercontent.com/u/12289537?v=4
+  HtmlUrl: https://github.com/bernarden
+  Repositories:
+  - cake-build/cake
 - Name: beto-rodriguez
   AvatarUrl: https://avatars.githubusercontent.com/u/10853349?v=4
   HtmlUrl: https://github.com/beto-rodriguez
@@ -1843,6 +1848,11 @@
   HtmlUrl: https://github.com/kewlniss
   Repositories:
   - cake-build/cake-vs
+- Name: KhanjarSingh
+  AvatarUrl: https://avatars.githubusercontent.com/u/183536793?v=4
+  HtmlUrl: https://github.com/KhanjarSingh
+  Repositories:
+  - cake-build/website
 - Name: khellang
   AvatarUrl: https://avatars.githubusercontent.com/u/582487?v=4
   HtmlUrl: https://github.com/khellang
@@ -2042,12 +2052,6 @@
   HtmlUrl: https://github.com/markobee
   Repositories:
   - cake-contrib/Cake_Git
-- Name: markrendle
-  AvatarUrl: https://avatars.githubusercontent.com/u/178242?v=4
-  HtmlUrl: https://github.com/markrendle
-  Repositories:
-  - cake-build/cake
-  - cake-build/website
 - Name: martijnmol
   AvatarUrl: https://avatars.githubusercontent.com/u/3659651?v=4
   HtmlUrl: https://github.com/martijnmol
@@ -3086,6 +3090,11 @@
   - cake-contrib/Cake.FileHelpers
   - cake-contrib/Cake.Json
   - cake-contrib/CakeContrib.Guidelines
+- Name: ssg
+  AvatarUrl: https://avatars.githubusercontent.com/u/241217?v=4
+  HtmlUrl: https://github.com/ssg
+  Repositories:
+  - cake-build/cake
 - Name: stasostrovskyi
   AvatarUrl: https://avatars.githubusercontent.com/u/7407450?v=4
   HtmlUrl: https://github.com/stasostrovskyi
@@ -3191,6 +3200,12 @@
   HtmlUrl: https://github.com/Tdue21
   Repositories:
   - cake-build/cake-vscode
+- Name: ThatRendle
+  AvatarUrl: https://avatars.githubusercontent.com/u/178242?v=4
+  HtmlUrl: https://github.com/ThatRendle
+  Repositories:
+  - cake-build/cake
+  - cake-build/website
 - Name: Thealexbarney
   AvatarUrl: https://avatars.githubusercontent.com/u/601603?v=4
   HtmlUrl: https://github.com/Thealexbarney
