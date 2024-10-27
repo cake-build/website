@@ -13,7 +13,7 @@ Description: Where to discuss about Cake
 
 # Twitter
 
-Follow and talk about us on Twitter [@cakebuildnet](https://twitter.com/cakebuildnet).
+Follow and talk about us on Twitter [@cakebuildnet](https://x.com/cakebuildnet).
 
 # Mastodon / Fediverse
 

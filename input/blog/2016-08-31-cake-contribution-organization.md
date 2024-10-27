@@ -32,4 +32,4 @@ Both Patrik and Mattias will be moving the addins and modules that they have cre
 
 You might notice that the above gitter link takes you to a new gitter room that we have created.  We decided to segregate the conversations.  We still have the main [Cake gitter room](https://gitter.im/cake-build/cake), it is just an attempt to keep the conversations in the correct location.
 
-In addition to the new gitter room, we also have a new [Cake Contrib Twitter account](https://twitter.com/cakecontrib) which I would encourage you to follow.  Any time an addin or module which exists in the Cake Contribution Organization is updated, a new tweet will be sent out through this account to let people know when a new release is out.
+In addition to the new gitter room, we also have a new [Cake Contrib Twitter account](https://x.com/cakecontrib) which I would encourage you to follow.  Any time an addin or module which exists in the Cake Contribution Organization is updated, a new tweet will be sent out through this account to let people know when a new release is out.

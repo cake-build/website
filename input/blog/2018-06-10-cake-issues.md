@@ -216,4 +216,4 @@ report formats & templates or pull request systems.
 
 My name is Pascal Berger.
 I'm working as a Software Architect at [BBT Software AG](http://www.bbtsoftware.ch).
-You can find me on [Twitter](https://twitter.com/hereispascal) or [GitHub](https://github.com/pascalberger).
+You can find me on [Twitter](https://x.com/hereispascal) or [GitHub](https://github.com/pascalberger).
