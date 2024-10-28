@@ -1375,14 +1375,6 @@
     ]
   },
   {
-    "Name": "fmazannek",
-    "AvatarUrl": "https://avatars.githubusercontent.com/u/43238925?v=4",
-    "HtmlUrl": "https://github.com/fmazannek",
-    "Repositories": [
-      "cake-contrib/Cake.ArgumentHelpers"
-    ]
-  },
-  {
     "Name": "fran-hoey-intechnica",
     "AvatarUrl": "https://avatars.githubusercontent.com/u/102516844?v=4",
     "HtmlUrl": "https://github.com/fran-hoey-intechnica",
@@ -3044,6 +3036,14 @@
     "Repositories": [
       "cake-contrib/Cake.SqlServer",
       "cake-contrib/Cake.Hosts"
+    ]
+  },
+  {
+    "Name": "maza-soptim",
+    "AvatarUrl": "https://avatars.githubusercontent.com/u/43238925?v=4",
+    "HtmlUrl": "https://github.com/maza-soptim",
+    "Repositories": [
+      "cake-contrib/Cake.ArgumentHelpers"
     ]
   },
   {
