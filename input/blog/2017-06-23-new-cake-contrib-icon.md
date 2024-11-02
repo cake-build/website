@@ -18,4 +18,4 @@ Going forward, we will be encouraging all Cake Community Maintainers to use this
 
 Please do let us know what you think about the new icon, or if you have any questions.
 
-We are very grateful to [Mikael Brassman](https://twitter.com/spoike) for creating the icon for us.
+We are very grateful to [Mikael Brassman](https://x.com/spoike) for creating the icon for us.
