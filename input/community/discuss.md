@@ -17,7 +17,7 @@ Follow and talk about us on Twitter [@cakebuildnet](https://x.com/cakebuildnet).
 
 # Mastodon / Fediverse
 
-Follow and talk about us on Mastodon [@cakebuild@botsin.space](https://botsin.space/@cakebuild).
+Follow and talk about us on Mastodon [@cakebuild@dotnet.social](https://dotnet.social/@cakebuild).
 
 # Gitter Channel Archive
 
