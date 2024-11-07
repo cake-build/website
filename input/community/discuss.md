@@ -19,6 +19,10 @@ Follow and talk about us on Twitter [@cakebuildnet](https://x.com/cakebuildnet).
 
 Follow and talk about us on Mastodon [@cakebuild@dotnet.social](https://dotnet.social/@cakebuild).
 
+# Bluesky
+
+Follow and talk about us on Bluesky [@cakebuild.net](https://bsky.app/profile/cakebuild.net).
+
 # Gitter Channel Archive
 
 :::{.alert .alert-warning}
