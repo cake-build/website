@@ -2472,6 +2472,11 @@
   HtmlUrl: https://github.com/olivier-spinelli
   Repositories:
   - cake-build/cake
+- Name: onosyk
+  AvatarUrl: https://avatars.githubusercontent.com/u/187543820?v=4
+  HtmlUrl: https://github.com/onosyk
+  Repositories:
+  - cake-contrib/Cake.MsDeploy
 - Name: OsirisTerje
   AvatarUrl: https://avatars.githubusercontent.com/u/203432?v=4
   HtmlUrl: https://github.com/OsirisTerje
