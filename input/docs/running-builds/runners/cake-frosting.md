@@ -9,7 +9,7 @@ See [Setting Up A New Cake Frosting Project](/docs/getting-started/setting-up-a-
 
 # Requirements
 
-Cake.Frosting can be used to write console applications targeting `netcoreapp3.1` or newer.
+Cake.Frosting can be used to write console applications targeting `net8.0` or newer.
 
 # Usage
 
