@@ -11,7 +11,7 @@ See [Setting Up A New Cake .NET Tool Project](/docs/getting-started/setting-up-a
 
 # Requirements
 
-The [Cake.Tool](https://www.nuget.org/packages/Cake.Tool) NuGet package, is a .NET Core tool compiled for .NET 8 or newer.
+The [Cake.Tool](https://www.nuget.org/packages/Cake.Tool) NuGet package, is a .NET tool compiled for .NET 8 or newer.
 
 # Usage
 
@@ -27,7 +27,7 @@ Bootstrapping scripts ensure you have Cake and other required dependencies insta
 The bootstrapper scripts are also responsible for invoking Cake.
 
 :::{.alert .alert-info}
-The following instructions require .NET Core 3.0 or newer.
+The following instructions require .NET 8.0 or newer.
 See [How to manage .NET Core tools](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools) for details and other options.
 :::
 
