@@ -15,6 +15,7 @@
         string mastodon = maintainer.String("Mastodon");
         string twitter = maintainer.String("Twitter");
         string linkedin = maintainer.String("LinkedIn");
+        string bluesky = maintainer.String("Bluesky");
 
         <div class="col-sm-6 col-md-3">
             <div class="thumbnail">
@@ -51,6 +52,12 @@
                         {
                             <a title="@name on LinkedIn" target="_blank" href="https://www.linkedin.com/in/@linkedin">
                                 <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        }
+                        @if (!string.IsNullOrWhiteSpace(bluesky))
+                        {
+                            <a title="@name on BlueSky" target="_blank" title="@name on Bluesky" href="https://bsky.app/profile/@bluesky">
+                                <i class="fa-brands fa-bluesky"></i>
                             </a>
                         }
                     </p>
