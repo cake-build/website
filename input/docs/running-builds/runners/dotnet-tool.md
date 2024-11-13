@@ -11,7 +11,7 @@ See [Setting Up A New Cake .NET Tool Project](/docs/getting-started/setting-up-a
 
 # Requirements
 
-The [Cake.Tool](https://www.nuget.org/packages/Cake.Tool) NuGet package, is a .NET Core tool compiled for .NET Core 3.1 or newer.
+The [Cake.Tool](https://www.nuget.org/packages/Cake.Tool) NuGet package, is a .NET Core tool compiled for .NET 8 or newer.
 
 # Usage
 
