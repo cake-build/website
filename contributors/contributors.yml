@@ -1484,6 +1484,7 @@
   - cake-build/cake
   - cake-build/website
   - cake-build/resources
+  - cake-build/processes
   - cake-contrib/Cake.AliaSql
   - cake-contrib/Cake.Unity
   - cake-contrib/Cake.FileHelpers
