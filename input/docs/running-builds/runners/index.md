@@ -23,8 +23,8 @@ A scripting approach can be an easier solution for simple build scenarios, as it
 
 | Runner | Minimum required .NET version  | Supported | IntelliSense |
 |-|-|-|-|
-| [Cake .NET Tool] | .NET 6 | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:orange"></i> [[1]](#1) |
-| [Cake Frosting] | .NET 6 | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> |
+| [Cake .NET Tool] | .NET 8 | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:orange"></i> [[1]](#1) |
+| [Cake Frosting] | .NET 8 | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> |
 
 <a id="1"></a>
 [1]: Limited support in Visual Studio Code. See [IntelliSense in Visual Studio Code]
@@ -47,10 +47,10 @@ Note that the platform under which a build is running doesn't limit its build ca
 It's absolutely possible for example to build a .NET Framework application with Cake running on .NET 6.
 :::
 
-| Runner                           | .NET 8 | .NET 7 | .NET 6 |
-|----------------------------------|--------|--------|--------|
-| [Cake .NET Tool]                 | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> |
-| [Cake Frosting]                  | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> |
+| Runner                           | .NET 9 | .NET 8 |
+|----------------------------------|--------|--------|
+| [Cake .NET Tool]                 | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> |
+| [Cake Frosting]                  | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> |
 
 # Supported Build Systems
 
