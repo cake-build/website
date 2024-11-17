@@ -9,11 +9,10 @@ Author: jericho
 Description: Cake Addin that exends Cake with ability to send email.
 Categories:
 - email
-TargetCakeVersion: 4.0.0
+TargetCakeVersion: 5.0.0
 TargetFrameworks:
-- net6.0
-- net7.0
 - net8.0
-AnalyzedPackageVersion: 3.0.0
+- net9.0
+AnalyzedPackageVersion: 4.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2023-11-23T19:34:42.4370000Z
+AnalyzedPackagePublishDate: 2024-11-17T01:21:56.7370000Z
