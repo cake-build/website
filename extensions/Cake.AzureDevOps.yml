@@ -10,11 +10,10 @@ Description: Addin for the Cake build automation system for working with Azure D
 Categories:
 - azure devops
 - azure devops server
-TargetCakeVersion: 4.0.0
+TargetCakeVersion: 5.0.0
 TargetFrameworks:
-- net6.0
-- net7.0
 - net8.0
-AnalyzedPackageVersion: 4.0.0
+- net9.0
+AnalyzedPackageVersion: 5.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2023-12-21T21:25:30.5170000Z
+AnalyzedPackagePublishDate: 2024-12-01T18:07:26.5800000Z
