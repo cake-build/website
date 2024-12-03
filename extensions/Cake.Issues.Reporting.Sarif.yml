@@ -22,11 +22,10 @@ Categories:
 - issues
 - reporting
 - sarif
-TargetCakeVersion: 4.0.0
+TargetCakeVersion: 5.0.0
 TargetFrameworks:
-- net6.0
-- net7.0
 - net8.0
-AnalyzedPackageVersion: 4.12.0
+- net9.0
+AnalyzedPackageVersion: 5.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2024-11-05T23:06:17.0630000Z
+AnalyzedPackagePublishDate: 2024-12-02T21:49:16.0330000Z
