@@ -2814,6 +2814,7 @@
       "cake-build/cake",
       "cake-build/website",
       "cake-build/cake-vso",
+      "cake-build/cake-action",
       "cake-contrib/Cake.EntityFramework",
       "cake-contrib/Cake.MsDeploy",
       "cake-contrib/Cake.Http",
