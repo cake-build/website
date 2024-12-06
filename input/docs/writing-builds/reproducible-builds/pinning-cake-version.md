@@ -14,7 +14,7 @@ To have deterministic builds it is important that on every build the same versio
 <div class="tab-content">
     <div id="tool1" class="tab-pane fade in active">
         <p>
-          When <a href="/running-builds/runners/dotnet-tool#bootstrapping-for.net-tool">installed as a local tool</a>, Cake will always be restored in the version mentioned in the manifest file which is usually located at <code>.config/dotnet-tools.json</code>.
+          When <a href="/docs/running-builds/runners/dotnet-tool#bootstrapping-for.net-tool">installed as a local tool</a>, Cake will always be restored in the version mentioned in the manifest file which is usually located at <code>.config/dotnet-tools.json</code>.
         </p>
         <p>
           We recommend storing this manifest file in source control so that every time you clone your repository and run <code>dotnet tool restore</code> you'll always get the same version of the Cake .NET Tool specified in the manifest file.
