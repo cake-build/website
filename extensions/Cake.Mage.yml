@@ -9,11 +9,10 @@ Author: Phil Scott
 Description: A Cake addin to provide support for Mage.exe.
 Categories:
 - mage
-TargetCakeVersion: 4.0.0
+TargetCakeVersion: 5.0.0
 TargetFrameworks:
-- net6.0
-- net7.0
 - net8.0
-AnalyzedPackageVersion: 1.1.0
+- net9.0
+AnalyzedPackageVersion: 2.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2024-02-07T20:35:23.8970000Z
+AnalyzedPackagePublishDate: 2024-12-08T09:03:32.4230000Z
