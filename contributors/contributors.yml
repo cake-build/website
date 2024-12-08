@@ -1796,6 +1796,11 @@
   HtmlUrl: https://github.com/Julien-Molina
   Repositories:
   - cake-build/website
+- Name: juwens
+  AvatarUrl: https://avatars.githubusercontent.com/u/11560817?v=4
+  HtmlUrl: https://github.com/juwens
+  Repositories:
+  - cake-build/cake
 - Name: jzeferino
   AvatarUrl: https://avatars.githubusercontent.com/u/10722952?v=4
   HtmlUrl: https://github.com/jzeferino
