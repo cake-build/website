@@ -1,0 +1,19 @@
+Type: Addin
+Name: Cake.Podman
+NuGet: Cake.Podman
+Assemblies:
+- /**/Cake.Podman.dll
+Repository: https://github.com/msantos-dev-hub/Cake.Podman.git
+ProjectUrl: https://www.nuget.org/packages/Cake.Podman/
+Author: msantos-dev-hub
+Description: Podman addin for Cake
+Categories:
+- podman
+- cake-build
+TargetCakeVersion: 5.0.0
+TargetFrameworks:
+- net8.0
+- net9.0
+AnalyzedPackageVersion: 1.0.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2024-12-09T16:29:21.8500000Z
