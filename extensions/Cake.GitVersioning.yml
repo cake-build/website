@@ -13,9 +13,9 @@ Categories:
 - versioning
 - version
 - assembly info
-TargetCakeVersion: 2.3.0
+TargetCakeVersion: 3.2.0
 TargetFrameworks:
-- net6.0
-AnalyzedPackageVersion: 3.6.146
+- net8.0
+AnalyzedPackageVersion: 3.7.112
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2024-10-18T13:28:41.4530000Z
+AnalyzedPackagePublishDate: 2024-12-12T01:50:36.6870000Z
