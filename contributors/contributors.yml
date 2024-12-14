@@ -165,6 +165,7 @@
   HtmlUrl: https://github.com/ap0llo
   Repositories:
   - cake-contrib/Cake.FileHelpers
+  - cake-contrib/Cake_Git
   - cake-contrib/Cake.BuildSystems.Module
   - cake-contrib/Cake.Npm.Module
   - cake-contrib/Cake.GitHub
