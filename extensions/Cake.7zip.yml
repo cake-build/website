@@ -9,11 +9,10 @@ Author: nils-a
 Description: Makes 7zip available as a tool in Cake
 Categories:
 - sevenzip
-TargetCakeVersion: 4.0.0
+TargetCakeVersion: 5.0.0
 TargetFrameworks:
-- net6.0
-- net7.0
 - net8.0
-AnalyzedPackageVersion: 4.1.0
+- net9.0
+AnalyzedPackageVersion: 5.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2024-01-17T00:03:13.5900000Z
+AnalyzedPackagePublishDate: 2024-12-16T22:20:13.1170000Z
