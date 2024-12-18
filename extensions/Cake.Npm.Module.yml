@@ -12,9 +12,9 @@ Categories:
 - ci
 - npm
 - node
-TargetCakeVersion: 4.0.0
+TargetCakeVersion: 5.0.0
 TargetFrameworks:
-- net6.0
-AnalyzedPackageVersion: 5.0.0
+- net8.0
+AnalyzedPackageVersion: 6.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2023-11-24T00:33:12.1100000Z
+AnalyzedPackagePublishDate: 2024-12-17T07:13:21.9070000Z
