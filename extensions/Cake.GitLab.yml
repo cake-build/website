@@ -1,0 +1,18 @@
+Type: Addin
+Name: Cake.GitLab
+NuGet: Cake.GitLab
+Assemblies:
+- /**/Cake.GitLab.dll
+Repository: https://github.com/ap0llo/Cake.GitLab.git
+ProjectUrl: https://github.com/ap0llo/Cake.GitLab/
+Author: ap0llo
+Description: Cake aliases for interacting with GitLab
+Categories:
+- cake-build
+TargetCakeVersion: 5.0.0
+TargetFrameworks:
+- net8.0
+- net9.0
+AnalyzedPackageVersion: 1.0.108
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2025-01-03T22:53:39.9230000Z

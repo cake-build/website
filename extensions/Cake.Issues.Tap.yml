@@ -1,16 +1,16 @@
 Type: Addin
-Name: Cake.Issues.Sarif
-NuGet: Cake.Issues.Sarif
+Name: Cake.Issues.Tap
+NuGet: Cake.Issues.Tap
 Assemblies:
-- /**/Cake.Issues.Sarif.dll
-Repository: https://github.com/cake-contrib/Cake.Issues.Sarif.git
+- /**/Cake.Issues.Tap.dll
+Repository: https://github.com/cake-contrib/Cake.Issues.git
 ProjectUrl: https://cakeissues.net/
 Author: Cake Issues contributors
 Description: >-
-  The SARIF support for the Cake.Issues addin for Cake allows you to read SARIF compatible files.
+  The TAP support for the Cake.Issues addin for Cake allows you to read Test Anything Protocol (TAP) compatible files.
 
 
-  This addin provides the aliases for reading issues from SARIF compatible files and providing them to the Cake.Issues addin.
+  This addin provides the aliases for reading issues from TAP compatible files and providing them to the Cake.Issues addin.
 
   It also requires the core Cake.Issues addin.
 
@@ -25,16 +25,16 @@ Description: >-
 
   This is the version of the addin compatible with Cake Script Runners.
 
-  For addin compatible with Cake Frosting see Cake.Frosting.Issues.Sarif.
+  For addin compatible with Cake Frosting see Cake.Frosting.Issues.Tap.
 Categories:
 - cake-issues
 - cake-issueprovider
 - linting
-- sarif
+- tap
 TargetCakeVersion: 5.0.0
 TargetFrameworks:
 - net8.0
 - net9.0
 AnalyzedPackageVersion: 5.1.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2025-01-03T19:55:42.3230000Z
+AnalyzedPackagePublishDate: 2025-01-03T19:55:43.9000000Z
