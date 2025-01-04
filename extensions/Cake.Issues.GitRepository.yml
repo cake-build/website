@@ -26,6 +26,6 @@ TargetCakeVersion: 5.0.0
 TargetFrameworks:
 - net8.0
 - net9.0
-AnalyzedPackageVersion: 5.0.1
+AnalyzedPackageVersion: 5.1.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2024-12-17T22:37:42.4570000Z
+AnalyzedPackagePublishDate: 2025-01-03T19:55:22.6870000Z
