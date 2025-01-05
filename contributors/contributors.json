@@ -241,6 +241,7 @@
     "AvatarUrl": "https://github.com/user_avatars/2821818",
     "HtmlUrl": "https://github.com/ap0llo",
     "Repositories": [
+      "cake-build/cake",
       "cake-contrib/Cake.FileHelpers",
       "cake-contrib/Cake_Git",
       "cake-contrib/Cake.BuildSystems.Module",
