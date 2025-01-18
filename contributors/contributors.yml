@@ -1813,6 +1813,11 @@
   - cake-contrib/Cake.AndroidAppManifest
   - cake-contrib/Cake.Curl
   - cake-contrib/Cake.ResxConverter
+- Name: kapsiR
+  AvatarUrl: https://github.com/user_avatars/7165033
+  HtmlUrl: https://github.com/kapsiR
+  Repositories:
+  - cake-build/cake
 - Name: kashifsoofi
   AvatarUrl: https://github.com/user_avatars/1973979
   HtmlUrl: https://github.com/kashifsoofi
