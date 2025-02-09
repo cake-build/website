@@ -2959,6 +2959,11 @@
   HtmlUrl: https://github.com/RosyTucker
   Repositories:
   - cake-contrib/Cake.Http
+- Name: rothsandro
+  AvatarUrl: https://github.com/user_avatars/16229645
+  HtmlUrl: https://github.com/rothsandro
+  Repositories:
+  - cake-contrib/Cake.AzureDevOps
 - Name: rprouse
   AvatarUrl: https://github.com/user_avatars/493828
   HtmlUrl: https://github.com/rprouse
