@@ -1540,6 +1540,7 @@
   - cake-contrib/Cake.DotNetTool.Module
   - cake-contrib/Cake.DotNetVersionDetector
   - cake-contrib/Cake.BrowserStack
+  - cake-contrib/cake-dotnet-vulnerability-scanner
 - Name: JeroenVandezande
   AvatarUrl: https://github.com/user_avatars/1721955
   HtmlUrl: https://github.com/JeroenVandezande
