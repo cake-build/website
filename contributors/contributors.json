@@ -2177,7 +2177,8 @@
       "cake-contrib/Cake.Discord",
       "cake-contrib/Cake.DotNetTool.Module",
       "cake-contrib/Cake.DotNetVersionDetector",
-      "cake-contrib/Cake.BrowserStack"
+      "cake-contrib/Cake.BrowserStack",
+      "cake-contrib/cake-dotnet-vulnerability-scanner"
     ]
   },
   {
