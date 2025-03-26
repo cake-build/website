@@ -1376,6 +1376,11 @@
   HtmlUrl: https://github.com/homelchenko
   Repositories:
   - cake-build/cake
+- Name: HowdyChad
+  AvatarUrl: https://avatars.githubusercontent.com/u/1583823
+  HtmlUrl: https://github.com/HowdyChad
+  Repositories:
+  - cake-build/cake-vs
 - Name: hymccord
   AvatarUrl: https://avatars.githubusercontent.com/u/1909698
   HtmlUrl: https://github.com/hymccord
@@ -1852,11 +1857,6 @@
   HtmlUrl: https://github.com/kevbite
   Repositories:
   - cake-contrib/Cake.Terraform
-- Name: kewlniss
-  AvatarUrl: https://avatars.githubusercontent.com/u/1583823
-  HtmlUrl: https://github.com/kewlniss
-  Repositories:
-  - cake-build/cake-vs
 - Name: KhanjarSingh
   AvatarUrl: https://avatars.githubusercontent.com/u/183536793
   HtmlUrl: https://github.com/KhanjarSingh
