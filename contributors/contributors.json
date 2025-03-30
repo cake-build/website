@@ -5113,11 +5113,9 @@
     "AvatarUrl": "https://avatars.githubusercontent.com/u/908801",
     "HtmlUrl": "https://github.com/wwwlicious",
     "Repositories": [
-      "cake-build/cake",
       "cake-build/website",
       "cake-contrib/Cake.ReSharperReports",
-      "cake-contrib/Cake.Incubator",
-      "cake-contrib/Cake.Recipe"
+      "cake-contrib/Cake.Incubator"
     ]
   },
   {
