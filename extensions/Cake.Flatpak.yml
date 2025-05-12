@@ -1,0 +1,21 @@
+Type: Addin
+Name: Cake.Flatpak
+NuGet: Cake.Flatpak
+Assemblies:
+- /**/Cake.Flatpak.dll
+Repository: https://codeberg.org/mihamarkic/Cake.Flatpak.git
+ProjectUrl: https://codeberg.org/mihamarkic/Cake.Flatpak
+Author: Miha Markic
+Description: Flatpak Addin for Cake Build and Deployment Automation System.
+Categories:
+- deploy
+- flatpak
+- deployment
+- cake-build
+TargetCakeVersion: 5.0.0
+TargetFrameworks:
+- net8.0
+- net9.0
+AnalyzedPackageVersion: 1.0.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2025-05-10T11:59:32.4970000Z
