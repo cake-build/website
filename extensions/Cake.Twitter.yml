@@ -10,10 +10,10 @@ Description: Cake Build addin for tweeting to Twitter.
 Categories:
 - communication
 - social media
-TargetCakeVersion: 3.0.0
+TargetCakeVersion: 5.0.0
 TargetFrameworks:
-- net6.0
-- net7.0
-AnalyzedPackageVersion: 3.0.0
+- net8.0
+- net9.0
+AnalyzedPackageVersion: 5.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2023-07-08T16:10:30.9530000Z
+AnalyzedPackagePublishDate: 2025-05-26T14:02:27.3500000Z
