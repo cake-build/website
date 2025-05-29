@@ -455,18 +455,18 @@ _Valid values:_ `true`, `false`
 </ul>
 
 <div class="tab-content">
-    <div id="env9" class="tab-pane fade in active">
+    <div id="env13" class="tab-pane fade in active">
         <p>
             <pre><code class="language-sh hljs">CAKE_SETTINGS_USESPECTRECONSOLEFORCONSOLEOUTPUT</code></pre>
         </p>
     </div>
-    <div id="config9" class="tab-pane fade">
+    <div id="config13" class="tab-pane fade">
         <p>
             <pre><code class="language-sh hljs">[Settings]
 UseSpectreConsoleForConsoleOutput=true</code></pre>
         </p>
     </div>
-    <div id="arg9" class="tab-pane fade">
+    <div id="arg13" class="tab-pane fade">
         <p>
             <pre><code class="language-sh hljs">--settings_usespectresonsolesorsonsolesutput=true</code></pre>
         </p>
