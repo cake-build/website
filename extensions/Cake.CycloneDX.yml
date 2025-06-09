@@ -1,0 +1,21 @@
+Type: Addin
+Name: Cake.CycloneDX
+NuGet: Cake.CycloneDX
+Assemblies:
+- /**/Cake.CycloneDX.dll
+Repository: https://github.com/mgnslndh/Cake.CycloneDX.git
+ProjectUrl: https://github.com/mgnslndh/Cake.CycloneDX/
+Author: mgnslndh
+Description: CycloneDX addin for Cake build automation system.
+Categories:
+- cyclonedx
+- bom
+- sbom
+- cake-build
+TargetCakeVersion: 5.0.0
+TargetFrameworks:
+- net8.0
+- net9.0
+AnalyzedPackageVersion: 0.0.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2025-06-09T08:11:00.0730000Z
