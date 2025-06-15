@@ -10,11 +10,11 @@ Description: Cake add-on trying to make it easier to handle various inputs from 
 Categories:
 - environment
 - argument
-TargetCakeVersion: 2.0.0
+TargetCakeVersion: 4.0.0
 TargetFrameworks:
-- netcoreapp3.1
-- net5.0
 - net6.0
-AnalyzedPackageVersion: 1.0.0
+- net7.0
+- net8.0
+AnalyzedPackageVersion: 2.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2022-06-03T19:48:30.7670000Z
+AnalyzedPackagePublishDate: 2025-06-15T04:44:55.3370000Z
