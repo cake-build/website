@@ -4321,14 +4321,6 @@
     ]
   },
   {
-    "Name": "sergJozee",
-    "AvatarUrl": "https://avatars.githubusercontent.com/u/15928490",
-    "HtmlUrl": "https://github.com/sergJozee",
-    "Repositories": [
-      "cake-contrib/Cake.Terraform"
-    ]
-  },
-  {
     "Name": "sgaulding",
     "AvatarUrl": "https://avatars.githubusercontent.com/u/2135515",
     "HtmlUrl": "https://github.com/sgaulding",
@@ -4396,6 +4388,14 @@
     "Repositories": [
       "cake-contrib/Cake.MinVer",
       "cake-contrib/Cake.ESLint"
+    ]
+  },
+  {
+    "Name": "SJKGX",
+    "AvatarUrl": "https://avatars.githubusercontent.com/u/218675050",
+    "HtmlUrl": "https://github.com/SJKGX",
+    "Repositories": [
+      "cake-contrib/Cake.Terraform"
     ]
   },
   {
