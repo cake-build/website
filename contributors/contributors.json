@@ -3720,6 +3720,7 @@
       "cake-contrib/Cake.Issues.GitRepository",
       "cake-contrib/cake.asciidoctorj",
       "cake-contrib/Cake.ArgumentBinder",
+      "cake-contrib/Cake.GitHub",
       "cake-contrib/Cake.Pulumi",
       "cake-contrib/Cake.SharePoint",
       "cake-contrib/Cake.Issues.Reporting.SonarQube",
