@@ -9,11 +9,10 @@ Author: Artur Kordowski
 Description: Cake AddIn which provides compression functionality for BZip2, GZip and Zip.
 Categories:
 - compression
-TargetCakeVersion: 2.0.0
+TargetCakeVersion: 5.0.0
 TargetFrameworks:
-- netcoreapp3.1
-- net5.0
-- net6.0
-AnalyzedPackageVersion: 0.3.0
+- net8.0
+- net9.0
+AnalyzedPackageVersion: 0.4.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2022-04-29T16:25:05.3900000Z
+AnalyzedPackagePublishDate: 2025-07-15T18:17:38.9370000Z
