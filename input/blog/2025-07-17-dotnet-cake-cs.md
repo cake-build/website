@@ -148,7 +148,7 @@ This creates a `cake` folder with a `cake.csproj` with minimal configuration:
 </Project>
 ```
 
-and a `cake.cs` containing minimal example code to clean, build and test and .NET solution.
+and a `cake.cs` containing minimal example code to clean, build, and test a .NET solution.
 
 ## Deep Dive: Cake.Sdk Powered by Cake.Generator
 
@@ -182,7 +182,7 @@ The following packages are automatically included:
 
 ### Cake Addin & Module Support
 
-Just like with Cake tool scripting, code is generated for having methods, properties, and models conveniently available automatically by just adding NuGet package references. The same applies to modules, enabling you to replace Cake core functionality just by adding a reference to a Cake module.
+Just like with Cake .NET Tool, code is generated for having methods, properties, and models conveniently available automatically by just adding NuGet package references. The same applies to modules, enabling you to replace Cake core functionality just by adding a reference to a Cake module.
 
 #### Example Cake Addin in File-based Project
 
@@ -207,11 +207,11 @@ Any Cake addin can be added as a `PackageReference` and its alias proxies will b
 #:package Cake.BuildSystems.Module@8.0.0
 ```
 
-The generator now supports Cake modules with automatic registration. Modules referenced in your project will have their method and property aliases automatically discovered and proxy methods generated, just like regular addins. This includes both NuGet package modules and local module assemblies.
+The generator supports Cake modules with automatic registration. Modules referenced in your project will have their method and property aliases automatically discovered and proxy methods generated, just like regular addins. This includes both NuGet package modules and local module assemblies.
 
 #### Tool Installation Support
 
-Just like [Cake.Tool scripting](https://cakebuild.net/docs/writing-builds/tools/installing-tools), Cake.Sdk supports the `dotnet:` and `nuget:` schemes for installing tools from NuGet. You can install tools using the same familiar syntax:
+Just like [other runners](https://cakebuild.net/docs/writing-builds/tools/installing-tools), Cake.Sdk supports the `dotnet:` and `nuget:` schemes for installing tools from NuGet. You can install tools using the same familiar syntax:
 
 ```csharp
 // Install a single tool
@@ -227,7 +227,7 @@ InstallTools(
 InstallTool("nuget:?package=xunit.runner.console&version=2.4.1");
 ```
 
-This provides the same tool installation capabilities you're familiar with from Cake.Tool scripting, making the transition to Cake.Sdk seamless.
+This provides the same tool installation capabilities you're familiar with from Cake .NET Tool, making the transition to Cake.Sdk seamless.
 
 ### Advanced Features
 
