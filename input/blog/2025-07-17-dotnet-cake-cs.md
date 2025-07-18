@@ -69,7 +69,7 @@ This creates a `global.json` file that looks like:
 
 If you already have a `global.json` file, you can add the `msbuild-sdks` section to control the Cake.Sdk version used.
 
-> **Note**: There's currently a bug in .NET 10, but hopefully by preview 7 you'll also be able to specify the Cake.Sdk version in file-based apps like this:
+> **Note**: There's currently a [bug](https://github.com/dotnet/sdk/issues/49797) in .NET 10, but hopefully by preview 7 you'll also be able to specify the Cake.Sdk version in file-based apps like this:
 > ```csharp
 > #:sdk Cake.Sdk@version
 > ```
