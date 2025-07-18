@@ -687,6 +687,8 @@
   - cake-build/docker
   - cake-build/cake-action
   - cake-build/.github
+  - cake-build/generator
+  - cake-build/cakesdk-example
   - cake-contrib/Cake.AliaSql
   - cake-contrib/Cake.Unity
   - cake-contrib/Cake.Slack
@@ -1054,6 +1056,7 @@
   - cake-build/processes
   - cake-build/rfcs
   - cake-build/.github
+  - cake-build/generator
   - cake-contrib/Cake.AliaSql
   - cake-contrib/Cake.Unity
   - cake-contrib/Cake.Slack
