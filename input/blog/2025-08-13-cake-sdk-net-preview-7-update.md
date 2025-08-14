@@ -66,6 +66,7 @@ PLEASE NOTE: this sample cake.cs file assumes that you have a file called 'examp
 
 ```bash
 dotnet new cakefile --name cake --IncludeExampleProject true --force
+```
 
 ### Feedback Welcome
 
