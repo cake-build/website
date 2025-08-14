@@ -62,7 +62,10 @@ And run it with:
 ```bash
 dotnet cake.cs
 ```
+PLEASE NOTE: this sample cake.cs file assumes that you have a file called 'example.sln' located in a folder called `src`. If you don't have such a solution file, you can create it like so:
 
+```bash
+dotnet new cakefile --name cake --IncludeExampleProject true --force
 
 ### Feedback Welcome
 
