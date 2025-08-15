@@ -1,0 +1,16 @@
+Type: Addin
+Name: Cake.UG.IIS
+NuGet: Cake.UG.IIS
+Assemblies:
+- /**/Cake.UG.IIS.dll
+Repository: 
+ProjectUrl: https://www.nuget.org/packages/Cake.UG.IIS/
+Author: Cake.UG.IIS
+Description: Package Description
+Categories: []
+TargetCakeVersion: 2.0.0
+TargetFrameworks:
+- net6.0
+AnalyzedPackageVersion: 0.0.2
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2022-01-13T20:15:54.0870000Z
