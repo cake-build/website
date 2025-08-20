@@ -1500,6 +1500,7 @@
   - cake-build/website
   - cake-build/resources
   - cake-build/processes
+  - cake-build/generator
   - cake-contrib/Cake.AliaSql
   - cake-contrib/Cake.Unity
   - cake-contrib/Cake.FileHelpers
