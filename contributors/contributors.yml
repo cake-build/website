@@ -108,6 +108,11 @@
   HtmlUrl: https://github.com/AlbertoMonteiro
   Repositories:
   - cake-contrib/Cake.CoverageComparer
+- Name: aldworth-ocas
+  AvatarUrl: https://avatars.githubusercontent.com/u/228759504
+  HtmlUrl: https://github.com/aldworth-ocas
+  Repositories:
+  - cake-build/cake
 - Name: Alea81
   AvatarUrl: https://avatars.githubusercontent.com/u/44226291
   HtmlUrl: https://github.com/Alea81
@@ -547,11 +552,6 @@
   HtmlUrl: https://github.com/DalSoft
   Repositories:
   - cake-build/cake-vs
-- Name: DamianAntonowicz
-  AvatarUrl: https://avatars.githubusercontent.com/u/12022141
-  HtmlUrl: https://github.com/DamianAntonowicz
-  Repositories:
-  - cake-build/website
 - Name: damianh
   AvatarUrl: https://avatars.githubusercontent.com/u/57436
   HtmlUrl: https://github.com/damianh
@@ -3068,6 +3068,7 @@
   AvatarUrl: https://avatars.githubusercontent.com/u/122666
   HtmlUrl: https://github.com/SimonCropp
   Repositories:
+  - cake-build/cake
   - cake-contrib/Cake.MinVer
   - cake-contrib/Cake.ESLint
 - Name: SJKGX
