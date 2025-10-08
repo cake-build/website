@@ -9,10 +9,11 @@ Author: WCOMAB
 Description: Cake Addin that extends Cake with Slack messaging features.
 Categories:
 - communication
-TargetCakeVersion: 3.0.0
+TargetCakeVersion: 4.0.0
 TargetFrameworks:
 - net6.0
 - net7.0
-AnalyzedPackageVersion: 3.0.0
+- net8.0
+AnalyzedPackageVersion: 4.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2025-10-07T18:54:23.6200000Z
+AnalyzedPackagePublishDate: 2025-10-08T06:48:12.2330000Z
