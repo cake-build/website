@@ -9,11 +9,10 @@ Author: Scott Mackay
 Description: A set of useful extension methods and aliases for Cake
 Categories:
 - misc
-TargetCakeVersion: 4.0.0
+TargetCakeVersion: 5.0.0
 TargetFrameworks:
-- net6.0
-- net7.0
 - net8.0
-AnalyzedPackageVersion: 9.0.0
+- net9.0
+AnalyzedPackageVersion: 10.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2025-10-10T20:15:50.9170000Z
+AnalyzedPackagePublishDate: 2025-10-29T10:41:44.5870000Z
