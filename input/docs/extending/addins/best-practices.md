@@ -42,7 +42,7 @@ The wording of each guideline indicates how strong the recommendation is:
 
 ## Cake reference
 
-**_§2.1_** **Do** reference the lowest version of Cake with API compatibility to the latest version (currently `5.0.0`).
+**_§2.1_** **Do** reference the lowest version of Cake with API compatibility to the latest version (currently `6.0.0`).
 
 > **Why?** This gives the best support for different versions of Cake.
 > Addins built against newer versions of Cake might not be compatible with previous versions of Cake and vice-versa,
@@ -52,7 +52,7 @@ The wording of each guideline indicates how strong the recommendation is:
 
 ----------------------------------------------------------------------------------------------------
 
-**_§2.2_** **Do** reference a newer version than Cake `5.0.0` if the addin requires a specific functionality.
+**_§2.2_** **Do** reference a newer version than Cake `6.0.0` if the addin requires a specific functionality.
 
 > **Why?** If a specific feature of Cake is required in an addin the lowest version of Cake which introduces this feature should be referenced
 > to have access to the feature and the best support for different versions of Cake.
@@ -102,7 +102,7 @@ The wording of each guideline indicates how strong the recommendation is:
 
 ## .NET target version
 
-**_§2.5_** **Do** multi-target `net8.0` and `net9.0`.
+**_§2.5_** **Do** multi-target `net8.0`, `net9.0` and `net10.0`.
 
 > **Why?** Multi-targeting to `net8.0` and `net9.0` should work for most addins to support the latest version of available Cake runners, operating systems and platforms.
 
