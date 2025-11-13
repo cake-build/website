@@ -196,7 +196,7 @@ Task("Build")
             },
             EnvironmentVariables = new Dictionary<string, string>
             {
-                { "DOTNET_ROLL_FORWARD", "Major" },
+                { "DOTNET_ROLL_FORWARD", "LatestMajor" },
             },
         });
     });
@@ -223,7 +223,7 @@ Task("Preview")
             },
             EnvironmentVariables = new Dictionary<string, string>
             {
-                { "DOTNET_ROLL_FORWARD", "Major" },
+                { "DOTNET_ROLL_FORWARD", "LatestMajor" },
             },
         });
     });
