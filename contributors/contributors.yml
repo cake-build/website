@@ -649,11 +649,6 @@
   HtmlUrl: https://github.com/deekob
   Repositories:
   - cake-contrib/Cake.MsDeploy
-- Name: deining
-  AvatarUrl: https://avatars.githubusercontent.com/u/18169566
-  HtmlUrl: https://github.com/deining
-  Repositories:
-  - cake-build/website
 - Name: Delpire
   AvatarUrl: https://avatars.githubusercontent.com/u/8119571
   HtmlUrl: https://github.com/Delpire
@@ -3388,6 +3383,11 @@
 - Name: Tyumener
   AvatarUrl: https://avatars.githubusercontent.com/u/1244287
   HtmlUrl: https://github.com/Tyumener
+  Repositories:
+  - cake-build/website
+- Name: urban-adeininger
+  AvatarUrl: https://avatars.githubusercontent.com/u/244899711
+  HtmlUrl: https://github.com/urban-adeininger
   Repositories:
   - cake-build/website
 - Name: VanKrock
