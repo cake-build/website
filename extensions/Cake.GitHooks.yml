@@ -1,0 +1,16 @@
+Type: Addin
+Name: Cake.GitHooks
+NuGet: Cake.GitHooks
+Assemblies:
+- /**/Cake.GitHooks.dll
+Repository: 
+ProjectUrl: https://www.nuget.org/packages/Cake.GitHooks/
+Author: Cake.GitHooks
+Description: Package Description
+Categories: []
+TargetCakeVersion: 5.0.0
+TargetFrameworks:
+- net9.0
+AnalyzedPackageVersion: 1.0.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2025-01-08T12:01:50.4570000Z
