@@ -34,6 +34,11 @@
   - cake-contrib/Cake.SqlServer
   - cake-contrib/Cake.Sonar
   - cake-contrib/Cake.Issues.Recipe
+- Name: adc-wnorvelle
+  AvatarUrl: https://avatars.githubusercontent.com/u/84937989
+  HtmlUrl: https://github.com/adc-wnorvelle
+  Repositories:
+  - cake-contrib/Cake.Incubator
 - Name: Adityanr
   AvatarUrl: https://avatars.githubusercontent.com/u/48587119
   HtmlUrl: https://github.com/Adityanr
@@ -3498,11 +3503,6 @@
   HtmlUrl: https://github.com/wk-j
   Repositories:
   - cake-build/website
-- Name: wnorvelleadc
-  AvatarUrl: https://avatars.githubusercontent.com/u/84937989
-  HtmlUrl: https://github.com/wnorvelleadc
-  Repositories:
-  - cake-contrib/Cake.Incubator
 - Name: wolfsoul13
   AvatarUrl: https://avatars.githubusercontent.com/u/951739
   HtmlUrl: https://github.com/wolfsoul13
