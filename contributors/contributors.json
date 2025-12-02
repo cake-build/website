@@ -54,6 +54,14 @@
     ]
   },
   {
+    "Name": "adc-wnorvelle",
+    "AvatarUrl": "https://avatars.githubusercontent.com/u/84937989",
+    "HtmlUrl": "https://github.com/adc-wnorvelle",
+    "Repositories": [
+      "cake-contrib/Cake.Incubator"
+    ]
+  },
+  {
     "Name": "Adityanr",
     "AvatarUrl": "https://avatars.githubusercontent.com/u/48587119",
     "HtmlUrl": "https://github.com/Adityanr",
@@ -5063,14 +5071,6 @@
     "HtmlUrl": "https://github.com/wk-j",
     "Repositories": [
       "cake-build/website"
-    ]
-  },
-  {
-    "Name": "wnorvelleadc",
-    "AvatarUrl": "https://avatars.githubusercontent.com/u/84937989",
-    "HtmlUrl": "https://github.com/wnorvelleadc",
-    "Repositories": [
-      "cake-contrib/Cake.Incubator"
     ]
   },
   {
