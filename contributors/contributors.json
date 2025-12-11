@@ -2157,6 +2157,7 @@
       "cake-contrib/Cake.SendGrid",
       "cake-contrib/Cake.Recipe",
       "cake-contrib/Cake.CakeMail",
+      "cake-contrib/Cake.MicrosoftTeams",
       "cake-contrib/Cake.WinSCP",
       "cake-contrib/Cake.Gradle",
       "cake-contrib/Cake.DotNetCoreEf",
