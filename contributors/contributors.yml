@@ -1133,6 +1133,7 @@
   - cake-contrib/Cake.Terraform
   - cake-contrib/Cake.Npm.Module
   - cake-contrib/Cake.Prca.Issues.Markdownlint
+  - cake-contrib/Cake.Codecov
   - cake-contrib/Cake.SqlPackage
   - cake-contrib/Home
   - cake-contrib/Cake.OpenVsixSignTool
