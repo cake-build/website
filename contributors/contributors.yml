@@ -1205,6 +1205,11 @@
   - cake-contrib/Cake.T4
   - cake-contrib/Cake.IntelliJ.Recipe
   - cake-contrib/Cake.ReSharper.GlobalTools
+- Name: germane-rmd
+  AvatarUrl: https://avatars.githubusercontent.com/u/250129632
+  HtmlUrl: https://github.com/germane-rmd
+  Repositories:
+  - cake-contrib/Cake.ExtendedNuGet
 - Name: gertjvr
   AvatarUrl: https://avatars.githubusercontent.com/u/1691062
   HtmlUrl: https://github.com/gertjvr
