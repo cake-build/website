@@ -88,7 +88,7 @@ dotnet new install Cake.Template
 For the simplest possible setup:
 
 ```bash
-dotnet new cakeminimal --name cake
+dotnet new cakeminimalfile --name cake
 ```
 
 This creates a minimal `cake.cs` file with just the essential SDK directive and Information log statement.
