@@ -3,15 +3,34 @@ Description: Available pre-processor directives
 RedirectFrom: docs/fundamentals/preprocessor-directives
 ---
 
-<p>
-  Cake scripts have support for pre-processor line directives, which run before the script is executed.
-  These can be used to reference other scripts, assemblies, namespaces and more.
-</p>
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#dotnettool">Cake .NET Tool</a></li>
+    <li><a data-toggle="tab" href="#sdk">Cake Sdk</a></li>
+    <li><a data-toggle="tab" href="#frosting">Cake.Frosting</a></li>
+</ul>
 
-<div class="alert alert-info">
-  <p>
-    Preprocessor directives are not required or available when running with <a href="/docs/running-builds/runners/cake-frosting">Cake Frosting</a>.
-  </p>
+<div class="tab-content">
+    <div id="dotnettool" class="tab-pane fade in active">
+        <p>
+          Cake scripts have support for pre-processor line directives, which run before the script is executed.
+          These can be used to reference other scripts, assemblies, namespaces and more.
+        </p>
+
+        @Html.Partial("_ChildPages")
+    </div>
+    
+    <div id="sdk" class="tab-pane fade">
+      <p>
+        Cake Sdk has support for pre-processor line directives, which run before the application is compiled.
+      </p>
+      <a href="/docs/writing-builds/sdk/preprocessor-directives">View available pre-processor directives</a>
+    </div>
+    
+    <div id="frosting" class="tab-pane fade">
+        <div class="alert alert-info">
+          <p>
+            Preprocessor directives are not required or available when running with <a href="/docs/running-builds/runners/cake-frosting">Cake Frosting</a>.
+          </p>
+        </div>
+    </div>
 </div>
-
-@Html.Partial("_ChildPages")

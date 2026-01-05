@@ -8,10 +8,10 @@ RedirectFrom: docs/tools/installing-tools
 
 Cake provides different ways to install tool executables available as NuGet packages as part of a build.
 
-| Installation method              | Cake .NET Tool | Cake Frosting |
-|----------------------------------|----------------|---------------|
-| [Pre-processor directive]        | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-xmark" style="color:red"></i>   |
-| [InstallTool]                    | <i class="fa-solid fa-xmark" style="color:red"></i>   | <i class="fa-solid fa-check" style="color:green"></i> |
+| Installation method              | Cake .NET Tool | Cake Frosting | Cake.Sdk |
+|----------------------------------|----------------|---------------|----------|
+| [Pre-processor directive]        | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-xmark" style="color:red"></i>   | <i class="fa-solid fa-xmark" style="color:red"></i>   |
+| [InstallTool]                    | <i class="fa-solid fa-xmark" style="color:red"></i>   | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> |
 
 ## Installing tools via pre-processor directive
 
@@ -35,12 +35,14 @@ For more information see [#tool pre-processor directive].
 
 ## Installing tools with InstallTool
 
-[Cake Frosting] provides a `InstallTool` method to download a tool and install it:
+[Cake Frosting] and [Cake.Sdk] provide an `InstallTool` method to download a tool and install it:
 
 :::{.alert .alert-info}
 Out of the box NuGet and .NET Tools (since Cake 1.1) are supported as provider.
 More providers are available through [Modules](/extensions/).
 :::
+
+### Cake Frosting
 
 The following example downloads the [xunit.runner.console package](https://www.nuget.org/packages/xunit.runner.console)
 as part of executing your build script:
@@ -58,6 +60,26 @@ public class Program : IFrostingStartup
     }
 }
 ```
+
+### Cake.Sdk
+
+The following example downloads the [GitVersion.Tool package](https://www.nuget.org/packages/GitVersion.Tool)
+as part of executing your build script:
+
+```csharp
+#:sdk Cake.Sdk
+
+Setup(context =>
+{
+    InstallTool("dotnet:https://api.nuget.org/v3/index.json?package=GitVersion.Tool&version=6.3.0");
+    var version = GitVersion();
+    Information("Building Version: {0}", version.FullSemVer);
+});
+```
+
+:::{.alert .alert-info}
+For more information about using tools with Cake.Sdk see [Installing and using tools with Cake.Sdk](/docs/writing-builds/sdk/tools).
+:::
 
 :::{.alert .alert-info}
 For more information about supported URI string parameters see [#tool pre-processor directive].
@@ -87,6 +109,7 @@ Task("Install-XUnit")
 
 [Cake .NET Tool]: /docs/running-builds/runners/dotnet-tool
 [Cake Frosting]: /docs/running-builds/runners/cake-frosting
+[Cake.Sdk]: /docs/running-builds/runners/cake-sdk
 [Pre-processor directive]: #installing-tools-via-pre-processor-directive
 [InstallTool]: #installing-tools-with-installtool
 [Bootstrapper]: #installing-tools-via-bootstrapper
