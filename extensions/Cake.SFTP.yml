@@ -9,11 +9,11 @@ Author: JeroenVandezande
 Description: a plug-in for Cake Build that allows you to upload, download and delete files on an SFT server.
 Categories:
 - sftp
-TargetCakeVersion: 3.0.0
+TargetCakeVersion: 4.0.0
 TargetFrameworks:
-- net6.0
-- net7.0
 - net8.0
-AnalyzedPackageVersion: 1.6.0
+- net9.0
+- net10.0
+AnalyzedPackageVersion: 2.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2023-08-03T17:27:43.4630000Z
+AnalyzedPackagePublishDate: 2026-01-09T13:17:50.9200000Z
