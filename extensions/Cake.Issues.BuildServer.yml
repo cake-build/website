@@ -1,0 +1,31 @@
+Type: Addin
+Name: Cake.Issues.BuildServer
+NuGet: Cake.Issues.BuildServer
+Assemblies:
+- /**/Cake.Issues.BuildServer.dll
+Repository: https://github.com/cake-contrib/Cake.Issues.git
+ProjectUrl: https://cakeissues.net/
+Author: Cake Issues contributors
+Description: >-
+  The issues addin for Cake allows you to report issues to build servers.
+
+
+  This addin provides the aliases for reporting issues to build servers.
+
+  It requires the core Cake.Issues addin and one or more issue provider addins for reading issues from different analyzers or linters.
+
+
+  See the Project Site for an overview of the whole ecosystem of addins for working with issues in Cake scripts.
+Categories:
+- cake-issues
+- build-server
+- ci
+- issues
+TargetCakeVersion: 6.0.0
+TargetFrameworks:
+- net8.0
+- net9.0
+- net10.0
+AnalyzedPackageVersion: 6.0.0-beta0002
+AnalyzedPackageIsPrerelease: true
+AnalyzedPackagePublishDate: 2026-01-14T21:33:54.7030000Z
