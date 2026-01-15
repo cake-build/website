@@ -1,0 +1,39 @@
+Type: Addin
+Name: Cake.Issues.BuildServer.AppVeyor
+NuGet: Cake.Issues.BuildServer.AppVeyor
+Assemblies:
+- /**/Cake.Issues.BuildServer.AppVeyor.dll
+Repository: https://github.com/cake-contrib/Cake.Issues.git
+ProjectUrl: https://cakeissues.net/
+Author: Cake Issues contributors
+Description: >-
+  AppVeyor support for the Cake.Issues addin for Cake allows you to write found issues as message to AppVeyor builds.
+
+
+  This addin provides the aliases for writing to AppVeyor builds.
+
+  It also requires the core Cake.Issues and Cake.Issues.BuildServer addins and one or more issue providers.
+
+
+  See the Project Site for an overview of the whole ecosystem of addins for working with issues in Cake scripts.
+
+
+  NOTE:
+
+  This is the version of the addin compatible with Cake Script Runners.
+
+  For addin compatible with Cake Frosting see Cake.Frosting.Issues.BuildServer.AppVeyor.
+Categories:
+- cake-issues
+- cake-issues-buildserver
+- issues
+- buildserver
+- appveyor
+TargetCakeVersion: 6.0.0
+TargetFrameworks:
+- net8.0
+- net9.0
+- net10.0
+AnalyzedPackageVersion: 6.0.0-beta0002
+AnalyzedPackageIsPrerelease: true
+AnalyzedPackagePublishDate: 2026-01-14T21:33:18.6270000Z
