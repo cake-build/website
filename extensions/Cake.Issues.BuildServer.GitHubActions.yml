@@ -1,0 +1,40 @@
+Type: Addin
+Name: Cake.Issues.BuildServer.GitHubActions
+NuGet: Cake.Issues.BuildServer.GitHubActions
+Assemblies:
+- /**/Cake.Issues.BuildServer.GitHubActions.dll
+Repository: https://github.com/cake-contrib/Cake.Issues.git
+ProjectUrl: https://cakeissues.net/
+Author: Cake Issues contributors
+Description: >-
+  GitHub Actions support for the Cake.Issues addin for Cake allows you to report to GitHub Actions builds.
+
+
+  This addin provides the aliases for writing to GitHub Actions builds.
+
+  It also requires the core Cake.Issues and Cake.Issues.BuildServer addins and one or more issue providers.
+
+
+  See the Project Site for an overview of the whole ecosystem of addins for working with issues in Cake scripts.
+
+
+  NOTE:
+
+  This is the version of the addin compatible with Cake Script Runners.
+
+  For addin compatible with Cake Frosting see Cake.Frosting.Issues.BuildServer.GitHubActions.
+Categories:
+- cake-issues
+- cake-issues-buildserver
+- issues
+- buildserver
+- github
+- github-actions
+TargetCakeVersion: 6.0.0
+TargetFrameworks:
+- net8.0
+- net9.0
+- net10.0
+AnalyzedPackageVersion: 6.0.0-beta0002
+AnalyzedPackageIsPrerelease: true
+AnalyzedPackagePublishDate: 2026-01-14T21:33:48.8100000Z
