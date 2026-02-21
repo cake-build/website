@@ -4518,6 +4518,7 @@
     "AvatarUrl": "https://avatars.githubusercontent.com/u/864820",
     "HtmlUrl": "https://github.com/squid-box",
     "Repositories": [
+      "cake-build/cake",
       "cake-build/website",
       "cake-contrib/Cake.FileHelpers",
       "cake-contrib/Cake.Json",
