@@ -738,11 +738,6 @@
   HtmlUrl: https://github.com/dgreenberg-cimpress
   Repositories:
   - cake-contrib/Cake.AWS.ElasticBeanstalk
-- Name: dharillo
-  AvatarUrl: https://avatars.githubusercontent.com/u/11029404
-  HtmlUrl: https://github.com/dharillo
-  Repositories:
-  - cake-build/cake
 - Name: dhindrik
   AvatarUrl: https://avatars.githubusercontent.com/u/6691971
   HtmlUrl: https://github.com/dhindrik
@@ -3006,6 +3001,11 @@
   HtmlUrl: https://github.com/santey
   Repositories:
   - cake-contrib/Cake.DoInDirectory
+- Name: sarita2129
+  AvatarUrl: https://avatars.githubusercontent.com/u/44013856
+  HtmlUrl: https://github.com/sarita2129
+  Repositories:
+  - cake-build/cake
 - Name: SarthakPaandey
   AvatarUrl: https://avatars.githubusercontent.com/u/145528240
   HtmlUrl: https://github.com/SarthakPaandey
