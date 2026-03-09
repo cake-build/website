@@ -3613,3 +3613,8 @@
   HtmlUrl: https://github.com/zbeer
   Repositories:
   - cake-contrib/Cake.Azure
+- Name: Zulu-Inuoe
+  AvatarUrl: https://avatars.githubusercontent.com/u/1526310
+  HtmlUrl: https://github.com/Zulu-Inuoe
+  Repositories:
+  - cake-build/cake
