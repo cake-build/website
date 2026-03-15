@@ -30,13 +30,14 @@ else
 <h1 id="running-cake">Running Cake</h1>
 
 <p>
-    You can run Cake on Bitbucket Pipelines using the <code>dotnet cake</code> command:
+    The recommended way to run Cake on Bitbucket Pipelines is by using a tool manifest:
 </p>
 
 <pre><code class="language-yaml hljs">pipelines:
   default:
     - step:
         script:
+          - dotnet tool restore
           - dotnet cake
 </code></pre>
 

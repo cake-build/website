@@ -35,10 +35,11 @@ else
 <h1 id="running-cake">Running Cake</h1>
 
 <p>
-    You can run Cake on AppVeyor using the <code>dotnet cake</code> command:
+    The recommended way to run Cake on AppVeyor is by using a tool manifest:
 </p>
 
 <pre><code class="language-yaml hljs">build_script:
+  - dotnet tool restore
   - dotnet cake
 </code></pre>
 

@@ -31,10 +31,11 @@ else
 <h1 id="running-cake">Running Cake</h1>
 
 <p>
-    You can run Cake on Travis CI using the <code>dotnet cake</code> command:
+    The recommended way to run Cake on Travis CI is by using a tool manifest:
 </p>
 
 <pre><code class="language-yaml hljs">script:
+  - dotnet tool restore
   - dotnet cake
 </code></pre>
 

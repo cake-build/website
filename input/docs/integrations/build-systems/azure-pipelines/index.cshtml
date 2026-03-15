@@ -31,11 +31,13 @@ else
 <h1 id="running-cake">Running Cake</h1>
 
 <p>
-    You can run Cake on Azure Pipelines using the <code>dotnet cake</code> command:
+    The recommended way to run Cake on Azure Pipelines is by using a tool manifest:
 </p>
 
 <pre><code class="language-yaml hljs">steps:
-- script: dotnet cake
+- script: |
+    dotnet tool restore
+    dotnet cake
   displayName: 'Run Cake'
 </code></pre>
 
