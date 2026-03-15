@@ -27,6 +27,18 @@ else
     </p>
 </div>
 
+<h1 id="running-cake">Running Cake</h1>
+
+<p>
+    The recommended way to run Cake on Bitrise is by using a tool manifest.
+    Add a <strong>Script</strong> step to your workflow containing:
+</p>
+
+<pre><code class="language-bash hljs">#!/bin/bash
+dotnet tool restore
+dotnet cake
+</code></pre>
+
 <h1 id="included-support">Available 3rd party extensions</h1>
 
 @{

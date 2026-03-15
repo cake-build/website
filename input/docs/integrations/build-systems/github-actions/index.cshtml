@@ -28,6 +28,36 @@ else
     </p>
 </div>
 
+<h1 id="running-cake">Running Cake</h1>
+
+<p>
+    The recommended way to run Cake on GitHub Actions is using the <a href="https://github.com/cake-build/cake-action">Cake Action</a>.
+    This action handles tool restoration and ensures that all GitHub build provider commands work correctly.
+</p>
+
+<pre><code class="language-yaml hljs">jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run Cake
+        uses: cake-build/cake-action@v3
+        with:
+          cake-version: tool-manifest
+</code></pre>
+
+<p>
+    If you are using <a href="/docs/getting-started/setting-up-a-new-cakesdk-project">Cake.Sdk</a>, you can specify the script file:
+</p>
+
+<pre><code class="language-yaml hljs">      - name: Run Cake
+        uses: cake-build/cake-action@v3
+        with:
+          file-path: build.cs
+</code></pre>
+
 <h1 id="included-support">Available 3rd party extensions</h1>
 
 @{
