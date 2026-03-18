@@ -24,3 +24,7 @@ See [Spectre.Console] documentation for details.
 [trees]: https://spectreconsole.net/widgets/tree
 [bar charts]: https://spectreconsole.net/widgets/barchart
 [FIGlet text]: https://spectreconsole.net/widgets/figlet
+
+Cake is built against a specific version of Spectre.Console. If you intend to use Spectre.Console directly in your scripts (e.g., via the #addin directive), you should ensure that you use the same version that Cake uses to avoid assembly versioning conflicts and potential FileLoadException errors.
+
+For more details on why this is necessary, see GitHub issue cake-build/cake#3260.
