@@ -8,6 +8,8 @@ RedirectFrom: docs/tools/installing-tools
 
 Cake provides different ways to install tool executables available as NuGet packages as part of a build.
 
+If you want to compare different ways to run external tools after installation, see [Running tools](running-tools.md)
+
 | Installation method              | Cake .NET Tool | Cake Frosting | Cake.Sdk |
 |----------------------------------|----------------|---------------|----------|
 | [Pre-processor directive]        | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-xmark" style="color:red"></i>   | <i class="fa-solid fa-xmark" style="color:red"></i>   |
