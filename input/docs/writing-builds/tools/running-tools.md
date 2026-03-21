@@ -53,55 +53,16 @@ Task("DockerRm")
 ### Cake .NET Tool
 
 With the Cake .NET Tool, use the `#addin` preprocessor directive in Cake scripts. The add-in aliases are then available globally.
-### Cake.Sdk
-
-When using Cake.Sdk, reference add-ins with the `#:package` preprocessor directive in file-based apps. The add-in aliases are then available globally.
-
-```csharp
-#:sdk Cake.Sdk@6.1.1
-#:package Cake.Docker@1.5.0-beta.1
-
-Task("DockerRm")
-    .Does(() => {
-        // one or more container names
-        DockerRm("containerName1", "containerName2");
-    });
-
-```
-
-### Cake .NET Tool
-
-With the Cake .NET Tool, use the `#addin` preprocessor directive in Cake scripts. The add-in aliases are then available globally.
 
 ```csharp
 #addin nuget:?package=Cake.Docker&version=1.5.0-beta.1&prerelease
 
 Task("DockerRm")
-    .Does(() => {
+    .Does(() =>
+    {
         // one or more container names
         DockerRm("containerName1", "containerName2");
     });
-```
-
-### Cake Frosting
-
-Add the add-in as a package reference in your Frosting project file:
-
-```xml
-<PackageReference Include="Cake.Docker" Version="1.5.0-beta.1" />
-```
-
-Then use it as an extension method on the build context in your tasks:
-
-```csharp
-[TaskName("DockerRm")]
-public sealed class DockerRmTask : FrostingTask<BuildContext>
-{
-    public override void Run(BuildContext context)
-    {
-        context.DockerRm("containerName1", "containerName2");
-    }
-}
 ```
 
 ### Cake Frosting
@@ -148,32 +109,6 @@ Setup(context =>
 
 Task("Ef-Version")
     .Does(() =>
-{
-    Command(
-        new[] { "dotnet", "dotnet.exe" },
-        "ef --version"
-    );
-});
-```
-
-### Cake .NET Tool
-
-Use the `#tool` preprocessor directive so Cake downloads the tool into the build's tool cache before the script runs.
-
-### Cake.Sdk
-
-Call `InstallTool` during setup so the .NET tool package is available to later tasks.
-
-```csharp
-#:sdk Cake.Sdk@6.1.1
-
-Setup(context =>
-{
-    InstallTool("dotnet:https://api.nuget.org/v3/index.json?package=dotnet-ef&version=8.0.0");
-});
-
-Task("Ef-Version")
-    .Does(() =>
     {
         Command(
             new[] { "dotnet", "dotnet.exe" },
@@ -202,38 +137,6 @@ Task("Ef-Version")
 ### Cake Frosting
 
 Register the tool when building the host with `InstallTool`, then invoke the same command from a task via the context.
-
-```csharp
-public sealed class Program : IFrostingStartup
-{
-    public static int Main(string[] args)
-    {
-        return new CakeHost()
-            .InstallTool(new Uri("dotnet:?package=dotnet-ef&version=8.0.0"))
-            .Run(args);
-    }
-}
-```
-
-```csharp
-[TaskName("Ef-Version")]
-public sealed class EfVersionTask : FrostingTask<BuildContext>
-{
-    public override void Run(BuildContext context)
-    {
-        context.Command(
-            new[] { "dotnet", "dotnet.exe" },
-            "ef --version"
-        );
-    }
-}
-```
-
-
-
-### Cake Frosting
-
-Register the tool when building the host with `InstallTool`, then invoke the command from a task via the build context.
 
 ```csharp
 public sealed class Program : IFrostingStartup
