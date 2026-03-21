@@ -53,16 +53,55 @@ Task("DockerRm")
 ### Cake .NET Tool
 
 With the Cake .NET Tool, use the `#addin` preprocessor directive in Cake scripts. The add-in aliases are then available globally.
+### Cake.Sdk
+
+When using Cake.Sdk, reference add-ins with the `#:package` preprocessor directive in file-based apps. The add-in aliases are then available globally.
+
+```csharp
+#:sdk Cake.Sdk@6.1.1
+#:package Cake.Docker@1.5.0-beta.1
+
+Task("DockerRm")
+    .Does(() => {
+        // one or more container names
+        DockerRm("containerName1", "containerName2");
+    });
+
+```
+
+### Cake .NET Tool
+
+With the Cake .NET Tool, use the `#addin` preprocessor directive in Cake scripts. The add-in aliases are then available globally.
 
 ```csharp
 #addin nuget:?package=Cake.Docker&version=1.5.0-beta.1&prerelease
 
 Task("DockerRm")
-    .Does(() =>
+    .Does(() => {
+        // one or more container names
+        DockerRm("containerName1", "containerName2");
+    });
+```
+
+### Cake Frosting
+
+Add the add-in as a package reference in your Frosting project file:
+
+```xml
+<PackageReference Include="Cake.Docker" Version="1.5.0-beta.1" />
+```
+
+Then use it as an extension method on the build context in your tasks:
+
+```csharp
+[TaskName("DockerRm")]
+public sealed class DockerRmTask : FrostingTask<BuildContext>
 {
-    // one or more container names
-    DockerRm("containerName1", "containerName2");
-});
+    public override void Run(BuildContext context)
+    {
+        context.DockerRm("containerName1", "containerName2");
+    }
+}
 ```
 
 ### Cake Frosting
