@@ -106,6 +106,6 @@ Use this order of preference:
 3. [Command alias] for generic command execution.
 4. [StartProcess alias] for low-level process control.
 
-[Cake.Common]: /api/Cake.Common/
-[Command alias]: /dsl/command/
-[StartProcess alias]: /dsl/process/
+[Cake.Common]: https://cakebuild.net/api/Cake.Common/
+[Command alias]: https://cakebuild.net/dsl/command/
+[StartProcess alias]: https://cakebuild.net/dsl/process/
