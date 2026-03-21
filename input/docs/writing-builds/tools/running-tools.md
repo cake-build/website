@@ -160,18 +160,76 @@ Task("Ef-Version")
 
 Use the `#tool` preprocessor directive so Cake downloads the tool into the build's tool cache before the script runs.
 
+### Cake.Sdk
+
+Call `InstallTool` during setup so the .NET tool package is available to later tasks.
+
+```csharp
+#:sdk Cake.Sdk@6.1.1
+
+Setup(context =>
+{
+    InstallTool("dotnet:https://api.nuget.org/v3/index.json?package=dotnet-ef&version=8.0.0");
+});
+
+Task("Ef-Version")
+    .Does(() =>
+    {
+        Command(
+            new[] { "dotnet", "dotnet.exe" },
+            "ef --version"
+        );
+    });
+```
+
+### Cake .NET Tool
+
+Use the `#tool` preprocessor directive so Cake downloads the tool into the build's tool cache (for example under `tools`) before the script runs.
+
 ```csharp
 #tool dotnet:?package=dotnet-ef&version=8.0.0
 
 Task("Ef-Version")
     .Does(() =>
-{
-    Command(
-        new[] { "dotnet", "dotnet.exe" },
-        "ef --version"
-    );
-});
+    {
+        Command(
+            new[] { "dotnet", "dotnet.exe" },
+            "ef --version"
+        );
+    });
 ```
+
+### Cake Frosting
+
+Register the tool when building the host with `InstallTool`, then invoke the same command from a task via the context.
+
+```csharp
+public sealed class Program : IFrostingStartup
+{
+    public static int Main(string[] args)
+    {
+        return new CakeHost()
+            .InstallTool(new Uri("dotnet:?package=dotnet-ef&version=8.0.0"))
+            .Run(args);
+    }
+}
+```
+
+```csharp
+[TaskName("Ef-Version")]
+public sealed class EfVersionTask : FrostingTask<BuildContext>
+{
+    public override void Run(BuildContext context)
+    {
+        context.Command(
+            new[] { "dotnet", "dotnet.exe" },
+            "ef --version"
+        );
+    }
+}
+```
+
+
 
 ### Cake Frosting
 
