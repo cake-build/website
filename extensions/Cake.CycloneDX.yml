@@ -12,10 +12,11 @@ Categories:
 - bom
 - sbom
 - cake-build
-TargetCakeVersion: 5.0.0
+TargetCakeVersion: 6.1.0
 TargetFrameworks:
 - net8.0
 - net9.0
-AnalyzedPackageVersion: 0.0.4
+- net10.0
+AnalyzedPackageVersion: 0.0.5
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2025-06-19T13:42:53.6570000Z
+AnalyzedPackagePublishDate: 2026-04-10T08:11:28.0470000Z
