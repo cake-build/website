@@ -2,6 +2,7 @@ Order: 20
 Title: IntelliSense in Visual Studio Code
 Description: Support for IntelliSense
 RedirectFrom: docs/editors/vscode/intellisense
+
 ---
 
 # Enabling IntelliSense
@@ -49,7 +50,14 @@ To enable IntelliSense support in Visual Studio Code follow these steps:
                 </div>
             </li>
             <li>
-                <p>Install <a href="https://github.com/cake-build/bakery">Cake.Bakery</a> using any of the following options:</p>
+                <p>
+                Install <a href="https://github.com/cake-build/bakery">Cake.Bakery</a> using any of the following options:
+                </p>
+                <div class="alert alert-info">
+                  <p>
+                     <strong>Note:</strong> Cake.Bakery 0.7.0 and later requires .NET 6 to run.
+                  </p>
+                </div>
                 <ul>
                     <li>
                         <p>
@@ -169,16 +177,18 @@ Look for `OmniSharp.Cake.dll` in `%userprofile%\.vscode\extensions\ms-vscode.csh
 
 To use a pre-release version of OmniSharp follow these steps:
 
-* Open command palette (<code>Ctrl+Shift+P</code>)
-* Select <code>Open User Settings</code> command
+- Open command palette (<code>Ctrl+Shift+P</code>)
+- Select <code>Open User Settings</code> command
 
   ![Open user settings](/assets/img/intellisense-vscode/open-user-settings.png)
-* Search for `omnisharp.path` and click `Edit in settings.json`
+
+- Search for `omnisharp.path` and click `Edit in settings.json`
 
   ![omnisharp.path settings](/assets/img/intellisense-vscode/omnisharp-path.png)
-* Set `"omnisharp.path": "latest"` and save settings
-* Answer question if you want to restart OmniSharp server with yes
-* Wait until new version of OmniSharp is downloaded, installed and started
+
+- Set `"omnisharp.path": "latest"` and save settings
+- Answer question if you want to restart OmniSharp server with yes
+- Wait until new version of OmniSharp is downloaded, installed and started
 
 ## I tried everything above, I still don't get IntelliSense.
 
