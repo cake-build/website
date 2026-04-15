@@ -2,6 +2,7 @@ Order: 15
 Title: Running tools
 Description: Different ways to run external tools in Cake builds
 ---
+In Cake, external tools can be executed in multiple ways depending on the level of control and abstraction required.
 
 Cake provides several ways to run external tools. The best approach depends on whether a typed alias already exists, whether the tool is exposed by an addin, or whether you need full control over process execution.
 
@@ -11,6 +12,8 @@ Cake provides several ways to run external tools. The best approach depends on w
 | Alias from an addin | Tools supported by community addins |
 | [Command alias] | Generic command execution with Cake tool resolution |
 | [StartProcess alias] | Full low-level process control |
+
+Choose the approach based on your use case and required level of control.
 
 ## Use built-in aliases from Cake.Common
 
@@ -197,10 +200,10 @@ Why use this approach:
 
 Use this order of preference:
 
-1. Built-in aliases from [Cake.Common].
-2. Aliases from addins.
-3. [Command alias] for generic command execution.
-4. [StartProcess alias] for low-level process control.
+- Use built-in aliases whenever available.
+- Use addins if the tool is supported by the community.
+- Use Command alias for simple command execution.
+- Use StartProcess for advanced scenarios requiring full control.
 
 [Cake.Common]: https://cakebuild.net/api/Cake.Common/
 [Command alias]: https://cakebuild.net/dsl/command/
