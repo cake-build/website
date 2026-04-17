@@ -18,6 +18,6 @@ TargetFrameworks:
 - net7.0
 - net8.0
 - netstandard2.0
-AnalyzedPackageVersion: 0.3.43
+AnalyzedPackageVersion: 0.4.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2024-02-09T14:48:56.5370000Z
+AnalyzedPackagePublishDate: 2026-04-16T20:59:10.0800000Z
