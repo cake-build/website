@@ -12,12 +12,12 @@ Categories:
 - report
 - html
 - generator
-TargetCakeVersion: 1.0.0
+TargetCakeVersion: 1.3.0
 TargetFrameworks:
 - net6.0
 - net7.0
 - net8.0
 - netstandard2.0
-AnalyzedPackageVersion: 0.4.0
+AnalyzedPackageVersion: 0.4.1
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2026-04-16T20:59:10.0800000Z
+AnalyzedPackagePublishDate: 2026-04-17T16:08:35.9130000Z
