@@ -3056,6 +3056,11 @@
   HtmlUrl: https://github.com/sgronlund
   Repositories:
   - cake-build/cake
+- Name: sgulmez
+  AvatarUrl: https://avatars.githubusercontent.com/u/280728187
+  HtmlUrl: https://github.com/sgulmez
+  Repositories:
+  - cake-contrib/Cake.Discord
 - Name: Sharparam
   AvatarUrl: https://avatars.githubusercontent.com/u/551094
   HtmlUrl: https://github.com/Sharparam
