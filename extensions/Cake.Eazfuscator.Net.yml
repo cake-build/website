@@ -10,9 +10,11 @@ Description: Cake addin that extends Cake with ability to use Eazfuscator.Net.
 Categories:
 - eazfuscator.net
 - obfuscator
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 6.0.0
 TargetFrameworks:
-- netstandard2.0
-AnalyzedPackageVersion: 0.2.0
+- net8.0
+- net9.0
+- net10.0
+AnalyzedPackageVersion: 6.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2019-05-05T20:11:49.2000000Z
+AnalyzedPackagePublishDate: 2026-05-06T20:28:29.9530000Z
