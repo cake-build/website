@@ -15,6 +15,6 @@ TargetFrameworks:
 - netcoreapp3.1
 - net5.0
 - net6.0
-AnalyzedPackageVersion: 2.0.0
+AnalyzedPackageVersion: 2.1.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2022-09-16T19:38:04.7400000Z
+AnalyzedPackagePublishDate: 2026-05-08T08:23:08.0430000Z
