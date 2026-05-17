@@ -20,7 +20,7 @@ If you want to compare different ways to run external tools after installation, 
 The [#tool pre-processor directive] for [Cake .NET Tool] can be used to automatically download a tool and install it in the `tools` folder.
 
 :::{.alert .alert-info}
-Out of the box NuGet and .NET Tools (since Cake 1.1) are supported as provider.
+Out of the box, NuGet and .NET Tools (since Cake 1.1) are supported as providers.
 More providers are available through [Modules](/extensions/).
 :::
 
@@ -40,7 +40,7 @@ For more information see [#tool pre-processor directive].
 [Cake Frosting] and [Cake.Sdk] provide an `InstallTool` method to download a tool and install it:
 
 :::{.alert .alert-info}
-Out of the box NuGet and .NET Tools (since Cake 1.1) are supported as provider.
+Out of the box, NuGet and .NET Tools (since Cake 1.1) are supported as providers.
 More providers are available through [Modules](/extensions/).
 :::
 
@@ -89,13 +89,13 @@ For more information about supported URI string parameters see [#tool pre-proces
 
 # Installing tools from other providers
 
-Out of the box NuGet and .NET Tools (since Cake 1.1) is supported as provider for [Pre-processor directive] and [InstallTool].
+Out of the box, NuGet and .NET Tools (since Cake 1.1) are supported as providers for the [Pre-processor directive] and [InstallTool].
 More providers are available through [Modules](/extensions/).
 
 # Using tools from disk
 
 To use a tool that's not available via NuGet or if you prefer to store the tool locally,
-Cakes [tool resolution conventions](tool-resolution) can be used to resolve the path to the tool and call it through a [process alias](/dsl/process/):
+Cake's [tool resolution conventions](tool-resolution) can be used to resolve the path to the tool and call it through a [process alias](/dsl/process/):
 
 ```csharp
 Task("Install-XUnit")

@@ -43,7 +43,7 @@ If not provided, the dotnet CLI will install the latest package version that is 
 # Global
 
 By default, a tool will be installed to the configured Cake Tools folder.
-If the tool should be installed globally on the machine, the `global` parameter need to be passed.
+If the tool should be installed globally on the machine, the `global` parameter needs to be passed.
 
 ## Example
 
@@ -53,7 +53,7 @@ If the tool should be installed globally on the machine, the `global` parameter 
 
 # Config File
 
-Allows to specify a NuGet config to use for example to authenticate to a particular feed.
+Allows you to specify a NuGet config to use, for example to authenticate to a particular feed.
 
 ## Example
 
