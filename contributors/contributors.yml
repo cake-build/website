@@ -103,6 +103,11 @@
   HtmlUrl: https://github.com/akpath
   Repositories:
   - cake-build/website
+- Name: alberto2005-coder
+  AvatarUrl: https://avatars.githubusercontent.com/u/201439811
+  HtmlUrl: https://github.com/alberto2005-coder
+  Repositories:
+  - cake-build/website
 - Name: AlbertoMonteiro
   AvatarUrl: https://avatars.githubusercontent.com/u/836496
   HtmlUrl: https://github.com/AlbertoMonteiro
@@ -1933,6 +1938,11 @@
   HtmlUrl: https://github.com/Ky7m
   Repositories:
   - cake-build/website
+- Name: LadeeshaIAJLSK
+  AvatarUrl: https://avatars.githubusercontent.com/u/188319764
+  HtmlUrl: https://github.com/LadeeshaIAJLSK
+  Repositories:
+  - cake-build/website
 - Name: LagunaElectric
   AvatarUrl: https://avatars.githubusercontent.com/u/6085143
   HtmlUrl: https://github.com/LagunaElectric
@@ -2243,6 +2253,11 @@
   Repositories:
   - cake-build/website
   - cake-contrib/Cake.Yarn
+- Name: Miltiadis-Papavramidis
+  AvatarUrl: https://avatars.githubusercontent.com/u/172621795
+  HtmlUrl: https://github.com/Miltiadis-Papavramidis
+  Repositories:
+  - cake-build/website
 - Name: MirzaMerdovic
   AvatarUrl: https://avatars.githubusercontent.com/u/16725633
   HtmlUrl: https://github.com/MirzaMerdovic
