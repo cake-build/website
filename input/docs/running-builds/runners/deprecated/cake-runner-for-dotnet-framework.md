@@ -175,8 +175,8 @@ Cake uses [Azure Artifacts](https://dev.azure.com/cake-build/Cake/_packaging?_a=
 With these pre-release builds the next version of Cake can be accessed and utilized for getting the latest features or testing addins or build scripts to know if the next release will be safe when you need to upgrade.
 
 :::{.alert .alert-info}
-These instructions assume you are using the NuGet CLI as done in the [default bootstrapper for Windows](https://github.com/cake-build/resources/blob/develop/build.ps1)
-or [default bootstrapper for macOS & Linux](https://github.com/cake-build/resources/blob/develop/build.sh).
+These instructions assume you are using the NuGet CLI as done in the [default bootstrapper for Windows](https://github.com/cake-build/resources/blob/master/dotnet-framework/build.ps1)
+or [default bootstrapper for macOS & Linux](https://github.com/cake-build/resources/blob/master/dotnet-framework/build.sh).
 :::
 
 1. Update the bootstrapper

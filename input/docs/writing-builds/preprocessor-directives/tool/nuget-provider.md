@@ -40,7 +40,7 @@ The name of the NuGet package that should be installed.
 # Version
 
 The specific version of the NuGet package that should be installed.
-If not provided, the latest version package that is available will be installed.
+If not provided, the latest package version that is available will be installed.
 
 ## Example
 
@@ -60,15 +60,15 @@ To install prerelease tools without defining a specific `version` (`#tool nuget:
 
 # Include
 
-The `include` parameter allows to define the files which should be included.
+The `include` parameter allows you to define the files which should be included.
 
 :::{.alert .alert-info}
-If the tool filename does not end with `.exe` include needs to be passed.
+If the tool filename does not end with `.exe`, the `include` parameter needs to be passed.
 :::
 
 ## Example
 
-Include a tool with an extension different than `.exe`:
+Include a tool with an extension other than `.exe`:
 
 ```csharp
 #tool nuget:?package=Cake.Foo&include=path/to/foo.cmd
@@ -82,7 +82,7 @@ Include only specific files:
 
 # Exclude
 
-The `exclude` parameter allows exclude specific files.
+The `exclude` parameter allows excluding specific files.
 
 ## Example
 

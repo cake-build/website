@@ -10,7 +10,7 @@ Setup<Deployment>(
 
     FilePath zipFilePath = GetFiles("./**/output.zip").Single();
 
-    context.Information("Found {0} zip file to deploy {0}.", zipFilePath);
+    context.Information("Found {0} zip file to deploy.", zipFilePath);
 
     var kuduPublishVariables = context.EnvironmentVariables()
           .Where(key => key.Key.StartsWith("KUDU_CLIENT_BASEURI_") ||
