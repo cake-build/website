@@ -10,7 +10,7 @@ Cake.Sdk provides the `InstallTool` method to download and install tool executab
 [Cake.Sdk] provides an `InstallTool` method to download a tool and install it:
 
 :::{.alert .alert-info}
-Out of the box NuGet and .NET Tools (since Cake 1.1) are supported as provider.
+Out of the box, NuGet and .NET Tools (since Cake 1.1) are supported as providers.
 More providers are available through [Modules](/extensions/).
 :::
 
@@ -68,7 +68,7 @@ For more information about supported URI string parameters see [#tool pre-proces
 
 # Installing tools from other providers
 
-Out of the box NuGet and .NET Tools (since Cake 1.1) is supported as provider for `InstallTool`.
+Out of the box, NuGet and .NET Tools (since Cake 1.1) are supported as providers for `InstallTool`.
 More providers are available through [Modules](/extensions/).
 
 
