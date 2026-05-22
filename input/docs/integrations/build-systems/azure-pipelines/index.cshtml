@@ -31,14 +31,44 @@ else
 <h1 id="running-cake">Running Cake</h1>
 
 <p>
-    The recommended way to run Cake on Azure Pipelines is by using a tool manifest:
+    The recommended way to run the <a href="/docs/running-builds/runners/dotnet-tool">Cake .NET Tool</a> on Azure Pipelines is by using a tool manifest:
 </p>
 
 <pre><code class="language-yaml hljs">steps:
 - script: |
     dotnet tool restore
     dotnet cake
-  displayName: 'Run Cake'
+  displayName: 'Run Cake .NET Tool'
+</code></pre>
+
+<p>
+    If you are using <a href="/docs/running-builds/runners/cake-sdk">Cake.Sdk</a> with a file-based script:
+</p>
+
+<pre><code class="language-yaml hljs">steps:
+- script: |
+    dotnet cake.cs
+  displayName: 'Run Cake.Sdk (file-based)'
+</code></pre>
+
+<p>
+    If you are using <a href="/docs/running-builds/runners/cake-sdk">Cake.Sdk</a> with a project:
+</p>
+
+<pre><code class="language-yaml hljs">steps:
+- script: |
+    dotnet run --project cake.csproj
+  displayName: 'Run Cake.Sdk (project-based)'
+</code></pre>
+
+<p>
+    If you are using <a href="/docs/running-builds/runners/cake-frosting">Cake Frosting</a>:
+</p>
+
+<pre><code class="language-yaml hljs">steps:
+- script: |
+    dotnet run --project cake.csproj
+  displayName: 'Run Cake Frosting'
 </code></pre>
 
 <h1 id="included-support">Available 3rd party extensions</h1>

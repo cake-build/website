@@ -30,13 +30,37 @@ else
 <h1 id="running-cake">Running Cake</h1>
 
 <p>
-    The recommended way to run Cake on Bitrise is by using a tool manifest.
+    The recommended way to run the <a href="/docs/running-builds/runners/dotnet-tool">Cake .NET Tool</a> on Bitrise is by using a tool manifest.
     Add a <strong>Script</strong> step to your workflow containing:
 </p>
 
 <pre><code class="language-bash hljs">#!/bin/bash
 dotnet tool restore
 dotnet cake
+</code></pre>
+
+<p>
+    If you are using <a href="/docs/running-builds/runners/cake-sdk">Cake.Sdk</a> with a file-based script:
+</p>
+
+<pre><code class="language-bash hljs">#!/bin/bash
+dotnet cake.cs
+</code></pre>
+
+<p>
+    If you are using <a href="/docs/running-builds/runners/cake-sdk">Cake.Sdk</a> with a project:
+</p>
+
+<pre><code class="language-bash hljs">#!/bin/bash
+dotnet run --project cake.csproj
+</code></pre>
+
+<p>
+    If you are using <a href="/docs/running-builds/runners/cake-frosting">Cake Frosting</a>:
+</p>
+
+<pre><code class="language-bash hljs">#!/bin/bash
+dotnet run --project cake.csproj
 </code></pre>
 
 <h1 id="included-support">Available 3rd party extensions</h1>
