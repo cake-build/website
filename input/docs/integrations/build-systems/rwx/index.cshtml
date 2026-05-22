@@ -1,0 +1,151 @@
+Order: 115
+Title: RWX
+Description: Integration with RWX
+---
+
+<h1 id="included-support">Out of the box support</h1>
+
+<p>
+    The <a href="/api/Cake.Common.Build.Rwx/IRwxProvider/">Rwx alias</a>, which returns an
+    <a href="/api/Cake.Common.Build.Rwx/IRwxProvider/">IRwxProvider</a> instance, can be used to interact with the
+    <a href="https://www.rwx.com/">RWX</a> environment. RWX exposes a
+    <a href="https://www.rwx.com/docs/environment-variables#meta-environment-variables">documented environment variable contract</a>
+    that Cake maps to run, task, actor, git, and runtime metadata.
+</p>
+<p>
+    The following example prints the current RWX run id and title when the build runs on RWX:
+</p>
+
+<pre><code class="language-csharp hljs">if (BuildSystem.Rwx.IsRunningOnRwx)
+{
+    Information(
+        "RWX run {0}: {1}",
+        BuildSystem.Rwx.Environment.Run.Id,
+        BuildSystem.Rwx.Environment.Run.Title);
+}
+else
+{
+    Information("Not running on RWX");
+}</code></pre>
+
+<p>
+    Use <code>BuildSystem.Rwx.Commands</code> to write output values, export environment variables for downstream tasks,
+    and upload artifacts from your Cake script. See
+    <a href="https://www.rwx.com/docs/output-values">RWX output values</a>,
+    <a href="https://www.rwx.com/docs/environment-variables">environment variables</a>, and
+    <a href="https://www.rwx.com/docs/artifacts">artifacts</a> for platform details.
+</p>
+
+<div class="alert alert-info">
+    <p>
+        See <a href="/api/Cake.Common.Build.Rwx/IRwxProvider/">IRwxProvider</a> for details and available members to interact with RWX.
+    </p>
+</div>
+
+<h1 id="running-cake">Running Cake</h1>
+
+<p>
+    RWX pipelines are defined in YAML. A typical flow clones your repository, installs .NET from <code>global.json</code>,
+    then runs Cake in a <code>run</code> step.
+</p>
+
+<p>
+    The recommended way to run the <a href="/docs/running-builds/runners/dotnet-tool">Cake .NET Tool</a> on RWX is by using a tool manifest:
+</p>
+
+<pre><code class="language-yaml hljs">  - key: build
+    use: install-dotnet
+    run: |
+      dotnet tool restore
+      dotnet cake
+</code></pre>
+
+<p>
+    If you are using <a href="/docs/running-builds/runners/cake-sdk">Cake.Sdk</a> with a file-based script:
+</p>
+
+<pre><code class="language-yaml hljs">  - key: build
+    use: install-dotnet
+    run: |
+      dotnet cake.cs
+</code></pre>
+
+<p>
+    If you are using <a href="/docs/running-builds/runners/cake-sdk">Cake.Sdk</a> with a project, or
+    <a href="/docs/running-builds/runners/cake-frosting">Cake Frosting</a>:
+</p>
+
+<pre><code class="language-yaml hljs">  - key: build
+    use: install-dotnet
+    run: |
+      dotnet run --project cake.csproj
+</code></pre>
+
+<p>
+    The following minimal pipeline checks out a commit, installs .NET, and runs all three Cake runners in one task (useful for
+    validating multiple entry points in the same repository):
+</p>
+
+<pre><code class="language-yaml hljs">on:
+  github:
+    pull_request:
+      init:
+        commit-sha: ${{ event.git.sha }}
+    push:
+      - if: ${{ event.git.branch == 'develop' || event.git.branch == 'main' || starts-with(event.git.branch, 'hotfix/') }}
+        init:
+          commit-sha: ${{ event.git.sha }}
+  cli:
+    init:
+      commit-sha: ${{ event.git.sha }}
+
+base:
+  image: ubuntu:26.04
+  config: rwx/base 1.1.1
+
+tasks:
+  - key: code
+    call: git/clone 2.0.7
+    with:
+      repository: https://github.com/your-org/your-repo.git
+      ref: ${{ init.commit-sha }}
+      fetch-full-depth: true
+      preserve-git-dir: true
+
+  - key: install-dotnet
+    use: code
+    call: dotnet/install 1.0.0
+    with:
+      global-json-file: global.json
+    filter:
+      - global.json
+
+  - key: build
+    use: [code, install-dotnet]
+    run: |
+      # Cake Sdk
+      dotnet cake.cs
+
+      # Cake Tool
+      dotnet tool restore
+      dotnet cake
+
+      # Cake Frosting
+      dotnet run --project cake.csproj
+</code></pre>
+
+<p>
+    Replace <code>repository</code> with your Git URL and keep only the <code>run</code> commands you need for your chosen runner.
+</p>
+
+<h1 id="included-support">Available 3rd party extensions</h1>
+
+@{
+    var keywords = new List<string> { "rwx" };
+    var extensions =
+        Documents["Extensions"]
+            .Where(x =>
+                keywords.Any(y => x.String("Name").ToLowerInvariant().Contains(y)));
+}
+
+@Html.Partial("_ExtensionsList", extensions)
