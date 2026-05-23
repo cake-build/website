@@ -8,6 +8,45 @@ Cake provides [logging aliases] for writing log messages to the console.
 
 [Logging aliases]: /dsl/logging/
 
+## Verbosity Levels
+
+Cake supports the following verbosity levels, which control how much information is logged:
+
+| Level | Description |
+|-------|-------------|
+| `Quiet` | Only errors are shown |
+| `Minimal` | Errors and warnings |
+| `Normal` | Default level |
+| `Verbose` | Detailed output |
+| `Diagnostic` | Most detailed output |
+
+You can set the verbosity level using the `--verbosity` switch:
+
+```shell
+dotnet cake --verbosity=diagnostic
+```
+
+## Logging Aliases
+
+Cake provides built-in aliases for writing log messages at different levels:
+
+```csharp
+// Information
+Information("This is an informational message.");
+
+// Warning
+Warning("This is a warning.");
+
+// Error
+Error("This is an error.");
+
+// Verbose
+Verbose("This is a verbose message.");
+
+// Debug
+Debug("This is a debug message.");
+```
+
 # Advanced output
 
 Cake ships with [Spectre.Console], which provides advanced functionality to output content to the console,
