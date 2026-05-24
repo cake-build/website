@@ -1,0 +1,19 @@
+Type: Addin
+Name: Cake.GoogleTest
+NuGet: Cake.GoogleTest
+Assemblies:
+- /**/Cake.GoogleTest.dll
+Repository: https://github.com/TheFieryScythe/Cake.GoogleTest.git
+ProjectUrl: https://github.com/TheFieryScythe/Cake.GoogleTest/
+Author: TheFieryScythe
+Description: A Cake add-in providing Google test execution
+Categories:
+- gtest
+- google
+- test
+TargetCakeVersion: 5.0.0
+TargetFrameworks:
+- net8.0
+AnalyzedPackageVersion: 1.0.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2025-07-19T20:11:47.2300000Z
