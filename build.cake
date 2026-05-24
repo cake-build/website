@@ -7,6 +7,9 @@
 #load "github.cake"
 
 using Octokit;
+using System.Text;
+using System.Xml;
+using System.Xml.Linq;
 
 //////////////////////////////////////////////////////////////////////
 // ARGUMENTS
@@ -57,6 +60,70 @@ class ExtensionSpec
 // Variables
 List<ExtensionSpec> extensionSpecs = new List<ExtensionSpec>();
 List<string> assemblies = new List<string>();
+
+void SaveXmlDocument(XDocument document, FilePath path)
+{
+    using(var stream = System.IO.File.Open(path.FullPath, System.IO.FileMode.Create, System.IO.FileAccess.Write, System.IO.FileShare.None))
+    using(var writer = XmlWriter.Create(stream, new XmlWriterSettings
+    {
+        Encoding = new UTF8Encoding(false),
+        Indent = true,
+        IndentChars = "\t",
+        NewLineChars = Environment.NewLine,
+        NewLineHandling = NewLineHandling.Replace,
+        OmitXmlDeclaration = false
+    }))
+    {
+        document.Save(writer);
+    }
+}
+
+void FixFeedEncoding(DirectoryPath outputDirectory)
+{
+    var atomPath = outputDirectory.CombineWithFilePath("blog/feed/atom/index.xml");
+    if (FileExists(atomPath))
+    {
+        var atomDocument = XDocument.Load(atomPath.FullPath);
+        XNamespace atomNamespace = "http://www.w3.org/2005/Atom";
+
+        foreach (var element in atomDocument.Descendants(atomNamespace + "content")
+            .Concat(atomDocument.Descendants(atomNamespace + "summary")))
+        {
+            element.SetAttributeValue("type", "html");
+        }
+
+        SaveXmlDocument(atomDocument, atomPath);
+        Information("Normalized Atom feed content type encoding in {0}", atomPath);
+    }
+
+    var rssPath = outputDirectory.CombineWithFilePath("blog/feed/rss/index.xml");
+    if (FileExists(rssPath))
+    {
+        var rssDocument = XDocument.Load(rssPath.FullPath);
+        XNamespace contentNamespace = "http://purl.org/rss/1.0/modules/content/";
+
+        foreach (var item in rssDocument.Descendants("item"))
+        {
+            var description = item.Element("description");
+            if (description != null)
+            {
+                var html = description.Value;
+                description.RemoveNodes();
+                description.Add(new XCData(html));
+            }
+        }
+
+        foreach (var element in rssDocument.Descendants(contentNamespace + "encoded"))
+        {
+            var html = element.Value;
+            element.RemoveNodes();
+            element.Add(new XCData(html));
+        }
+
+        SaveXmlDocument(rssDocument, rssPath);
+        Information("Normalized RSS feed content encoding in {0}", rssPath);
+    }
+}
 
 //////////////////////////////////////////////////////////////////////
 // SETUP
@@ -199,6 +266,8 @@ Task("Build")
                 { "DOTNET_ROLL_FORWARD", "LatestMajor" },
             },
         });
+
+        FixFeedEncoding(outputPath);
     });
 
 // Does not download artifacts (run Build or GetArtifacts target first)
