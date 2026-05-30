@@ -2,6 +2,25 @@ Order: 50
 Description: News pages mentioning Cake
 RedirectFrom: docs/resources/in-the-news
 ---
+# 2021
+
+## JetBrains Rider
+
+* [Cake for Rider released](/blog/2021/01/cake-for-rider)
+
+## Renovate
+
+* [Cake support in WhiteSource Renovate](/blog/2021/04/cake-support-in-renovate)
+
+# 2020
+
+## Octopus Deploy
+
+* [Thank you Octopus Deploy!](/blog/2020/10/octopus-deploy)
+
+## Dependabot
+
+* [Dependabot for Cake - Preview](/blog/2020/10/dependabot-cake-action)
 
 # 2016
 
