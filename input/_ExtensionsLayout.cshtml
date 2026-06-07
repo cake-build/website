@@ -1,4 +1,4 @@
-@using Humanizer;
+
 
 @{
     Layout = "/_Master.cshtml";
@@ -116,12 +116,13 @@
             </li>
             @if (!string.IsNullOrWhiteSpace(publishDate))
             {
-                var parsedPublishDate = @DateTime.Parse(publishDate, null, System.Globalization.DateTimeStyles.RoundtripKind);
+                var parsedPublishDate = DateTime.Parse(publishDate, null, System.Globalization.DateTimeStyles.RoundtripKind);
+                var timestampMs = (long)(parsedPublishDate.ToUniversalTime() - new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)).TotalMilliseconds;
 
                 <li>
-                    <span title="@parsedPublishDate.ToOrdinalWords()">
+                    <span title="@parsedPublishDate.ToString("MMMM dd, yyyy")">
                         <i class="fa-solid fa-clock-one"></i>
-                        Last updated @DateHumanizeExtensions.Humanize(parsedPublishDate)
+                        Last updated <time class="humanize-date" data-timestamp="@timestampMs">@parsedPublishDate.ToString("MMMM dd, yyyy")</time>
                     </span>
                 </li>
             }
