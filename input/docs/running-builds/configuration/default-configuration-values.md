@@ -82,6 +82,9 @@ Addins=./tools/Addins</code></pre>
 </div>
 
 #  Cache compiled script on disk
+Script caching reuses previously compiled script assemblies stored on disk. This improves performance by avoiding recompilation of unchanged scripts on subsequent runs.
+
+If you need to force Cake to ignore the cached script and recompile it (for example, after changes that are not picked up automatically), you can use the `--invalidate-script-cache` option when running Cake. This will bypass the existing cache and generate a fresh compiled script.
 
 :::{.alert .alert-info}
 Available since Cake `2.2.0`.
