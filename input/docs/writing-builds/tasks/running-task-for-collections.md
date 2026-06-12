@@ -12,4 +12,23 @@ Task("A")
 {
     // Take action on the file.
 });
+
+```
+
+## Cake Frosting
+
+In Cake Frosting, tasks are plain C# classes, so there's no `DoesForEach` fluent method. Instead, simply iterate over the collection using a standard `foreach` loop inside the task's `Run` method.
+
+```csharp
+[TaskName("A")]
+public sealed class TaskA : FrostingTask<BuildContext>
+{
+    public override void Run(BuildContext context)
+    {
+        foreach (var file in context.GetFiles("**/*.txt"))
+        {
+            // Take action on the file.
+        }
+    }
+}
 ```
