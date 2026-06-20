@@ -1,7 +1,4 @@
-
 @model IEnumerable<IDocument>
-
-
 
 @{
     var extensions =
@@ -59,7 +56,7 @@
                         <li>
                             <span title="@parsedPublishDate.ToString("MMMM dd, yyyy")">
                                 <i class="fa-solid fa-clock-one"></i>
-                                Last updated <time class="humanize-date" data-timestamp="@timestampMs">@parsedPublishDate.ToString("MMMM dd, yyyy")</time>
+                                Last updated <time class="humanize-date" datetime="@parsedPublishDate.ToString("o")" data-timestamp="@timestampMs">@parsedPublishDate.ToString("MMMM dd, yyyy")</time>
                             </span>
                         </li>
                     }
