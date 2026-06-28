@@ -12,10 +12,11 @@ Categories:
 - flatpak
 - deployment
 - cake-build
-TargetCakeVersion: 5.0.0
+TargetCakeVersion: 6.0.0
 TargetFrameworks:
 - net8.0
 - net9.0
-AnalyzedPackageVersion: 1.0.0
+- net10.0
+AnalyzedPackageVersion: 1.1.1
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2025-05-10T11:59:32.4970000Z
+AnalyzedPackagePublishDate: 2026-06-28T11:37:08.6600000Z
