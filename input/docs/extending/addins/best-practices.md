@@ -173,6 +173,38 @@ This recommendation changed once again in the fall of 2019 when NuGet started su
 
 > **Why?** XML documentation XML files are used to show documentation for the aliases and API provided by the addin on the Cake website.
 
+wn**_§4.3_** **Do** use meaningful and consistent `[CakeAliasCategory]` attributes on all alias methods.
+
+> **Why?** The [reference page](/dsl/) groups all aliases by category. A clear, descriptive category name helps users discover your addin's aliases when browsing or filtering that page.
+
+> **Example:**
+>
+> All aliases related to sending emails should share the same category:
+>
+> ```csharp
+> [CakeAliasCategory("Email")]
+> public static void SendEmail(this ICakeContext context, string to, string subject)
+> {
+>     // ...
+> }
+> ```
+>
+> Avoid using different spellings or casing for the same logical category (e.g. `"email"`, `"Email"`, `"Emails"` for the same addin).
+
+**_§4.4_** **Do** add descriptive tags to the NuGet package that reflect the addin's functionality.
+
+> **Why?** The [Extensions page](/extensions/) allows users to filter extensions by tags. Meaningful tags improve discoverability of your addin.
+
+> **Example:**
+>
+> In the addin's `.csproj`, set the `PackageTags` property:
+>
+> ```xml
+> <PackageTags>cake-addin;email;smtp;notification</PackageTags>
+> ```
+>
+> Always include `cake-addin` (required per §3.5) and add additional tags that describe the domain or tools your addin wraps.
+
 # Testing
 
 **_§5.1_** **Do** test the addin with the different [runners](/docs/running-builds/runners).
