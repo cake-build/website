@@ -21,10 +21,11 @@ Description: >-
   See cakeissues.net for an overview of the whole ecosystem of addins for working with issues in Cake scripts.
 Categories:
 - issues
-TargetCakeVersion: 5.0.0
+TargetCakeVersion: 6.0.0
 TargetFrameworks:
 - net8.0
 - net9.0
-AnalyzedPackageVersion: 5.9.1
+- net10.0
+AnalyzedPackageVersion: 6.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2025-09-25T21:03:11.5470000Z
+AnalyzedPackagePublishDate: 2026-06-29T19:29:16.7600000Z
