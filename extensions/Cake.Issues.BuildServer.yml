@@ -26,6 +26,6 @@ TargetFrameworks:
 - net8.0
 - net9.0
 - net10.0
-AnalyzedPackageVersion: 6.0.0-beta0002
-AnalyzedPackageIsPrerelease: true
-AnalyzedPackagePublishDate: 2026-01-14T21:33:54.7030000Z
+AnalyzedPackageVersion: 6.0.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2026-06-29T19:29:08.2100000Z
