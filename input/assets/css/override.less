@@ -270,3 +270,44 @@ ul.share-buttons img{
 .sidebar-menu li.header {
     color: darkgrey !important;
 }
+
+// Navbar hover effects
+.navbar-default .navbar-nav > li > a {
+    transition: color 0.2s ease, background-color 0.2s ease, border-bottom-color 0.2s ease;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 13px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #ceb55a;
+    background-color: transparent;
+    border-bottom-color: #ceb55a;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #ceb55a;
+    background-color: transparent;
+    border-bottom-color: #ceb55a;
+}
+
+// Hero section button hover effects
+.jumbotron .btn-primary {
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.jumbotron .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+// Feature cards hover effect
+.slideanim .col-sm-4 {
+    transition: transform 0.2s ease;
+}
+
+.slideanim .col-sm-4:hover {
+    transform: translateY(-4px);
+}
