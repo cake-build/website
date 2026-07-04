@@ -173,6 +173,45 @@ This recommendation changed once again in the fall of 2019 when NuGet started su
 
 > **Why?** XML documentation XML files are used to show documentation for the aliases and API provided by the addin on the Cake website.
 
+## Documentation integration guidelines
+
+The following guidelines help ensure your addin integrates well with the Cake website's [DSL reference](/dsl/) and [Extensions page](/extensions/).
+
+**_§4.3_** **Do** use descriptive and specific [CakeAliasCategoryAttribute](/api/cake.core.annotations/cakealiascategoryattribute/) values for alias classes.
+
+> **Why?** The [DSL reference page](/dsl/) groups aliases by category. Clear, descriptive category names make it easier for users to find the relevant aliases when browsing the reference.
+>
+> **Example:**
+>
+> ```csharp
+> [CakeAliasCategory("Docker")]
+> [CakeAliasCategory("Docker Container")]
+> public static class DockerAliases
+> {
+>     // ...
+> }
+> ```
+
+**_§4.4_** **Consider** grouping related aliases under a common parent category with more specific sub-categories.
+
+> **Why?** The DSL reference page allows filtering by category name. Well-structured categories improve discoverability.
+>
+> **Example:**
+>
+> ```csharp
+> // Good: specific categories under a common theme
+> [CakeAliasCategory("Azure", "Storage")]
+> [CakeAliasCategory("Azure", "Compute")]
+> ```
+
+**_§4.5_** **Do** add `cake-addin` to the NuGet package tags.
+
+> **Why?** The [Extensions page](/extensions/) filters and lists extensions by tag. Using the `cake-addin` tag ensures your addin appears in the correct category and is discoverable by users browsing for addins.
+
+**_§4.6_** **Consider** adding relevant feature-specific tags to the NuGet package (e.g., `docker`, `azure`, `database`).
+
+> **Why?** The Extensions page allows filtering by tags. Feature-specific tags help users find your addin when searching for tools related to a specific technology.
+
 # Testing
 
 **_§5.1_** **Do** test the addin with the different [runners](/docs/running-builds/runners).
