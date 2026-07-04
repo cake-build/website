@@ -973,13 +973,6 @@
   HtmlUrl: https://github.com/FroggieFrog
   Repositories:
   - cake-build/cake
-- Name: frozenskys
-  AvatarUrl: https://avatars.githubusercontent.com/u/28024
-  HtmlUrl: https://github.com/frozenskys
-  Repositories:
-  - cake-build/cake
-  - cake-build/cake-vso
-  - cake-contrib/Cake.MicrosoftTeams
 - Name: fruffin
   AvatarUrl: https://avatars.githubusercontent.com/u/8120830
   HtmlUrl: https://github.com/fruffin
@@ -2912,6 +2905,13 @@
   Repositories:
   - cake-contrib/Cake.Issues
   - cake-contrib/Cake.Issues.DocFx
+- Name: rj-cooper
+  AvatarUrl: https://avatars.githubusercontent.com/u/28024
+  HtmlUrl: https://github.com/rj-cooper
+  Repositories:
+  - cake-build/cake
+  - cake-build/cake-vso
+  - cake-contrib/Cake.MicrosoftTeams
 - Name: RLittlesII
   AvatarUrl: https://avatars.githubusercontent.com/u/6969701
   HtmlUrl: https://github.com/RLittlesII
