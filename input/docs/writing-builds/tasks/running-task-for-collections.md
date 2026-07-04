@@ -13,3 +13,23 @@ Task("A")
     // Take action on the file.
 });
 ```
+
+:::{.alert .alert-info}
+**Cake Frosting:** Cake Frosting does not have a direct equivalent to `DoesForEach`.
+In Frosting, you can achieve similar behavior by iterating over a collection within a task's `Run` method
+and calling your logic for each item. For example:
+
+```csharp
+[TaskName("ProcessFiles")]
+public sealed class ProcessFilesTask : FrostingTask<BuildContext>
+{
+    public override void Run(BuildContext context)
+    {
+        foreach (var file in context.GlobFiles("**/*.txt"))
+        {
+            // Take action on the file.
+        }
+    }
+}
+```
+:::
