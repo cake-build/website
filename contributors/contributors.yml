@@ -928,6 +928,11 @@
   HtmlUrl: https://github.com/farodin91
   Repositories:
   - cake-build/cake
+- Name: fierc3
+  AvatarUrl: https://avatars.githubusercontent.com/u/16936182
+  HtmlUrl: https://github.com/fierc3
+  Repositories:
+  - cake-contrib/Cake.AzureDevOps
 - Name: flcdrg
   AvatarUrl: https://avatars.githubusercontent.com/u/384747
   HtmlUrl: https://github.com/flcdrg
@@ -2691,6 +2696,11 @@
   HtmlUrl: https://github.com/pedrovieira
   Repositories:
   - cake-contrib/Cake.XCode
+- Name: perclausen
+  AvatarUrl: https://avatars.githubusercontent.com/u/4700876
+  HtmlUrl: https://github.com/perclausen
+  Repositories:
+  - cake-build/cake
 - Name: Pertel
   AvatarUrl: https://avatars.githubusercontent.com/u/11479789
   HtmlUrl: https://github.com/Pertel
