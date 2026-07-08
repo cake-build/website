@@ -19,10 +19,11 @@ Description: >-
 Categories:
 - issues
 - reports
-TargetCakeVersion: 5.0.0
+TargetCakeVersion: 6.0.0
 TargetFrameworks:
 - net8.0
 - net9.0
-AnalyzedPackageVersion: 5.9.1
+- net10.0
+AnalyzedPackageVersion: 6.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2025-09-25T21:03:30.1970000Z
+AnalyzedPackagePublishDate: 2026-06-29T19:29:25.4230000Z

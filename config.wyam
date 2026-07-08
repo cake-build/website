@@ -1,5 +1,3 @@
-#n Humanizer.Core --prerelease --version 3.0.0-rc.30
-
 System.Globalization.CultureInfo.DefaultThreadCurrentCulture = System.Globalization.CultureInfo.CreateSpecificCulture("en-GB");
 
 ContentStreamFactory = new MemoryContentStreamFactory();

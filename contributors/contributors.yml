@@ -928,6 +928,11 @@
   HtmlUrl: https://github.com/farodin91
   Repositories:
   - cake-build/cake
+- Name: fierc3
+  AvatarUrl: https://avatars.githubusercontent.com/u/16936182
+  HtmlUrl: https://github.com/fierc3
+  Repositories:
+  - cake-contrib/Cake.AzureDevOps
 - Name: flcdrg
   AvatarUrl: https://avatars.githubusercontent.com/u/384747
   HtmlUrl: https://github.com/flcdrg
@@ -973,13 +978,6 @@
   HtmlUrl: https://github.com/FroggieFrog
   Repositories:
   - cake-build/cake
-- Name: frozenskys
-  AvatarUrl: https://avatars.githubusercontent.com/u/28024
-  HtmlUrl: https://github.com/frozenskys
-  Repositories:
-  - cake-build/cake
-  - cake-build/cake-vso
-  - cake-contrib/Cake.MicrosoftTeams
 - Name: fruffin
   AvatarUrl: https://avatars.githubusercontent.com/u/8120830
   HtmlUrl: https://github.com/fruffin
@@ -2698,6 +2696,11 @@
   HtmlUrl: https://github.com/pedrovieira
   Repositories:
   - cake-contrib/Cake.XCode
+- Name: perclausen
+  AvatarUrl: https://avatars.githubusercontent.com/u/4700876
+  HtmlUrl: https://github.com/perclausen
+  Repositories:
+  - cake-build/cake
 - Name: Pertel
   AvatarUrl: https://avatars.githubusercontent.com/u/11479789
   HtmlUrl: https://github.com/Pertel
@@ -2912,6 +2915,13 @@
   Repositories:
   - cake-contrib/Cake.Issues
   - cake-contrib/Cake.Issues.DocFx
+- Name: rj-cooper
+  AvatarUrl: https://avatars.githubusercontent.com/u/28024
+  HtmlUrl: https://github.com/rj-cooper
+  Repositories:
+  - cake-build/cake
+  - cake-build/cake-vso
+  - cake-contrib/Cake.MicrosoftTeams
 - Name: RLittlesII
   AvatarUrl: https://avatars.githubusercontent.com/u/6969701
   HtmlUrl: https://github.com/RLittlesII
@@ -3012,11 +3022,6 @@
   HtmlUrl: https://github.com/rprouse
   Repositories:
   - cake-build/cake
-- Name: Sahilarora83
-  AvatarUrl: https://avatars.githubusercontent.com/u/147994652
-  HtmlUrl: https://github.com/Sahilarora83
-  Repositories:
-  - cake-build/website
 - Name: sanderaernouts
   AvatarUrl: https://avatars.githubusercontent.com/u/6184673
   HtmlUrl: https://github.com/sanderaernouts
@@ -3124,6 +3129,11 @@
   - cake-build/cake
   - cake-contrib/Cake.MinVer
   - cake-contrib/Cake.ESLint
+- Name: SK-Sathyavada-008
+  AvatarUrl: https://avatars.githubusercontent.com/u/63954676
+  HtmlUrl: https://github.com/SK-Sathyavada-008
+  Repositories:
+  - cake-build/website
 - Name: skovsende
   AvatarUrl: https://avatars.githubusercontent.com/u/312918
   HtmlUrl: https://github.com/skovsende
