@@ -17,6 +17,6 @@ TargetFrameworks:
 - net8.0
 - net9.0
 - net10.0
-AnalyzedPackageVersion: 1.1.1
+AnalyzedPackageVersion: 1.1.2
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2026-06-28T11:37:08.6600000Z
+AnalyzedPackagePublishDate: 2026-07-15T08:00:00.0330000Z
