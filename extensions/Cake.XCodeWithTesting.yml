@@ -1,0 +1,19 @@
+Type: Addin
+Name: Cake.XCodeWithTesting
+NuGet: Cake.XCodeWithTesting
+Assemblies:
+- /**/Cake.XCode.dll
+Repository: https://github.com/cake-contrib/Cake.XCode.git
+ProjectUrl: https://github.com/cake-contrib/Cake.XCode/
+Author: Redth
+Description: Cake Build addon for XCode and CocoaPods.
+Categories:
+- xcode
+- cocoapods
+- pod
+TargetCakeVersion: 1.0.0
+TargetFrameworks:
+- netstandard2.0
+AnalyzedPackageVersion: 1.1.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2022-09-20T08:32:48.5470000Z

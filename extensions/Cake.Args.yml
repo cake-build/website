@@ -1,0 +1,21 @@
+Type: Addin
+Name: Cake.Args
+NuGet: Cake.Args
+Assemblies:
+- /**/Cake.Args.dll
+Repository: https://github.com/augustoproiete/Cake.Args.git
+ProjectUrl: https://github.com/augustoproiete/Cake.Args/
+Author: augustoproiete
+Description: Cake addin that provides additional Arguments extensions in Cake build scripts.
+Categories:
+- args
+- cake-build
+- augustoproiete
+- augusto-proiete
+TargetCakeVersion: 3.0.0
+TargetFrameworks:
+- net6.0
+- net7.0
+AnalyzedPackageVersion: 3.0.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2022-11-09T06:05:06.4100000Z

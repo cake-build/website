@@ -1,0 +1,23 @@
+Type: Addin
+Name: Cake.ExtractLicenses
+NuGet: Cake.ExtractLicenses
+Assemblies:
+- /**/Cake.ExtractLicenses.dll
+Repository: https://github.com/wgnf/liz.git
+ProjectUrl: https://github.com/wgnf/liz/
+Author: wgnf
+Description: >-
+  The Cake-Addin of the Liz-Tool - which helps to extract license-information from your solution/project
+        aimed on a fast and correct process.
+Categories:
+- license
+- extract
+- information
+- liz
+TargetCakeVersion: 6.0.0
+TargetFrameworks:
+- net8.0
+- net10.0
+AnalyzedPackageVersion: 3.1.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2026-01-22T13:59:18.9230000Z
