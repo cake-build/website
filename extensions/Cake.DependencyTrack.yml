@@ -1,0 +1,21 @@
+Type: Addin
+Name: Cake.DependencyTrack
+NuGet: Cake.DependencyTrack
+Assemblies:
+- /**/Cake.DependencyTrack.dll
+Repository: https://github.com/SARAVANA1501/Cake.DependencyTrack.git
+ProjectUrl: https://www.nuget.org/packages/Cake.DependencyTrack/
+Author: SARAVANA1501
+Description: Cake.DependencyTrack add-in helps to integrate the dependency track platform to your CI/CD pipelines and provides functionalities like Build time bom upload, fail the pipeline when thresholds are not satisfied.
+Categories:
+- dependency
+- track
+TargetCakeVersion: 1.0.0
+TargetFrameworks:
+- net6.0
+- net7.0
+- net461
+- netstandard2.0
+AnalyzedPackageVersion: 0.0.1-dev
+AnalyzedPackageIsPrerelease: true
+AnalyzedPackagePublishDate: 2023-10-13T13:01:05.2800000Z
