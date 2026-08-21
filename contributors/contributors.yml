@@ -1378,6 +1378,11 @@
   HtmlUrl: https://github.com/hmvs
   Repositories:
   - cake-contrib/Cake.Incubator
+- Name: HofmeisterAn
+  AvatarUrl: https://avatars.githubusercontent.com/u/9199345
+  HtmlUrl: https://github.com/HofmeisterAn
+  Repositories:
+  - cake-contrib/Cake.Sonar
 - Name: homelchenko
   AvatarUrl: https://avatars.githubusercontent.com/u/1062557
   HtmlUrl: https://github.com/homelchenko
