@@ -4,15 +4,15 @@ NuGet: Cake.StrongNameSigner
 Assemblies:
 - /**/Cake.StrongNameSigner.dll
 Repository: https://github.com/cake-contrib/Cake.StrongNameSigner.git
-ProjectUrl: https://www.nuget.org/packages/Cake.StrongNameSigner/
+ProjectUrl: https://github.com/cake-contrib/Cake.StrongNameSigner/
 Author: Gary Ewan Park
 Description: Cake.StrongNameSigner is an Addin for Cake which allows the execution of the StrongNameSigner.Console.exe.
 Categories:
 - strongnamesigner
-TargetCakeVersion: 0.33.0
+TargetCakeVersion: 3.0.0
 TargetFrameworks:
-- net461
-- netstandard2.0
-AnalyzedPackageVersion: 0.2.0
+- net6.0
+- net7.0
+AnalyzedPackageVersion: 3.0.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2021-02-09T22:14:49.5100000Z
+AnalyzedPackagePublishDate: 2026-08-20T16:00:24.5870000Z
