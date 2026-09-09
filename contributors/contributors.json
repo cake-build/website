@@ -521,6 +521,14 @@
     ]
   },
   {
+    "Name": "bitbonk",
+    "AvatarUrl": "https://avatars.githubusercontent.com/u/418030",
+    "HtmlUrl": "https://github.com/bitbonk",
+    "Repositories": [
+      "cake-contrib/Cake.BuildSystems.Module"
+    ]
+  },
+  {
     "Name": "bjorkstromm",
     "AvatarUrl": "https://avatars.githubusercontent.com/u/7863439",
     "HtmlUrl": "https://github.com/bjorkstromm",
