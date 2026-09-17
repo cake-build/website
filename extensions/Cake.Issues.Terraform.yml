@@ -24,11 +24,11 @@ Categories:
 - cake-issueprovider
 - linting
 - terraform
-TargetCakeVersion: 6.0.0
+TargetCakeVersion: 6.2.0
 TargetFrameworks:
 - net8.0
 - net9.0
 - net10.0
-AnalyzedPackageVersion: 6.0.0
+AnalyzedPackageVersion: 6.1.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2026-06-29T19:28:41.7930000Z
+AnalyzedPackagePublishDate: 2026-09-16T21:01:36.3400000Z

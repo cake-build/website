@@ -32,11 +32,11 @@ Categories:
 - issues
 - reporting
 - console
-TargetCakeVersion: 6.0.0
+TargetCakeVersion: 6.2.0
 TargetFrameworks:
 - net8.0
 - net9.0
 - net10.0
-AnalyzedPackageVersion: 6.0.0
+AnalyzedPackageVersion: 6.1.0
 AnalyzedPackageIsPrerelease: false
-AnalyzedPackagePublishDate: 2026-06-29T19:29:12.0230000Z
+AnalyzedPackagePublishDate: 2026-09-16T21:01:38.3800000Z
