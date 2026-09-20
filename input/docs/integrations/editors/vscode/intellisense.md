@@ -50,6 +50,13 @@ To enable IntelliSense support in Visual Studio Code follow these steps:
             </li>
             <li>
                 <p>Install <a href="https://github.com/cake-build/bakery">Cake.Bakery</a> using any of the following options:</p>
+                <div class="alert alert-info">
+        <p>
+            Starting with <code>Cake.Bakery</code> version <code>0.7.0</code>,
+            <a href="https://dotnet.microsoft.com/download/dotnet/6.0">.NET 6 runtime</a>
+            is required.
+        </p>
+    </div>
                 <ul>
                     <li>
                         <p>
@@ -169,16 +176,18 @@ Look for `OmniSharp.Cake.dll` in `%userprofile%\.vscode\extensions\ms-vscode.csh
 
 To use a pre-release version of OmniSharp follow these steps:
 
-* Open command palette (<code>Ctrl+Shift+P</code>)
-* Select <code>Open User Settings</code> command
+- Open command palette (<code>Ctrl+Shift+P</code>)
+- Select <code>Open User Settings</code> command
 
   ![Open user settings](/assets/img/intellisense-vscode/open-user-settings.png)
-* Search for `omnisharp.path` and click `Edit in settings.json`
+
+- Search for `omnisharp.path` and click `Edit in settings.json`
 
   ![omnisharp.path settings](/assets/img/intellisense-vscode/omnisharp-path.png)
-* Set `"omnisharp.path": "latest"` and save settings
-* Answer question if you want to restart OmniSharp server with yes
-* Wait until new version of OmniSharp is downloaded, installed and started
+
+- Set `"omnisharp.path": "latest"` and save settings
+- Answer question if you want to restart OmniSharp server with yes
+- Wait until new version of OmniSharp is downloaded, installed and started
 
 ## I tried everything above, I still don't get IntelliSense.
 
