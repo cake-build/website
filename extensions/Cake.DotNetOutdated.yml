@@ -1,0 +1,24 @@
+Type: Addin
+Name: Cake.DotNetOutdated
+NuGet: Cake.DotNetOutdated
+Assemblies:
+- /**/Cake.DotNetOutdated.dll
+Repository: https://github.com/mgnslndh/Cake.DotNetOutdated.git
+ProjectUrl: https://github.com/mgnslndh/Cake.DotNetOutdated/
+Author: mgnslndh
+Description: 'Cake add-in for the dotnet-outdated tool: report or upgrade outdated NuGet packages, read the JSON report, and turn it into a GitLab Code Quality report.'
+Categories:
+- cake-build
+- dotnet-outdated
+- nuget
+- outdated
+- gitlab
+- code-quality
+TargetCakeVersion: 6.0.0
+TargetFrameworks:
+- net8.0
+- net9.0
+- net10.0
+AnalyzedPackageVersion: 0.1.0-preview.2
+AnalyzedPackageIsPrerelease: true
+AnalyzedPackagePublishDate: 2026-09-23T05:13:48.1370000Z
