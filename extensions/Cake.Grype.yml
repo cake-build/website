@@ -1,0 +1,26 @@
+Type: Addin
+Name: Cake.Grype
+NuGet: Cake.Grype
+Assemblies:
+- /**/Cake.Grype.dll
+Repository: https://github.com/mgnslndh/Cake.Grype.git
+ProjectUrl: https://github.com/mgnslndh/Cake.Grype/
+Author: mgnslndh
+Description: 'Cake add-in for Anchore Grype: scan SBOMs, directories and images for vulnerabilities, manage the vulnerability database, and read the JSON report to gate builds on severity, KEV, EPSS, CVSS or risk.'
+Categories:
+- cake-build
+- grype
+- anchore
+- sbom
+- cyclonedx
+- vulnerability
+- security
+- cve
+TargetCakeVersion: 6.0.0
+TargetFrameworks:
+- net8.0
+- net9.0
+- net10.0
+AnalyzedPackageVersion: 0.1.0-preview.1
+AnalyzedPackageIsPrerelease: true
+AnalyzedPackagePublishDate: 2026-09-24T14:19:43.6670000Z
