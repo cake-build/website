@@ -10,6 +10,11 @@
   - cake-build/cake
   - cake-build/website
   - cake-build/resources
+- Name: Abde1rahman1
+  AvatarUrl: https://avatars.githubusercontent.com/u/141466327
+  HtmlUrl: https://github.com/Abde1rahman1
+  Repositories:
+  - cake-build/cake
 - Name: abeggchr
   AvatarUrl: https://avatars.githubusercontent.com/u/1616011
   HtmlUrl: https://github.com/abeggchr
@@ -139,11 +144,6 @@
   HtmlUrl: https://github.com/alexblount
   Repositories:
   - cake-contrib/Cake.HockeyApp
-- Name: alowsmlrfid
-  AvatarUrl: https://avatars.githubusercontent.com/u/67106947
-  HtmlUrl: https://github.com/alowsmlrfid
-  Repositories:
-  - cake-contrib/Cake.HipChat
 - Name: andrewlock
   AvatarUrl: https://avatars.githubusercontent.com/u/18755388
   HtmlUrl: https://github.com/andrewlock
