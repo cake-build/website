@@ -86,7 +86,7 @@ Pipelines.Add("RenderDsl",
     Documents("DslAliases"),
     Razor()
         .WithLayout("/_DslLayout.cshtml"),
-    Headings(),
+    Headings(2),
     HtmlInsert("div#infobar-headings", (doc, ctx) => ctx.GenerateInfobarHeadings(doc)),
     WriteFiles()
 );
