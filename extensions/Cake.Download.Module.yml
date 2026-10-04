@@ -1,0 +1,24 @@
+Type: Module
+Name: Cake.Download.Module
+NuGet: Cake.Download.Module
+Assemblies:
+- /**/Cake.Download.Module.dll
+Repository: https://github.com/mgnslndh/Cake.Download.Module.git
+ProjectUrl: https://github.com/mgnslndh/Cake.Download.Module/
+Author: mgnslndh
+Description: 'Cake module that installs tools from HTTPS URLs and GitHub release assets with the download: scheme: platform placeholders, mandatory SHA-256 verification, zip/tar.gz extraction.'
+Categories:
+- cake-build
+- download
+- tool
+- github
+- release
+- binary
+TargetCakeVersion: 6.0.0
+TargetFrameworks:
+- net8.0
+- net9.0
+- net10.0
+AnalyzedPackageVersion: 0.1.0-preview.1
+AnalyzedPackageIsPrerelease: true
+AnalyzedPackagePublishDate: 2026-10-04T08:39:37.3600000Z
