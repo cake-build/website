@@ -17,8 +17,6 @@ Categories:
 TargetCakeVersion: 6.0.0
 TargetFrameworks:
 - net8.0
-- net9.0
-- net10.0
-AnalyzedPackageVersion: 0.1.0-preview.1
+AnalyzedPackageVersion: 0.1.0-preview.2
 AnalyzedPackageIsPrerelease: true
-AnalyzedPackagePublishDate: 2026-10-04T08:39:37.3600000Z
+AnalyzedPackagePublishDate: 2026-10-06T20:27:37.3030000Z
