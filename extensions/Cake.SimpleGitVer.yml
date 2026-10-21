@@ -1,0 +1,20 @@
+Type: Addin
+Name: Cake.SimpleGitVer
+NuGet: Cake.SimpleGitVer
+Assemblies:
+- /**/Cake.SimpleGitVer.dll
+Repository: https://github.com/cake-contrib/Cake.SimpleGitVer/
+ProjectUrl: https://www.nuget.org/packages/Cake.SimpleGitVer/
+Author: Jeroen Vandezande
+Description: a plug-in for Cake Build that uses Git describe to get a version from tags.
+Categories:
+- git
+- version
+TargetCakeVersion: 4.0.0
+TargetFrameworks:
+- net8.0
+- net9.0
+- net10.0
+AnalyzedPackageVersion: 1.2.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2026-01-09T14:53:20.0630000Z
