@@ -18,3 +18,5 @@ Once a newer major release has been published support for previous releases has 
 This means that once 2.0 ships we no longer will release any fixes for 1.x.
 
 ![Cake support lifecycle](/assets/img/lifecycle.png)
+
+Want to help test upcoming releases? See [Testing pre-releases](/docs/getting-started/testing-pre-releases).
