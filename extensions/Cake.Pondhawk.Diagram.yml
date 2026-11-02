@@ -1,0 +1,18 @@
+Type: Addin
+Name: Cake.Pondhawk.Diagram
+NuGet: Cake.Pondhawk.Diagram
+Assemblies:
+- /**/Cake.Pondhawk.Diagram.dll
+Repository: https://github.com/pondhawktech/pondhawk-diagram.git
+ProjectUrl: https://github.com/pondhawktech/pondhawk-diagram/
+Author: pondhawktech
+Description: Cake addin that draws an interactive HTML ER diagram from a JSON data model.
+Categories:
+- cake-build
+- er-diagram
+TargetCakeVersion: 6.0.0
+TargetFrameworks:
+- net10.0
+AnalyzedPackageVersion: 0.1.1
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2026-11-01T15:28:52.2670000Z
