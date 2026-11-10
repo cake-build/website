@@ -118,7 +118,7 @@ This creates a `global.json` file that pins the versions used in your build.
 Alternatively, you can specify the Cake.Sdk version directly in your `cake.cs` file:
 
 ```csharp
-#:sdk Cake.Sdk@6.0.0
+#:sdk Cake.Sdk@7.0.0
 ```
 
 [Cake.Sdk]: /docs/running-builds/runners/cake-sdk

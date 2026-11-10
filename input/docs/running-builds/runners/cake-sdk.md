@@ -1,14 +1,14 @@
 Order: 30
 Title: Cake.Sdk
 ---
-Cake.Sdk is a custom SDK that provides a modern way to get the Cake tool scripting experience in regular .NET console applications. This brings you the stellar experience of the new ["dotnet run app.cs"](https://devblogs.microsoft.com/dotnet/announcing-dotnet-run-app/) feature (requires .NET 10), while also working seamlessly with .NET 8 and 9 for regular csproj projects.
+Cake.Sdk is a custom SDK that provides a modern way to get the Cake tool scripting experience in regular .NET console applications. This brings you the stellar experience of the new ["dotnet run app.cs"](https://devblogs.microsoft.com/dotnet/announcing-dotnet-run-app/) feature, while also working seamlessly with regular csproj projects.
 
 # Requirements
 
 The [Cake.Sdk](https://www.nuget.org/packages/Cake.Sdk) NuGet package is a custom MSBuild SDK that requires:
 
 - **File-based approach**: .NET 10 or later
-- **Project-based approach**: .NET 8.0 or later
+- **Project-based approach**: .NET 10 or later
 
 # Usage
 
@@ -36,14 +36,14 @@ Run the script directly:
 dotnet cake.cs
 ```
 
-## Project-based approach (works with .NET 8, 9, and 10)
+## Project-based approach (requires .NET 10)
 
 For project-based builds, create a `.csproj` file using the Cake.Sdk:
 
 ```xml
 <Project Sdk="Cake.Sdk">
   <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
+    <TargetFramework>net11.0</TargetFramework>
     <RunWorkingDirectory>$(MSBuildProjectDirectory)/..</RunWorkingDirectory>
   </PropertyGroup>
 </Project>
@@ -118,7 +118,7 @@ This creates a structure that supports both single-file and multi-file approache
 For traditional project-based approach:
 
 ```bash
-dotnet new cakeproj --Framework net10.0 --name cake
+dotnet new cakeproj --Framework net11.0 --name cake
 ```
 
 This creates a `cake` folder with a `cake.csproj` using Cake.Sdk and a `cake.cs` containing minimal example code.
@@ -187,10 +187,13 @@ This creates a `global.json` file that looks like:
 ```json
 {
   "sdk": {
-    "version": "10.0.100"
+    "version": "11.0.100"
   },
   "msbuild-sdks": {
-    "Cake.Sdk": "6.0.0"
+    "Cake.Sdk": "7.0.0"
+  },
+  "test": {
+    "runner": "Microsoft.Testing.Platform"
   }
 }
 ```
@@ -200,7 +203,7 @@ If you already have a `global.json` file, you can add the `msbuild-sdks` section
 For file-based apps, you can also specify the Cake.Sdk version directly in your `.cs` file:
 
 ```csharp
-#:sdk Cake.Sdk@6.0.0
+#:sdk Cake.Sdk@7.0.0
 ```
 
 # Using pre-release versions
