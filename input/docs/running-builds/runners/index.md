@@ -19,15 +19,15 @@ Cake comes in three different flavors, which require different runners:
 
 A console application has the advantage of full IDE support, like IntelliSense, refactoring and debugging, but requires a full .NET project.
 A scripting approach can be an easier solution for simple build scenarios, as it allows to use a single file.
-Cake.Sdk combines the best of both worlds, providing a modern SDK-based approach that works with both file-based scripts (requires .NET 10) and project-based builds (works with .NET 8, 9, and 10).
+Cake.Sdk combines the best of both worlds, providing a modern SDK-based approach that works with both file-based scripts and project-based builds (requires .NET 10 or newer).
 
 # Feature overview
 
 | Runner | Minimum required .NET version  | Supported | IntelliSense |
 |-|-|-|-|
-| [Cake .NET Tool] | .NET 8 | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:orange"></i> [[1]](#1) |
-| [Cake Frosting] | .NET 8 | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> |
-| [Cake.Sdk] | .NET 8 (project-based), .NET 10 (file-based) | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> |
+| [Cake .NET Tool] | .NET 10 | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:orange"></i> [[1]](#1) |
+| [Cake Frosting] | .NET 10 | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> |
+| [Cake.Sdk] | .NET 10 | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> |
 
 <a id="1"></a>
 [1]: Limited support in Visual Studio Code. See [IntelliSense in Visual Studio Code]
@@ -48,14 +48,14 @@ The following table shows the supported platforms for each runner.
 
 :::{.alert .alert-info}
 Note that the platform under which a build is running doesn't limit its build capabilities.
-It's absolutely possible for example to build a .NET Framework application with Cake running on .NET 6.
+It's absolutely possible for example to build a .NET Framework application with Cake running on .NET 10.
 :::
 
-| Runner                           | .NET 10 | .NET 9 | .NET 8 |
-|----------------------------------|---------|--------|--------|
-| [Cake .NET Tool]                 | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> |
-| [Cake Frosting]                  | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> |
-| [Cake.Sdk]                        | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> |
+| Runner                           | .NET 11 | .NET 10 |
+|----------------------------------|---------|---------|
+| [Cake .NET Tool]                 | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> |
+| [Cake Frosting]                  | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> |
+| [Cake.Sdk]                        | <i class="fa-solid fa-check" style="color:green"></i> | <i class="fa-solid fa-check" style="color:green"></i> |
 
 # Supported Build Systems
 

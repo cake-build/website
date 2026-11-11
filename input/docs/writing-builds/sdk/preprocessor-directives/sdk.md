@@ -28,13 +28,13 @@ You can specify a version in two ways:
 ### Versioned in global.json
 
 ```csharp
-#:sdk Cake.Sdk@6.0.0
+#:sdk Cake.Sdk@7.0.0
 ```
 
 This is equivalent to the following `.csproj`:
 
 ```xml
-<Project Sdk="Cake.Sdk/6.0.0" />
+<Project Sdk="Cake.Sdk/7.0.0" />
 ```
 
 ### Versioned in file
@@ -42,13 +42,13 @@ This is equivalent to the following `.csproj`:
 The version can also be specified directly in the directive:
 
 ```csharp
-#:sdk Cake.Sdk@6.0.0
+#:sdk Cake.Sdk@7.0.0
 ```
 
 This is equivalent to the following `.csproj`:
 
 ```xml
-<Project Sdk="Cake.Sdk/6.0.0" />
+<Project Sdk="Cake.Sdk/7.0.0" />
 ```
 
 # See also

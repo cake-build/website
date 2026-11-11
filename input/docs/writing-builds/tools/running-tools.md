@@ -39,7 +39,7 @@ If there is no built-in alias, check whether an addin provides one.
 When using Cake.Sdk, reference add-ins with the `#:package` preprocessor directive in file-based apps. The add-in aliases are then available globally.
 
 ```csharp
-#:sdk Cake.Sdk@6.1.1
+#:sdk Cake.Sdk@7.0.0
 #:package Cake.Docker@1.5.0-beta.1
 
 Task("DockerRm")
@@ -100,7 +100,7 @@ Use [Command alias] when you want generic command execution, but still want Cake
 Call `InstallTool` during setup so the .NET tool package is available to later tasks.
 
 ```csharp
-#:sdk Cake.Sdk@6.1.1
+#:sdk Cake.Sdk@7.0.0
 
 Setup(context =>
 {
