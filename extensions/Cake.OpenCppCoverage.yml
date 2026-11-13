@@ -1,0 +1,18 @@
+Type: Addin
+Name: Cake.OpenCppCoverage
+NuGet: Cake.OpenCppCoverage
+Assemblies:
+- /**/Cake.OpenCppCoverage.dll
+Repository: https://github.com/TheFieryScythe/Cake.OpenCppCoverage/
+ProjectUrl: https://www.nuget.org/packages/Cake.OpenCppCoverage/
+Author: TheFieryScythe
+Description: A Cake add-in providing execution of OpenCppCoverage as a process runner
+Categories:
+- coverage
+- opencppcoverage
+TargetCakeVersion: 5.0.0
+TargetFrameworks:
+- net8.0
+AnalyzedPackageVersion: 1.0.0
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2025-07-20T09:47:48.2470000Z
