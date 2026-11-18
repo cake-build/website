@@ -1,0 +1,17 @@
+Type: Addin
+Name: Cake.IIS.Core
+NuGet: Cake.IIS.Core
+Assemblies:
+- "/**/Cake.IIS.Core.dll"
+Repository: https://github.com/appulate/Cake.IIS.Core.git
+ProjectUrl: https://github.com/appulate/Cake.IIS.Core/
+Author: appulate
+Description: Cake Build addon for IIS - Net Core Version.
+Categories:
+- iis
+TargetCakeVersion: 0.38.4
+TargetFrameworks:
+- netstandard2.1
+AnalyzedPackageVersion: 0.5.2
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2020-07-22T18:55:23.6030000Z
