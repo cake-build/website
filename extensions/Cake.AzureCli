@@ -1,0 +1,15 @@
+Type: Addin
+Name: Cake.AzureCli
+NuGet: Cake.AzureCli
+Assemblies:
+- "/**/Cake.AzureCli.dll"
+Repository: https://github.com/lprichar/Cake.AzureCli
+Author: Lee Richardson
+Description: "A Cake plugin that provides strongly typed, fully intellisense documented, and cross platform access to all 2,833 Azure CLI commands and their 32,669 individual settings."
+Categories:
+- Documentation
+- Static Site Generation
+TargetCakeVersion: 3.0.0
+TargetFrameworks:
+- net6.0
+- net7.0
