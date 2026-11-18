@@ -1,0 +1,16 @@
+Type: Addin
+Name: Cake.Badge
+NuGet: Cake.Badge
+Assemblies:
+- /**/Cake.Badge.dll
+Repository: 
+ProjectUrl: https://www.nuget.org/packages/Cake.Badge/
+Author: Float
+Description: A plugin for Cake that integrates with badge to allow icon badging during build.
+Categories: []
+TargetCakeVersion: 1.1.0
+TargetFrameworks:
+- netstandard2.0
+AnalyzedPackageVersion: 1.0.0.2
+AnalyzedPackageIsPrerelease: false
+AnalyzedPackagePublishDate: 2021-12-09T17:13:56.3000000Z
